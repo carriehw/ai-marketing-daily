@@ -16,11 +16,28 @@ Config keys in data.json (optional unless noted):
 
 Run:  PYTHONIOENCODING=utf-8 python build.py
 """
-import json, html
+import json, html, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
+
+# --- Load data.json with a clear error instead of a raw traceback -------------
+# This script runs unattended every morning, so a missing/broken data.json must
+# say exactly what to fix rather than dump a stack trace no one is watching.
+_data_path = ROOT / "data.json"
+try:
+    _raw = _data_path.read_text(encoding="utf-8")
+except FileNotFoundError:
+    sys.exit(f"ERROR: {_data_path} not found. Create data.json next to build.py "
+             f"(structure: scripts/data.sample.json).")
+try:
+    data = json.loads(_raw)
+except json.JSONDecodeError as e:
+    sys.exit(f"ERROR: data.json is not valid JSON — {e}. Fix the syntax near line {e.lineno}.")
+
+for _key in ("sections", "items", "date"):
+    if _key not in data:
+        sys.exit(f"ERROR: data.json is missing the required top-level key '{_key}'.")
 
 SITE_TITLE   = data.get("site_title", "AI・行銷情報")
 SITE_TAGLINE = data.get("site_tagline", "AI Marketing Intelligence")
@@ -33,9 +50,41 @@ REG = {"國際": "r-intl", "中國": "r-cn", "香港": "r-hk"}
 
 SEC_ID = {s: f"sec{i}" for i, s in enumerate(data["sections"])}
 
+# --- Validate items: warn (don't crash) so a typo shows up instead of silently -
+# producing a wrong-coloured tag or a dropped card. Editorial limits per
+# references/editorial-style-guide.md: summary <= 60 CJK chars, why <= 35.
+def _cjk(s):
+    return len(re.findall(r"[一-鿿]", s or ""))
+
+_sections = set(data["sections"])
+_warn = 0
+for _i, _it in enumerate(data["items"], 1):
+    _t = _it.get("title", f"(item #{_i}無標題)")
+    for _f in ("title", "summary", "source", "url", "time", "section", "action", "region", "why"):
+        if not _it.get(_f):
+            print(f"WARN item {_i} 「{_t}」: 缺欄位 '{_f}'", file=sys.stderr); _warn += 1
+    _sec = _it.get("section", "")
+    if _sec and _sec not in _sections:
+        print(f"WARN item {_i} 「{_t}」: section '{_sec}' 唔喺五版塊之列 → 呢張卡會被丟走！", file=sys.stderr); _warn += 1
+    if _it.get("action") and _it["action"] not in ACT:
+        print(f"WARN item {_i} 「{_t}」: action '{_it['action']}' 唔啱（要 可即用/要留意/影響生意）→ 用預設色", file=sys.stderr); _warn += 1
+    if _it.get("region") and _it["region"] not in REG:
+        print(f"WARN item {_i} 「{_t}」: region '{_it['region']}' 唔啱（要 國際/中國/香港）→ 中性色", file=sys.stderr); _warn += 1
+    if _cjk(_it.get("summary")) > 60:
+        print(f"WARN item {_i} 「{_t}」: summary {_cjk(_it['summary'])} 中文字 >60，建議收短", file=sys.stderr); _warn += 1
+    if _cjk(_it.get("why")) > 35:
+        print(f"WARN item {_i} 「{_t}」: why {_cjk(_it['why'])} 中文字 >35，建議收短", file=sys.stderr); _warn += 1
+    _u = _it.get("url", "")
+    if _u and not _u.startswith(("http://", "https://")):
+        print(f"WARN item {_i} 「{_t}」: url 唔係 http/https：{_u}", file=sys.stderr); _warn += 1
+
 groups = {s: [] for s in data["sections"]}
 for it in data["items"]:
     groups.setdefault(it["section"], []).append(it)
+
+for _s in data["sections"]:
+    if not groups.get(_s):
+        print(f"WARN 版塊「{_s}」今日冇內容（每版塊建議最少 1 條）", file=sys.stderr); _warn += 1
 
 cards, n = {}, 0
 for s in data["sections"]:
@@ -164,4 +213,5 @@ document.getElementById('share').addEventListener('click',async()=>{{
 '''
 
 (ROOT / "index.html").write_text(page, encoding="utf-8")
-print(f"OK index.html total={total} sections=" + ",".join(f"{s}:{len(groups[s])}" for s in data["sections"]))
+print(f"OK index.html total={total} sections=" + ",".join(f"{s}:{len(groups[s])}" for s in data["sections"])
+      + (f"  ⚠ {_warn} warning(s) — 見上面 stderr" if _warn else "  (0 warnings)"))
