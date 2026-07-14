@@ -64,7 +64,7 @@ footer b{color:var(--ink)}
 <header><div class="wrap">
 <div class="mast"><h1>AI・行銷情報</h1><span class="tag">AI Marketing Intelligence · HK / CN</span></div>
 <div class="dateline"><span><b>2026年7月14日 · 星期二</b>　·　今日精選 <b>31</b> 條</span><button id="share">分享俾同事</button></div>
-<div id="sharebox"><span>長按/全選複製：</span><input type="text" readonly value=""></div>
+<div id="sharebox"><span>長按/全選複製：</span><input type="text" readonly value="https://carriehw.github.io/ai-marketing-daily/"></div>
 <div class="legend"><span class="chip act a-use">可即用</span>今日試得／慳時間　<span class="chip act a-watch">要留意</span>平台或趨勢變動　<span class="chip act a-biz">影響生意</span>agency 生態／客戶／合規</div>
 <div class="stats"><a class="stat" href="#sec0"><b>6</b><span>AI 大模型 &amp; 市場動態</span></a><a class="stat" href="#sec1"><b>7</b><span>廣告平台 &amp; 行銷科技</span></a><a class="stat" href="#sec2"><b>5</b><span>創意生產工具</span></a><a class="stat" href="#sec3"><b>7</b><span>行業影響 &amp; 品牌案例</span></a><a class="stat" href="#sec4"><b>6</b><span>即學技巧 &amp; 玩法</span></a></div>
 </div></header>
@@ -295,7 +295,7 @@ footer b{color:var(--ink)}
 </div></footer>
 <div id="toast">連結已複製，可以直接 send 俾同事</div>
 <script>
-const SHARE_URL=location.href;
+const SHARE_URL="https://carriehw.github.io/ai-marketing-daily/";
 function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
 function legacyCopy(){const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok}
 function showBox(){const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}
