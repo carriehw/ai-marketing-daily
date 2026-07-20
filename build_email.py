@@ -56,6 +56,14 @@ PICKS = _args.picks or _args.picks_pos or int(os.environ.get("EDM_PICKS_PER_SECT
 PICKS = max(1, PICKS)
 
 SITE_URL      = data.get("site_url", "https://carriehw.github.io/ai-marketing-daily/")
+
+def _with_lang(u, lang="en"):
+    """Force the landing language of the site from the email link, so a reader
+    whose browser remembers Chinese still lands on the English briefing."""
+    sep = "&" if "?" in u else "?"
+    return f"{u}{sep}lang={lang}"
+
+SITE_URL_EN = _with_lang(SITE_URL, "en")
 SITE_TITLE_EN = data.get("site_title_en", "AI Marketing Daily")
 TAGLINE       = data.get("site_tagline", "AI Marketing Intelligence · HK / CN")
 DATE_EN       = data.get("date_display_en", data.get("date_display", ""))
@@ -151,7 +159,7 @@ def cta(label="Read the full briefing &rarr;"):
     return f'''<table role="presentation" cellpadding="0" cellspacing="0" border="0">
   <tr>
     <td align="center" bgcolor="{JADE}" style="background-color:{JADE};border-radius:8px;" class="hover-cta">
-      <a href="{esc(SITE_URL)}" target="_blank" class="cta-a" style="display:inline-block;font-family:{SANS};font-size:15px;font-weight:700;color:#FFFFFF;text-decoration:none;padding:14px 30px;border-radius:8px;background-color:{JADE};">{label}</a>
+      <a href="{esc(SITE_URL_EN)}" target="_blank" class="cta-a" style="display:inline-block;font-family:{SANS};font-size:15px;font-weight:700;color:#FFFFFF;text-decoration:none;padding:14px 30px;border-radius:8px;background-color:{JADE};">{label}</a>
     </td>
   </tr>
 </table>'''
@@ -257,7 +265,7 @@ page = f'''<!DOCTYPE html>
             <td class="footer-bg px" style="background-color:{INK};padding:26px 32px 30px 32px;border-radius:0 0 4px 4px;">
               <p style="margin:0 0 10px 0;font-family:{SANS};font-size:11.5px;line-height:1.55;color:#AEBFBA;">Sources: {sources_note_en}</p>
               <p style="margin:0 0 4px 0;font-family:{SERIF};font-size:13px;font-weight:700;color:#FFFFFF;">Curated by Mia &middot; {esc(SITE_TITLE_EN)}</p>
-              <p style="margin:0 0 12px 0;font-family:{SANS};font-size:11.5px;line-height:1.5;color:#8CA39D;">For informational reference only. &nbsp;&middot;&nbsp; <a href="{esc(SITE_URL)}" target="_blank" style="color:#5FCBAE;text-decoration:underline;">{esc(SITE_URL.replace("https://","").rstrip("/"))}</a></p>
+              <p style="margin:0 0 12px 0;font-family:{SANS};font-size:11.5px;line-height:1.5;color:#8CA39D;">For informational reference only. &nbsp;&middot;&nbsp; <a href="{esc(SITE_URL_EN)}" target="_blank" style="color:#5FCBAE;text-decoration:underline;">{esc(SITE_URL.replace("https://","").rstrip("/"))}</a></p>
               <p style="margin:0;font-family:{SANS};font-size:11px;line-height:1.5;color:#6E827C;">You are receiving this briefing as part of the AI Marketing Daily distribution. To adjust your subscription, reply to this email.</p>
             </td>
           </tr>
