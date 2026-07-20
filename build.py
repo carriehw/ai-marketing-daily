@@ -30,7 +30,6 @@ on a day the translations are incomplete — it just shows Chinese in the EN vie
 Run:  PYTHONIOENCODING=utf-8 python3 build.py
 """
 import json, html, re, sys
-from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -360,43 +359,3 @@ document.getElementById('share').addEventListener('click',async()=>{{
 (ROOT / "index.html").write_text(page, encoding="utf-8")
 print(f"OK index.html total={total} sections=" + ",".join(f"{s}:{len(groups[s])}" for s in data["sections"])
       + (f"  ⚠ {_warn} warning(s) — 見上面 stderr" if _warn else "  (0 warnings)"))
-
-# --- RSS feed: one <item> per pick, for MailerLite RSS-to-email auto-send -----
-_HK = timezone(timedelta(hours=8))
-def _rfc822(iso):
-    try:
-        dt = datetime.strptime(iso, "%Y-%m-%d").replace(hour=8, tzinfo=_HK)
-    except Exception:
-        dt = datetime.now(_HK)
-    return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
-_pub = _rfc822(data.get("date", ""))
-_rss_items, _rn = [], 0
-for s in data["sections"]:
-    for it in groups[s]:
-        _rn += 1
-        _title = it.get("title_en") or it.get("title") or ""
-        _sum = it.get("summary_en") or it.get("summary") or ""
-        _why = it.get("why_en") or it.get("why") or ""
-        _url = it.get("url", "")
-        _desc = (f"<p><strong>[{html.escape(SEC_EN.get(s, s))}]</strong> {html.escape(_sum)}</p>"
-                 f"<p><em>Why it matters:</em> {html.escape(_why)}</p>")
-        _guid = _url or f"{data.get('date','')}-{_rn}"
-        _rss_items.append(
-            "<item>"
-            f"<title>{html.escape(_title)}</title>"
-            f"<link>{html.escape(_url)}</link>"
-            f'<guid isPermaLink="false">{html.escape(_guid)}</guid>'
-            f"<pubDate>{_pub}</pubDate>"
-            f"<description><![CDATA[{_desc}]]></description>"
-            "</item>")
-_rss = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0"><channel>'
-        f"<title>{html.escape(SITE_TITLE_EN)}</title>"
-        f"<link>{html.escape(SITE_URL)}</link>"
-        f"<description>{html.escape(SITE_TAGLINE)}</description>"
-        "<language>en</language>"
-        f"<lastBuildDate>{_pub}</lastBuildDate>"
-        + "".join(_rss_items) +
-        "</channel></rss>")
-(ROOT / "rss.xml").write_text(_rss, encoding="utf-8")
-print(f"OK rss.xml items={_rn}")
