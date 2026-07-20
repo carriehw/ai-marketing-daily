@@ -166,14 +166,15 @@ sources_note = data.get("sources_note", "")
 sources_note_en = data.get("sources_note_en", sources_note)
 
 page = f'''<!doctype html>
-<html lang="zh-Hant" data-lang="zh">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
-<title>{html.escape(SITE_TITLE)} · {data.get("date","")}</title>
+<title>{html.escape(SITE_TITLE_EN)} · {data.get("date","")}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* set language before paint to avoid a flash of the wrong language */
-(function(){{try{{var l=localStorage.getItem('amd-lang');if(l==='en'||l==='zh'){{document.documentElement.setAttribute('data-lang',l);document.documentElement.lang=(l==='en'?'en':'zh-Hant');}}}}catch(e){{}}}})();
+/* Default language is English (first-priority on entry); a saved choice wins.
+   Set before paint to avoid a flash of the wrong language. */
+(function(){{try{{var l=localStorage.getItem('amd-lang');if(l==='zh'){{document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}}}}catch(e){{}}}})();
 </script>
 <style>
 :root{{--paper:#F6F7F4;--card:#FFFFFF;--ink:#1A2A2E;--muted:#5E6E6A;--jade:#0E7C66;--jade-d:#0A5C4C;--line:#DBE2D9}}
@@ -254,8 +255,8 @@ footer b{{color:var(--ink)}}
   <div class="mast-r">
     <span class="tag">{html.escape(SITE_TAGLINE)}</span>
     <div class="langtog" role="group" aria-label="Language / 語言">
-      <button type="button" data-set="zh" class="on" aria-label="繁體中文">中文</button>
-      <button type="button" data-set="en" aria-label="English">EN</button>
+      <button type="button" data-set="en" class="on" aria-label="English">EN</button>
+      <button type="button" data-set="zh" aria-label="繁體中文">中文</button>
     </div>
   </div>
 </div>
