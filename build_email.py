@@ -15,27 +15,44 @@ Outputs, next to data.json:
   email.html          -> pass to `mia-self email --html --body-file email.html`
   email-subject.txt   -> the subject line (single line)
 
-Run:  PYTHONIOENCODING=utf-8 python3 build_email.py [picks_per_section]
+Run (from a folder that has data.json, e.g. the routine's work dir):
+      PYTHONIOENCODING=utf-8 python3 build_email.py
+Options:
+      python3 build_email.py 3                 # 3 items per section (positional)
+      python3 build_email.py --picks 3
+      python3 build_email.py --data path/to/data.json --out path/to/outdir
       (or set EDM_PICKS_PER_SECTION=3)
 """
-import json, html, re, sys, os
+import json, html, re, sys, os, argparse
 from pathlib import Path
 
-ROOT = Path(__file__).parent
-DATA = ROOT / "data.json"
+_ap = argparse.ArgumentParser(description="Build the daily EDM email from data.json")
+_ap.add_argument("--data", help="path to data.json (default: ./data.json, then the script's own folder)")
+_ap.add_argument("--out", help="output directory for email.html / email-subject.txt (default: data.json's folder)")
+_ap.add_argument("--picks", type=int, help="items featured per section")
+_ap.add_argument("picks_pos", nargs="?", type=int, help=argparse.SUPPRESS)  # backward-compat positional
+_args = _ap.parse_args()
+
+# resolve data.json: explicit --data, else cwd/data.json, else beside this script
+_here = Path(__file__).parent
+if _args.data:
+    DATA = Path(_args.data)
+elif (Path.cwd() / "data.json").is_file():
+    DATA = Path.cwd() / "data.json"
+else:
+    DATA = _here / "data.json"
 
 try:
     data = json.loads(DATA.read_text(encoding="utf-8"))
 except FileNotFoundError:
-    sys.exit(f"ERROR: {DATA} not found — run build.py's data.json step first.")
+    sys.exit(f"ERROR: data.json not found at {DATA} — pass --data or run from the folder that has it.")
 except json.JSONDecodeError as e:
     sys.exit(f"ERROR: data.json invalid JSON near line {e.lineno}: {e}")
 
+OUT = Path(_args.out) if _args.out else DATA.parent
+
 # how many items per section to feature in the email
-try:
-    PICKS = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("EDM_PICKS_PER_SECTION", "2"))
-except ValueError:
-    PICKS = 2
+PICKS = _args.picks or _args.picks_pos or int(os.environ.get("EDM_PICKS_PER_SECTION", "2"))
 PICKS = max(1, PICKS)
 
 SITE_URL      = data.get("site_url", "https://carriehw.github.io/ai-marketing-daily/")
@@ -253,9 +270,10 @@ page = f'''<!DOCTYPE html>
 </html>
 '''
 
-(ROOT / "email.html").write_text(page, encoding="utf-8")
+OUT.mkdir(parents=True, exist_ok=True)
+(OUT / "email.html").write_text(page, encoding="utf-8")
 subject = f"[AI Marketing Daily] {DATE_EN} · Top picks across {len(featured)} sections ({total} today)"
-(ROOT / "email-subject.txt").write_text(subject + "\n", encoding="utf-8")
+(OUT / "email-subject.txt").write_text(subject + "\n", encoding="utf-8")
 
-print(f"OK email.html  featured={picked_count} (picks/section={PICKS})  total={total}")
+print(f"OK {OUT / 'email.html'}  featured={picked_count} (picks/section={PICKS})  total={total}")
 print("SUBJECT:", subject)
