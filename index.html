@@ -5,9 +5,18 @@
 <title>AI Marketing Daily · 2026-07-20</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* Default language is English (first-priority on entry); a saved choice wins.
-   Set before paint to avoid a flash of the wrong language. */
-(function(){try{var l=localStorage.getItem('amd-lang');if(l==='zh'){document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}}catch(e){}})();
+/* Language on entry, resolved before paint (no flash):
+   1) ?lang=en|zh in the URL wins — lets the newsletter force a language regardless
+      of a visitor's stored choice — and is remembered for next time.
+   2) otherwise a previously toggled choice (localStorage) wins.
+   3) otherwise English (the page default on the <html> tag). */
+(function(){try{
+  var p=(location.search.match(/[?&]lang=(en|zh)/)||[])[1];
+  if(p){try{localStorage.setItem('amd-lang',p);}catch(e){}}
+  var l=p||localStorage.getItem('amd-lang');
+  if(l==='zh'){document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}
+  else if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en';}
+}catch(e){}})();
 </script>
 <style>
 :root{--paper:#F6F7F4;--card:#FFFFFF;--ink:#1A2A2E;--muted:#5E6E6A;--jade:#0E7C66;--jade-d:#0A5C4C;--line:#DBE2D9}
