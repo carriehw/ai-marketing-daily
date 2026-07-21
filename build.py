@@ -165,35 +165,6 @@ date_disp_en = data.get("date_display_en", date_disp)
 sources_note = data.get("sources_note", "")
 sources_note_en = data.get("sources_note_en", sources_note)
 
-# --- Subscribe box (MailerLite embedded form; account 2520320 / form 193506606871217347) ---
-SUB_ACTION = "https://assets.mailerlite.com/jsonp/2520320/forms/193506606871217347/subscribe"
-SUBSCRIBE_SECTION = f'''<section class="subscribe" id="subscribe">
-  <div id="mlb2-43922229" class="ml-subscribe-form ml-subscribe-form-43922229 sub-card">
-    <div class="sub-copy">
-      <h2>{bi("每朝一封，兩分鐘睇晒 AI × 行銷大事", "The AI-in-marketing brief, in your inbox")}</h2>
-      <p>{bi("專為打中國市場嘅品牌而設（WeChat／XHS／RTB ＋ 國際平台）。免費，隨時退訂。", "Two minutes each morning on what's changing — built for brands reaching the China market. Free. Unsubscribe anytime.")}</p>
-    </div>
-    <div class="sub-form">
-      <div class="row-form">
-        <form class="ml-block-form" action="{SUB_ACTION}" data-code="" method="post" target="_blank">
-          <input aria-label="email" type="email" name="fields[email]" placeholder="you@company.com" autocomplete="email" required>
-          <button type="submit">{bi("訂閱", "Subscribe")}</button>
-          <input type="hidden" name="ml-submit" value="1">
-          <input type="hidden" name="anticsrf" value="true">
-        </form>
-      </div>
-      <div class="row-success" style="display:none">
-        <p class="sub-ok">{bi("搞掂！第一封情報好快就到，記得 check 吓 promotions／spam 匣。", "You're in! Your first brief lands soon — do check your promotions/spam folder just in case.")}</p>
-      </div>
-    </div>
-  </div>
-</section>'''
-
-MAILERLITE_SCRIPTS = '''<script>
-function ml_webform_success_43922229(){var $=ml_jQuery||jQuery;$('.ml-subscribe-form-43922229 .row-success').show();$('.ml-subscribe-form-43922229 .row-form').hide();}
-</script>
-<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
-<script>fetch("https://assets.mailerlite.com/jsonp/2520320/forms/193506606871217347/takel")</script>'''
 
 page = f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -285,19 +256,7 @@ footer b{{color:var(--ink)}}
 #sharebox span{{font-size:12px;color:var(--muted);white-space:nowrap}}
 @media (max-width:640px){{.stats{{grid-template-columns:repeat(2,1fr)}}}}
 @media (prefers-reduced-motion:reduce){{*{{transition:none!important}}}}
-/* --- subscribe box --- */
-.subscribe{{margin:22px 0 6px}}
-.sub-card{{background:linear-gradient(135deg,var(--jade),var(--jade-d));border-radius:8px;padding:22px 24px;display:flex;gap:22px;align-items:center;justify-content:space-between;flex-wrap:wrap}}
-.sub-copy{{flex:1 1 260px;min-width:240px}}
-.sub-card h2{{font-family:"Songti TC","Noto Serif TC",serif;color:#fff;border:0;margin:0 0 6px;padding:0;font-size:clamp(18px,2.4vw,22px);display:block}}
-.sub-card .sub-copy p{{margin:0;font-size:14px;color:rgba(255,255,255,.92)}}
-.sub-form{{flex:1 1 300px;min-width:280px}}
-.sub-form form{{display:flex;gap:8px;flex-wrap:wrap;margin:0}}
-.sub-form input[type=email]{{flex:1;min-width:180px;font:inherit;font-size:14px;padding:11px 12px;border:0;border-radius:5px;color:var(--ink);background:#fff}}
-.sub-form button{{font:inherit;font-size:14px;font-weight:700;padding:11px 22px;border:0;border-radius:5px;background:var(--ink);color:#fff;cursor:pointer;white-space:nowrap}}
-.sub-form button:hover{{background:#06382e}}
-.sub-form .row-success .sub-ok{{margin:0;font-size:14px;color:#fff;font-weight:600}}
-@media (max-width:560px){{.sub-form button{{width:100%}}}}
+
 </style>
 </head>
 <body>
@@ -319,7 +278,6 @@ footer b{{color:var(--ink)}}
 </div></header>
 <nav><div class="wrap">{nav}</div></nav>
 <main class="wrap">
-{SUBSCRIBE_SECTION}
 {sections_html}
 </main>
 <footer><div class="wrap">
@@ -351,7 +309,6 @@ document.getElementById('share').addEventListener('click',async()=>{{
   showBox();
 }});
 </script>
-{MAILERLITE_SCRIPTS}
 </body>
 </html>
 '''
