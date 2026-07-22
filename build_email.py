@@ -25,6 +25,20 @@ Options:
 """
 import json, html, re, sys, os, argparse
 from pathlib import Path
+from datetime import datetime
+
+
+def _canon_dates(iso, zh_fallback="", en_fallback=""):
+    """Derive the display dates from the ISO date so the weekday in the subject
+    line is never hand-mis-typed. Falls back to data.json values if invalid."""
+    try:
+        d = datetime.strptime((iso or "").strip(), "%Y-%m-%d")
+        wk_zh = ["一", "二", "三", "四", "五", "六", "日"][d.weekday()]
+        zh = f"{d.year}年{d.month}月{d.day}日 · 星期{wk_zh}"
+        en = f"{d.strftime('%B')} {d.day}, {d.year} · {d.strftime('%A')}"
+        return zh, en
+    except Exception:
+        return (zh_fallback or ""), (en_fallback or zh_fallback or "")
 
 _ap = argparse.ArgumentParser(description="Build the daily EDM email from data.json")
 _ap.add_argument("--data", help="path to data.json (default: ./data.json, then the script's own folder)")
@@ -66,8 +80,12 @@ def _with_lang(u, lang="en"):
 SITE_URL_EN = _with_lang(SITE_URL, "en")
 SITE_TITLE_EN = data.get("site_title_en", "AI Marketing Daily")
 TAGLINE       = data.get("site_tagline", "AI Marketing Intelligence · HK / CN")
-DATE_EN       = data.get("date_display_en", data.get("date_display", ""))
 DATE_ISO      = data.get("date", "")
+# Recompute the display dates from the ISO date — never trust a hand-written
+# weekday (that's what put "July 21 · Monday" on a 22nd-Wednesday email).
+_zh_d, DATE_EN = _canon_dates(DATE_ISO,
+                              data.get("date_display", ""),
+                              data.get("date_display_en", data.get("date_display", "")))
 sections      = data.get("sections", [])
 sections_en   = data.get("sections_en", [])
 
