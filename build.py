@@ -31,8 +31,23 @@ Run:  PYTHONIOENCODING=utf-8 python3 build.py
 """
 import json, html, re, sys
 from pathlib import Path
+from datetime import datetime
 
 ROOT = Path(__file__).parent
+
+
+def _canon_dates(iso, zh_fallback="", en_fallback=""):
+    """Derive the display dates from the ISO date so the weekday is never
+    hand-mis-typed. Falls back to whatever data.json provided if the ISO date
+    is missing/invalid."""
+    try:
+        d = datetime.strptime((iso or "").strip(), "%Y-%m-%d")
+        wk_zh = ["一", "二", "三", "四", "五", "六", "日"][d.weekday()]
+        zh = f"{d.year}年{d.month}月{d.day}日 · 星期{wk_zh}"
+        en = f"{d.strftime('%B')} {d.day}, {d.year} · {d.strftime('%A')}"
+        return zh, en
+    except Exception:
+        return (zh_fallback or ""), (en_fallback or zh_fallback or "")
 
 # --- Load data.json with a clear error instead of a raw traceback -------------
 _data_path = ROOT / "data.json"
@@ -49,6 +64,14 @@ except json.JSONDecodeError as e:
 for _key in ("sections", "items", "date"):
     if _key not in data:
         sys.exit(f"ERROR: data.json is missing the required top-level key '{_key}'.")
+
+# Always recompute the display dates from the ISO date (weekday is never trusted
+# from hand-written fields — that's how a wrong 星期/weekday slips into the site).
+_zh_d, _en_d = _canon_dates(data.get("date", ""),
+                            data.get("date_display", ""),
+                            data.get("date_display_en", ""))
+data["date_display"] = _zh_d
+data["date_display_en"] = _en_d
 
 SITE_TITLE    = data.get("site_title", "AI・行銷情報")
 SITE_TITLE_EN = data.get("site_title_en", "AI Marketing Daily")
@@ -165,7 +188,6 @@ date_disp_en = data.get("date_display_en", date_disp)
 sources_note = data.get("sources_note", "")
 sources_note_en = data.get("sources_note_en", sources_note)
 
-
 page = f'''<!doctype html>
 <html lang="en" data-lang="en">
 <head>
@@ -256,7 +278,6 @@ footer b{{color:var(--ink)}}
 #sharebox span{{font-size:12px;color:var(--muted);white-space:nowrap}}
 @media (max-width:640px){{.stats{{grid-template-columns:repeat(2,1fr)}}}}
 @media (prefers-reduced-motion:reduce){{*{{transition:none!important}}}}
-
 </style>
 </head>
 <body>
