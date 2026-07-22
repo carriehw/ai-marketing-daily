@@ -86,6 +86,13 @@ DATE_ISO      = data.get("date", "")
 _zh_d, DATE_EN = _canon_dates(DATE_ISO,
                               data.get("date_display", ""),
                               data.get("date_display_en", data.get("date_display", "")))
+# Subject-line date: no weekday at all (Carrie's choice — keep the date, drop the
+# weekday so no day-name can ever be wrong in the title). e.g. "July 22, 2026".
+try:
+    _sd = datetime.strptime((DATE_ISO or "").strip(), "%Y-%m-%d")
+    DATE_SUBJECT = f"{_sd.strftime('%B')} {_sd.day}, {_sd.year}"
+except Exception:
+    DATE_SUBJECT = DATE_EN.split(" · ")[0] if DATE_EN else ""
 sections      = data.get("sections", [])
 sections_en   = data.get("sections_en", [])
 
@@ -298,7 +305,7 @@ page = f'''<!DOCTYPE html>
 
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "email.html").write_text(page, encoding="utf-8")
-subject = f"[AI Marketing Daily] {DATE_EN} · Top picks across {len(featured)} sections ({total} today)"
+subject = f"[AI Marketing Daily] {DATE_SUBJECT} · Top picks across {len(featured)} sections ({total} today)"
 (OUT / "email-subject.txt").write_text(subject + "\n", encoding="utf-8")
 
 print(f"OK {OUT / 'email.html'}  featured={picked_count} (picks/section={PICKS})  total={total}")
