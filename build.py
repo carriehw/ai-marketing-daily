@@ -233,6 +233,9 @@ header{{border-top:4px solid var(--jade);background:var(--card);border-bottom:1p
 #share{{border:1px solid var(--jade);background:var(--jade);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:4px;cursor:pointer}}
 #share:hover{{background:var(--jade-d)}}
 #share:focus-visible{{outline:2px solid var(--ink);outline-offset:2px}}
+.dateacts{{display:flex;align-items:center;gap:12px}}
+.archlink{{font-size:13px;color:var(--jade-d);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:4px;white-space:nowrap}}
+.archlink:hover{{border-color:var(--jade);color:var(--jade)}}
 .legend{{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}}
 .legend .chip{{margin-right:2px}}
 .stats{{display:grid;grid-template-columns:repeat({len(data["sections"])},1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}}
@@ -292,7 +295,7 @@ footer b{{color:var(--ink)}}
     </div>
   </div>
 </div>
-<div class="dateline"><span><b>{bi(date_disp, date_disp_en)}</b>　·　<span class="l-zh">今日精選 <b>{total}</b> 條</span><span class="l-en"><b>{total}</b> picks today</span></span><button id="share">{bi("分享俾同事", "Share")}</button></div>
+<div class="dateline"><span><b>{bi(date_disp, date_disp_en)}</b>　·　<span class="l-zh">今日精選 <b>{total}</b> 條</span><span class="l-en"><b>{total}</b> picks today</span></span><div class="dateacts"><a class="archlink" href="archive/">{bi("📚 往期存檔", "📚 Archive")}</a><button id="share">{bi("分享俾同事", "Share")}</button></div></div>
 <div id="sharebox"><span>{bi("長按/全選複製：", "Long-press / select all to copy:")}</span><input type="text" readonly value="{html.escape(SITE_URL)}"></div>
 <div class="legend"><span class="chip act a-use">{bi("可即用", "Ready to use")}</span>{bi("今日試得／慳時間", "try today / save time")}　<span class="chip act a-watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}　<span class="chip act a-biz">{bi("影響生意", "Business impact")}</span>{bi("agency 生態／客戶／合規", "agency / client / compliance")}</div>
 <div class="stats">{stats}</div>
