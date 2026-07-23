@@ -43,6 +43,9 @@ header{border-top:4px solid var(--jade);background:var(--card);border-bottom:1px
 #share{border:1px solid var(--jade);background:var(--jade);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:4px;cursor:pointer}
 #share:hover{background:var(--jade-d)}
 #share:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateacts{display:flex;align-items:center;gap:12px}
+.archlink{font-size:13px;color:var(--jade-d);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:4px;white-space:nowrap}
+.archlink:hover{border-color:var(--jade);color:var(--jade)}
 .legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}
 .legend .chip{margin-right:2px}
 .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
@@ -102,7 +105,7 @@ footer b{color:var(--ink)}
     </div>
   </div>
 </div>
-<div class="dateline"><span><b><span class="l-zh">2026年7月23日 · 星期四</span><span class="l-en">July 23, 2026 · Thursday</span></b>　·　<span class="l-zh">今日精選 <b>30</b> 條</span><span class="l-en"><b>30</b> picks today</span></span><button id="share"><span class="l-zh">分享俾同事</span><span class="l-en">Share</span></button></div>
+<div class="dateline"><span><b><span class="l-zh">2026年7月23日 · 星期四</span><span class="l-en">July 23, 2026 · Thursday</span></b>　·　<span class="l-zh">今日精選 <b>30</b> 條</span><span class="l-en"><b>30</b> picks today</span></span><div class="dateacts"><a class="archlink" href="archive/"><span class="l-zh">📚 往期存檔</span><span class="l-en">📚 Archive</span></a><button id="share"><span class="l-zh">分享俾同事</span><span class="l-en">Share</span></button></div></div>
 <div id="sharebox"><span><span class="l-zh">長按/全選複製：</span><span class="l-en">Long-press / select all to copy:</span></span><input type="text" readonly value="https://carriehw.github.io/ai-marketing-daily/"></div>
 <div class="legend"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="l-zh">今日試得／慳時間</span><span class="l-en">try today / save time</span>　<span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="l-zh">平台或趨勢變動</span><span class="l-en">platform / trend shift</span>　<span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="l-zh">agency 生態／客戶／合規</span><span class="l-en">agency / client / compliance</span></div>
 <div class="stats"><a class="stat" href="#sec0"><b>6</b><span><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></span></a><a class="stat" href="#sec1"><b>6</b><span><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span></span></a><a class="stat" href="#sec2"><b>6</b><span><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span></span></a><a class="stat" href="#sec3"><b>6</b><span><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span></span></a><a class="stat" href="#sec4"><b>6</b><span><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span></span></a></div>
