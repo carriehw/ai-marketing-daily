@@ -23,7 +23,7 @@ from pathlib import Path
 from datetime import datetime
 
 JADE, JADE_D, INK, MUTED, LINE, PAPER, CARD = (
-    "#0E7C66", "#0A5C4C", "#1A2A2E", "#5E6E6A", "#DBE2D9", "#F6F7F4", "#FFFFFF")
+    "#5a42f4", "#4632d4", "#101114", "#656a73", "#dedbd2", "#f7f5ef", "#ffffff")
 
 
 def _canon_dates(iso, zh_fallback="", en_fallback=""):
@@ -176,28 +176,28 @@ page = f"""<!DOCTYPE html>
 </script>
 <style>
 *{{box-sizing:border-box}}
-:root{{--paper:{PAPER};--card:{CARD};--ink:{INK};--muted:{MUTED};--jade:{JADE};--jade-d:{JADE_D};--line:{LINE}}}
+:root{{--paper:{PAPER};--card:{CARD};--ink:{INK};--muted:{MUTED};--accent:{JADE};--accent-d:{JADE_D};--line:{LINE}}}
 html,body{{margin:0}}
-body{{background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'PingFang HK','Microsoft JhengHei',sans-serif}}
+body{{background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.09),transparent 30%) var(--paper);color:var(--ink);font:16px/1.6 Inter,'Noto Sans TC',ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif}}
 .l-en{{display:none}} .l-zh{{display:inline}}
 html[data-lang="en"] .l-en{{display:inline}} html[data-lang="en"] .l-zh{{display:none}}
 .wrap{{max-width:820px;margin:0 auto;padding:0 20px}}
-header{{border-top:4px solid var(--jade);background:var(--card);border-bottom:1px solid var(--line);padding:26px 0 22px}}
+header{{border-top:4px solid var(--accent);background:var(--card);border-bottom:1px solid var(--line);padding:26px 0 22px}}
 .mast{{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}}
-h1{{font-size:24px;margin:0;font-weight:700}} h1 .k{{color:var(--jade)}}
+h1{{font-size:24px;margin:0;font-weight:700}} h1 .k{{color:var(--accent)}}
 .sub{{color:var(--muted);font-size:14px;margin-top:6px}}
 .mast-r{{display:flex;align-items:center;gap:12px}}
-.back{{font-size:13px;color:var(--jade-d);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:4px;white-space:nowrap}}
-.back:hover{{border-color:var(--jade);color:var(--jade)}}
-.langtog{{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}}
+.back{{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:999px;white-space:nowrap}}
+.back:hover{{border-color:var(--accent);color:var(--accent)}}
+.langtog{{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}}
 .langtog button{{border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;padding:6px 11px;cursor:pointer}}
-.langtog button.on{{background:var(--jade);color:#fff}}
+.langtog button.on{{background:var(--accent);color:#fff}}
 main{{padding:22px 0 60px}}
-.issue{{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin:0 0 10px;text-decoration:none;color:var(--ink)}}
-.issue:hover{{border-color:var(--jade)}}
+.issue{{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin:0 0 10px;text-decoration:none;color:var(--ink);box-shadow:0 4px 18px rgba(16,17,20,.04)}}
+.issue:hover{{border-color:var(--accent)}}
 .issue .d{{font-weight:600;font-size:16px}}
 .issue .meta{{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:14px;white-space:nowrap}}
-.issue .cnt{{color:var(--jade-d);font-weight:700}}
+.issue .cnt{{color:var(--accent);font-weight:700}}
 .issue .go{{color:var(--jade);font-weight:700;font-size:18px;margin-left:4px}}
 .empty{{color:var(--muted);text-align:center;padding:40px 0}}
 footer{{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:18px 0 40px;text-align:center}}
