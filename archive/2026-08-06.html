@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Marketing Daily · 2026-08-06</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Language on entry, resolved before paint (no flash):
+   1) ?lang=en|zh in the URL wins — lets the newsletter force a language regardless
+      of a visitor's stored choice — and is remembered for next time.
+   2) otherwise a previously toggled choice (localStorage) wins.
+   3) otherwise English (the page default on the <html> tag). */
+(function(){try{
+  var p=(location.search.match(/[?&]lang=(en|zh)/)||[])[1];
+  if(p){try{localStorage.setItem('amd-lang',p);}catch(e){}}
+  var l=p||localStorage.getItem('amd-lang');
+  if(l==='zh'){document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}
+  else if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en';}
+}catch(e){}})();
+</script>
+<style>
+:root{
+  --paper:#f7f5ef;--card:#fff;--ink:#101114;--muted:#656a73;
+  --accent:#5a42f4;--accent-d:#4632d4;--accent-soft:#ebe8ff;
+  --line:#dedbd2;--shadow:0 16px 45px rgba(16,17,20,.08);
+  --s1:#1763d8;--s1s:#e8f0fd;
+  --s2:#7a2fd0;--s2s:#f2e9fd;
+  --s3:#1e7c5a;--s3s:#e2f3ec;
+  --s4:#d63b2f;--s4s:#fdeceb;
+  --s5:#a45a00;--s5s:#fdf3e2;
+  --a-use-bg:#e2f3ec;--a-use-fg:#1e7c5a;
+  --a-watch-bg:#fdf3e2;--a-watch-fg:#a45a00;
+  --a-biz-bg:#ebe8ff;--a-biz-fg:#5a42f4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.6}
+/* --- language toggle: show the active language, hide the other --- */
+.l-en{display:none}
+html[data-lang="en"] .l-en{display:inline}
+html[data-lang="en"] .l-zh{display:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-top:4px solid var(--accent);background:var(--card);border-bottom:1px solid var(--line)}
+.mast{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px 0 6px}
+.mast h1{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:clamp(28px,5vw,40px);margin:0;letter-spacing:.05em}
+.mast h1 span{color:var(--accent)}
+.mast-r{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.tag{font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.langtog{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card)}
+.langtog button{font:inherit;font-size:12px;letter-spacing:.04em;padding:5px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langtog button+button{border-left:1px solid var(--line)}
+.langtog button.on{background:var(--accent);color:#fff}
+.langtog button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:0 0 14px;color:var(--muted);font-size:14px}
+.dateline b{color:var(--ink);font-weight:600}
+#share{border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:999px;cursor:pointer}
+#share:hover{background:var(--accent);border-color:var(--accent)}
+#share:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateacts{display:flex;align-items:center;gap:12px}
+.archlink{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.archlink:hover{border-color:var(--accent);color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}
+.legend .chip{margin-right:2px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+.stat{background:var(--card);text-align:center;padding:14px 4px;text-decoration:none;color:var(--ink)}
+.stat b{display:block;font-size:26px;color:var(--accent);font-variant-numeric:tabular-nums;font-family:"Songti TC","Noto Serif TC",serif}
+.stat span{font-size:11.5px;color:var(--muted);line-height:1.3;display:block}
+.stat:hover{background:var(--accent-soft)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,239,.95);backdrop-filter:blur(4px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:99px}
+nav a i{font-style:normal;color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}
+nav a:hover{border-color:var(--accent);color:var(--accent-d)}
+section{scroll-margin-top:64px;margin:32px 0}
+h2{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:21px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line);display:flex;align-items:baseline;gap:10px}
+h2 em{font-style:normal;font-size:13px;color:var(--muted);font-family:Inter,"PingFang HK","Microsoft JhengHei",sans-serif;font-weight:400}
+section:nth-of-type(1) h2{border-left:5px solid var(--s1);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(2) h2{border-left:5px solid var(--s2);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(3) h2{border-left:5px solid var(--s3);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(4) h2{border-left:5px solid var(--s4);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(5) h2{border-left:5px solid var(--s5);padding-left:14px;border-bottom:2px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.ctop{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.no{font-family:"Songti TC","Noto Serif TC",serif;font-size:20px;color:var(--accent);font-variant-numeric:tabular-nums}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-size:11px;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.act{font-weight:600}
+.a-use{background:var(--a-use-bg);color:var(--a-use-fg)}
+.a-watch{background:var(--a-watch-bg);color:var(--a-watch-fg)}
+.a-biz{background:var(--a-biz-bg);color:var(--a-biz-fg)}
+.region{border:1px solid var(--line);color:var(--muted)}
+.card h3{margin:0;font-size:16.5px;line-height:1.45;text-wrap:balance}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent-d);text-decoration:underline}
+.card h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sum{margin:0;font-size:14px;color:var(--muted);flex:1}
+.why{margin:0;font-size:13px;line-height:1.55;color:var(--accent-d);background:var(--accent-soft);border-left:3px solid var(--accent);padding:6px 10px;border-radius:0 4px 4px 0}
+.why b{display:inline-block;font-size:11px;font-weight:600;color:#fff;background:var(--accent);border-radius:3px;padding:0 6px;margin-right:7px;vertical-align:1px}
+.cfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.more{color:var(--accent);text-decoration:none;font-weight:500;white-space:nowrap}
+.more:hover{color:var(--accent-d);text-decoration:underline}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#sharebox{display:none;gap:8px;align-items:center;padding:0 0 16px}
+#sharebox.on{display:flex}
+#sharebox input{flex:1;font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--accent);border-radius:4px;color:var(--ink);background:#fff;min-width:0}
+#sharebox span{font-size:12px;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><div style="background:#4632d4;color:#fff;padding:11px 20px;text-align:center;font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'PingFang HK','Microsoft JhengHei',sans-serif"><span class="l-zh">📚 你而家睇緊<b>往期存檔</b> · 2026年8月6日 · 星期四</span><span class="l-en">📚 You&rsquo;re viewing a <b>past issue</b> · August 6, 2026 · Thursday</span>&nbsp;·&nbsp;<a href="./" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">往期目錄</span><span class="l-en">All issues</span></a>&nbsp;·&nbsp;<a href="../" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">返回今日最新 →</span><span class="l-en">Back to today &rarr;</span></a></div>
+<header><div class="wrap">
+<div class="mast">
+  <h1><span class="l-zh">AI・行銷情報</span><span class="l-en">AI Marketing Daily</span></h1>
+  <div class="mast-r">
+    <span class="tag">AI Marketing Intelligence · HK / CN</span>
+    <div class="langtog" role="group" aria-label="Language / 語言">
+      <button type="button" data-set="en" class="on" aria-label="English">EN</button>
+      <button type="button" data-set="zh" aria-label="繁體中文">中文</button>
+    </div>
+  </div>
+</div>
+<div class="dateline"><span><b><span class="l-zh">2026年8月6日 · 星期四</span><span class="l-en">August 6, 2026 · Thursday</span></b>　·　<span class="l-zh">今日精選 <b>30</b> 條</span><span class="l-en"><b>30</b> picks today</span></span><div class="dateacts"><a class="archlink" href="./"><span class="l-zh">📚 往期存檔</span><span class="l-en">📚 Archive</span></a><button id="share"><span class="l-zh">分享俾同事</span><span class="l-en">Share</span></button></div></div>
+<div id="sharebox"><span><span class="l-zh">長按/全選複製：</span><span class="l-en">Long-press / select all to copy:</span></span><input type="text" readonly value="https://carriehw.github.io/ai-marketing-daily/"></div>
+<div class="legend"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="l-zh">今日試得／慳時間</span><span class="l-en">try today / save time</span>　<span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="l-zh">平台或趨勢變動</span><span class="l-en">platform / trend shift</span>　<span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="l-zh">agency 生態／客戶／合規</span><span class="l-en">agency / client / compliance</span></div>
+<div class="stats"><a class="stat" href="#sec0"><b>8</b><span><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></span></a><a class="stat" href="#sec1"><b>6</b><span><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span></span></a><a class="stat" href="#sec2"><b>6</b><span><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span></span></a><a class="stat" href="#sec3"><b>6</b><span><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span></span></a><a class="stat" href="#sec4"><b>4</b><span><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span></span></a></div>
+</div></header>
+<nav><div class="wrap"><a href="#sec0"><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><i>8</i></a><a href="#sec1"><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><i>6</i></a><a href="#sec2"><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><i>6</i></a><a href="#sec3"><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><i>6</i></a><a href="#sec4"><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><i>4</i></a></div></nav>
+<main class="wrap">
+<section id="sec0"><h2><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><em><span class="l-zh">8 條</span><span class="l-en">8 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">01</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.anthropic.com/news/tino-cuellar" target="_blank" rel="noopener noreferrer"><span class="l-zh">Anthropic 任命首位首席全球事務官，強化 AI 政策佈局</span><span class="l-en">Anthropic Appoints First Chief Global Affairs Officer to Strengthen AI Policy Presence</span></a></h3>
+<p class="sum"><span class="l-zh">Anthropic 宣布前加州最高法院法官 Tino Cuéllar 出任首位首席全球事務官，負責全球政策及政府關係，正值美國 AI 監管走向複雜之際。</span><span class="l-en">Anthropic named former California Supreme Court Justice Tino Cuéllar as its inaugural Chief Global Affairs Officer to oversee global policy and government relations amid complex US AI regulation.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 政策走向影響廣告 AI 工具合規，需持續追蹤監管動態。</span><span class="l-en">AI policy shifts affect ad-tech compliance — track regulatory developments closely.</span></p>
+<div class="cfoot"><span class="src">Anthropic Newsroom　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://www.anthropic.com/news/tino-cuellar" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">02</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">Anthropic 正式停用 Claude Opus 4.1 API，今日起所有呼叫失效</span><span class="l-en">Anthropic Retires Claude Opus 4.1 API — All Calls Fail Immediately from Aug 5</span></a></h3>
+<p class="sum"><span class="l-zh">Anthropic 於8月5日正式停用 Claude Opus 4.1，所有 API 呼叫即時失效；建議替代版本為 claude-opus-4-8，開發者早於6月已收到60日預告。</span><span class="l-en">Anthropic retired claude-opus-4-1-20250805 on August 5; all API calls now fail immediately. Recommended replacement is claude-opus-4-8. Developers received 60 days&#x27; notice since June 5.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">行銷自動化工具若呼叫舊版 API，今日起即失效，需即時確認供應商已遷移。</span><span class="l-en">Marketing automation tools calling the old API fail immediately — confirm vendor migration status now.</span></p>
+<div class="cfoot"><span class="src">Anthropic Platform Docs　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">03</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">Claude Opus 4.7+ 正式棄用 temperature 取樣參數，API 調用須更新</span><span class="l-en">Claude Opus 4.7+ Drops temperature/top_p/top_k Parameters — API Calls Must Update</span></a></h3>
+<p class="sum"><span class="l-zh">Anthropic 確認 Claude Opus 4.7 及更新版本中設定 temperature、top_p 或 top_k 為非預設值會回傳 400 錯誤，依賴此類參數的廣告科技平台須即時修改代碼。</span><span class="l-en">Anthropic confirmed that setting temperature, top_p or top_k to non-default values on Claude Opus 4.7+ now returns a 400 error. Ad-tech platforms using these parameters must update code immediately.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">依賴 Claude API 的廣告自動化工具若未更新，即時中斷，需優先排查。</span><span class="l-en">Ad automation tools relying on these Claude parameters will break immediately — prioritise a code audit.</span></p>
+<div class="cfoot"><span class="src">Anthropic Platform Docs　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">04</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 宣布 o3 推理模型8月26日從 ChatGPT 下架</span><span class="l-en">OpenAI to Remove o3 Reasoning Model from ChatGPT on August 26</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 確認 ChatGPT 內的 o3 推理模型（即用於複雜思考任務的進階功能）8月26日起停用，API 仍可繼續存取，官方建議用家轉用 GPT-5.6 Sol。</span><span class="l-en">OpenAI confirmed the o3 reasoning model will be removed from ChatGPT on August 26. API access remains; the recommended replacement is GPT-5.6 Sol for complex reasoning tasks.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">用 ChatGPT o3 做深度分析的行銷團隊需在截止日前評估切換至 GPT-5.6 Sol。</span><span class="l-en">Marketing teams using ChatGPT o3 for complex analysis should evaluate migrating to GPT-5.6 Sol before August 26.</span></p>
+<div class="cfoot"><span class="src">OpenAI Help Center　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">05</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI GPT-5.6 Luna API 定價削八成，AI 成本競爭進入新階段</span><span class="l-en">OpenAI Cuts GPT-5.6 Luna API Price 80% — AI Cost Competition Escalates</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 大削 GPT-5.6 Luna 定價八成（降至每百萬 token 輸入 $0.20），Sol 版本同步提速2.5倍，全行業 AI 使用成本門檻再降。</span><span class="l-en">OpenAI slashed GPT-5.6 Luna API pricing by 80% to $0.20/1M input tokens and sped up Sol by 2.5x — pushing AI usage costs to a new industry low.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI API 成本急跌，代理可以更低預算擴大 AI 工具整合規模，立即評估整合方案。</span><span class="l-en">AI API costs at historic lows — agencies can now scale AI integrations at far lower budgets. Reassess immediately.</span></p>
+<div class="cfoot"><span class="src">Axios　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">06</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://ai.google.dev/gemini-api/docs/deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Imagen 4 API 三款模型8月17日全面關閉，須遷移至 Gemini 圖像模型</span><span class="l-en">Google Shutting Down Three Imagen 4 API Models on August 17 — Migrate to Gemini Image Models</span></a></h3>
+<p class="sum"><span class="l-zh">Google 旗下三款 Imagen 4 API 模型（含 Ultra 版）8月17日關閉，替代方案為 gemini-3.1-flash-image，廣告素材自動生成平台需盡快完成遷移。</span><span class="l-en">Google will shut down three Imagen 4 API models including Ultra on August 17. The recommended replacement is gemini-3.1-flash-image. Ad creative generation platforms must migrate urgently.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">用 Imagen 4 生成廣告素材的工具8月17日後即中斷，今日起需排查並遷移。</span><span class="l-en">Ad creative tools using Imagen 4 will break on August 17 — start migration audit today.</span></p>
+<div class="cfoot"><span class="src">Google AI for Developers　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://ai.google.dev/gemini-api/docs/deprecations" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">07</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://deepseek.ai/blog/deepseek-v4-flash-ga-agent-benchmarks" target="_blank" rel="noopener noreferrer"><span class="l-zh">DeepSeek V4 Flash 上線：Agent 表現超越 V4 Pro，每百萬 token 僅 $0.14</span><span class="l-en">DeepSeek V4 Flash Officially Released: Agent Benchmarks Beat V4 Pro at $0.14/1M Tokens</span></a></h3>
+<p class="sum"><span class="l-zh">DeepSeek 正式推出 V4 Flash，3040億參數開源 Agent 模型（即 AI 代理任務引擎）在基準測試中超越 V4 Pro，MIT 授權可商用，定價每百萬 token 僅 $0.14。</span><span class="l-en">DeepSeek officially launched V4 Flash — a 304B-parameter open-source agent model surpassing V4 Pro on benchmarks, MIT-licensed for commercial use, at just $0.14/1M input tokens.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">極低成本的高性能 Agent 模型可用，廣告自動化工作流有更具成本效益的替代選項。</span><span class="l-en">Ultra-low-cost, high-performance agentic AI is now production-ready — a cost-efficient alternative for ad automation workflows.</span></p>
+<div class="cfoot"><span class="src">DeepSeek Blog　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://deepseek.ai/blog/deepseek-v4-flash-ga-agent-benchmarks" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">08</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains" target="_blank" rel="noopener noreferrer"><span class="l-zh">TechCrunch：開源 AI 能力追近前沿，安全差距持續擴大引發監管關注</span><span class="l-en">Open-Weight AI Models Near Frontier Capability as Safety Gap Widens — Regulation Pressure Builds</span></a></h3>
+<p class="sum"><span class="l-zh">中國 Z.ai 開源模型 GLM-5.2 能力已近前沿，惟高風險任務拒絕率為零，與 Claude Opus 4.7 差距顯著，AI 安全監管爭議升溫引發業界廣泛討論。</span><span class="l-en">Z.ai&#x27;s open-weight GLM-5.2 nears frontier AI capability but refused zero offensive cyber or bio-risk tasks tested — a stark contrast to Claude Opus 4.7 — raising major governance concerns.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 安全監管趨嚴可能推高廣告科技工具的合規成本，需提前關注採購策略。</span><span class="l-en">Tightening AI safety regulation may raise ad-tech compliance costs — assess procurement strategy proactively.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec1"><h2><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><em><span class="l-zh">6 條</span><span class="l-en">6 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">09</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.facebook.com/business/news/conversations-2026-introducing-meta-business-agent" target="_blank" rel="noopener noreferrer"><span class="l-zh">Meta Business Agent 訊息服務8月起按 token 收費，WhatsApp AI 客服成本結構改變</span><span class="l-en">Meta Business Agent Messaging Goes Pay-Per-Token from August — WhatsApp AI CX Cost Model Changes</span></a></h3>
+<p class="sum"><span class="l-zh">Meta Business Agent（即品牌在 WhatsApp、Messenger 的 AI 客服工具）自8月1日起按 token 計費，並預告10月起服務訊息亦收費，對話行銷預算規劃需更新。</span><span class="l-en">Meta&#x27;s Business Agent for WhatsApp and Messenger moved to per-token pricing from August 1, with further pricing changes for service messages planned for October — conversational marketing budgets need revision.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">WhatsApp AI 客服由免費轉為按量付費，需重新評估對話行銷 ROI 及預算規模。</span><span class="l-en">WhatsApp AI customer service shifts from free to pay-per-use — reassess conversational marketing ROI and budget scale.</span></p>
+<div class="cfoot"><span class="src">Meta for Business　·　<span class="l-zh">8月1日</span><span class="l-en">Aug 1</span></span><a class="more" href="https://www.facebook.com/business/news/conversations-2026-introducing-meta-business-agent" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">10</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Ads 8月17日 Smart Bidding 重大變更：目標出價執行更嚴格</span><span class="l-en">Google Ads Smart Bidding Change on August 17: Target CPA/ROAS Enforcement Tightens</span></a></h3>
+<p class="sum"><span class="l-zh">Google Ads 8月17日起，預算受限廣告系列在 Target CPA/ROAS 策略下的出價執行更嚴格，不再自動壓低成本，涉及 Search、PMax 及 Shopping 等主要版位。</span><span class="l-en">From August 17, Google Ads will enforce Target CPA/ROAS bids more strictly for budget-limited campaigns, ending automatic under-target delivery. Affects Search, PMax, Shopping, and Demand Gen.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">若8月17日前未調整出價目標，CPA 可能悄然上升，需即時審查所有廣告系列。</span><span class="l-en">Without updating bid targets before August 17, CPA may silently rise — audit all budget-limited campaigns immediately.</span></p>
+<div class="cfoot"><span class="src">Google Ads Help　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">11</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://ads.tiktok.com/business/en-US/blog/tiktok-product-preview" target="_blank" rel="noopener noreferrer"><span class="l-zh">TikTok Q3廣告新品：Symphony Agent 提示詞轉廣告、Agentic Hub AI 管理活動</span><span class="l-en">TikTok Q3 Ad Products: Symphony Agent Turns Prompts into Ads, Agentic Hub Automates Campaign Management</span></a></h3>
+<p class="sum"><span class="l-zh">TikTok 官方 Q3 廣告產品預覽，Symphony Agent（提示詞一鍵生成廣告素材）及 Agentic Hub（AI 自動管理廣告活動）正式開放，Smart+ 搜尋廣告自動化亦同步推進。</span><span class="l-en">TikTok&#x27;s official Q3 ad product preview introduces Symphony Agent for prompt-to-ad creative generation and Agentic Hub for AI-driven campaign management, alongside Smart+ Search Ads automation.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">TikTok 廣告 AI 化加速，代理需盡早測試 Symphony Agent 以提升素材生產效率。</span><span class="l-en">TikTok ad AI is accelerating — agencies should test Symphony Agent early to streamline creative production.</span></p>
+<div class="cfoot"><span class="src">TikTok Ads Blog　·　<span class="l-zh">7月28日</span><span class="l-en">Jul 28</span></span><a class="more" href="https://ads.tiktok.com/business/en-US/blog/tiktok-product-preview" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">12</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.mediapost.com/publications/article/417009/ai-giving-brands-agencies-complete-optimization.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">Jellyfish 推跨平台 AI 廣告優化工具，整合 PMax、ChatGPT 廣告、TikTok Search</span><span class="l-en">Jellyfish Launches Cross-Platform AI Ads Optimization Spanning PMax, ChatGPT Ads and TikTok Search</span></a></h3>
+<p class="sum"><span class="l-zh">Jellyfish 推出跨平台 AI 廣告優化服務，以「Share of Model（AI 平台品牌佔有率）」分析整合 PMax、ChatGPT 廣告及 TikTok Search，實測 ROAS 提升逾30%。</span><span class="l-en">Jellyfish launched &#x27;AI Ads Optimization&#x27;, using &#x27;Share of Model&#x27; AI insights to optimise across Google PMax, ChatGPT ads, TikTok Search and DV360 — claiming 30%+ ROAS improvement in client trials.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">跨平台 AI 廣告優化工具日趨成熟，代理商可評估類似方法論提升客戶廣告表現。</span><span class="l-en">Cross-platform AI ad optimisation is maturing — agencies should evaluate similar methodologies to improve client performance.</span></p>
+<div class="cfoot"><span class="src">MediaPost　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://www.mediapost.com/publications/article/417009/ai-giving-brands-agencies-complete-optimization.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">13</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/media-buying/ad-tech-briefing-q2s-big-tech-earnings-small-scale-concessions-and-frustrated-dealmakers" target="_blank" rel="noopener noreferrer"><span class="l-zh">Digiday：Google 廣告反壟斷補救方案臨近，programmatic 市場格局現重大變數</span><span class="l-en">Digiday: Google Antitrust Remedy Ruling Approaches — Programmatic Market Structure Faces Major Shift</span></a></h3>
+<p class="sum"><span class="l-zh">Digiday 分析指 Google 廣告反壟斷補救方案即將落地，加上 Teads 對 Google 廣告系統提訴，programmatic（程序廣告）市場格局現重大不確定性。</span><span class="l-en">Digiday&#x27;s Ad Tech Briefing notes Google&#x27;s antitrust remedy ruling is imminent, alongside Teads suing Google&#x27;s ad tech suite — creating major uncertainty for the programmatic advertising ecosystem.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">裁決結果將影響整個程序廣告生態，代理需追蹤以提前調整 DSP/SSP 策略部署。</span><span class="l-en">Ruling outcome could reshape programmatic advertising — agencies should track developments to adjust DSP/SSP strategy proactively.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://digiday.com/media-buying/ad-tech-briefing-q2s-big-tech-earnings-small-scale-concessions-and-frustrated-dealmakers" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">14</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.campaignlive.com/article/linkedin-cracks-down-automated-content-new-seems-ai-slop-detection-button/1966416" target="_blank" rel="noopener noreferrer"><span class="l-zh">LinkedIn 推 AI Slop 舉報功能，B2B 行銷 AI 生成帖文觸及面臨新過濾</span><span class="l-en">LinkedIn Launches AI Slop Reporting Button — B2B AI-Generated Content Faces New Suppression Filter</span></a></h3>
+<p class="sum"><span class="l-zh">LinkedIn 推出「AI Slop（AI 劣質水貨）」舉報按鈕及內容分類器，壓低泛化 AI 帖文曝光，配合 EU AI Act（歐盟 AI 法案）第50條8月2日正式生效。</span><span class="l-en">LinkedIn launched an &#x27;AI slop&#x27; reporting button and content classifier to suppress generic AI posts, coinciding with EU AI Act Article 50 (AI content disclosure requirements) taking effect on August 2.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">B2B 廣告商的 LinkedIn 內容需更多真實觀點，避免 AI 生成文章因新過濾而減少觸及。</span><span class="l-en">B2B marketers must inject authentic perspectives into LinkedIn content — generic AI posts risk suppression under the new classifier.</span></p>
+<div class="cfoot"><span class="src">Campaign US　·　<span class="l-zh">7月30日</span><span class="l-en">Jul 30</span></span><a class="more" href="https://www.campaignlive.com/article/linkedin-cracks-down-automated-content-new-seems-ai-slop-detection-button/1966416" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec2"><h2><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><em><span class="l-zh">6 條</span><span class="l-en">6 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">15</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://ads.tiktok.com/business/en-US/blog/transforming-video-creation-tiktok-symphony-dreamina-seedance" target="_blank" rel="noopener noreferrer"><span class="l-zh">TikTok Symphony 整合 Dreamina Seedance 2.5：廣告影片延至30秒、50個多模態參考</span><span class="l-en">TikTok Symphony Now Integrates Dreamina Seedance 2.5 — 30-Second Ads and 50 Multimodal References</span></a></h3>
+<p class="sum"><span class="l-zh">TikTok 廣告平台官方宣布 Symphony Creative Studio 整合 Seedance 2.5，廣告影片生成由15秒延長至30秒，參考素材上限由9個升至50個，品牌視覺一致性顯著提升。</span><span class="l-en">TikTok officially announced that Symphony Creative Studio now integrates Seedance 2.5, extending ad video generation from 15 to 30 seconds and raising the reference input cap from 9 to 50 for improved brand consistency.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">可用更長影片敘事廣告，大幅降低廣告創意成本，今日即可在 Symphony 平台測試。</span><span class="l-en">Longer ad video storytelling with greater brand consistency is now available in Symphony — test it today to cut creative production costs.</span></p>
+<div class="cfoot"><span class="src">TikTok Ads Blog　·　<span class="l-zh">8月3日</span><span class="l-en">Aug 3</span></span><a class="more" href="https://ads.tiktok.com/business/en-US/blog/transforming-video-creation-tiktok-symphony-dreamina-seedance" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">16</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://kling.ai/release-note/release-history" target="_blank" rel="noopener noreferrer"><span class="l-zh">可靈 AI API 更新：3款新影片特效上線，更多模型開放接入</span><span class="l-en">Kling AI API Updated: 3 New Video Effects Added, More Models Gain API Access</span></a></h3>
+<p class="sum"><span class="l-zh">可靈 AI（Kling，字節旗下 AI 影片生成工具）8月3日 API 更新，新增3款影片特效，同時擴展更多視頻模型的接入支援，配合 Kling 3.0 平台持續迭代。</span><span class="l-en">Kling AI updated its API on August 3, adding 3 new video effects and expanding API support to more video models — continuing iteration on the Kling 3.0 platform.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">3款新影片特效直接可測試用於廣告素材，第三方工具整合可靈功能的速度同步加快。</span><span class="l-en">Three new video effects are immediately testable for ad creatives, and expanded API access speeds up third-party tool integration.</span></p>
+<div class="cfoot"><span class="src">可靈 AI 官方　·　<span class="l-zh">8月3日</span><span class="l-en">Aug 3</span></span><a class="more" href="https://kling.ai/release-note/release-history" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">17</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://dreamina.capcut.com/resource/seedance-2-5-launch" target="_blank" rel="noopener noreferrer"><span class="l-zh">Dreamina Seedance 2.5 全球上線：原生4K影片、50個多模態參考、局部重繪</span><span class="l-en">Dreamina Seedance 2.5 Launches Globally: Native 4K, 50 Multimodal References, Local Re-draw</span></a></h3>
+<p class="sum"><span class="l-zh">字節跳動旗下 Dreamina 正式推出 Seedance 2.5，支援原生4K、30秒片段、50個多模態參考素材，以及局部重繪及 R2V（即參考影片轉生成）品牌一致性功能。</span><span class="l-en">ByteDance&#x27;s Dreamina launched Seedance 2.5 globally with native 4K, 30-second clips, 50 multimodal references, local re-draw editing, and R2V (reference video to generation) brand consistency.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">品牌廣告影片可以更長篇幅敘事同時保持一致性，節省後期修改時間及棚拍成本。</span><span class="l-en">Brand ad videos can now tell longer stories with consistent character/product visuals — cutting post-production and reshooting costs.</span></p>
+<div class="cfoot"><span class="src">Dreamina 官方　·　<span class="l-zh">7月31日</span><span class="l-en">Jul 31</span></span><a class="more" href="https://dreamina.capcut.com/resource/seedance-2-5-launch" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">18</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://runway.com/news/introducing-aleph-2-and-edit-studio" target="_blank" rel="noopener noreferrer"><span class="l-zh">Runway Aleph 2.0 + Edit Studio：修改單幀即同步全片燈光與場景</span><span class="l-en">Runway Aleph 2.0 and Edit Studio: Edit One Frame and Changes Propagate Through the Entire Video</span></a></h3>
+<p class="sum"><span class="l-zh">Runway 推出 Aleph 2.0 及 Edit Studio，用戶只需修改影片其中一幀，模型即自動將燈光、背景及物件替換等改動套用至整段影片，面向所有付費用戶開放。</span><span class="l-en">Runway launched Aleph 2.0 and Edit Studio — edit a single video frame and lighting, background or object changes automatically propagate through the entire clip for all paid subscribers.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告影片改版成本大降，可快速 A/B 測試不同場景與背景，素材迭代效率明顯提升。</span><span class="l-en">Ad video revision costs drop dramatically — run A/B tests across scenes and backgrounds without full reshoots, accelerating creative iteration.</span></p>
+<div class="cfoot"><span class="src">Runway 官方　·　<span class="l-zh">8月初</span><span class="l-en">8月初</span></span><a class="more" href="https://runway.com/news/introducing-aleph-2-and-edit-studio" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">19</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.canva.com/newsroom/news/canva-create-2026-ai" target="_blank" rel="noopener noreferrer"><span class="l-zh">Canva AI 2.0 全面推出：對話式設計生成、Memory 品牌記憶功能現已普及</span><span class="l-en">Canva AI 2.0 Broadly Available: Conversational Design and Memory Brand Personalisation Live</span></a></h3>
+<p class="sum"><span class="l-zh">Canva AI 2.0 現已向所有用戶推出，可用自然語言生成含品牌字體及配色的完整設計，Memory 功能自動記憶品牌偏好，令非設計師的廣告素材製作更直觀高效。</span><span class="l-en">Canva AI 2.0 is now available to all users — generate complete designs with brand fonts and colours through natural language, with Memory automatically retaining brand preferences for future sessions.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告代理日常創作效率大升，非設計人員可快速生成品牌素材，縮短設計審批流程。</span><span class="l-en">Agency daily creative productivity jumps — non-designers can generate on-brand assets independently, cutting design review cycles.</span></p>
+<div class="cfoot"><span class="src">Canva 官方　·　<span class="l-zh">8月初</span><span class="l-en">8月初</span></span><a class="more" href="https://www.canva.com/newsroom/news/canva-create-2026-ai" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">20</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://www.capcut.com/explore/New-in" target="_blank" rel="noopener noreferrer"><span class="l-zh">CapCut Design 2.0：AI 試穿、鉛筆標記指令、智能圖層分割全面上線</span><span class="l-en">CapCut Design 2.0: AI Clothing Try-On, Pencil Prompting and Smart Layer Split Now Live</span></a></h3>
+<p class="sum"><span class="l-zh">CapCut 推出 Design 2.0，用戶可手畫標記引導 AI 修改圖片（鉛筆提示），智能圖層分割一鍵分離主體與背景，AI 試穿功能讓零售廣告素材毋須棚拍。</span><span class="l-en">CapCut&#x27;s Design 2.0 introduces pencil prompting for intuitive AI image edits, smart layer split for one-tap subject/background separation, and an AI clothing try-on tool for fashion and e-commerce ad creatives.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">零售客戶可快速生成 AI 試穿素材，設計修改更直觀，適合電商廣告素材批量製作。</span><span class="l-en">Retail clients can generate try-on visuals without shoots; more intuitive AI edits cut creative turnaround for e-commerce campaigns.</span></p>
+<div class="cfoot"><span class="src">CapCut 官方　·　<span class="l-zh">8月初</span><span class="l-en">8月初</span></span><a class="more" href="https://www.capcut.com/explore/New-in" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec3"><h2><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><em><span class="l-zh">6 條</span><span class="l-en">6 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">21</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://adage.com/technology/ai/aa-japan-airlines-chatgpt-google-jellyfish-marketing" target="_blank" rel="noopener noreferrer"><span class="l-zh">Japan Airlines 率先在 ChatGPT 投廣告，以「AI 品牌佔有率」衡量 AI 搜尋成效</span><span class="l-en">Japan Airlines Becomes First Airline to Advertise on ChatGPT, Measuring AI Search Share of Model</span></a></h3>
+<p class="sum"><span class="l-zh">Ad Age 報道 Japan Airlines 聯同代理 Jellyfish，成為首批在 ChatGPT 投放廣告的航空品牌，以「Share of Model（AI 平台品牌佔有率）」工具量度及優化品牌在 AI 搜尋的形象。</span><span class="l-en">Ad Age reports Japan Airlines partnered with Jellyfish to launch ChatGPT ad campaigns, using &#x27;Share of Model&#x27; tools to track and optimise brand visibility across AI search platforms including ChatGPT and Gemini.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">ChatGPT 廣告已商業化，旅遊及品牌廣告主需開始規劃 AI 搜尋平台的投放策略。</span><span class="l-en">ChatGPT advertising is now commercially available and measurable — travel and brand advertisers should start building AI search ad strategies.</span></p>
+<div class="cfoot"><span class="src">Ad Age　·　<span class="l-zh">8月3日</span><span class="l-en">Aug 3</span></span><a class="more" href="https://adage.com/technology/ai/aa-japan-airlines-chatgpt-google-jellyfish-marketing" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">22</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.marketing-interactive.com/openai-s-first-ever-influencer-brand-trip-sparks-backlash" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI KOL 豪華邀請行程引強烈反彈，AI 品牌 KOL 行銷面臨倫理審視</span><span class="l-en">OpenAI&#x27;s Luxury Influencer Retreat &#x27;Summer Club&#x27; Sparks Backlash — AI Brand KOL Marketing Under Scrutiny</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 首個 KOL 品牌活動「Summer Club」因豪華莊園與 AI 倫理爭議形成強烈反差，引發廣泛批評，部分 KOC 被迫刪帖，為 AI 公司 KOL 行銷敲響警號。</span><span class="l-en">OpenAI&#x27;s first &#x27;Summer Club&#x27; influencer retreat at a luxury New York resort triggered widespread backlash over the contrast with its AI ethics positioning. Some influencers deleted posts — a cautionary tale for AI brand KOL marketing.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 品牌做 KOL 行銷需格外注意倫理形象配對，否則反效果可以極大。</span><span class="l-en">AI brand influencer marketing requires careful ethics alignment — audiences intensely scrutinise AI companies&#x27; brand values.</span></p>
+<div class="cfoot"><span class="src">Marketing-Interactive　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://www.marketing-interactive.com/openai-s-first-ever-influencer-brand-trip-sparks-backlash" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">23</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/media-buying/sony-is-scaling-up-its-playstation-advertising-ambitions" target="_blank" rel="noopener noreferrer"><span class="l-zh">Sony PlayStation 籌建全球廣告銷售團隊，遊戲平台廣告市場加速擴張</span><span class="l-en">Sony Builds Global PlayStation Advertising Sales Team — Gaming Platform Ad Market Accelerates</span></a></h3>
+<p class="sum"><span class="l-zh">Sony 正籌建 PlayStation 廣告全球銷售團隊，意圖透過遊戲平台龐大用戶基礎開拓品牌廣告市場，與 Netflix、Amazon 等非傳統平台競爭品牌預算。</span><span class="l-en">Sony is building a global PlayStation advertising sales team to monetise its gaming platform&#x27;s massive user base, competing with Netflix and Amazon for brand ad budgets.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">遊戲平台廣告庫存擴大，品牌接觸年輕高黏性受眾有新選項，可考慮納入媒體組合。</span><span class="l-en">Growing gaming ad inventory offers brands new high-engagement channels to reach younger audiences — worth adding to media mix consideration.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://digiday.com/media-buying/sony-is-scaling-up-its-playstation-advertising-ambitions" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">24</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.adweek.com/brand-marketing/2026-tech-stack-awards-ai-data-marketing-technology" target="_blank" rel="noopener noreferrer"><span class="l-zh">Adweek 2026 Tech Stack Awards：Farfetch AI 圖像訂單增70%、AI ROI 案例充足</span><span class="l-en">Adweek 2026 Tech Stack Awards: Farfetch AI Imagery +70% Orders — AI Marketing ROI Benchmarks Confirmed</span></a></h3>
+<p class="sum"><span class="l-zh">Adweek 2026 Tech Stack Awards 揭示 AI 行銷成效：Farfetch 運用 AI 圖像令訂單增長70%，Asics 在7分鐘內以 AI 處理逾7000張產品圖，AI 工具的商業 ROI 有具體數據佐證。</span><span class="l-en">Adweek&#x27;s 2026 Tech Stack Awards reveal concrete AI marketing ROI: Farfetch saw 70% order growth using AI imagery; Asics processed 7,000+ product images in 7 minutes — giving agencies solid benchmarks to cite.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 工具 ROI 數據充足，可直接引用於客戶 pitch，增強說服力。</span><span class="l-en">Concrete AI ROI benchmarks are now available — directly citable in client pitches to build confidence.</span></p>
+<div class="cfoot"><span class="src">Adweek　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://www.adweek.com/brand-marketing/2026-tech-stack-awards-ai-data-marketing-technology" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">25</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/marketing/digiday-research-the-2026-guide-to-holiday-marketing-strategies-including-a-frame-brands-mastercard-and-ritual" target="_blank" rel="noopener noreferrer"><span class="l-zh">Digiday 研究：AI 購物助手成2026節慶行銷核心，消費者發現路徑正在改變</span><span class="l-en">Digiday Research: AI Shopping Assistants Are Now Central to 2026 Holiday Marketing as Discovery Paths Shift</span></a></h3>
+<p class="sum"><span class="l-zh">Digiday+ 研究指 AI 購物助手已成節慶消費發現渠道，Mastercard 及 Ritual 等品牌確認旺季中 AI 助手是重要新觸點，廣告主在節慶廣告部署中必須相應調整。</span><span class="l-en">Digiday+ Research shows AI shopping assistants have become central to holiday marketing, with Mastercard and Ritual confirming they are now significant discovery touchpoints during peak season — holiday ad strategies must adapt.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">節慶廣告預算需納入 AI 搜尋助手渠道，提前規劃否則會錯失新興觸點。</span><span class="l-en">Holiday campaign budgets must now account for AI search assistant channels — plan ahead or miss an emerging discovery touchpoint.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://digiday.com/marketing/digiday-research-the-2026-guide-to-holiday-marketing-strategies-including-a-frame-brands-mastercard-and-ritual" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">26</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://adage.com/technology/ai/aa-zapier-cmo-on-getting-employees-to-adopt-tech" target="_blank" rel="noopener noreferrer"><span class="l-zh">Zapier CMO 晉升 Chief AI Transformation Officer，行銷部門主導企業 AI 轉型</span><span class="l-en">Zapier CMO Elevated to Chief AI Transformation Officer — Marketing Leads Company-Wide AI Adoption</span></a></h3>
+<p class="sum"><span class="l-zh">Ad Age 報道 Zapier 將 CMO Dan Slagen 升任 Chief AI Transformation Officer，以行銷部門主導企業 AI 落地，行銷最前線的 AI 應用成為企業轉型藍本。</span><span class="l-en">Ad Age reports Zapier elevated its CMO to Chief AI Transformation Officer, positioning the marketing team to lead company-wide AI adoption — a model other organisations facing AI pressure may follow.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">CMO 角色擴張，AI 行銷能力成企業競爭力關鍵，廣告代理需強化 AI 轉型顧問角色。</span><span class="l-en">CMO role is expanding — AI marketing fluency is becoming a company-wide competitive benchmark, raising the stakes for agency AI advisory.</span></p>
+<div class="cfoot"><span class="src">Ad Age　·　<span class="l-zh">8月5日</span><span class="l-en">Aug 5</span></span><a class="more" href="https://adage.com/technology/ai/aa-zapier-cmo-on-getting-employees-to-adopt-tech" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec4"><h2><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><em><span class="l-zh">4 條</span><span class="l-en">4 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">27</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://www.effie-greaterchina.cn/news/show-7767.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">即夢 AI × 抖音 × 艾菲奖：AI 廣告爆改大賽進行中，截止8月28日</span><span class="l-en">Jimeng AI × Douyin × Effie Awards: AI Ad Remake Contest Live Until August 28</span></a></h3>
+<p class="sum"><span class="l-zh">即夢 AI 聯合抖音商城及艾菲奖舉辦 AI 廣告爆改大賽，邀請創作者以 AI 重演王老吉、旺旺等10+經典品牌廣告，頭獎獎勵2萬元現金加艾菲奖認證，截止8月28日。</span><span class="l-en">Jimeng AI, Douyin Mall, and Effie Awards are co-hosting an AI Ad Remake Contest — creators use AI to reimagine 10+ classic Chinese brand ads, with RMB 20,000 cash and Effie Awards certificates as prizes, deadline August 28.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">活動提供中國市場 AI 廣告製作實戰練習機會，有助熟悉即夢及 Seedance 工作流。</span><span class="l-en">Live competition offering hands-on Jimeng AI practice for China market ad production — useful for learning the Seedance creative workflow.</span></p>
+<div class="cfoot"><span class="src">艾菲奖大中华区　·　<span class="l-zh">7月28日</span><span class="l-en">Jul 28</span></span><a class="more" href="https://www.effie-greaterchina.cn/news/show-7767.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">28</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://m.douyin.com/share/video/7668939565125684516" target="_blank" rel="noopener noreferrer"><span class="l-zh">【實戰工作流】即夢+Seedance 2.5+CapCut 三步法：1小時完成本地化廣告素材</span><span class="l-en">Practical Workflow: Jimeng + Seedance 2.5 + CapCut Three-Step Method — China Ad Creative in 1 Hour</span></a></h3>
+<p class="sum"><span class="l-zh">三步工作流：①用即夢生成基礎影片→②Seedance 2.5 局部重繪補品牌細節→③CapCut 剪輯加字幕配樂，最快1小時完成一條本地化廣告素材，適合中國市場 KV 改版及 Social 廣告。</span><span class="l-en">A proven 3-step workflow: ① Jimeng AI generates base video → ② Seedance 2.5 local re-draw refines brand details → ③ CapCut edits captions and music. Complete a localised China market ad creative in under one hour.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">可即刻套入日常廣告素材製作，尤其適合中國市場 Social 廣告快速 A/B 測試。</span><span class="l-en">Directly applicable to daily ad production — especially suited for rapid A/B testing of China market social ad creatives.</span></p>
+<div class="cfoot"><span class="src">抖音平台　·　<span class="l-zh">8月1日</span><span class="l-en">Aug 1</span></span><a class="more" href="https://m.douyin.com/share/video/7668939565125684516" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">29</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://m.36kr.com/p/3919354832170627" target="_blank" rel="noopener noreferrer"><span class="l-zh">36氪：2026上半年 AI 行銷全鏈路盤點 — Mizuno ROI 升125%、OPPO 搜尋滲透升30%</span><span class="l-en">36Kr: H1 2026 AI Marketing Full-Funnel Review — Mizuno +125% ROI, OPPO +30% Search Penetration</span></a></h3>
+<p class="sum"><span class="l-zh">36氪整理2026上半年 AI 行銷成效：Mizuno ROI 升125%、OPPO 搜尋滲透升30%，AI 已從單點工具進化為覆蓋洞察、創作、投放及復盤的全鏈路系統。</span><span class="l-en">36Kr reviews H1 2026 AI marketing performance across the full funnel: Mizuno +125% ROI, OPPO +30% search penetration — confirming AI has evolved from point tools to systematic full-funnel deployment.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">中國市場 AI 行銷 ROI 數據充足，pitch 客戶提案可直接引用具體數字提升說服力。</span><span class="l-en">Concrete China market AI marketing ROI benchmarks are available — cite them directly in client pitch materials to build credibility.</span></p>
+<div class="cfoot"><span class="src">36氪　·　<span class="l-zh">8月初</span><span class="l-en">8月初</span></span><a class="more" href="https://m.36kr.com/p/3919354832170627" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">30</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer"><span class="l-zh">【即學操作】Google Ads 8月17日前必做：4步保護 Target CPA/ROAS 廣告系列</span><span class="l-en">Action Required: 4 Steps to Protect Your Google Ads Target CPA/ROAS Campaigns Before August 17</span></a></h3>
+<p class="sum"><span class="l-zh">應對 Google Ads 8月17日 Smart Bidding 變更：①核查預算上限設定→②確認 Target CPA 目標是否過於保守→③調整偏低出價目標→④8月17日後追蹤首周成本變化，防止 CPA 悄然上升。</span><span class="l-en">Four steps to protect campaigns from the August 17 Google Ads Smart Bidding change: ① audit budget caps → ② check if Target CPA targets are overly conservative → ③ adjust low bid targets → ④ monitor CPA closely the first week post-change.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">提前4步操作可避免廣告效益無聲下滑，保護節慶旺季前的廣告表現。</span><span class="l-en">Taking these four steps now prevents silent CPA increases — protecting campaign performance ahead of the holiday peak season.</span></p>
+<div class="cfoot"><span class="src">Google Ads Help　·　<span class="l-zh">8月4日</span><span class="l-en">Aug 4</span></span><a class="more" href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+</main>
+<footer><div class="wrap">
+<p><span class="l-zh">今日共 <b>30</b> 條精選　·　每日更新　·　為 AI 驅動 agency 而設</span><span class="l-en"><b>30</b> picks today　·　updated daily　·　built for AI-driven agencies</span></p>
+<p><span class="l-zh">數據源：</span><span class="l-en">Sources: </span><span class="l-zh">資料來源：Anthropic Newsroom、TechCrunch、Reuters、OpenAI、Google AI Developers、DeepSeek Blog、Digiday、Ad Age、Adweek、Marketing-Interactive、MediaPost、TikTok Ads Blog、Kling AI 官方、Dreamina 官方、Runway、Canva、36氪</span><span class="l-en">Sources: Anthropic Newsroom, TechCrunch, Reuters, OpenAI, Google AI for Developers, DeepSeek Blog, Digiday, Ad Age, Adweek, Marketing-Interactive, MediaPost, TikTok Ads Blog, Kling AI Official, Dreamina Official, Runway, Canva, 36Kr</span></p>
+<p><span class="l-zh">內容僅供資訊參考。</span><span class="l-en">For informational reference only.</span></p>
+</div></footer>
+<div id="toast"></div>
+<script>
+const SHARE_URL="https://carriehw.github.io/ai-marketing-daily/";
+const MSG={zh:'連結已複製，可以直接 send 俾同事', en:'Link copied — share it with your team'};
+function curLang(){return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang=(l==='en'?'en':'zh-Hant');
+  try{localStorage.setItem('amd-lang',l)}catch(e){}
+  document.querySelectorAll('.langtog button').forEach(b=>b.classList.toggle('on', b.dataset.set===l));
+}
+document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+setLang(curLang()); // sync button highlight with the pre-paint language
+function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
+function legacyCopy(){const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok}
+function showBox(){const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}
+document.getElementById('share').addEventListener('click',async()=>{
+  const msg=MSG[curLang()];
+  if(navigator.share){try{await navigator.share({title:document.title,url:SHARE_URL});return}catch(e){if(e.name==='AbortError')return}}
+  try{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}catch(e){}
+  if(legacyCopy()){toast(msg);return}
+  showBox();
+});
+</script>
+</body>
+</html>
