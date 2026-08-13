@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Marketing Daily · 2026-08-13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Language on entry, resolved before paint (no flash):
+   1) ?lang=en|zh in the URL wins — lets the newsletter force a language regardless
+      of a visitor's stored choice — and is remembered for next time.
+   2) otherwise a previously toggled choice (localStorage) wins.
+   3) otherwise English (the page default on the <html> tag). */
+(function(){try{
+  var p=(location.search.match(/[?&]lang=(en|zh)/)||[])[1];
+  if(p){try{localStorage.setItem('amd-lang',p);}catch(e){}}
+  var l=p||localStorage.getItem('amd-lang');
+  if(l==='zh'){document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}
+  else if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en';}
+}catch(e){}})();
+</script>
+<style>
+:root{
+  --paper:#f7f5ef;--card:#fff;--ink:#101114;--muted:#656a73;
+  --accent:#5a42f4;--accent-d:#4632d4;--accent-soft:#ebe8ff;
+  --line:#dedbd2;--shadow:0 16px 45px rgba(16,17,20,.08);
+  --s1:#1763d8;--s1s:#e8f0fd;
+  --s2:#7a2fd0;--s2s:#f2e9fd;
+  --s3:#1e7c5a;--s3s:#e2f3ec;
+  --s4:#d63b2f;--s4s:#fdeceb;
+  --s5:#a45a00;--s5s:#fdf3e2;
+  --a-use-bg:#e2f3ec;--a-use-fg:#1e7c5a;
+  --a-watch-bg:#fdf3e2;--a-watch-fg:#a45a00;
+  --a-biz-bg:#ebe8ff;--a-biz-fg:#5a42f4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.6}
+/* --- language toggle: show the active language, hide the other --- */
+.l-en{display:none}
+html[data-lang="en"] .l-en{display:inline}
+html[data-lang="en"] .l-zh{display:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-top:4px solid var(--accent);background:var(--card);border-bottom:1px solid var(--line)}
+.mast{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px 0 6px}
+.mast h1{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:clamp(28px,5vw,40px);margin:0;letter-spacing:.05em}
+.mast h1 span{color:var(--accent)}
+.mast-r{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.tag{font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.langtog{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card)}
+.langtog button{font:inherit;font-size:12px;letter-spacing:.04em;padding:5px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langtog button+button{border-left:1px solid var(--line)}
+.langtog button.on{background:var(--accent);color:#fff}
+.langtog button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:0 0 14px;color:var(--muted);font-size:14px}
+.dateline b{color:var(--ink);font-weight:600}
+#share{border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:999px;cursor:pointer}
+#share:hover{background:var(--accent);border-color:var(--accent)}
+#share:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateacts{display:flex;align-items:center;gap:12px}
+.archlink{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.archlink:hover{border-color:var(--accent);color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}
+.legend .chip{margin-right:2px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+.stat{background:var(--card);text-align:center;padding:14px 4px;text-decoration:none;color:var(--ink)}
+.stat b{display:block;font-size:26px;color:var(--accent);font-variant-numeric:tabular-nums;font-family:"Songti TC","Noto Serif TC",serif}
+.stat span{font-size:11.5px;color:var(--muted);line-height:1.3;display:block}
+.stat:hover{background:var(--accent-soft)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,239,.95);backdrop-filter:blur(4px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:99px}
+nav a i{font-style:normal;color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}
+nav a:hover{border-color:var(--accent);color:var(--accent-d)}
+section{scroll-margin-top:64px;margin:32px 0}
+h2{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:21px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line);display:flex;align-items:baseline;gap:10px}
+h2 em{font-style:normal;font-size:13px;color:var(--muted);font-family:Inter,"PingFang HK","Microsoft JhengHei",sans-serif;font-weight:400}
+section:nth-of-type(1) h2{border-left:5px solid var(--s1);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(2) h2{border-left:5px solid var(--s2);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(3) h2{border-left:5px solid var(--s3);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(4) h2{border-left:5px solid var(--s4);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(5) h2{border-left:5px solid var(--s5);padding-left:14px;border-bottom:2px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.ctop{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.no{font-family:"Songti TC","Noto Serif TC",serif;font-size:20px;color:var(--accent);font-variant-numeric:tabular-nums}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-size:11px;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.act{font-weight:600}
+.a-use{background:var(--a-use-bg);color:var(--a-use-fg)}
+.a-watch{background:var(--a-watch-bg);color:var(--a-watch-fg)}
+.a-biz{background:var(--a-biz-bg);color:var(--a-biz-fg)}
+.region{border:1px solid var(--line);color:var(--muted)}
+.card h3{margin:0;font-size:16.5px;line-height:1.45;text-wrap:balance}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent-d);text-decoration:underline}
+.card h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sum{margin:0;font-size:14px;color:var(--muted);flex:1}
+.why{margin:0;font-size:13px;line-height:1.55;color:var(--accent-d);background:var(--accent-soft);border-left:3px solid var(--accent);padding:6px 10px;border-radius:0 4px 4px 0}
+.why b{display:inline-block;font-size:11px;font-weight:600;color:#fff;background:var(--accent);border-radius:3px;padding:0 6px;margin-right:7px;vertical-align:1px}
+.cfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.more{color:var(--accent);text-decoration:none;font-weight:500;white-space:nowrap}
+.more:hover{color:var(--accent-d);text-decoration:underline}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#sharebox{display:none;gap:8px;align-items:center;padding:0 0 16px}
+#sharebox.on{display:flex}
+#sharebox input{flex:1;font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--accent);border-radius:4px;color:var(--ink);background:#fff;min-width:0}
+#sharebox span{font-size:12px;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><div style="background:#4632d4;color:#fff;padding:11px 20px;text-align:center;font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'PingFang HK','Microsoft JhengHei',sans-serif"><span class="l-zh">📚 你而家睇緊<b>往期存檔</b> · 2026年8月13日 · 星期四</span><span class="l-en">📚 You&rsquo;re viewing a <b>past issue</b> · August 13, 2026 · Thursday</span>&nbsp;·&nbsp;<a href="./" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">往期目錄</span><span class="l-en">All issues</span></a>&nbsp;·&nbsp;<a href="../" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">返回今日最新 →</span><span class="l-en">Back to today &rarr;</span></a></div>
+<header><div class="wrap">
+<div class="mast">
+  <h1><span class="l-zh">AI・行銷情報</span><span class="l-en">AI Marketing Daily</span></h1>
+  <div class="mast-r">
+    <span class="tag">AI Marketing Intelligence · HK / CN</span>
+    <div class="langtog" role="group" aria-label="Language / 語言">
+      <button type="button" data-set="en" class="on" aria-label="English">EN</button>
+      <button type="button" data-set="zh" aria-label="繁體中文">中文</button>
+    </div>
+  </div>
+</div>
+<div class="dateline"><span><b><span class="l-zh">2026年8月13日 · 星期四</span><span class="l-en">August 13, 2026 · Thursday</span></b>　·　<span class="l-zh">今日精選 <b>15</b> 條</span><span class="l-en"><b>15</b> picks today</span></span><div class="dateacts"><a class="archlink" href="./"><span class="l-zh">📚 往期存檔</span><span class="l-en">📚 Archive</span></a><button id="share"><span class="l-zh">分享俾同事</span><span class="l-en">Share</span></button></div></div>
+<div id="sharebox"><span><span class="l-zh">長按/全選複製：</span><span class="l-en">Long-press / select all to copy:</span></span><input type="text" readonly value="https://carriehw.github.io/ai-marketing-daily/"></div>
+<div class="legend"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="l-zh">今日試得／慳時間</span><span class="l-en">try today / save time</span>　<span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="l-zh">平台或趨勢變動</span><span class="l-en">platform / trend shift</span>　<span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="l-zh">agency 生態／客戶／合規</span><span class="l-en">agency / client / compliance</span></div>
+<div class="stats"><a class="stat" href="#sec0"><b>3</b><span><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></span></a><a class="stat" href="#sec1"><b>3</b><span><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span></span></a><a class="stat" href="#sec2"><b>3</b><span><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span></span></a><a class="stat" href="#sec3"><b>3</b><span><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span></span></a><a class="stat" href="#sec4"><b>3</b><span><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span></span></a></div>
+</div></header>
+<nav><div class="wrap"><a href="#sec0"><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><i>3</i></a><a href="#sec1"><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><i>3</i></a><a href="#sec2"><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><i>3</i></a><a href="#sec3"><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><i>3</i></a><a href="#sec4"><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><i>3</i></a></div></nav>
+<main class="wrap">
+<section id="sec0"><h2><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">01</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Pixel 11 搭載 Gemini Intelligence：主動通知、語境搜尋全面上線</span><span class="l-en">Google Pixel 11 debuts Gemini Intelligence with proactive AI notifications and real-time Circle to Search</span></a></h3>
+<p class="sum"><span class="l-zh">Google 8 月 12 日發布 Pixel 11 系列，新增 Gemini Automation（語音控制 app 導航）、主動式 AI 通知、即時 Circle to Search 整合；Tensor G6 晶片支援全機種端側 AI 運算，Magic Capture 自動捕捉最佳瞬間。</span><span class="l-en">Google unveiled Pixel 11 on Aug 12 with Gemini Automation for voice-controlled app navigation, proactive AI notifications, real-time Circle to Search, and Tensor G6-powered on-device AI across the entire lineup.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">裝置端 AI 走向主動助理，預示行動廣告互動模式將變</span><span class="l-en">On-device AI is shifting from reactive to proactive — sets the stage for new mobile ad interaction patterns.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月12日</span><span class="l-en">Aug 12</span></span><a class="more" href="https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">02</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 系 Thrive Holdings 完成 20 億美元融資，派駐員工落場做企業 AI 整合</span><span class="l-en">OpenAI-backed Thrive Holdings raises $2B to embed AI directly into traditional businesses</span></a></h3>
+<p class="sum"><span class="l-zh">Thrive Holdings 以 120 億美元估值完成 20 億融資，由軟銀、D1 Capital Partners 及 Altimeter 領投；商業模式係收購傳統企業，派駐 OpenAI 員工落場加速 AI 整合，OpenAI 本身持股並深度介入營運。</span><span class="l-en">Thrive Holdings raised $2B at a $12B valuation from SoftBank, D1, and Altimeter; it acquires traditional businesses and deploys OpenAI employees on-site to accelerate AI adoption, with OpenAI holding an equity stake.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 整合入傳統行業加速，客戶數字轉型節奏快過預期</span><span class="l-en">AI integration into traditional industries is accelerating — client digital transformation timelines will compress faster than expected.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月12日</span><span class="l-en">Aug 12</span></span><a class="more" href="https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">03</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank" rel="noopener noreferrer"><span class="l-zh">Meta 開源 30B 模型 Muse Glimmer：筆電直跑、Apache 2.0 免費用</span><span class="l-en">Meta open-sources Muse Glimmer — a 30B agentic model that runs on a single laptop under Apache 2.0</span></a></h3>
+<p class="sum"><span class="l-zh">Meta 於 8 月 10 日正式發布 Muse Glimmer，即旗艦模型 Muse Spark 1.2 嘅開源版本；30 億參數，Apache 2.0 授權，支援文字、程式碼及圖片生成，可在單一消費級 GPU 或筆電運行，已上 Hugging Face 免費下載。</span><span class="l-en">Meta released Muse Glimmer on Aug 10 — an Apache 2.0, 30B open-source version of its flagship Muse Spark 1.2 model — capable of text, code, and image generation on a single consumer GPU or laptop, now on Hugging Face.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">創意團隊可本地跑 AI 免費測試，開源生態推動工具成本再降</span><span class="l-en">Creative teams can now run a powerful agentic AI locally at zero cost — open-source momentum will drive tool costs down further.</span></p>
+<div class="cfoot"><span class="src">Meta Research Blog　·　<span class="l-zh">8月10日</span><span class="l-en">Aug 10</span></span><a class="more" href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec1"><h2><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">04</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.mediapost.com/publications/article/417122/google-to-launch-ai-reporting-tools-for-ads-analy.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Ads 推出 Gemini AI 報告 Dashboard，自然語言即查投放表現</span><span class="l-en">Google Ads launches Gemini AI dashboards with natural-language campaign performance queries and Ask Advisor agent</span></a></h3>
+<p class="sum"><span class="l-zh">Google 為 Google Ads 同 Analytics 推出 AI 報告 Dashboard，廣告主可直接用口語問問題即時生成可視化報告；新增 Ask Advisor AI 代理串連 Ads、Analytics、Merchant Center 同 GMP，支援跨平台即時診斷同行業 benchmark 比較。</span><span class="l-en">Google launched Gemini AI dashboards across Ads and Analytics, letting advertisers query performance data in plain language and generate visual reports instantly; the Ask Advisor agent cross-references Ads, Analytics, Merchant Center, and GMP for real-time benchmarking.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">出報告唔再靠手動 export，慳走數小時重複工序</span><span class="l-en">Campaign reporting no longer requires manual exports — natural-language queries eliminate hours of repetitive data work.</span></p>
+<div class="cfoot"><span class="src">MediaPost　·　<span class="l-zh">8月10日</span><span class="l-en">Aug 10</span></span><a class="more" href="https://www.mediapost.com/publications/article/417122/google-to-launch-ai-reporting-tools-for-ads-analy.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">05</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://newsroom.spotify.com/2026-08-11/ai-persona-badges-transparency" target="_blank" rel="noopener noreferrer"><span class="l-zh">Spotify 9 月推「AI Persona」標籤：AI 生成藝人帳號預設排除推薦</span><span class="l-en">Spotify rolls out &#x27;AI Persona&#x27; badges in September to label AI-generated artists, excluding them from algorithmic recommendations by default</span></a></h3>
+<p class="sum"><span class="l-zh">Spotify 9 月中推出 AI Persona 徽章，標示可能 AI 生成的藝人帳號；被標記帳號預設排除出推薦，屬平台 2026 年透明化策略一部分。</span><span class="l-en">Spotify&#x27;s &#x27;AI Persona&#x27; badge (rolling out mid-September) flags profiles where the artist identity may be AI-generated, excluding them from editorial and algorithmic recommendations by default as part of the platform&#x27;s 2026 transparency push.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">音樂 KOL 合作多咗 AI 身份真偽風險，due diligence 要加一步</span><span class="l-en">Music creator partnerships now carry AI identity risk — brand due diligence needs an extra verification step.</span></p>
+<div class="cfoot"><span class="src">Spotify Newsroom　·　<span class="l-zh">8月11日</span><span class="l-en">Aug 11</span></span><a class="more" href="https://newsroom.spotify.com/2026-08-11/ai-persona-badges-transparency" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">06</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-hk"><span class="l-zh">香港</span><span class="l-en">HK</span></span></span></div>
+<h3><a href="https://www.marketing-interactive.com/google-maps-gets-chatty-with-gemini-powered-ask-maps-in-singapore" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Maps「Ask Maps」上線新加坡及全球 160 個國家，對話式本地搜尋大改版</span><span class="l-en">Google Maps launches Gemini-powered &#x27;Ask Maps&#x27; in Singapore and 160+ markets — the platform&#x27;s biggest transformation in a decade</span></a></h3>
+<p class="sum"><span class="l-zh">Google 在新加坡及全球超 160 個市場推出 Ask Maps，用戶可用自然語言搜尋本地商家、路線同酒店報價，內建實時交通更新；Google 形容此為地圖平台十年最大變革。</span><span class="l-en">Google&#x27;s Ask Maps (Gemini-powered conversational local search) expanded to 160+ countries including Singapore on Aug 12, enabling natural-language discovery with real-time transit and hotel pricing — described as Google Maps&#x27; biggest transformation in over a decade.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">本地 SEO 邏輯將轉向 AI 推薦，品牌 Google 商家資料完整度更影響曝光</span><span class="l-en">Local SEO logic is shifting to AI-driven recommendations — complete, accurate Google Business data will directly affect brand visibility in Ask Maps.</span></p>
+<div class="cfoot"><span class="src">Marketing-Interactive　·　<span class="l-zh">8月12日</span><span class="l-en">Aug 12</span></span><a class="more" href="https://www.marketing-interactive.com/google-maps-gets-chatty-with-gemini-powered-ask-maps-in-singapore" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec2"><h2><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">07</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://docs.dev.runwayml.com/api-details/api_changelog" target="_blank" rel="noopener noreferrer"><span class="l-zh">Runway API 新增 xAI Grok Imagine Image 2：支援圖片編輯模式、最高 2K 輸出</span><span class="l-en">Runway API adds xAI&#x27;s Grok Imagine Image 2 with direct image edit mode and 2K output — live now</span></a></h3>
+<p class="sum"><span class="l-zh">Runway 開發者 API 於 8 月 11 日新增 Grok Imagine Image 2，支援文字生圖、圖片直接編輯模式，最高 2K 解析度輸出；低質量 4 credits、高質量 8 credits，品牌可直接調用做廣告圖素生成及快速修改。</span><span class="l-en">Runway&#x27;s API added xAI&#x27;s Grok Imagine Image 2 on Aug 11, supporting text-to-image and a direct image edit mode with 1K/2K output at 4–8 credits per image — ready for brand asset generation and iteration now.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">圖片編輯模式可直接改現有素材，省去重新生成的時間同 credits</span><span class="l-en">Edit mode lets you modify existing images without regenerating from scratch — cuts iteration time and credit cost for ad creative.</span></p>
+<div class="cfoot"><span class="src">Runway Dev Changelog　·　<span class="l-zh">8月11日</span><span class="l-en">Aug 11</span></span><a class="more" href="https://docs.dev.runwayml.com/api-details/api_changelog" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">08</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://docs.dev.runwayml.com/api-details/api_changelog" target="_blank" rel="noopener noreferrer"><span class="l-zh">Runway API 同日加入 Seedance 2.5 同 Grok Imagine Video 1.5：兩款新影片生成模型開放開發者</span><span class="l-en">Runway API adds Seedance 2.5 and Grok Imagine Video 1.5 — two new AI video models open to developers</span></a></h3>
+<p class="sum"><span class="l-zh">Runway API 同日新增 ByteDance Seedance 2.5（最長 30 秒、50 個多模態參考、720p）同 xAI Grok Imagine Video 1.5（最長 15 秒、原生音頻、1080p），兩款模型即日可調用，適合品牌做不同長度廣告影片素材。</span><span class="l-en">Runway&#x27;s API added ByteDance Seedance 2.5 (up to 30-sec, 50 multimodal references, 720p) and xAI Grok Imagine Video 1.5 (up to 15-sec, native audio, 1080p) on Aug 7 — both now accessible to developers for brand video production.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">兩款模型互補，短片 + 長片廣告素材可用同一 API 流程批量生成</span><span class="l-en">Two complementary models cover short and long video needs — batch-generate campaign assets of different lengths within a single API pipeline.</span></p>
+<div class="cfoot"><span class="src">Runway Dev Changelog　·　<span class="l-zh">8月7日</span><span class="l-en">Aug 7</span></span><a class="more" href="https://docs.dev.runwayml.com/api-details/api_changelog" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">09</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://www.prnewswire.com/news-releases/dreamina-launches-seedance-2-5--the-tool-of-ai-video-generation-that-reduces-clip-stitching-visual-drift-and-rework-302841204.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">ByteDance Dreamina 推 Seedance 2.5：30 秒生成、50 個多模態參考輸入、時間戳編輯</span><span class="l-en">ByteDance&#x27;s Dreamina launches Seedance 2.5 with 30-sec generation, 50 multimodal references, and timestamp-level editing</span></a></h3>
+<p class="sum"><span class="l-zh">Dreamina 發布 Seedance 2.5，單次最長生成 30 秒，長片模式達 3 分鐘；支援最多 50 個多模態參考輸入，時間戳編輯令品牌可做多版本廣告片，減少拼接問題。</span><span class="l-en">Dreamina launched Seedance 2.5 with up to 30-second generation per clip (3-minute Long Video Mode), 50 multimodal reference inputs, and timestamp editing — directly addressing fragmented multi-version brand video production workflows.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">50 個參考輸入令品牌視覺一致性大幅提升，同一 brief 可批量出多版廣告片</span><span class="l-en">50-reference support solves brand visual consistency at scale — one brief can generate multiple campaign video variants without visual drift.</span></p>
+<div class="cfoot"><span class="src">PR Newswire　·　<span class="l-zh">8月3日</span><span class="l-en">Aug 3</span></span><a class="more" href="https://www.prnewswire.com/news-releases/dreamina-launches-seedance-2-5--the-tool-of-ai-video-generation-that-reduces-clip-stitching-visual-drift-and-rework-302841204.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec3"><h2><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">10</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.campaignlive.com/article/cindy-rose-doubles-wpps-bonus-pool/1967125" target="_blank" rel="noopener noreferrer"><span class="l-zh">WPP 行政總裁 Cindy Rose 將員工花紅池翻倍至 1.3 億英鎊，推 Elevate28 整合戰略</span><span class="l-en">WPP CEO Cindy Rose more than doubles staff bonus pool to £130M, linking half to group-wide performance under Elevate28</span></a></h3>
+<p class="sum"><span class="l-zh">WPP CEO Cindy Rose 將 2026 年上半年激勵池提升 120% 至 1.3 億英鎊；花紅改為一半與全集團業績掛鈎，屬 Elevate28 整合策略一部分。</span><span class="l-en">WPP CEO Cindy Rose expanded the H1 2026 incentive pool 120% YoY to £130M, restructuring bonuses so half of each employee&#x27;s payout depends on group-wide WPP performance — using pay structure to drive cross-agency integration under Elevate28.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">WPP 整合深化影響其旗下 agency 服務模式，全方位 agency 關係評估要重新考量</span><span class="l-en">WPP&#x27;s integration push will reshape how its agencies go to market — worth reassessing the value of consolidated vs. specialist agency relationships.</span></p>
+<div class="cfoot"><span class="src">Campaign Live　·　<span class="l-zh">8月11日</span><span class="l-en">Aug 11</span></span><a class="more" href="https://www.campaignlive.com/article/cindy-rose-doubles-wpps-bonus-pool/1967125" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">11</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.campaignasia.com/article/burson-acquires-cognitive-ai-company-limbik/4ppn1m0h0765ywwgt6qea68ndk" target="_blank" rel="noopener noreferrer"><span class="l-zh">Burson 收購 AI 公司 Limbik，Campaign 發布前可預測訊息傳播力及可信度</span><span class="l-en">PR firm Burson acquires Limbik to forecast message virality and believability before launch, rolling out across 60+ markets</span></a></h3>
+<p class="sum"><span class="l-zh">Burson 收購認知 AI 公司 Limbik，技術能在品牌訊息發布前預測傳播力及可信度；收購後整合入全球超 60 個市場服務流程，令客戶可在落廣告前先測試訊息。</span><span class="l-en">Burson acquired Limbik, a cognitive AI firm that forecasts message virality and believability before launch, and is integrating the tech across 60+ markets to give clients pre-launch testing of whether communications will resonate and spread.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">Campaign 前測 AI 技術進主流，能否預判訊息口碑將成 agency 競爭優勢</span><span class="l-en">AI-powered pre-launch message testing is entering the mainstream — virality forecasting will become a key agency differentiator in pitches.</span></p>
+<div class="cfoot"><span class="src">Campaign Asia　·　<span class="l-zh">8月12日</span><span class="l-en">Aug 12</span></span><a class="more" href="https://www.campaignasia.com/article/burson-acquires-cognitive-ai-company-limbik/4ppn1m0h0765ywwgt6qea68ndk" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">12</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-cn"><span class="l-zh">中國</span><span class="l-en">China</span></span></span></div>
+<h3><a href="https://www.guandian.cn/m/show/576124" target="_blank" rel="noopener noreferrer"><span class="l-zh">抖音收緊 AI 仿真人短劇規管，8 月起四類題材過審率跌至 30% 以下</span><span class="l-en">Douyin tightens AI virtual-character short drama rules across four content categories — approval rate drops below 30% from August 3</span></a></h3>
+<p class="sum"><span class="l-zh">抖音短劇版權中心宣布，8 月 3 日起四類 AI 仿真人短劇須符合更嚴製作規範；新規後全網下架逾 7 萬部違規短劇，新劇過審率跌至 30% 以下。</span><span class="l-en">Douyin&#x27;s short drama copyright centre announced stricter production rules for AI virtual-character dramas across four content categories from August 3; over 70,000 non-compliant videos were removed and the approval rate dropped below 30%, raising compliance risk for brand integrations.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">抖音 AI 短劇規管趨嚴，品牌植入合規評估要跟上，否則素材隨時被下架</span><span class="l-en">Tighter Douyin AI drama rules mean brand integrations face higher takedown risk — compliance assessment must be built into any AI short-drama brief.</span></p>
+<div class="cfoot"><span class="src">觀點財經　·　<span class="l-zh">8月3日</span><span class="l-en">Aug 3</span></span><a class="more" href="https://www.guandian.cn/m/show/576124" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec4"><h2><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">13</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://ads.tiktok.com/business/en-US/blog/tiktok-product-preview" target="_blank" rel="noopener noreferrer"><span class="l-zh">TikTok Symphony Agent 正式推出：AI 將 brief 直轉廣告素材，MCP 伺服器支援 Claude/ChatGPT 直接落廣告</span><span class="l-en">TikTok Symphony Agent goes live: AI turns brand briefs into TikTok ads using live trend data, with MCP server for Claude/ChatGPT ad management</span></a></h3>
+<p class="sum"><span class="l-zh">TikTok Q3 2026 官方產品預覽確認 Symphony Agent 上線，可將品牌 brief 結合平台即時趨勢資料生成廣告素材；新增 Agentic Hub 配備 MCP 伺服器，令 Claude 或 ChatGPT 可直接管理廣告戶口；升級版 Symphony Avatar 可大量生成 UGC 風格短片。</span><span class="l-en">TikTok&#x27;s Q3 2026 product preview confirms Symphony Agent is live, turning brand briefs into TikTok-ready ads using real-time trend data; a new Agentic Hub with an MCP server lets Claude or ChatGPT directly manage TikTok ad accounts, while upgraded avatars enable UGC-style video at scale.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">Agency 可用 AI agent 直管 TikTok 廣告戶口，減走重複操作，是新 pitch 服務點</span><span class="l-en">Agencies can pilot AI-managed TikTok campaigns via MCP — reduces manual ops and opens a new AI-driven service offering to pitch clients.</span></p>
+<div class="cfoot"><span class="src">TikTok for Business　·　<span class="l-zh">7月28日</span><span class="l-en">Jul 28</span></span><a class="more" href="https://ads.tiktok.com/business/en-US/blog/tiktok-product-preview" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">14</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.mediapost.com/publications/article/417122/google-to-launch-ai-reporting-tools-for-ads-analy.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Ads Ask Advisor 跨平台 AI 問答：三個問題即上手</span><span class="l-en">3 questions to get started with Google Ads Ask Advisor — cross-platform AI campaign diagnosis in plain language</span></a></h3>
+<p class="sum"><span class="l-zh">Google Ads 新嘅 Ask Advisor AI 代理可同時讀取 Ads、Analytics、Merchant Center 同 GMP 數據；三個立即可試嘅問題範本：「上月 CPA 最低受眾係邊個？」「哪個廣告組轉化率跌最多？」「同行業 benchmark 相比我嘅 CTR 如何？」——唔使識 SQL 即刻用得。</span><span class="l-en">Google Ads&#x27; Ask Advisor can simultaneously query Ads, Analytics, Merchant Center, and GMP data. Three starter queries to try now: &#x27;Which audience had the lowest CPA last month?&#x27; / &#x27;Which ad group saw the biggest conversion rate drop?&#x27; / &#x27;How does my CTR compare to industry benchmarks?&#x27; — no SQL needed.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">非技術同事可自助分析，唔再依賴 data analyst 出每一份報告</span><span class="l-en">Non-technical team members can self-serve campaign analysis — reduces the dependency on a data analyst for every performance report.</span></p>
+<div class="cfoot"><span class="src">MediaPost　·　<span class="l-zh">8月10日</span><span class="l-en">Aug 10</span></span><a class="more" href="https://www.mediapost.com/publications/article/417122/google-to-launch-ai-reporting-tools-for-ads-analy.html" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">15</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-hk"><span class="l-zh">香港</span><span class="l-en">HK</span></span></span></div>
+<h3><a href="https://www.marketing-interactive.com/google-maps-gets-chatty-with-gemini-powered-ask-maps-in-singapore" target="_blank" rel="noopener noreferrer"><span class="l-zh">本地 Search 做好一件事：補齊 Google 商家資料，搶 Ask Maps AI 推薦位</span><span class="l-en">One quick win for local search: complete your Google Business Profile now to capture Ask Maps AI recommendations</span></a></h3>
+<p class="sum"><span class="l-zh">Ask Maps 全球鋪開後，Gemini 推薦本地商家取決於 Google Business Profile 完整度；重點欄位：業務時間、服務標籤、最新相片、評論回覆，而家補好係最低成本 SEO 動作。</span><span class="l-en">With Ask Maps rolling out globally, Gemini&#x27;s local recommendations are driven by Google Business Profile completeness. Key fields: updated hours, service tags, recent photos, and replied reviews. Each gap directly reduces AI recommendation probability — filling them now is the lowest-cost SEO action available.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">Ask Maps 推薦位唔靠廣告費、靠資料完整度，即刻補即刻受惠</span><span class="l-en">Ask Maps recommendations aren&#x27;t bought with ad spend — they&#x27;re earned through data completeness. Fix it now and benefit immediately.</span></p>
+<div class="cfoot"><span class="src">Marketing-Interactive　·　<span class="l-zh">8月12日</span><span class="l-en">Aug 12</span></span><a class="more" href="https://www.marketing-interactive.com/google-maps-gets-chatty-with-gemini-powered-ask-maps-in-singapore" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+</main>
+<footer><div class="wrap">
+<p><span class="l-zh">今日共 <b>15</b> 條精選　·　每日更新　·　為 AI 驅動 agency 而設</span><span class="l-en"><b>15</b> picks today　·　updated daily　·　built for AI-driven agencies</span></p>
+<p><span class="l-zh">數據源：</span><span class="l-en">Sources: </span><span class="l-zh">資料來源：TechCrunch、Engadget、Meta Research Blog、Spotify Newsroom、Campaign Asia、Campaign Live、Marketing-Interactive、MediaPost、Runway Dev Changelog、PR Newswire、TikTok for Business、觀點財經</span><span class="l-en">Sources: TechCrunch, Engadget, Meta Research Blog, Spotify Newsroom, Campaign Asia, Campaign Live, Marketing-Interactive, MediaPost, Runway Dev Changelog, PR Newswire, TikTok for Business, GuanDian Finance</span></p>
+<p><span class="l-zh">內容僅供資訊參考。</span><span class="l-en">For informational reference only.</span></p>
+</div></footer>
+<div id="toast"></div>
+<script>
+const SHARE_URL="https://carriehw.github.io/ai-marketing-daily/";
+const MSG={zh:'連結已複製，可以直接 send 俾同事', en:'Link copied — share it with your team'};
+function curLang(){return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang=(l==='en'?'en':'zh-Hant');
+  try{localStorage.setItem('amd-lang',l)}catch(e){}
+  document.querySelectorAll('.langtog button').forEach(b=>b.classList.toggle('on', b.dataset.set===l));
+}
+document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+setLang(curLang()); // sync button highlight with the pre-paint language
+function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
+function legacyCopy(){const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok}
+function showBox(){const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}
+document.getElementById('share').addEventListener('click',async()=>{
+  const msg=MSG[curLang()];
+  if(navigator.share){try{await navigator.share({title:document.title,url:SHARE_URL});return}catch(e){if(e.name==='AbortError')return}}
+  try{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}catch(e){}
+  if(legacyCopy()){toast(msg);return}
+  showBox();
+});
+</script>
+</body>
+</html>
