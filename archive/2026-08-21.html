@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Marketing Daily · 2026-08-21</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Language on entry, resolved before paint (no flash):
+   1) ?lang=en|zh in the URL wins — lets the newsletter force a language regardless
+      of a visitor's stored choice — and is remembered for next time.
+   2) otherwise a previously toggled choice (localStorage) wins.
+   3) otherwise English (the page default on the <html> tag). */
+(function(){try{
+  var p=(location.search.match(/[?&]lang=(en|zh)/)||[])[1];
+  if(p){try{localStorage.setItem('amd-lang',p);}catch(e){}}
+  var l=p||localStorage.getItem('amd-lang');
+  if(l==='zh'){document.documentElement.setAttribute('data-lang','zh');document.documentElement.lang='zh-Hant';}
+  else if(l==='en'){document.documentElement.setAttribute('data-lang','en');document.documentElement.lang='en';}
+}catch(e){}})();
+</script>
+<style>
+:root{
+  --paper:#f7f5ef;--card:#fff;--ink:#101114;--muted:#656a73;
+  --accent:#5a42f4;--accent-d:#4632d4;--accent-soft:#ebe8ff;
+  --line:#dedbd2;--shadow:0 16px 45px rgba(16,17,20,.08);
+  --s1:#1763d8;--s1s:#e8f0fd;
+  --s2:#7a2fd0;--s2s:#f2e9fd;
+  --s3:#1e7c5a;--s3s:#e2f3ec;
+  --s4:#d63b2f;--s4s:#fdeceb;
+  --s5:#a45a00;--s5s:#fdf3e2;
+  --a-use-bg:#e2f3ec;--a-use-fg:#1e7c5a;
+  --a-watch-bg:#fdf3e2;--a-watch-fg:#a45a00;
+  --a-biz-bg:#ebe8ff;--a-biz-fg:#5a42f4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.6}
+/* --- language toggle: show the active language, hide the other --- */
+.l-en{display:none}
+html[data-lang="en"] .l-en{display:inline}
+html[data-lang="en"] .l-zh{display:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-top:4px solid var(--accent);background:var(--card);border-bottom:1px solid var(--line)}
+.mast{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px 0 6px}
+.mast h1{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:clamp(28px,5vw,40px);margin:0;letter-spacing:.05em}
+.mast h1 span{color:var(--accent)}
+.mast-r{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.tag{font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.langtog{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card)}
+.langtog button{font:inherit;font-size:12px;letter-spacing:.04em;padding:5px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langtog button+button{border-left:1px solid var(--line)}
+.langtog button.on{background:var(--accent);color:#fff}
+.langtog button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:0 0 14px;color:var(--muted);font-size:14px}
+.dateline b{color:var(--ink);font-weight:600}
+#share{border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:999px;cursor:pointer}
+#share:hover{background:var(--accent);border-color:var(--accent)}
+#share:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateacts{display:flex;align-items:center;gap:12px}
+.archlink{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.archlink:hover{border-color:var(--accent);color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}
+.legend .chip{margin-right:2px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+.stat{background:var(--card);text-align:center;padding:14px 4px;text-decoration:none;color:var(--ink)}
+.stat b{display:block;font-size:26px;color:var(--accent);font-variant-numeric:tabular-nums;font-family:"Songti TC","Noto Serif TC",serif}
+.stat span{font-size:11.5px;color:var(--muted);line-height:1.3;display:block}
+.stat:hover{background:var(--accent-soft)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,239,.95);backdrop-filter:blur(4px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:99px}
+nav a i{font-style:normal;color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}
+nav a:hover{border-color:var(--accent);color:var(--accent-d)}
+section{scroll-margin-top:64px;margin:32px 0}
+h2{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:21px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line);display:flex;align-items:baseline;gap:10px}
+h2 em{font-style:normal;font-size:13px;color:var(--muted);font-family:Inter,"PingFang HK","Microsoft JhengHei",sans-serif;font-weight:400}
+section:nth-of-type(1) h2{border-left:5px solid var(--s1);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(2) h2{border-left:5px solid var(--s2);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(3) h2{border-left:5px solid var(--s3);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(4) h2{border-left:5px solid var(--s4);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(5) h2{border-left:5px solid var(--s5);padding-left:14px;border-bottom:2px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.ctop{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.no{font-family:"Songti TC","Noto Serif TC",serif;font-size:20px;color:var(--accent);font-variant-numeric:tabular-nums}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-size:11px;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.act{font-weight:600}
+.a-use{background:var(--a-use-bg);color:var(--a-use-fg)}
+.a-watch{background:var(--a-watch-bg);color:var(--a-watch-fg)}
+.a-biz{background:var(--a-biz-bg);color:var(--a-biz-fg)}
+.region{border:1px solid var(--line);color:var(--muted)}
+.card h3{margin:0;font-size:16.5px;line-height:1.45;text-wrap:balance}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent-d);text-decoration:underline}
+.card h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sum{margin:0;font-size:14px;color:var(--muted);flex:1}
+.why{margin:0;font-size:13px;line-height:1.55;color:var(--accent-d);background:var(--accent-soft);border-left:3px solid var(--accent);padding:6px 10px;border-radius:0 4px 4px 0}
+.why b{display:inline-block;font-size:11px;font-weight:600;color:#fff;background:var(--accent);border-radius:3px;padding:0 6px;margin-right:7px;vertical-align:1px}
+.cfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.more{color:var(--accent);text-decoration:none;font-weight:500;white-space:nowrap}
+.more:hover{color:var(--accent-d);text-decoration:underline}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#sharebox{display:none;gap:8px;align-items:center;padding:0 0 16px}
+#sharebox.on{display:flex}
+#sharebox input{flex:1;font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--accent);border-radius:4px;color:var(--ink);background:#fff;min-width:0}
+#sharebox span{font-size:12px;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body><div style="background:#4632d4;color:#fff;padding:11px 20px;text-align:center;font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'PingFang HK','Microsoft JhengHei',sans-serif"><span class="l-zh">📚 你而家睇緊<b>往期存檔</b> · 2026年8月21日 · 星期五</span><span class="l-en">📚 You&rsquo;re viewing a <b>past issue</b> · August 21, 2026 · Friday</span>&nbsp;·&nbsp;<a href="./" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">往期目錄</span><span class="l-en">All issues</span></a>&nbsp;·&nbsp;<a href="../" style="color:#fff;text-decoration:underline;font-weight:600"><span class="l-zh">返回今日最新 →</span><span class="l-en">Back to today &rarr;</span></a></div>
+<header><div class="wrap">
+<div class="mast">
+  <h1><span class="l-zh">AI・行銷情報</span><span class="l-en">AI Marketing Daily</span></h1>
+  <div class="mast-r">
+    <span class="tag">AI Marketing Intelligence · HK / CN</span>
+    <div class="langtog" role="group" aria-label="Language / 語言">
+      <button type="button" data-set="en" class="on" aria-label="English">EN</button>
+      <button type="button" data-set="zh" aria-label="繁體中文">中文</button>
+    </div>
+  </div>
+</div>
+<div class="dateline"><span><b><span class="l-zh">2026年8月21日 · 星期五</span><span class="l-en">August 21, 2026 · Friday</span></b>　·　<span class="l-zh">今日精選 <b>19</b> 條</span><span class="l-en"><b>19</b> picks today</span></span><div class="dateacts"><a class="archlink" href="./"><span class="l-zh">📚 往期存檔</span><span class="l-en">📚 Archive</span></a><button id="share"><span class="l-zh">分享俾同事</span><span class="l-en">Share</span></button></div></div>
+<div id="sharebox"><span><span class="l-zh">長按/全選複製：</span><span class="l-en">Long-press / select all to copy:</span></span><input type="text" readonly value="https://carriehw.github.io/ai-marketing-daily/"></div>
+<div class="legend"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="l-zh">今日試得／慳時間</span><span class="l-en">try today / save time</span>　<span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="l-zh">平台或趨勢變動</span><span class="l-en">platform / trend shift</span>　<span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="l-zh">agency 生態／客戶／合規</span><span class="l-en">agency / client / compliance</span></div>
+<div class="stats"><a class="stat" href="#sec0"><b>6</b><span><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></span></a><a class="stat" href="#sec1"><b>5</b><span><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span></span></a><a class="stat" href="#sec2"><b>2</b><span><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span></span></a><a class="stat" href="#sec3"><b>3</b><span><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span></span></a><a class="stat" href="#sec4"><b>3</b><span><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span></span></a></div>
+</div></header>
+<nav><div class="wrap"><a href="#sec0"><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><i>6</i></a><a href="#sec1"><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><i>5</i></a><a href="#sec2"><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><i>2</i></a><a href="#sec3"><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><i>3</i></a><a href="#sec4"><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><i>3</i></a></div></nav>
+<main class="wrap">
+<section id="sec0"><h2><span class="l-zh">AI 大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span><em><span class="l-zh">6 條</span><span class="l-en">6 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">01</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Stripe 以 75 億美元收購 OpenRouter，AI 模型路由成核心基礎設施</span><span class="l-en">Stripe Acquires OpenRouter for $7.5B, Making AI Token Routing Core Infrastructure</span></a></h3>
+<p class="sum"><span class="l-zh">Stripe 以 75 億美元收購 AI 模型路由平台 OpenRouter，較三個月前估值溢價近 6 倍，坐穩 AI 時代開發者支付及模型費用管理核心位置。</span><span class="l-en">Stripe confirmed acquiring OpenRouter for $7.5B — nearly 6x its valuation three months prior — positioning itself at the center of AI developer spending and model cost management.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 工具採購成企業主要開支，品牌需理解模型路由平台如何影響 AI 預算分配。</span><span class="l-en">AI tool spend is a major enterprise budget line; brands must understand how routing platforms shape their AI cost allocation.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">02</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 推出零數據保留安全監控，直接狙擊 Anthropic 企業策略</span><span class="l-en">OpenAI Launches Zero-Retention Safety Monitoring to Counter Anthropic&#x27;s Data Policy</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 推出跨會話安全監控，在零數據保留前提下偵測濫用，直接回應 Anthropic Fable 模型 30 日數據保留政策引發的企業客戶憂慮。</span><span class="l-en">OpenAI launched cross-session safety monitoring with zero data retention, countering backlash over Anthropic&#x27;s 30-day retention policy for enterprise Fable-class models.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">企業客戶對數據私隱敏感，此競爭動態影響品牌選用 AI 供應商的決策。</span><span class="l-en">Enterprise data privacy is decisive in AI vendor selection — this competitive shift directly affects agency procurement decisions.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">03</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Ramp 數據：Anthropic 企業市佔 44% 領先，OpenAI 追勢更急</span><span class="l-en">Ramp Data: Anthropic Leads Enterprise at 44% but OpenAI Growing Faster in Q3</span></a></h3>
+<p class="sum"><span class="l-zh">追蹤 7 萬家美國企業的 Ramp 數據顯示 Anthropic 企業市佔 44%、OpenAI 40%，而 Q3 2026 OpenAI 增速更快，料由 GPT-5.6 Sol 推出帶動。</span><span class="l-en">Ramp&#x27;s 70,000+ U.S. business dataset shows Anthropic at 44% vs OpenAI&#x27;s 40% enterprise share, but OpenAI is growing faster in Q3 2026 driven by GPT-5.6 Sol.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 市場份額快速變動，marketer 需跟進主流工具更替，確保採用最具效益的供應商。</span><span class="l-en">Enterprise AI market share is volatile — marketers must track vendor shifts to stay on the most cost-effective platform.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">04</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Pew 研究：ChatGPT 推出後三成五新網頁具 AI 寫作特徵</span><span class="l-en">Pew Research: 35% of Web Pages Published After ChatGPT Show AI Authorship Signs</span></a></h3>
+<p class="sum"><span class="l-zh">Pew Research 分析 50 萬個英語網頁，ChatGPT 推出後發佈的網頁 35% 具明顯 AI 創作特徵，.com 域名 AI 內容比例是 .edu/.gov 的10 倍。</span><span class="l-en">Pew analyzed 500,000 English web pages: 35% of post-ChatGPT pages show significant AI authorship signs, with .com domains showing ~10x more AI content than .edu/.gov.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 內容泛濫令品牌原創聲音更具競爭優勢，需重新評估人味內容策略。</span><span class="l-en">AI content saturation makes authentic brand voice a competitive differentiator — rethink your human-authored content strategy.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">05</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Grok 出現亂碼故障，xAI 同期大量研究員離職</span><span class="l-en">Grok Sends Gibberish Responses as ~50 xAI Researchers Depart</span></a></h3>
+<p class="sum"><span class="l-zh">Grok.com 出現輸出亂碼故障，同期 xAI 約 50 名研究員及工程師相繼離職，外界對 xAI 模型穩定性及研發能力產生質疑。</span><span class="l-en">Grok.com generated nonsensical responses, coinciding with reports of ~50 xAI researchers and engineers departing, raising serious doubts about the platform&#x27;s reliability.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">企業選用 AI 工具時穩定性至關重要，xAI 的技術及人才問題提示其 B2B 供應商風險。</span><span class="l-en">Stability is critical for enterprise AI tools — xAI&#x27;s technical and talent issues are a red flag for B2B reliance on Grok.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">06</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.anthropic.com/research/claude-accelerates-protein-design" target="_blank" rel="noopener noreferrer"><span class="l-zh">Anthropic Claude 自主設計蛋白質，成功率超越人類研究員基準</span><span class="l-en">Anthropic&#x27;s Claude Autonomously Designs Proteins at 35% Hit Rate, Beating Human Baseline</span></a></h3>
+<p class="sum"><span class="l-zh">Anthropic 研究顯示 Claude 針對 14/15 個目標設計出蛋白質結合物，成功率 22-35%，優於人類研究員 10-15% 基準，部分設計破親和力紀錄。</span><span class="l-en">Anthropic research shows Claude designed protein binders for 14/15 targets at 22–35% hit rates vs the 10–15% human baseline, with some designs exceeding published affinity records.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI 在科研領域突破人類基準，預示各行業研發轉型，agency 應早著先機。</span><span class="l-en">AI surpassing human benchmarks in science signals broader professional disruption — agencies should anticipate evolving client needs in specialized domains.</span></p>
+<div class="cfoot"><span class="src">Anthropic　·　<span class="l-zh">8月18日</span><span class="l-en">Aug 18</span></span><a class="more" href="https://www.anthropic.com/research/claude-accelerates-protein-design" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec1"><h2><span class="l-zh">廣告平台 &amp; 行銷科技</span><span class="l-en">Ad Platforms &amp; MarTech</span><em><span class="l-zh">5 條</span><span class="l-en">5 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">07</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 廣告業務擴展至 31 個歐洲市場，每週活躍用戶達十億</span><span class="l-en">OpenAI Expands Ad Business to 31 European Markets as ChatGPT Hits 1B Weekly Users</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 宣佈廣告試點擴展至德法西等 31 個歐洲市場，ChatGPT 每週活躍用戶達十億，其中兩成具購買意圖，廣告收入自 8 月初增長逾 25%。</span><span class="l-en">OpenAI expanded its ad pilot to 31 European markets. ChatGPT hits 1 billion weekly active users with ~20% commercial intent. Ad revenue grew 25%+ since early August.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">ChatGPT 用戶規模同購買意圖顯示其廣告潛力，MarTech 預算規劃需納入 LLM 平台。</span><span class="l-en">ChatGPT&#x27;s billion-user scale and high commercial intent signal a major emerging ad channel to factor into 2027 media planning.</span></p>
+<div class="cfoot"><span class="src">AdWeek　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">08</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/marketing/openai-builds-offerings-on-consent-as-it-expands-chatgpt-ads-to-europe/" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 以 GDPR 同意框架進軍歐洲，ChatGPT 雙層廣告制度落地</span><span class="l-en">OpenAI Uses GDPR Consent Framework for EU ChatGPT Ads: Two-Tier System Launches</span></a></h3>
+<p class="sum"><span class="l-zh">OpenAI 在 GDPR 框架下取得用戶同意：同意者獲個人化廣告，拒絕者仍見情境廣告，雙層制方案或催生付費升級壓力。</span><span class="l-en">OpenAI proactively seeks GDPR consent for personalized ads. Consenting users get full targeting; non-consenters see contextual-only ads. Privacy experts flag potential paid upgrade pressure.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告主應關注 ChatGPT 歐洲用戶同意率，評估個人化定向效果再規劃預算。</span><span class="l-en">Advertisers should monitor EU consent rates to gauge targeting effectiveness before committing budget to this new ChatGPT channel.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://digiday.com/marketing/openai-builds-offerings-on-consent-as-it-expands-chatgpt-ads-to-europe/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">09</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.marketing-interactive.com/meta-ai-gets-new-tools-to-analyse-and-optimise-ad-campaigns" target="_blank" rel="noopener noreferrer"><span class="l-zh">Meta AI 新增廣告分析工具：對話式查詢廣告表現</span><span class="l-en">Meta AI Adds Conversational Ad Analysis Tools for Campaign Optimisation</span></a></h3>
+<p class="sum"><span class="l-zh">Meta AI 直接連結廣告帳戶，廣告主可對話查詢高效受眾、找出表現差廣告並生成報告；可整合 Google Workspace，初期免費，大量使用須升級 Meta One。</span><span class="l-en">Meta AI now connects to ad accounts for conversational audience analysis, creative performance insights, and automated reports. Google Workspace integration available; heavy use requires Meta One subscription.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告主可用對話式 AI 替代傳統報告流程，降低數據分析門檻同時間成本。</span><span class="l-en">SMB advertisers can replace manual reporting with conversational AI analysis — lower skill barrier, faster optimization cycles.</span></p>
+<div class="cfoot"><span class="src">Marketing-Interactive　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://www.marketing-interactive.com/meta-ai-gets-new-tools-to-analyse-and-optimise-ad-campaigns" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">10</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://blog.google/products/ads-commerce/ai-max-testing-planning-tools/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google AI Max 新增多廣告系列 A/B 測試及 Performance Planner 升級</span><span class="l-en">Google AI Max Gets Multi-Campaign A/B Testing and Upgraded Performance Planner</span></a></h3>
+<p class="sum"><span class="l-zh">Google AI Max 搜尋廣告新增多廣告系列 A/B 測試、品牌與地點控制實驗，及強化版 Performance Planner，幫助廣告主更安心擴大 AI 廣告投入。</span><span class="l-en">Google AI Max search campaigns now include multi-campaign A/B testing, brand and location control experiments, and an upgraded Performance Planner to help advertisers scale AI-driven campaigns with confidence.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">可即時測試 AI Max 對廣告成效的影響，數據支撐決策，降低擴大預算的風險。</span><span class="l-en">Advertisers can now test AI Max impact with data before scaling budgets, reducing risk when committing to AI-driven campaigns.</span></p>
+<div class="cfoot"><span class="src">Google Ads &amp; Commerce Blog　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://blog.google/products/ads-commerce/ai-max-testing-planning-tools/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">11</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/media/media-briefing-ads-for-ai-agents-have-a-measurement-problem/" target="_blank" rel="noopener noreferrer"><span class="l-zh">AI 代理廣告量測陷困局：無點擊漏斗、歸因框架未成形</span><span class="l-en">Advertising to AI Agents Has a Measurement Problem: No Clicks, No Attribution Framework</span></a></h3>
+<p class="sum"><span class="l-zh">出版商向 AI 代理投放廣告但缺乏歸因機制：無點擊漏斗、多來源合成答案令廣告效果無從追蹤，IAB 框架尚未定案。</span><span class="l-en">As publishers target AI agents with ads, attribution is broken: no click equivalent, multi-source synthesis makes crediting any single placement nearly impossible. IAB framework not yet finalized.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告主需暫緩大規模投放 AI 代理廣告，先等業界量測標準成形，避免浪費預算。</span><span class="l-en">Hold off scaling AI-agent ad spend until measurement standards emerge — current ROAS tracking is unreliable and risks wasted budgets.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://digiday.com/media/media-briefing-ads-for-ai-agents-have-a-measurement-problem/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec2"><h2><span class="l-zh">創意生產工具</span><span class="l-en">Creative Production Tools</span><em><span class="l-zh">2 條</span><span class="l-en">2 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">12</span><span class="chips"><span class="chip act a-use"><span class="l-zh">可即用</span><span class="l-en">Ready to use</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://blog.google/products/ads-commerce/the-small-brief/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Google Flow 整合 Veo 3.1 一站式 AI 廣告製作，免費版每日 50 積分</span><span class="l-en">Google Flow Integrates Veo 3.1 for End-to-End AI Ad Production, Free Tier Offers 50 Daily Credits</span></a></h3>
+<p class="sum"><span class="l-zh">Google Flow 整合 Gemini Omni 及 Veo 3.1，提供從策劃到精修的一站式 AI 廣告製作流程，創作人成功為小企業製作高質素廣告片，免費版提供每日 50 積分。</span><span class="l-en">Google Flow combines Gemini Omni and Veo 3.1 for end-to-end AI creative production. Industry creators produced studio-quality campaigns for SMBs, with a free tier offering 50 daily credits.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">中小企業可低成本製作專業廣告影片，縮短製作週期，直接改變廣告素材策略。</span><span class="l-en">SMEs can now produce professional ad videos at significantly lower cost, shortening production cycles and reshaping creative strategy.</span></p>
+<div class="cfoot"><span class="src">Google Ads &amp; Commerce Blog　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://blog.google/products/ads-commerce/the-small-brief/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">13</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.socialmediatoday.com/news/youtube-rolls-out-improvements-for-connected-tv/828218/" target="_blank" rel="noopener noreferrer"><span class="l-zh">YouTube 大幅升級 CTV 體驗，播放清單可轉為連集節目</span><span class="l-en">YouTube Rolls Out Major CTV Improvements, Playlists Can Now Become Episodic Shows</span></a></h3>
+<p class="sum"><span class="l-zh">YouTube 創作者可將播放清單轉為連集節目，新增節目與播客分頁，平台每日 CTV 觀看超過十億小時。</span><span class="l-en">YouTube creators can now convert playlists into episodic shows with dedicated pages. New show and podcast tabs launched, with over 1 billion CTV viewing hours daily.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">廣告主應將 CTV 納入媒體主力渠道，連集格式可提升廣告環境及觀眾黏著度。</span><span class="l-en">Advertisers should prioritize CTV in media plans; episodic content formats improve ad environment quality and audience retention.</span></p>
+<div class="cfoot"><span class="src">Social Media Today　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://www.socialmediatoday.com/news/youtube-rolls-out-improvements-for-connected-tv/828218/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec3"><h2><span class="l-zh">行業影響 &amp; 品牌案例</span><span class="l-en">Industry &amp; Brand Cases</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">14</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://digiday.com/media-buying/waste-in-the-system-why-georgia-pacific-is-holding-out-on-buying-agents/" target="_blank" rel="noopener noreferrer"><span class="l-zh">品牌商對 AI 媒購代理持保留態度：先整頓供應鏈再自動化</span><span class="l-en">&#x27;Waste in the System&#x27;: Why Georgia-Pacific Is Holding Out on AI Buying Agents</span></a></h3>
+<p class="sum"><span class="l-zh">Georgia-Pacific 高管指出 AI 媒購代理只會將現有浪費自動化。該品牌花兩年整頓 SSP 供應鏈，待質量達標才考慮引入代理系統，業界代理採購標準至今未確立。</span><span class="l-en">Georgia-Pacific&#x27;s senior director argues AI buying agents automate waste, not fix it. The brand spent two years cleaning its supply chain before considering agent deployment. No industry standards yet govern agent-to-agent buying.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">品牌主在採用 AI 媒購前須先審視數據質量與供應鏈健康度，否則只會加速浪費。</span><span class="l-en">Brands must audit supply chain quality before deploying buying agents — garbage in, garbage out at automated speed.</span></p>
+<div class="cfoot"><span class="src">Digiday　·　<span class="l-zh">8月19日</span><span class="l-en">Aug 19</span></span><a class="more" href="https://digiday.com/media-buying/waste-in-the-system-why-georgia-pacific-is-holding-out-on-buying-agents/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">15</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.campaignasia.com/article/coca-cola-is-using-an-ai-system-to-manage-its-brand-design-across-200-markets/4y75qh9f9tceerakfgfkh9sgng" target="_blank" rel="noopener noreferrer"><span class="l-zh">可口可樂用 AI「Project Fizzion」統一管理全球 200 市場品牌設計</span><span class="l-en">Coca-Cola Uses AI System &#x27;Project Fizzion&#x27; to Manage Brand Design Across 200 Markets</span></a></h3>
+<p class="sum"><span class="l-zh">可口可樂聯同 Adobe 開發 Project Fizzion，將靜態 PDF 品牌指引轉化為動態數碼 StyleIDs，實現跨 200 個市場的品牌設計自動化一致性管理。</span><span class="l-en">Coca-Cola partnered with Adobe on Project Fizzion, converting static PDF brand guidelines into dynamic digital StyleIDs for AI-managed brand design consistency across 200 global markets.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">企業級 AI 品牌管理成趨勢，大型廣告主應評估以 AI 替代人工品牌審核流程。</span><span class="l-en">A bellwether case for enterprise AI brand governance — large advertisers should evaluate AI-managed design systems to replace manual brand review.</span></p>
+<div class="cfoot"><span class="src">Campaign Asia　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://www.campaignasia.com/article/coca-cola-is-using-an-ai-system-to-manage-its-brand-design-across-200-markets/4y75qh9f9tceerakfgfkh9sgng" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">16</span><span class="chips"><span class="chip act a-watch"><span class="l-zh">要留意</span><span class="l-en">Worth watching</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/" target="_blank" rel="noopener noreferrer"><span class="l-zh">Binance 推出 Agent OS，AI 可自主執行加密貨幣交易但風控靠用戶</span><span class="l-en">Binance Launches Agent OS Letting AI Agents Trade Crypto Autonomously</span></a></h3>
+<p class="sum"><span class="l-zh">Binance 推出 Agent OS 平台，支援 ChatGPT、Claude Code 等 AI 自主執行加密貨幣交易，平台無法監控 Agent 決策邏輯，風險管控完全由用戶負責。</span><span class="l-en">Binance launched Agent OS enabling AI agents like ChatGPT and Claude Code to autonomously execute crypto trades. Binance cannot monitor agent reasoning — risk control falls entirely on users.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">AI Agent 進入金融執行層是重大趨勢，marketer 需理解自主 AI 的監管風險與邊界。</span><span class="l-en">AI agents entering financial execution signals a major expansion of autonomous AI scope — marketers need to understand emerging regulatory risks.</span></p>
+<div class="cfoot"><span class="src">TechCrunch　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+<section id="sec4"><h2><span class="l-zh">即學技巧 &amp; 玩法</span><span class="l-en">Quick Tips &amp; How-tos</span><em><span class="l-zh">3 條</span><span class="l-en">3 items</span></em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">17</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.thedrum.com/opinion/every-weakness-in-today-s-signal-architecture-becomes-an-automated-weakness-tomorrow" target="_blank" rel="noopener noreferrer"><span class="l-zh">AI 修不好你的訊號架構，只會把缺陷放大</span><span class="l-en">AI Won&#x27;t Fix Your Signal Architecture – It Will Amplify Its Flaws</span></a></h3>
+<p class="sum"><span class="l-zh">Gartner 預測 AI 代理將於 2028 年介入 15 兆美元 B2B 採購。文章警告代理無法辨別訊號質量，壞假設會全速複製到所有帳戶，第一方數據架構才是核心競爭壁壘。</span><span class="l-en">Gartner projects AI agents will mediate $15T in B2B purchases by 2028. Warning: agents optimize blindly, replicating bad assumptions at full speed. First-party signal architecture quality is the next competitive moat.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">MarTech 團隊須優先整頓第一方數據質量與訊號層級，否則 AI 只會加速錯誤決策。</span><span class="l-en">Martech teams must prioritize first-party data quality and signal hierarchy now — AI automation amplifies data flaws at full speed.</span></p>
+<div class="cfoot"><span class="src">The Drum　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://www.thedrum.com/opinion/every-weakness-in-today-s-signal-architecture-becomes-an-automated-weakness-tomorrow" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">18</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://www.campaignasia.com/article/80-of-google-searches-with-ai-generated-summaries-end-without-a-click/4y6zpfcgvtp9txqjqvfwt0maxf" target="_blank" rel="noopener noreferrer"><span class="l-zh">80% 帶 AI 摘要的 Google 搜尋在無點擊下結束</span><span class="l-en">80% of Google Searches with AI Summaries End Without a Single Click</span></a></h3>
+<p class="sum"><span class="l-zh">研究顯示帶有 AI 生成摘要的 Google 搜尋中 80% 用戶不點擊任何連結，傳統 SEO 排名對流量的影響正在瓦解，內容需讓 AI 可讀取。</span><span class="l-en">Research finds 80% of Google searches with AI summaries end without any click. Traditional SEO rankings are decoupled from traffic; producing machine-readable content is now critical for product discovery.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">SEO 策略需轉型：確保內容被 AI 摘要採用，比追排名帶來的點擊流量更重要。</span><span class="l-en">SEO strategy must pivot — optimize for AI summary inclusion over click-rank, or face invisible traffic losses.</span></p>
+<div class="cfoot"><span class="src">Campaign Asia　·　<span class="l-zh">8月20日</span><span class="l-en">Aug 20</span></span><a class="more" href="https://www.campaignasia.com/article/80-of-google-searches-with-ai-generated-summaries-end-without-a-click/4y6zpfcgvtp9txqjqvfwt0maxf" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">19</span><span class="chips"><span class="chip act a-biz"><span class="l-zh">影響生意</span><span class="l-en">Business impact</span></span><span class="chip region r-intl"><span class="l-zh">國際</span><span class="l-en">Global</span></span></span></div>
+<h3><a href="https://adweek.com/brand-marketing/cmos-are-the-least-proficient-at-ai-in-the-marketing-org-research-finds/" target="_blank" rel="noopener noreferrer"><span class="l-zh">81% 行銷人認為高層 AI 技能最弱，CMO 成最大短板</span><span class="l-en">81% of Marketers Say Senior Leaders Are Least AI-Proficient, CMOs Are the Biggest Gap</span></a></h3>
+<p class="sum"><span class="l-zh">NewtonX 與 AdWeek 調查 500 位行銷人，47% 認為高層落後所有職級；Gartner 指僅 15% CEO 認為 CMO 具備足夠 AI 技能，形成由上而下的技能鴻溝。</span><span class="l-en">A NewtonX/AdWeek survey of 500 marketers found 47% believe senior leadership lags all other levels in AI skills. Gartner data shows only 15% of CEOs feel their CMO has sufficient AI capabilities.</span></p>
+<p class="why"><b><span class="l-zh">點解重要</span><span class="l-en">Why it matters</span></b><span class="l-zh">CMO 若不主動提升 AI 認知，將失去對數位廣告策略的話語權，影響業務競爭力。</span><span class="l-en">CMOs who don&#x27;t upskill on AI risk losing strategic authority over digital advertising — undermining overall business competitiveness.</span></p>
+<div class="cfoot"><span class="src">AdWeek　·　<span class="l-zh">8月21日</span><span class="l-en">Aug 21</span></span><a class="more" href="https://adweek.com/brand-marketing/cmos-are-the-least-proficient-at-ai-in-the-marketing-org-research-finds/" target="_blank" rel="noopener noreferrer"><span class="l-zh">閱讀原文 ↗</span><span class="l-en">Read more ↗</span></a></div>
+</article></div></section>
+</main>
+<footer><div class="wrap">
+<p><span class="l-zh">今日共 <b>19</b> 條精選　·　每日更新　·　為 AI 驅動 agency 而設</span><span class="l-en"><b>19</b> picks today　·　updated daily　·　built for AI-driven agencies</span></p>
+<p><span class="l-zh">數據源：</span><span class="l-en">Sources: </span><span class="l-zh">來源：TechCrunch、Anthropic、AdWeek、Digiday、Marketing-Interactive、Google Ads &amp; Commerce Blog、Campaign Asia、The Drum</span><span class="l-en">Sources: TechCrunch, Anthropic, AdWeek, Digiday, Marketing-Interactive, Google Ads &amp; Commerce Blog, Campaign Asia, The Drum</span></p>
+<p><span class="l-zh">內容僅供資訊參考。</span><span class="l-en">For informational reference only.</span></p>
+</div></footer>
+<div id="toast"></div>
+<script>
+const SHARE_URL="https://carriehw.github.io/ai-marketing-daily/";
+const MSG={zh:'連結已複製，可以直接 send 俾同事', en:'Link copied — share it with your team'};
+function curLang(){return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang=(l==='en'?'en':'zh-Hant');
+  try{localStorage.setItem('amd-lang',l)}catch(e){}
+  document.querySelectorAll('.langtog button').forEach(b=>b.classList.toggle('on', b.dataset.set===l));
+}
+document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+setLang(curLang()); // sync button highlight with the pre-paint language
+function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
+function legacyCopy(){const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok}
+function showBox(){const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}
+document.getElementById('share').addEventListener('click',async()=>{
+  const msg=MSG[curLang()];
+  if(navigator.share){try{await navigator.share({title:document.title,url:SHARE_URL});return}catch(e){if(e.name==='AbortError')return}}
+  try{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}catch(e){}
+  if(legacyCopy()){toast(msg);return}
+  showBox();
+});
+</script>
+</body>
+</html>
