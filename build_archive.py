@@ -98,10 +98,10 @@ banner = (
     f'<div style="background:{JADE_D};color:#fff;padding:11px 20px;text-align:center;'
     f'font:14px/1.55 -apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,\'Helvetica Neue\','
     f'Arial,\'PingFang HK\',\'Microsoft JhengHei\',sans-serif">'
-    f'<span class="l-zh">📚 你而家睇緊<b>往期存檔</b> · {html.escape(ZH_DISP)}</span>'
+    f'<span class="l-zh">📚 你正在閱讀<b>歷史存檔</b> · {html.escape(ZH_DISP)}</span>'
     f'<span class="l-en">📚 You&rsquo;re viewing a <b>past issue</b> · {html.escape(EN_DISP)}</span>'
     f'&nbsp;·&nbsp;<a href="./" style="color:#fff;text-decoration:underline;font-weight:600">'
-    f'<span class="l-zh">往期目錄</span><span class="l-en">All issues</span></a>'
+    f'<span class="l-zh">全部期數</span><span class="l-en">All issues</span></a>'
     f'&nbsp;·&nbsp;<a href="../" style="color:#fff;text-decoration:underline;font-weight:600">'
     f'<span class="l-zh">返回今日最新 →</span><span class="l-en">Back to today &rarr;</span></a>'
     f'</div>'
@@ -153,7 +153,7 @@ for e in entries:
         f'</a>'
     )
 rows_html = "\n".join(rows) if rows else (
-    '<p class="empty"><span class="l-zh">未有往期記錄，明日起會逐日累積。</span>'
+    '<p class="empty"><span class="l-zh">尚無歷史記錄，明日起會逐日累積。</span>'
     '<span class="l-en">No past issues yet — they accumulate daily from today.</span></p>')
 
 count = len(entries)
@@ -207,7 +207,7 @@ footer{{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddi
 <header><div class="wrap">
 <div class="mast">
   <div>
-    <h1><span class="l-zh">往期存檔</span><span class="l-en"><span class="k">Archive</span></span></h1>
+    <h1><span class="l-zh">歷史存檔</span><span class="l-en"><span class="k">Archive</span></span></h1>
     <div class="sub"><span class="l-zh">{html.escape(TITLE)} · 每日精選逐日累積</span><span class="l-en">{html.escape(TITLE_EN)} · daily issues, newest first</span></div>
   </div>
   <div class="mast-r">
@@ -223,7 +223,7 @@ footer{{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddi
 <p class="sub" style="margin:0 0 16px"><span class="l-zh">共 <b>{count}</b> 期</span><span class="l-en"><b>{count}</b> issues</span></p>
 {rows_html}
 </main>
-<footer><div class="wrap"><span class="l-zh">往期存檔 · 由 {html.escape(_short_zh(entries[-1]['date']) if entries else '')} 起</span><span class="l-en">Archive · since {html.escape(_short_en(entries[-1]['date']) if entries else '')}</span></div></footer>
+<footer><div class="wrap"><span class="l-zh">歷史存檔 · 由 {html.escape(_short_zh(entries[-1]['date']) if entries else '')} 起</span><span class="l-en">Archive · since {html.escape(_short_en(entries[-1]['date']) if entries else '')}</span></div></footer>
 <script>
 function setLang(l){{
   document.documentElement.setAttribute('data-lang',l);
