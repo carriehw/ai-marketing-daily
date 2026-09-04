@@ -3,11 +3,15 @@
  "site_title_en": "AI Marketing Daily",
  "site_tagline": "AI Marketing Intelligence · HK / CN",
  "site_url": "https://carriehw.github.io/ai-marketing-daily/",
- "date": "2026-09-03",
- "date_display": "2026年9月3日 · 星期四",
- "date_display_en": "September 3, 2026 · Thursday",
- "sources_note": "精選自 Anthropic、Google DeepMind、TechCrunch、The Verge、Search Engine Land、Ad Age、AdWeek、Campaign Asia、科創板日報、新浪科技等一級來源，每條均核實發布日期。",
- "sources_note_en": "Curated from Anthropic, Google DeepMind, TechCrunch, The Verge, Search Engine Land, Ad Age, AdWeek, Campaign Asia, and major Chinese tech media — all publication dates verified.",
+ "date": "2026-09-04",
+ "date_display": "2026年9月4日 · 星期五",
+ "date_display_en": "September 4, 2026 · Friday",
+ "thesis": "AI 基礎模型成本大幅下降與代理 AI 能力躍升，正同步重塑廣告代理商的服務架構與大型廣告主的選代理標準。",
+ "thesis_en": "A simultaneous drop in AI foundation model costs and leap in agentic AI capability is reshaping both agency service delivery and how major advertisers select their partners.",
+ "thesis_note": "今日三個版塊共同指向同一訊號：Claude Fable 5.1 快取費降 75%、Gemini 3.8 Flash 效能超越更大型模型、Sand.ai 開源千億視頻模型，AI 基礎設施成本快速商品化；與此同時，GPT-6 Astra 代理 AI 能力正式到來，加上百事可樂不經比稿直接以 AI 整合能力為核心標準換代理商，已有足夠訊號顯示：AI 能力差距正成為大型客戶選擇代理商的決定性因素，而非加分項。",
+ "thesis_note_en": "Three sections today converge on a single signal: Claude Fable 5.1 cache costs down 75%, Gemini 3.8 Flash outperforming larger models, and Sand.ai open-sourcing a 100B+ video model — AI infrastructure costs are commoditizing fast. Simultaneously, GPT-6 Astra's agentic capabilities going live, combined with PepsiCo appointing Publicis based on AI integration without a pitch, provides clear evidence: AI capability gaps are becoming the decisive factor — not a differentiator — in major client agency selection.",
+ "sources_note": "今日新聞來源涵蓋 Bloomberg、TechCrunch、Google Blog、VentureBeat、Al Jazeera、Marketing Dive、TechNode、36氪、Adweek、Marketing-Interactive、Digiday 及可靈官方部落格，所有連結均為原文永久連結。",
+ "sources_note_en": "Today's sources include Bloomberg, TechCrunch, Google Blog, VentureBeat, Al Jazeera, Marketing Dive, TechNode, 36Kr, Adweek, Marketing-Interactive, Digiday, and the official Kling AI blog. All links are direct article permalinks.",
  "sections": [
   "AI 大模型 & 市場動態",
   "廣告平台 & 行銷科技",
@@ -24,256 +28,416 @@
  ],
  "items": [
   {
-   "title": "Anthropic 發布 Claude Fable 5.1：代理任務成本降 45%",
-   "title_en": "Anthropic Launches Claude Fable 5.1 with 45% Cost Reduction on Agentic Tasks",
-   "summary": "Fable 5.1 即日全面開放，代理任務成本最高降 45%，推理、程式碼及多語言基準成績刷新。Mythos 5.1 限核准合作夥伴。",
-   "summary_en": "Claude Fable 5.1 is now generally available with up to 45% lower costs on agentic tasks, setting new benchmarks in reasoning, coding, and multilingual performance. Mythos 5.1 is limited to approved partners.",
-   "source": "Anthropic Newsroom",
-   "url": "https://www.anthropic.com/news",
-   "time": "9月1日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "可即用",
-   "region": "國際",
-   "why": "用 Claude API 做 AI 自動化的 agency，成本即降，可重新 pitch AI 增值服務。",
-   "why_en": "Agencies running Claude API workflows get an immediate cost break — update pricing in your AI service proposals now."
-  },
-  {
-   "title": "Anthropic 推出企業前沿安全防護 EFS：零數據留存＋客戶自管加密",
-   "title_en": "Anthropic Launches Enterprise Frontier Safety: Zero Data Retention for Fortune 100 Clients",
-   "summary": "EFS 提供零數據留存及客戶自管加密，逾百家 Fortune 100 企業（含 Comcast、KPMG、萬事達卡、Salesforce）共同參與研發，免費附加，秋季分階段推出。",
-   "summary_en": "Enterprise Frontier Safety (EFS) offers zero data retention and customer-managed encryption, co-developed with 100+ Fortune 100 companies including Comcast, KPMG, Mastercard, and Salesforce. Free add-on, rolling out in phases this fall.",
-   "source": "Anthropic Newsroom",
-   "url": "https://www.anthropic.com/news",
-   "time": "9月1日",
+   "title": "OpenAI 發布 GPT-6 Astra：105 萬 token 上下文，代理 AI 正式到來",
+   "title_en": "OpenAI Launches GPT-6 Astra: 1.05M Token Context, Agentic AI Goes Live",
+   "summary": "OpenAI 正式推出旗艦模型 GPT-6 Astra，率先向企業用戶開放，支援 105 萬 token 上下文及完整電腦操控能力，因網路安全能力達臨界門檻而實施存取限制。",
+   "summary_en": "OpenAI officially launches flagship GPT-6 Astra for enterprise clients first, with 1.05M token context and full computer-use capability, with access restrictions due to a critical cybersecurity threshold.",
+   "source": "Bloomberg",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-03/openai-rolls-out-gpt-6-astra-model-with-added-cyber-guardrails",
+   "time": "9月3日",
    "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "企業客戶對 AI 數據合規愈來愈敏感，EFS 是 pitch 大客的新說服點。",
-   "why_en": "Enterprise clients increasingly demand AI data compliance — EFS gives you a credible security pitch for regulated-industry accounts."
+   "why": "代理 AI 可自動執行多步行銷工作流，評估整合可行性與業務風險。",
+   "why_en": "Agentic AI can automate multi-step marketing workflows — assess integration feasibility and business risk now.",
+   "highlights": [
+    "GPT-6 Astra 支援 105 萬 token 上下文視窗，可同時處理整份行銷策略文件庫。",
+    "模型具備自主電腦操控能力，可直接執行廣告投放、數據分析等重複性任務。",
+    "OpenAI 因 Astra 達到「關鍵網路安全門檻」而設嚴格存取審查，API 定價約每百萬 input tokens $10。"
+   ],
+   "highlights_en": [
+    "GPT-6 Astra supports a 1.05M token context window, enough to process an entire marketing strategy document library at once.",
+    "The model's computer-use capability enables autonomous execution of repetitive tasks such as ad campaign management and data analysis.",
+    "OpenAI imposes strict access controls after Astra crossed a 'critical cybersecurity threshold'; API pricing is approximately $10 per million input tokens."
+   ],
+   "pattern": "TechCrunch 報道指 Astra 是首個通過 OpenAI 關鍵網路安全基準的大模型，可自主發現零日漏洞，Greg Brockman 宣布「AGI 時代到來」。",
+   "pattern_en": "TechCrunch reports Astra is the first LLM to cross OpenAI's critical cybersecurity threshold, capable of autonomous zero-day exploit discovery; Greg Brockman declared the 'AGI era has arrived.'"
   },
   {
-   "title": "Google 發布 Gemini 3.8 Flash 及 Flash Cyber：六週第三款 Flash 模型",
-   "title_en": "Google Releases Gemini 3.8 Flash and Flash Cyber: Third Flash Model in Six Weeks",
-   "summary": "Gemini 3.8 Flash 入門定價 $0.75/$3.75（百萬 token），優惠期至 2026 年底。Flash Cyber 是網路安全專版，限受信任防禦者使用。",
-   "summary_en": "Gemini 3.8 Flash launches at $0.75/$3.75 per million tokens with a discount through end of 2026. Flash Cyber is a cybersecurity-specialized variant available only to trusted defenders.",
-   "source": "Google DeepMind Blog",
-   "url": "https://deepmind.google/blog/",
+   "title": "Google 推出 Gemini 3.8 Flash：效能超越更大型模型，每百萬 token 僅 $0.75",
+   "title_en": "Google Launches Gemini 3.8 Flash: Outperforms Larger Models at Just $0.75/M Tokens",
+   "summary": "Google 推出 Gemini 3.8 Flash 及網路安全特化版 3.8 Flash Cyber，Flash 版在多步驟推理與軟體工程基準上超越更大型前沿模型，每百萬 input token 定價僅 $0.75。",
+   "summary_en": "Google launches Gemini 3.8 Flash and cybersecurity-specialized 3.8 Flash Cyber; Flash outperforms larger frontier models on multi-step reasoning and coding benchmarks at just $0.75 per million input tokens.",
+   "source": "Google Blog",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber",
    "time": "9月2日",
    "section": "AI 大模型 & 市場動態",
    "action": "可即用",
    "region": "國際",
-   "why": "低成本 Flash 適合大批量廣告文案生成及分析任務，可接入現有工作流節省成本。",
-   "why_en": "Gemini 3.8 Flash's low token cost makes it ideal for high-volume ad copy generation and analytics pipelines — integrate it now."
+   "why": "低成本高效能模型，直接降低行銷自動化與批量文案生成的 API 費用。",
+   "why_en": "Low-cost, high-performance model directly cuts API costs for marketing automation and bulk content generation.",
+   "highlights": [
+    "Gemini 3.8 Flash 在軟體工程與多步驟推理基準上超越同期更大型前沿模型，成本卻大幅更低。",
+    "每百萬 input token 定價 $0.75，適合大規模批量行銷內容生成工作流。",
+    "Flash Cyber 特化版僅對具資格的防禦安全機構開放，不適用於一般商業廣告場景。"
+   ],
+   "highlights_en": [
+    "Gemini 3.8 Flash outperforms larger frontier models on software engineering and multi-step reasoning benchmarks at a fraction of the cost.",
+    "Priced at $0.75 per million input tokens, it suits high-volume marketing content generation workflows.",
+    "The Flash Cyber variant is restricted to qualified defensive security institutions and is not available for general commercial advertising use."
+   ]
   },
   {
-   "title": "OpenAI 新模型 Astra「隱性遞歸推理」引發安全透明度爭議",
-   "title_en": "OpenAI's Astra Model Sparks Safety Debate Over Hidden Recursive Reasoning",
-   "summary": "OpenAI Astra 採用不可見思維鏈的遞歸推理，Redwood Research 等安全機構警告透明度危機，Anthropic 及 Google DeepMind 已就應對展開討論。",
-   "summary_en": "OpenAI's Astra model uses invisible recursive reasoning chains, raising transparency concerns from Redwood Research and others. Anthropic and Google DeepMind are now in discussions on a coordinated response.",
+   "title": "Anthropic 推出 Claude Fable 5.1：快取讀取費降 75%，多項基準第一",
+   "title_en": "Anthropic Launches Claude Fable 5.1: 75% Cache Read Price Cut, Tops Multiple Benchmarks",
+   "summary": "Anthropic 發布 Fable 5.1 與 Mythos 5.1，API 快取讀取費大降 75% 至每百萬 $0.25，兩款模型均具備百萬 token 上下文，並在 8 項公開基準中全部排名第一。",
+   "summary_en": "Anthropic releases Fable 5.1 and Mythos 5.1; API cache read pricing drops 75% to $0.25/M tokens, with 1M token context and top rankings across 8 public benchmarks.",
+   "source": "VentureBeat",
+   "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads",
+   "time": "9月1日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "可即用",
+   "region": "國際",
+   "why": "快取費大降令長期運行的行銷 AI 代理與重複性內容工作流成本可節省逾 45%。",
+   "why_en": "Cache cost reduction cuts expenses for persistent marketing AI agents and repetitive content workflows by over 45%.",
+   "highlights": [
+    "Fable 5.1 API 快取讀取費削減 75%，降至每百萬 token $0.25，長期運行 AI 代理工作流成本大幅下降。",
+    "模型在 8 項公開基準測試中全部排名第一，同時支援百萬 token 上下文視窗。",
+    "新增反蒸餾機制，對推理鏈施加加密簽章，防止競爭對手複製模型能力。"
+   ],
+   "highlights_en": [
+    "Fable 5.1 API cache read pricing drops 75% to $0.25/M tokens, dramatically reducing costs for persistent AI agent workflows.",
+    "The model tops all 8 public benchmarks tested while supporting a 1M token context window.",
+    "A new anti-distillation mechanism encrypts reasoning chains to prevent competitors from replicating model capabilities."
+   ]
+  },
+  {
+   "title": "Google 推出 Gmail、Docs 與 Keep Live 語音 AI：語音口述直接生成文件",
+   "title_en": "Google Launches Gmail, Docs & Keep Live Voice AI: Dictate to Generate Documents",
+   "summary": "Google 正式推出三項語音 AI 功能，用戶可語音搜索收件箱、口述生成文件草稿，並連結 Gmail、Drive 及網路數據，目前支援 iOS 與 Android 英文版，需 AI Plus 訂閱。",
+   "summary_en": "Google launches three Voice AI features letting users voice-search inboxes, dictate document drafts, and connect Gmail/Drive/web data; available for iOS and Android in English with an AI Plus subscription.",
    "source": "TechCrunch",
-   "url": "https://techcrunch.com",
+   "url": "https://techcrunch.com/2026/09/03/google-launches-ai-voice-features-in-gmail-docs-and-keep",
+   "time": "9月3日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "可即用",
+   "region": "國際",
+   "why": "行銷人員可語音快速起草簡報與電郵，減少重複性文字輸入工時。",
+   "why_en": "Marketers can voice-draft briefs and email replies on the go, cutting time spent on repetitive text input.",
+   "highlights": [
+    "Gmail Live 支援語音搜索收件箱，並可即時撰寫回覆，整合 Gmail、Drive 及公開網路數據作為上下文參考。",
+    "Docs Live 與 Keep Live 讓用戶直接語音口述生成完整文件草稿與筆記。",
+    "功能目前僅支援英文，需訂閱 Google AI Plus 或以上方案方可使用。"
+   ],
+   "highlights_en": [
+    "Gmail Live supports voice search across your inbox and drafts replies using context from Gmail, Drive, and the web.",
+    "Docs Live and Keep Live let users dictate complete document drafts and notes using natural voice commands.",
+    "The features currently support English only and require a Google AI Plus subscription or above."
+   ]
+  },
+  {
+   "title": "G20 AI 監管分歧：美國推寬鬆路線，歐盟同步執法《AI 法案》透明度條款",
+   "title_en": "G20 AI Regulation Divide: US Pushes Loose Rules, EU Enforces AI Act Transparency Provisions",
+   "summary": "G20 創新部長會議上，美國力推「卡羅萊納原則」寬鬆監管路線，歐盟同步向逾 30 家 AI 企業發出《AI 法案》透明度合規查詢，全球 AI 治理格局加速碎片化。",
+   "summary_en": "At the G20 Innovation Ministers meeting, the US advocates loose 'Carolina Principles' AI rules while the EU simultaneously sends AI Act compliance inquiries to 30+ AI firms, accelerating global AI governance fragmentation.",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/9/2/us-pushes-looser-approach-to-ai-regulation-while-eu-pushes-new-law",
    "time": "9月2日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "歐盟 AI 內容揭示要求已適用於觸達歐洲受眾的廣告，代理商需審視創意素材合規狀況。",
+   "why_en": "EU AI content disclosure requirements now apply to ads reaching European audiences — agencies should audit creative compliance.",
+   "highlights": [
+    "美國在 G20 會議上主張「卡羅萊納原則」，反對設立強制性 AI 標準，與歐盟立場形成明顯對立。",
+    "歐盟已向逾 30 家 AI 企業發出合規查詢，執行今年 8 月生效的《AI 法案》透明度條款。",
+    "AI 監管格局碎片化意味代理商服務跨境廣告客戶時，需同時應對不同地區的法規要求。"
+   ],
+   "highlights_en": [
+    "The US pushed 'Carolina Principles' at the G20, opposing mandatory AI standards — directly opposing the EU's position.",
+    "The EU has sent compliance inquiries to 30+ AI firms, enforcing the AI Act's transparency provisions that took effect in August.",
+    "Fragmented global AI regulation means agencies serving cross-border clients must now navigate multiple distinct legal frameworks."
+   ]
+  },
+  {
+   "title": "Mira Murati 旗下 Thinking Machines 洽談 10 億美元融資，估值達 400 億美元",
+   "title_en": "Mira Murati's Thinking Machines in Talks for $1B Round at $40B Valuation",
+   "summary": "前 OpenAI 技術長 Mira Murati 創辦的 AI 初創 Thinking Machines 與 Accel 洽談主導 10 億美元 B 輪融資，估值至少 400 億美元，年化收入逾 1 億美元，開源模型 Inkling 以用量計費模式商業化。",
+   "summary_en": "AI startup Thinking Machines, founded by ex-OpenAI CTO Mira Murati, is in talks for a $1B Series B led by Accel at a $40B+ valuation, with $100M+ ARR and its open-source model Inkling monetized via usage-based pricing.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation",
+   "time": "9月3日",
    "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "AI 決策透明度是客戶信任核心，密切留意業界共識，提前備好合規解說。",
-   "why_en": "AI decision transparency is now a client-trust issue — monitor industry consensus and prepare compliance talking points for major accounts."
+   "why": "AI 模型競爭加劇帶動定價下行，行銷工具選擇與成本結構將更多元。",
+   "why_en": "Intensifying AI model competition drives pricing down, expanding tool choices and cost structures for marketing use cases.",
+   "highlights": [
+    "Thinking Machines 估值 400 億美元，年化收入逾 1 億美元，是目前市場上成長最快的 AI 初創之一。",
+    "旗下開源模型 Inkling 透過 Tinker 平台以用量計費模式商業化，對現有閉源模型構成定價壓力。",
+    "創辦人 Mira Murati 曾任 OpenAI 技術長，其公司動向持續受業界密切關注。"
+   ],
+   "highlights_en": [
+    "Thinking Machines is valued at $40B with $100M+ ARR, making it one of the fastest-growing AI startups in the market.",
+    "Its open-source model Inkling is commercialized via usage-based pricing on the Tinker platform, putting pressure on closed-source competitors.",
+    "Founded by former OpenAI CTO Mira Murati, the company's moves are closely watched across the AI industry."
+   ]
   },
   {
-   "title": "加州通過 20+ 項 AI 及社媒監管法案，等候州長簽署",
-   "title_en": "California Passes 20+ AI and Social Media Bills Pending Governor's Signature",
-   "summary": "新法涵蓋禁止針對未成年人成癮性設計、強制 AI 透明度披露、規管自動化招聘，具全美示範效應，廣告平台需調整合規措施。",
-   "summary_en": "Bills cover bans on addictive design targeting minors, mandatory AI transparency disclosures, and regulated automated hiring — setting a national benchmark that ad platforms will need to comply with.",
-   "source": "The Verge",
-   "url": "https://www.theverge.com",
-   "time": "9月2日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "加州法案走向直接影響美國平台廣告規則，及早了解合規要求保護客戶利益。",
-   "why_en": "California's AI bills set the blueprint for US platform ad regulations — brief clients in regulated industries before the rules take effect."
-  },
-  {
-   "title": "Google AI Max 自動升級已生效：帳戶正被 AI 接管",
-   "title_en": "Google AI Max Auto-Upgrade Is Live: AI Now Controls Query Matching and Ad Copy",
-   "summary": "未退出的廣告主帳戶已自動遷移至 AI Max，AI 接管查詢比對、文案及到達頁決策。Google 稱平均提升 7% 轉化，廣泛觸及或帶來不相關流量。",
-   "summary_en": "Accounts that didn't opt out have been auto-migrated to Google AI Max, with AI now controlling query matching, ad copy, and landing page decisions. Google claims +7% conversions on average, though broader matching may bring irrelevant traffic.",
-   "source": "Search Engine Land",
-   "url": "https://searchengineland.com/google-to-auto-upgrade-some-search-campaigns-to-ai-max-484428",
-   "time": "9月1日",
+   "title": "分析：2028 年逾八成美國廣告預算將流經 AI 平台，演算法偏差成業界警示",
+   "title_en": "Analysis: 80%+ of US Ad Budgets Will Flow Through AI Platforms by 2028 — Algorithm Bias Flagged",
+   "summary": "Marketing Dive 分析指出，2028 年前逾八成美國廣告預算將由 AI 平台管控，專家警告演算法存在偏向平台自身利益的結構性偏差，建議維持人工監督與引入第三方獨立衡量。",
+   "summary_en": "Marketing Dive analysis projects 80%+ of US ad budgets will be managed by AI platforms by 2028, with experts warning of structural algorithmic bias favoring platform interests and urging independent third-party measurement.",
+   "source": "Marketing Dive",
+   "url": "https://www.marketingdive.com/news/how-marketers-can-navigate-machine-bias-as-ai-takes-over-media/829315/",
+   "time": "9月3日",
    "section": "廣告平台 & 行銷科技",
    "action": "影響生意",
    "region": "國際",
-   "why": "客戶 SEM 帳戶已被自動接管，要立即審計負面關鍵字與出稿策略，防預算漏洞。",
-   "why_en": "Client SEM accounts have been auto-upgraded — audit negative keywords and campaign controls immediately to prevent budget leakage."
+   "why": "依賴平台 AI 報告可能系統性高估成效，代理商需建立第三方衡量作為獨立核查機制。",
+   "why_en": "Over-reliance on platform AI reporting may systematically overstate results — agencies need independent third-party measurement for verification.",
+   "highlights": [
+    "預測顯示 2028 年前美國廣告市場逾八成預算將由 Google、Meta 等 AI 平台直接管理。",
+    "研究人員指出平台 AI 演算法存在結構性偏差，傾向最大化平台收入而非廣告主真實 ROI。",
+    "建議代理商在 AI 媒體採購工具以外，引入獨立第三方衡量工具以驗證投放成效。"
+   ],
+   "highlights_en": [
+    "Projections show over 80% of US ad budgets will be directly managed by AI platforms like Google and Meta by 2028.",
+    "Researchers identify structural algorithmic bias in platform AI tools that optimizes for platform revenue rather than advertiser ROI.",
+    "Agencies are advised to implement independent third-party measurement tools alongside AI media buying platforms to verify performance."
+   ]
   },
   {
-   "title": "微信灰度測試「AI 幫寫」與「AI 點評」，AI 入口增至 16 個",
-   "title_en": "WeChat Tests AI Caption Writer and Comment Suggester in Moments, Reaches 16 AI Touchpoints",
-   "summary": "微信灰度測試「AI 幫寫」（上傳相片後自動生成三款文風文案）及「AI 點評」（長按動態獲現成評論），AI 入口總數增至 16 個，覆蓋六大社交場景。",
-   "summary_en": "WeChat is testing 'AI Writing' (auto-generates Moments captions in three styles after photo upload) and 'AI Comment' (long-press for suggested replies), bringing its total AI touchpoints to 16 across six social scenarios.",
-   "source": "新浪科技",
-   "url": "https://k.sina.com.cn/article_7879777300_1d5abdc14068015luq.html?from=tech",
-   "time": "9月2日",
+   "title": "Kimi 母公司月之暗面向港交所秘密遞交 IPO 申請，估值約 500 億美元",
+   "title_en": "Kimi Parent Moonshot AI Confidentially Files for Hong Kong IPO at ~$50B Valuation",
+   "summary": "Kimi 母公司月之暗面據報秘密向香港聯交所遞交上市申請，估值約 500 億美元，年化收入達 3 億美元；若成功上市將成中國大模型第二家在港掛牌公司。",
+   "summary_en": "Kimi parent Moonshot AI reportedly submits a confidential IPO filing to Hong Kong Stock Exchange at ~$50B valuation and $300M ARR, potentially becoming the second Chinese LLM company to list in HK.",
+   "source": "TechNode",
+   "url": "https://technode.com/2026/09/03/moonshot-ai-reportedly-submits-confidential-hong-kong-ipo-filing",
+   "time": "9月3日",
    "section": "廣告平台 & 行銷科技",
    "action": "要留意",
    "region": "中國",
-   "why": "微信 AI 文案普及後品牌內容同質化風險升，差異化創作策略要提前部署。",
-   "why_en": "As AI-generated WeChat content scales, brand differentiation through creative strategy becomes harder — rethink your content positioning now."
+   "why": "中國頂尖 AI 模型公司赴港上市，對本地 AI 工具採購與合作生態具指標意義。",
+   "why_en": "A top Chinese AI model company listing in HK is a bellwether for local AI tool procurement and partnership ecosystems.",
+   "highlights": [
+    "月之暗面（Moonshot AI）據報已向港交所遞交機密上市申請，旗下 Kimi K3 模型爆紅帶動年化收入達 3 億美元。",
+    "若上市成功，估值約 500 億美元，是香港近年規模最大的科技 IPO 之一。",
+    "中國大模型公司在港上市趨勢加速，有助提升業界對本地 AI 應用工具生態的信心。"
+   ],
+   "highlights_en": [
+    "Moonshot AI has reportedly filed a confidential listing application with the HKEX; its Kimi K3 model's viral success drove ARR to approximately $300M.",
+    "If the listing proceeds, the ~$50B valuation would rank it among Hong Kong's largest tech IPOs in recent years.",
+    "The trend of Chinese LLM companies listing in HK accelerates, boosting confidence in the local AI tool and application ecosystem."
+   ]
   },
   {
-   "title": "抖音 9 月 1 日算法大亂：伺服器異常致推薦系統崩潰",
-   "title_en": "Douyin Algorithm Crashes on Sept 1: Server Fault Floods Feeds with Mismatched Content",
-   "summary": "抖音由 8 月 31 日晚起出現大規模算法故障，用戶首頁被推送完全不符興趣的內容，知情人士確認是伺服器突發異常，截至 9 月 2 日官方未發通報。",
-   "summary_en": "Starting August 31, Douyin suffered a major algorithm failure — users' feeds flooded with completely unrelated content. Sources confirmed a sudden server anomaly. No official statement was issued by September 2.",
-   "source": "科創板日報",
-   "url": "https://finance.eastmoney.com/a/202609013861479771.html",
-   "time": "9月1日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "影響生意",
-   "region": "中國",
-   "why": "算法崩潰期間廣告觸及大跌、CPM 或飆升，要立即監察客戶投放成效。",
-   "why_en": "Algo failures tank reach and spike CPMs — check client Douyin campaign performance now for anomalies in the affected window."
-  },
-  {
-   "title": "Instagram 強制 AI 虛擬人物標籤，不標籤即削減觸及",
-   "title_en": "Instagram Enforces AI Profile Labeling — Undisclosed AI Accounts Face Reach Penalties",
-   "summary": "AI 虛擬 KOL 帳號不標籤即遭懲罰，Reels 及 Explore 推薦曝光大幅降低。品牌若委託 AI 虛擬人物投放，需立即審查合規狀況。",
-   "summary_en": "AI virtual influencer accounts that fail to disclose their AI nature face algorithmic reach penalties on Reels and Explore. Brands using AI personas must audit compliance immediately.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles",
-   "time": "8月31日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "用 AI 虛擬 KOL 做 IG 推廣的客戶，不標籤就削減觸及，要立即補標籤合規。",
-   "why_en": "Clients running AI influencer accounts on Instagram must add disclosures now — non-compliant profiles face immediate reach suppression."
-  },
-  {
-   "title": "TikTok TopView 開放自助投放覆蓋 23 市場，Pulse Mentions 同步推出",
-   "title_en": "TikTok TopView Now Self-Serve in 23 Markets, Pulse Mentions Launches for Brand-Adjacent Placements",
-   "summary": "TopView 廣告無須銷售代表，直接在 Ads Manager 購買，支援排除最多 40% 子地區。Pulse Mentions 令品牌廣告可緊貼提及品牌的熱門內容投放。",
-   "summary_en": "TikTok TopView is now self-serve via Ads Manager in 23 markets, with up to 40% sub-regional exclusion controls. Pulse Mentions lets brand ads run adjacent to trending content that already mentions the brand.",
-   "source": "TikTok for Business",
-   "url": "https://ads.tiktok.com/business/en-US/blog",
-   "time": "9月1日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "可即用",
-   "region": "國際",
-   "why": "Q4 前開放自助 TopView，agency 可立即幫客戶搶位，不需要再等銷售代表。",
-   "why_en": "Self-serve TopView ahead of Q4 means you can book premium placements directly for clients without going through a TikTok rep."
-  },
-  {
-   "title": "OpenAI 確認 Sora API 9 月 24 日終止，工作流必須遷移",
-   "title_en": "OpenAI Confirms Sora API Shuts Down September 24 — Migrate Workflows Before the Deadline",
-   "summary": "繼今年 4 月 Sora 網頁版停服後，OpenAI 確認 Sora API 將於 9 月 24 日正式關閉，逾期數據永久刪除，接入者需於截止日前完成遷移。",
-   "summary_en": "Following the Sora web app shutdown in April 2026, OpenAI confirms the Sora API closes September 24. All user data will be permanently deleted at that point — developers must migrate before the deadline.",
-   "source": "The Decoder",
-   "url": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september",
-   "time": "9月1日",
-   "section": "創意生產工具",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "有接 Sora API 的創意工作流，9 月 24 前要搬去 Runway 或可靈，不搬系統停用。",
-   "why_en": "Any agency workflows built on Sora API break on Sept 24 — migrate to Runway or Kling before the deadline to avoid production downtime."
-  },
-  {
-   "title": "Google 推出 AI 設計工具，以提示詞一鍵生成行銷視覺",
-   "title_en": "Google Launches Prompt-Driven AI Design Tool to Challenge Canva for Marketing Visuals",
-   "summary": "Google 新 AI 設計工具純靠提示詞生成視覺素材及行銷物料，無須設計技能，定位直接挑戰 Canva，為行銷人員提供低門檻創作選項。",
-   "summary_en": "Google's new AI design tool generates marketing visuals and materials from prompts alone, requiring no design skills. It directly targets Canva's market and opens up low-barrier creative production for marketers.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com",
-   "time": "9月1日",
-   "section": "創意生產工具",
-   "action": "可即用",
-   "region": "國際",
-   "why": "行銷人員不靠設計師可以自行出稿，小型客戶服務效率大增，值得立即試用。",
-   "why_en": "Marketers can now generate campaign visuals without designers — test it for quick-turnaround briefs to reduce creative bottlenecks."
-  },
-  {
-   "title": "可靈 Image 3.0 Omni 上線：原生 4K 圖像＋系列連拍模式",
-   "title_en": "Kling Image 3.0 Omni Launches Native 4K Generation and Series Mode for Brand Campaigns",
-   "summary": "可靈 AI 推出 Image 3.0 Omni，支援原生 4K 圖像生成（非放大）及「系列模式」，可按敘事順序生成連貫圖像組，適合廣告分鏡及社媒系列內容製作。",
-   "summary_en": "Kling Image 3.0 Omni offers native 4K image generation (not upscaled) and a new Series Mode that produces sequential, narrative image sets — ideal for campaign storyboards and social media content series.",
-   "source": "Kling AI 官方 Blog",
-   "url": "https://kling.ai/blog/kling-image-3-omni-4k-series-mode-guide",
-   "time": "8月31日",
-   "section": "創意生產工具",
-   "action": "可即用",
-   "region": "中國",
-   "why": "品牌社媒系列圖的製作速度可以快幾倍，立即試用節省設計與後期時間。",
-   "why_en": "Generate coherent 4K brand image series in minutes — test it for your next social campaign to cut design production time significantly."
-  },
-  {
-   "title": "Runway 上架 Wan 3.0 API（含原生音頻），新增 ACEScg EXR 專業輸出",
-   "title_en": "Runway Adds Wan 3.0 with Native Audio to Dev API and Launches ACEScg EXR HDR Output",
-   "summary": "Runway Dev API 加入 Wan 3.0，支援文字、圖像及影片混合輸入並附原生音頻。8 月 31 日另新增 ACEScg EXR 專業級高動態輸出，適合廣播及電影流程。",
-   "summary_en": "Runway's Dev API now includes Wan 3.0 with native audio support for text, image, and video inputs. ACEScg EXR delivery was added August 31 — a professional HDR format for broadcast and film pipelines.",
+   "title": "Runway 發布 GWM Worlds 2：即時互動 AI 世界生成，720p / 24fps 無限時長",
+   "title_en": "Runway Launches GWM Worlds 2: Real-Time Interactive AI World Generation at 720p/24fps",
+   "summary": "Runway 推出 GWM Worlds 2 研究預覽，可即時生成持續 720p/24fps 影片，支援多角色同步控制、無限場景時長，並允許 AI 代理直接操控，面向互動娛樂與廣告影片製作開放。",
+   "summary_en": "Runway releases GWM Worlds 2 research preview, generating continuous 720p/24fps video in real time with multi-character control, unlimited scene length, and AI agent support for interactive entertainment and commercial video production.",
    "source": "Runway",
-   "url": "https://runway.com/changelog",
-   "time": "8月31日",
+   "url": "https://runway.com/research/introducing-gwm-worlds-2",
+   "time": "9月3日",
+   "section": "創意生產工具",
+   "action": "要留意",
+   "region": "國際",
+   "why": "品牌廣告創意可生成可互動的 AI 場景世界，為沉浸式廣告體驗提供新製作方法。",
+   "why_en": "Brand advertising can now generate interactive AI world scenes, opening new production methods for immersive ad experiences.",
+   "highlights": [
+    "GWM Worlds 2 可即時生成無限長度的 720p/24fps 影片，支援多個角色的個別動作控制。",
+    "平台允許 AI 代理直接操控場景中的角色與物件，大幅降低複雜場景的人工操控需求。",
+    "目前以研究預覽形式開放，面向互動娛樂、遊戲及廣告影片製作領域應用。"
+   ],
+   "highlights_en": [
+    "GWM Worlds 2 generates unlimited-length 720p/24fps video in real time, with independent action control for multiple characters.",
+    "The platform supports AI agent control of scene characters and objects, significantly reducing manual input for complex scenes.",
+    "Currently available as a research preview, targeting interactive entertainment, gaming, and commercial video production use cases."
+   ]
+  },
+  {
+   "title": "Canva Visual Suite 完成 2026 年第 100 項升級：AI Sheets、全版面 Docs、Whiteboard 協作更新",
+   "title_en": "Canva Visual Suite Hits 100 Updates in 2026: AI Sheets, Full-Page Docs, Whiteboard Collaboration",
+   "summary": "Canva 宣布 Visual Suite 年內完成第 100 項升級，Sheets 新增 AI 資料轉圖表功能，Docs 支援全版面視覺排版，Whiteboard 加入即時協作跟隨，每月設計量突破 10 億件。",
+   "summary_en": "Canva's Visual Suite hits its 100th 2026 update, adding AI data-to-chart in Sheets, full-page visual layouts in Docs, and real-time follow-cursor collaboration in Whiteboard; monthly designs surpass 1 billion.",
+   "source": "Canva Newsroom",
+   "url": "https://www.canva.com/newsroom/news/visual-suite-100-updates",
+   "time": "9月3日",
    "section": "創意生產工具",
    "action": "可即用",
    "region": "國際",
-   "why": "Runway 多模態 API 成熟，可接駁 agency 自家創意工作流，節省實拍及後期成本。",
-   "why_en": "Runway's multimodal API now covers audio, image, and video — integrate it into your creative pipeline to cut production costs."
+   "why": "Agency 日常提案與成效報告可直接在 Canva 完成數據視覺化，減少工具切換工時。",
+   "why_en": "Agency proposals and performance reports can now be visualized end-to-end in Canva, eliminating tool-switching overhead.",
+   "highlights": [
+    "Canva Sheets 新增 AI 功能，可自動將原始數據轉換為圖表並直接嵌入設計，省卻手動製圖步驟。",
+    "Docs 升級為全版面視覺排版，支援品牌模版與多媒體嵌入，可替代傳統提案 deck。",
+    "全球每月設計量突破 10 億件，Canva 已成為代理商最廣泛使用的協作設計平台之一。"
+   ],
+   "highlights_en": [
+    "Canva Sheets now features AI-powered data-to-chart generation that embeds directly into designs, eliminating manual charting steps.",
+    "Docs upgrades to full-page visual layouts with brand templates and multimedia embeds, serving as an alternative to traditional proposal decks.",
+    "Global monthly designs surpass 1 billion, cementing Canva as one of the most widely used collaborative design platforms in agencies."
+   ]
   },
   {
-   "title": "百事可樂 17 億美元全球媒體帳戶易主：宏盟出局、Publicis 接手",
-   "title_en": "PepsiCo's $1.7B Global Media Account Moves to Publicis — Omnicom Loses 25-Year Client",
-   "summary": "百事可樂不經比稿直接委任 Publicis，終止宏盟 25 年合作，AI 驅動統一媒體模型成為大型廣告主選代理新標準，宏盟股價跌約 5%。",
-   "summary_en": "PepsiCo awarded its $1.7B global media account to Publicis without a pitch, ending a 25-year partnership with Omnicom. AI-driven unified media modeling is now the baseline agency selection criterion; Omnicom shares fell ~5%.",
-   "source": "Ad Age",
-   "url": "https://adage.com/agencies/accounts-in-review/aa-pepsico-shifts-global-media-to-publicis-from-omnicom",
-   "time": "9月2日",
-   "section": "行業影響 & 品牌案例",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "AI 驅動媒體模型成選代理標準，agency 要加速建立自家 AI 媒體能力應對競爭。",
-   "why_en": "AI-driven media modeling is now a baseline requirement for large account pitches — agencies without it are structurally disadvantaged."
+   "title": "Sand.ai 開源千億 MoE 影片生成模型 MAGI-2：生成 10 秒 1080P 成本僅約 $0.07",
+   "title_en": "Sand.ai Open-Sources 114B MoE Video Model MAGI-2: 10-Second 1080p for ~$0.07",
+   "summary": "Sand.ai 開源 MAGI-2 Preview，114B 參數 MoE 架構僅啟動 6B，生成 10 秒 1080P 影片成本約 0.5 元人民幣，業界稱之為「影片界 DeepSeek 時刻」，大幅降低 AI 影片製作門檻。",
+   "summary_en": "Sand.ai open-sources MAGI-2 Preview, a 114B-parameter MoE model activating only 6B per inference; generates 10-second 1080p video for ~¥0.5 (~$0.07), dubbed the 'DeepSeek moment for video.'",
+   "source": "36氪",
+   "url": "https://eu.36kr.com/en/p/3967032902129541",
+   "time": "9月3日",
+   "section": "創意生產工具",
+   "action": "要留意",
+   "region": "中國",
+   "why": "開源千億影片模型使 Agency 可自行部署低成本影片生成管線，對訂閱制工具定價構成壓力。",
+   "why_en": "Open-sourcing a 100B+ video model enables agencies to self-deploy low-cost video pipelines, pressuring subscription-based tool pricing.",
+   "highlights": [
+    "MAGI-2 Preview 採用 114B 參數 MoE 架構，推理時僅啟動 6B 參數，兼顧性能與效率。",
+    "生成 10 秒 1080P 影片成本低至約 0.5 元人民幣，遠低於現有商業平台訂閱費。",
+    "模型以 Apache 2.0 授權開源，支援商業使用，可直接部署於私有伺服器作廣告素材生產。"
+   ],
+   "highlights_en": [
+    "MAGI-2 Preview uses a 114B-parameter MoE architecture that activates only 6B parameters during inference, balancing capability and efficiency.",
+    "Generating 10 seconds of 1080p video costs approximately ¥0.5 (~$0.07), far below current commercial platform subscription fees.",
+    "Released under Apache 2.0 license for commercial use, it can be deployed on private servers for ad creative production."
+   ]
   },
   {
-   "title": "伊藤忠擬 13 億美元私有化電通數碼，電通警示 AI 原生代理競爭加劇",
-   "title_en": "Itochu Plans $1.3B Privatization of Dentsu Digital as Dentsu Flags Rising AI Agency Threat",
-   "summary": "伊藤忠商事擬以 13 億美元收購電通數碼令其退市，電通同步公開警示 AI 原生代理威脅持續升溫，日本代理市場整合加速。",
-   "summary_en": "Itochu plans a $1.3B bid to take Dentsu Digital private. Simultaneously, Dentsu publicly flagged escalating competition from AI-native agencies, as Japan's agency market consolidates rapidly.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com",
+   "title": "陽獅接管百事可樂全球媒體後宣布退出可口可樂比稿，宏盟股價跌逾 5%",
+   "title_en": "Publicis Wins PepsiCo Global Media, Exits Coca-Cola Pitch; Omnicom Stock Falls Over 5%",
+   "summary": "陽獅獲得百事可樂逾 19 億美元全球媒體業務後，宣布退出可口可樂全球媒體比稿以避免利益衝突；宏盟失去合作逾 25 年的客戶後股價跌逾 5%，AI 驅動媒體整合被指為決勝關鍵。",
+   "summary_en": "After winning PepsiCo's $1.9B+ global media account, Publicis withdraws from Coca-Cola's global media pitch to avoid conflicts; Omnicom shares fall over 5% after losing a 25+ year client, with AI-driven media integration cited as decisive.",
+   "source": "Adweek",
+   "url": "https://www.adweek.com/agencies/publicis-lands-pepsicos-global-media-business-withdraws-from-coke-pitch",
    "time": "9月3日",
    "section": "行業影響 & 品牌案例",
-   "action": "要留意",
+   "action": "影響生意",
    "region": "國際",
-   "why": "傳統代理整合與 AI 原生新對手崛起，業界格局快速重塑，要留意話語走向。",
-   "why_en": "Traditional agency consolidation plus rising AI-native competition is reshaping the market — monitor global holding group strategies for signals."
+   "why": "AI 驅動統一媒體模型成為大型廣告主選代理核心標準，代理商需加速 AI 整合能力建設。",
+   "why_en": "AI-driven unified media models are becoming the core standard for major advertiser agency selection — agencies must accelerate AI integration capabilities.",
+   "highlights": [
+    "百事可樂以不經比稿直接委任方式選定陽獅，終止與宏盟長達 25 年以上的媒體合作關是。",
+    "陽獅取得業務後隨即宣布退出可口可樂全球媒體比稿，以符合衝突迴避守則。",
+    "消息公布後宏盟股價跌逾 5%，市場擔憂其亞太及歐洲業務增長前景受影響。"
+   ],
+   "highlights_en": [
+    "PepsiCo selected Publicis via direct appointment with no pitch, ending a 25+ year media relationship with Omnicom.",
+    "Publicis immediately withdrew from Coca-Cola's ongoing global media pitch to comply with conflict-of-interest policies.",
+    "Omnicom's stock fell over 5% on the news, reflecting market concerns about its APAC and European growth outlook."
+   ],
+   "pattern": "行業分析指 AI 驅動的統一媒體模型（將程序化、搜尋、社交、電商廣告整合於同一 AI 管理平台）已成為跨國廣告主選擇代理商的新核心標準，不再只是加分項。",
+   "pattern_en": "Industry analysts note that AI-driven unified media models — integrating programmatic, search, social, and ecommerce advertising into a single AI management platform — have become the new core standard for multinational advertiser agency selection, no longer just a differentiator."
   },
   {
-   "title": "AI 安全企業 HiddenLayer 完成 1 億美元 B 輪，微軟 M12 跟投",
-   "title_en": "AI Security Firm HiddenLayer Closes $100M Series B Backed by Microsoft M12",
-   "summary": "HiddenLayer 由 Delta-v Capital 領投完成 1 億美元 B 輪，Microsoft M12、摩根士丹利跟投，專注企業 AI 模型安全防護，顯示 AI 安全賽道資金持續湧入。",
-   "summary_en": "HiddenLayer closed a $100M Series B led by Delta-v Capital with Microsoft M12 and Morgan Stanley participating. The firm specializes in enterprise AI model security, signaling sustained investor interest in AI safety infrastructure.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com",
+   "title": "中東媒體集團 ITP 收購 Heart Media，業務擴至香港、新加坡及馬來西亞",
+   "title_en": "Middle East Media Group ITP Acquires Heart Media, Expanding to HK, Singapore & Malaysia",
+   "summary": "中東媒體集團 ITP Media 收購新加坡 Heart Media，業務延伸至新加坡、馬來西亞及香港，品牌組合擴至 10 個國家 90 個品牌，是近年規模最大的東南亞媒體並購之一。",
+   "summary_en": "Middle East media group ITP Media acquires Singapore-based Heart Media, expanding to Singapore, Malaysia, and Hong Kong with 90 brands across 10 countries in one of the largest recent SEA media M&A deals.",
+   "source": "Marketing-Interactive",
+   "url": "https://www.marketing-interactive.com/itp-media-group-acquires-heart-media-as-it-sets-sights-on-asia",
+   "time": "9月3日",
+   "section": "行業影響 & 品牌案例",
+   "action": "影響生意",
+   "region": "香港",
+   "why": "香港媒體購買格局出現新跨境競爭者，代理商需重新評估本地媒體合作夥伴策略。",
+   "why_en": "A new cross-border media competitor enters Hong Kong, prompting agencies to reassess local media partnership strategy.",
+   "highlights": [
+    "ITP Media 透過收購 Heart Media 進入亞洲市場，整體品牌組合擴展至 10 個國家共 90 個媒體品牌。",
+    "收購範圍涵蓋 Heart Media 在新加坡、馬來西亞及香港的全部媒體資產與廣告業務。",
+    "交易完成後 ITP 將成為香港及東南亞市場規模最大的跨境媒體集團之一，改變本地媒體版圖。"
+   ],
+   "highlights_en": [
+    "ITP Media enters Asia via the Heart Media acquisition, growing its global portfolio to 90 media brands across 10 countries.",
+    "The acquisition covers all of Heart Media's media assets and advertising operations in Singapore, Malaysia, and Hong Kong.",
+    "Upon completion, ITP will become one of the largest cross-border media groups in HK and SEA, reshaping the local media landscape."
+   ]
+  },
+  {
+   "title": "Grab 聯同 BLKJ HAVAS 推出「5-Star Eats」廣告：用戶真實評語化作創意主角",
+   "title_en": "Grab & BLKJ HAVAS Launch '5-Star Eats' Campaign: Real User Reviews Become the Creative",
+   "summary": "Grab 聯同 BLKJ HAVAS 推出「5-Star Eats」創意廣告，以真實用戶評語的戲劇化呈現作為核心素材，跨 OOH、店內及數字社交媒體渠道投放，是本地 UGC 行銷的標杆案例。",
+   "summary_en": "Grab and BLKJ HAVAS launch '5-Star Eats' campaign, dramatizing real user reviews as the core creative material across OOH, in-store, and digital social channels — a benchmark UGC marketing case.",
+   "source": "Marketing-Interactive",
+   "url": "https://www.marketing-interactive.com/grab-turns-keyboard-warriors-into-5-star-reviewers",
    "time": "9月2日",
    "section": "行業影響 & 品牌案例",
    "action": "要留意",
    "region": "國際",
-   "why": "AI 安全投資升溫，企業客戶採購 AI 工具時合規要求將更嚴，agency 要提前了解。",
-   "why_en": "Growing AI security investment means enterprise clients will apply stricter compliance requirements to AI tools — factor this into your service stack."
+   "why": "以 UGC 評語作廣告創意，為餐飲零售客戶提供低成本高可信度廣告策略的可複製範本。",
+   "why_en": "Using UGC reviews as ad creative offers a replicable low-cost, high-credibility strategy template for F&B and retail clients.",
+   "highlights": [
+    "廣告以真實用戶評語（包括誇張讚美與出人意料評論）直接作為視覺創意主體，真實感帶動受眾共鳴。",
+    "投放橫跨戶外廣告牌、餐廳店內物料及 Instagram/TikTok 等數字渠道，實現全渠道整合。",
+    "此策略展示代理商如何以低製作成本將用戶生成內容（UGC）轉化為具品牌影響力的廣告素材。"
+   ],
+   "highlights_en": [
+    "The campaign features authentic user reviews — including hyperbolic praise and unexpected comments — as the primary visual creative, driving audience relatability.",
+    "Placements span outdoor billboards, restaurant in-store materials, and digital channels including Instagram and TikTok for full-channel integration.",
+    "The strategy demonstrates how agencies can transform user-generated content into branded ad material at low production cost."
+   ]
   },
   {
-   "title": "宏盟媒體集團任命亞太首席策略官，強化 APAC 領導層",
-   "title_en": "Omnicom Media Group Appoints APAC Chief Strategy Officer to Strengthen Regional Leadership",
-   "summary": "David McCallen 出任 Omnicom Media Group 亞太首席策略官，於百事可樂帳戶易主風波前夕補充高層班底，鞏固 APAC 業務佈局。",
-   "summary_en": "David McCallen is appointed as Omnicom Media Group's APAC Chief Strategy Officer, bolstering senior leadership ahead of the PepsiCo account loss announcement.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com",
-   "time": "9月1日",
+   "title": "KOL 行銷 ROI 爭議：創作者經濟估值達 439 億美元，惟半數品牌認為費用過高",
+   "title_en": "KOL Marketing ROI Debate: Creator Economy at $43.9B, but Half of Brands Find Rates Too High",
+   "summary": "Digiday 報告指創作者經濟估值達 439 億美元，惟逾半數品牌認為個別 KOL 費用過高，AI 生成內容普及與自動化採購趨勢正壓低創作者議價能力，ROI 衡量工具尚未成熟。",
+   "summary_en": "Digiday report values the creator economy at $43.9B, but over half of brands find individual KOL rates too high; AI-generated content proliferation and automated buying are pressuring creator leverage while ROI measurement tools lag.",
+   "source": "Digiday",
+   "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-how-strong-are-the-fundamentals-of-the-creator-economy-really/",
+   "time": "9月2日",
+   "section": "行業影響 & 品牌案例",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "KOL 定價與成效衡量爭議升溫，代理商需建立更嚴謹的 KOL ROI 報告框架以鞏固客戶信任。",
+   "why_en": "Rising KOL pricing disputes require agencies to build more rigorous influencer ROI reporting frameworks to maintain client trust.",
+   "highlights": [
+    "創作者經濟整體估值雖達 439 億美元，惟調查顯示逾半數品牌主認為個別 KOL 費用定價虛高。",
+    "AI 生成內容普及令品牌在部分場景以 AI 替代人類創作者，對 KOL 的議價能力構成長期壓力。",
+    "業界公認的 KOL ROI 衡量標準至今仍不統一，代理商需主動建立透明度框架以避免客戶質疑投資效益。"
+   ],
+   "highlights_en": [
+    "Despite the creator economy's $43.9B total valuation, over half of surveyed brands believe individual KOL rates are overpriced.",
+    "The proliferation of AI-generated content allows brands to substitute AI for human creators in some use cases, putting long-term pressure on creator leverage.",
+    "Industry-wide KOL ROI measurement standards remain inconsistent, requiring agencies to proactively build transparency frameworks to defend investment value."
+   ]
+  },
+  {
+   "title": "宏盟媒體任命亞太首席策略官，百事客戶易主後強化區域領導布局",
+   "title_en": "Omnicom Media Appoints New APAC Chief Strategy Officer Amid PepsiCo Account Loss",
+   "summary": "宏盟媒體任命 David McCallen 為亞太首席策略官，駐新加坡，直接向亞太 CEO 彙報；消息在百事可樂賬戶宣布易主前一日公布，被視為宏盟強化區域策略應對的部署。",
+   "summary_en": "Omnicom Media appoints David McCallen as APAC Chief Strategy Officer, based in Singapore reporting to the APAC CEO; announced a day before the PepsiCo account loss news, seen as a strategic APAC reinforcement.",
+   "source": "Marketing-Interactive",
+   "url": "https://www.marketing-interactive.com/omnicom-media-names-new-apac-strategy-chief",
+   "time": "9月2日",
    "section": "行業影響 & 品牌案例",
    "action": "要留意",
+   "region": "香港",
+   "why": "宏盟加強亞太策略領導層，可能帶來本地業務模式或服務架構的調整，值得留意其動向。",
+   "why_en": "Omnicom strengthening APAC strategic leadership may signal shifts in local business models or service structures worth monitoring.",
+   "highlights": [
+    "David McCallen 獲任命為宏盟媒體亞太首席策略官，駐新加坡，直接彙報予亞太 CEO Tony Harradine。",
+    "任命消息與百事可樂宣布轉換代理商幾乎同期發布，業界解讀為宏盟應對區域業務壓力的部署。",
+    "資深策略人員入局有助宏盟在大型比稿中強化其 AI 媒體整合方案，爭取新客戶。"
+   ],
+   "highlights_en": [
+    "David McCallen is appointed Omnicom Media APAC Chief Strategy Officer, based in Singapore with a direct report to APAC CEO Tony Harradine.",
+    "The announcement nearly coincided with the PepsiCo account departure, widely interpreted as Omnicom responding to regional business pressure.",
+    "A senior strategist addition strengthens Omnicom's ability to pitch AI-integrated media solutions and compete for large new accounts in APAC."
+   ]
+  },
+  {
+   "title": "可靈官方整理 34 種 AI 卡通風格提示詞範本，涵蓋吉卜力到像素藝術",
+   "title_en": "Kling AI Official Guide: 34 Cartoon Style Prompts, from Ghibli to Pixel Art",
+   "summary": "可靈官方整理 34 種 AI 卡通風格提示詞範本，涵蓋吉卜力、賽璐珞動畫、像素藝術等主流風格，附生成範例，適用於 Kling IMAGE 3.0 與 VIDEO 3.0 Omni，可直接套用於品牌廣告素材製作。",
+   "summary_en": "Kling AI officially compiles 34 cartoon style prompt templates spanning Ghibli, cel animation, pixel art, and more, with generation examples; compatible with Kling IMAGE 3.0 and VIDEO 3.0 Omni for direct brand creative production.",
+   "source": "Kling AI Blog",
+   "url": "https://kling.ai/blog/cartoon-styles-for-ai",
+   "time": "8月31日",
+   "section": "即學技巧 & 玩法",
+   "action": "可即用",
    "region": "國際",
-   "why": "宏盟 APAC 高層人事變動，業界格局微調，有意合作或競標的 agency 要留意。",
-   "why_en": "Omnicom's APAC senior reshuffle signals strategic repositioning — monitor if key talent moves affect regional pitch dynamics."
+   "why": "直接套用官方提示詞即可快速生成品牌廣告所需的一致風格化卡通影片與圖像素材。",
+   "why_en": "Apply official prompts directly to rapidly generate consistently styled cartoon video and image assets for brand advertising.",
+   "highlights": [
+    "可靈官方收錄 34 種卡通風格提示詞，包含吉卜力、像素藝術、賽璐珞動畫、水彩插畫等主流商業風格。",
+    "每種風格附有生成範例圖片，方便創意人員快速判斷風格是否符合品牌調性。",
+    "提示詞直接相容 Kling IMAGE 3.0 與 VIDEO 3.0 Omni，可立即應用於現有廣告素材製作流程。"
+   ],
+   "highlights_en": [
+    "Kling's official guide covers 34 cartoon style prompts including Ghibli, pixel art, cel animation, watercolor illustration, and other mainstream commercial styles.",
+    "Each style includes a generation example image, enabling creative teams to quickly assess style fit for brand guidelines.",
+    "Prompts are directly compatible with Kling IMAGE 3.0 and VIDEO 3.0 Omni for immediate integration into existing ad creative workflows."
+   ]
   }
  ]
 }
