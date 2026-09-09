@@ -1,13 +1,17 @@
 {
- "date": "2026-09-08",
- "date_display": "2026年9月8日 · 星期二",
- "date_display_en": "September 8, 2026 · Tuesday",
- "thesis": "廣告基礎設施 AI 化進入強制期：Google 強制遷移 DSA、ChatGPT 廣告全球擴張、iOS 27 Siri AI 三路並進，Agency 若非主動適應，便是被動接受。",
- "thesis_en": "September marks AI advertising infrastructure's mandatory phase — Google's forced DSA migration, ChatGPT Ads global rollout, and iOS 27 Siri AI all arriving simultaneously, leaving agencies no choice but to adapt.",
- "thesis_note": "本週每個主要廣告平台都在主動或強制推進 AI 升級：Google 向 DSA 廣告系列下達 AI Max 強制遷移令；OpenAI ChatGPT 廣告向歐洲及印度全面開放；Apple iOS 27 正在改寫行動搜尋介面。三大變動同期發生，說明 AI 廣告基礎設施的整合已不再是選擇題。",
- "thesis_note_en": "This week, every major ad platform is pushing AI upgrades — Google mandating AI Max migration for DSA campaigns, OpenAI opening ChatGPT Ads to Europe and India, and Apple's iOS 27 rebuilding the mobile search experience. Three simultaneous shifts confirm that AI advertising infrastructure is no longer optional — it is the new baseline.",
- "sources_note": "資料來源：CNBC、Forbes、36氪、Google、OpenAI、Reuters、The Drum、Marketing-Interactive、Kling AI",
- "sources_note_en": "Sources: CNBC, Forbes, 36kr, Google, OpenAI, Reuters, The Drum, Marketing-Interactive, Kling AI",
+ "site_title": "AI・行銷情報",
+ "site_title_en": "AI Marketing Daily",
+ "site_tagline": "AI Marketing Intelligence · HK / CN",
+ "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+ "date": "2026-09-09",
+ "date_display": "2026年9月9日 · 星期三",
+ "date_display_en": "September 9, 2026 · Wednesday",
+ "sources_note": "每日整合 Anthropic、OpenAI、Google、Meta 官方發布、TechCrunch、The Verge、Digiday、Adweek、量子位等一級媒體報道，聚焦香港及大灣區 digital agency 的實務需求。",
+ "sources_note_en": "Daily synthesis from Anthropic, OpenAI, Google, Meta official releases, TechCrunch, The Verge, Digiday, Adweek, QbitAI and other tier-1 sources, curated for HK and Greater Bay Area digital agency practitioners.",
+ "thesis": "代理型 AI 全面接管執行層：廣告出價由 Google AI Max 決定、創意素材由 ChatGPT Images 自動生成、個人任務由 Meta Muse 代辦——AI 已不只輔助決策，而是直接代替人類行動。",
+ "thesis_en": "Agentic AI is taking over execution across the board: Google AI Max controls ad bidding, ChatGPT Images auto-generates creatives, Meta Muse completes personal tasks — AI has shifted from decision support to direct action.",
+ "thesis_note": "今日 AI 大模型、廣告平台、創意工具三個版塊的消息同時指向同一趨勢：AI 代理正從「按指示行事」轉向「主動代替人類執行」。OpenAI 的數據顯示 AI 代理已達人類工作效率的 3.1 倍，Google AI Max 在無需廣告主操作的情況下自動接管搜尋廣告，Meta Muse 則開始代替用戶預訂行程和發送電郵。這標誌 AI 技術在廣告行銷領域進入「從工具到演員」的新階段，agency 需要審視自身在 AI 代理執行架構中的監督角色。",
+ "thesis_note_en": "Today, three sections — AI models, ad platforms, and creative tools — all point to the same shift: AI agents are moving from 'act when instructed' to 'act autonomously on your behalf.' OpenAI's data shows AI agents now deliver 3.1x human productivity. Google AI Max auto-manages search ads without advertiser input. Meta Muse books travel and sends emails for users. This marks AI's transition from tool to actor in marketing — agencies need to rethink their supervisory role in an AI-agent execution architecture.",
  "sections": [
   "AI 大模型 & 市場動態",
   "廣告平台 & 行銷科技",
@@ -16,328 +20,436 @@
   "即學技巧 & 玩法"
  ],
  "sections_en": [
-  "AI Models & Market Moves",
+  "AI Models & Market",
   "Ad Platforms & MarTech",
   "Creative Production Tools",
-  "Industry Impact & Brand Cases",
-  "Quick Tips & Tactics"
+  "Industry & Brand Cases",
+  "Quick Tips & How-tos"
  ],
  "items": [
   {
-   "section": "AI 大模型 & 市場動態",
-   "title": "四大 AI 廠商於一週內接連發布新模型，企業買家陷入選型疲勞",
-   "title_en": "Four major AI labs release new models in one week — enterprise 'model fatigue' sets in",
-   "source": "CNBC",
-   "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
-   "time": "9月6日",
-   "region": "國際",
-   "action": "影響生意",
-   "summary": "Anthropic、Meta、Google、OpenAI 於同一週各自發布新版模型，企業評估資源接近極限，業界 CTO 直言「模型疲勞」正在蔓延。",
-   "summary_en": "All four major AI labs launched new models in the same week, overwhelming enterprise procurement teams. Executives warn of 'model fatigue' as release cycles outpace internal evaluation capacity.",
-   "why": "品牌客戶難以選型，具備 AI 工具評估專長的 Agency 顧問需求上升。",
-   "why_en": "Brands can't self-navigate the AI tool landscape — agencies with model evaluation expertise gain advisory value.",
+   "title": "Meta 推出首個個人 AI 代理 Muse：可代用戶預訂行程、自主談判",
+   "title_en": "Meta Launches First Personal AI Agent Muse: Books Travel, Negotiates Autonomously for Users",
+   "summary": "Meta 於9月8日正式推出個人 AI 代理 Muse，可自主執行預訂行程、發送電郵、代為談判等日常任務，初期限美國18歲以上用戶使用，透過專屬應用程式或 WhatsApp 操作。",
+   "summary_en": "Meta launched its first personal AI agent, Muse, on September 8 — autonomously booking travel, sending emails, and negotiating on users' behalf. Initially available in the US for users 18+ via a dedicated app or WhatsApp.",
+   "why": "標誌行銷生態從「問答 AI」跨入「行動 AI」時代，品牌觸達與互動邏輯將根本改變。",
+   "why_en": "Signals a shift from conversational AI to action-taking AI — brand reach and engagement logic will fundamentally change.",
    "highlights": [
-    "Anthropic、Meta、Google、OpenAI 四家在同一週各推新版模型，企業 IT 採購周期完全跟不上發布速度。",
-    "多位跨國企業 CTO 公開表示陷入「模型疲勞」，內部資源不足以完成充分的安全與效益評估。",
-    "模型發布競賽加劇，反令擅長 AI 工具選型的 Agency 在品牌顧問市場獲得新定位。"
+    "Muse 可主動開啟瀏覽器、填寫表格並代表用戶進行談判，超越傳統問答式 AI 助手的能力範疇。",
+    "Zuckerberg 視 Muse 為 AI 超智能普及願景的第一步，代理將全天候為用戶執行任務，不受時間限制。"
    ],
    "highlights_en": [
-    "All four top AI labs released new models in the same week, creating an evaluation backlog that enterprise IT teams cannot absorb.",
-    "Multiple Fortune 500 CTOs publicly cited 'model fatigue' — internal capacity for thorough model assessment has hit a ceiling.",
-    "The arms race paradoxically benefits agencies with AI tool expertise, as brands increasingly outsource model selection."
+    "Muse can open browsers, fill forms, and negotiate on users' behalf — well beyond traditional Q&A AI assistants.",
+    "Zuckerberg sees Muse as the first step toward accessible AI superintelligence, with agents working 24/7 without time constraints."
    ],
-   "pattern": "Agency 可藉此打造「AI 工具評選」顧問服務，以獨立第三方身份協助品牌客戶制定 AI 工具採購策略，開拓新的收費項目。",
-   "pattern_en": "Agencies can package 'AI tool evaluation' as a new consulting service — acting as independent experts helping brands navigate model selection strategy."
-  },
-  {
-   "section": "AI 大模型 & 市場動態",
-   "title": "雷軍發布小米 18 Fold，預告 AI 加速器晶片 2027 年商用",
-   "title_en": "Lei Jun launches Xiaomi 18 Fold, previews XRing O100 AI accelerator chip for 2027 commercial rollout",
-   "source": "36氪",
-   "url": "https://36kr.com/newsflashes/3973520289985028",
+   "source": "PBS NewsHour",
+   "url": "https://www.pbs.org/newshour/nation/meta-launches-personal-ai-agent-muse-to-help-with-everyday-tasks",
    "time": "9月8日",
-   "region": "中國",
-   "action": "要留意",
-   "summary": "小米 18 Fold 搭載自研玄戒 O3 晶片正式發布，雷軍於發布會上預告 AI 加速器 XRing O100 與自駕晶片 D100 將於 2027 年商業落地，三芯片戰略成形。",
-   "summary_en": "Xiaomi 18 Fold launches with the in-house XRing O3 chip as Lei Jun previews XRing O100 AI accelerator and D100 autonomous driving chip for 2027 commercial release.",
-   "why": "中國硬體廠商全棧自研 AI 晶片，端側 AI 自主化加速，衝擊大灣區 AI 工具生態。",
-   "why_en": "China's hardware self-sufficiency in AI chips accelerates on-device AI independence, reshaping the local AI tool and content creation landscape.",
-   "highlights": [
-    "小米 18 Fold 採用 3nm 製程玄戒 O3 旗艦晶片，性能全面對標 Apple A20 Pro，AnTuTu 跑分逾 523 萬。",
-    "XRing O100 AI 加速器晶片與 D100 自駕晶片均於發布會現場亮相，預計 2027 年量產商用。",
-    "小米三款自研晶片路線圖同步披露，是中國科技企業算力自主化的重要里程碑。"
-   ],
-   "highlights_en": [
-    "Xiaomi 18 Fold ships with the in-house XRing O3 chip on a 3nm process, benchmarking directly against Apple's A20 Pro with an AnTuTu score exceeding 5.23 million.",
-    "XRing O100 AI accelerator and D100 autonomous driving chips were previewed for 2027 mass production.",
-    "Three in-house chips announced in one event — Xiaomi's most explicit statement of compute self-sufficiency to date."
-   ]
-  },
-  {
    "section": "AI 大模型 & 市場動態",
-   "title": "Apple 明日發布 iPhone 18，iOS 27 攜 Gemini 驅動全新 Siri AI 改寫行動搜尋",
-   "title_en": "Apple unveils iPhone 18 tomorrow — iOS 27 brings Gemini-powered Siri AI, reshaping mobile search",
-   "source": "Forbes",
-   "url": "https://www.forbes.com/sites/ewanspence/2026/09/06/apple-iphone-18-pro-iphone-ultra-foldable-ios-26-launch-preview",
-   "time": "9月6日",
-   "region": "國際",
    "action": "要留意",
-   "summary": "Apple 9 月 9 日舉行新品發布，iPhone 18 Pro 與摺疊機 iPhone Ultra 亮相，iOS 27 全新 Siri AI 採用 Google Gemini，預計 9 月 14 日推出。",
-   "summary_en": "Apple's September 9 event reveals iPhone 18 Pro and foldable iPhone Ultra; iOS 27 ships September 14 with a fully rebuilt Siri AI powered by Google Gemini.",
-   "why": "iOS 27 Siri AI 上線觸及 HK 逾六成 iPhone 用戶，App 廣告與行動搜尋格局將隨之改變。",
-   "why_en": "iOS 27 Siri AI reaching over 60% of HK users means app advertising and mobile search dynamics will shift — prepare now.",
-   "highlights": [
-    "iPhone 18 Pro 搭載 A20 Pro (2nm) 晶片，配合 iOS 27 全新 Siri AI，支援複雜多步驟任務與情境感知指令。",
-    "iOS 27 Siri AI 底層採用 Google Gemini 技術，是迄今最大規模的 Siri 架構重建，iOS 27 預計 9 月 14 日推出。",
-    "首款摺疊機 iPhone Ultra 亦於現場發布，標誌 Apple 正式進入可摺疊形態裝置市場。"
-   ],
-   "highlights_en": [
-    "iPhone 18 Pro features an A20 Pro (2nm) chip paired with iOS 27's rebuilt Siri AI, supporting multi-step complex tasks and context-aware commands.",
-    "iOS 27 Siri AI runs on Google Gemini under the hood — the biggest Siri architecture change in its history; iOS 27 launches September 14.",
-    "First-ever foldable iPhone Ultra debuts alongside the Pro, marking Apple's entry into the foldable device category."
-   ],
-   "pattern": "iOS 27 推出後，Apple Search Ads 的廣告競標邏輯及 App Store 曝光規則可能同步調整，Agency 須於 9 月 14 日後密切追蹤 Apple 廣告政策更新。",
-   "pattern_en": "With Siri AI rebuilt in iOS 27, Apple Search Ads bidding logic and App Store ad placement rules may update. Watch for Apple Ads policy changes post-September 14."
+   "region": "國際"
   },
   {
-   "section": "廣告平台 & 行銷科技",
-   "title": "Google 啟動 DSA 強制升級至 AI Max，9 月已開始自動遷移部分廣告系列",
-   "title_en": "Google begins mandatory DSA-to-AI Max upgrade — some campaigns already auto-migrated in September",
-   "source": "Google",
-   "url": "https://blog.google/products/ads-commerce/dsa-upgrade-to-ai-max-2026",
-   "time": "9月1日",
-   "region": "國際",
-   "action": "影響生意",
-   "summary": "Google 確認自 9 月起對使用自動建立素材及廣泛匹配的搜尋廣告系列自動升級至 AI Max，動態搜尋廣告 DSA 強制遷移期限定為 2027 年 2 月。",
-   "summary_en": "Google confirms automatic AI Max upgrades began in September for Search campaigns using Automatically Created Assets and broad match; all Dynamic Search Ads face a mandatory sunset in February 2027.",
-   "why": "Agency 需立即審查客戶廣告帳戶，識別已被自動升級的廣告系列並確認品牌安全設置。",
-   "why_en": "Agencies must audit client accounts now to identify auto-upgraded campaigns and verify brand safety controls are still in place.",
+   "title": "OpenAI：AI 代理效能達人類的 3.1 倍，每週活躍用戶逾 10 億",
+   "title_en": "OpenAI: AI Agents Achieve 3.1x Human Workday Efficiency, Serving Over 1 Billion Weekly Users",
+   "summary": "OpenAI CFO Sarah Friar 發文披露，AI 代理在8月已達每研究員工作日產生 3.1 代理工作日的效能，旗下產品服務超過10億週活躍用戶與250萬家企業。GPT-6 Astra 已於9月3日推出並持續向企業開放。",
+   "summary_en": "OpenAI CFO Sarah Friar revealed that AI agents achieved 3.1 agent-workdays per researcher workday in August, with products now serving over 1 billion weekly active users and 2.5 million businesses. GPT-6 Astra launched September 3 and is rolling out to enterprises.",
+   "why": "首次以具體數字量化 AI 代理的生產力倍增效應，為企業評估 AI 投資回報率提供重要基準。",
+   "why_en": "First hard numbers quantifying AI agent productivity multiplier — a benchmark for evaluating AI investment ROI.",
    "highlights": [
-    "使用自動建立素材 (ACA) 與廣告系列層級廣泛匹配的搜尋廣告，Google 已於 9 月起自動升級至 AI Max，無須廣告主手動操作。",
-    "動態搜尋廣告 (DSA) 強制升級時間表確定：2027 年 2 月起所有 DSA 廣告系列將自動遷移，不設例外。",
-    "AI Max 引入後，廣告素材生成及出價策略均由 AI 主導，Agency 須重新評估品牌安全與地區管控設置的方式。"
+    "AI 代理效能達人類 3.1 倍，企業採用後可大幅壓縮研究與內容生產周期。",
+    "GPT-6 Astra 已於9月3日推出，OpenAI 稱其為「全球最智能且最對齊的模型」，正逐步向企業擴大開放。"
    ],
    "highlights_en": [
-    "Search campaigns using Automatically Created Assets (ACA) and campaign-level broad match are already being auto-upgraded to AI Max starting September — no advertiser action required.",
-    "Dynamic Search Ads face a hard sunset in February 2027 — all DSA campaigns will be auto-migrated with no exceptions.",
-    "With AI Max, ad creative and bidding strategy are AI-driven — agencies must re-evaluate how brand safety controls and geographic restrictions are configured."
-   ]
-  },
-  {
-   "section": "廣告平台 & 行銷科技",
-   "title": "OpenAI ChatGPT 廣告自服務系統向歐洲 31 個市場及印度開放，電商品牌即起須提交商品目錄",
-   "title_en": "OpenAI opens ChatGPT Ads self-serve to 31 European markets and India — e-commerce brands must submit product feeds now",
+    "AI agents deliver 3.1x human workday efficiency, with potential to drastically cut research and content production cycles.",
+    "GPT-6 Astra launched September 3; OpenAI calls it the 'world's most intelligent and aligned model' and is progressively rolling it out to enterprises."
+   ],
    "source": "OpenAI",
-   "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
-   "time": "9月4日",
-   "region": "國際",
-   "action": "可即用",
-   "summary": "OpenAI 宣布 ChatGPT 廣告自服務平台正式向歐洲 31 個市場、印度、中東及北非開放，同時要求電商廣告主必須提交商品目錄方可出現於購物結果。",
-   "summary_en": "OpenAI opens ChatGPT Ads self-serve access across 31 European markets, India, Middle East, and North Africa. E-commerce advertisers must submit product feeds to appear in shopping responses.",
-   "why": "Agency 可即時為歐洲及印度客戶開立帳戶，電商商品目錄整合是優先的技術準備項目。",
-   "why_en": "Agencies can now onboard European and India clients to ChatGPT Ads; product feed integration is the first action item for e-commerce brands.",
-   "highlights": [
-    "ChatGPT 廣告自服務後台現已向歐洲 31 個市場、印度、中東及北非的廣告主全面開放。",
-    "電商廣告主即日起須提交商品目錄 (Product Feed)，方可令廣告出現於 ChatGPT 的購物意圖回應中。",
-    "ChatGPT 廣告的初期 CPC 低於 Google 市場基準，轉化追蹤尚不成熟，現階段適合搶先佔位而非倚賴精確效果評估。"
-   ],
-   "highlights_en": [
-    "ChatGPT Ads self-serve dashboard is now open to advertisers in 31 European markets, India, the Middle East, and North Africa.",
-    "E-commerce brands must submit product feeds immediately to appear in ChatGPT's shopping-intent responses.",
-    "ChatGPT Ads CPCs are currently below Google benchmarks, but conversion tracking is still immature — ideal for early positioning, not precision performance measurement."
-   ]
-  },
-  {
-   "section": "廣告平台 & 行銷科技",
-   "title": "Google AI Mode 廣告滲透率升至約 25%，品牌可見度策略需全面升級",
-   "title_en": "Google AI Mode ads now appear in ~25% of results — brand visibility strategy must evolve for AI search",
-   "source": "Google",
-   "url": "https://blog.google/products/ads-commerce/google-search-ai-brand-discovery",
-   "time": "9月3日",
-   "region": "國際",
+   "url": "https://openai.com/index/the-work-now-within-reach",
+   "time": "9月8日",
+   "section": "AI 大模型 & 市場動態",
    "action": "要留意",
-   "summary": "Google 公布廣告已出現於約 25% 的 AI 驅動搜尋結果，並發布品牌在 AI 搜尋介面中提升可見度的最佳實踐，Search Console 同步推出 AI 搜尋可見度報告。",
-   "summary_en": "Google reveals ads now appear in approximately 25% of AI-powered search results, and launches new best-practice guidance and Search Console AI visibility reports to help brands appear in AI search experiences.",
-   "why": "AI 搜尋廣告滲透率快速上升，SEO 與 SEM 策略需整合 AI 搜尋可見度評估。",
-   "why_en": "AI search ads are scaling fast — agencies need to integrate AI search visibility measurement into both SEO and SEM strategies.",
-   "highlights": [
-    "Google AI Mode 與 AI Overviews 整合後，廣告已出現於約 25% 的 AI 驅動搜尋結果，較整合前大幅提升。",
-    "Google 發布 AI 搜尋品牌曝光最佳實踐：優化品牌權威性內容、確保商品資料完整、透過 Performance Max 覆蓋 AI 搜尋版位。",
-    "Search Console 現已推出 AI 搜尋可見度報告，廣告主可追蹤品牌在 AI Overviews 中的出現頻率與點擊數據。"
-   ],
-   "highlights_en": [
-    "Ads now appear in approximately 25% of AI-powered search results following the AI Mode and AI Overviews integration — a significant increase.",
-    "Google's AI search visibility best practices: strengthen authoritative brand content, ensure complete product data, and use Performance Max to cover AI search placements.",
-    "Search Console now offers AI search visibility reports, letting advertisers track brand appearances and clicks within AI Overviews."
-   ]
+   "region": "國際"
   },
   {
+   "title": "Chrome 改為雙週更新，AI 原生瀏覽器加速瓜分搜尋市場",
+   "title_en": "Chrome Switches to 2-Week Release Cycle as AI-Native Browsers Accelerate Market Takeover",
+   "summary": "TechCrunch 9月8日報道，Chrome 153 正式採用雙週更新周期，應對 AI 工具加速產生的安全漏洞。Brave、Opera Neon、Perplexity Comet 等 AI 原生瀏覽器同步蠶食 Chrome 市場份額。",
+   "summary_en": "TechCrunch reported Chrome 153 officially switched to a 2-week release cycle to counter AI-accelerated security vulnerabilities. AI-native browsers including Brave, Opera Neon, and Perplexity Comet are gaining market share from Chrome.",
+   "why": "AI 原生瀏覽器崛起加速搜尋行為碎片化，品牌需重新評估多平台內容可見度策略。",
+   "why_en": "AI-native browsers are fragmenting search behavior — brands must reassess multi-platform content discoverability strategies.",
+   "highlights": [
+    "Chrome 縮短至雙週更新，是自2021年由6週縮至4週後的再次提速，反映 AI 時代安全威脅的快速演變節奏。",
+    "Opera Neon、Perplexity Comet 等 AI 瀏覽器正動搖傳統搜尋引擎中心化格局，流量來源日趨分散，品牌 SEO 策略需同步擴展。"
+   ],
+   "highlights_en": [
+    "Chrome's 2-week cycle is its second acceleration since 2021, reflecting the faster pace of security threat evolution in the AI era.",
+    "AI browsers like Opera Neon and Perplexity Comet are eroding centralized search dominance, making traffic sources more fragmented and expanding the scope of brand SEO strategy."
+   ],
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape",
+   "time": "9月8日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際"
+  },
+  {
+   "title": "Google DeepMind 公布 AI Planet 加速器亞太新一屆 16 支入選團隊",
+   "title_en": "Google DeepMind Names 16 APAC Teams for AI Planet Accelerator",
+   "summary": "Google DeepMind 於9月7日公布亞太區 AI Planet Accelerator 新一屆16支入選團隊，涵蓋野生動物監測、農業及碳排量測等環境應用，是 Google 深化亞太區 AI 落地的重要信號。",
+   "summary_en": "Google DeepMind announced 16 teams for the APAC AI Planet Accelerator on September 7, covering wildlife monitoring, agriculture, and carbon measurement — signaling Google's push to deepen AI adoption across Asia-Pacific.",
+   "why": "Google 亞太 AI 策略承諾明確，有助香港行銷人預判 Google AI 工具在區域的優先佈局方向。",
+   "why_en": "Google's clear APAC AI investment signals where Google AI tools will be prioritized regionally — useful for HK marketers planning ahead.",
+   "highlights": [
+    "本屆加速器聚焦環境及農業 AI 應用，體現 Google 以 AI 推動可持續發展目標的品牌定位策略。",
+    "亞太區入選團隊跨越多個發展中市場，顯示 Google 積極擴大 AI 工具在區域的覆蓋範圍與品牌影響力。"
+   ],
+   "highlights_en": [
+    "The cohort focuses on environmental and agricultural AI, reflecting Google's brand strategy around AI for sustainability goals.",
+    "APAC teams span multiple developing markets, signaling Google's intent to scale AI tool coverage and brand influence across the region."
+   ],
+   "source": "Google DeepMind",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-planet-accelerator-apac/",
+   "time": "9月7日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際"
+  },
+  {
+   "title": "法院拒絕強制分拆 Google 廣告業務，同步推出 Buyer Direct 繞過 AdX",
+   "title_en": "Court Rejects Forced Google Ad Breakup; Google Launches Buyer Direct to Bypass AdX",
+   "summary": "美國法院否決強制分拆 Google AdX 的方案，改以行為補救措施回應壟斷問題。出版商反應分三派，部分人認為數據透明度要求比結構性分拆更具實際價值。Google 同時推出 Buyer Direct，允許大型廣告主繞過 AdX 直接購買。",
+   "summary_en": "A US court rejected forced breakup of Google AdX, opting for behavioral remedies. Publishers split three ways. Google simultaneously launched Buyer Direct, letting large advertisers bypass AdX entirely within Google Ad Manager.",
+   "why": "程序化廣告環境短期維持現狀，廣告主採購策略毋需急變，惟需關注 Buyer Direct 帶來的競價格局演變。",
+   "why_en": "Programmatic ad environment stays intact short-term; no urgent strategy shift, but Buyer Direct's impact on auction dynamics warrants monitoring.",
+   "highlights": [
+    "法院以行為補救措施取代結構性分拆，Google 拒絕 AdX 強制出售，反壟斷案進入執行細節談判階段。",
+    "Google 推出 Buyer Direct 功能，容許大型廣告主繞過 AdX 在 Google Ad Manager 直接購買廣告，市場整合進一步深化。"
+   ],
+   "highlights_en": [
+    "Court chose behavioral remedies over structural breakup; Google rejected forced AdX sale as the antitrust case moves to remedies negotiation.",
+    "Google launched Buyer Direct, letting large advertisers bypass AdX entirely to buy directly within Google Ad Manager, deepening market consolidation."
+   ],
+   "source": "Digiday",
+   "url": "https://digiday.com/media/google-divestiture-is-dead-and-publishers-are-fine-with-that",
+   "time": "9月7日",
    "section": "廣告平台 & 行銷科技",
-   "title": "Google AI Max 推出跨廣告系列 A/B 測試及升級版 Performance Planner，9 月全面開放",
-   "title_en": "Google AI Max adds cross-campaign A/B testing and upgraded Performance Planner — live across accounts in September",
-   "source": "Google",
-   "url": "https://blog.google/products/ads-commerce/ai-max-testing-planning-tools",
-   "time": "9月1日",
-   "region": "國際",
-   "action": "可即用",
-   "summary": "Google 為 AI Max 推出跨廣告系列 A/B 測試功能及升級版 Performance Planner，廣告主可在保留品牌安全管控的前提下安全評估 AI Max 成效，並以一鍵方式套用預算建議。",
-   "summary_en": "Google launches multi-campaign A/B testing and an upgraded Performance Planner for AI Max, letting advertisers safely evaluate performance while retaining brand controls, and apply budget recommendations with one click.",
-   "why": "A/B 測試讓 Agency 可在不影響現有廣告系列的情況下評估 AI Max 成效，為強制遷移前做好準備。",
-   "why_en": "Agencies can now A/B test AI Max against existing campaigns safely — essential groundwork before mandatory DSA migration arrives in February 2027.",
-   "highlights": [
-    "Multi-Campaign A/B Test 功能現已上線，可在同一實驗中同時測試多個搜尋廣告系列的預算及 ROI 目標。",
-    "品牌與地區管控設定可在 AI Max 實驗組中啟用，解決品牌保護與 AI 自動化測試之間的衝突。",
-    "升級版 Performance Planner 可預覽出價與預算調整效果，並提供一鍵套用功能，大幅縮短廣告優化周期。"
-   ],
-   "highlights_en": [
-    "Multi-Campaign A/B testing is now live, letting advertisers test budgets and ROI targets across multiple Search campaigns in a single experiment.",
-    "Brand and location controls can now be enabled within AI Max experiment arms, removing the key barrier to safe A/B testing.",
-    "The upgraded Performance Planner now previews the impact of bid and budget changes, with a one-click apply option that significantly shortens the optimisation cycle."
-   ]
+   "action": "要留意",
+   "region": "國際"
   },
   {
+   "title": "AI 爬蟲流量按年暴增八成，電商再定向廣告受重創",
+   "title_en": "AI Bot Traffic Surges 80% YoY, Corrupting E-Commerce Retargeting Pools",
+   "summary": "Cloudflare 數據顯示逾半網路請求來自自動化代理。電商代理商報告客戶 bot 流量按年增八成，再定向受眾池遭污染，CPM 上漲逾兩成。部分品牌已轉向社交媒體、零售媒體及第一方數據應對。",
+   "summary_en": "Cloudflare data shows over half of web requests now come from bots and AI agents. E-commerce agencies report ~80% YoY surge in bot traffic, corrupting retargeting pools and pushing CPMs up ~20%. Some brands are pivoting to social, retail media, and first-party data.",
+   "why": "再定向廣告效益急降，香港電商品牌需立即重審受眾策略，優先建立第一方數據資產。",
+   "why_en": "Retargeting ROI declining fast — HK e-commerce brands must urgently reassess audience strategy and prioritize first-party data assets.",
+   "highlights": [
+    "電商代理商 GoFish 報告客戶 bot 流量按年增長約80%，再定向廣告表現自去年第四季起持續惡化。",
+    "AI 代理比傳統 bot 更難過濾，因其能完成加入購物車或表單填寫等行為，令標準過濾工具失效。"
+   ],
+   "highlights_en": [
+    "E-commerce agency GoFish reports ~80% YoY bot traffic increase, with retargeting performance deteriorating since Q4 last year.",
+    "AI agents defeat standard bot filters by completing cart additions and form sign-ups — unlike simple bots, they are indistinguishable from real users."
+   ],
+   "source": "Digiday",
+   "url": "https://digiday.com/media-buying/marketers-face-dilemma-around-rising-bot-and-ai-web-traffic",
+   "time": "9月8日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "影響生意",
+   "region": "國際"
+  },
+  {
+   "title": "FTC 起訴 Amazon 廣告競標造假，The Trade Desk 與日宣布裁員 15%",
+   "title_en": "FTC Sues Amazon for Ad Auction Fraud; The Trade Desk Cuts 15% of Staff Same Day",
+   "summary": "FTC 聯同22個州起訴 Amazon 以「軟性底價」機制造假競標，影響逾百萬廣告主。同日 The Trade Desk 宣布裁員約570人（約佔員工15%），預計成本達5,100萬美元。Google 反壟斷案與日以行為補救措施輕放。",
+   "summary_en": "FTC and 22 state AGs sued Amazon for secretly inflating ad auction bids via a 'soft reserved price' mechanism, affecting over 1 million advertisers. The Trade Desk announced ~570 layoffs (15% of staff) at ~$51M cost the same day.",
+   "why": "Amazon 廣告平台信任度受損，加上 TTD 裁員，廣告主需重審 DSP 組合及媒體預算分配。",
+   "why_en": "Amazon ad platform credibility hit and TTD cutting staff — advertisers should review their DSP mix and media budget allocation.",
+   "highlights": [
+    "FTC 指控 Amazon 自 2019 年起暗中引入「軟性底價」機制，至 2024 年已影響約八成相關競標及逾百萬廣告主。",
+    "The Trade Desk 裁員約 570 人，CEO Jeff Green 稱此為「下一成長階段」的準備，惟市場分析師對此解讀持審慎態度。"
+   ],
+   "highlights_en": [
+    "FTC alleges Amazon's 'soft reserved price' mechanism, active since 2019, affected ~80% of relevant auctions and over 1 million advertisers by 2024.",
+    "The Trade Desk cuts ~570 roles; CEO Jeff Green frames it as preparation for the company's 'next growth phase,' though market analysts remain cautious."
+   ],
+   "source": "Digiday",
+   "url": "https://digiday.com/marketing/ad-tech-briefing-regulatory-storm-cloud-gather-and-scatter-over-big-tech-and-indies-count-the-cost",
+   "time": "9月8日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "影響生意",
+   "region": "國際"
+  },
+  {
+   "title": "Google AI Max 強制接管搜尋廣告，行銷人員批評透明度下降",
+   "title_en": "Google AI Max Forcibly Takes Over Search Ads; Marketers Criticize Loss of Transparency",
+   "summary": "Google 9月起強制將啟用廣泛比對或自動生成素材的搜尋廣告系列升級至 AI Max，行銷人員批評「AI 自行決定購買內容並降低透明度」。Google 稱可帶來平均7%轉換量提升，廣告主可選擇退出。",
+   "summary_en": "Google auto-upgraded eligible Search campaigns to AI Max in September. Marketers criticize reduced transparency as 'AI decides what you buy.' Google claims average 7% conversion lift; advertisers can opt out without losing historical data.",
+   "why": "搜尋廣告控制權轉移至 AI，需立即審查 AI Max 設定、負面關鍵詞清單及 UTM 追蹤邏輯。",
+   "why_en": "Search ad control has shifted to AI — immediately audit AI Max settings, negative keyword lists, and UTM tracking logic.",
+   "highlights": [
+    "TAU Marketing Solutions CEO 批評 AI Max「自行決定廣告購買內容並降低透明度」，反映廣告主對自主控制能力喪失的深切憂慮。",
+    "Final URL 擴展可能將訪客導向與廣告設定不同的頁面，任何依賴廣告 URL 的 UTM 解析或 CMS 連接均可能靜默失效。"
+   ],
+   "highlights_en": [
+    "TAU Marketing Solutions CEO criticized AI Max for 'deciding what you buy and lowering transparency,' reflecting deep concern over loss of advertiser control.",
+    "Final URL expansion may route visitors to pages different from configured ad URLs, silently breaking UTM parsing and CMS data joins."
+   ],
+   "pattern": "追蹤技術衝擊：新增的 `segments.search_term_match_source` API 欄位將流量標記為「廣告主關鍵字」、「AI 廣泛匹配」或「無關鍵字」三類，現有報告管道需更新以捕捉這些維度。動態搜尋廣告的自動升級延至 2027 年 2 月，廣告主可提前自願遷移。",
+   "pattern_en": "Tracking impact: The new `segments.search_term_match_source` API field labels traffic as 'advertiser keyword,' 'AI broad match,' or 'keywordless' — existing reporting pipelines need updating. DSA auto-upgrade delayed to February 2027; voluntary migration is available now.",
+   "source": "Digiday",
+   "url": "https://digiday.com/media-buying/the-rundown-google-expands-ai-max-as-automation-shifts-upstream",
+   "time": "9月8日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "影響生意",
+   "region": "國際"
+  },
+  {
+   "title": "ChatGPT 廣告開放法律服務，早期每個潛在客戶成本僅為 Google 的四分之一",
+   "title_en": "ChatGPT Ads Opens to Law Firms: Early CPL a Fraction of Google's Cost",
+   "summary": "OpenAI 更新廣告政策，允許美國持牌律師事務所在 ChatGPT 投放廣告。早期數據顯示每個潛在客戶成本約 166 美元，遠低於 Google 廣告的每次點擊約 600 美元，廣告採用對話情境定向而非關鍵字。",
+   "summary_en": "OpenAI updated its ad policy to permit US-licensed legal services advertising on ChatGPT. Early data shows ~$166 per lead vs. ~$600 per click on Google. Ads use conversational context targeting rather than keywords.",
+   "why": "ChatGPT 廣告快速擴展行業類別，對多元化廣告渠道策略的品牌而言值得立即關注與測試。",
+   "why_en": "ChatGPT ads expanding industry access rapidly — brands with multi-channel ad strategies should start monitoring and testing now.",
+   "highlights": [
+    "廣告代理商 ADSQUIRE 以約 2,000 美元廣告費獲取 12 個潛在客戶，每個約 166 美元，相較 Google 廣告每次點擊約 600 美元具明顯成本優勢。",
+    "ChatGPT 廣告採「對話情境定向」而非關鍵字定向，廣告主根據用戶正在討論的話題投放，代表全新的受眾接觸邏輯。"
+   ],
+   "highlights_en": [
+    "Agency ADSQUIRE spent ~$2,000 and got 12 leads at ~$166 each on ChatGPT vs. ~$600/click on Google — a significant early cost advantage.",
+    "ChatGPT uses conversational context targeting rather than keywords, with ads served based on what users are actively discussing — a fundamentally new engagement model."
+   ],
+   "source": "Adweek",
+   "url": "https://www.adweek.com/adweek-wire/chatgpt-ads-just-opened-the-door-to-law-firms",
+   "time": "9月5日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "可即用",
+   "region": "國際"
+  },
+  {
+   "title": "OpenAI 發布 ChatGPT Images 2.5：速度提升 50%，新增視覺標註局部編輯",
+   "title_en": "OpenAI Launches ChatGPT Images 2.5: 50% Faster with Visual Annotation Point-and-Edit",
+   "summary": "OpenAI 於9月8日發布新一代圖像模型 ChatGPT Images 2.5，生成速度最高提升50%，新增草圖生成模式、視覺標註編輯（圈出指定區域局部修改）功能，API 提供 Flare 與 Sunburst 兩款子模型。",
+   "summary_en": "OpenAI launched ChatGPT Images 2.5 on September 8, delivering up to 50% faster generation, new Sketch mode, and visual annotation point-and-edit. API variants Flare and Sunburst are now available.",
+   "why": "每週逾30億張圖像透過 ChatGPT 產出，速度與局部編輯功能直接提升廣告素材製作效率。",
+   "why_en": "With 3B+ images generated weekly via ChatGPT, faster speed and precise regional editing directly cut creative production time for marketers.",
+   "highlights": [
+    "生成速度最高提升50%；新增草圖（Sketch）模式讓用戶手繪輪廓即可生成完整圖像，大幅降低概念圖製作門檻。",
+    "視覺標註編輯功能允許用戶圈出指定區域交由 AI 局部修改，其餘部分保持原樣，大幅降低重複修圖時間成本。"
+   ],
+   "highlights_en": [
+    "Generation speed improved by up to 50%; new Sketch mode lets users draw rough outlines and get complete AI-generated images, lowering the barrier for concept visuals.",
+    "Visual annotation editing lets users circle a specific area for targeted AI changes while keeping the rest of the image intact, dramatically cutting revision time."
+   ],
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+   "time": "9月8日",
    "section": "創意生產工具",
-   "title": "Kling AI 官方橫評 10 款 AI 影片生成模型：選對模型省掉反覆生成",
-   "title_en": "Kling AI publishes head-to-head comparison of 10 AI video generation models for content creators",
+   "action": "可即用",
+   "region": "國際"
+  },
+  {
+   "title": "GPT-6 Astra 引爆 3D 創作熱潮：43 分鐘建出含 26.7 萬棟建築的互動城市",
+   "title_en": "GPT-6 Astra Sparks 3D Creation Frenzy: 267K-Building Interactive City Built in 43 Minutes",
+   "summary": "量子位9月8日報道，GPT-6 Astra 上線後用戶以 Python 腳本操控 Blender，43分鐘建出含26.7萬棟建築的互動式「迷你首爾」，消耗速度過快迫使 OpenAI 緊急重置所有用戶配額。",
+   "summary_en": "QbitAI reported on September 8 that GPT-6 Astra triggered a 3D creation frenzy — users built a 267,000-building interactive 'mini Seoul' in 43 minutes via Python + Blender, forcing OpenAI to emergency-reset all user token quotas.",
+   "why": "GPT-6 的 3D 生成能力展示 AI 在品牌虛擬場景與互動廣告方面的巨大潛力。",
+   "why_en": "GPT-6's 3D generation capability previews AI's potential for branded virtual environments and interactive advertising experiences.",
+   "highlights": [
+    "用戶利用 GPT-6 Astra 以 Python 腳本操控 Blender，43分鐘完成含約26.7萬棟建築模型的互動式「迷你首爾」。",
+    "OpenAI 因用量激增緊急重置全體用戶配額，社群甚至出現專門追蹤重置時間的第三方網站，反映需求遠超預期。"
+   ],
+   "highlights_en": [
+    "A user built an interactive 'mini Seoul' with ~267,000 building models in 43 minutes using GPT-6 Astra controlling Blender via Python scripts.",
+    "OpenAI issued an emergency token quota reset due to surging usage; the community built third-party sites to track reset timing, reflecting demand far beyond expectations."
+   ],
+   "source": "量子位",
+   "url": "https://www.qbitai.com/2026/09/485854.html",
+   "time": "9月8日",
+   "section": "創意生產工具",
+   "action": "要留意",
+   "region": "國際"
+  },
+  {
+   "title": "可靈 AI 發布 2026 年十大 AI 影片模型對比：Kling 3.0 在角色一致性與原生音訊勝出",
+   "title_en": "Kling AI Publishes 2026 AI Video Model Comparison: Kling 3.0 Leads on Character Consistency and Native Audio",
+   "summary": "可靈 AI 官方於9月7日發布報告，對比 Kling 3.0、Google Veo 3.1、Runway Gen-4.5 等十款主流 AI 影片模型，評測動作流暢度、角色一致性、原生音訊及多鏡頭敘事等維度。",
+   "summary_en": "Kling AI published a comparison of 10 leading AI video models on September 7, including Kling 3.0, Veo 3.1, and Runway Gen-4.5, evaluated on motion quality, character consistency, native audio, and multi-shot storytelling.",
+   "why": "提供 AI 影片工具選型的直接參考，幫助 agency 快速決策客戶提案的工具組合。",
+   "why_en": "Direct benchmark for AI video tool selection, helping agencies quickly decide on tool combinations for client pitches and production planning.",
+   "highlights": [
+    "Kling 3.0 在角色一致性、原生音訊同步及 4K 輸出方面表現領先，並支援多鏡頭分鏡圖參考生成。",
+    "可靈 API 將於9月15日起下線119款舊版特效模板及虛擬試衣功能，使用舊版 API 的開發者須於截止日前遷移至 Image 3.0 及 3.0 Omni。"
+   ],
+   "highlights_en": [
+    "Kling 3.0 leads in character consistency, native audio sync, and 4K output; supports multi-shot storyboard reference generation.",
+    "Kling API retires 119 legacy effect templates and Virtual Try-On on September 15; developers using the old API must migrate to Image 3.0/3.0 Omni before the deadline."
+   ],
    "source": "Kling AI",
    "url": "https://kling.ai/blog/ai-video-generation-models",
    "time": "9月7日",
-   "region": "國際",
-   "action": "可即用",
-   "summary": "Kling AI 官方對比 10 款主流 AI 影片生成模型，涵蓋動態品質、角色一致性、原生音效、多鏡頭控制及 4K 輸出，幫助廣告創作者按項目需求選擇合適工具。",
-   "summary_en": "Kling AI's official head-to-head comparison of 10 AI video models covers motion quality, character consistency, native audio, multi-shot control, and 4K output — helping ad creators match the right tool to each project.",
-   "why": "廣告製作選錯模型直接浪費生成配額，這份對比有助 Agency 為不同廣告項目建立標準選模流程。",
-   "why_en": "Picking the wrong model wastes production credits — this guide helps agencies standardise model selection for different campaign types.",
-   "highlights": [
-    "Video 3.0 適合 Prompt 驅動的創意廣告影片；Omni 版本則更適合需要重用角色或產品參考形象的項目。",
-    "Native Audio 功能支援中、英、日、韓、西班牙五種語言，可直接生成多語言廣告素材。",
-    "選模原則：先確定物料來源（純文字或圖片）及製作需求，沒有一款模型適合所有場景。"
-   ],
-   "highlights_en": [
-    "Video 3.0 suits prompt-driven creative ads; the Omni model is better for projects requiring reusable character or product reference visuals.",
-    "Native Audio supports five languages (Chinese, English, Japanese, Korean, Spanish), enabling direct multilingual ad production.",
-    "Model selection principle: determine source material type (text or image) and production scope first — no single model fits all use cases."
-   ]
-  },
-  {
    "section": "創意生產工具",
-   "title": "Kling AI 橫評 10 款圖轉影片工具：靜態產品圖直接生成廣告影片",
-   "title_en": "Kling AI compares 10 image-to-video AI tools: turn static product photos into ad videos without filming",
-   "source": "Kling AI",
-   "url": "https://kling.ai/blog/best-image-to-video-ai",
+   "action": "要留意",
+   "region": "中國"
+  },
+  {
+   "title": "Meta Connect 2026 確認 9 月 23-24 日：預告 Ray-Ban AI 眼鏡與廣告自動化新動態",
+   "title_en": "Meta Connect 2026 Confirmed for Sept 23–24: Ray-Ban AI Glasses and Ad Automation Updates Teased",
+   "summary": "Meta 正式確認 Connect 大會於9月23-24日在加州門洛帕克舉行，Zuckerberg 預告新款 Ray-Ban AI 智能眼鏡，預計同步公布 Llama 模型及廣告自動化最新進展。Meta 已於9月起移除廣告手動版位控制選項。",
+   "summary_en": "Meta confirmed Connect 2026 for September 23–24 in Menlo Park. Zuckerberg teased new Ray-Ban AI smart glasses; Llama model and ad automation announcements expected. Meta already removed manual ad placement controls in September.",
+   "why": "Meta 廣告自動化進程直接影響 agency Q4 投放策略，Connect 公告值得提前部署應對方案。",
+   "why_en": "Meta's ad automation roadmap directly shapes Q4 2026 campaign strategy — plan responses to Connect announcements in advance.",
+   "highlights": [
+    "Meta Connect 2026 將聚焦下一代 Ray-Ban AI 眼鏡、Llama 模型更新及 Quest VR 頭顯，開發者專場設於第二日。",
+    "Meta 已於9月起移除廣告手動版位控制選項，改以 AI 主導廣告排期，廣告主現只能透過廣告組合層設定影響版位優先順序。"
+   ],
+   "highlights_en": [
+    "Meta Connect 2026 will focus on next-gen Ray-Ban AI glasses, Llama model updates, and Quest VR; developer sessions on Day 2.",
+    "Meta removed manual ad placement controls in September, replacing them with AI-driven scheduling; advertisers can now only influence placement priority at the ad set level."
+   ],
+   "source": "Road to VR",
+   "url": "https://roadtovr.com/meta-connect-2026-date-announcement",
    "time": "9月7日",
-   "region": "國際",
-   "action": "可即用",
-   "summary": "Kling AI 對比 10 款圖轉影片工具的動態品質、風格控制力與平台支援，為廣告主提供以靜態產品圖直接生成動態廣告素材的選型指引。",
-   "summary_en": "Kling AI compares 10 image-to-video tools on motion quality, style control, and platform support, guiding marketers on converting static product photos directly into video ad creatives.",
-   "why": "電商及品牌廣告常需將產品靜圖升級成影片，正確選擇工具可壓低製作成本並加快上線速度。",
-   "why_en": "E-commerce brands routinely need to animate product photos into video ads — picking the right tool directly cuts production cost and launch time.",
-   "highlights": [
-    "圖轉影片工具可將現有產品靜照直接升級為動態廣告素材，毋需安排新的拍攝行程。",
-    "各工具在動態自然度、風格控制與輸出格式支援上差異顯著，須按實際使用場景選擇。",
-    "Kling Image-to-Video 的 Motion Control 功能支援從參考影片或內置動態素材庫套用動作效果。"
-   ],
-   "highlights_en": [
-    "Image-to-video tools convert existing product photos into video ad creatives without requiring new filming.",
-    "Tools vary significantly in motion naturalness, style control, and supported export formats — match selection to use case.",
-    "Kling's Motion Control lets creators apply movement from a reference video or choose from a built-in Motion Library."
-   ]
+   "section": "創意生產工具",
+   "action": "要留意",
+   "region": "國際"
   },
   {
+   "title": "代理商競相建立 AI 代理審計機制，防止廣告開支失控",
+   "title_en": "Agencies Build AI Agent Audit Frameworks to Prevent Runaway Ad Spend",
+   "summary": "Gartner 指六成企業因 AI 使用缺乏管控而出現成本超支。Rise、Brainlabs、Dept、PMG 等代理商已自建決策記錄、配額上限及模型選擇分層等審計機制，防止 AI 代理超支失控。",
+   "summary_en": "Gartner warns 60% of AI-deploying companies face cost overruns. Agencies including Rise, Brainlabs, Dept, and PMG built audit layers with decision logs, token caps, and model tiering to keep AI agents from overspending.",
+   "why": "客戶需主動向代理商查詢 AI 代理的成本管控機制，避免承擔不明超支風險。",
+   "why_en": "Clients should proactively ask agencies about AI agent cost governance mechanisms to avoid absorbing unexpected overruns.",
+   "highlights": [
+    "Dept 員工曾單日消耗150萬個 Token，促使公司建立「AI 閘道」，移除員工自行選擇 AI 模型的選項，統一由系統管控。",
+    "Gartner 調查顯示56%的企業在缺乏明確 AI 使用政策的情況下部署 AI，根本原因是員工「未有為任務選擇合適模型」，導致成本失控。"
+   ],
+   "highlights_en": [
+    "A Dept staffer burned 1.5M tokens in a single day, prompting the agency to build an 'AI gateway' removing individual model selection and centralizing control.",
+    "Gartner found 56% of companies deploy AI without clear usage policies; root cause identified as staff 'not choosing the right model for the task,' leading to cost overruns."
+   ],
+   "source": "Digiday",
+   "url": "https://digiday.com/media-buying/media-agencies-build-audit-tools-to-prevent-ai-agents-from-overcharging",
+   "time": "9月4日",
    "section": "行業影響 & 品牌案例",
-   "title": "IKEA 香港聯手 TBWA\\HK 推出「為所愛騰出空間」，以本地情感切入收納廣告",
-   "title_en": "IKEA Hong Kong and TBWA\\HK launch 'Make Space for What You Love' — local emotional insight drives storage campaign",
-   "source": "Marketing-Interactive",
-   "url": "https://www.marketing-interactive.com/ikea-hk-reframes-storage-with-localised-campaign",
-   "time": "9月7日",
-   "region": "香港",
-   "action": "可即用",
-   "summary": "IKEA 香港攜手 TBWA\\HK 推出「Make Space for What You Love」整合廣告，以四款儲物產品為核心，透過香港本地生活情感連結小空間居住文化，覆蓋電視廣告、MTR 站佔領及社交媒體。",
-   "summary_en": "IKEA HK and TBWA\\Hong Kong launch 'Make Space for What You Love' — an integrated campaign connecting four storage products to distinct Hong Kong cultural insights, running across TV, MTR domination, and social media.",
-   "why": "示範本地化情感策略如何在功能性品類中脫穎而出，為港澳 Agency 提供可參考的在地化創意框架。",
-   "why_en": "Demonstrates how localised emotional storytelling can differentiate a functional product category — a replicable framework for HK agencies pitching brand work.",
-   "highlights": [
-    "活動以「沒有人因為有空間才保留東西，是因為割捨不了」為創意核心，將四款儲物產品分別對應四種香港生活情境。",
-    "媒體部署涵蓋電視廣告、MTR 站佔領及數位社交，以整合手法強化「騰出空間」的情感主題。",
-    "IKEA 與 TBWA\\HK 的合作策略顯示，即使在 AI 廣告工具普及的環境下，本地文化洞察仍是差異化的核心競爭優勢。"
-   ],
-   "highlights_en": [
-    "The campaign core insight — people keep things not because they have space, but because they cannot let go — maps four storage products to four distinct Hong Kong life scenarios.",
-    "Media spans TV commercials, MTR station domination, and digital social, amplifying the emotional 'make space' theme with consistency.",
-    "The IKEA × TBWA\\HK strategy shows that local cultural insight remains a core competitive advantage even as AI ad tools commoditise production."
-   ]
+   "action": "要留意",
+   "region": "國際"
   },
   {
+   "title": "AI 編程代理 Cognition 估值達 480 億美元，客戶包括賓士與 NASA",
+   "title_en": "AI Coding Agent Startup Cognition Hits $48B Valuation; Clients Include Mercedes-Benz and NASA",
+   "summary": "TechCrunch 9月8日報道，Cognition 獲 a16z 領投完成20億美元融資，估值達480億美元，四個月內由260億美元躍升。年化收入從4.92億攀升至9億美元，客戶包括賓士、NASA 及高盛。",
+   "summary_en": "TechCrunch reported September 8 that Cognition raised $2B led by a16z at a $48B valuation — up from $26B in four months. Annual run-rate revenue jumped from $492M to $900M, with clients including Mercedes-Benz, NASA, and Goldman Sachs.",
+   "why": "頂級企業大規模採用 AI 自動化工具，AI 代理市場高速擴張，agency 的技術服務定價面臨新壓力。",
+   "why_en": "Enterprise-scale AI automation adoption signals rapid market expansion — agencies face growing pricing pressure on technical services.",
+   "highlights": [
+    "Cognition 估值四個月內由260億美元躍升至480億美元，反映市場對 AI 代理類工具持極高信心。",
+    "公司正自訓練模型以減少對 OpenAI 與 Anthropic API 的依賴，反映企業級 AI 戰略走向垂直整合。"
+   ],
+   "highlights_en": [
+    "Cognition's valuation jumped from $26B to $48B in just four months, reflecting surging investor confidence in AI agent tools.",
+    "The company is training its own models to reduce reliance on OpenAI and Anthropic APIs, reflecting a vertical integration trend in enterprise AI strategy."
+   ],
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market",
+   "time": "9月8日",
    "section": "行業影響 & 品牌案例",
-   "title": "OpenAI 廣告業務 200 天達年化 10 億美元，衝擊傳統廣告生態格局",
-   "title_en": "OpenAI's ad business hits $1B annualised run rate in just 200 days, disrupting the advertising industry",
-   "source": "Reuters",
-   "url": "https://www.reuters.com/business/media-telecom/openais-ad-business-hits-1-billion-annualized-revenue-run-rate-2026-08-31",
-   "time": "8月31日",
-   "region": "國際",
-   "action": "影響生意",
-   "summary": "OpenAI 廣告業務僅用 200 天便突破年化 10 億美元收入規模，成為增速最快的 AI 廣告平台，廣告行業對預算分流的關注隨之升溫。",
-   "summary_en": "OpenAI's ChatGPT Ads business reached $1 billion in annualised revenue in just 200 days — faster than any previous ad platform launch — prompting the industry to re-evaluate budget allocation strategies.",
-   "why": "ChatGPT 廣告崛起速度遠超預期，部分 Google 及 Meta 預算將加速流向 AI 平台，Agency 須盡早布局。",
-   "why_en": "ChatGPT Ads' meteoric rise signals budget flows shifting faster than expected — agencies need an AI advertising strategy now, not next year.",
-   "highlights": [
-    "OpenAI 廣告業務從零到年化 10 億美元，僅用 200 天，打破所有主流廣告平台的增速紀錄。",
-    "目前廣告主以科技、電商及金融行業為主，受眾集中於 ChatGPT Plus 高收入訂閱用戶群。",
-    "廣告業界對 ChatGPT 廣告成效評價兩極：部分廣告主反映 CPC 偏低，另一部分則指轉化追蹤尚不成熟。"
-   ],
-   "highlights_en": [
-    "OpenAI's ad business went from zero to $1B annualised revenue in 200 days — the fastest ramp of any major ad platform to date.",
-    "Current advertisers are concentrated in tech, e-commerce, and finance, reaching primarily ChatGPT Plus high-value subscribers.",
-    "Industry reactions are mixed: some advertisers see low CPCs as an opportunity, while others cite immature conversion tracking as a barrier."
-   ]
+   "action": "要留意",
+   "region": "國際"
   },
   {
+   "title": "物理 AI 公司深度智控獲寧德時代與沙特阿美投資，三個月內完成三輪融資",
+   "title_en": "Physical AI Firm DeepCtrls Closes Three Rounds in Three Months, Backed by CATL and Saudi Aramco",
+   "summary": "深度智控於9月8日宣布完成 B+ 輪億元級融資，由寧德時代領投、沙特阿美創投跟投，三個月內完成三輪融資，加速構建 AI 算力與能源底座。",
+   "summary_en": "Chinese physical AI startup DeepCtrls announced a B+ round of hundreds of millions RMB on September 8, led by CATL with Aramco Ventures participating — completing three funding rounds in three months.",
+   "why": "資本正快速湧入物理 AI 賽道，對工業與供應鏈有 AI 應用需求的品牌而言，這是值得追蹤的長線投資趨勢。",
+   "why_en": "Capital is flowing rapidly into physical AI — a long-term investment trend worth tracking for brands with industrial or supply chain AI application needs.",
+   "highlights": [
+    "深度智控的 PhyAI 引擎可令 AI 在真實物理環境中運作，已服務全球數百家企業客戶。",
+    "CEO 表示 AI 發展下半場正從「數字世界的思考」轉向「物理世界的控制」，算力與能源是兩大核心支柱。"
+   ],
+   "highlights_en": [
+    "DeepCtrls' PhyAI engine enables AI to operate in real physical environments, already serving hundreds of enterprise clients globally.",
+    "CEO states the next era of AI shifts from 'thinking in digital worlds' to 'controlling the physical world,' with compute and energy as core pillars."
+   ],
+   "source": "量子位",
+   "url": "https://www.qbitai.com/2026/09/485784.html",
+   "time": "9月8日",
    "section": "行業影響 & 品牌案例",
-   "title": "WPP 年內累計裁員逾萬一千人，Gartner 預測 Agency 費用佔比 2030 年跌至 15%",
-   "title_en": "WPP passes 11,000 job cuts; Gartner forecasts agency fees will fall to 15% of marketing budgets by 2030",
-   "source": "The Drum",
-   "url": "https://www.thedrum.com/news/wpp-s-ongoing-job-cuts-reflect-a-holdco-era-that-s-not-getting-any-easier",
-   "time": "9月2日",
-   "region": "國際",
-   "action": "影響生意",
-   "summary": "WPP 年內累計裁員逾一萬一千人；Gartner 預測 Agency 服務費在行銷預算中的佔比將由現時 19% 跌至 2030 年的 15%，AI 自動化是主因。",
-   "summary_en": "WPP has cut over 11,000 jobs this year as AI-driven workflow automation reduces headcount needs. Gartner forecasts agency fees will fall from 19% to 15% of marketing budgets by 2030.",
-   "why": "大型 Holdco 持續瘦身，獨立及精品 Agency 的競爭機遇正在開放，大灣區 Agency 可趁勢出擊。",
-   "why_en": "Holdco consolidation creates a window for independent and boutique agencies to win clients displaced by the restructuring.",
-   "highlights": [
-    "WPP 年內累計裁員逾一萬一千人，反映全球 Holdco 以 AI 取代人力的速度遠超業界預期。",
-    "Gartner 預測 Agency 服務費佔行銷預算比例將由現時 19% 降至 2030 年的 15%，AI 工具是主要替代力量。",
-    "大型 Holdco 持續收縮，為大灣區規模靈活的獨立 Agency 創造搶佔客戶的機遇。"
-   ],
-   "highlights_en": [
-    "WPP has cut more than 11,000 jobs this year, reflecting a faster-than-expected pace of AI replacing human headcount across holdco operations.",
-    "Gartner forecasts agency service fees will fall from 19% to 15% of marketing budgets by 2030, driven primarily by AI tool adoption.",
-    "Holdco downsizing creates a market opportunity for nimble independent agencies in the Greater Bay Area to capture newly available clients."
-   ]
+   "action": "要留意",
+   "region": "中國"
   },
   {
+   "title": "Runway 正式推出 Adobe Premiere Pro 與 After Effects 原生插件",
+   "title_en": "Runway Launches Native Plugin for Adobe Premiere Pro and After Effects",
+   "summary": "Runway AI 於9月8日發布 Premiere Pro 與 After Effects 原生插件，創作者可直接在時間軸內生成影片、重新渲染片段及進行 HDR 轉換，無須離開 Adobe 工作流程。插件免費下載，生成內容消耗現有 Runway 帳戶積分。",
+   "summary_en": "Runway AI launched native plugins for Premiere Pro and After Effects on September 8, enabling video generation, clip re-rendering, and HDR conversion directly within the Adobe timeline. Free to download; generation uses existing Runway credits.",
+   "why": "AI 影片生成正式融入行業標準剪輯工具，廣告影片製作門檻大幅降低，今日即可試用。",
+   "why_en": "AI video generation is now built into industry-standard editing tools — dramatically lowering the barrier for ad video production. Try it today.",
+   "highlights": [
+    "生成內容直接落在時間軸播放頭位置即時可剪輯，無須在應用程式間切換，大幅提升廣告素材製作流暢度。",
+    "Edit Studio 功能允許選取現有片段交由 Aleph 2 模型重新渲染，保持原有時長，適合廣告素材快速改版。",
+    "插件免費下載（macOS 與 Windows），生成內容消耗現有 Runway 帳戶積分，無需額外訂閱費用。"
+   ],
+   "highlights_en": [
+    "Generated content lands at the playhead in the timeline, ready to trim immediately — no switching between apps, keeping the creative workflow fluid.",
+    "Edit Studio lets you select an existing clip and have Aleph 2 re-render it at the same duration — ideal for fast ad creative versioning.",
+    "Free to download for macOS and Windows; generation uses existing Runway credits with no additional subscription required."
+   ],
+   "source": "Runway",
+   "url": "https://runway.com/news/company-news/runway-for-adobe",
+   "time": "9月8日",
    "section": "即學技巧 & 玩法",
-   "title": "Kling AI 完整教學：五段式 Prompt 公式一步步生成品牌廣告影片",
-   "title_en": "Kling AI's full tutorial: a five-part prompt formula for generating brand video ads step by step",
-   "source": "Kling AI",
-   "url": "https://kling.ai/blog/how-to-create-ai-videos",
-   "time": "9月7日",
-   "region": "國際",
    "action": "可即用",
-   "summary": "Kling AI 官方教學以「場景＋主體＋動作＋音效＋風格」五段式 Prompt 公式，逐步指導如何用 Kling 3.0 生成多鏡頭品牌廣告影片，涵蓋 Multi-Shot、角色參考與 Native Audio 功能。",
-   "summary_en": "Kling AI's official step-by-step guide introduces a five-part prompt formula (Scene + Subject + Movement + Audio + Style) to generate multi-shot brand video ads using Kling 3.0, covering Multi-Shot, Character Reference, and Native Audio.",
-   "why": "即學即用的 Prompt 框架幫助廣告 Creative 減少反覆生成次數，縮短廣告製作周期。",
-   "why_en": "An immediately applicable prompt formula that reduces creative iteration cycles and speeds up ad video production for agency teams.",
+   "region": "國際"
+  },
+  {
+   "title": "Adobe Firefly 新增 Voice Cuts：AI 以配音自動排列畫面生成影片初稿",
+   "title_en": "Adobe Firefly Adds Voice Cuts: AI Auto-Assembles Visuals Around Your Voiceover",
+   "summary": "Adobe Firefly 更新 Voice Cuts 工作流程，用戶提供配音稿後，AI 自動挑選並排列相關視覺素材生成可編輯初稿影片。配合 ElevenLabs 語音合成支援多語言，大幅壓縮廣告影片製作周期。新增 Banners at Scale 廣告模板。",
+   "summary_en": "Adobe Firefly updated Voice Cuts, allowing AI to auto-arrange visuals around a voiceover to generate an editable first-draft video. Supports multiple languages via ElevenLabs. New Banners at Scale and Product Assets ad templates added.",
+   "why": "從文案到影片初稿全流程自動化，社交廣告影片製作效率倍增，適合快速產出多語言廣告版本。",
+   "why_en": "From copy to video draft, fully automated — multiplied efficiency for social ad production, ideal for rapid multilingual versioning.",
    "highlights": [
-    "Prompt 公式：「場景＋主體＋動作＋音效＋風格或情感或鏡頭語言」，每個鏡頭聚焦一個動作，避免複合指令。",
-    "Multi-Shot 功能可控制鏡頭次序及時長；Custom Multi-Shot 更可為每個分鏡自訂獨立提示詞。",
-    "優化次序：先修最弱的元素，使用 Character Reference 保持品牌角色一致性，音效最後加入。"
+    "Voice Cuts 以配音為骨架，AI 自動編排視覺素材生成可編輯初稿，創作者只需精修而非從零開始。",
+    "Generate Speech 功能支援多語言與多口音，可自訂語速與音調，由 ElevenLabs 提供底層支援。",
+    "新增 Banners at Scale 與 Product Assets 廣告模板，直接針對數位廣告素材批量生產場景設計。"
    ],
    "highlights_en": [
-    "Five-part prompt formula: Scene + Subject + Movement + Audio + Style/Emotion/Camera angle. Keep each shot focused on one action — avoid compound instructions.",
-    "Multi-Shot controls shot order and duration; Custom Multi-Shot lets you add a dedicated prompt to each individual cut.",
-    "Optimise in order: fix the weakest element first, use Character Reference for brand character consistency, add audio last."
-   ]
+    "Voice Cuts uses voiceover as a scaffold; AI arranges visuals into an editable first-draft so creators refine rather than start from scratch.",
+    "Generate Speech supports multiple languages and accents with customizable speed and pitch, powered by ElevenLabs.",
+    "New Banners at Scale and Product Assets templates are designed specifically for digital ad creative batch production workflows."
+   ],
+   "source": "Adobe",
+   "url": "https://helpx.adobe.com/firefly/web/whats-new/new-features/whats-new.html",
+   "time": "9月2日",
+   "section": "即學技巧 & 玩法",
+   "action": "可即用",
+   "region": "國際"
+  },
+  {
+   "title": "Meta Ads Manager 推出創意多樣性評分，AI 代理獲授權直讀廣告帳戶",
+   "title_en": "Meta Ads Manager Introduces Creative Diversity Scoring; Meta AI Gets Access to Read Ad Accounts",
+   "summary": "Meta 廣告管理工具推出創意多樣性評分（低/中/高），反映廣告組合是否足夠多元以提升競拍競爭力。Meta AI 同步獲授權直接讀取廣告帳戶數據，9月中旬起 AI Developer Assistant 成為主要開發者支援渠道。（來源待核實）",
+   "summary_en": "Meta Ads Manager introduced Creative Diversity Scoring (Low/Medium/High) to flag insufficient creative variety. Meta AI can now directly read ad account data and proactively surface optimizations. AI Developer Assistant becomes primary dev support from mid-September. (Source to be verified)",
+   "why": "創意多樣性評分直接影響廣告投放表現，來源待核實，建議登入廣告帳戶確認是否已見到此評分指標。",
+   "why_en": "Creative diversity score directly impacts ad delivery — source pending verification, check your Ads Manager to confirm if this scoring metric has appeared.",
+   "highlights": [
+    "創意多樣性評分顯示廣告系列的素材組合是否足夠多元，評分低者在競拍中競爭力下降，需增加素材類型。",
+    "Meta AI 現可直接讀取廣告帳戶數據並主動提供優化建議，廣告管理工具操作模式將趨向 AI 對話式互動。"
+   ],
+   "highlights_en": [
+    "Creative Diversity Scoring shows whether a campaign's creative mix is broad enough for competitive auction performance — low scores require adding creative variety.",
+    "Meta AI can now directly read ad account data and proactively surface optimization suggestions, shifting Ads Manager interaction toward AI-driven conversation."
+   ],
+   "source": "Meta Ads 更新（來源待核實）",
+   "url": "https://admakeai.com/blog/meta-ads-updates-september-2026",
+   "time": "9月1日",
+   "section": "即學技巧 & 玩法",
+   "action": "要留意",
+   "region": "國際"
   }
  ]
 }
