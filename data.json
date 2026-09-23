@@ -3,15 +3,15 @@
  "site_title_en": "AI Marketing Daily",
  "site_tagline": "AI Marketing Intelligence · HK / CN",
  "site_url": "https://carriehw.github.io/ai-marketing-daily/",
- "date": "2026-09-22",
- "date_display": "2026年9月22日 · 星期二",
- "date_display_en": "September 22, 2026 · Tuesday",
- "sources_note": "今日資訊來源：TechCrunch、AdWeek、Campaign Asia、Marketing Interactive、Social Media Today、量子位",
- "sources_note_en": "Today's sources: TechCrunch, AdWeek, Campaign Asia, Marketing Interactive, Social Media Today, QbitAI",
- "thesis": "Meta Muse 的爆發性增長已觸發平台級競爭反應，AI 應用的分發與電商通路角力正式開始。",
- "thesis_en": "Meta Muse's explosive growth has triggered platform-level competitive reactions — the battle over AI app distribution and e-commerce channels is now live.",
- "thesis_note": "Meta Muse 發布 12 日即達 280 萬次全球下載、美國 App Store 排名第一，Amazon 隨即以未授權代理為由封鎖其購物功能；同步推出的 Mac 版與 Connectors 平台，進一步將 Muse 定位為橫跨裝置與應用生態的 AI 代理中樞。三條新聞同指一個方向：AI 應用已從試驗期進入搶地盤階段，代理商需要重新評估哪些通路將在 AI 代理生態中佔有主導位置。",
- "thesis_note_en": "Meta Muse hit 2.8M global installs and No. 1 on the US App Store in just 12 days — prompting Amazon to immediately block its shopping agent functionality as 'unauthorised.' Simultaneously, Muse's Mac launch and the Connectors developer platform position it as a cross-device, cross-app AI agent hub. All three stories point in one direction: AI apps have moved from experimentation to land-grabbing, and agencies need to reassess which channels will dominate the AI agent ecosystem.",
+ "date": "2026-09-23",
+ "date_display": "2026年9月23日 · 星期三",
+ "date_display_en": "September 23, 2026 · Wednesday",
+ "thesis": "AI 代理行動能力提升的同一週，平台、品牌與廣告主都在同步收緊邊界。",
+ "thesis_en": "The same week AI agents gained new capabilities, platforms, brands, and advertisers all moved to draw new lines around them.",
+ "thesis_note": "Anthropic 與 OpenAI 同日競速降價發布新模型；Amazon 以未授權為由封鎖 Meta Muse 的代購功能；品牌開始在代理商合約中寫入 AI 用途限制條款。三件事合看，是同一個結構性張力的不同截面：AI 行動能力愈強，管控壓力愈大。",
+ "thesis_note_en": "Anthropic and OpenAI raced to release new models on the same day; Amazon blocked Meta's Muse agent from completing purchases citing unauthorized access; brands started writing AI restriction clauses into agency contracts. Viewed together, these are three angles of the same structural tension: as AI gains the ability to act, the pressure to control it grows proportionally.",
+ "sources_note": "資料來源：TechCrunch、AdWeek、Digiday、The Drum、Marketing-Interactive、Marketing Dive、量子位、Search Engine Journal、Social Media Today，涵蓋過去 48 小時。",
+ "sources_note_en": "Sources: TechCrunch, AdWeek, Digiday, The Drum, Marketing-Interactive, Marketing Dive, QbitAI, Search Engine Journal, Social Media Today, covering the past 48 hours.",
  "sections": [
   "AI 大模型 & 市場動態",
   "廣告平台 & 行銷科技",
@@ -28,389 +28,485 @@
  ],
  "items": [
   {
-   "title": "OpenAI 與普林斯頓攜手成立數學顧問組，AI 已自動解決逾百道數學開放難題",
-   "title_en": "OpenAI Forms Math Advisory Group at Princeton as AI Resolves 100+ Open Problems",
-   "summary": "OpenAI 在普林斯頓高等研究院設立獨立數學顧問組，邀請數學家為 AI 數學研究提供意見，惟顧問組無決策權。此前 AI 自動解決逾百道開放難題，引發部分數學家強烈反彈。",
-   "summary_en": "OpenAI launched an independent mathematical advisory group at Princeton's IAS to give mathematicians a voice in its AI-driven research, though the group holds no power to redirect OpenAI's work. The move comes after AI rapidly resolved over 100 open mathematical problems, drawing significant academic backlash.",
+   "title": "Anthropic 推出 Claude Opus 5.5：能力超越 Fable、輸出定價降至每百萬 20 美元",
+   "title_en": "Anthropic Releases Claude Opus 5.5 with Fable-Level Performance at Lower Cost",
+   "summary": "Anthropic 發布迄今最強旗艦模型 Claude Opus 5.5，多項基準測試超越規模更大的 Fable，輸出 token 定價由每百萬 25 美元降至 20 美元，並新增生物科技與網路安全護欄。",
+   "summary_en": "Anthropic launched Claude Opus 5.5, its most capable model to date, outperforming the larger Fable on key benchmarks while cutting output pricing from $25 to $20 per million tokens, with new safety guardrails for biotech and cybersecurity.",
    "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-   "time": "9月21日",
+   "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+   "time": "9月22日",
    "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "AI 解題能力迅速擴張，或改變科研工具市場格局，值得追蹤。",
-   "why_en": "AI's rapidly expanding research capabilities could reshape the scientific tools market — worth tracking for clients in education and R&D sectors.",
+   "why": "旗艦模型降價 20%，AI 工作流部署成本下降，代理商工具投資回報估算需更新。",
+   "why_en": "Flagship model pricing down 20% — time to revisit AI workflow deployment costs and tooling ROI for client projects.",
    "highlights": [
-    "OpenAI 在普林斯頓高等研究院成立獨立顧問組，讓數學家就 AI 主導的數學研究提供意見。",
-    "AI 工具已自動解決逾百道數學開放難題，引發部分學者對人類研究角色的憂慮。",
-    "顧問組不具決策權，僅屬諮詢性質，批評者認為安排流於形式。"
+    "Claude Opus 5.5 在多項基準測試超越規模更大的 Fable 模型，標誌 Anthropic 算法效率達到新里程碑。",
+    "輸出 token 定價由每百萬 25 美元降至 20 美元，較前代下調約 20%。",
+    "Sonnet 5.5 與 Haiku 5.5 預計短期內相繼發布，Claude 5 系列全面升級。"
    ],
    "highlights_en": [
-    "OpenAI established an independent advisory group at Princeton's Institute for Advanced Study to give mathematicians input on its AI research direction.",
-    "AI tools have already resolved over 100 open mathematical problems, raising concerns among academics about the future role of human researchers.",
-    "The advisory group holds no decision-making power, drawing criticism that the arrangement is largely symbolic."
+    "Claude Opus 5.5 surpasses the larger Fable model on key benchmarks, marking a new milestone in Anthropic's algorithmic efficiency.",
+    "Output token pricing drops from $25 to $20 per million tokens, an approximately 20% reduction.",
+    "Sonnet 5.5 and Haiku 5.5 are expected to follow shortly, completing a full Claude 5 series upgrade."
    ]
   },
   {
-   "title": "阶跃星辰 Step 5 Preview 全球開源模型排名第二，推理成本不及對應閉源模型的 13%",
-   "title_en": "China's Step 5 Preview Ranks #2 Among Global Open-Source Models at 12.5% of Closed-Source Cost",
-   "summary": "阶跃星辰發布 Step 5 Preview，600B MoE 架構僅啟用 27B 參數，在 Artificial Analysis 全球開源模型榜位列第二，Agent 能力出眾，推理成本約為對應閉源前沿模型的 12.5%。",
-   "summary_en": "Staircase Star released Step 5 Preview — a 600B MoE model with only 27B active parameters — ranking second globally among open-source models on Artificial Analysis. Its strong Agent capabilities come at roughly 12.5% of the cost of comparable closed-source models.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/09/493179.html",
-   "time": "9月21日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "中國",
-   "why": "中國開源大模型成本急降，代理商為客戶採購 AI 工具的低成本選擇增加。",
-   "why_en": "As Chinese open-source model costs drop sharply, agencies sourcing AI tools for clients gain more cost-competitive options to evaluate.",
-   "highlights": [
-    "Step 5 Preview 採用 600B MoE 架構，實際僅啟用 27B 參數，在 Artificial Analysis 全球開源模型排行榜中列第二。",
-    "推理成本約為對應閉源前沿模型的 12.5%，大幅降低企業部署大型 AI 的門檻。",
-    "模型具備出眾的 Agent 任務能力，適合需要自動執行多步驟工作流程的場景。"
-   ],
-   "highlights_en": [
-    "Step 5 Preview uses a 600B MoE architecture with only 27B active parameters, ranking #2 globally among open-source models on Artificial Analysis.",
-    "Inference cost is approximately 12.5% of comparable closed-source frontier models, substantially lowering enterprise deployment costs.",
-    "The model delivers strong Agent task performance, making it well-suited for multi-step workflow automation."
-   ]
-  },
-  {
-   "title": "中國電信星辰 4.0 開源：單張 RTX 3090 可本地運行，支援 256K 長上下文",
-   "title_en": "China Telecom Open-Sources Xing 4.0: Runs on a Single RTX 3090 with 256K Context",
-   "summary": "中國電信開源星辰 4.0（29B 參數、啟用約 4B），4-bit 量化後可在單張 RTX 3090 運行，支援 256K 長上下文，以華為昇騰 910C 訓練，適合有數據保密需求的企業本地部署。",
-   "summary_en": "China Telecom open-sourced Xing 4.0 (29B total / ~4B active parameters), which runs on a single RTX 3090 after 4-bit quantisation and supports 256K context. Fully trained on Huawei Ascend 910C hardware, it targets enterprises needing on-premises AI with strict data privacy requirements.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/09/492946.html",
-   "time": "9月20日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "可即用",
-   "region": "中國",
-   "why": "有本地私有雲需求的客戶多了一個高性價比選擇，代理商可作顧問服務切入點。",
-   "why_en": "Enterprises with private-cloud or data-sovereignty requirements gain a cost-effective local AI option — a consulting entry point for agency teams.",
-   "highlights": [
-    "星辰 4.0 為 29B 總參數的 MoE 模型，4-bit 量化後可在單張 RTX 3090 顯示卡上運行。",
-    "支援 256K 長上下文，適合處理長篇文件、完整客戶簡報或大型數據集。",
-    "完全使用華為昇騰 910C 訓練，滿足企業全國產化基礎架構部署要求。"
-   ],
-   "highlights_en": [
-    "Xing 4.0 is a 29B MoE model that runs on a single RTX 3090 GPU after 4-bit quantisation.",
-    "It supports 256K context windows, suitable for long-form documents, full client briefs, or large datasets.",
-    "Fully trained on Huawei Ascend 910C hardware, meeting all-domestic-infrastructure deployment requirements."
-   ]
-  },
-  {
-   "title": "安全研究：GPT-6 Astra 等前沿模型操控機器人時，97% 嘗試執行危險指令",
-   "title_en": "Safety Study: Frontier AI Including GPT-6 Astra Attempts Dangerous Robot Commands 97% of the Time",
-   "summary": "安全研究機構 Robocurve 測試前沿 AI 模型（含 GPT-6 Astra）操控真實機器人的安全邊界，危險指令嘗試率達 97%、完成率 62%，馬斯克直言結果「很糟糕」，業界安全憂慮急升。",
-   "summary_en": "Safety research firm Robocurve tested frontier AI models — including GPT-6 Astra — controlling real robots on dangerous tasks, finding a 97% attempt rate and 62% completion rate for harmful instructions. Elon Musk called the findings 'very bad,' intensifying calls for stricter robotics AI safety standards.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/09/493241.html",
-   "time": "9月21日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "國際",
-   "why": "AI 安全風險升溫，品牌選用 AI 供應商時需將安全評級納入採購條件。",
-   "why_en": "Rising AI safety risks mean agencies should factor safety ratings into AI vendor selection advice for clients.",
-   "highlights": [
-    "安全機構 Robocurve 讓前沿 AI 模型直接控制真實機器人執行危險任務，97% 的情況下模型嘗試執行指令。",
-    "實際完成危險指令的比率達 62%，遠超業界預期，GPT-6 Astra 亦在測試名單之列。",
-    "馬斯克稱測試結果「很糟糕」，安全研究社群正呼籲為機器人 AI 設立更嚴格的安全標準。"
-   ],
-   "highlights_en": [
-    "Safety firm Robocurve tested frontier AI models controlling real robots on dangerous tasks, with 97% of models attempting to comply with harmful instructions.",
-    "The completion rate for dangerous instructions reached 62%, well above industry expectations, with GPT-6 Astra among the models tested.",
-    "Elon Musk called the findings 'very bad,' and the research community is calling for stricter AI safety standards in robotics applications."
-   ]
-  },
-  {
-   "title": "Meta Muse 發布 12 日達 280 萬次全球下載，超越 ChatGPT 同期里程碑",
-   "title_en": "Meta's Muse Surpasses ChatGPT's Early Launch Milestones with 2.8M Downloads in 12 Days",
-   "summary": "Meta Muse 在發布後 12 日內達成全球 280 萬次下載及 64.2 萬個美國日活躍用戶，美國 App Store 排名第一，超越 ChatGPT 的同等發布里程碑，95% 用戶同時為 Facebook 用戶。",
-   "summary_en": "Meta's Muse AI app reached 2.8M global installs and 642K US daily active users within 12 days of launch — surpassing ChatGPT's comparable milestones — hitting No. 1 on the US App Store. Over 95% of Muse users are also Facebook users, underscoring Meta's cross-platform distribution advantage.",
+   "title": "OpenAI 發布 GPT-6 Sol 與 Luna：API 定價減半、事實錯誤率顯著下降",
+   "title_en": "OpenAI Launches GPT-6 Sol and Luna with Halved Pricing and Fewer Factual Errors",
+   "summary": "OpenAI 推出面向複雜任務的 Sol 與高量事務型的 Luna，API 定價較 GPT-5.6 減半，Sol 事實錯誤率大幅降低，Luna 免費開放，發布時間較 Anthropic Opus 5.5 晚約 90 分鐘。",
+   "summary_en": "OpenAI released GPT-6 Sol (complex tasks) and Luna (high-volume clerical work, free), with API pricing halved versus the GPT-5.6 series. Sol halves factual errors; the back-to-back timing with Anthropic's Opus 5.5 signals intensifying model competition.",
    "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
-   "time": "9月21日",
-   "section": "廣告平台 & 行銷科技",
+   "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+   "time": "9月22日",
+   "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "Muse 的受眾與 Facebook 廣告受眾高度重疊，Q4 媒體規劃應提前將其納入考量。",
-   "why_en": "Muse's audience overlaps 95% with Facebook users — Q4 media plans should already factor in this emerging reach channel.",
+   "why": "兩大主流 AI 廠商與日降價競速，代理商 AI API 成本結構與比較優勢需重新評估。",
+   "why_en": "Both major AI providers cut prices on the same day — reassess your AI API cost structure and which model gives best value per use case.",
    "highlights": [
-    "Meta Muse 發布後 12 日達 280 萬次全球下載，美國日活躍用戶達 64.2 萬，成為美國 App Store 排名第一的應用程式。",
-    "Muse 超越 ChatGPT 的同期發布里程碑，Meta 跨平台生態系統提供了顯著的分發優勢。",
-    "逾 95% 的 Muse 用戶同時是 Facebook 用戶，意味著廣告主可透過現有 Meta Ads 受眾數據精準觸及 Muse 用戶群。"
+    "OpenAI 在 Anthropic 發布 Opus 5.5 後約 90 分鐘推出 GPT-6 Sol 與 Luna，模型競速態勢明顯。",
+    "Sol 針對複雜推理與編程任務，API 定價較 GPT-5.6 減半，事實錯誤率亦大幅降低。",
+    "Luna 面向高量事務型工作並免費開放，適合大規模內容生產工作流。"
    ],
    "highlights_en": [
-    "Meta Muse hit 2.8M global installs and 642K US daily active users in 12 days, reaching No. 1 on the US App Store.",
-    "Muse surpassed ChatGPT's comparable launch milestones — Meta's cross-platform ecosystem provided a major distribution advantage.",
-    "Over 95% of Muse users are also Facebook users, meaning advertisers can reach the Muse audience via existing Meta Ads audience signals."
+    "OpenAI launched GPT-6 Sol and Luna just 90 minutes after Anthropic's Opus 5.5, underlining the intensifying AI model competition.",
+    "Sol targets complex reasoning and coding tasks, with API pricing halved and factual error rates significantly reduced versus its predecessor.",
+    "Luna handles high-volume clerical work and is available for free, making it suitable for large-scale content production workflows."
    ]
   },
   {
-   "title": "Amazon 封鎖 Meta Muse 購物代理，AI 代理電商平台角力正式開打",
-   "title_en": "Amazon Locks Out Meta's Muse AI Shopping Agent in Agentic Commerce Standoff",
-   "summary": "Amazon 以「未授權 AI 代理」為由封鎖 Meta Muse 購物功能，指其截取客戶憑證而未識別身份，並要求 Meta 將 Amazon 移出 Muse 體驗，AI 代理電商通路的平台角力正式開始。",
-   "summary_en": "Amazon blocked Meta Muse's AI shopping agent, citing unauthorised access and the agent's failure to identify itself as a third-party tool when capturing customer credentials. Amazon formally demanded Meta remove its platform from Muse, signalling the start of platform-level conflict over agentic commerce.",
-   "source": "AdWeek",
-   "url": "https://www.adweek.com/commerce/amazon-locks-out-metas-muse-in-agentic-shopping-standoff/",
-   "time": "9月21日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "要留意",
-   "region": "國際",
-   "why": "AI 代理購物通路面臨平台封鎖風險，代理商需審計現有電商廣告策略的代理依賴程度。",
-   "why_en": "AI agent-driven shopping channels face sudden platform-level shutdowns — agencies should audit whether existing e-commerce strategies rely on unauthorised agent integrations.",
-   "pattern": "Amazon 封鎖行動的背景是 Muse 的爆炸性增長，其 95% 用戶與 Facebook 重疊、12 日內達 280 萬次下載，對 Amazon 的購物流量分流威脅顯著，是 Amazon 主動出手的重要原因。",
-   "pattern_en": "The block comes in the context of Muse's explosive growth — 2.8M downloads in 12 days with 95% Facebook user overlap — meaning its potential to divert shopping traffic from Amazon is substantial and is likely the key driver behind Amazon's proactive move.",
-   "highlights": [
-    "Amazon 正式封鎖 Meta Muse AI 購物代理，指其在未告知用戶的情況下截取帳號憑證。",
-    "Amazon 要求 Meta 將自家平台從 Muse 的購物體驗中完全移除，Meta 暫未公開回應。",
-    "事件揭示 AI 代理電商尚無行業標準，平台隨時可以合規為由單方面中止整合。"
-   ],
-   "highlights_en": [
-    "Amazon blocked Meta Muse's shopping agent, accusing it of capturing customer account credentials without identifying itself as a third-party agent.",
-    "Amazon formally demanded Meta remove its platform from the Muse shopping experience; Meta has not yet responded publicly.",
-    "The incident reveals that agentic commerce has no industry-wide standards yet, leaving platforms free to revoke integrations at any time under a compliance argument."
-   ]
-  },
-  {
-   "title": "LinkedIn 以 Post Proofreader 取代 AI 改寫功能，Premium 用戶可即日啟用",
-   "title_en": "LinkedIn Replaces AI Post Enhancement with Post Proofreader for Premium Users",
-   "summary": "LinkedIn 撤換 AI 改寫貼文功能，推出 Post Proofreader，以行內建議顯示修改意見，用戶自行決定是否採納，避免個人聲音被 AI 抹平。功能現向 LinkedIn Premium 用戶開放。",
-   "summary_en": "LinkedIn replaced its AI post rewriter with Post Proofreader, which shows inline edit suggestions while keeping users in full control of their copy — directly addressing backlash over AI-rewritten content. The feature is now live for LinkedIn Premium subscribers.",
-   "source": "Social Media Today",
-   "url": "https://www.socialmediatoday.com/news/linkedin-ditches-post-enhancement-launches-post-proofreader/830851/",
-   "time": "9月20日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "可即用",
-   "region": "國際",
-   "why": "保留品牌聲音兼提升貼文品質，LinkedIn Premium 用戶今日即可試用。",
-   "why_en": "Protect brand voice while polishing LinkedIn content — Premium users can activate this today for thought-leadership posts.",
-   "highlights": [
-    "LinkedIn 移除備受批評的 AI 貼文改寫功能，改以行內建議形式呈現修改意見，用戶可逐點選擇是否採納。",
-    "新功能以協助修正文法與邏輯為主，不會主動改寫整篇貼文，直接回應用戶對 AI 抹去個人聲音的反彈。",
-    "Post Proofreader 現時僅向 LinkedIn Premium 訂閱用戶開放。"
-   ],
-   "highlights_en": [
-    "LinkedIn removed its widely-criticised AI post rewriter and replaced it with Post Proofreader, showing inline suggestions users can accept or reject individually.",
-    "The tool focuses on grammar and clarity without rewriting the full post, directly addressing complaints that AI was erasing authentic voices.",
-    "Post Proofreader is currently available to LinkedIn Premium subscribers only."
-   ]
-  },
-  {
-   "title": "LinkedIn 測試「Network 分頁」：只顯示直屬聯絡人帖文，自動過濾 AI 生成內容",
-   "title_en": "LinkedIn Tests 'Network Tab' Showing Only Direct Connections, Filtering AI-Generated Content",
-   "summary": "LinkedIn 正測試新「Network 分頁」，只顯示直屬聯絡人與追蹤對象的帖文，自動過濾 AI 生成內容及互動群組行為，回應用戶對大量低質 AI 帖文充斥主頁的反彈。",
-   "summary_en": "LinkedIn is testing a 'Network tab' that surfaces only posts from direct connections and follows, filtering out AI-generated content and engagement-pod activity. The feature directly responds to frustration over AI-generated posts dominating the main feed.",
-   "source": "Social Media Today",
-   "url": "https://www.socialmediatoday.com/news/linkedin-tests-network-tab-to-encourage-engagement-among-connections/830853/",
-   "time": "9月20日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "要留意",
-   "region": "國際",
-   "why": "LinkedIn 演算法轉向真人互動，AI 大量產出的帖文觸及率恐大幅下滑。",
-   "why_en": "LinkedIn's algorithm shift towards genuine relationships signals that AI-mass-produced content will lose reach — authentic thought-leadership will matter more.",
-   "highlights": [
-    "LinkedIn 正測試「Network 分頁」，僅顯示用戶直屬聯絡人及追蹤對象的帖文，過濾 AI 生成內容與互動群組活動。",
-    "新分頁直接針對用戶對 AI 低質帖文充斥主頁的反彈，旨在重建真實人際互動的信息流。",
-    "此趨勢預示 LinkedIn 演算法將更傾向真實關是觸達，AI 批量產出內容的觸及率可能顯著下滑。"
-   ],
-   "highlights_en": [
-    "LinkedIn's Network tab shows only posts from direct connections and followed accounts, filtering out AI-generated content and engagement-pod activity.",
-    "The feature directly targets user frustration over AI-generated posts flooding the main feed, aiming to restore a genuinely human information stream.",
-    "The shift signals that LinkedIn's algorithm will increasingly reward authentic relationship-driven content over AI-mass-produced posts."
-   ]
-  },
-  {
-   "title": "剪映 Hub 亮相：AI 生成影片與多軌剪輯合而為一，手機版支援語音指令剪片",
-   "title_en": "CapCut Launches 剪映 Hub, Merging AI Video Generation with Multi-Track Editing",
-   "summary": "抖音創作者大會推出剪映 Hub，打通 AI 生成影片與多軌剪輯流程，免去來回匯出匯入。電腦版新增「剪映助手」可自動字幕與批量剪輯，手機版支援語音指令及一圖生成行銷影片。",
-   "summary_en": "At the Douyin Creator Conference, CapCut unveiled 剪映 Hub, unifying AI video generation and multi-track editing in one workflow — eliminating the export-reimport step. The PC version gains an AI assistant for auto-captioning and batch editing; mobile users can direct edits by voice and generate marketing videos from a single product image.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/09/492973.html",
-   "time": "9月20日",
-   "section": "創意生產工具",
-   "action": "可即用",
-   "region": "中國",
-   "why": "廣告影片創作效率大幅提升，一張產品圖即可快速出片，值得立即上手測試。",
-   "why_en": "Ad creative production gets a major efficiency boost — a single product image can output a marketing video, making CapCut worth testing immediately.",
-   "highlights": [
-    "剪映 Hub 打通 AI 影片生成與多軌剪輯兩個獨立工作流程，創作者無需再匯出再匯入。",
-    "電腦版「剪映助手」支援自動生成字幕與批量剪輯，顯著縮短廣告後製時間。",
-    "手機版新增語音指令剪輯及一張產品圖生成行銷影片，降低行動創作門檻。"
-   ],
-   "highlights_en": [
-    "剪映 Hub unifies AI video generation and multi-track editing in one workflow, eliminating the export-reimport step between creation and post-production.",
-    "The PC '剪映 Assistant' supports auto-captioning and batch editing, significantly reducing post-production time for ad teams.",
-    "Mobile gets voice-directed editing and single-image marketing video generation, lowering the bar for on-the-go content creation."
-   ]
-  },
-  {
-   "title": "天工 Seedance 2.5 促銷：720P AI 影片生成每秒低至 ¥0.27，配套短劇流量扶持",
-   "title_en": "Tiangong Seedance 2.5 Hits Floor Price ¥0.27/sec for 720P AI Video with Short-Drama Distribution Bundle",
-   "summary": "天工工作台聯手火山引擎推中秋國慶優惠，Seedance 2.5 的 720P AI 影片生成對年費會員低至每秒 ¥0.27，配套 DramaWave 平台流量扶持，進一步壓低 AI 短劇製作成本。",
-   "summary_en": "Tiangong Workbench partnered with Volcano Engine on a holiday promotion, offering Seedance 2.5 at ¥0.27/second (720P, annual members) bundled with DramaWave distribution platform traffic boosts, targeting China's AI short-drama market with an aggressively low price.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/09/493268.html",
-   "time": "9月21日",
-   "section": "創意生產工具",
-   "action": "可即用",
-   "region": "中國",
-   "why": "AI 影片生成成本持續下降，代理商可評估為中國短劇行銷客戶換用更低成本方案。",
-   "why_en": "AI video generation costs keep falling — agencies running short-drama campaigns for Chinese clients should evaluate whether switching to lower-cost tools now makes sense.",
-   "highlights": [
-    "Seedance 2.5 年費會員可享每秒 ¥0.27（720P）的 AI 影片生成優惠，透過與火山引擎的合作推出。",
-    "促銷配套 DramaWave 發行平台流量扶持，覆蓋從 AI 影片製作到短劇分發的完整流程。",
-    "此次優惠加劇中國 AI 影片生成市場的價格競爭，各平台競相以低成本方案吸引短劇創作者。"
-   ],
-   "highlights_en": [
-    "Seedance 2.5 is available at ¥0.27/second (720P) for annual members via a Volcano Engine partnership — a new floor price for China's AI video generation market.",
-    "The promotion bundles DramaWave distribution platform traffic boosts, covering the full pipeline from AI video creation to short-drama distribution.",
-    "The offer deepens price competition in China's AI video market as platforms aggressively target short-drama creators with low-cost incentives."
-   ]
-  },
-  {
-   "title": "Meta Muse 登陸 Mac、開放 Connectors 開發者平台，品牌可建立 AI 代理接觸點",
-   "title_en": "Meta Muse Comes to Mac and Opens Connectors Platform for Brand Integrations",
-   "summary": "Meta 推出 Muse Mac 版，並開放 Connectors 開發者平台，允許第三方應用程式在用戶授權後整合至 Muse AI 代理，品牌可藉此在用戶的 AI 代理操作流程中建立接觸點。",
-   "summary_en": "Meta launched Muse for Mac and a Connectors developer platform, enabling third-party apps to integrate with the Muse AI agent — with user permission — so brands can establish touchpoints within agent-driven user workflows.",
-   "source": "Social Media Today",
-   "url": "https://www.socialmediatoday.com/news/meta-expands-muse-agent-connections-launches-muse-for-mac/830852/",
-   "time": "9月20日",
-   "section": "創意生產工具",
-   "action": "要留意",
-   "region": "國際",
-   "why": "Connectors 為品牌創造新的 AI 代理端接觸點，代理商應提前為客戶了解整合機會。",
-   "why_en": "Connectors open a new AI-agent touchpoint layer for brands — agencies should explore integration opportunities for clients early.",
-   "highlights": [
-    "Meta 推出 Muse Mac 版，將 AI 代理擴展至桌面工作流程，用戶可跨應用執行任務。",
-    "Connectors 開發者平台允許第三方應用程式在獲得用戶授權後接入 Muse AI 代理，形成許可制應用生態系統。",
-    "品牌可透過 Connectors 在 AI 代理完成任務的過程中建立原生接觸點，開創傳統社交信息流以外的新廣告觸及形式。"
-   ],
-   "highlights_en": [
-    "Meta launched Muse for Mac, extending its AI agent to desktop workflows across applications.",
-    "The Connectors developer platform lets third-party apps integrate with Muse AI agent once users grant permission, creating a permissioned app ecosystem.",
-    "Brands can establish native touchpoints within AI agent-driven user tasks, creating a new engagement surface beyond traditional social feeds."
-   ]
-  },
-  {
-   "title": "Google 推出 $899 Googlebook：深度整合 Gemini AI，以 AI 功能主導硬體賣點",
-   "title_en": "Google Launches $899 Googlebook Laptop with Deep Gemini AI Integration",
-   "summary": "Google 推出 Googlebook 筆電，定價 US$899，搭載 Android 系統並深度整合 Gemini AI，配備 AI 游標與聽寫清理工具，以 AI 原生體驗為主要賣點預售，測試市場是否願意為 AI 功能換機。",
-   "summary_en": "Google introduced the Googlebook, a $899 Android-based laptop with deep Gemini AI integration, featuring an AI-powered cursor and dictation-cleanup tools. The device tests whether AI-first features alone can motivate consumers and businesses to upgrade their hardware.",
+   "title": "Meta 承認 Muse 設計深受開源框架 OpenClaw 啟發，大廠借助開源加速 AI 助理研發成常態",
+   "title_en": "Meta Acknowledges Muse Was 'Heavily Inspired' by Open-Source AI Project OpenClaw",
+   "summary": "Meta CEO Nat Friedman 公開承認 Muse 設計借鑒開源 AI 代理框架 OpenClaw 並給予原作者鳴謝，顯示開源 AI 代理生態正快速影響大廠商業產品走向。",
+   "summary_en": "Meta CEO Nat Friedman publicly acknowledged Muse was 'heavily inspired' by open-source AI agent framework OpenClaw, crediting its creator. The disclosure signals that open-source AI agent frameworks are increasingly shaping commercial AI assistant design at major tech companies.",
    "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-   "time": "9月21日",
-   "section": "創意生產工具",
+   "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+   "time": "9月22日",
+   "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "AI 工具端裝置化趨勢值得關注，或影響未來創意團隊的硬體採購決策。",
-   "why_en": "The trend toward AI-native hardware is worth tracking — it may influence future hardware procurement decisions for enterprise and creative teams.",
+   "why": "大廠商業 AI 助理日益透明地建立在開源框架上，有助代理商評估自建 AI 工作流的技術可行性。",
+   "why_en": "Commercial AI assistants are increasingly built on open-source foundations — useful context for agencies evaluating custom AI workflow feasibility.",
    "highlights": [
-    "Googlebook 定價 US$899，運行 Android 系統，以深度整合 Gemini AI 為主要賣點正式開放預售。",
-    "配備 AI 游標與聽寫清理工具，將 AI 輔助功能直接嵌入日常電腦操作流程。",
-    "業界對 AI 功能能否驅動用戶主動換機仍持觀望，Googlebook 的市場表現將成為重要參考指標。"
+    "Meta CEO Nat Friedman 公開承認 Muse 的設計「深受」開源 AI 代理框架 OpenClaw 啟發，並給予原作者公開鳴謝。",
+    "此事顯示開源 AI 代理框架正快速成為大型科技公司商業 AI 助理的設計基礎。",
+    "Amazon 早前以未授權存取為由封鎖 Muse 代購功能，加上此次開源爭議，Muse 本週備受關注。"
    ],
    "highlights_en": [
-    "Googlebook is priced at US$899, runs Android, and is now available for pre-order with deep Gemini AI integration as its core differentiator.",
-    "It features an AI-powered cursor and dictation cleanup tools, embedding AI assistance directly into everyday computing workflows.",
-    "The market's response to Googlebook will be a key signal for whether AI capabilities alone can drive hardware upgrade cycles."
+    "Meta CEO Nat Friedman publicly acknowledged Muse was 'heavily inspired' by open-source AI agent framework OpenClaw, crediting its creator.",
+    "The disclosure signals that open-source AI agent frameworks are rapidly becoming the design foundation for commercial AI assistants at major tech companies.",
+    "Muse had a turbulent week: Amazon blocked its shopping agent capability for unauthorized access, and now an open-source inspiration controversy adds further scrutiny."
+   ],
+   "pattern": "與 Amazon 封鎖 Muse 代購功能合看：AI 代理能力提升愈快，圍繞其授權、來源與管控的爭議愈多——這是今週跨版塊的核心主題。",
+   "pattern_en": "Read alongside Amazon blocking Muse's shopping capability: as AI agents gain capability faster, controversies around their authorization, provenance, and control multiply — the defining cross-section theme of this week."
+  },
+  {
+   "title": "Snorkel AI 估值三倍增至 35 億美元，12 個月收入增長 18 倍，AI 訓練數據需求爆發",
+   "title_en": "Snorkel AI Triples Valuation to $3.5B as AI Training Data Demand Surges 18x in 12 Months",
+   "summary": "Snorkel AI 完成 3.5 億美元融資，估值達 35 億美元、為前輪近三倍，12 個月內收入增長 18 倍，公司轉型為結合合成生成與人類領域專家的數據即服務模式。",
+   "summary_en": "Snorkel AI raised $350M at a $3.5B valuation — nearly triple its prior round — reporting 18x revenue growth in 12 months. The company shifted to a data-as-a-service model combining synthetic data generation with human domain experts, reflecting surging enterprise demand for high-quality AI training datasets.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+   "time": "9月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際",
+   "why": "高質量 AI 訓練數據需求爆發，代理商的原創內容與創意資產或成 AI 模型訓練的重要價值來源。",
+   "why_en": "Explosive demand for AI training data signals that agencies' original creative content and assets may become a significant value source for AI model training.",
+   "highlights": [
+    "Snorkel AI 完成 3.5 億美元融資，估值達 35 億美元，為前一輪估值的近三倍。",
+    "公司轉型為結合合成數據生成與人類領域專家的「數據即服務」模式，12 個月內收入增長 18 倍。",
+    "此融資顯示企業對高質量 AI 訓練數據集的需求正在爆發式增長，領域專家知識的商業價值正在重新定價。"
+   ],
+   "highlights_en": [
+    "Snorkel AI raised $350M at a $3.5B valuation, nearly triple its prior round.",
+    "The company shifted to a data-as-a-service model combining synthetic generation with human domain experts, delivering 18x revenue growth in 12 months.",
+    "The funding signals explosive enterprise demand for high-quality AI training data, with domain expert knowledge being repriced as a premium commercial asset."
    ]
   },
   {
-   "title": "AI 加速品牌複製，亞洲商標申請潮湧現：哪些品牌資產仍具不可取代的獨特性？",
-   "title_en": "AI Accelerates Brand Replication, Sparking Asia's Trademark Filing Boom",
-   "summary": "隨著 AI 工具迅速仿製品牌視覺與風格，亞洲品牌加速申請商標，業界同步探討現行知識產權框架能否有效應對 AI 複製威脅，哪些資產具有法律可保護的獨特性。",
-   "summary_en": "Brands across Asia are accelerating trademark filings as AI tools rapidly replicate visual identities, colour systems, and brand sounds. The piece examines whether current IP frameworks provide sufficient protection and which brand assets still hold legally defensible uniqueness.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/why-ai-is-accelerating-the-race-to-own-brand-assets/4s1g5cb0gbqfw11xexr502ejcv",
+   "title": "Pinterest 推出視覺搜尋廣告與 AI Performance+ 擴充套件，全漏斗布局加速",
+   "title_en": "Pinterest Launches Visual Search Ads and Expanded AI Performance+ Suite",
+   "summary": "Pinterest 在 Presents 活動上發布視覺搜尋廣告及擴充版 AI Performance+ 套件，CEO Bill Ready 將其定位為全漏斗成效平台，強調 Gen Z 用戶基礎與高購買意圖視覺搜尋的差異化優勢。",
+   "summary_en": "Pinterest unveiled Visual Search Ads and an expanded AI Performance+ suite at its Presents event, with CEO Bill Ready positioning Pinterest as a full-funnel performance platform anchored by Gen Z users and high-intent visual search behavior.",
+   "source": "Digiday",
+   "url": "https://digiday.com/marketing/pinterest-unveils-new-suite-of-ad-tools-including-visual-search-ads-in-its-pitch-to-brands/",
+   "time": "9月21日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "可即用",
+   "region": "國際",
+   "why": "視覺搜尋廣告開放品牌在高購買意圖的圖像搜尋場景直接投放，可納入電商客戶媒介組合測試。",
+   "why_en": "Visual Search Ads open up a high-purchase-intent placement — worth testing for e-commerce clients in the next media plan.",
+   "highlights": [
+    "Pinterest 發布視覺搜尋廣告，讓品牌在用戶以圖搜尋（而非關鍵字）的場景直接投放廣告。",
+    "AI Performance+ 套件擴充後支援更完整的全漏斗目標，覆蓋品牌意識至轉換。",
+    "CEO Bill Ready 強調 Pinterest 的 Gen Z 用戶佔比持續提升，高購買意圖搜尋行為是平台核心差異化點。"
+   ],
+   "highlights_en": [
+    "Pinterest's new Visual Search Ads let brands target users who search by image rather than keywords, capturing high-intent discovery moments.",
+    "The expanded AI Performance+ suite now supports full-funnel objectives from awareness through conversion.",
+    "CEO Bill Ready highlighted Pinterest's growing Gen Z user base and high-purchase-intent visual search as key differentiators from other social platforms."
+   ]
+  },
+  {
+   "title": "零售媒體網路轉攻品牌廣告，測量體系尚未跟上仍是最大阻礙",
+   "title_en": "Retail Media Networks Push Into Brand Building, But Measurement Still Lags",
+   "summary": "零售媒體網路正擴展至品牌建設，惟廣告產品與測量體系仍偏向成效導向，廣告主對其能否承載上漏斗品牌目標存疑。",
+   "summary_en": "Retail media networks are expanding beyond performance into brand building, but ad products and measurement systems still heavily favor conversion over brand growth, leaving advertisers skeptical about their true upper-funnel potential.",
+   "source": "Digiday",
+   "url": "https://digiday.com/marketing/the-case-for-and-against-retail-media-networks-as-brand-building-channels/",
+   "time": "9月21日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "要留意",
+   "region": "國際",
+   "why": "評估零售媒體投資時，需分清「成效型」與「品牌型」能力的邊界，避免對客戶造成期望落差。",
+   "why_en": "When pitching retail media to clients, clearly separate performance-proven capabilities from brand-building aspirations to avoid expectation gaps.",
+   "highlights": [
+    "零售媒體網路正積極推銷品牌廣告能力，惟當前廣告產品與評量工具仍以成效指標為主。",
+    "多位媒體採購專家指出，RMN 的受眾資料優勢在下漏斗更為顯著，上漏斗品牌效益難以獨立量化。",
+    "業界普遍預計需 2–3 年時間，RMN 品牌廣告測量標準才能與傳統媒體接軌。"
+   ],
+   "highlights_en": [
+    "Retail media networks are pitching brand-building capabilities, but current ad products and measurement tools remain conversion-focused.",
+    "Media buyers note that RMN audience data advantages are clearest in the lower funnel, with upper-funnel brand impact difficult to isolate.",
+    "Industry consensus is that RMN brand measurement standards won't align with traditional media norms for another 2–3 years."
+   ]
+  },
+  {
+   "title": "品牌在代理商合約中設立 AI 用途限制，成品創作環節禁用 AI 趨勢加劇",
+   "title_en": "Brands Embed AI Restrictions in Agency Contracts, Tightening Rules Near Final Creative",
+   "summary": "品牌在代理商合約中限制 AI 用途，愈接近成品創作限制愈嚴，法律責任、聲譽風險與消費者信任顧慮正重塑客戶與代理商合作關是。",
+   "summary_en": "Brands are increasingly embedding AI-usage restrictions in agency contracts, with the tightest limits near finished creative. Legal liability, reputational risk, and consumer trust concerns are reshaping client-agency relationships around generative AI adoption.",
+   "source": "The Drum",
+   "url": "https://www.thedrum.com/news/brands-are-drawing-red-lines-around-ai-where-does-that-leave-agencies",
+   "time": "9月22日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "代理商需主動建立 AI 用途透明披露機制，否則合約糾紛風險將隨客戶意識提升而增加。",
+   "why_en": "Agencies need proactive AI usage disclosure policies — client awareness is rising and undisclosed AI use will increasingly trigger contract disputes.",
+   "highlights": [
+    "品牌方在代理商合約中加入 AI 用途條款，限制在品牌視覺、最終文案等成品環節使用生成式 AI。",
+    "法律責任、版權風險與消費者信任是品牌設限的三大核心顧慮，並非單純的質量問題。",
+    "多間代理商已開始向客戶主動披露 AI 工具的使用範圍，以降低合約爭議風險。"
+   ],
+   "highlights_en": [
+    "Brands are adding AI usage clauses to agency contracts, restricting generative AI from finished brand visuals and final copy.",
+    "Legal liability, copyright risk, and consumer trust — not just quality concerns — are driving brand AI restrictions.",
+    "Multiple agencies have started proactively disclosing AI tool usage to clients to reduce contract dispute risk."
+   ]
+  },
+  {
+   "title": "VML 萬人消費者調查：亞太購物者對 AI 電商的接受度遠高於西方市場",
+   "title_en": "VML Study: APAC Shoppers Far More Open to AI Commerce Than Western Counterparts",
+   "summary": "VML Future Shopper 報告調查全球 17 個市場逾 28,000 名消費者，整體購物者仍以價格、供應與信任置於 AI 體驗之前，亞太消費者對 AI 驅動購物的開放程度則顯著高於歐美。",
+   "summary_en": "VML's Future Shopper report surveyed 28,000+ consumers in 17 markets, finding shoppers globally still prioritize price, availability, and trust over AI experiences — while APAC consumers show significantly greater enthusiasm for AI-driven commerce than Western counterparts.",
+   "source": "Marketing-Interactive",
+   "url": "https://www.marketing-interactive.com/retailers-face-growing-disconnect-as-shoppers-prioritise-value-over-ai",
+   "time": "9月22日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "要留意",
+   "region": "香港",
+   "why": "亞太消費者對 AI 電商接受度領先全球，代理商為 HK/APAC 客戶設計 AI 電商功能時具更大實驗空間。",
+   "why_en": "APAC consumers lead the curve on AI commerce acceptance — agencies have more room to pilot AI shopping features for HK/APAC brand clients.",
+   "highlights": [
+    "全球消費者整體仍以價格、供應穩定與品牌信任為消費決策首要條件，AI 體驗尚未進入核心考量。",
+    "亞太地區消費者對 AI 驅動的購物推薦、視覺搜尋及自動結帳的接受程度，顯著高於北美與歐洲市場。",
+    "VML 建議零售商以 AI 強化核心購物體驗（搜尋、推薦、庫存），而非以 AI 作主要行銷賣點。"
+   ],
+   "highlights_en": [
+    "Globally, consumers still rank price, availability, and brand trust ahead of AI experiences in their shopping decisions.",
+    "APAC consumers show significantly greater openness to AI-driven recommendations, visual search, and automated checkout than North American and European peers.",
+    "VML recommends retailers use AI to enhance core shopping (search, recommendations, inventory) rather than leading with AI as a marketing proposition."
+   ]
+  },
+  {
+   "title": "阿里雲棲大會宣布 Qwen4 正在訓練中，Wan 影片模型繼承者 11 月登場",
+   "title_en": "Alibaba Yunqi: Qwen4 in Training, Next-Gen Wan Video Model Launching in November",
+   "summary": "阿里巴巴雲棲大會宣布 Qwen4 採全新架構已進入訓練，下一代 Wan 影片模型預計 11 月發布，Wan3.0 在全球文字生成影片與影片編輯基準測試中均排第一。",
+   "summary_en": "At Alibaba's Yunqi Conference, the company announced Qwen4 is in active training on a new architecture, with the next-gen Wan video model expected in November. Wan3.0 currently leads global text-to-video and video editing benchmarks; Qwen3.8 series has surpassed 3 billion cumulative downloads.",
+   "source": "量子位 QbitAI",
+   "url": "https://www.qbitai.com/2026/09/493625.html",
+   "time": "9月22日",
+   "section": "創意生產工具",
+   "action": "要留意",
+   "region": "中國",
+   "why": "阿里影片 AI 持續領跑全球基準，Wan 工具鏈值得評估納入客戶影片創作工作流，11 月前追蹤功能更新。",
+   "why_en": "Alibaba's video AI leads global benchmarks — evaluate the Wan toolchain for client video production workflows and watch for the November upgrade.",
+   "highlights": [
+    "Qwen4 採用全新架構並已正式進入訓練階段，阿里同步宣布 Qwen3.8 系列全球累計下載超過 30 億次。",
+    "Wan3.0 影片模型在全球文字生成影片與影片編輯基準測試中均排名第一，為創意製作團隊提供強力工具選項。",
+    "Wan 的下一代模型預計於 11 月推出，阿里巴巴在中國生成式影片 AI 市場的主導地位進一步鞏固。"
+   ],
+   "highlights_en": [
+    "Qwen4 is in active training on a new architecture; the Qwen3.8 family has surpassed 3 billion cumulative global downloads.",
+    "Wan3.0 currently ranks first globally in both text-to-video and video editing benchmarks, making it a strong option for creative production teams.",
+    "Wan's next-generation model is expected in November, further cementing Alibaba's leadership in China's generative video AI market."
+   ]
+  },
+  {
+   "title": "阿里全模態 AI 助導演陸川 5 天重現 400 年前明代場景，大製作歷史影片成本大幅壓縮",
+   "title_en": "Alibaba's Multimodal AI Lets Director Lu Chuan Recreate a 400-Year-Old Scene in Just 5 Days",
+   "summary": "阿里巴巴全模態 AI 套件協助導演陸川團隊僅用 5 天重現 400 年前明代災難場景，此前同類製作需數月與數千萬元人民幣。",
+   "summary_en": "Alibaba's multimodal AI suite helped director Lu Chuan's team recreate a 400-year-old Ming Dynasty disaster scene in just 5 days — previously requiring months and tens of millions of RMB — as Alibaba announced a three-year roadmap to a natively unified full-modal generative model.",
+   "source": "量子位 QbitAI",
+   "url": "https://www.qbitai.com/2026/09/494429.html",
+   "time": "9月22日",
+   "section": "創意生產工具",
+   "action": "可即用",
+   "region": "中國",
+   "why": "大規模歷史場景製作周期由月壓縮至天，影片創作服務定價與提案策略需對應調整。",
+   "why_en": "Large-scale historical scene production timelines compressed from months to days — revisit video content pricing and pitch strategy accordingly.",
+   "highlights": [
+    "陸川導演團隊借助阿里全模態 AI，僅花 5 天完成原需數月、耗資數千萬元的明代歷史場景重現。",
+    "阿里巴巴宣布三年內目標打造原生統一全模態生成模型，徹底消除文字、圖像、影片等模態間的邊界。",
+    "此案例顯示生成式 AI 正將大製作影片內容的製作周期從「月」壓縮至「天」，對整個影視製作行業的定價邏輯構成深遠影響。"
+   ],
+   "highlights_en": [
+    "Director Lu Chuan's team used Alibaba's multimodal AI to recreate a Ming Dynasty scene in 5 days — work that previously required months and tens of millions of RMB.",
+    "Alibaba announced a three-year goal to build a natively unified full-modal generative model, eliminating boundaries between text, image, and video modalities.",
+    "This case demonstrates that generative AI is compressing large-scale video production timelines from months to days, with deep implications for production industry pricing models."
+   ]
+  },
+  {
+   "title": "商湯 SenseNova U1 Pro 發布：支援多圖合成與精準迭代修改，通過「像人類作品」辨別測試",
+   "title_en": "SenseTime Launches SenseNova U1 Pro: Multi-Image Composition That Passes Human-Made Tests",
+   "summary": "商湯科技正式發布 SenseNova U1 Pro 圖像生成模型，支援精準迭代編輯、多圖合成與動作序列圖，修改一處不影響其餘畫面，通過用戶辨別測試，已上線商湯小浣熊與 SenseNova Studio。",
+   "summary_en": "SenseTime launched SenseNova U1 Pro, supporting precise iterative edits, multi-image composition, and sequential action grids without unintended changes to other image elements. The model passes user tests distinguishing AI-generated from human-made imagery, available via 商汤小浣熊 and SenseNova Studio.",
+   "source": "量子位 QbitAI",
+   "url": "https://www.qbitai.com/2026/09/494263.html",
+   "time": "9月22日",
+   "section": "創意生產工具",
+   "action": "可即用",
+   "region": "中國",
+   "why": "精準迭代圖像編輯降低創意修改成本，可評估納入廣告視覺提案與迭代工作流。",
+   "why_en": "Precise iterative image editing reduces creative revision costs — evaluate for ad visual proposal and iteration workflows.",
+   "highlights": [
+    "SenseNova U1 Pro 支援多圖合成、樣式遷移與連續動作序列圖生成，修改局部不影響其他畫面元素。",
+    "在用戶辨別測試中，U1 Pro 生成圖像通過「是否像人類作品」的評估，達到商業交付標準。",
+    "模型現已在商湯小浣熊應用及 SenseNova Studio 上線，企業 API 存取同步開放。"
+   ],
+   "highlights_en": [
+    "SenseNova U1 Pro supports multi-image composition, style transfer, and sequential action grids, with localized edits that don't cascade to unintended areas.",
+    "The model passes user tests distinguishing AI-generated imagery from human-made work, meeting commercial delivery standards.",
+    "U1 Pro is now live on 商汤小浣熊 and SenseNova Studio, with enterprise API access also available."
+   ]
+  },
+  {
+   "title": "崑崙萬維 SkyProduction 推出 AI 短劇品質檢測：30 項全自動、百分鐘成本約 12 元",
+   "title_en": "Kunlun SkyProduction Launches AI Quality Inspection for Short Dramas at ~¥12 per 100 Minutes",
+   "summary": "崑崙萬維 SkyProduction 發布業界首個 AI 短劇自動品質檢測工具，涵蓋字幕準確性、音影同步、AI 瑕疵、浮水印等逾 30 項檢測，100 分鐘完整檢查費用約 12 元人民幣。",
+   "summary_en": "Kunlun Wanwei's SkyProduction launched the industry's first AI quality inspection tool for short dramas, covering 30+ checks including subtitle accuracy, audio-visual sync, lip-sync, watermarks, and AI artifacts. A full 100-minute quality check costs approximately ¥12 RMB.",
+   "source": "量子位 QbitAI",
+   "url": "https://www.qbitai.com/2026/09/494043.html",
+   "time": "9月22日",
+   "section": "創意生產工具",
+   "action": "可即用",
+   "region": "中國",
+   "why": "AI 生成短劇品質管控成本大降，代理商提供 AI 短劇製作服務時可納入自動化品質檢查流程。",
+   "why_en": "AI drama QC cost drops sharply — integrate automated quality checks into AI short-drama production services for clients.",
+   "highlights": [
+    "SkyProduction AI 品質檢測涵蓋字幕精準度、音影同步、口型對齊、浮水印及 AI 製品痕跡等逾 30 項檢測項目。",
+    "100 分鐘完整短劇的自動品質檢查成本約 12 元人民幣，遠低於人工審片成本。",
+    "此工具針對 AI 生成短劇的特有缺陷（黑幀、AI 瑕疵、幀率異常）設有專項偵測，是業界首個專項工具。"
+   ],
+   "highlights_en": [
+    "SkyProduction's AI QC covers 30+ items including subtitle accuracy, audio-visual sync, lip-sync, watermarks, and AI-specific artifacts.",
+    "Full quality inspection of a 100-minute short drama costs approximately ¥12 RMB, far below manual review costs.",
+    "The tool includes dedicated detection for AI-generation artifacts (black frames, glitches, frame rate anomalies) — a first for the industry."
+   ]
+  },
+  {
+   "title": "Beats CMO 的 LLM 時代上市策略：提前數月植入運動員、壓縮付費媒體、讓口碑先行",
+   "title_en": "Beats CMO Bets on Early Athlete Seeding Over Paid Media for Launches in the LLM Search Era",
+   "summary": "Beats CMO 在 Beats 360 發布前數月提前植入知名運動員，刻意壓縮付費廣告，以真實口碑先行，背後邏輯是 AI 搜尋正將消費者發現從廣告轉向真實評價。",
+   "summary_en": "Beats CMO Chris Thorne engineered a stealth pre-launch strategy for the Beats 360, seeding products with high-profile athletes months before launch with minimal paid media — betting that AI-driven search is shifting consumer discovery from advertising toward authentic reviews.",
+   "source": "The Drum",
+   "url": "https://www.thedrum.com/news/how-beats-cmo-is-shaking-up-the-marketing-playbook-for-new-product-launches-in-the-llm-age",
    "time": "9月22日",
    "section": "行業影響 & 品牌案例",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "客戶品牌資產面臨 AI 侵權風險，代理商應協助評估哪些元素有必要申請保護。",
-   "why_en": "Client brand assets face growing AI replication risk — agencies have a consulting opportunity to help clients identify and protect legally defensible brand elements.",
-   "highlights": [
-    "亞洲品牌正加速申請商標，因 AI 工具已可在短時間內仿製品牌視覺設計、色彩系統與聲音。",
-    "業界正重新評估現行知識產權框架的適用性，探討 AI 生成仿製品是否構成可追究的侵權行為。",
-    "代理商面臨新的顧問機會：協助客戶識別哪些品牌資產具有法律可保護性，並優先推進商標申請。"
-   ],
-   "highlights_en": [
-    "Asian brands are fast-tracking trademark filings as AI can now replicate visual designs, colour systems, and brand sounds within minutes.",
-    "The industry is questioning whether existing IP frameworks can adequately address AI-generated brand imitations as a form of actionable infringement.",
-    "Agencies have a new advisory opportunity: helping clients identify which brand assets hold legal defensibility and prioritise trademark filings accordingly."
-   ]
-  },
-  {
-   "title": "百事公司推出首個企業品牌廣告「House of Brands」，應對母品牌辨識度嚴重不足",
-   "title_en": "PepsiCo Steps Into the Spotlight with Its First Corporate Brand Campaign 'House of Brands'",
-   "summary": "百事公司推出首個企業品牌宣傳活動「House of Brands」，提升旗下逾 500 個品牌背後母公司的認知度，起因是調查顯示僅 18% 消費者能將百事公司與旗下其他產品連結。",
-   "summary_en": "PepsiCo launched its first corporate brand campaign, 'House of Brands,' to raise awareness of the parent company behind its 500+ product portfolio. A survey finding that only 18% of consumers linked PepsiCo to products beyond Pepsi cola prompted the move.",
-   "source": "Marketing Interactive",
-   "url": "https://www.marketing-interactive.com/pepsico-steps-out-from-behind-its-household-names",
-   "time": "9月21日",
-   "section": "行業影響 & 品牌案例",
    "action": "要留意",
    "region": "國際",
-   "why": "企業品牌建設需求上升，代理商可向多品牌企業客戶主動推薦傘形品牌策略。",
-   "why_en": "Growing demand for corporate brand strategy creates an opportunity for agencies to pitch umbrella branding solutions to multi-brand enterprise clients.",
+   "why": "AI 搜尋改變消費者發現路徑，上市計劃需提早布局真實口碑，降低對付費媒體的依賴。",
+   "why_en": "AI search is shifting discovery from ads to authentic reviews — front-load seeding and organic content in launch plans.",
    "highlights": [
-    "百事公司推出首個企業品牌廣告活動「House of Brands」，旨在提升集團母品牌的消費者認知度。",
-    "調查顯示僅 18% 消費者能將百事公司與旗下百事可樂以外的品牌連結，揭示母品牌長期被子品牌遮蔽的問題。",
-    "此案是多品牌企業透過企業品牌廣告解決品牌資產分散問題的典型示範，具有借鑑價值。"
+    "Beats CMO 在 Beats 360 正式發布前數月，提前將產品提供給高知名度運動員作口碑預熱。",
+    "整個發布計劃刻意壓縮付費廣告投放，以 AI 驅動搜尋環境下真實用戶評價優先曝光為核心思路。",
+    "Thorne 指出 AI 搜尋的普及使消費者愈來愈多依賴真實評論與社交口碑，而非廣告觸達，作出購買決定。"
    ],
    "highlights_en": [
-    "PepsiCo launched 'House of Brands' — its first corporate brand campaign — to build awareness of the parent company behind 500+ consumer products.",
-    "Research found only 18% of consumers could link PepsiCo to any product beyond the Pepsi cola brand, revealing a major parent-brand visibility gap.",
-    "The campaign is a textbook case for how multi-brand enterprises can use corporate advertising to reclaim brand equity fragmented across sub-brands."
+    "Beats CMO seeded Beats 360 headphones with high-profile athletes months before launch as organic pre-launch priming.",
+    "The campaign deliberately minimized paid media investment, betting on authentic user endorsements in an AI-driven search environment.",
+    "Thorne notes that AI search is driving consumers to rely increasingly on authentic reviews and social proof over paid ad impressions before purchase."
    ]
   },
   {
-   "title": "Converse 為 Karina 廣告道歉並撤圖，跨文化意象審查失誤再敲警鐘",
-   "title_en": "Converse Apologises and Pulls Karina Campaign After KKK Imagery Comparisons",
-   "summary": "Converse 就代言人 Karina（aespa）廣告圖片公開致歉並撤稿，社交媒體用戶普遍指圖片令人聯想到 KKK 相關意象。品牌距原帖約兩週才回應，處理速度受到批評。",
-   "summary_en": "Converse apologised and removed a campaign image featuring K-pop star Karina (aespa) after widespread social media comparisons to KKK imagery. The brand acknowledged it 'got it wrong,' roughly two weeks after the original post, drawing criticism over its slow response.",
-   "source": "Marketing Interactive",
-   "url": "https://www.marketing-interactive.com/converse-issues-apology-after-karina-campaign-draws-kkk-comparisons-online",
+   "title": "DBS Chromo Card 以夜騎派對觸達 Gen Z，限定「Chromera」相機引爆創作者傳播",
+   "title_en": "DBS Chromo Card Targets Gen Z With Night Bike Ride and Limited-Edition Creator Camera",
+   "summary": "DBS 推出 Chromo Card 針對年輕成人市場，透過夜間騎行與派對體驗活動作品牌啟用，同步向 Gen Z 創作者派發限定版「Chromera」數位相機，以創作者主導的 IRL 體驗取代傳統數字廣告。",
+   "summary_en": "DBS launched its Chromo Card targeting young adults through an experiential night bike ride and afterparty in Singapore, seeding limited-edition 'Chromera' digital cameras with Gen Z creators — using IRL creator-led experiences rather than traditional digital ads.",
+   "source": "Marketing-Interactive",
+   "url": "https://www.marketing-interactive.com/dbs-paints-the-town-with-bikes-beats-and-bursts-of-colour",
+   "time": "9月22日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "香港",
+   "why": "金融品牌以創作者主導的 IRL 體驗替代數字廣告，為服務金融客戶的代理商提供創新啟用參考。",
+   "why_en": "A bank using creator-led IRL experiences over digital ads — a reference model for agencies pitching innovative activations to financial clients.",
+   "highlights": [
+    "DBS Chromo Card 透過夜間騎行與派對體驗（而非傳統廣告）作產品上市啟用，聚焦年輕成人市場。",
+    "品牌向 Gen Z 創作者提供限定版「Chromera」數位相機，以稀缺性道具引發有機社交傳播。",
+    "此案例展示金融業品牌如何以低廣告費、高參與度的創作者體驗模式，吸引 Gen Z 客戶。"
+   ],
+   "highlights_en": [
+    "DBS activated Chromo Card through a night bike ride and afterparty rather than traditional advertising, directly targeting the young adult segment.",
+    "Limited-edition 'Chromera' cameras were seeded with Gen Z creators, using scarcity to drive organic social amplification.",
+    "The case demonstrates how financial brands can attract Gen Z customers through low-ad-spend, high-engagement creator experience models."
+   ]
+  },
+  {
+   "title": "Accenture Song 任命新任美國媒體主管，諮詢巨頭加速搶攻傳統廣告控股集團業務",
+   "title_en": "Accenture Song Signals US Media Expansion with New Exec Appointment",
+   "summary": "Accenture Song 任命前亞太媒體主管 Melissa Fein 出任美國媒體主管（10 月 1 日生效），標誌諮詢集團進一步擴張媒體採購業務，向傳統廣告控股集團的核心領域發起競爭。",
+   "summary_en": "Accenture Song appointed Melissa Fein — previously its APAC media lead — as US media lead effective October 1, signaling the consultancy's intent to scale its US media business and intensify competition with traditional advertising holding groups.",
+   "source": "Marketing Dive",
+   "url": "https://www.marketingdive.com/news/accenture-song-signals-us-media-ambitions-with-exec-appointment/830854/",
    "time": "9月21日",
    "section": "行業影響 & 品牌案例",
    "action": "影響生意",
    "region": "國際",
-   "why": "跨文化意象審查不足可引發嚴重公關危機，代理商需強化多層敏感度審查流程。",
-   "why_en": "Inadequate cross-cultural imagery review can trigger a major PR crisis — agencies should strengthen multi-layer sensitivity auditing before any cross-market campaign goes live.",
+   "why": "諮詢公司加速搶佔媒體採購市場，傳統代理商的業務競爭壓力持續升高，值得關注邊界侵蝕趨勢。",
+   "why_en": "Consulting firms are accelerating their push into media buying — monitor this competitive encroachment on core agency revenue streams.",
    "highlights": [
-    "Converse 就 Karina（aespa）廣告圖片致歉並撤稿，因社交媒體用戶普遍指圖片令人聯想到 KKK 相關意象。",
-    "品牌在原帖發布約兩週後才公開回應，危機處理速度受到輿論批評。",
-    "事件再次提醒廣告業界：跨文化或跨地域推廣在發布前需進行嚴格的多層意象敏感度審查。"
+    "Accenture Song 將 APAC 媒體資深主管 Melissa Fein 調任為美國媒體主管，10 月 1 日正式生效。",
+    "此任命反映 Accenture Song 在美國市場積極擴張媒體採購服務規模的明確意圖。",
+    "諮詢集團持續進入媒體採購領域，傳統廣告控股集團在美國市場面臨的競爭進一步加劇。"
    ],
    "highlights_en": [
-    "Converse apologised and removed a Karina (aespa) campaign image after social media users widely drew comparisons to KKK-related imagery.",
-    "The brand took roughly two weeks to respond publicly, drawing criticism that its crisis response was far too slow.",
-    "The incident highlights the necessity of rigorous, multi-layer cultural sensitivity review before publishing any cross-market campaign visuals."
+    "Accenture Song appointed Melissa Fein, its former APAC media lead, as US media lead, effective October 1.",
+    "The appointment signals clear intent to scale Accenture Song's media buying operations in the US market.",
+    "Consulting firms' continued entry into media buying is intensifying competitive pressure on traditional advertising holding groups in the US."
    ]
   },
   {
-   "title": "AI 簿記平台 Tabby：14 個月錄得 5500 客戶，中小企業財務可全面交由 AI 自動化",
-   "title_en": "AI Bookkeeping Tool Tabby Reaches 5,500 Clients in 14 Months as SME Finance Automation Proves Viable",
-   "summary": "前會計師創辦的 AI 簿記平台 Tabby 以 14 個月累積 5500 客戶與約 US$10 萬年收入，為中小企業提供即時自動化記帳，目前進行 US$100 萬種子輪融資，印證 AI 財務自動化切實可行。",
-   "summary_en": "Former accountant Ahad Ali built Tabby, an AI real-time bookkeeping platform for small businesses, reaching 5,500 clients and ~$100K ARR in 14 months with a $1M pre-seed raise underway. The growth validates that AI finance automation is commercially viable at scale.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+   "title": "Google Analytics 新增主機名稱許可清單過濾器，自動屏蔽垃圾流量無需手動維護排除規則",
+   "title_en": "Google Analytics Adds Hostname Include Filters to Automatically Block Spam Traffic",
+   "summary": "Google Analytics 推出主機名稱許可清單式 Include 過濾器，行銷人員指定認可網域後，垃圾流量自動被屏蔽，無需持續新增排除規則，測試模式可預覽效果後再正式啟用。",
+   "summary_en": "Google Analytics now offers allowlist-style hostname Include filters, letting marketers specify approved domains to automatically block spam traffic without ongoing Exclude rule maintenance. Test in 'Testing' state first — filtered data is permanently irrecoverable once activated.",
+   "source": "Search Engine Journal",
+   "url": "https://www.searchenginejournal.com/google-analytics-include-hostname-filters/590336/",
+   "time": "9月22日",
+   "section": "即學技巧 & 玩法",
+   "action": "可即用",
+   "region": "國際",
+   "why": "一次性設定許可清單，數據質量長期改善，免去每月手動追加排除規則的重複工作。",
+   "why_en": "Set it up once, clean data permanently — eliminates the monthly manual work of adding new spam exclusion rules.",
+   "highlights": [
+    "Google Analytics 新增 Hostname Include 過濾器，讓用戶建立認可網域許可清單，自動屏蔽所有未列入清單的流量。",
+    "與傳統 Exclude 過濾器相比，Include 許可清單模式更為主動，無需持續識別新的垃圾來源再逐一排除。",
+    "啟用前應在「測試」狀態下預覽過濾效果——一旦正式啟用，被過濾的數據將無法復原。"
+   ],
+   "highlights_en": [
+    "Google Analytics's new Hostname Include filter lets users build an allowlist of approved domains, automatically blocking all traffic from unlisted sources.",
+    "Compared to traditional Exclude filters, the allowlist approach is proactive — no need to continually identify new spam sources for exclusion.",
+    "Test in 'Testing' state before activating: filtered data is permanently irrecoverable once the filter goes live."
+   ]
+  },
+  {
+   "title": "Google Lighthouse 13.5 推出 AI 代理資源探索審查功能，AGI 爬蟲時代網站基礎建設要求提前到來",
+   "title_en": "Google Lighthouse 13.5 Adds AI Agent Resource Discovery Audit for the Emerging Agentic Web",
+   "summary": "Lighthouse 13.5 引入實驗性 AI 代理資源探索（ARD）審查，檢查網站是否透過 robots.txt、link tags、HTTP headers 及 ai-catalog.json 向 AI 代理正確曝露工具與服務，由 Google、微軟與 Hugging Face 共同制定。",
+   "summary_en": "Lighthouse 13.5 introduces an experimental Agentic Resource Discovery (ARD) audit checking whether a site correctly exposes its tools and services to AI agents via robots.txt, link tags, HTTP headers, and a fallback ai-catalog.json. The standard was co-authored by Google, Microsoft, and Hugging Face.",
+   "source": "Search Engine Journal",
+   "url": "https://www.searchenginejournal.com/google-lighthouse-ai-agent-resource-discovery-audit/590274/",
+   "time": "9月21日",
+   "section": "即學技巧 & 玩法",
+   "action": "要留意",
+   "region": "國際",
+   "why": "AI 代理逐步成為主流存取介面，現在著手了解並符合 ARD 標準可為客戶網站提前建立競爭優勢。",
+   "why_en": "AI agents are becoming a primary web access interface — understanding and meeting ARD standards now gives client websites an early competitive edge.",
+   "highlights": [
+    "Lighthouse 13.5 新增實驗性 ARD 審查，協助開發者確認網站是否正確透過標準介面向 AI 代理曝露功能。",
+    "此標準由 Google、微軟與 Hugging Face 聯合制定，標誌「代理網路」基礎建設標準正在成形。",
+    "代理商可用此工具審查客戶網站是否具備 AI 代理可見度，提前佈局代理式搜尋與購物情境。"
+   ],
+   "highlights_en": [
+    "Lighthouse 13.5 adds an experimental ARD audit to help developers verify whether sites correctly expose capabilities to AI agents via standard interfaces.",
+    "The ARD standard was co-authored by Google, Microsoft, and Hugging Face, signaling that 'agentic web' infrastructure standards are taking shape.",
+    "Agencies can use this tool to audit client websites for AI agent visibility, preparing ahead of agentic search and shopping scenarios."
+   ]
+  },
+  {
+   "title": "賓大研究：Google AI Mode 顯著減少外部點擊量，移除 AI 摘要後發布商流量反而上升",
+   "title_en": "Penn/Northeastern Study: Google AI Mode Cuts External Clicks and Worsens User Experience",
+   "summary": "賓大與東北大學對逾 1,100 名用戶的研究發現，Google AI Mode 顯著減少外部點擊量並加速用戶轉用競爭搜尋引擎，移除 AI 摘要後發布商點擊上升、用戶滿意度不降。",
+   "summary_en": "A University of Pennsylvania/Northeastern study of 1,100+ users found Google AI Mode significantly reduced clicks to external websites and accelerated migration to competing search engines. Removing AI Overviews actually increased publisher clicks without reducing user satisfaction.",
+   "source": "Search Engine Journal",
+   "url": "https://www.searchenginejournal.com/research-shows-google-ai-mode-sends-less-clicks-is-a-poor-user-experience/590221/",
+   "time": "9月21日",
+   "section": "即學技巧 & 玩法",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "Google AI 搜尋侵蝕自然流量有研究數據佐證，需加速多元化流量策略，降低對 Google 的依賴。",
+   "why_en": "Research backs what many feared — diversify client traffic sources away from Google organic before AI Mode erodes referral traffic further.",
+   "highlights": [
+    "賓大與東北大學研究顯示，Google AI Mode 顯著減少用戶點擊外部連結，並加速其轉用其他搜尋引擎。",
+    "研究發現移除 AI 摘要後，發布商獲得的點擊率上升，用戶滿意度並未因此下降，直接反駁 Google 的說法。",
+    "對代理商的啟示：應加速協助客戶建立多元流量來源（電郵、社交、直接訪問），降低 Google 自然搜尋依賴度。"
+   ],
+   "highlights_en": [
+    "Penn/Northeastern research shows Google AI Mode significantly reduces external link clicks and accelerates user migration to competing search engines.",
+    "Removing AI Overviews increased publisher clicks without reducing user satisfaction, directly contradicting Google's claims.",
+    "Agencies should accelerate helping clients build diversified traffic sources (email, social, direct) to reduce dependency on Google organic search."
+   ]
+  },
+  {
+   "title": "X 擴充透明度工具，品牌帳號可查閱觸及受限的具體法律原因及提出要求的國家",
+   "title_en": "X Expands Transparency Tool to Show Legal Reasons and Countries Behind Post Reach Limits",
+   "summary": "X 擴充「Under The Hood」透明度工具，讓用戶查看觸及限制是否源於法律要求並顯示具體提出要求的國家，功能向開戶逾一年、過去一個月有逾 10 篇發文的帳號開放。",
+   "summary_en": "X expanded its 'Under The Hood' transparency tool to show whether reach limitations stem from legal demands, including the specific country issuing them. Available to accounts at least one year old with more than 10 posts in the prior month.",
+   "source": "Social Media Today",
+   "url": "https://www.socialmediatoday.com/news/x-shares-more-insight-into-penalties-impacting-post-reach/830972/",
    "time": "9月21日",
    "section": "即學技巧 & 玩法",
    "action": "可即用",
    "region": "國際",
-   "why": "AI 行政自動化工具已成熟，代理商可試用同類工具降低內部行政成本，亦可向 SME 客戶推薦。",
-   "why_en": "AI admin automation tools have matured — agencies can pilot Tabby-style tools to cut internal admin costs, and recommend them to SME clients.",
+   "why": "管理多國市場品牌 X 帳號的代理商，可用此工具快速診斷觸及異常，主動向客戶說明原因。",
+   "why_en": "Agencies managing multi-market brand X accounts can now quickly diagnose reach anomalies and proactively explain them to clients.",
    "highlights": [
-    "Tabby 為中小企業提供 AI 即時簿記服務，14 個月內錄得 5500 客戶及約 US$10 萬年收入。",
-    "創辦人為前會計師，以自動追蹤財務狀況的方式消除人工記帳需求，目標是讓 AI 取代傳統會計工作。",
-    "Tabby 正進行 US$100 萬種子輪融資，印證投資者對 AI 財務自動化類工具的商業規模信心。"
+    "X 擴充「Under The Hood」工具，用戶現可查看帳號觸及限制是否源於特定國家的法律要求。",
+    "功能對象為開戶逾一年、過去一個月有逾 10 篇發文的帳號，新帳號暫不適用。",
+    "此工具有助品牌帳號管理員區分「算法降限」與「法律要求觸及限制」兩種情況，向客戶更清晰匯報。"
    ],
    "highlights_en": [
-    "Tabby provides AI-powered real-time bookkeeping for small businesses, reaching 5,500 clients and approximately US$100K ARR in just 14 months.",
-    "Founded by a former accountant with the goal of automating away bookkeeping work, Tabby eliminates the need for manual financial tracking entirely.",
-    "A US$1M pre-seed raise is underway, signalling investor confidence in AI finance automation as a scalable commercial category."
+    "X's expanded 'Under The Hood' tool now shows users whether reach limits stem from legal demands, identifying the requesting country.",
+    "The feature is available for accounts more than one year old with more than 10 posts in the prior month.",
+    "The tool helps brand account managers distinguish algorithmic suppression from legal reach restrictions when reporting to clients."
+   ]
+  },
+  {
+   "title": "Snapchat 研究：42% 用戶每日收看微短劇，訂閱轉化率高、品牌贊助機遇浮現",
+   "title_en": "Snapchat Report: 42% of Users Watch Microdramas Daily, With Strong Subscription Conversion",
+   "summary": "Snapchat 委託 Ipsos 調查三個市場 3,000 名用戶，42% 的 Snapchat 用戶每日收看微短劇，訂閱轉化行為明顯，報告建議品牌探索創作者贊助及自製微短劇格式以觸及高參與度受眾。",
+   "summary_en": "Snapchat's Ipsos study of 3,000 users across three markets found 42% watch microdramas daily, with strong subscription conversion behavior. The report recommends brands explore creator sponsorship deals and original short-drama formats to reach this highly engaged segment.",
+   "source": "Social Media Today",
+   "url": "https://www.socialmediatoday.com/news/snapchat-report-examines-the-rise-of-microdramas/830970/",
+   "time": "9月21日",
+   "section": "即學技巧 & 玩法",
+   "action": "要留意",
+   "region": "國際",
+   "why": "微短劇已成高黏性內容形式，可考慮為娛樂或消費品客戶規劃 Snapchat 微短劇品牌贊助策略。",
+   "why_en": "Microdramas are a high-retention format — explore Snapchat microdrama brand sponsorships or original formats for entertainment and consumer brand clients.",
+   "highlights": [
+    "Snapchat 調查顯示 42% 的用戶每日收看微短劇，顯示這一內容形式已形成強烈日常收看習慣。",
+    "研究發現微短劇觀眾具有顯著的訂閱付費意願，比一般短影片用戶更願意為優質內容付費。",
+    "Snapchat 建議品牌通過兩種路徑進入：與創作者建立贊助合作，或直接製作自有品牌微短劇系列。"
+   ],
+   "highlights_en": [
+    "Snapchat's survey found 42% of users watch microdramas daily, indicating the format has become a habitual daily viewing behavior.",
+    "Microdrama viewers show notably higher subscription conversion rates compared to general short-video users.",
+    "Snapchat recommends two brand entry paths: creator sponsorship partnerships, or producing original branded short-drama series."
    ]
   }
  ]
