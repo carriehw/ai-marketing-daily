@@ -642,6 +642,12 @@ def _para_rows(zh, en):
 cards, n = {}, 0
 tldr_rows = []   # one-liners for the 三分鐘看完 digest at the top of the page
 _paywall_n = 0
+# A write-up shorter than this adds nothing the card did not already say — the
+# card itself runs ~300 字 (highlights + summary + insight), so the expander has
+# to clear that bar to be worth a click.
+_DETAIL_MIN_CHARS = 420
+_detail_gap = []    # (no, source, paywalled) — no detail at all
+_detail_thin = []   # (no, source, chars)     — detail present but too short
 for s in data["sections"]:
     out = []
     for it in groups[s]:
@@ -676,29 +682,31 @@ for s in data["sections"]:
 
         # 詳細內容 — our own longer write-up, collapsed. This is the paywall
         # answer: when the source is metered the reader still gets the substance
-        # here. Falls back to assembling what the card already has (highlights +
-        # summary + insight) so the expander is useful even when the editor did
-        # not write a dedicated `detail`.
+        # here.
+        #
+        # There is deliberately NO fallback. The first version assembled the
+        # expander out of the highlights + summary + insight already printed on
+        # the card, which meant opening it showed the reader nothing new — the
+        # button promised 詳細 and delivered a rerun. An absent expander is
+        # honest; a padded one costs a click and trust. So: no `detail` in the
+        # data, no button, and a loud stderr warning when a paywalled story is
+        # the one missing it (that is the case where the reader has no other way
+        # in). _detail_gap collects those for the build report.
         paywalled = _is_paywalled(it)
         if paywalled:
             _paywall_n += 1
         det_rows = _para_rows(it.get("detail"), it.get("detail_en"))
+        # Count 漢字, not len(): the text carries Latin brand names and figures, so
+        # len() reads ~50% high and the "約 N 字" on the button would overpromise.
+        _det_n = len(re.findall(r"[一-鿿]", " ".join(_split_paras(it.get("detail")))))
+        if det_rows and _det_n < _DETAIL_MIN_CHARS:
+            _detail_thin.append((n, it.get("source", ""), _det_n))
         if not det_rows:
-            _fb_zh, _fb_en = [], []
-            if isinstance(hl_zh, list) and (hl_zh or hl_en):
-                _fb_zh += [str(x) for x in hl_zh if str(x).strip()]
-                _fb_en += [str(x) for x in (hl_en or []) if str(x).strip()]
-            if str(it.get("summary", "")).strip():
-                _fb_zh.append(str(it["summary"]))
-                _fb_en.append(str(it.get("summary_en") or it["summary"]))
-            if str(it.get("why", "")).strip():
-                _fb_zh.append(str(it["why"]))
-                _fb_en.append(str(it.get("why_en") or it["why"]))
-            det_rows = _para_rows(_fb_zh, _fb_en)
+            _detail_gap.append((n, it.get("source", ""), paywalled))
         detail = ""
         if det_rows:
-            _label = (bi("看詳細內容（中文整理）", "Read the full write-up")
-                      if paywalled else bi("看詳細內容", "Read the full write-up"))
+            _label = (bi(f"看詳細內容（本站整理，約 {_det_n} 字）", "Read our full write-up")
+                      if paywalled else bi(f"看詳細內容（約 {_det_n} 字）", "Read our full write-up"))
             _note = (f'<p class="why-src">{bi("原文需訂閱，以上為本站整理；來源：" + str(it.get("source","")), "Source is subscriber-only; the above is our own write-up. Source: " + str(it.get("source","")))}</p>'
                      if paywalled else
                      f'<p class="why-src">{bi("整理自：" + str(it.get("source","")), "Compiled from: " + str(it.get("source","")))}</p>')
@@ -727,8 +735,22 @@ total = n
 READ_MIN = data.get("read_minutes") or max(3, round(total * 0.5))
 
 if _paywall_n:
-    print(f"NOTE {_paywall_n}/{total} 則來源需訂閱 → 已加「需訂閱」標記；請確認佢哋嘅 detail 有寫夠，"
-          f"因為讀者可能只睇得到我哋嘅整理", file=sys.stderr)
+    print(f"NOTE {_paywall_n}/{total} 則來源需訂閱 → 已加「需訂閱」標記", file=sys.stderr)
+
+# The expander is the only route into a paywalled story, so a missing `detail`
+# there is a real gap, not a style preference. Loud for those, quiet for the rest.
+_gap_pw = [g for g in _detail_gap if g[2]]
+if _gap_pw:
+    print(f"WARN {len(_gap_pw)}/{_paywall_n} 則需訂閱來源冇 detail，讀者完全睇唔到內容："
+          + ", ".join(f"#{g[0]:02d} {g[1]}" for g in _gap_pw), file=sys.stderr)
+if _detail_gap:
+    print(f"NOTE {len(_detail_gap)}/{total} 則冇 detail → 唔會出「看詳細內容」按鈕（寧可冇，唔好重複卡片內容）",
+          file=sys.stderr)
+if _detail_thin:
+    print(f"WARN {len(_detail_thin)} 則 detail 短過 {_DETAIL_MIN_CHARS} 字，展開後同卡片重複度高："
+          + ", ".join(f"#{t[0]:02d} {t[1]}({t[2]}字)" for t in _detail_thin), file=sys.stderr)
+if total and not _detail_gap and not _detail_thin:
+    print(f"OK   {total}/{total} 則都有足夠長度嘅 detail", file=sys.stderr)
 
 # ---- 三分鐘看完 -------------------------------------------------------------
 # Cap at 6: past that it stops being a three-minute read and becomes a second
