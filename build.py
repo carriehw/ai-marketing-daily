@@ -171,6 +171,41 @@ def _norm_url(u):
     u = re.split(r"[?#]", u)[0]
     return u.rstrip("/").lower()
 
+# Outlets that meter or wall their articles. Readers were clicking through and
+# landing on a subscribe screen with no warning, which reads as a broken link.
+# Flagging the card sets the expectation, and the expandable 詳細內容 means the
+# substance is still on the page. data.json can extend this via "paywall_domains",
+# and any single item can force the flag on/off with "paywall": true/false.
+_PAYWALL_DOMAINS = {
+    "adage.com", "campaignasia.com", "the-decoder.com", "techcrunch.com",
+    "wsj.com", "ft.com", "nytimes.com", "bloomberg.com", "economist.com",
+    "theinformation.com", "businessinsider.com", "digiday.com", "adexchanger.com",
+    "marketingweek.com", "campaignlive.co.uk", "campaignlive.com", "forbes.com",
+    "hbr.org", "washingtonpost.com", "theatlantic.com", "wired.com",
+    "technologyreview.com", "nikkei.com", "scmp.com", "caixin.com",
+    "cailianpress.com", "36kr.com", "theverge.com", "axios.com", "semafor.com",
+}
+_PAYWALL_DOMAINS |= {str(d).strip().lower().lstrip(".")
+                     for d in (data.get("paywall_domains") or []) if str(d).strip()}
+
+def _host(u):
+    """Bare registrable-ish host: no scheme, no www, no port, no path."""
+    h = re.sub(r"^https?://", "", (u or "").strip(), flags=re.I)
+    h = re.split(r"[/?#]", h)[0]
+    h = re.sub(r"^www\.", "", h, flags=re.I)
+    return h.split(":")[0].lower()
+
+def _is_paywalled(it):
+    """Explicit per-item flag wins; otherwise match the host or any parent domain
+    (so news.adage.com and adage.com both hit the adage.com entry)."""
+    if "paywall" in it:
+        return bool(it["paywall"])
+    h = _host(it.get("url", ""))
+    if not h:
+        return False
+    parts = h.split(".")
+    return any(".".join(parts[i:]) in _PAYWALL_DOMAINS for i in range(len(parts) - 1))
+
 def _is_bare_domain(u):
     """True when the url is a homepage/section index rather than an article
     permalink — those make distinct stories look identical and defeat dedup."""
@@ -584,7 +619,29 @@ def _list_items(zh_list, en_list):
         out.append(f"<li>{bi(_z, _e)}</li>")
     return "".join(out)
 
+def _split_paras(t):
+    """Free text -> paragraphs. Accepts a list, or a string with blank-line or
+    single-newline breaks (editors write it both ways)."""
+    if isinstance(t, list):
+        return [str(x).strip() for x in t if str(x).strip()]
+    t = str(t or "").strip()
+    if not t:
+        return []
+    return [p.strip() for p in re.split(r"\n\s*\n|\n", t) if p.strip()]
+
+def _para_rows(zh, en):
+    """Bilingual <p> rows; pads the shorter language with its counterpart."""
+    z, e = _split_paras(zh), _split_paras(en)
+    rows = []
+    for _i in range(max(len(z), len(e))):
+        _z = z[_i] if _i < len(z) else (e[_i] if _i < len(e) else "")
+        _e = e[_i] if _i < len(e) else _z
+        rows.append(f"<p>{bi(_z, _e)}</p>")
+    return "".join(rows)
+
 cards, n = {}, 0
+tldr_rows = []   # one-liners for the 三分鐘看完 digest at the top of the page
+_paywall_n = 0
 for s in data["sections"]:
     out = []
     for it in groups[s]:
@@ -617,17 +674,77 @@ for s in data["sections"]:
             pat = (f'<div class="predict"><b class="k">{bi("趨勢觀察", "Pattern Watch")}</b>'
                    f'<p>{bi(it.get("pattern",""), it.get("pattern_en"))}</p></div>')
 
-        out.append(f'''<article class="story {sec_cls}">
-<div class="story-meta"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span><span class="no">{n:02d}</span></div>
+        # 詳細內容 — our own longer write-up, collapsed. This is the paywall
+        # answer: when the source is metered the reader still gets the substance
+        # here. Falls back to assembling what the card already has (highlights +
+        # summary + insight) so the expander is useful even when the editor did
+        # not write a dedicated `detail`.
+        paywalled = _is_paywalled(it)
+        if paywalled:
+            _paywall_n += 1
+        det_rows = _para_rows(it.get("detail"), it.get("detail_en"))
+        if not det_rows:
+            _fb_zh, _fb_en = [], []
+            if isinstance(hl_zh, list) and (hl_zh or hl_en):
+                _fb_zh += [str(x) for x in hl_zh if str(x).strip()]
+                _fb_en += [str(x) for x in (hl_en or []) if str(x).strip()]
+            if str(it.get("summary", "")).strip():
+                _fb_zh.append(str(it["summary"]))
+                _fb_en.append(str(it.get("summary_en") or it["summary"]))
+            if str(it.get("why", "")).strip():
+                _fb_zh.append(str(it["why"]))
+                _fb_en.append(str(it.get("why_en") or it["why"]))
+            det_rows = _para_rows(_fb_zh, _fb_en)
+        detail = ""
+        if det_rows:
+            _label = (bi("看詳細內容（中文整理）", "Read the full write-up")
+                      if paywalled else bi("看詳細內容", "Read the full write-up"))
+            _note = (f'<p class="why-src">{bi("原文需訂閱，以上為本站整理；來源：" + str(it.get("source","")), "Source is subscriber-only; the above is our own write-up. Source: " + str(it.get("source","")))}</p>'
+                     if paywalled else
+                     f'<p class="why-src">{bi("整理自：" + str(it.get("source","")), "Compiled from: " + str(it.get("source","")))}</p>')
+            detail = (f'<details class="detail"><summary>{_label}</summary>'
+                      f'<div class="detail-body">{det_rows}{_note}</div></details>')
+
+        pw_badge = ('<span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">'
+                    f'🔒{bi("需訂閱", "Paywalled")}</span>') if paywalled else ""
+
+        # 三分鐘看完 only lists what a reader must not miss — 可即用 and 影響生意.
+        if act_cls in ("act", "impact"):
+            tldr_rows.append(
+                f'<li><a href="#s{n}"><span class="t-tag {act_cls}">{bi(act, ACT_EN.get(act, act))}</span>'
+                f'{bi(it.get("title",""), it.get("title_en"))}</a></li>')
+
+        out.append(f'''<article class="story {sec_cls}" id="s{n}">
+<div class="story-meta"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {body}
 {take}
-{pat}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
 total = n
 READ_MIN = data.get("read_minutes") or max(3, round(total * 0.5))
+
+if _paywall_n:
+    print(f"NOTE {_paywall_n}/{total} 則來源需訂閱 → 已加「需訂閱」標記；請確認佢哋嘅 detail 有寫夠，"
+          f"因為讀者可能只睇得到我哋嘅整理", file=sys.stderr)
+
+# ---- 三分鐘看完 -------------------------------------------------------------
+# Cap at 6: past that it stops being a three-minute read and becomes a second
+# table of contents. The cap is announced in the header line, not hidden.
+_TLDR_MAX = 6
+tldr_html = ""
+if tldr_rows:
+    _shown = tldr_rows[:_TLDR_MAX]
+    _sub = (bi(f"{len(_shown)} 個今天真正要知的重點", f"the {len(_shown)} things that actually matter today")
+            if len(tldr_rows) <= _TLDR_MAX else
+            bi(f"今天 {len(tldr_rows)} 則屬可即用或影響生意，先看這 {len(_shown)} 個",
+               f"{len(tldr_rows)} stories are actionable or business-critical — here are the top {len(_shown)}"))
+    tldr_html = f'''<section class="tldr" aria-labelledby="tldr-h">
+  <div class="tldr-head"><b id="tldr-h">{bi("三分鐘看完", "The 3-minute version")}</b><span>{_sub}</span></div>
+  <ol>{"".join(_shown)}</ol>
+</section>'''
 
 stats = "".join(
     f'<a class="stat" href="#{SEC_ID[s]}"><b>{len(groups[s])}</b><span>{bi(s, SEC_EN.get(s, s))}</span></a>'
@@ -772,8 +889,14 @@ page = f'''<!doctype html>
 html{{scroll-behavior:smooth}}
 body{{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC","Noto Sans HK",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}}
 a{{color:inherit}}
-/* --- language toggle: show the active language, hide the other --- */
+/* --- language toggle: show the active language, hide the other ---
+   The bare `.l-en{{display:none}}` is specificity 0,1,0, so ANY later rule like
+   `.stat span{{display:block}}` (0,1,1) silently beat it and the card showed both
+   languages stacked. The `html:not(...)` form is 0,2,0 and outranks any such
+   single-class descendant rule, which keeps the toggle from breaking again when
+   a component styles its inner spans. */
 .l-en{{display:none}}
+html:not([data-lang="en"]) .l-en{{display:none}}
 html[data-lang="en"] .l-en{{display:inline}}
 html[data-lang="en"] .l-zh{{display:none}}
 .wrap{{width:min(1120px,calc(100% - 32px));margin:0 auto}}
@@ -851,51 +974,107 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .cat-head.c4{{background:var(--c4)}}
 .cat-head.c5{{background:var(--c5)}}
 
-/* ---- story cards ---- */
-.stories{{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px;margin-top:16px;align-items:start}}
-.story{{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 26px;box-shadow:0 8px 30px rgba(16,17,20,.035);border-top:5px solid var(--line);display:flex;flex-direction:column}}
+/* ---- story cards ----
+   NOTE: no align-items:start here, on purpose. With it, every card shrank to its
+   own content height, so two cards in the same row ended at different heights and
+   the grid read as "misaligned" — the complaint readers actually raised. Letting
+   the row stretch (grid's default) makes cards in a row equal height, and
+   .story-foot{{margin-top:auto}} then pins every 閱讀原文 button to the same
+   baseline. Card heights still differ BETWEEN rows, which is fine and expected. */
+.stories{{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:16px;margin-top:16px}}
+.story{{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px;box-shadow:0 8px 30px rgba(16,17,20,.035);border-top:5px solid var(--line);display:flex;flex-direction:column}}
 .story.c1{{border-top-color:var(--c1)}}
 .story.c2{{border-top-color:var(--c2)}}
 .story.c3{{border-top-color:var(--c3)}}
 .story.c4{{border-top-color:var(--c4)}}
 .story.c5{{border-top-color:var(--c5)}}
-.story-meta{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px;font-size:12.5px}}
-.src{{font-weight:800;padding:5px 11px;border-radius:999px;letter-spacing:.02em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+/* Tightened hierarchy: exactly three type sizes inside a card — source line
+   (12px), body (15px), title (~21px) — and one label style for every block
+   heading. Before, 重點摘要/行業洞察/趨勢觀察 each had its own size, colour and
+   box treatment, so a card had five competing levels and the eye had nowhere
+   obvious to land. Now the title dominates, 行業洞察 is the single tinted block,
+   and everything else is plain body text on an 8px spacing rhythm. */
+.story-meta{{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:12px}}
+.src{{font-weight:750;padding:4px 10px;border-radius:999px;letter-spacing:.02em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 .story.c1 .src{{background:var(--c1s);color:var(--c1)}}
 .story.c2 .src{{background:var(--c2s);color:var(--c2)}}
 .story.c3 .src{{background:var(--c3s);color:var(--c3)}}
 .story.c4 .src{{background:var(--c4s);color:var(--c4)}}
 .story.c5 .src{{background:var(--c5s);color:var(--c5)}}
 .date{{color:var(--muted)}}
-.story .no{{margin-left:auto;color:var(--line);font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}}
-.story h3{{font-size:clamp(18.5px,2.2vw,23px);line-height:1.25;letter-spacing:-.02em;margin:4px 0 12px;text-wrap:balance}}
+/* Subscription flag: readers were clicking through and hitting a paywall with no
+   warning. Flagging it on the card itself sets the expectation before the click. */
+.paywall{{display:inline-flex;align-items:center;gap:4px;font-weight:750;font-size:11.5px;padding:4px 9px;border-radius:999px;background:#fdf3e2;color:var(--amber);border:1px solid #edd9ab;white-space:nowrap}}
+.story .no{{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}}
+.story h3{{font-size:clamp(18px,2.05vw,21.5px);line-height:1.28;letter-spacing:-.022em;margin:2px 0 10px;text-wrap:balance}}
 .story h3 a{{text-decoration:none}}
 .story h3 a:hover{{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}}
 .story h3 a:focus-visible{{outline:2px solid var(--accent);outline-offset:3px}}
-.block{{margin:0 0 12px}}
-.block b.k,.take b.k,.predict b.k{{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}}
-.block b.k{{color:var(--muted)}}
-.block p{{margin:0;color:var(--body);font-size:15.5px}}
-.kh{{margin:0;padding-left:20px;color:var(--body);font-size:15.5px}}
-.kh li{{margin-bottom:6px}}
+.block{{margin:0 0 10px}}
+.block b.k,.take b.k,.predict b.k,.detail b.k{{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:5px;color:var(--muted)}}
+.block p{{margin:0;color:var(--body);font-size:15px;line-height:1.62}}
+.kh{{margin:0;padding-left:19px;color:var(--body);font-size:15px;line-height:1.62}}
+.kh li{{margin-bottom:5px}}
 .kh li:last-child{{margin-bottom:0}}
-.take{{border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 14px 14px 0;padding:13px 17px;margin:12px 0}}
+.take{{border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;padding:12px 16px;margin:10px 0}}
 .take b.k{{color:var(--accent)}}
-.take p{{margin:0;font-size:15.5px}}
-.predict{{background:#fff8e8;border:1px dashed #e3c76c;border-radius:14px;padding:12px 16px;margin:0 0 12px}}
+.take p{{margin:0;font-size:15px;line-height:1.62;color:var(--ink)}}
+.predict{{border-left:3px solid #e3c76c;background:#fff8e8;border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 10px}}
 .predict b.k{{color:var(--amber)}}
-.predict p{{margin:0;font-size:14.5px;color:var(--body)}}
-.story-foot{{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px;margin-top:auto}}
-.foot-tags{{display:flex;gap:7px;align-items:center;flex-wrap:wrap}}
-.signal{{font-weight:800;font-size:13px;padding:7px 13px;border-radius:999px;white-space:nowrap}}
+.predict p{{margin:0;font-size:15px;line-height:1.62;color:var(--body)}}
+/* Expandable full write-up — the paywall workaround. Our own Chinese/English
+   account of the story lives here, so a reader who cannot open the source still
+   gets the substance without leaving the page. Collapsed by default so the
+   20-card grid stays scannable; <details> means it works with JS disabled. */
+.detail{{border:1px solid var(--line);border-radius:14px;background:rgba(247,245,239,.6);margin:0 0 10px;overflow:hidden}}
+.detail>summary{{cursor:pointer;list-style:none;padding:10px 15px;font-weight:750;font-size:13px;color:var(--ink);display:flex;align-items:center;gap:7px}}
+.detail>summary::-webkit-details-marker{{display:none}}
+.detail>summary::after{{content:"＋";margin-left:auto;color:var(--accent);font-weight:800;font-size:14px}}
+.detail[open]>summary::after{{content:"－"}}
+.detail>summary:hover{{color:var(--accent-d)}}
+.detail>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:-2px}}
+.detail-body{{padding:2px 15px 14px;border-top:1px solid var(--line)}}
+.detail-body p{{margin:9px 0 0;color:var(--body);font-size:14.5px;line-height:1.68}}
+.detail-body p:first-child{{margin-top:10px}}
+.detail-body .why-src{{margin-top:11px;font-size:12px;color:var(--muted)}}
+.story-foot{{display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px;margin-top:auto}}
+.foot-tags{{display:flex;gap:6px;align-items:center;flex-wrap:wrap}}
+.signal{{font-weight:800;font-size:12.5px;padding:6px 12px;border-radius:999px;white-space:nowrap}}
 .signal.act{{background:#e2f3ec;color:var(--green)}}
 .signal.watch{{background:#fdf3e2;color:var(--amber)}}
 .signal.impact{{background:var(--accent-soft);color:var(--accent)}}
-.chip{{font-size:12px;padding:5px 11px;border-radius:99px;white-space:nowrap}}
+.chip{{font-size:11.5px;padding:5px 10px;border-radius:99px;white-space:nowrap}}
 .chip.region{{border:1px solid var(--line);color:var(--muted)}}
-.readsrc{{text-decoration:none;font-weight:800;font-size:13.5px;background:var(--ink);color:#fff;padding:8px 15px;border-radius:999px;white-space:nowrap}}
+.readsrc{{text-decoration:none;font-weight:800;font-size:13px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 .readsrc:hover{{background:var(--accent)}}
 .empty{{margin:0;padding:22px 24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.5)}}
+
+/* ---- 三分鐘看完 (top-of-page digest) ----
+   A 20-card page is a lot to face cold. This lists only the 可即用 / 影響生意
+   items as one-liners that jump straight to the card, so a reader with three
+   minutes still leaves knowing what mattered. */
+.tldr{{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:16px;padding:18px 22px;margin:22px 0 4px;box-shadow:0 8px 30px rgba(16,17,20,.035)}}
+.tldr-head{{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}}
+.tldr-head b{{font-size:15.5px;letter-spacing:-.01em}}
+.tldr-head span{{font-size:12px;color:var(--muted)}}
+.tldr ol{{margin:0;padding-left:0;list-style:none;counter-reset:t}}
+.tldr li{{counter-increment:t;display:flex;gap:10px;align-items:baseline;padding:7px 0;border-top:1px solid rgba(222,219,210,.65)}}
+.tldr li:first-child{{border-top:0;padding-top:0}}
+.tldr li::before{{content:counter(t);flex:none;width:20px;font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:3px}}
+.tldr a{{text-decoration:none;color:var(--ink);font-size:14.5px;line-height:1.55}}
+.tldr a:hover{{color:var(--accent-d);text-decoration:underline;text-underline-offset:3px}}
+.tldr .t-tag{{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:99px;margin-right:7px;white-space:nowrap;vertical-align:1px}}
+.tldr .t-tag.act{{background:#e2f3ec;color:var(--green)}}
+.tldr .t-tag.impact{{background:var(--accent-soft);color:var(--accent)}}
+
+/* ---- reading progress + active section ----
+   Long single-page scroll with no sense of position. The top bar shows how far
+   in you are; the nav pill for the section you are reading lights up. */
+#prog{{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--accent);z-index:40;pointer-events:none;transition:transform .08s linear}}
+.navlinks a.cur{{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-d);font-weight:700}}
+/* a card jumped to from 三分鐘看完 flashes once so the eye finds it */
+.story:target{{box-shadow:0 0 0 3px var(--accent)}}
+.story{{scroll-margin-top:96px}}
 
 footer{{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;font-size:13px;color:var(--muted);line-height:1.85}}
 footer b{{color:var(--ink)}}
@@ -914,6 +1093,8 @@ footer b{{color:var(--ink)}}
   .story{{padding:20px 18px}}
   .cat-head{{padding:13px 15px;gap:11px}}
   .navlinks a:not(.pill){{display:none}}
+  .tldr{{padding:16px 17px;border-radius:14px}}
+  .tldr a{{font-size:14px}}
 }}
 @media (prefers-reduced-motion:reduce){{*{{transition:none!important}}html{{scroll-behavior:auto}}}}
 /* skip link: 20+ cards is a long tab-through for keyboard/screen-reader users */
@@ -922,10 +1103,17 @@ footer b{{color:var(--ink)}}
 /* print / PDF: many readers forward this as a PDF to clients */
 @media print{{
   body{{background:#fff}}
-  .topbar,.langtog,#share,.heroacts,#sharebox,#toast,.navlinks{{display:none!important}}
+  .topbar,.langtog,#share,.heroacts,#sharebox,#toast,.navlinks,#prog{{display:none!important}}
   .story{{break-inside:avoid;page-break-inside:avoid;box-shadow:none;border:1px solid #ccc}}
   .cat-head{{break-after:avoid;page-break-after:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
-  .thesis,.take,.src,.signal{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  .thesis,.take,.src,.signal,.paywall,.tldr{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  .tldr{{break-inside:avoid;page-break-inside:avoid;box-shadow:none}}
+  /* A PDF cannot be expanded, and for a paywalled story the write-up IS the
+     content — so it prints open (forced via the beforeprint handler, since a
+     collapsed <details> cannot be un-hidden by CSS alone). */
+  .detail>summary{{display:none}}
+  .detail-body{{border-top:0;padding-top:0}}
+  .detail{{background:#fff;border-color:#ccc;break-inside:avoid;page-break-inside:avoid}}
   .stories{{grid-template-columns:1fr}}
   a[href^="http"]::after{{content:" (" attr(href) ")";font-size:9.5px;color:#666;word-break:break-all}}
   .readsrc::after{{content:none}}
@@ -934,6 +1122,7 @@ footer b{{color:var(--ink)}}
 </head>
 <body>
 <a class="skip" href="#main">{bi("跳至內容", "Skip to content")}</a>
+<div id="prog" role="presentation"></div>
 <div class="topbar"><div class="wrap"><div class="mast">
   <div class="brand">{bi(SITE_TITLE, SITE_TITLE_EN)}<small>{html.escape(SITE_TAGLINE)}</small></div>
   <div class="mast-r">
@@ -966,6 +1155,7 @@ footer b{{color:var(--ink)}}
   <div id="sharebox"><span>{bi("長按或全選以複製：", "Long-press / select all to copy:")}</span><input type="text" readonly value="{html.escape(SITE_URL)}"></div>
   <div class="legend"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}　<span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}　<span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</div>
   <div class="stats">{stats}</div>
+  {tldr_html}
 </div></header>
 
 <div class="wrap">{thesis_html}</div>
@@ -1002,6 +1192,52 @@ document.getElementById('share').addEventListener('click',async()=>{{
   if(legacyCopy()){{toast(msg);return}}
   showBox();
 }});
+
+/* ---- reading progress + which section am I in ----
+   scaleX on a fixed bar (compositor-only, no layout work per scroll event) and
+   an IntersectionObserver for the nav highlight. rAF-throttled so a fast scroll
+   on a 20-card page does not queue up work. */
+(function(){{
+  var bar=document.getElementById('prog'), pending=false;
+  function draw(){{
+    pending=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.transform='scaleX('+(h>0?Math.min(1,Math.max(0,window.scrollY/h)):0)+')';
+  }}
+  addEventListener('scroll',function(){{if(!pending){{pending=true;requestAnimationFrame(draw)}}}},{{passive:true}});
+  addEventListener('resize',draw,{{passive:true}});
+  draw();
+
+  var links={{}};
+  document.querySelectorAll('.navlinks a[href^="#"]').forEach(function(a){{links[a.getAttribute('href').slice(1)]=a}});
+  /* Printing / saving as PDF: open every write-up first (a collapsed <details>
+     is hidden by the UA, not by our CSS, so only the open attribute works),
+     then restore whatever the reader had open. */
+  var wasOpen=null;
+  addEventListener('beforeprint',function(){{
+    var d=document.querySelectorAll('details.detail');
+    wasOpen=[].map.call(d,function(x){{return x.open}});
+    [].forEach.call(d,function(x){{x.open=true}});
+  }});
+  addEventListener('afterprint',function(){{
+    if(!wasOpen)return;
+    [].forEach.call(document.querySelectorAll('details.detail'),function(x,i){{x.open=!!wasOpen[i]}});
+    wasOpen=null;
+  }});
+
+  var secs=[].slice.call(document.querySelectorAll('main section[id]')).filter(function(s){{return links[s.id]}});
+  if(!secs.length||!('IntersectionObserver' in window))return;
+  /* Track every visible section and light the topmost one: with tall sections a
+     "last one crossed" rule leaves the wrong pill lit when scrolling back up. */
+  var vis={{}};
+  var io=new IntersectionObserver(function(es){{
+    es.forEach(function(e){{vis[e.target.id]=e.isIntersecting}});
+    var cur=null;
+    for(var i=0;i<secs.length;i++){{if(vis[secs[i].id]){{cur=secs[i].id;break}}}}
+    Object.keys(links).forEach(function(k){{links[k].classList.toggle('cur',k===cur)}});
+  }},{{rootMargin:'-88px 0px -55% 0px'}});
+  secs.forEach(function(s){{io.observe(s)}});
+}})();
 </script>
 </body>
 </html>
