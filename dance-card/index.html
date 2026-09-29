@@ -75,6 +75,12 @@ textarea{min-height:122px;resize:vertical;line-height:1.55}
 .cheatItem{border:1px solid var(--line);border-radius:18px;padding:15px 16px}
 .cheatLabel{font-size:12px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.05em}
 .cheatValue{font-size:15px;line-height:1.5;margin-top:6px;white-space:pre-wrap}
+.exportPanel{background:var(--soft);border-radius:18px;padding:15px 16px;margin-top:16px}
+.exportTitle{font-size:14px;font-weight:850;margin-bottom:10px}
+.exportGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.exportPanel label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.exportPanel select{background:#fff}
+.exportHint{font-size:12px;color:var(--muted);line-height:1.45;margin-top:10px}
 .doneActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
 .doneActions .primary{grid-column:1/-1}
 .settingsNav{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
@@ -82,10 +88,10 @@ textarea{min-height:122px;resize:vertical;line-height:1.55}
 .backupBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .hidden{display:none!important}
 .printOnly{display:none}
-@media(max-width:520px){.app{padding:0 14px 42px}.hero{padding-top:18px}h1{font-size:34px}.qtitle{font-size:28px}.pairGrid{grid-template-columns:1fr}.doneActions{grid-template-columns:1fr}.doneActions .primary{grid-column:auto}.metaGrid{grid-template-columns:minmax(0,1fr)}.formCard{overflow:hidden}input[type="date"]{font-size:16px;padding-left:14px;padding-right:14px}}
+@media(max-width:520px){.app{padding:0 14px 42px}.hero{padding-top:18px}h1{font-size:34px}.qtitle{font-size:28px}.pairGrid{grid-template-columns:1fr}.doneActions{grid-template-columns:1fr}.doneActions .primary{grid-column:auto}.exportGrid{grid-template-columns:1fr}.metaGrid{grid-template-columns:minmax(0,1fr)}.formCard{overflow:hidden}input[type="date"]{font-size:16px;padding-left:14px;padding-right:14px}}
 @page{size:A4;margin:10mm}
 @media print{
-body{background:#fff}.app>*:not(.printOnly){display:none!important}.printOnly{display:block!important}
+body{background:#fff}.app{max-width:none!important;min-height:0!important;padding:0!important}.topbar,.screen{display:none!important}main{display:block!important}.printOnly{display:block!important}
 .pdf{font-family:Arial,"PingFang HK","PingFang TC","Noto Sans TC",sans-serif;color:#111;font-size:9.2pt;line-height:1.25}
 .pdfTop{display:grid;grid-template-columns:80px 1fr 80px;align-items:center;margin-bottom:5px}
 .bni{font-size:28pt;font-weight:900;color:#d71938}.dance{text-align:center;border:1px solid #333;padding:6px 12px;font-family:Georgia,serif;letter-spacing:3px;font-size:15pt}
@@ -159,6 +165,27 @@ body{background:#fff}.app>*:not(.printOnly){display:none!important}.printOnly{di
   </div>
   <div class="sectionHead"><h3>Referral Cheat Sheet</h3><span class="small">之後幫對方搵 referral 時睇呢度</span></div>
   <div id="cheatSheet" class="cheat"></div>
+  <div class="exportPanel">
+    <div class="exportTitle">輸出／分享設定</div>
+    <div class="exportGrid">
+      <div>
+        <label for="outputLang">輸出語言</label>
+        <select id="outputLang">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="bi">中英雙語</option>
+        </select>
+      </div>
+      <div>
+        <label for="shareMode">分享內容</label>
+        <select id="shareMode">
+          <option value="full">完整 9 題答案</option>
+          <option value="cheat">Referral 重點</option>
+        </select>
+      </div>
+    </div>
+    <div class="exportHint">語言選項會改變題目、標題及欄位名稱；你輸入嘅答案會保留原文，不會自動翻譯。</div>
+  </div>
   <div class="doneActions">
     <button class="secondary" type="button" id="editAnswersBtn">編輯答案</button>
     <button class="secondary" type="button" id="pdfBtn">儲存 PDF</button>
@@ -342,13 +369,17 @@ function joinAnswers(qnum,labelFallback){
   });
   return vals.length?vals.join("\n• "):labelFallback||"未填寫"
 }
-function cheatData(){
+function outputLang(){var x=el("outputLang");return x?x.value:"zh"}
+function shareMode(){var x=el("shareMode");return x?x.value:"full"}
+function langText(zh,en,lang){return lang==="en"?en:(lang==="bi"?zh+" / "+en:zh)}
+function cheatData(lang){
+  lang=lang||"zh";
   return[
-   ["🎯 Ideal Referral",joinAnswers(3,"未填寫")],
-   ["💬 Conversation Starters",joinAnswers(5,"未填寫")],
-   ["👂 Listen For",joinAnswers(6,"未填寫")],
-   ["✅ Qualify",joinAnswers(7,"未填寫")],
-   ["🚫 Not a Good Referral",joinAnswers(8,"未填寫")]
+   [langText("🎯 理想引薦","🎯 Ideal Referral",lang),joinAnswers(3,lang==="en"?"Not provided":"未填寫")],
+   [langText("💬 開場白","💬 Conversation Starters",lang),joinAnswers(5,lang==="en"?"Not provided":"未填寫")],
+   [langText("👂 留意字眼","👂 Listen For",lang),joinAnswers(6,lang==="en"?"Not provided":"未填寫")],
+   [langText("✅ 如何判斷引薦質素","✅ How to Qualify",lang),joinAnswers(7,lang==="en"?"Not provided":"未填寫")],
+   [langText("🚫 不合適的引薦","🚫 Not a Good Referral",lang),joinAnswers(8,lang==="en"?"Not provided":"未填寫")]
   ]
 }
 function renderComplete(){
@@ -357,23 +388,49 @@ function renderComplete(){
   el("completeTitle").textContent=(c.partner||"今次 1-to-1")+" 完成！";
   el("completeMeta").textContent=formatDate(c.date)+(profile.chapter?" · "+profile.chapter:"");
   var box=el("cheatSheet");box.innerHTML="";
-  cheatData().forEach(function(x){
+  cheatData("zh").forEach(function(x){
     var d=document.createElement("div");d.className="cheatItem";
     d.innerHTML='<div class="cheatLabel">'+escapeHtml(x[0])+'</div><div class="cheatValue">'+escapeHtml(x[1]).replace(/\n/g,"<br>")+'</div>';box.appendChild(d)
   });
   renderPrint()
 }
+function questionShareBlock(qnum,lang){
+  var q=QUESTIONS[qnum-1],title=langText(q.zh,q.en,lang),lines=[qnum+". "+title],idx=indicesFor(qnum,q.pair);
+  if(q.pair){
+    idx.forEach(function(i){
+      var m=getAnswer(qnum,i,"mis").trim(),r=getAnswer(qnum,i,"reply").trim();
+      if(m||r){
+        if(lang==="en")lines.push("• Misconception: "+(m||"—")+" | Response: "+(r||"—"));
+        else if(lang==="bi")lines.push("• 誤解 / Misconception: "+(m||"—")+"\n  回應 / Response: "+(r||"—"));
+        else lines.push("• 誤解："+(m||"—")+"\n  回應："+(r||"—"));
+      }
+    })
+  }else{
+    idx.forEach(function(i){var v=getAnswer(qnum,i).trim();if(v)lines.push("• "+v)})
+  }
+  if(lines.length===1)lines.push(lang==="en"?"• Not provided":"• 未填寫");
+  return lines.join("\n")
+}
 function shareCard(){
-  var c=current(),lines=["DANCE CARD · "+(c.partner||"1-to-1"),formatDate(c.date),""];
-  cheatData().forEach(function(x){lines.push(x[0]);lines.push("• "+x[1]);lines.push("")});
+  var c=current(),lang=outputLang(),mode=shareMode();
+  var title=langText("DANCE CARD · "+(c.partner||"1-to-1"),"DANCE CARD · "+(c.partner||"1-to-1"),lang);
+  var lines=[title,langText("日期：","Date: ",lang)+formatDate(c.date),""];
+  if(mode==="cheat"){
+    lines.push(langText("Referral 重點","Referral Cheat Sheet",lang),"");
+    cheatData(lang).forEach(function(x){lines.push(x[0]);lines.push("• "+x[1]);lines.push("")});
+  }else{
+    lines.push(langText("完整 9 題答案","Full 9-question responses",lang),"");
+    for(var i=1;i<=9;i++){lines.push(questionShareBlock(i,lang));lines.push("")}
+  }
   var text=lines.join("\n");
-  if(navigator.share){navigator.share({title:"Referral Cheat Sheet · "+(c.partner||""),text:text}).catch(function(){})}
+  var shareTitle=langText("DANCE CARD 分享","DANCE CARD Share",lang)+" · "+(c.partner||"");
+  if(navigator.share){navigator.share({title:shareTitle,text:text}).catch(function(){})}
   else{
     var blob=new Blob([text],{type:"text/plain;charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");
-    a.href=u;a.download="Referral_Cheat_Sheet_"+(c.partner||"1-to-1")+".txt";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)
+    a.href=u;a.download="DANCE_CARD_"+(c.partner||"1-to-1")+".txt";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)
   }
 }
-function printPdf(){saveAll(false);renderPrint();setTimeout(function(){window.print()},80)}
+function printPdf(){saveAll(false);renderPrint();setTimeout(function(){window.print()},120)}
 function escapeHtml(s){return String(s||"").replace(/[&<>"']/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
 function renderAnswerLines(qnum){
   var q=QUESTIONS[qnum-1],out="",idx=indicesFor(qnum,q.pair);
@@ -388,10 +445,24 @@ function renderAnswerLines(qnum){
 }
 function renderPrint(){
   if(!el("printArea")||!current())return;
-  var c=current(),h='<div class="pdf"><div class="pdfTop"><div class="bni">BNI</div><div class="dance">DANCE CARD</div><div></div></div>';
-  h+='<div class="who"><b>Name:</b> '+escapeHtml(c.name||profile.name)+' &nbsp;&nbsp; <b>one-to-one with</b> '+escapeHtml(c.partner)+' &nbsp;&nbsp; <b>on</b> '+escapeHtml(formatDate(c.date))+'</div>';
-  h+='<p class="tips"><b>TIPS:</b> Be respectful of each other’s time, be a good listener, always be positive and give encouragement, stay focused on what you are discussing and most of all, once you have learned this information, be sure to go out and WORK at finding your partner a quality referral.</p>';
-  QUESTIONS.forEach(function(q,i){h+='<div class="pq"><div><b>'+(i+1)+'. '+escapeHtml(q.zh)+'</b></div><div class="pen">'+escapeHtml(q.en)+'</div>'+renderAnswerLines(i+1)+'</div>'});
+  var c=current(),lang=outputLang();
+  var nameLabel=langText("姓名：","Name: ",lang);
+  var withLabel=langText("1-to-1 對象：","one-to-one with ",lang);
+  var dateLabel=langText("日期：","on ",lang);
+  var h='<div class="pdf"><div class="pdfTop"><div class="bni">BNI</div><div class="dance">DANCE CARD</div><div></div></div>';
+  h+='<div class="who"><b>'+escapeHtml(nameLabel)+'</b> '+escapeHtml(c.name||profile.name)+' &nbsp;&nbsp; <b>'+escapeHtml(withLabel)+'</b> '+escapeHtml(c.partner)+' &nbsp;&nbsp; <b>'+escapeHtml(dateLabel)+'</b> '+escapeHtml(formatDate(c.date))+'</div>';
+  if(lang==="en"){
+    h+='<p class="tips"><b>TIPS:</b> Be respectful of each other’s time, be a good listener, always be positive and give encouragement, stay focused on what you are discussing and, once you have learned this information, work at finding your partner a quality referral.</p>';
+  }else if(lang==="bi"){
+    h+='<p class="tips"><b>貼士 / TIPS:</b> 為了尊重彼此的時間，請做一位好的聆聽者，保持正面及給予鼓勵，集中於你們所討論的項目，一旦你更明白對方的需要即為你的伙伴去尋找合適的引薦。<br>Be respectful of each other’s time, be a good listener, stay positive and work at finding your partner a quality referral.</p>';
+  }else{
+    h+='<p class="tips"><b>貼士：</b>為了尊重彼此的時間，請做一位好的聆聽者，保持正面及給予鼓勵，集中於你們所討論的項目，一旦你更明白對方的需要即為你的伙伴去尋找合適的引薦。</p>';
+  }
+  QUESTIONS.forEach(function(q,i){
+    var title=lang==="en"?q.en:(lang==="bi"?q.zh+" / "+q.en:q.zh);
+    var secondary=lang==="bi"?"":(lang==="zh"?"":"");
+    h+='<div class="pq"><div><b>'+(i+1)+'. '+escapeHtml(title)+'</b></div>'+renderAnswerLines(i+1)+'</div>'
+  });
   h+="</div>";el("printArea").innerHTML=h
 }
 function renderSettings(){el("profileName").value=profile.name||"";el("profileChapter").value=profile.chapter||"";el("profileClass").value=profile.classification||""}
@@ -415,6 +486,7 @@ el("nextBtn").addEventListener("click",function(){saveAll(false);if(step<8){step
 el("editAnswersBtn").addEventListener("click",function(){step=0;renderConversation();show("conversation")});
 el("pdfBtn").addEventListener("click",printPdf);
 el("shareBtn").addEventListener("click",shareCard);
+el("outputLang").addEventListener("change",renderPrint);
 ["profileName","profileChapter","profileClass"].forEach(function(id){el(id).addEventListener("input",function(){clearTimeout(saveTimer);saveTimer=setTimeout(saveProfile,250)})});
 el("backupBtn").addEventListener("click",downloadBackup);
 el("importBtn").addEventListener("click",function(){el("importFile").click()});
