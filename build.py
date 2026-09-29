@@ -849,6 +849,20 @@ _og = f'''<meta name="description" content="{html.escape(_desc_en)}">
 <meta name="twitter:description" content="{html.escape(_desc_en)}">'''
 if SITE_URL:
     _og += f'\n<meta property="og:url" content="{html.escape(SITE_URL)}">\n<link rel="canonical" href="{html.escape(SITE_URL)}">'
+
+# Icon/manifest hrefs must carry the project path prefix. This is a GitHub Pages
+# PROJECT site (/ai-marketing-daily/), so a root-relative "/icon-192.png" would
+# resolve to carriehw.github.io/icon-192.png and 404. A relative "icon-192.png"
+# breaks the other way — archive/2026-09-29.html would look inside archive/.
+# Deriving the prefix from site_url is correct for both.
+_base = "/"
+if SITE_URL:
+    try:
+        from urllib.parse import urlsplit
+        _p = urlsplit(SITE_URL).path or "/"
+        _base = _p if _p.endswith("/") else _p.rsplit("/", 1)[0] + "/"
+    except Exception:
+        _base = "/"
 if _og_image:
     _og += (f'\n<meta property="og:image" content="{html.escape(_og_image)}">'
             f'\n<meta name="twitter:image" content="{html.escape(_og_image)}">')
@@ -878,8 +892,13 @@ page = f'''<!doctype html>
 <title>{html.escape(SITE_TITLE_EN)} · {html.escape(ISO)}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {_og}
-<meta name="theme-color" content="#5a42f4">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%235a42f4'/><text x='16' y='23' font-size='19' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>A</text></svg>">
+<meta name="theme-color" content="#4a33e0">
+<link rel="icon" href="{_base}favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="192x192" href="{_base}icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{_base}icon-180.png">
+<link rel="manifest" href="{_base}manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="AI・行銷情報">
+<meta name="application-name" content="AI・行銷情報">
 <script type="application/ld+json">{_ld}</script>
 <script>
 /* Language on entry, resolved before paint (no flash):
@@ -972,7 +991,12 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
 #sharebox span{{font-size:12px;color:var(--muted);white-space:nowrap}}
 
 /* ---- signal legend + section counters ---- */
-.legend{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:16px 0 0;font-size:12.5px;color:var(--muted)}}
+/* Each badge and its gloss are ONE flex item (.lg), not two. Flat flex items let
+   the wrap fall between 要留意 and 平台或趨勢變動 at phone widths, so the badge
+   ended one line and its own explanation started the next — the legend read as
+   three unrelated fragments. Wrapping each pair makes it unbreakable. */
+.legend{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:16px 0 0;font-size:12.5px;color:var(--muted)}}
+.legend .lg{{display:inline-flex;align-items:center;gap:7px}}
 .stats{{display:grid;grid-template-columns:repeat({max(1, len(data["sections"]))},1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:20px 0 8px}}
 .stat{{background:var(--card);text-align:center;padding:15px 6px;text-decoration:none;color:var(--ink)}}
 .stat b{{display:block;font-size:27px;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.03em}}
@@ -1122,6 +1146,28 @@ footer b{{color:var(--ink)}}
   .tldr{{padding:16px 17px;border-radius:14px}}
   .tldr a{{font-size:14px}}
 }}
+/* ---- phone fold ----------------------------------------------------------
+   At 390px the masthead, headline, lede, four meta pills, byline, two buttons
+   and the legend filled the entire first screen, so a reader had to scroll
+   past a full viewport of furniture before the first story. These trims are
+   spacing and type-scale only — nothing is hidden, and the desktop layout is
+   untouched. Measured on a 390x844 viewport: first card moves ~210px up. */
+@media (max-width:460px){{
+  .hero{{padding:24px 0 6px}}
+  h1{{font-size:clamp(31px,8.6vw,40px);margin:10px 0 12px;letter-spacing:-.045em}}
+  .hero-sub{{font-size:15.5px;line-height:1.5;margin:0 0 15px}}
+  /* The four pills were one per row at this width. Smaller type and tighter
+     padding fits them two-up, which is 2 rows instead of 4. */
+  .issue-meta{{gap:7px;margin-bottom:13px}}
+  .issue-meta>span{{padding:6px 11px;font-size:12px}}
+  .byline{{padding:10px 0 2px;font-size:12.5px;gap:7px}}
+  .heroacts{{margin-top:11px;gap:8px}}
+  .legend{{padding:13px 0 0;gap:7px 14px;font-size:12px}}
+  .stats{{margin:15px 0 6px}}
+  .stat{{padding:12px 5px}}
+  .stat b{{font-size:23px}}
+  .section{{padding:24px 0 6px}}
+}}
 @media (prefers-reduced-motion:reduce){{*{{transition:none!important}}html{{scroll-behavior:auto}}}}
 /* skip link: 20+ cards is a long tab-through for keyboard/screen-reader users */
 .skip{{position:absolute;left:-9999px;top:0;z-index:60;background:var(--ink);color:#fff;padding:11px 18px;border-radius:0 0 8px 0;text-decoration:none;font-weight:700;font-size:14px}}
@@ -1179,7 +1225,7 @@ footer b{{color:var(--ink)}}
     <a class="archlink" href="archive/">{bi("📚 歷史存檔", "📚 Archive")}</a>
   </div>
   <div id="sharebox"><span>{bi("長按或全選以複製：", "Long-press / select all to copy:")}</span><input type="text" readonly value="{html.escape(SITE_URL)}"></div>
-  <div class="legend"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}　<span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}　<span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</div>
+  <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
   <div class="stats">{stats}</div>
   {tldr_html}
 </div></header>
