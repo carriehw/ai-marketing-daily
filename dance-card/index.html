@@ -42,10 +42,10 @@ h3{font-size:18px;margin:0}
 .badge{font-size:12px;font-weight:800;padding:6px 9px;border-radius:999px;background:var(--amberbg);color:var(--amber);white-space:nowrap}
 .badge.done{background:var(--greenbg);color:var(--green)}
 .formCard{background:var(--soft);border-radius:22px;padding:18px;margin-top:18px}
-.field{margin-bottom:15px}
+.field{margin-bottom:15px;min-width:0;overflow:hidden}
 .field:last-child{margin-bottom:0}
 label{display:block;font-size:14px;font-weight:800;margin-bottom:7px}
-input,select,textarea{width:100%;border:1px solid #d9d9d9;background:#fff;color:var(--ink);border-radius:16px;padding:14px 15px;font-size:16px;outline:none}
+input,select,textarea{display:block;width:100%;min-width:0;max-width:100%;border:1px solid #d9d9d9;background:#fff;color:var(--ink);border-radius:16px;padding:14px 15px;font-size:16px;outline:none}input[type="date"]{width:100%;min-width:0;max-width:100%;box-sizing:border-box;-webkit-appearance:none;appearance:none;line-height:1.35}
 input:focus,textarea:focus,select:focus{border-color:#bcbcbc;box-shadow:0 0 0 3px rgba(207,23,52,.08)}
 textarea{min-height:122px;resize:vertical;line-height:1.55}
 .backrow{display:flex;align-items:center;justify-content:space-between;padding:12px 0 6px}
@@ -82,7 +82,7 @@ textarea{min-height:122px;resize:vertical;line-height:1.55}
 .backupBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .hidden{display:none!important}
 .printOnly{display:none}
-@media(max-width:520px){.app{padding:0 14px 42px}.hero{padding-top:18px}h1{font-size:34px}.qtitle{font-size:28px}.pairGrid{grid-template-columns:1fr}.doneActions{grid-template-columns:1fr}.doneActions .primary{grid-column:auto}}
+@media(max-width:520px){.app{padding:0 14px 42px}.hero{padding-top:18px}h1{font-size:34px}.qtitle{font-size:28px}.pairGrid{grid-template-columns:1fr}.doneActions{grid-template-columns:1fr}.doneActions .primary{grid-column:auto}.metaGrid{grid-template-columns:minmax(0,1fr)}.formCard{overflow:hidden}input[type="date"]{font-size:16px;padding-left:14px;padding-right:14px}}
 @page{size:A4;margin:10mm}
 @media print{
 body{background:#fff}.app>*:not(.printOnly){display:none!important}.printOnly{display:block!important}
