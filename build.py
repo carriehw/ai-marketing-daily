@@ -948,8 +948,12 @@ html[data-lang="en"] .l-zh{{display:none}}
 h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin:14px 0 18px;font-weight:800}}
 .hero-sub{{font-size:clamp(16.5px,1.9vw,20px);color:var(--muted);max-width:660px;margin:0 0 20px}}
 .issue-meta{{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}}
-.issue-meta span{{border:1px solid var(--line);background:var(--card);padding:7px 13px;border-radius:999px;font-size:13px;color:var(--muted)}}
-.issue-meta span b{{color:var(--ink);font-weight:700}}
+/* Direct child only. `span` as a descendant selector also caught the inner
+   <span class="l-zh">/<span class="l-en"> that bi() emits, so each pill grew a
+   second pill inside itself — the 「20 則 · 5 個分類」chip rendered as three
+   nested capsules. `>` keeps the pill on the outer wrapper alone. */
+.issue-meta>span{{border:1px solid var(--line);background:var(--card);padding:7px 13px;border-radius:999px;font-size:13px;color:var(--muted)}}
+.issue-meta>span b{{color:var(--ink);font-weight:700}}
 /* slim byline (personal credit, no full profile card) */
 .byline{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0 4px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}}
 .byline .who{{color:var(--ink);font-weight:750}}
