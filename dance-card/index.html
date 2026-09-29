@@ -4,97 +4,423 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>DANCE CARD</title>
+<title>DANCE CARD · BNI 1-to-1</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","PingFang TC",Arial,sans-serif;color:#171717;background:#fff}.app{max-width:820px;margin:auto;padding:24px 18px 56px}.ey{color:#c8102e;font-weight:800;letter-spacing:.06em;font-size:14px}h1{font-size:36px;line-height:1;margin:12px 0 8px}.sub{color:#6b6b6b;line-height:1.5}.status{display:inline-block;margin-top:12px;background:#eaf6ef;color:#267653;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:700}.barTop{border-top:1px solid #ddd;margin-top:22px;padding-top:18px}.barTop label{display:block;font-size:13px;color:#666;margin-bottom:7px}select,input,textarea,button{font:inherit}select,input,textarea{width:100%;border:1px solid #ddd;border-radius:15px;background:#fff;padding:14px 15px;font-size:16px;outline:none}textarea{min-height:110px;resize:vertical;line-height:1.5}.actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}button{min-height:48px;border-radius:14px;border:1px solid #ddd;background:#fff;font-weight:750;padding:10px 12px;color:#171717}.primary{background:#c8102e;border-color:#c8102e;color:#fff}.meta{margin-top:18px;background:#f7f7f5;border-radius:20px;padding:16px}.metaGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metaGrid .full{grid-column:1/-1}.meta label{display:block;font-size:14px;font-weight:750;margin-bottom:7px}.prog{display:flex;gap:12px;align-items:center;margin:18px 4px}.progTxt{font-weight:800;color:#555;white-space:nowrap}.track{height:8px;background:#eee;border-radius:10px;overflow:hidden;flex:1}.fill{height:100%;width:0;background:#c8102e}.qs{border-top:1px solid #ddd}.q{border-bottom:1px solid #ddd}.qh{width:100%;border:0;border-radius:0;background:#fff;display:flex;gap:12px;align-items:flex-start;text-align:left;padding:18px 4px;min-height:0}.num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#f2f2f2;font-weight:850;flex:none}.qt{font-size:17px;font-weight:800;line-height:1.35}.en{font-size:12px;color:#777;font-weight:500;margin-top:4px;line-height:1.35}.arrow{margin-left:auto;color:#777;font-size:20px}.qb{display:none;padding:0 4px 18px}.q.open .qb{display:block}.slot{margin-top:12px}.slotname{font-size:13px;color:#666;margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1.2fr;gap:10px}.next{display:flex;justify-content:flex-end;margin-top:12px}.backup{margin-top:26px;border-top:1px solid #ddd;padding-top:18px}.backup summary{font-weight:800}.backup p{font-size:13px;color:#666;line-height:1.5}.backupBtns{display:flex;flex-wrap:wrap;gap:8px}.danger{color:#b4233c;border-color:#efc6ce;background:#fff7f8}.printOnly{display:none}
-@media(max-width:600px){.app{padding:20px 14px 50px}.actions{grid-template-columns:1fr 1fr}.actions .primary{grid-column:1/-1}.metaGrid{grid-template-columns:1fr}.metaGrid .full{grid-column:auto}.pair{grid-template-columns:1fr}}
+:root{--red:#cf1734;--red2:#a90f28;--ink:#171717;--muted:#6f6f73;--line:#e7e7e7;--soft:#f6f6f4;--green:#2e7d5a;--greenbg:#edf7f1;--amber:#9a6b17;--amberbg:#fff8e8}
+*{box-sizing:border-box}
+html{background:#fff}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","PingFang TC","Noto Sans TC",Arial,sans-serif;color:var(--ink);background:#fff}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+.app{max-width:760px;margin:0 auto;min-height:100vh;padding:0 18px 52px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 0 12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em}
+.brandMark{width:34px;height:34px;border-radius:10px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+.iconBtn{width:44px;height:44px;border:1px solid var(--line);border-radius:14px;background:#fff;font-size:20px}
+.screen{display:none}
+.screen.active{display:block}
+.hero{padding:24px 0 18px}
+.eyebrow{font-size:13px;color:var(--red);font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:38px;line-height:1.05;margin:10px 0 12px;letter-spacing:-.03em}
+h2{font-size:28px;line-height:1.16;margin:8px 0 10px;letter-spacing:-.02em}
+h3{font-size:18px;margin:0}
+.sub{color:var(--muted);font-size:16px;line-height:1.55}
+.primary{width:100%;min-height:56px;border:0;border-radius:18px;background:var(--red);color:#fff;font-weight:850;font-size:17px;padding:14px 18px}
+.primary:active{background:var(--red2)}
+.secondary{min-height:48px;border:1px solid var(--line);border-radius:15px;background:#fff;color:var(--ink);font-weight:750;padding:11px 15px}
+.ghost{min-height:44px;border:0;background:transparent;color:var(--ink);font-weight:700;padding:8px 4px}
+.danger{color:#b4233c}
+.sectionHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:28px 0 12px}
+.sectionHead .small{font-size:13px;color:var(--muted)}
+.empty{padding:24px 16px;border:1px dashed #d8d8d8;border-radius:18px;color:var(--muted);text-align:center;background:#fafafa}
+.cardList{display:flex;flex-direction:column;gap:10px}
+.record{width:100%;border:1px solid var(--line);border-radius:18px;background:#fff;padding:15px 16px;text-align:left;display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:14px;background:#f1f1f1;display:flex;align-items:center;justify-content:center;font-weight:900;color:#555;flex:none}
+.recordMain{min-width:0;flex:1}
+.recordName{font-size:17px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.recordMeta{font-size:13px;color:var(--muted);margin-top:4px}
+.badge{font-size:12px;font-weight:800;padding:6px 9px;border-radius:999px;background:var(--amberbg);color:var(--amber);white-space:nowrap}
+.badge.done{background:var(--greenbg);color:var(--green)}
+.formCard{background:var(--soft);border-radius:22px;padding:18px;margin-top:18px}
+.field{margin-bottom:15px}
+.field:last-child{margin-bottom:0}
+label{display:block;font-size:14px;font-weight:800;margin-bottom:7px}
+input,select,textarea{width:100%;border:1px solid #d9d9d9;background:#fff;color:var(--ink);border-radius:16px;padding:14px 15px;font-size:16px;outline:none}
+input:focus,textarea:focus,select:focus{border-color:#bcbcbc;box-shadow:0 0 0 3px rgba(207,23,52,.08)}
+textarea{min-height:122px;resize:vertical;line-height:1.55}
+.backrow{display:flex;align-items:center;justify-content:space-between;padding:12px 0 6px}
+.backrow button{border:0;background:transparent;padding:8px 0;font-weight:750}
+.saved{font-size:12px;color:var(--muted)}
+.progressWrap{padding:10px 0 14px}
+.progressTop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.stepText{font-size:13px;font-weight:850;color:#4d4d4d}
+.dots{display:flex;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:#dedede}
+.dot.active{background:var(--red)}
+.dot.done{background:#8a8a8a}
+.qpanel{padding:12px 0 112px}
+.qtitle{font-size:30px;line-height:1.22;letter-spacing:-.025em;margin:12px 0 8px;font-weight:900}
+.qen{color:var(--muted);font-size:14px;line-height:1.45;margin-bottom:20px}
+.answerList{display:flex;flex-direction:column;gap:12px}
+.answerBox{position:relative}
+.answerLabel{font-size:12px;color:var(--muted);font-weight:750;margin:0 0 6px 4px}
+.pairGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.addBtn{margin-top:12px;border:1px dashed #cfcfcf;border-radius:15px;background:#fafafa;color:#454545;font-weight:750;padding:12px 14px;width:100%}
+.help{font-size:12px;color:var(--muted);line-height:1.45;margin-top:9px}
+.bottomNav{position:sticky;bottom:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:10px 0 calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.4fr;gap:10px}
+.bottomNav .secondary,.bottomNav .primary{min-height:52px}
+.doneHero{text-align:center;padding:30px 0 18px}
+.check{width:68px;height:68px;border-radius:22px;background:var(--greenbg);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:34px;margin:0 auto 14px}
+.cheat{display:flex;flex-direction:column;gap:12px;margin:18px 0}
+.cheatItem{border:1px solid var(--line);border-radius:18px;padding:15px 16px}
+.cheatLabel{font-size:12px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.cheatValue{font-size:15px;line-height:1.5;margin-top:6px;white-space:pre-wrap}
+.doneActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.doneActions .primary{grid-column:1/-1}
+.settingsNav{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+.note{font-size:13px;color:var(--muted);line-height:1.55;background:#fafafa;border-radius:16px;padding:13px 14px;margin-top:14px}
+.backupBtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.hidden{display:none!important}
+.printOnly{display:none}
+@media(max-width:520px){.app{padding:0 14px 42px}.hero{padding-top:18px}h1{font-size:34px}.qtitle{font-size:28px}.pairGrid{grid-template-columns:1fr}.doneActions{grid-template-columns:1fr}.doneActions .primary{grid-column:auto}}
 @page{size:A4;margin:10mm}
-@media print{.app>*:not(.printOnly){display:none!important}.printOnly{display:block!important}.pdf{font-family:Arial,"PingFang HK","PingFang TC",sans-serif;font-size:9pt;line-height:1.25}.pdfTop{display:grid;grid-template-columns:80px 1fr 80px;align-items:center}.bni{font-size:28pt;font-weight:900;color:#d71938}.dance{text-align:center;border:1px solid #333;padding:6px;font-family:Georgia,serif;letter-spacing:3px;font-size:15pt}.who{margin:5px 0}.tips{font-size:8pt;margin:0 0 5px}.pq{margin-top:5px}.pen{font-size:8pt;color:#333}.ans{border-bottom:1px solid #555;min-height:15px;padding:1px 2px;white-space:pre-wrap}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px}.pairP{display:grid;grid-template-columns:.8fr 1.2fr;gap:8px}}
+@media print{
+body{background:#fff}.app>*:not(.printOnly){display:none!important}.printOnly{display:block!important}
+.pdf{font-family:Arial,"PingFang HK","PingFang TC","Noto Sans TC",sans-serif;color:#111;font-size:9.2pt;line-height:1.25}
+.pdfTop{display:grid;grid-template-columns:80px 1fr 80px;align-items:center;margin-bottom:5px}
+.bni{font-size:28pt;font-weight:900;color:#d71938}.dance{text-align:center;border:1px solid #333;padding:6px 12px;font-family:Georgia,serif;letter-spacing:3px;font-size:15pt}
+.who{font-size:9pt;margin:4px 0 7px}.tips{font-size:7.8pt;margin:0 0 6px}.pq{margin-top:6px}.pen{font-size:8.1pt;color:#333;margin-top:1px}
+.ans{border-bottom:1px solid #555;min-height:15px;padding:1px 2px;white-space:pre-wrap}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px}.pairP{display:grid;grid-template-columns:.85fr 1.15fr;gap:8px}
+}
 </style>
 </head>
 <body>
 <div class="app">
-<div class="ey">BNI 1-to-1</div>
-<h1>DANCE CARD</h1>
-<div class="sub">逐題輸入／語音輸入，自動儲存；完成後可直接儲存成 PDF。</div>
-<div class="status" id="status">準備好</div>
+<header class="topbar">
+  <div class="brand"><div class="brandMark">BNI</div><span>DANCE CARD</span></div>
+  <button class="iconBtn" id="settingsBtn" type="button" aria-label="設定">⚙︎</button>
+</header>
 
-<section class="barTop">
-<label for="saved">已儲存記錄</label>
-<select id="saved"></select>
-<div class="actions">
-<button type="button" id="newBtn">＋ 新會面</button>
-<button type="button" id="previewBtn">預覽 PDF</button>
-<button type="button" id="savePdf" class="primary">儲存 PDF</button>
-</div>
+<main>
+<section id="homeScreen" class="screen active">
+  <div class="hero">
+    <div class="eyebrow">1-to-1 Referral Meeting</div>
+    <h1>傾得深入，<br>Referral 更精準。</h1>
+    <div class="sub">用 DANCE Card 引導你了解對方真正需要，會面期間只專注一題，答案會自動儲存。</div>
+  </div>
+  <button class="primary" id="startNewBtn" type="button">＋ 開始新 1-to-1</button>
+  <div class="sectionHead"><h3>最近紀錄</h3><span class="small" id="recordCount"></span></div>
+  <div id="recordList" class="cardList"></div>
 </section>
 
-<section class="meta">
-<div class="metaGrid">
-<div><label for="me">我的姓名</label><input id="me" type="text"></div>
-<div><label for="with">One-to-one with</label><input id="with" type="text"></div>
-<div class="full"><label for="date">日期</label><input id="date" type="date"></div>
-</div>
+<section id="newScreen" class="screen">
+  <div class="backrow"><button type="button" data-go="home">← 返回</button><span></span></div>
+  <div class="hero">
+    <div class="eyebrow">New 1-to-1</div>
+    <h2>今次同邊個傾？</h2>
+    <div class="sub">只需要填對方姓名同日期，就可以開始。</div>
+  </div>
+  <div class="formCard">
+    <div class="field"><label for="newPartner">對方姓名</label><input id="newPartner" type="text" placeholder="例如：Walter"></div>
+    <div class="field"><label for="newDate">日期</label><input id="newDate" type="date"></div>
+  </div>
+  <div style="margin-top:16px"><button class="primary" id="beginBtn" type="button">開始 1-to-1 →</button></div>
 </section>
 
-<div class="prog"><div class="progTxt" id="progTxt">0 / 9 已有內容</div><div class="track"><div class="fill" id="fill"></div></div></div>
-<section class="qs" id="qs"></section>
+<section id="conversationScreen" class="screen">
+  <div class="backrow">
+    <button type="button" id="exitConversation">← 暫時離開</button>
+    <span class="saved" id="saveStatus">✓ 已儲存</span>
+  </div>
+  <div class="progressWrap">
+    <div class="progressTop"><span class="stepText" id="stepText">1 / 9</span><div class="dots" id="dots"></div></div>
+  </div>
+  <div class="qpanel">
+    <div class="eyebrow" id="partnerEyebrow"></div>
+    <div class="qtitle" id="questionTitle"></div>
+    <div class="qen" id="questionEn"></div>
+    <div id="answerList" class="answerList"></div>
+    <button type="button" id="addAnswerBtn" class="addBtn">＋ 加多一個答案</button>
+    <div class="help">點入文字框後，可直接用 iPhone 鍵盤個 🎙️ 做廣東話語音輸入。</div>
+  </div>
+  <div class="bottomNav">
+    <button class="secondary" type="button" id="prevBtn">← 上一題</button>
+    <button class="primary" type="button" id="nextBtn">下一題 →</button>
+  </div>
+</section>
 
-<details class="backup">
-<summary>備份／還原</summary>
-<p>資料會自動儲存在 Safari。你亦可以下載備份，換裝置時再匯入。</p>
-<div class="backupBtns">
-<button type="button" id="backupBtn">下載備份</button>
-<button type="button" id="importBtn">匯入備份</button>
-<button type="button" id="deleteBtn" class="danger">刪除目前記錄</button>
-<input id="importFile" type="file" accept="application/json" hidden>
-</div>
-</details>
+<section id="completeScreen" class="screen">
+  <div class="backrow"><button type="button" data-go="home">← 返回首頁</button><span class="saved">✓ 已儲存</span></div>
+  <div class="doneHero">
+    <div class="check">✓</div>
+    <div class="eyebrow">1-to-1 Completed</div>
+    <h2 id="completeTitle">完成！</h2>
+    <div class="sub" id="completeMeta"></div>
+  </div>
+  <div class="sectionHead"><h3>Referral Cheat Sheet</h3><span class="small">之後幫對方搵 referral 時睇呢度</span></div>
+  <div id="cheatSheet" class="cheat"></div>
+  <div class="doneActions">
+    <button class="secondary" type="button" id="editAnswersBtn">編輯答案</button>
+    <button class="secondary" type="button" id="pdfBtn">儲存 PDF</button>
+    <button class="primary" type="button" id="shareBtn">分享 Referral Card</button>
+  </div>
+</section>
+
+<section id="settingsScreen" class="screen">
+  <div class="backrow"><button type="button" data-go="home">← 返回</button><span></span></div>
+  <div class="hero">
+    <div class="eyebrow">Settings</div>
+    <h2>我的資料</h2>
+    <div class="sub">只需要設定一次，新會面會自動沿用。</div>
+  </div>
+  <div class="formCard">
+    <div class="field"><label for="profileName">姓名</label><input id="profileName" type="text" placeholder="你的姓名"></div>
+    <div class="field"><label for="profileChapter">Chapter（選填）</label><input id="profileChapter" type="text" placeholder="例如：BINGO"></div>
+    <div class="field"><label for="profileClass">業務分類（選填）</label><input id="profileClass" type="text" placeholder="例如：Digital Advertising"></div>
+  </div>
+  <div class="note">你的 1-to-1 記錄會儲存在目前裝置的瀏覽器。換電話或清除瀏覽器資料前，可以先下載備份。</div>
+  <div class="backupBtns">
+    <button class="secondary" id="backupBtn" type="button">下載全部備份</button>
+    <button class="secondary" id="importBtn" type="button">匯入備份</button>
+    <input id="importFile" type="file" accept="application/json" class="hidden">
+  </div>
+</section>
+
 <section class="printOnly" id="printArea"></section>
+</main>
 </div>
 
 <script>
 (function(){
-var questions=[
-["請詳細形容你所提供的產品及服務","The following describes the products & services you offer. [Be VERY specific]",4,0],
-["你所提供的產品與競爭者之間的分別","How are you different from your competitors?",2,0],
-["請明確列舉你想找尋的目標市場／顧客","Name businesses / people within your Target Market.",4,0],
-["還有哪類與你相關的行業範圍未進入你的分會？","Which Contact Sphere professions are still not in your chapter?",4,0],
-["請教我用一句好的開場白，即可為你找尋到適合的目標客戶／資源？","What would be good Conversation Starters so that I can listen out for lead phrases?",2,0],
-["當我聽到一句怎樣的說話時，即表示有機會可以為你找到合適的引薦？","What Phrases Do I Listen For to find you a referral?",2,0],
-["我該如何衡量一個引薦的質量／認真程度？","How can I Qualify a referral for you to see if they are serious?",2,0],
-["對你來說甚麼會是一個不合適的引薦？","What is NOT a good referral for you?",4,0],
-["一般人對你的業務有甚麼誤解及我應如何回應？","What are the most common misconceptions of your business & what should I say?",2,1]
+var QUESTIONS=[
+ {zh:"請詳細形容你所提供的產品及服務：（請清晰及明確地描述）",en:"The following describes the products & services you offer. [Be VERY specific]",max:8,pair:false},
+ {zh:"你所提供的產品與競爭者之間的分別",en:"How are you different from your competitors?",max:6,pair:false},
+ {zh:"請明確列舉你想找尋的目標市場／顧客",en:"Name businesses / people within your Target Market.",max:10,pair:false},
+ {zh:"還有哪類與你相關的行業範圍未進入你的分會？",en:"Which Contact Sphere professions are still not in your chapter? [Non-conflicting industry serving the same target market]",max:10,pair:false},
+ {zh:"請教我用一句好的開場白，即可為你找尋到適合的目標客戶／資源？",en:"What would be good “Conversation Starters” so that I can listen out for lead phrases?",max:8,pair:false},
+ {zh:"告訴我當我聽到一句怎樣的說話時，即表示有機會可以為你找到合適的引薦？",en:"What “Phrases Do I Listen For” to find you a referral?",max:8,pair:false},
+ {zh:"我該如何衡量一個引薦的質量／認真程度？",en:"How can I “Qualify” a referral for you to see if they are serious?",max:8,pair:false},
+ {zh:"對你來說甚麼會是一個不合適的引薦？",en:"What is NOT a good referral for you?",max:10,pair:false},
+ {zh:"一般人對你的業務有甚麼誤解及我應如何回應？",en:"What are the most common misconceptions of your business & what should I say?",max:8,pair:true}
 ];
-var KEY="danceCardLive3",PROFILE="danceCardProfile3",store={cards:[],currentId:null},timer=null;
+var STORE_KEY="danceCardLive3";
+var PROFILE_KEY="danceCardProfileUX1";
+var OLD_PROFILE_KEY="danceCardProfile3";
+var state={cards:[],currentId:null};
+var profile={name:"",chapter:"",classification:""};
+var step=0;
+var saveTimer=null;
+
 function el(id){return document.getElementById(id)}
-function today(){return new Date().toISOString().slice(0,10)}
+function today(){var d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function uid(){return "c"+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
-function blank(){var n="";try{n=localStorage.getItem(PROFILE)||""}catch(e){}return{id:uid(),name:n,partner:"",date:today(),updated:Date.now(),answers:{}}}
-function current(){for(var i=0;i<store.cards.length;i++)if(store.cards[i].id===store.currentId)return store.cards[i];return null}
-function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||"null");if(x&&Array.isArray(x.cards))store=x}catch(e){}if(!store.cards.length){var c=blank();store.cards=[c];store.currentId=c.id;persist(false)}if(!current())store.currentId=store.cards[0].id}
-function setStatus(t,bad){el("status").textContent=t;el("status").style.background=bad?"#fff1f2":"#eaf6ef";el("status").style.color=bad?"#a11c2d":"#267653"}
-function persist(show){var c=current();if(!c)return;c.updated=Date.now();try{localStorage.setItem(KEY,JSON.stringify(store));if(c.name)localStorage.setItem(PROFILE,c.name);if(show!==false)setStatus("✓ 已自動儲存 "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}))}catch(e){setStatus("⚠️ 未能自動儲存",true)}renderSaved();progress();renderPrint()}
-function schedule(){setStatus("儲存中…");clearTimeout(timer);timer=setTimeout(function(){persist(true)},250)}
-function renderSaved(){var s=el("saved"),c=current();s.innerHTML="";var list=store.cards.slice().sort(function(a,b){return b.updated-a.updated});list.forEach(function(x){var o=document.createElement("option");o.value=x.id;o.textContent=(x.partner||"未命名會面")+" · "+(x.date||"未填日期");if(c&&x.id===c.id)o.selected=true;s.appendChild(o)})}
-function key(i,j,k){return k?"q"+i+"_"+j+"_"+k:"q"+i+"_"+j}
-function get(i,j,k){var c=current(),v=c.answers[key(i,j,k)];return v||""}
-function put(i,j,v,k){current().answers[key(i,j,k)]=v;schedule()}
-function renderQs(){var box=el("qs");box.innerHTML="";questions.forEach(function(q,idx){var wrap=document.createElement("div");wrap.className="q"+(idx===0?" open":"");var head=document.createElement("button");head.type="button";head.className="qh";head.innerHTML='<span class="num">'+(idx+1)+'</span><span><span class="qt">'+q[0]+'</span><span class="en">'+q[1]+'</span></span><span class="arrow">⌄</span>';head.addEventListener("click",function(){wrap.classList.toggle("open")});var body=document.createElement("div");body.className="qb";for(var j=1;j<=q[2];j++){if(q[3]){var p=document.createElement("div");p.className="slot pair";var a=document.createElement("textarea");a.placeholder="常見誤解";a.value=get(idx+1,j,"mis");(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value,"mis")})})(idx+1,j,a);var b=document.createElement("textarea");b.placeholder="你希望我點樣回應";b.value=get(idx+1,j,"reply");(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value,"reply")})})(idx+1,j,b);p.appendChild(a);p.appendChild(b);body.appendChild(p)}else{var d=document.createElement("div");d.className="slot";var sn=document.createElement("div");sn.className="slotname";sn.textContent=["i.","ii.","iii.","iv."][j-1]||"";var ta=document.createElement("textarea");ta.placeholder="點一下，再用 iPhone 鍵盤 🎙️ 語音輸入";ta.value=get(idx+1,j);(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value)})})(idx+1,j,ta);d.appendChild(sn);d.appendChild(ta);body.appendChild(d)}}if(idx<questions.length-1){var nav=document.createElement("div");nav.className="next";var nb=document.createElement("button");nb.type="button";nb.textContent="下一題 →";nb.addEventListener("click",function(){wrap.classList.remove("open");var n=box.children[idx+1];n.classList.add("open");n.scrollIntoView({behavior:"smooth",block:"start"})});nav.appendChild(nb);body.appendChild(nav)}wrap.appendChild(head);wrap.appendChild(body);box.appendChild(wrap)})}
-function loadCard(){var c=current();el("me").value=c.name||"";el("with").value=c.partner||"";el("date").value=c.date||today();renderQs();renderSaved();progress();renderPrint()}
-function progress(){var done=0;questions.forEach(function(q,i){var yes=false;for(var j=1;j<=q[2];j++){if(q[3]){if(get(i+1,j,"mis").trim()||get(i+1,j,"reply").trim())yes=true}else if(get(i+1,j).trim())yes=true}if(yes)done++});el("progTxt").textContent=done+" / 9 已有內容";el("fill").style.width=(done/9*100)+"%"}
-function esc(s){return String(s||"").replace(/[&<>"']/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
-function ans(q,i){var out="";if(q[3]){for(var j=1;j<=q[2];j++)out+='<div class="pairP"><div class="ans">'+(esc(get(i,j,"mis"))||" ")+'</div><div class="ans">'+(esc(get(i,j,"reply"))||" ")+"</div></div>";return out}out='<div class="'+(q[2]>1?"grid2":"")+'">';for(var k=1;k<=q[2];k++)out+='<div class="ans">'+(["i.","ii.","iii.","iv."][k-1]||"")+" "+(esc(get(i,k))||" ")+"</div>";return out+"</div>"}
-function renderPrint(){var c=current(),h='<div class="pdf"><div class="pdfTop"><div class="bni">BNI</div><div class="dance">DANCE CARD</div><div></div></div><div class="who"><b>Name:</b> '+esc(c.name)+' &nbsp;&nbsp; <b>one-to-one with</b> '+esc(c.partner)+' &nbsp;&nbsp; <b>on</b> '+esc(c.date)+'</div><p class="tips"><b>TIPS:</b> Be respectful of each other’s time, be a good listener, always be positive and give encouragement, stay focused on what you are discussing and most of all, once you have learned this information, be sure to go out and WORK at finding your partner a quality referral.</p>';questions.forEach(function(q,i){h+='<div class="pq"><div><b>'+(i+1)+'. '+q[0]+'</b></div><div class="pen">'+q[1]+'</div>'+ans(q,i+1)+"</div>"});h+="</div>";el("printArea").innerHTML=h}
-el("me").addEventListener("input",function(){current().name=this.value;schedule()});el("with").addEventListener("input",function(){current().partner=this.value;schedule()});el("date").addEventListener("change",function(){current().date=this.value;schedule()});
-el("saved").addEventListener("change",function(){persist(false);store.currentId=this.value;loadCard();setStatus("已載入記錄")});
-el("newBtn").addEventListener("click",function(){persist(false);var c=blank();store.cards.push(c);store.currentId=c.id;persist(false);loadCard();setStatus("新會面已建立");window.scrollTo({top:0,behavior:"smooth"})});
-function doPrint(){persist(false);renderPrint();setStatus("正在開啟 PDF 儲存畫面…");setTimeout(function(){window.print()},80)}
-el("previewBtn").addEventListener("click",doPrint);el("savePdf").addEventListener("click",doPrint);
-el("backupBtn").addEventListener("click",function(){persist(false);var blob=new Blob([JSON.stringify(store,null,2)],{type:"application/json"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="DANCE_CARD_Backup_"+today()+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)});
-el("importBtn").addEventListener("click",function(){el("importFile").click()});el("importFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var x=JSON.parse(r.result);if(!x||!Array.isArray(x.cards))throw new Error();store=x;if(!store.currentId&&store.cards[0])store.currentId=store.cards[0].id;persist(false);loadCard();setStatus("✓ 備份已匯入")}catch(err){setStatus("⚠️ 備份格式不正確",true)}};r.readAsText(f);e.target.value=""});
-el("deleteBtn").addEventListener("click",function(){if(!confirm("確定刪除目前記錄？"))return;store.cards=store.cards.filter(function(x){return x.id!==store.currentId});if(!store.cards.length)store.cards=[blank()];store.currentId=store.cards[0].id;persist(false);loadCard();setStatus("記錄已刪除")});
-load();loadCard();setStatus("準備好");
+function current(){return state.cards.find(function(c){return c.id===state.currentId})||null}
+function blankCard(partner,date){return{id:uid(),name:profile.name||"",partner:partner||"",date:date||today(),updated:Date.now(),answers:{}}}
+function load(){
+  try{var s=JSON.parse(localStorage.getItem(STORE_KEY)||"null");if(s&&Array.isArray(s.cards))state=s}catch(e){}
+  try{var p=JSON.parse(localStorage.getItem(PROFILE_KEY)||"null");if(p)profile=Object.assign(profile,p)}catch(e){}
+  if(!profile.name){try{profile.name=localStorage.getItem(OLD_PROFILE_KEY)||""}catch(e){}}
+  if(!state.cards.length){var c=blankCard();state.cards=[c];state.currentId=c.id}
+  if(!current())state.currentId=state.cards[0].id;
+  saveAll(false)
+}
+function saveAll(showStatus){
+  var c=current();if(c){c.updated=Date.now();if(profile.name)c.name=profile.name}
+  try{
+    localStorage.setItem(STORE_KEY,JSON.stringify(state));
+    localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));
+    if(profile.name)localStorage.setItem(OLD_PROFILE_KEY,profile.name);
+    if(showStatus!==false){el("saveStatus").textContent="✓ 已儲存"}
+  }catch(e){if(el("saveStatus"))el("saveStatus").textContent="⚠️ 未能儲存"}
+  renderHome()
+}
+function scheduleSave(){
+  if(el("saveStatus"))el("saveStatus").textContent="儲存中…";
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(function(){saveAll(true)},280)
+}
+function show(name){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("active")});
+  el(name+"Screen").classList.add("active");
+  window.scrollTo({top:0,behavior:"instant"});
+}
+function formatDate(s){if(!s)return"";var p=s.split("-");return p.length===3?p[2]+"/"+p[1]+"/"+p[0]:s}
+function initials(name){var t=(name||"?").trim();return t.slice(0,1).toUpperCase()}
+function answerKey(q,i,k){return k?"q"+q+"_"+i+"_"+k:"q"+q+"_"+i}
+function getAnswer(q,i,k){var c=current();if(!c)return"";return c.answers[answerKey(q,i,k)]||""}
+function setAnswer(q,i,val,k){var c=current();if(!c)return;c.answers[answerKey(q,i,k)]=val;scheduleSave();updateProgressUI()}
+function indicesFor(qnum,pair){
+  var c=current(),set={1:true};
+  if(!c)return[1];
+  Object.keys(c.answers||{}).forEach(function(k){
+    var m=k.match(new RegExp("^q"+qnum+"_(\\d+)"));
+    if(m)set[parseInt(m[1],10)]=true
+  });
+  return Object.keys(set).map(Number).sort(function(a,b){return a-b})
+}
+function questionHasContent(qnum){
+  var q=QUESTIONS[qnum-1],idx=indicesFor(qnum,q.pair);
+  return idx.some(function(i){return q.pair?(getAnswer(qnum,i,"mis").trim()||getAnswer(qnum,i,"reply").trim()):getAnswer(qnum,i).trim()})
+}
+function completionCount(){var n=0;for(var i=1;i<=9;i++)if(questionHasContent(i))n++;return n}
+function cardCompletion(c){
+  var old=state.currentId;state.currentId=c.id;var n=completionCount();state.currentId=old;return n
+}
+function renderHome(){
+  if(!el("recordList"))return;
+  var list=state.cards.slice().sort(function(a,b){return(b.updated||0)-(a.updated||0)});
+  el("recordCount").textContent=list.length+" 份";
+  var box=el("recordList");box.innerHTML="";
+  if(!list.length){box.innerHTML='<div class="empty">仲未有 1-to-1 記錄。</div>';return}
+  list.forEach(function(c){
+    var done=cardCompletion(c),b=document.createElement("button");
+    b.type="button";b.className="record";
+    b.innerHTML='<div class="avatar">'+initials(c.partner)+'</div><div class="recordMain"><div class="recordName">'+escapeHtml(c.partner||"未命名會面")+'</div><div class="recordMeta">'+formatDate(c.date)+(c.name?" · "+escapeHtml(c.name):"")+'</div></div><div class="badge '+(done===9?"done":"")+'">'+(done===9?"已完成":done+"/9")+'</div>';
+    b.addEventListener("click",function(){state.currentId=c.id;if(done===9){renderComplete();show("complete")}else{step=Math.min(firstIncomplete()-1,8);renderConversation();show("conversation")}});
+    box.appendChild(b)
+  })
+}
+function firstIncomplete(){for(var i=1;i<=9;i++)if(!questionHasContent(i))return i;return 9}
+function renderDots(){
+  var d=el("dots");d.innerHTML="";
+  for(var i=0;i<9;i++){var s=document.createElement("span");s.className="dot"+(i===step?" active":(i<step?" done":""));d.appendChild(s)}
+}
+function renderConversation(){
+  var c=current();if(!c)return;
+  var q=QUESTIONS[step],qnum=step+1;
+  el("stepText").textContent=qnum+" / 9";
+  el("partnerEyebrow").textContent=(c.partner||"1-to-1")+" · "+formatDate(c.date);
+  el("questionTitle").textContent=q.zh;el("questionEn").textContent=q.en;renderDots();
+  var box=el("answerList");box.innerHTML="";
+  indicesFor(qnum,q.pair).forEach(function(i){box.appendChild(makeAnswerRow(qnum,i,q.pair))});
+  el("addAnswerBtn").classList.toggle("hidden",indicesFor(qnum,q.pair).length>=q.max);
+  el("prevBtn").disabled=step===0;el("prevBtn").style.opacity=step===0?".4":"1";
+  el("nextBtn").textContent=step===8?"完成 ✓":"下一題 →";
+  updateProgressUI()
+}
+function makeAnswerRow(qnum,i,pair){
+  var wrap=document.createElement("div");wrap.className="answerBox";
+  var lab=document.createElement("div");lab.className="answerLabel";lab.textContent="答案 "+i;wrap.appendChild(lab);
+  if(pair){
+    var grid=document.createElement("div");grid.className="pairGrid";
+    var a=document.createElement("textarea");a.placeholder="常見誤解";a.value=getAnswer(qnum,i,"mis");
+    a.addEventListener("input",function(){setAnswer(qnum,i,a.value,"mis")});
+    var b=document.createElement("textarea");b.placeholder="我應該點樣回應";b.value=getAnswer(qnum,i,"reply");
+    b.addEventListener("input",function(){setAnswer(qnum,i,b.value,"reply")});
+    grid.appendChild(a);grid.appendChild(b);wrap.appendChild(grid)
+  }else{
+    var ta=document.createElement("textarea");ta.placeholder="點一下，再用 iPhone 鍵盤 🎙️ 語音輸入…";ta.value=getAnswer(qnum,i);
+    ta.addEventListener("input",function(){setAnswer(qnum,i,ta.value)});
+    wrap.appendChild(ta)
+  }
+  return wrap
+}
+function updateProgressUI(){
+  if(!current())return;
+  renderPrint()
+}
+function addAnswer(){
+  var q=QUESTIONS[step],qnum=step+1,idx=indicesFor(qnum,q.pair),next=(idx.length?Math.max.apply(null,idx):0)+1;
+  if(next>q.max)return;
+  el("answerList").appendChild(makeAnswerRow(qnum,next,q.pair));
+  if(next>=q.max)el("addAnswerBtn").classList.add("hidden")
+}
+function startNew(){
+  el("newPartner").value="";el("newDate").value=today();show("new");setTimeout(function(){el("newPartner").focus()},150)
+}
+function beginMeeting(){
+  var partner=el("newPartner").value.trim();if(!partner){el("newPartner").focus();return}
+  var c=blankCard(partner,el("newDate").value||today());state.cards.push(c);state.currentId=c.id;step=0;saveAll(false);renderConversation();show("conversation")
+}
+function joinAnswers(qnum,labelFallback){
+  var q=QUESTIONS[qnum-1],vals=[];
+  indicesFor(qnum,q.pair).forEach(function(i){
+    if(q.pair){
+      var m=getAnswer(qnum,i,"mis").trim(),r=getAnswer(qnum,i,"reply").trim();
+      if(m||r)vals.push((m||"—")+" → "+(r||"—"))
+    }else{var v=getAnswer(qnum,i).trim();if(v)vals.push(v)}
+  });
+  return vals.length?vals.join("\n• "):labelFallback||"未填寫"
+}
+function cheatData(){
+  return[
+   ["🎯 Ideal Referral",joinAnswers(3,"未填寫")],
+   ["💬 Conversation Starters",joinAnswers(5,"未填寫")],
+   ["👂 Listen For",joinAnswers(6,"未填寫")],
+   ["✅ Qualify",joinAnswers(7,"未填寫")],
+   ["🚫 Not a Good Referral",joinAnswers(8,"未填寫")]
+  ]
+}
+function renderComplete(){
+  var c=current();if(!c)return;
+  saveAll(false);
+  el("completeTitle").textContent=(c.partner||"今次 1-to-1")+" 完成！";
+  el("completeMeta").textContent=formatDate(c.date)+(profile.chapter?" · "+profile.chapter:"");
+  var box=el("cheatSheet");box.innerHTML="";
+  cheatData().forEach(function(x){
+    var d=document.createElement("div");d.className="cheatItem";
+    d.innerHTML='<div class="cheatLabel">'+escapeHtml(x[0])+'</div><div class="cheatValue">'+escapeHtml(x[1]).replace(/\n/g,"<br>")+'</div>';box.appendChild(d)
+  });
+  renderPrint()
+}
+function shareCard(){
+  var c=current(),lines=["DANCE CARD · "+(c.partner||"1-to-1"),formatDate(c.date),""];
+  cheatData().forEach(function(x){lines.push(x[0]);lines.push("• "+x[1]);lines.push("")});
+  var text=lines.join("\n");
+  if(navigator.share){navigator.share({title:"Referral Cheat Sheet · "+(c.partner||""),text:text}).catch(function(){})}
+  else{
+    var blob=new Blob([text],{type:"text/plain;charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");
+    a.href=u;a.download="Referral_Cheat_Sheet_"+(c.partner||"1-to-1")+".txt";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)
+  }
+}
+function printPdf(){saveAll(false);renderPrint();setTimeout(function(){window.print()},80)}
+function escapeHtml(s){return String(s||"").replace(/[&<>"']/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
+function renderAnswerLines(qnum){
+  var q=QUESTIONS[qnum-1],out="",idx=indicesFor(qnum,q.pair);
+  if(q.pair){
+    idx.forEach(function(i){out+='<div class="pairP"><div class="ans">'+escapeHtml(getAnswer(qnum,i,"mis")||" ")+'</div><div class="ans">'+escapeHtml(getAnswer(qnum,i,"reply")||" ")+'</div></div>'})
+  }else{
+    out='<div class="'+(idx.length>1?"grid2":"")+'">';
+    idx.forEach(function(i){out+='<div class="ans">'+(["i.","ii.","iii.","iv.","v.","vi.","vii.","viii."][i-1]||"•")+' '+escapeHtml(getAnswer(qnum,i)||" ")+'</div>'});
+    out+="</div>"
+  }
+  return out
+}
+function renderPrint(){
+  if(!el("printArea")||!current())return;
+  var c=current(),h='<div class="pdf"><div class="pdfTop"><div class="bni">BNI</div><div class="dance">DANCE CARD</div><div></div></div>';
+  h+='<div class="who"><b>Name:</b> '+escapeHtml(c.name||profile.name)+' &nbsp;&nbsp; <b>one-to-one with</b> '+escapeHtml(c.partner)+' &nbsp;&nbsp; <b>on</b> '+escapeHtml(formatDate(c.date))+'</div>';
+  h+='<p class="tips"><b>TIPS:</b> Be respectful of each other’s time, be a good listener, always be positive and give encouragement, stay focused on what you are discussing and most of all, once you have learned this information, be sure to go out and WORK at finding your partner a quality referral.</p>';
+  QUESTIONS.forEach(function(q,i){h+='<div class="pq"><div><b>'+(i+1)+'. '+escapeHtml(q.zh)+'</b></div><div class="pen">'+escapeHtml(q.en)+'</div>'+renderAnswerLines(i+1)+'</div>'});
+  h+="</div>";el("printArea").innerHTML=h
+}
+function renderSettings(){el("profileName").value=profile.name||"";el("profileChapter").value=profile.chapter||"";el("profileClass").value=profile.classification||""}
+function saveProfile(){profile.name=el("profileName").value.trim();profile.chapter=el("profileChapter").value.trim();profile.classification=el("profileClass").value.trim();state.cards.forEach(function(c){if(profile.name)c.name=profile.name});saveAll(false)}
+function downloadBackup(){
+  saveAll(false);var blob=new Blob([JSON.stringify({state:state,profile:profile},null,2)],{type:"application/json"}),u=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=u;a.download="DANCE_CARD_Backup_"+today()+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)
+}
+function importBackup(file){
+  var r=new FileReader();r.onload=function(){try{var x=JSON.parse(r.result);if(x.state&&Array.isArray(x.state.cards)){state=x.state;profile=Object.assign(profile,x.profile||{})}else if(Array.isArray(x.cards)){state=x}else throw new Error();if(!current()&&state.cards[0])state.currentId=state.cards[0].id;saveAll(false);renderSettings();renderHome();show("home")}catch(e){alert("備份格式不正確。")}};r.readAsText(file)
+}
+
+document.querySelectorAll("[data-go='home']").forEach(function(b){b.addEventListener("click",function(){saveAll(false);renderHome();show("home")})});
+el("settingsBtn").addEventListener("click",function(){renderSettings();show("settings")});
+el("startNewBtn").addEventListener("click",startNew);
+el("beginBtn").addEventListener("click",beginMeeting);
+el("exitConversation").addEventListener("click",function(){saveAll(false);renderHome();show("home")});
+el("addAnswerBtn").addEventListener("click",addAnswer);
+el("prevBtn").addEventListener("click",function(){if(step>0){step--;renderConversation();window.scrollTo({top:0,behavior:"smooth"})}});
+el("nextBtn").addEventListener("click",function(){saveAll(false);if(step<8){step++;renderConversation();window.scrollTo({top:0,behavior:"smooth"})}else{renderComplete();show("complete")}});
+el("editAnswersBtn").addEventListener("click",function(){step=0;renderConversation();show("conversation")});
+el("pdfBtn").addEventListener("click",printPdf);
+el("shareBtn").addEventListener("click",shareCard);
+["profileName","profileChapter","profileClass"].forEach(function(id){el(id).addEventListener("input",function(){clearTimeout(saveTimer);saveTimer=setTimeout(saveProfile,250)})});
+el("backupBtn").addEventListener("click",downloadBackup);
+el("importBtn").addEventListener("click",function(){el("importFile").click()});
+el("importFile").addEventListener("change",function(e){var f=e.target.files[0];if(f)importBackup(f);e.target.value=""});
+
+load();renderHome();renderSettings();el("newDate").value=today();
 })();
 </script>
 </body>
