@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>DANCE CARD</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","PingFang TC",Arial,sans-serif;color:#171717;background:#fff}.app{max-width:820px;margin:auto;padding:24px 18px 56px}.ey{color:#c8102e;font-weight:800;letter-spacing:.06em;font-size:14px}h1{font-size:36px;line-height:1;margin:12px 0 8px}.sub{color:#6b6b6b;line-height:1.5}.status{display:inline-block;margin-top:12px;background:#eaf6ef;color:#267653;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:700}.barTop{border-top:1px solid #ddd;margin-top:22px;padding-top:18px}.barTop label{display:block;font-size:13px;color:#666;margin-bottom:7px}select,input,textarea,button{font:inherit}select,input,textarea{width:100%;border:1px solid #ddd;border-radius:15px;background:#fff;padding:14px 15px;font-size:16px;outline:none}textarea{min-height:110px;resize:vertical;line-height:1.5}.actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}button{min-height:48px;border-radius:14px;border:1px solid #ddd;background:#fff;font-weight:750;padding:10px 12px;color:#171717}.primary{background:#c8102e;border-color:#c8102e;color:#fff}.meta{margin-top:18px;background:#f7f7f5;border-radius:20px;padding:16px}.metaGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metaGrid .full{grid-column:1/-1}.meta label{display:block;font-size:14px;font-weight:750;margin-bottom:7px}.prog{display:flex;gap:12px;align-items:center;margin:18px 4px}.progTxt{font-weight:800;color:#555;white-space:nowrap}.track{height:8px;background:#eee;border-radius:10px;overflow:hidden;flex:1}.fill{height:100%;width:0;background:#c8102e}.qs{border-top:1px solid #ddd}.q{border-bottom:1px solid #ddd}.qh{width:100%;border:0;border-radius:0;background:#fff;display:flex;gap:12px;align-items:flex-start;text-align:left;padding:18px 4px;min-height:0}.num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#f2f2f2;font-weight:850;flex:none}.qt{font-size:17px;font-weight:800;line-height:1.35}.en{font-size:12px;color:#777;font-weight:500;margin-top:4px;line-height:1.35}.arrow{margin-left:auto;color:#777;font-size:20px}.qb{display:none;padding:0 4px 18px}.q.open .qb{display:block}.slot{margin-top:12px}.slotname{font-size:13px;color:#666;margin-bottom:5px}.pair{display:grid;grid-template-columns:1fr 1.2fr;gap:10px}.next{display:flex;justify-content:flex-end;margin-top:12px}.backup{margin-top:26px;border-top:1px solid #ddd;padding-top:18px}.backup summary{font-weight:800}.backup p{font-size:13px;color:#666;line-height:1.5}.backupBtns{display:flex;flex-wrap:wrap;gap:8px}.danger{color:#b4233c;border-color:#efc6ce;background:#fff7f8}.printOnly{display:none}
+@media(max-width:600px){.app{padding:20px 14px 50px}.actions{grid-template-columns:1fr 1fr}.actions .primary{grid-column:1/-1}.metaGrid{grid-template-columns:1fr}.metaGrid .full{grid-column:auto}.pair{grid-template-columns:1fr}}
+@page{size:A4;margin:10mm}
+@media print{.app>*:not(.printOnly){display:none!important}.printOnly{display:block!important}.pdf{font-family:Arial,"PingFang HK","PingFang TC",sans-serif;font-size:9pt;line-height:1.25}.pdfTop{display:grid;grid-template-columns:80px 1fr 80px;align-items:center}.bni{font-size:28pt;font-weight:900;color:#d71938}.dance{text-align:center;border:1px solid #333;padding:6px;font-family:Georgia,serif;letter-spacing:3px;font-size:15pt}.who{margin:5px 0}.tips{font-size:8pt;margin:0 0 5px}.pq{margin-top:5px}.pen{font-size:8pt;color:#333}.ans{border-bottom:1px solid #555;min-height:15px;padding:1px 2px;white-space:pre-wrap}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px}.pairP{display:grid;grid-template-columns:.8fr 1.2fr;gap:8px}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="ey">BNI 1-to-1</div>
+<h1>DANCE CARD</h1>
+<div class="sub">逐題輸入／語音輸入，自動儲存；完成後可直接儲存成 PDF。</div>
+<div class="status" id="status">準備好</div>
+
+<section class="barTop">
+<label for="saved">已儲存記錄</label>
+<select id="saved"></select>
+<div class="actions">
+<button type="button" id="newBtn">＋ 新會面</button>
+<button type="button" id="previewBtn">預覽 PDF</button>
+<button type="button" id="savePdf" class="primary">儲存 PDF</button>
+</div>
+</section>
+
+<section class="meta">
+<div class="metaGrid">
+<div><label for="me">我的姓名</label><input id="me" type="text"></div>
+<div><label for="with">One-to-one with</label><input id="with" type="text"></div>
+<div class="full"><label for="date">日期</label><input id="date" type="date"></div>
+</div>
+</section>
+
+<div class="prog"><div class="progTxt" id="progTxt">0 / 9 已有內容</div><div class="track"><div class="fill" id="fill"></div></div></div>
+<section class="qs" id="qs"></section>
+
+<details class="backup">
+<summary>備份／還原</summary>
+<p>資料會自動儲存在 Safari。你亦可以下載備份，換裝置時再匯入。</p>
+<div class="backupBtns">
+<button type="button" id="backupBtn">下載備份</button>
+<button type="button" id="importBtn">匯入備份</button>
+<button type="button" id="deleteBtn" class="danger">刪除目前記錄</button>
+<input id="importFile" type="file" accept="application/json" hidden>
+</div>
+</details>
+<section class="printOnly" id="printArea"></section>
+</div>
+
+<script>
+(function(){
+var questions=[
+["請詳細形容你所提供的產品及服務","The following describes the products & services you offer. [Be VERY specific]",4,0],
+["你所提供的產品與競爭者之間的分別","How are you different from your competitors?",2,0],
+["請明確列舉你想找尋的目標市場／顧客","Name businesses / people within your Target Market.",4,0],
+["還有哪類與你相關的行業範圍未進入你的分會？","Which Contact Sphere professions are still not in your chapter?",4,0],
+["請教我用一句好的開場白，即可為你找尋到適合的目標客戶／資源？","What would be good Conversation Starters so that I can listen out for lead phrases?",2,0],
+["當我聽到一句怎樣的說話時，即表示有機會可以為你找到合適的引薦？","What Phrases Do I Listen For to find you a referral?",2,0],
+["我該如何衡量一個引薦的質量／認真程度？","How can I Qualify a referral for you to see if they are serious?",2,0],
+["對你來說甚麼會是一個不合適的引薦？","What is NOT a good referral for you?",4,0],
+["一般人對你的業務有甚麼誤解及我應如何回應？","What are the most common misconceptions of your business & what should I say?",2,1]
+];
+var KEY="danceCardLive3",PROFILE="danceCardProfile3",store={cards:[],currentId:null},timer=null;
+function el(id){return document.getElementById(id)}
+function today(){return new Date().toISOString().slice(0,10)}
+function uid(){return "c"+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function blank(){var n="";try{n=localStorage.getItem(PROFILE)||""}catch(e){}return{id:uid(),name:n,partner:"",date:today(),updated:Date.now(),answers:{}}}
+function current(){for(var i=0;i<store.cards.length;i++)if(store.cards[i].id===store.currentId)return store.cards[i];return null}
+function load(){try{var x=JSON.parse(localStorage.getItem(KEY)||"null");if(x&&Array.isArray(x.cards))store=x}catch(e){}if(!store.cards.length){var c=blank();store.cards=[c];store.currentId=c.id;persist(false)}if(!current())store.currentId=store.cards[0].id}
+function setStatus(t,bad){el("status").textContent=t;el("status").style.background=bad?"#fff1f2":"#eaf6ef";el("status").style.color=bad?"#a11c2d":"#267653"}
+function persist(show){var c=current();if(!c)return;c.updated=Date.now();try{localStorage.setItem(KEY,JSON.stringify(store));if(c.name)localStorage.setItem(PROFILE,c.name);if(show!==false)setStatus("✓ 已自動儲存 "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}))}catch(e){setStatus("⚠️ 未能自動儲存",true)}renderSaved();progress();renderPrint()}
+function schedule(){setStatus("儲存中…");clearTimeout(timer);timer=setTimeout(function(){persist(true)},250)}
+function renderSaved(){var s=el("saved"),c=current();s.innerHTML="";var list=store.cards.slice().sort(function(a,b){return b.updated-a.updated});list.forEach(function(x){var o=document.createElement("option");o.value=x.id;o.textContent=(x.partner||"未命名會面")+" · "+(x.date||"未填日期");if(c&&x.id===c.id)o.selected=true;s.appendChild(o)})}
+function key(i,j,k){return k?"q"+i+"_"+j+"_"+k:"q"+i+"_"+j}
+function get(i,j,k){var c=current(),v=c.answers[key(i,j,k)];return v||""}
+function put(i,j,v,k){current().answers[key(i,j,k)]=v;schedule()}
+function renderQs(){var box=el("qs");box.innerHTML="";questions.forEach(function(q,idx){var wrap=document.createElement("div");wrap.className="q"+(idx===0?" open":"");var head=document.createElement("button");head.type="button";head.className="qh";head.innerHTML='<span class="num">'+(idx+1)+'</span><span><span class="qt">'+q[0]+'</span><span class="en">'+q[1]+'</span></span><span class="arrow">⌄</span>';head.addEventListener("click",function(){wrap.classList.toggle("open")});var body=document.createElement("div");body.className="qb";for(var j=1;j<=q[2];j++){if(q[3]){var p=document.createElement("div");p.className="slot pair";var a=document.createElement("textarea");a.placeholder="常見誤解";a.value=get(idx+1,j,"mis");(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value,"mis")})})(idx+1,j,a);var b=document.createElement("textarea");b.placeholder="你希望我點樣回應";b.value=get(idx+1,j,"reply");(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value,"reply")})})(idx+1,j,b);p.appendChild(a);p.appendChild(b);body.appendChild(p)}else{var d=document.createElement("div");d.className="slot";var sn=document.createElement("div");sn.className="slotname";sn.textContent=["i.","ii.","iii.","iv."][j-1]||"";var ta=document.createElement("textarea");ta.placeholder="點一下，再用 iPhone 鍵盤 🎙️ 語音輸入";ta.value=get(idx+1,j);(function(ii,jj,node){node.addEventListener("input",function(){put(ii,jj,node.value)})})(idx+1,j,ta);d.appendChild(sn);d.appendChild(ta);body.appendChild(d)}}if(idx<questions.length-1){var nav=document.createElement("div");nav.className="next";var nb=document.createElement("button");nb.type="button";nb.textContent="下一題 →";nb.addEventListener("click",function(){wrap.classList.remove("open");var n=box.children[idx+1];n.classList.add("open");n.scrollIntoView({behavior:"smooth",block:"start"})});nav.appendChild(nb);body.appendChild(nav)}wrap.appendChild(head);wrap.appendChild(body);box.appendChild(wrap)})}
+function loadCard(){var c=current();el("me").value=c.name||"";el("with").value=c.partner||"";el("date").value=c.date||today();renderQs();renderSaved();progress();renderPrint()}
+function progress(){var done=0;questions.forEach(function(q,i){var yes=false;for(var j=1;j<=q[2];j++){if(q[3]){if(get(i+1,j,"mis").trim()||get(i+1,j,"reply").trim())yes=true}else if(get(i+1,j).trim())yes=true}if(yes)done++});el("progTxt").textContent=done+" / 9 已有內容";el("fill").style.width=(done/9*100)+"%"}
+function esc(s){return String(s||"").replace(/[&<>"']/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
+function ans(q,i){var out="";if(q[3]){for(var j=1;j<=q[2];j++)out+='<div class="pairP"><div class="ans">'+(esc(get(i,j,"mis"))||" ")+'</div><div class="ans">'+(esc(get(i,j,"reply"))||" ")+"</div></div>";return out}out='<div class="'+(q[2]>1?"grid2":"")+'">';for(var k=1;k<=q[2];k++)out+='<div class="ans">'+(["i.","ii.","iii.","iv."][k-1]||"")+" "+(esc(get(i,k))||" ")+"</div>";return out+"</div>"}
+function renderPrint(){var c=current(),h='<div class="pdf"><div class="pdfTop"><div class="bni">BNI</div><div class="dance">DANCE CARD</div><div></div></div><div class="who"><b>Name:</b> '+esc(c.name)+' &nbsp;&nbsp; <b>one-to-one with</b> '+esc(c.partner)+' &nbsp;&nbsp; <b>on</b> '+esc(c.date)+'</div><p class="tips"><b>TIPS:</b> Be respectful of each other’s time, be a good listener, always be positive and give encouragement, stay focused on what you are discussing and most of all, once you have learned this information, be sure to go out and WORK at finding your partner a quality referral.</p>';questions.forEach(function(q,i){h+='<div class="pq"><div><b>'+(i+1)+'. '+q[0]+'</b></div><div class="pen">'+q[1]+'</div>'+ans(q,i+1)+"</div>"});h+="</div>";el("printArea").innerHTML=h}
+el("me").addEventListener("input",function(){current().name=this.value;schedule()});el("with").addEventListener("input",function(){current().partner=this.value;schedule()});el("date").addEventListener("change",function(){current().date=this.value;schedule()});
+el("saved").addEventListener("change",function(){persist(false);store.currentId=this.value;loadCard();setStatus("已載入記錄")});
+el("newBtn").addEventListener("click",function(){persist(false);var c=blank();store.cards.push(c);store.currentId=c.id;persist(false);loadCard();setStatus("新會面已建立");window.scrollTo({top:0,behavior:"smooth"})});
+function doPrint(){persist(false);renderPrint();setStatus("正在開啟 PDF 儲存畫面…");setTimeout(function(){window.print()},80)}
+el("previewBtn").addEventListener("click",doPrint);el("savePdf").addEventListener("click",doPrint);
+el("backupBtn").addEventListener("click",function(){persist(false);var blob=new Blob([JSON.stringify(store,null,2)],{type:"application/json"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="DANCE_CARD_Backup_"+today()+".json";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000)});
+el("importBtn").addEventListener("click",function(){el("importFile").click()});el("importFile").addEventListener("change",function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){try{var x=JSON.parse(r.result);if(!x||!Array.isArray(x.cards))throw new Error();store=x;if(!store.currentId&&store.cards[0])store.currentId=store.cards[0].id;persist(false);loadCard();setStatus("✓ 備份已匯入")}catch(err){setStatus("⚠️ 備份格式不正確",true)}};r.readAsText(f);e.target.value=""});
+el("deleteBtn").addEventListener("click",function(){if(!confirm("確定刪除目前記錄？"))return;store.cards=store.cards.filter(function(x){return x.id!==store.currentId});if(!store.cards.length)store.cards=[blank()];store.currentId=store.cards[0].id;persist(false);loadCard();setStatus("記錄已刪除")});
+load();loadCard();setStatus("準備好");
+})();
+</script>
+</body>
+</html>
