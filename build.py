@@ -119,6 +119,11 @@ SITE_TITLE_EN = data.get("site_title_en", "AI Marketing Daily")
 SITE_TAGLINE  = data.get("site_tagline", "AI Marketing Intelligence")
 SITE_URL      = data.get("site_url", "")
 WEEKLY_URL    = data.get("weekly_url", "")
+# Carrie's own profile — this brief is her personal masthead, so the byline links
+# out to her. Defaulted here rather than required in data.json: the routine writes
+# data.json fresh every morning, and a field it forgets would silently drop the
+# link on that day's issue only, which is the kind of gap nobody notices.
+LINKEDIN_URL  = data.get("linkedin_url", "https://www.linkedin.com/in/carriehuiww/")
 ISO           = str(data.get("date", "")).strip()
 
 # action tag -> css class + English label
@@ -151,11 +156,35 @@ _emoji_in   = data.get("section_emoji", [])
 _desc_in    = data.get("section_desc", [])
 _desc_en_in = data.get("section_desc_en", [])
 SEC_EMOJI, SEC_DESC, SEC_DESC_EN = {}, {}, {}
+
+
+def _norm_sec(s):
+    """Match section names ignoring spaces and full/half-width punctuation.
+
+    data.json shipped "AI大模型 & 市場動態" while _SEC_DEFAULTS keys on
+    "AI 大模型 & 市場動態" — one space apart. The dict lookup missed, fell through
+    to ("📌", "", ""), and the first category rendered with an EMPTY description
+    and a generic pin emoji while the other four were fine. No error, no warning:
+    a silent downgrade, visible only by measuring that the rendered .cat-desc had
+    no text rects at all. Normalising both sides makes spacing irrelevant.
+    """
+    return re.sub(r"[\s　]+", "", (s or "")).replace("＆", "&")
+
+
+_SEC_DEFAULTS_N = {_norm_sec(k): v for k, v in _SEC_DEFAULTS.items()}
+_missing_desc = []
 for _i, _s in enumerate(data["sections"]):
-    _d = _SEC_DEFAULTS.get(_s, ("📌", "", ""))
+    _d = _SEC_DEFAULTS_N.get(_norm_sec(_s), ("📌", "", ""))
+    if _d[1] == "" and not (_i < len(_desc_in) and _desc_in[_i]):
+        _missing_desc.append(_s)
     SEC_EMOJI[_s]   = _emoji_in[_i]   if _i < len(_emoji_in)   and _emoji_in[_i]   else _d[0]
     SEC_DESC[_s]    = _desc_in[_i]    if _i < len(_desc_in)    and _desc_in[_i]    else _d[1]
     SEC_DESC_EN[_s] = _desc_en_in[_i] if _i < len(_desc_en_in) and _desc_en_in[_i] else (_d[2] or SEC_DESC[_s])
+
+if _missing_desc:
+    print("WARN 分類說明缺失（會渲染成空白的 .cat-desc）：" + "、".join(_missing_desc),
+          "\n     → 在 _SEC_DEFAULTS 補這個分類，或在 data.json 的 section_desc 補上對應位置。",
+          file=sys.stderr)
 
 _MONTH_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
              "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -175,6 +204,29 @@ def bi(zh, en=None):
     en_s = zh_s if en is None or en == "" else str(en)
     return (f'<span class="l-zh">{html.escape(zh_s)}</span>'
             f'<span class="l-en">{html.escape(en_s)}</span>')
+
+
+def bi_attr(zh, en=None):
+    """Bilingual text for an ATTRIBUTE value (aria-label, title, alt).
+
+    `bi()` must never be used here. It emits two <span> ELEMENTS, and an attribute
+    cannot contain elements — the markup gets escaped into the value, so a screen
+    reader announces the literal string
+    `<span class="l-zh">回到頁首</span><span class="l-en">Back to top</span>`.
+    Measured in the rendered DOM: three attributes were doing exactly that
+    (#totop, #a2hs-x, and the LinkedIn byline link).
+
+    The language toggle works by CSS on `data-lang`, which can only reach elements,
+    so there is no way to switch an attribute at all — both languages have to sit in
+    the one value. `zh / en` is the form the page already uses at the language
+    switcher (`aria-label="Language / 語言"`), so it stays consistent with that.
+    Returns a RAW string: escape at the call site, once, like any other attribute.
+    """
+    zh_s = "" if zh is None else str(zh)
+    en_s = "" if en is None else str(en)
+    if not en_s or en_s == zh_s:
+        return zh_s
+    return f"{zh_s} / {en_s}"
 
 # =============================================================================
 # DEDUP PASS — a story may appear ONCE per issue, and should not repeat a story
@@ -1014,6 +1066,21 @@ if WEEKLY_URL:
     _weekly_link = (f'<a class="byline-link" href="{html.escape(WEEKLY_URL)}" target="_blank" rel="noopener noreferrer">'
                     f'{bi("每週深度版 →", "Weekly brief →")}</a>')
 
+# The LinkedIn link carries an inline SVG mark, not the text "LinkedIn": the byline
+# is already three text fragments long and a fourth word would read as more credit
+# copy. `aria-label` is on the <a>, so a screen reader still announces the
+# destination — the glyph is `aria-hidden` and would otherwise announce nothing.
+_li_link = ""
+if LINKEDIN_URL:
+    _li_link = (
+        f'<a class="byline-link li" href="{html.escape(LINKEDIN_URL)}" target="_blank"'
+        f' rel="noopener noreferrer me"'
+        f' aria-label="{html.escape(bi_attr(BYLINE + " 的 LinkedIn（新視窗開啟）", BYLINE + " on LinkedIn (opens in a new tab)"))}">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">'
+        '<path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/>'
+        '</svg>'
+        f'<span>{bi("LinkedIn", "LinkedIn")}</span></a>')
+
 # --- Share preview -----------------------------------------------------------
 # The brief travels by being forwarded (Lark, email, WhatsApp), so the link
 # preview IS the front page for most readers. Without these tags a forward shows
@@ -1065,7 +1132,10 @@ _ld = json.dumps({
     "datePublished": ISO,
     "description": _desc_en,
     **({"url": SITE_URL} if SITE_URL else {}),
-    "author": {"@type": "Person", "name": BYLINE},
+    # sameAs is what actually ties this page to her profile for search engines and
+    # link previews; the visible byline link alone is not read as an identity claim.
+    "author": {"@type": "Person", "name": BYLINE,
+               **({"sameAs": LINKEDIN_URL} if LINKEDIN_URL else {})},
     "hasPart": [{
         "@type": "NewsArticle",
         "headline": (i.get("title_en") or i.get("title", ""))[:110],
@@ -1112,20 +1182,48 @@ page = f'''<!doctype html>
 }}catch(e){{}}}})();
 </script>
 <style>
+/* ---- palette v1.0 — every value derived from icon-512.png ---------------------
+   See brand/AI情報站-品牌規範-v1.0.md and brand/palette_check.py.
+   The icon is a FOUR-corner gradient spanning 100° of hue:
+     violet #6249D7 251° · blue #39689F 212° · plum #7D266B 312° · navy #11154A 236°
+   The old --c3 green (158°), --c4 red (4°) and --c5 orange (33°) sat completely
+   outside that arc, which is the measurable reason the page read as unrelated to
+   the mark. The five category hues below are spread ACROSS the arc instead, so
+   hue order == section order and colour carries information.
+   Every pairing below is checked by palette_check.py at >=4.8:1, not 4.5 — a
+   published page should not sit one rounding error from failing AA. --------------*/
 :root{{
   --paper:#f7f5ef;--card:#fff;--ink:#101114;--muted:#656a73;--body:#3c3f45;
   --accent:#5a42f4;--accent-d:#4632d4;--accent-soft:#ebe8ff;
   --line:#dedbd2;--shadow:0 16px 45px rgba(16,17,20,.08);
-  --c1:#1763d8;--c1s:#e8f0fd;
-  --c2:#7a2fd0;--c2s:#f2e9fd;
-  --c3:#1e7c5a;--c3s:#e2f3ec;
-  --c4:#d63b2f;--c4s:#fdeceb;
-  --c5:#a45a00;--c5s:#fdf3e2;
-  --green:#1e7c5a;--amber:#a45a00;
+  /* icon anchors, used by the dark identity zone */
+  --i-violet:#553fba;--i-blue:#2f5582;--i-navy:#11154a;--i-plum:#7d266b;
+  --lime:#d3fe66;
+  /* on-dark text layers (checked against the LIGHTEST stop, #553fba) */
+  --on-dark:#f7f5ef;--on-dark-2:#d6d4e8;--on-dark-3:#cfcde4;--on-dark-chip:#edebf6;
+  /* category colours: solid = cat-head bg + card border; s = pill bg; t = pill text */
+  --c1:#39689f;--c1s:#d9e6f6;--c1t:#2c619e;
+  --c2:#3f5bc8;--c2s:#d9dff6;--c2t:#2f4ec7;
+  --c3:#6249d7;--c3s:#ded9f6;--c3t:#5438d6;
+  --c4:#9a3a9e;--c4s:#f5d9f6;--c4t:#972d9c;
+  --c5:#7d266b;--c5s:#f6d9f0;--c5t:#7d266b;
+  /* Signal badges stay green / amber / violet. They are OUTSIDE the icon's hue arc
+     on purpose, same exemption as Lime: 可即用 / 要留意 / 影響生意 is a traffic-light
+     encoding the reader already knows, and recolouring it into the arc would make
+     three different meanings look like three shades of the same thing. V nudged
+     down from #1e7c5a / #a45a00 — both measured 4.47 and 4.73 on their own tints,
+     under the 4.8 target. Hue unchanged at 158° and 33°. */
+  --green:#1d7656;--amber:#a25900;
 }}
 *{{box-sizing:border-box}}
 html{{scroll-behavior:smooth}}
-body{{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC","Noto Sans HK",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}}
+/* The old radial-gradient sat at 85% 0% — the top-right of the page, which the
+   dark topbar and hero now cover completely. It was painting a violet glow
+   underneath an opaque gradient: invisible, and still a paint cost on every
+   scroll. Removed rather than relocated; the reading zone is meant to be flat
+   paper (rule R4), and a second gradient down there would compete with the one
+   piece of gradient that carries meaning. */
+body{{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC","Noto Sans HK",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}}
 a{{color:inherit}}
 /* --- language toggle: show the active language, hide the other ---
    The bare `.l-en{{display:none}}` is specificity 0,1,0, so ANY later rule like
@@ -1140,52 +1238,107 @@ html[data-lang="en"] .l-zh{{display:none}}
 .wrap{{width:min(1120px,calc(100% - 32px));margin:0 auto}}
 
 /* ---- masthead nav ---- */
-.topbar{{border-top:4px solid var(--accent);background:rgba(247,245,239,.94);backdrop-filter:blur(6px);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(222,219,210,.8)}}
+/* Dark identity zone. The top 4px line is the icon's Lime — the one place a 4px
+   strip of it is unambiguously a brand mark rather than decoration. The bar itself
+   is the icon's navy anchor, so the masthead and the app icon on the reader's home
+   screen are the same colour. Kept slightly translucent so the blur still reads
+   as a layer when content scrolls under it. */
+.topbar{{border-top:4px solid rgba(211,254,102,.26);background:rgba(17,21,74,.96);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(247,245,239,.14)}}
 .mast{{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;flex-wrap:wrap}}
-.brand{{font-weight:800;letter-spacing:-.02em;font-size:19px;line-height:1.25}}
-.brand span{{color:var(--accent)}}
-.brand small{{display:block;font-weight:500;font-size:11.5px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}}
-.mast-r{{display:flex;align-items:center;gap:10px;flex-wrap:wrap}}
-.navlinks{{display:flex;gap:6px;align-items:center;overflow-x:auto;max-width:100%}}
-.navlinks a{{white-space:nowrap;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:6px 12px;border-radius:99px}}
-.navlinks a i{{font-style:normal;color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}}
-.navlinks a:hover{{border-color:var(--accent);color:var(--accent-d)}}
-.navlinks a.pill{{background:var(--ink);color:#fff;border-color:var(--ink)}}
-.navlinks a.pill:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
-.langtog{{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card);flex:none}}
-.langtog button{{font:inherit;font-size:12px;letter-spacing:.04em;padding:6px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}}
-.langtog button+button{{border-left:1px solid var(--line)}}
-.langtog button.on{{background:var(--accent);color:#fff}}
-.langtog button:focus-visible{{outline:2px solid var(--ink);outline-offset:2px}}
+.brand{{font-weight:800;letter-spacing:-.02em;font-size:19px;line-height:1.25;color:var(--on-dark)}}
+.brand span{{color:var(--lime)}}
+.brand small{{display:block;font-weight:500;font-size:11.5px;color:var(--on-dark-3);letter-spacing:.16em;text-transform:uppercase}}
+/* min-width:0 on BOTH, and it is load-bearing. .navlinks was written with
+   `overflow-x:auto;max-width:100%` intending to scroll, and it never did: a flex
+   item defaults to min-width:auto, so .mast-r refused to shrink below its
+   content and .navlinks sized to a flat 1006px at EVERY viewport. Measured on
+   the live site: at 900/820/768px the document scrollWidth was 1022 against a
+   768 viewport — the whole page scrolled sideways on a tablet, and had been
+   doing so before this change. Adding the Share pill took .navlinks to 1074px,
+   which also wrapped the EN/中文 toggle onto a second row and grew the sticky
+   topbar from 121px to 164px on every desktop width — 43px of a daily-read
+   page's first screen. min-width:0 lets the flex item actually shrink, at which
+   point the overflow-x:auto that was already there starts working as intended.
+   Verified by measurement at 15 widths from 1600 to 390: no horizontal document
+   overflow at any of them, topbar back to one row. */
+/* .mast keeps its original flex-wrap:wrap — on a phone the brand and the controls
+   genuinely need two rows, and forcing nowrap there pushed the document to 585px
+   against a 500px viewport (measured at 500/430/390/360). What was wrong was never
+   the wrapping; it was that .mast-r could not shrink, so wrapping was the only
+   relief available and it took it on desktop too. min-width:0 fixes the cause, and
+   the wrap then only happens where it is actually wanted. */
+.mast-r{{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;min-width:0}}
+.navlinks{{display:flex;gap:6px;align-items:center;overflow-x:auto;min-width:0;flex:1 1 auto;
+  scrollbar-width:none;-ms-overflow-style:none}}
+.navlinks::-webkit-scrollbar{{display:none}}
+.brand{{flex:0 0 auto}}
+/* Every rule below covers BOTH the pills inside the scrolling strip and the two
+   lifted out of it (`.mast-r>a.pill`). The base look was scoped to `.navlinks a`,
+   so moving the Archive pill out of that container silently dropped its border,
+   background, padding and radius — it rendered as bare underlined text on the dark
+   bar. Extending the selector rather than copying the declarations keeps one source
+   of truth; a copy would drift the moment either is touched. */
+.navlinks a,.mast-r>a.pill{{white-space:nowrap;font-size:13px;color:var(--on-dark-chip);text-decoration:none;border:1px solid rgba(247,245,239,.26);background:rgba(247,245,239,.07);padding:6px 12px;border-radius:99px}}
+.navlinks a i{{font-style:normal;color:var(--lime);margin-left:5px;font-variant-numeric:tabular-nums}}
+.navlinks a:hover,.mast-r>a.pill:hover{{border-color:var(--lime);color:var(--on-dark)}}
+.navlinks a.pill,.mast-r>a.pill{{background:var(--on-dark);color:var(--i-navy);border-color:var(--on-dark);font-weight:700}}
+.navlinks a.pill:hover,.mast-r>a.pill:hover{{background:var(--lime);border-color:var(--lime);color:var(--i-navy)}}
+.langtog{{display:inline-flex;border:1px solid rgba(247,245,239,.26);border-radius:99px;overflow:hidden;background:rgba(247,245,239,.07);flex:none}}
+.langtog button{{font:inherit;font-size:12px;letter-spacing:.04em;padding:6px 14px;border:0;background:transparent;color:var(--on-dark-3);cursor:pointer}}
+.langtog button+button{{border-left:1px solid rgba(247,245,239,.26)}}
+.langtog button.on{{background:var(--lime);color:var(--i-navy);font-weight:700}}
+.langtog button:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
 
-/* ---- hero ---- */
-.hero{{padding:52px 0 8px}}
-.eyebrow{{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12.5px;letter-spacing:.14em}}
-h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin:14px 0 18px;font-weight:800}}
-.hero-sub{{font-size:clamp(16.5px,1.9vw,20px);color:var(--muted);max-width:660px;margin:0 0 20px}}
+/* ---- hero: the dark identity zone -------------------------------------------
+   The four stops are the icon's own four corners, in the icon's own spatial order
+   (violet top-left → blue top-right → navy bottom-left → plum bottom-right), so
+   the first screen and the app icon on the reader's home screen are the same
+   object. V is pushed down on violet (84→73) and blue (62→51) because at the
+   icon's own brightness the on-dark text layers only reached 3.91–4.18:1. Hue is
+   untouched — 251° and 213° after the shift.
+   Dark stops HERE only. The reading zone below stays warm paper: this page runs
+   ~27 long stories a day, and CJK hairlines halate on a dark ground. --------------*/
+.hero{{padding:52px 0 34px;margin-bottom:8px;color:var(--on-dark);
+  background:linear-gradient(135deg,var(--i-violet) 0%,var(--i-blue) 30%,var(--i-navy) 64%,var(--i-plum) 100%)}}
+.eyebrow{{color:var(--lime);font-weight:800;text-transform:uppercase;font-size:12.5px;letter-spacing:.14em}}
+h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin:14px 0 18px;font-weight:800;color:var(--on-dark)}}
+.hero-sub{{font-size:clamp(16.5px,1.9vw,20px);color:var(--on-dark-2);max-width:660px;margin:0 0 20px}}
 .issue-meta{{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}}
 /* Direct child only. `span` as a descendant selector also caught the inner
    <span class="l-zh">/<span class="l-en"> that bi() emits, so each pill grew a
    second pill inside itself — the 「20 則 · 5 個分類」chip rendered as three
    nested capsules. `>` keeps the pill on the outer wrapper alone. */
-.issue-meta>span{{border:1px solid var(--line);background:var(--card);padding:7px 13px;border-radius:999px;font-size:13px;color:var(--muted)}}
-.issue-meta>span b{{color:var(--ink);font-weight:700}}
+.issue-meta>span{{border:1px solid rgba(247,245,239,.28);background:rgba(247,245,239,.08);padding:7px 13px;border-radius:999px;font-size:13px;color:var(--on-dark-chip)}}
+.issue-meta>span b{{color:var(--on-dark);font-weight:700}}
 /* slim byline (personal credit, no full profile card) */
-.byline{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0 4px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}}
-.byline .who{{color:var(--ink);font-weight:750}}
-.byline .dot{{color:var(--line)}}
-.byline-link{{text-decoration:none;color:var(--accent);font-weight:700}}
+.byline{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0 4px;border-top:1px solid rgba(247,245,239,.2);font-size:13.5px;color:var(--on-dark-3)}}
+.byline .who{{color:var(--on-dark);font-weight:750}}
+.byline .dot{{color:rgba(247,245,239,.4)}}
+.byline-link{{text-decoration:none;color:var(--lime);font-weight:700}}
 .byline-link:hover{{text-decoration:underline;text-underline-offset:3px}}
-.heroacts{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}}
-#share{{border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:13.5px;font-weight:700;padding:9px 18px;border-radius:999px;cursor:pointer}}
-#share:hover{{background:var(--accent);border-color:var(--accent)}}
-#share:focus-visible{{outline:2px solid var(--ink);outline-offset:2px}}
-.archlink{{font-size:13.5px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:9px 16px;border-radius:999px;white-space:nowrap;font-weight:600}}
-.archlink:hover{{border-color:var(--accent);color:var(--accent)}}
+/* LinkedIn: glyph + word on one baseline. inline-flex (not inline) because an
+   inline SVG sits on the text baseline and hangs ~2px low next to CJK, which
+   reads as a misaligned icon rather than a link. */
+.byline-link.li{{display:inline-flex;align-items:center;gap:5px}}
+.byline-link.li svg{{width:14px;height:14px;flex:none}}
+.byline-link:focus-visible{{outline:2px solid var(--lime);outline-offset:3px;border-radius:3px}}
+/* Share now lives in the sticky topbar, so it must match the .navlinks pills it
+   sits beside, not the old hero buttons. Sized to the same 13px / 6px 12px as
+   .navlinks a so the row does not grow taller, and kept as an OUTLINE pill: the
+   Archive pill next to it is the solid one, and two solid pills side by side read
+   as two equally-primary actions. .heroacts and .archlink were deleted with the
+   hero button row — leaving them would be dead CSS that looks live. */
+#share{{white-space:nowrap;font:inherit;font-size:13px;font-weight:600;color:var(--on-dark-chip);border:1px solid rgba(247,245,239,.26);background:rgba(247,245,239,.07);padding:6px 12px;border-radius:99px;cursor:pointer;flex:none}}
+#share:hover{{border-color:var(--lime);color:var(--on-dark)}}
+#share:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+/* .pill.fix is the Archive pill lifted out of the scrolling strip. flex:none so it
+   keeps its size when .navlinks shrinks — without it the flex layout takes the
+   space back from the pill rather than from the strip it is meant to come from. */
+.navlinks a.pill.fix,.mast-r>a.pill{{flex:none}}
 #sharebox{{display:none;gap:8px;align-items:center;padding:12px 0 0}}
 #sharebox.on{{display:flex}}
-#sharebox input{{flex:1;font:inherit;font-size:13px;padding:8px 11px;border:1px solid var(--accent);border-radius:6px;color:var(--ink);background:#fff;min-width:0}}
-#sharebox span{{font-size:12px;color:var(--muted);white-space:nowrap}}
+#sharebox input{{flex:1;font:inherit;font-size:13px;padding:8px 11px;border:1px solid var(--lime);border-radius:6px;color:var(--ink);background:#fff;min-width:0}}
+#sharebox span{{font-size:12px;color:var(--on-dark-3);white-space:nowrap}}
 
 /* ---- add-to-home-screen hint -------------------------------------------------
    Sits below the hero buttons, above the legend. Deliberately quiet: a dashed
@@ -1195,39 +1348,65 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
    something impossible, and a reader who already installed it would be nagged
    about a thing they have done. */
 #a2hs{{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0;padding:11px 13px;
-  border:1px dashed var(--accent);border-radius:12px;background:var(--accent-soft)}}
+  border:1px dashed var(--lime);border-radius:12px;background:rgba(247,245,239,.1);color:var(--on-dark-2)}}
 #a2hs[hidden]{{display:none}}
 .a2hs-ic{{font-size:16px;line-height:1.35;flex:none}}
-.a2hs-txt{{margin:0;font-size:13px;line-height:1.55;color:var(--body);flex:1}}
-.a2hs-txt b{{color:var(--accent-d)}}
+.a2hs-txt{{margin:0;font-size:13px;line-height:1.55;color:var(--on-dark-2);flex:1}}
+.a2hs-txt b{{color:var(--lime)}}
 /* Both platforms' instructions are in the DOM; script adds is-ios / is-and to reveal
    exactly one. Default hidden, so if script never runs nothing contradictory shows. */
 .a2hs-ios,.a2hs-and{{display:none}}
 #a2hs.is-ios .a2hs-ios,#a2hs.is-and .a2hs-and{{display:inline}}
-#a2hs-x{{flex:none;border:0;background:transparent;color:var(--muted);font-size:14px;
+#a2hs-x{{flex:none;border:0;background:transparent;color:var(--on-dark-3);font-size:14px;
   line-height:1;padding:3px 2px;cursor:pointer;border-radius:6px}}
-#a2hs-x:hover{{color:var(--ink);background:#fff}}
-#a2hs-x:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+#a2hs-x:hover{{color:var(--i-navy);background:var(--lime)}}
+#a2hs-x:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
 
 /* ---- signal legend + section counters ---- */
 /* Each badge and its gloss are ONE flex item (.lg), not two. Flat flex items let
    the wrap fall between 要留意 and 平台或趨勢變動 at phone widths, so the badge
    ended one line and its own explanation started the next — the legend read as
    three unrelated fragments. Wrapping each pair makes it unbreakable. */
-.legend{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:16px 0 0;font-size:12.5px;color:var(--muted)}}
+/* Both blocks sit INSIDE <header class="hero">, so they follow the dark zone.
+   The old --muted / --card / --line values were a light-page inheritance: on the
+   gradient the legend gloss measured 3.70:1 and the five .stat cards rendered as
+   solid white slabs over the identity artwork. Every value below is checked
+   against the LIGHTEST hero stop (#553FBA) — the worst case — not against navy,
+   which would flatter the numbers by 2x. */
+.legend{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:16px 0 0;font-size:12.5px;color:var(--on-dark-2)}}
 .legend .lg{{display:inline-flex;align-items:center;gap:7px}}
-.stats{{display:grid;grid-template-columns:repeat({max(1, len(data["sections"]))},1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:20px 0 8px}}
-.stat{{background:var(--card);text-align:center;padding:15px 6px;text-decoration:none;color:var(--ink)}}
-.stat b{{display:block;font-size:27px;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.03em}}
-.stat span{{font-size:11.5px;color:var(--muted);line-height:1.35;display:block}}
-.stat:hover{{background:var(--accent-soft)}}
+/* The .stat grid becomes a translucent layer instead of an opaque card: 9% paper
+   over the gradient keeps the artwork readable through it while still reading as
+   a distinct panel. Label 5.64:1, Lime figure 5.32:1 at the worst stop. */
+.stats{{display:grid;grid-template-columns:repeat({max(1, len(data["sections"]))},1fr);gap:1px;background:rgba(247,245,239,.18);border:1px solid rgba(247,245,239,.22);border-radius:14px;overflow:hidden;margin:20px 0 8px}}
+.stat{{background:rgba(247,245,239,.09);text-align:center;padding:15px 6px;text-decoration:none;color:var(--on-dark)}}
+.stat b{{display:block;font-size:27px;color:var(--lime);font-variant-numeric:tabular-nums;letter-spacing:-.03em}}
+.stat span{{font-size:11.5px;color:var(--on-dark);line-height:1.35;display:block}}
+/* Hover stops at 16%: at 20% the label fell to 4.6:1. */
+.stat:hover{{background:rgba(247,245,239,.16)}}
 
 /* ---- today's signal ---- */
 .section{{padding:34px 0 6px}}
 .thesis{{background:var(--accent);color:#fff;border-radius:26px;padding:clamp(24px,4.4vw,46px);box-shadow:var(--shadow)}}
-.thesis .eyebrow{{color:rgba(255,255,255,.75)}}
-.thesis blockquote{{font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}}
-.thesis p{{max-width:820px;margin:0;color:rgba(255,255,255,.85);font-size:16.5px}}
+/* Was rgba(255,255,255,.75) = 4.06:1 on --accent. 12.5px bold is not "large text"
+   under AA (that needs 18.5px, or 14pt bold), so it needed 4.5 and did not have it.
+   .90 gives 5.13:1 and still reads as a quieter layer than the quote. */
+.thesis .eyebrow{{color:rgba(255,255,255,.9)}}
+/* The headline and the body MUST share one measure, or they read as mis-aligned.
+   Measured at 1280px with only the body capped: the headline ran to x=1117 while
+   the body stopped at x=937 — 181px short — and because the headline's own three
+   line-ends sat within 33px of each other it implied a hard right edge the body
+   then failed to reach. The fix is NOT to widen the body: at the headline's 1028px
+   the body would run 62 full-width CJK chars per line, past the ~40-45 where CJK
+   reading starts needing a scan back to find the next line. So the HEADLINE comes
+   in to the body's measure instead. One shared var, so the two cannot drift apart.
+   At 820px both end within 5px of each other; headline stays 4 lines / 19 chars.
+   Note this only misread at >=1200px: at 1024px the headline already wrapped to 4
+   ragged lines (its own line-ends spread over 744px), which implies no right edge
+   at all, so the same 64px shortfall was invisible. A width-specific defect. */
+.thesis{{--measure:820px}}
+.thesis blockquote{{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}}
+.thesis p{{max-width:var(--measure);margin:0;color:rgba(255,255,255,.85);font-size:16.5px}}
 
 /* ---- category headers ---- */
 section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
@@ -1235,7 +1414,14 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .cat-head h2{{font-size:clamp(20px,2.7vw,28px);letter-spacing:-.03em;margin:0;line-height:1.15}}
 .cat-head .cat-desc{{margin:2px 0 0;font-size:13.5px;opacity:.88}}
 .cat-head .cat-txt{{flex:1;min-width:0}}
-.cat-head em{{font-style:normal;font-size:13px;font-weight:700;background:rgba(255,255,255,.18);border-radius:99px;padding:5px 12px;white-space:nowrap}}
+/* The count chip was rgba(255,255,255,.18) — a LIGHT wash on the category colour,
+   which lifted the background toward the white text sitting on it. White-on-chip
+   measured 3.93 / 4.05 / 4.20 / 4.25 / 5.73:1 across the five sections: four of
+   five under AA, and the chip was LESS readable than the same text with no chip
+   at all (5.75:1 worst). A pre-existing failure, found by re-measuring every
+   pairing rather than only the ones I changed. Inverted to a dark wash, which
+   darkens the ground instead of lifting it: 7.66:1 worst case. */
+.cat-head em{{font-style:normal;font-size:13px;font-weight:700;background:rgba(0,0,0,.18);border-radius:99px;padding:5px 12px;white-space:nowrap}}
 .cat-emoji{{font-size:29px;line-height:1}}
 .cat-head.c1{{background:var(--c1)}}
 .cat-head.c2{{background:var(--c2)}}
@@ -1265,11 +1451,15 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
    and everything else is plain body text on an 8px spacing rhythm. */
 .story-meta{{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:12px}}
 .src{{font-weight:750;padding:4px 10px;border-radius:999px;letter-spacing:.02em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
-.story.c1 .src{{background:var(--c1s);color:var(--c1)}}
-.story.c2 .src{{background:var(--c2s);color:var(--c2)}}
-.story.c3 .src{{background:var(--c3s);color:var(--c3)}}
-.story.c4 .src{{background:var(--c4s);color:var(--c4)}}
-.story.c5 .src{{background:var(--c5s);color:var(--c5)}}
+/* Pill text uses --cNt, NOT --cN. The solid category colour on its own tint only
+   reaches 4.34–4.56:1 for the three blue-violet hues — under AA for 12px text.
+   --cNt is the same hue pushed darker until >=4.8:1, so the pill stays on-hue and
+   stays readable. Measured: c1 5.01 · c2 5.22 · c3 5.27 · c4 5.09 · c5 6.82. */
+.story.c1 .src{{background:var(--c1s);color:var(--c1t)}}
+.story.c2 .src{{background:var(--c2s);color:var(--c2t)}}
+.story.c3 .src{{background:var(--c3s);color:var(--c3t)}}
+.story.c4 .src{{background:var(--c4s);color:var(--c4t)}}
+.story.c5 .src{{background:var(--c5s);color:var(--c5t)}}
 .date{{color:var(--muted)}}
 /* Subscription flag: readers were clicking through and hitting a paywall with no
    warning. Flagging it on the card itself sets the expectation before the click. */
@@ -1346,7 +1536,13 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 /* ---- reading progress + active section ----
    Long single-page scroll with no sense of position. The top bar shows how far
    in you are; the nav pill for the section you are reading lights up. */
-#prog{{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--accent);z-index:40;pointer-events:none;transition:transform .08s linear}}
+/* The progress bar and the topbar's Lime line were both pinned to the top of the
+   viewport — #prog (fixed, 3px, z40) drew straight over the topbar's 4px Lime
+   border (z20), so a violet bar crept across the brand line as you scrolled.
+   Resolved by making them ONE element: the top strip is a dim Lime track that
+   fills with full Lime as you read. Reading position is a real status, which is
+   the only thing Lime is allowed to express. Fill on track = 7.6:1. */
+#prog{{position:fixed;left:0;top:0;height:4px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--lime);z-index:40;pointer-events:none;transition:transform .08s linear}}
 .navlinks a.cur{{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-d);font-weight:700}}
 /* a card jumped to from 三分鐘看完 flashes once so the eye finds it */
 .story:target{{box-shadow:0 0 0 3px var(--accent)}}
@@ -1354,6 +1550,28 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 
 footer{{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;font-size:13px;color:var(--muted);line-height:1.85}}
 footer b{{color:var(--ink)}}
+/* ---- back to top --------------------------------------------------------------
+   Bottom RIGHT, deliberately: #toast is fixed bottom-CENTRE at z-index 50, and a
+   bottom-centre button would be covered by the copy-link toast at the exact moment
+   a reader might use both. Sits at z-index 45 — under the toast, over the cards.
+   `visibility` (not just opacity) so the hidden state is also untabbable; opacity
+   alone leaves an invisible button that a keyboard user can focus and press. */
+#totop{{position:fixed;right:20px;bottom:22px;z-index:45;display:inline-flex;align-items:center;gap:6px;
+  font:inherit;font-size:13px;font-weight:700;color:var(--i-navy);background:var(--lime);
+  border:1px solid rgba(12,16,45,.22);border-radius:999px;padding:9px 15px;cursor:pointer;
+  box-shadow:0 6px 18px rgba(12,16,45,.22);
+  opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s,transform .2s,visibility .2s}}
+#totop.on{{opacity:1;visibility:visible;transform:translateY(0)}}
+#totop svg{{width:15px;height:15px;flex:none}}
+#totop:hover{{background:#e2ff86}}
+#totop:focus-visible{{outline:2px solid var(--i-navy);outline-offset:2px}}
+/* Phones: the label is redundant next to the arrow and the button is closest to a
+   thumb, where a wide pill covers the most text. Arrow only, round. */
+@media (max-width:560px){{
+  #totop{{right:14px;bottom:16px;padding:10px;border-radius:50%}}
+  #totop span{{position:absolute;left:-9999px}}
+  #totop svg{{width:17px;height:17px}}
+}}
 #toast{{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50}}
 #toast.on{{opacity:1;transform:translateX(-50%) translateY(0)}}
 
@@ -1368,7 +1586,12 @@ footer b{{color:var(--ink)}}
   .stats>.stat:last-child:nth-child(odd){{grid-column:1/-1}}
   .story{{padding:20px 18px}}
   .cat-head{{padding:13px 15px;gap:11px}}
+  /* Category pills go; Archive and Share stay (they live outside .navlinks now).
+     The strip is then empty, so it must not keep claiming flex space — without
+     `flex:none` an empty `flex:1 1 auto` item still pushes the remaining controls
+     around. */
   .navlinks a:not(.pill){{display:none}}
+  .navlinks{{flex:none}}
   .tldr{{padding:16px 17px;border-radius:14px}}
   .tldr a{{font-size:14px}}
 }}
@@ -1387,7 +1610,10 @@ footer b{{color:var(--ink)}}
   .issue-meta{{gap:7px;margin-bottom:13px}}
   .issue-meta>span{{padding:6px 11px;font-size:12px}}
   .byline{{padding:10px 0 2px;font-size:12.5px;gap:7px}}
-  .heroacts{{margin-top:11px;gap:8px}}
+  /* was `.heroacts{{margin-top:11px;gap:8px}}` — that row no longer exists.
+     At this width the topbar carries Archive + Share, so trim those instead. */
+  .navlinks{{gap:6px}}
+  .navlinks a.pill,.mast-r>a.pill,#share{{padding:6px 10px;font-size:12.5px}}
   .legend{{padding:13px 0 0;gap:7px 14px;font-size:12px}}
   .stats{{margin:15px 0 6px}}
   .stat{{padding:12px 5px}}
@@ -1401,7 +1627,9 @@ footer b{{color:var(--ink)}}
 /* print / PDF: many readers forward this as a PDF to clients */
 @media print{{
   body{{background:#fff}}
-  .topbar,.langtog,#share,.heroacts,#sharebox,#toast,.navlinks,#prog,#a2hs{{display:none!important}}
+  /* .heroacts dropped from this list with the markup. #totop added: a printed page
+     has no "top" to scroll to, so it would print as a stray green pill on page 1. */
+  .topbar,.langtog,#share,#sharebox,#toast,#totop,.navlinks,#prog,#a2hs{{display:none!important}}
   .story{{break-inside:avoid;page-break-inside:avoid;box-shadow:none;border:1px solid #ccc}}
   .cat-head{{break-after:avoid;page-break-after:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
   .thesis,.take,.src,.signal,.paywall,.tldr{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -1424,7 +1652,15 @@ footer b{{color:var(--ink)}}
 <div class="topbar"><div class="wrap"><div class="mast">
   <div class="brand">{bi(SITE_TITLE, SITE_TITLE_EN)}<small>{html.escape(SITE_TAGLINE)}</small></div>
   <div class="mast-r">
-    <div class="navlinks">{nav}<a class="pill" href="archive/">{bi("歷史存檔", "Archive")}</a></div>
+    <div class="navlinks">{nav}</div>
+    <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
+         scrolling category strip, and a control placed inside it scrolls away with
+         the categories: measured at 1280px, Share's right edge landed at x=1455 on
+         a 1280 viewport — reachable only by dragging the nav sideways, which is the
+         same as not being there. These two are pinned next to the language toggle
+         with flex:none instead. -->
+    <a class="pill fix" href="archive/">{bi("歷史存檔", "Archive")}</a>
+    <button id="share" type="button">{bi("分享", "Share")}</button>
     <div class="langtog" role="group" aria-label="Language / 語言">
       <button type="button" data-set="en" class="on" aria-pressed="true" aria-label="English">EN</button>
       <button type="button" data-set="zh" aria-pressed="false" aria-label="繁體中文（台灣・香港）">中文</button>
@@ -1444,12 +1680,15 @@ footer b{{color:var(--ink)}}
   </div>
   <div class="byline">
     <span class="who">{bi("主編：" + BYLINE, "Curated by " + BYLINE)}</span><span class="dot">·</span>
-    <span>{bi(BYLINE_ROLE, BYLINE_ROLE_EN)}</span>{('<span class="dot">·</span>' + _weekly_link) if _weekly_link else ''}
+    <span>{bi(BYLINE_ROLE, BYLINE_ROLE_EN)}</span>{('<span class="dot">·</span>' + _weekly_link) if _weekly_link else ''}{('<span class="dot">·</span>' + _li_link) if _li_link else ''}
   </div>
-  <div class="heroacts">
-    <button id="share">{bi("分享給同事", "Share")}</button>
-    <a class="archlink" href="archive/">{bi("📚 歷史存檔", "📚 Archive")}</a>
-  </div>
+  <!-- The .heroacts row is gone. It held "分享給同事" and "📚 歷史存檔" — and the
+       sticky topbar already carries an Archive pill, so BOTH buttons were duplicates
+       of controls one scroll-line above them, costing first-screen space on every
+       visit to a page people read daily. Share moved into the topbar (where it is
+       reachable from any scroll position, not only the top); Archive was already
+       there. #sharebox stays: it is the last-resort fallback when both the Web Share
+       API and the clipboard are unavailable, and the script still targets it. -->
   <div id="sharebox"><span>{bi("長按或全選以複製：", "Long-press / select all to copy:")}</span><input type="text" readonly value="{html.escape(SITE_URL)}"></div>
   <!-- Add-to-home-screen hint. Shown ONLY on a phone/tablet that is NOT already
        running standalone, and dismissable for 90 days. A banner that reappears every
@@ -1466,7 +1705,7 @@ footer b{{color:var(--ink)}}
     <p class="a2hs-txt"><b>{bi("想每朝一撳就睇？", "Read it like an app?")}</b>
       <span class="a2hs-ios">{bi("在 Safari 按下方「分享」→「加入主畫面」，就可以像 App 一樣全螢幕開啟，沒有網址列。", "In Safari, tap Share below → “Add to Home Screen” to open it full-screen like an app.")}</span><span class="a2hs-and">{bi("按瀏覽器右上角的選單鍵（三點）→「安裝應用程式／加到主畫面」，就可以像 App 一樣全螢幕開啟。", "Tap the three-dot menu at the top right of your browser → “Install app / Add to Home screen” to open it full-screen like an app.")}</span>
     </p>
-    <button id="a2hs-x" type="button" aria-label="{html.escape(bi('關閉這個提示', 'Dismiss this tip'))}">✕</button>
+    <button id="a2hs-x" type="button" aria-label="{html.escape(bi_attr('關閉這個提示', 'Dismiss this tip'))}">✕</button>
   </div>
   <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
   <div class="stats">{stats}</div>
@@ -1484,6 +1723,14 @@ footer b{{color:var(--ink)}}
 <p>{bi("資料來源：", "Sources: ")}{bi(sources_note, sources_note_en)}</p>
 <p>{bi("內容僅供資訊參考。", "For informational reference only.")}</p>
 </div></footer>
+<!-- Back to top. Hidden until 1.5 viewports down (see the scroll handler) so it is
+     not furniture on the first screen. `aria-hidden` is NOT used: the button is
+     genuinely actionable whenever it is visible, and it is removed from the tab
+     order by `visibility` while hidden, which is the accessible equivalent. -->
+<button id="totop" type="button" aria-label="{html.escape(bi_attr('回到頁首', 'Back to top'))}">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5l-7 7h4.2v7h5.6v-7H19z" fill="currentColor"/></svg>
+  <span>{bi("頁首", "Top")}</span>
+</button>
 <div id="toast"></div>
 <script>
 const SHARE_URL={json.dumps(SITE_URL) if SITE_URL else "location.href"};
@@ -1555,11 +1802,26 @@ document.getElementById('share').addEventListener('click',async()=>{{
    on a 20-card page does not queue up work. */
 (function(){{
   var bar=document.getElementById('prog'), pending=false;
+  /* Back-to-top piggybacks on THIS handler instead of registering its own scroll
+     listener: two listeners on a 20-card page means two callbacks per frame doing
+     the same scrollY read. Threshold is one and a half viewports — below that the
+     topbar is still a short flick away and the button would only cover content. */
+  var top=document.getElementById('totop');
   function draw(){{
     pending=false;
     var h=document.documentElement.scrollHeight-window.innerHeight;
     bar.style.transform='scaleX('+(h>0?Math.min(1,Math.max(0,window.scrollY/h)):0)+')';
+    if(top)top.classList.toggle('on',window.scrollY>window.innerHeight*1.5);
   }}
+  if(top)top.addEventListener('click',function(){{
+    /* Move focus to the skip link's target as well as scrolling. A keyboard or
+       screen-reader user who only got a scroll would still be tabbing from the
+       footer on the next Tab press, i.e. the button would do nothing for them. */
+    var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+    window.scrollTo({{top:0,behavior:rm?'auto':'smooth'}});
+    var b=document.querySelector('.brand');
+    if(b){{b.setAttribute('tabindex','-1');b.focus({{preventScroll:true}})}}
+  }});
   addEventListener('scroll',function(){{if(!pending){{pending=true;requestAnimationFrame(draw)}}}},{{passive:true}});
   addEventListener('resize',draw,{{passive:true}});
   draw();

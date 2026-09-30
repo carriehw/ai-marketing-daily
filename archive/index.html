@@ -57,6 +57,25 @@ main{padding:22px 0 60px}
    homepage, so the arrow silently inherited .issue's --ink instead of the accent
    it was written to use. Fixed to --accent while auditing the palette. */
 .issue .go{color:var(--accent);font-weight:700;font-size:18px;margin-left:4px}
+/* ---- quarter headings ------------------------------------------------------
+   Colours are stated explicitly, never inherited from a shared class. The bug
+   this file already carries a comment about (`.sub` reaching a second element on
+   a different background and rendering at 1.33:1) came from exactly that kind of
+   reuse, so `.qtr-h` gets its own selectors on the warm-paper zone only:
+   --ink on --paper = 14.2:1, --muted on --paper = 5.3:1.
+   First group has no top margin — a gap above the newest issue would read as a
+   rendering fault at the top of the page. */
+.qtr{margin:0 0 4px}
+.qtr+.qtr{margin-top:30px}
+.qtr-h,.mon-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 10px}
+/* Quarter is the louder of the two: a rule line plus ink. Month is a quiet label
+   with no rule, so the two levels are told apart by weight and colour rather than
+   by size alone (at 13-14px a 1px size step is not a hierarchy). */
+.qtr-h{padding:0 4px 8px;border-bottom:1px solid var(--line);font-size:15px;font-weight:700;color:var(--ink);letter-spacing:.02em}
+.mon-h{padding:0 4px;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:none}
+.qtr-h+.mon-h{margin-top:2px}
+.issue+.mon-h{margin-top:20px}
+.qtr-h .qn,.mon-h .qn{font-weight:600;color:var(--muted);font-size:12.5px;white-space:nowrap}
 .empty{color:var(--muted);text-align:center;padding:40px 0}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:18px 0 40px;text-align:center}
 </style>
@@ -79,6 +98,8 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 </div></header>
 <main class="wrap">
 <p class="sub" style="margin:0 0 16px"><span class="l-zh">共 <b>59</b> 期</span><span class="l-en"><b>59</b> issues</span></p>
+<section class="qtr"><h2 class="qtr-h"><span><span class="l-zh">2026 年第三季</span><span class="l-en">Q3 2026</span></span><span class="qn"><span class="l-zh">59 期</span><span class="l-en">59 issues</span></span></h2>
+<h3 class="mon-h"><span><span class="l-zh">2026 年 9 月</span><span class="l-en">September 2026</span></span><span class="qn"><span class="l-zh">27 期</span><span class="l-en">27 issues</span></span></h3>
 <a class="issue" href="2026-09-30.html"><span class="d"><span class="l-zh">2026年9月30日 · 星期三</span><span class="l-en">September 30, 2026 · Wednesday</span></span><span class="meta"><span class="cnt">27</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-09-29.html"><span class="d"><span class="l-zh">2026年9月29日 · 星期二</span><span class="l-en">September 29, 2026 · Tuesday</span></span><span class="meta"><span class="cnt">20</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-09-28.html"><span class="d"><span class="l-zh">2026年9月28日 · 星期一</span><span class="l-en">September 28, 2026 · Monday</span></span><span class="meta"><span class="cnt">20</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
@@ -106,6 +127,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <a class="issue" href="2026-09-04.html"><span class="d"><span class="l-zh">2026年9月4日 · 星期五</span><span class="l-en">September 4, 2026 · Friday</span></span><span class="meta"><span class="cnt">17</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-09-03.html"><span class="d"><span class="l-zh">2026年9月3日 · 星期四</span><span class="l-en">September 3, 2026 · Thursday</span></span><span class="meta"><span class="cnt">18</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-09-02.html"><span class="d"><span class="l-zh">2026年9月2日 · 星期三</span><span class="l-en">September 2, 2026 · Wednesday</span></span><span class="meta"><span class="cnt">20</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
+<h3 class="mon-h"><span><span class="l-zh">2026 年 8 月</span><span class="l-en">August 2026</span></span><span class="qn"><span class="l-zh">23 期</span><span class="l-en">23 issues</span></span></h3>
 <a class="issue" href="2026-08-31.html"><span class="d"><span class="l-zh">2026年8月31日 · 星期一</span><span class="l-en">August 31, 2026 · Monday</span></span><span class="meta"><span class="cnt">20</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-08-26.html"><span class="d"><span class="l-zh">2026年8月26日 · 星期三</span><span class="l-en">August 26, 2026 · Wednesday</span></span><span class="meta"><span class="cnt">19</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-08-23.html"><span class="d"><span class="l-zh">2026年8月23日 · 星期日</span><span class="l-en">August 23, 2026 · Sunday</span></span><span class="meta"><span class="cnt">21</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
@@ -129,6 +151,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <a class="issue" href="2026-08-03.html"><span class="d"><span class="l-zh">2026年8月3日 · 星期一</span><span class="l-en">August 3, 2026 · Monday</span></span><span class="meta"><span class="cnt">18</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-08-02.html"><span class="d"><span class="l-zh">2026年8月2日 · 星期日</span><span class="l-en">August 2, 2026 · Sunday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-08-01.html"><span class="d"><span class="l-zh">2026年8月1日 · 星期六</span><span class="l-en">August 1, 2026 · Saturday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
+<h3 class="mon-h"><span><span class="l-zh">2026 年 7 月</span><span class="l-en">July 2026</span></span><span class="qn"><span class="l-zh">9 期</span><span class="l-en">9 issues</span></span></h3>
 <a class="issue" href="2026-07-31.html"><span class="d"><span class="l-zh">2026年7月31日 · 星期五</span><span class="l-en">July 31, 2026 · Friday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-07-30.html"><span class="d"><span class="l-zh">2026年7月30日 · 星期四</span><span class="l-en">July 30, 2026 · Thursday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-07-29.html"><span class="d"><span class="l-zh">2026年7月29日 · 星期三</span><span class="l-en">July 29, 2026 · Wednesday</span></span><span class="meta"><span class="cnt">24</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
@@ -138,6 +161,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;paddin
 <a class="issue" href="2026-07-25.html"><span class="d"><span class="l-zh">2026年7月25日 · 星期六</span><span class="l-en">July 25, 2026 · Saturday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-07-24.html"><span class="d"><span class="l-zh">2026年7月24日 · 星期五</span><span class="l-en">July 24, 2026 · Friday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
 <a class="issue" href="2026-07-23.html"><span class="d"><span class="l-zh">2026年7月23日 · 星期四</span><span class="l-en">July 23, 2026 · Thursday</span></span><span class="meta"><span class="cnt">30</span><span class="l-zh">條精選</span><span class="l-en">picks</span><span class="go">→</span></span></a>
+</section>
 </main>
 <footer><div class="wrap"><span class="l-zh">歷史存檔 · 由 2026年7月23日 起</span><span class="l-en">Archive · since July 23, 2026</span></div></footer>
 <script>
