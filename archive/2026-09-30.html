@@ -168,7 +168,18 @@ html[data-lang="en"] .l-zh{display:none}
   background:linear-gradient(135deg,var(--i-violet) 0%,var(--i-blue) 30%,var(--i-navy) 64%,var(--i-plum) 100%)}
 .eyebrow{color:var(--lime);font-weight:800;text-transform:uppercase;font-size:12.5px;letter-spacing:.14em}
 h1{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin:14px 0 18px;font-weight:800;color:var(--on-dark)}
-.hero-sub{font-size:clamp(16.5px,1.9vw,20px);color:var(--on-dark-2);max-width:660px;margin:0 0 20px}
+/* text-wrap:balance — ONLY on short display text (this standfirst and the
+   .thesis headline), never on body copy. Measured, zh mode, 9 widths:
+   without it the standfirst broke 33 + 「動。」 at every width from 1000px up
+   (a 2-character orphan line, 6% of the widest line). With it: 18 + 17, 94%.
+   Scope matters — the same property on .story .sum shrank paragraphs by up to
+   276px to even the lines out, which re-creates the earlier complaint that the
+   content sits narrower than its own headline. balance evens SHORT text; on a
+   5-line paragraph it just makes the whole block narrow. Body copy is left alone.
+   text-wrap:pretty was measured too and moved nothing here (25 orphans before,
+   25 after) — chromium's pretty does not rebalance CJK. */
+.hero-sub{font-size:clamp(16.5px,1.9vw,20px);color:var(--on-dark-2);max-width:660px;margin:0 0 20px;
+  text-wrap:balance}
 .issue-meta{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}
 /* Direct child only. `span` as a descendant selector also caught the inner
    <span class="l-zh">/<span class="l-en"> that bi() emits, so each pill grew a
@@ -271,7 +282,12 @@ h1{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin
    ragged lines (its own line-ends spread over 744px), which implies no right edge
    at all, so the same 64px shortfall was invisible. A width-specific defect. */
 .thesis{--measure:820px}
-.thesis blockquote{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}
+/* balance here too — display text, same reasoning as .hero-sub above. Measured:
+   orphan last line at 5 of 9 widths (worst 9% of the widest line at 640-900px);
+   with balance, 81-87% at every width. The .thesis <p> below is body copy and
+   stays untouched. */
+.thesis blockquote{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750;
+  text-wrap:balance}
 .thesis p{max-width:var(--measure);margin:0;color:rgba(255,255,255,.85);font-size:16.5px}
 
 /* ---- category headers ---- */
