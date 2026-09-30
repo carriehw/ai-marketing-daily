@@ -559,7 +559,11 @@ _ZH_FLAG = {
 }
 # 「同」 is 與/和 when it joins two things, but 相同/同步/共同/同質 are standard
 # Chinese and must not be touched — so match the conjunction, not the character.
-_TONG_OK = re.compile(r"(相同|同步|共同|同質|同時|同業|同一|同事|認同|同意|不同|同期|同類|同儕|同盟|同行|同名|贊同|雷同)")
+# 同比/同項/同級 are the ones that bite in this beat: a price table writes
+# 「Astra 同項為 10／1／50 美元」and a market report writes 「同比增長超過 100%」,
+# both of which a blind conjunction swap turns into 與項/與比 — reads as a typo.
+_TONG_OK = re.compile(r"(相同|同步|共同|同質|同時|同業|同一|同事|認同|同意|不同|同期|同類|同儕|同盟|同行|同名|贊同|雷同"
+                      r"|同比|同項|同級|同款|同價|同等|同組|同區|同日|同月|同年|同源|同檔|同城|同齡|同儕|同僚|同窗|同好)")
 # the space is optional because Latin brand names get one ("整合同 AI 原生對手")
 _TONG_CONJ = re.compile(r"([一-鿿A-Za-z0-9]{2,10})( ?)同( ?)([一-鿿A-Za-z0-9]{2,10})")
 
@@ -584,7 +588,10 @@ def _fix_tong(t):
 # also understood in HK (數據/影片/介面) over the HK-only one (質素/服務器/數碼).
 # Registered names are exempt: 電通數碼 is Dentsu Digital's actual company name,
 # so a blind 數碼→數位 swap would corrupt it. Hence _TERM_KEEP is checked first.
-_TERM_KEEP = re.compile(r"(電通數碼|數碼通|數碼港|香港數碼|數碼營銷署)")
+# 中國互聯網絡信息中心 (CNNIC) is a registered body name — 網絡 is part of the name,
+# so the generic 網絡→網路 swap would rename the institution it cites.
+_TERM_KEEP = re.compile(r"(電通數碼|數碼通|數碼港|香港數碼|數碼營銷署"
+                        r"|中國互聯網絡信息中心|互聯網絡信息中心)")
 _TERM_FIX = {
     "服務器": "伺服器", "軟件": "軟體", "硬件": "硬體", "網絡": "網路",
     "質素": "品質", "視頻": "影片", "激活": "啟用", "缺省": "預設",
@@ -612,12 +619,29 @@ def _fix_terms(t):
 
 _ZH_FIELDS = ("title", "summary", "why", "pattern")
 
+# 係 is 是 on its own, and it is also the second character of standard-Chinese
+# compounds (關係/體系/聯係is not a word, 關係 is). A blind 係→是 turns 關係 into
+# 關是 — a silent corruption that reads as a typo in a client-facing page, so the
+# compounds are masked before the particle pass runs.
+_ZH_KEEP = re.compile(r"(關係|聯繫|體系|系統|世系|派系|語系|直系|母系|父系"
+                      r"|同場|在場|臨場|現場|場次|入場|離場|全場|開場|收場)")
+
+
 def _to_written_zh(t):
     """Return (fixed_text, [(from, to), ...]) — longest keys first so 唔係→不是
     wins over 唔→不."""
     if not t:
         return t, []
     out, applied = str(t), []
+    # mask standard-Chinese compounds that contain a particle character, so the
+    # particle pass and the 同-conjunction pass cannot break them apart
+    _keep = []
+
+    def _mask_keep(m):
+        _keep.append(m.group(0))
+        return f"\x02{len(_keep) - 1}\x02"
+
+    out = _ZH_KEEP.sub(_mask_keep, out)
     for _k in sorted(_ZH_FIX, key=len, reverse=True):
         if _k in out:
             out = out.replace(_k, _ZH_FIX[_k])
@@ -627,6 +651,8 @@ def _to_written_zh(t):
         applied.append(("A同B", "A與B"))
     out, _terms = _fix_terms(out)
     applied.extend(_terms)
+    for _i, _h in enumerate(_keep):
+        out = out.replace(f"\x02{_i}\x02", _h)
     return out, applied
 
 _zh_fixed_n = 0
