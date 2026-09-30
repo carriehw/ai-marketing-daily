@@ -14,15 +14,35 @@ plus CSS — no reload, works offline.
 CARD ANATOMY (each block degrades gracefully if its field is absent)
   source pill · date · number
   headline (links to the original)
+  昨日續篇 Since Yesterday  ← items[].followup (OPTIONAL — see "follow-ups" below)
   重點摘要 Key Highlights   ← items[].highlights[] (2–3 bullets); falls back to summary
   行業洞察 Industry Insight ← items[].why
-  趨勢觀察 Pattern Watch    ← items[].pattern (OPTIONAL — see "follow-ups" below)
+  趨勢觀察 Pattern Watch    ← items[].pattern (OPTIONAL — forward-looking)
   signal tag · region tag · 閱讀原文 →
 
-FOLLOW-UPS, NOT DUPLICATE CARDS
-  When today's news advances a story already published, do NOT cut a second card
-  for it. Put the new angle in `pattern` on the ORIGINAL card. The dedup pass
-  below drops same-URL repeats outright, so a duplicate card cannot reach the page.
+FOLLOW-UPS: SAY WHAT MOVED, DO NOT DELETE THE STORY
+  Two different things get confused, so keep them apart:
+
+  (a) The SAME ARTICLE twice. Same link on two days, or two cards for one link on
+      one day. That is a genuine duplicate and the dedup pass below removes it.
+
+  (b) A FOLLOW-UP — a DIFFERENT article that advances a story already published.
+      Yesterday「OpenAI 失控 Agent 呼叫 DeepSeek 評估漏洞」, today「OpenAI 取消
+      Astra 6.1 發布，欺騙性行為測試不達標」. Do NOT drop this as a duplicate:
+      dropping it hides the outcome, which is the part the reader was waiting for.
+      Instead fill `followup` with ONE sentence covering three things —
+        1. where the earlier piece left off (name the day),
+        2. what is DIFFERENT today,
+        3. the latest state of the thread.
+      e.g. followup: "9 月 28 日我們報過該 Agent 主動呼叫外部模型試探漏洞；今日
+           OpenAI 直接取消 Astra 6.1 發布，理由是欺騙性行為測試不達標 —— 從
+           『發現風險』走到『因風險停船』。"
+      It renders as 昨日續篇 above 重點摘要, i.e. the first thing after the headline.
+
+  The cross-day detection pass matches HEADLINES against seen-stories.json (7-day
+  window). When it recognises a thread and `followup` is empty it prints a WARN
+  telling the editor to add the sentence — explicitly NOT to delete the card.
+  Use `pattern` for where the thread is heading; `followup` for what already moved.
 
 Config keys in data.json (optional unless noted):
   site_title     : masthead brand      (default "AI・行銷情報")
@@ -48,7 +68,8 @@ Config keys in data.json (optional unless noted):
   section_desc / section_desc_en : one-line descriptor per section (same order)
   items[]        : {title, summary, source, url, time, section, action, region, why,
                     title_en, summary_en, why_en,
-                    highlights[], highlights_en[], pattern, pattern_en}
+                    highlights[], highlights_en[], pattern, pattern_en,
+                    followup, followup_en}
 
 Any missing *_en field falls back to its Chinese value, so the site never breaks
 on a day the translations are incomplete — it just shows Chinese in the EN view.
@@ -236,6 +257,43 @@ def _terms(t):
     out |= {cj[i:i+3] for i in range(len(cj) - 2)}
     return {x for x in out if x not in _STOP}
 
+_CJ3 = re.compile(r"^[一-鿿]{3}$")
+
+def _merge_phrases(shared):
+    """Glue overlapping CJK trigrams back into the phrase they came from.
+
+    _terms() slides a 3-char window, so the single phrase 程序化廣告 emits
+    {程序化, 序化廣, 化廣告} — three "terms" that are one piece of evidence. Counting
+    them separately made any two headlines sharing ONE ordinary phrase look like a
+    3-term match, which is why 「IAB Europe：86% 廣告業者已用 AI 處理程序化廣告」 was
+    reported as a follow-up to 「Scope3 更名為 Apostra…程序化廣告」 — unrelated stories
+    that merely use the same industry term. Merging first means the evidence count
+    counts distinct phrases, which is what the 2+ threshold was always meant to mean."""
+    parts = sorted(x for x in shared if _CJ3.match(x))
+    other = sorted(x for x in shared if not _CJ3.match(x))
+    grew = True
+    while grew:
+        grew = False
+        for a in list(parts):
+            for b in list(parts):
+                if a == b:
+                    continue
+                if a[-2:] == b[:2]:                 # 程序化 + 序化廣 -> 程序化廣
+                    parts = [p for p in parts if p not in (a, b)] + [a + b[2:]]
+                    grew = True
+                    break
+            if grew:
+                break
+    parts = [p for p in parts if not any(p != q and p in q for q in parts)]
+    return set(parts) | set(other)
+
+# Phrases that name a whole category rather than a specific story. Two headlines
+# sharing only these are about the same INDUSTRY, not the same event, so they must
+# not count as follow-up evidence on their own.
+_GENERIC = {"agent", "agents", "platform", "chatbot", "assistant", "copilot",
+            "程序化廣告", "推出對話", "對話式", "生成式", "大模型", "智能體",
+            "程序化", "廣告主", "媒體代理", "代理商", "人工智能", "自動化"}
+
 # Document frequency across today's items: a term used by many cards (e.g.
 # "google" on a Google-heavy day) carries no identifying power.
 _TERMS = [_terms(i.get("title", "")) for i in data["items"]]
@@ -248,9 +306,14 @@ def _rare(s):
     return {x for x in s if _DF.get(x, 0) <= 2}
 
 def _shared_terms(i, j):
-    """Rare terms two headlines have in common. Empirically: 0–1 shared term =
-    unrelated stories about the same vendor; 2+ = the same story re-angled."""
-    return _rare(_TERMS[i]) & _rare(_TERMS[j])
+    """Story-specific phrases two headlines have in common. Empirically: 0–1 shared
+    phrase = unrelated stories about the same vendor; 2+ = the same story re-angled.
+
+    Trigrams are merged and category words dropped before counting, so 「Nvidia 推出
+    Open Agent Safety Platform」 and 「Meta 發布 Enterprise Platform，Muse Agent…」 no
+    longer count as one story on the strength of agent+platform alone."""
+    _sh = _merge_phrases(_rare(_TERMS[i]) & _rare(_TERMS[j]))
+    return {x for x in _sh if x not in _GENERIC and len(x) >= 3}
 
 def _title_key(t):
     """Strip everything but CJK chars and latin word chars, for fuzzy compare."""
@@ -370,6 +433,96 @@ for _it in data["items"]:
         print(f"WARN 七日內出過：「{_it.get('title','')}」（{_prev} 已出）→ {_it.get('url','')}"
               f"\n     → 若有新進展，寫入原卡跟進；若冇新料，今日剔走。", file=sys.stderr)
         _warn += 1
+
+# ---- 5) cross-day FOLLOW-UP: same developing story, different article --------
+# The url check above only catches the identical link. The case the reader
+# actually cares about is a follow-up: yesterday 「OpenAI 失控 Agent 呼叫 DeepSeek
+# 評估漏洞」, today 「OpenAI 取消 Astra 6.1 發布，欺騙性行為測試不達標」 — two
+# different articles on one developing thread. Deleting the second would hide the
+# outcome; running it cold makes the reader reconstruct the context themselves.
+#
+# So we MATCH ON HEADLINES (seen-stories.json) and require the newer card to say
+# what moved. That sentence goes in `followup` and renders as 「昨日續篇」 above
+# the summary — the one thing a daily brief can offer that a search cannot.
+_stories_path = ROOT / "seen-stories.json"
+_stories = {}
+if _stories_path.is_file():
+    try:
+        _stories = json.loads(_stories_path.read_text(encoding="utf-8"))
+        if not isinstance(_stories, dict):
+            _stories = {}
+    except Exception:
+        print("WARN seen-stories.json 讀唔到／格式唔對 → 當空，跨日續篇偵測今日跳過",
+              file=sys.stderr)
+        _stories = {}
+
+# Past headlines within 7 days, newest first, excluding today's own entry.
+_past = []
+if ISO:
+    try:
+        _t0 = datetime.strptime(ISO, "%Y-%m-%d")
+        for _d in sorted(_stories, reverse=True):
+            if _d == ISO or not re.match(r"^\d{4}-\d{2}-\d{2}$", _d):
+                continue
+            try:
+                _ag = (_t0 - datetime.strptime(_d, "%Y-%m-%d")).days
+            except Exception:
+                continue
+            if 1 <= _ag <= 7:
+                for _e in (_stories[_d] or []):
+                    _ttl = (_e.get("t") if isinstance(_e, dict) else str(_e)) or ""
+                    if _ttl.strip():
+                        _past.append((_d, _ttl.strip(), (_e.get("u") if isinstance(_e, dict) else "") or ""))
+    except Exception:
+        pass
+
+if _past:
+    # Rarity is judged across the WHOLE window, not just today: a term in many
+    # past headlines (google, openai on a busy week) identifies nothing.
+    _pdf = {}
+    for _d, _ttl, _u in _past:
+        for _x in _terms(_ttl):
+            _pdf[_x] = _pdf.get(_x, 0) + 1
+    _PAST_RARE = [(_d, _ttl, _u, {x for x in _terms(_ttl) if _pdf.get(x, 0) <= 3})
+                  for _d, _ttl, _u in _past]
+
+    for _i, _it in enumerate(data["items"]):
+        _k = _norm_url(_it.get("url", ""))
+        if _recent.get(_k):
+            continue          # already flagged as the identical link above
+        _mine = _rare(_TERMS[_i])
+        if not _mine:
+            continue
+        _best, _bsh, _bscore = None, set(), 0
+        for _d, _ttl, _u, _prare in _PAST_RARE:
+            if _u and _u == _k:
+                continue
+            # Merge overlapping trigrams FIRST, then drop category words. What is
+            # left is the count of distinct, story-specific things the two headlines
+            # share — the only number the 2+ threshold can honestly be applied to.
+            _sh = _merge_phrases(_mine & _prare)
+            _ev = {x for x in _sh if x not in _GENERIC and len(x) >= 3}
+            _sim = _similar(_it.get("title", ""), _ttl)
+            # 2+ specific phrases in common, or a near-identical headline.
+            if len(_ev) >= 2 or _sim >= 0.5:
+                _score = len(_ev) * 10 + int(_sim * 10)
+                if _score > _bscore or _best is None:
+                    _best, _bsh, _bscore = (_d, _ttl), _ev or _sh, _score
+        if not _best:
+            continue
+        _fu = str(_it.get("followup", "") or _it.get("followup_en", "")).strip()
+        if _fu:
+            print(f"NOTE 續篇已註明：「{_it.get('title','')}」"
+                  f"\n     接住 {_best[0]}「{_best[1]}」", file=sys.stderr)
+        else:
+            print(f"WARN 呢則係 {_best[0]} 嘅續篇，但冇寫明新進展："
+                  f"\n     今日：{_it.get('title','')}"
+                  f"\n     {_best[0]}：{_best[1]}"
+                  + (f"\n     共同關鍵詞：{'、'.join(sorted(_bsh))}" if _bsh else "")
+                  + f"\n     → 唔好剔走呢則。加 `followup`（＋`followup_en`）一句，"
+                  f"講明昨日講到邊、今日有咩唔同、最新發展係乜。讀者最需要嘅就係呢句。",
+                  file=sys.stderr)
+            _warn += 1
 
 # =============================================================================
 # 繁體中文正規化 — the audience is Taiwan AND Hong Kong, plus clients who forward
@@ -661,6 +814,16 @@ for s in data["sections"]:
         tm = str(it.get("time", ""))
         sec_cls = SEC_CLS[s]
 
+        # 昨日續篇 — when this story already ran on an earlier day, this line says what
+        # MOVED since then. It sits above 重點摘要 on purpose: a reader who saw the
+        # earlier card needs the delta first, and a reader who did not still gets the
+        # thread in one sentence. This is the alternative to deleting the story as a
+        # duplicate — deleting it would hide the outcome of a developing line.
+        fu = ""
+        if str(it.get("followup", "") or it.get("followup_en", "")).strip():
+            fu = (f'<div class="followup"><b class="k">{bi("昨日續篇", "Since Yesterday")}</b>'
+                  f'<p>{bi(it.get("followup",""), it.get("followup_en"))}</p></div>')
+
         # 重點摘要 — bullets when provided, otherwise the one-paragraph summary
         hl_zh, hl_en = it.get("highlights") or [], it.get("highlights_en") or []
         if isinstance(hl_zh, list) and (hl_zh or hl_en):
@@ -725,7 +888,7 @@ for s in data["sections"]:
         out.append(f'''<article class="story {sec_cls}" id="s{n}">
 <div class="story-meta"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
-{body}
+{fu}{body}
 {take}
 {pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
@@ -892,11 +1055,19 @@ page = f'''<!doctype html>
 <title>{html.escape(SITE_TITLE_EN)} · {html.escape(ISO)}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {_og}
-<meta name="theme-color" content="#4a33e0">
+<!-- Status-bar tint, matched to the icon's base navy so the chrome above the page is the
+     same colour as the tile the reader tapped. The splash stays paper (manifest
+     background_color) so launching does not flash a dark screen. -->
+<meta name="theme-color" content="#141852">
 <link rel="icon" href="{_base}favicon.ico" sizes="32x32">
 <link rel="icon" type="image/png" sizes="192x192" href="{_base}icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{_base}icon-180.png">
 <link rel="manifest" href="{_base}manifest.webmanifest">
+<!-- Standalone iOS: without this the status bar sits on paper-coloured page background
+     and the time/battery go invisible. `black-translucent` would push content under the
+     notch, so `default` is correct for a page with its own sticky topbar. -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="AI・行銷情報">
 <meta name="application-name" content="AI・行銷情報">
 <script type="application/ld+json">{_ld}</script>
@@ -990,6 +1161,28 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
 #sharebox input{{flex:1;font:inherit;font-size:13px;padding:8px 11px;border:1px solid var(--accent);border-radius:6px;color:var(--ink);background:#fff;min-width:0}}
 #sharebox span{{font-size:12px;color:var(--muted);white-space:nowrap}}
 
+/* ---- add-to-home-screen hint -------------------------------------------------
+   Sits below the hero buttons, above the legend. Deliberately quiet: a dashed
+   outline rather than a filled card, so it reads as a tip and not as a story.
+   Hidden by default (`hidden` attribute) and only revealed by script on a touch
+   device that is not already standalone — a desktop reader would be told to do
+   something impossible, and a reader who already installed it would be nagged
+   about a thing they have done. */
+#a2hs{{display:flex;align-items:flex-start;gap:10px;margin:14px 0 0;padding:11px 13px;
+  border:1px dashed var(--accent);border-radius:12px;background:var(--accent-soft)}}
+#a2hs[hidden]{{display:none}}
+.a2hs-ic{{font-size:16px;line-height:1.35;flex:none}}
+.a2hs-txt{{margin:0;font-size:13px;line-height:1.55;color:var(--body);flex:1}}
+.a2hs-txt b{{color:var(--accent-d)}}
+/* Both platforms' instructions are in the DOM; script adds is-ios / is-and to reveal
+   exactly one. Default hidden, so if script never runs nothing contradictory shows. */
+.a2hs-ios,.a2hs-and{{display:none}}
+#a2hs.is-ios .a2hs-ios,#a2hs.is-and .a2hs-and{{display:inline}}
+#a2hs-x{{flex:none;border:0;background:transparent;color:var(--muted);font-size:14px;
+  line-height:1;padding:3px 2px;cursor:pointer;border-radius:6px}}
+#a2hs-x:hover{{color:var(--ink);background:#fff}}
+#a2hs-x:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+
 /* ---- signal legend + section counters ---- */
 /* Each badge and its gloss are ONE flex item (.lg), not two. Flat flex items let
    the wrap fall between 要留意 and 平台或趨勢變動 at phone widths, so the badge
@@ -1061,7 +1254,7 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .story h3 a:hover{{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}}
 .story h3 a:focus-visible{{outline:2px solid var(--accent);outline-offset:3px}}
 .block{{margin:0 0 10px}}
-.block b.k,.take b.k,.predict b.k,.detail b.k{{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:5px;color:var(--muted)}}
+.block b.k,.take b.k,.predict b.k,.detail b.k,.followup b.k{{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;margin-bottom:5px;color:var(--muted)}}
 .block p{{margin:0;color:var(--body);font-size:15px;line-height:1.62}}
 .kh{{margin:0;padding-left:19px;color:var(--body);font-size:15px;line-height:1.62}}
 .kh li{{margin-bottom:5px}}
@@ -1072,6 +1265,13 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .predict{{border-left:3px solid #e3c76c;background:#fff8e8;border-radius:0 12px 12px 0;padding:12px 16px;margin:0 0 10px}}
 .predict b.k{{color:var(--amber)}}
 .predict p{{margin:0;font-size:15px;line-height:1.62;color:var(--body)}}
+/* 昨日續篇 — the delta against an earlier day's card. Sits directly under the
+   headline, before 重點摘要, because it is the context the reader needs first.
+   Cool blue so it reads as "orientation", distinct from 行業洞察 (purple, our
+   opinion) and 趨勢觀察 (amber, forward-looking). */
+.followup{{border-left:3px solid #60bdf1;background:#eef7fd;border-radius:0 12px 12px 0;padding:11px 16px;margin:0 0 11px}}
+.followup b.k{{color:#1d6f9e}}
+.followup p{{margin:0;font-size:14.5px;line-height:1.6;color:var(--body)}}
 /* Expandable full write-up — the paywall workaround. Our own Chinese/English
    account of the story lives here, so a reader who cannot open the source still
    gets the substance without leaving the page. Collapsed by default so the
@@ -1175,7 +1375,7 @@ footer b{{color:var(--ink)}}
 /* print / PDF: many readers forward this as a PDF to clients */
 @media print{{
   body{{background:#fff}}
-  .topbar,.langtog,#share,.heroacts,#sharebox,#toast,.navlinks,#prog{{display:none!important}}
+  .topbar,.langtog,#share,.heroacts,#sharebox,#toast,.navlinks,#prog,#a2hs{{display:none!important}}
   .story{{break-inside:avoid;page-break-inside:avoid;box-shadow:none;border:1px solid #ccc}}
   .cat-head{{break-after:avoid;page-break-after:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
   .thesis,.take,.src,.signal,.paywall,.tldr{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -1225,6 +1425,23 @@ footer b{{color:var(--ink)}}
     <a class="archlink" href="archive/">{bi("📚 歷史存檔", "📚 Archive")}</a>
   </div>
   <div id="sharebox"><span>{bi("長按或全選以複製：", "Long-press / select all to copy:")}</span><input type="text" readonly value="{html.escape(SITE_URL)}"></div>
+  <!-- Add-to-home-screen hint. Shown ONLY on a phone/tablet that is NOT already
+       running standalone, and dismissable for 90 days. A banner that reappears every
+       morning on a daily-read site would be worse than no banner: it costs first-screen
+       space every single visit to deliver a one-time instruction. The iOS and Android
+       wording differ because the menu item does — telling an iPhone user to look for
+       「安裝應用程式」 sends them hunting for something that is not there. -->
+  <div id="a2hs" hidden>
+    <span class="a2hs-ic" aria-hidden="true">📲</span>
+    <!-- Both platforms' wording is rendered into the DOM and one is revealed with a
+         class. Writing it in via innerHTML/textContent would either inject markup or
+         print the bilingual <span> tags as literal text, and it would also break the
+         EN/中文 toggle, which works by CSS on those same spans. -->
+    <p class="a2hs-txt"><b>{bi("想每朝一撳就睇？", "Read it like an app?")}</b>
+      <span class="a2hs-ios">{bi("在 Safari 按下方「分享」→「加入主畫面」，就可以像 App 一樣全螢幕開啟，沒有網址列。", "In Safari, tap Share below → “Add to Home Screen” to open it full-screen like an app.")}</span><span class="a2hs-and">{bi("按瀏覽器右上角的選單鍵（三點）→「安裝應用程式／加到主畫面」，就可以像 App 一樣全螢幕開啟。", "Tap the three-dot menu at the top right of your browser → “Install app / Add to Home screen” to open it full-screen like an app.")}</span>
+    </p>
+    <button id="a2hs-x" type="button" aria-label="{html.escape(bi('關閉這個提示', 'Dismiss this tip'))}">✕</button>
+  </div>
   <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
   <div class="stats">{stats}</div>
   {tldr_html}
@@ -1264,6 +1481,47 @@ document.getElementById('share').addEventListener('click',async()=>{{
   if(legacyCopy()){{toast(msg);return}}
   showBox();
 }});
+
+/* ---- add-to-home-screen hint ----
+   Three gates, all of which must pass before the tip appears:
+     1. a touch device — `(hover:none) and (pointer:coarse)` is true on phones and
+        tablets and false on desktops (including Windows touch laptops, whose
+        primary pointer is still a mouse). A desktop reader has no "add to home
+        screen", so showing the tip there would simply be wrong. Deliberately NOT
+        gated on screen.width as well: that value is unreliable in embedded and
+        headless browsers, and it would exclude a landscape tablet where the tip
+        is perfectly valid. The pointer query is the honest signal.
+     2. not already running standalone — someone who installed it must never be
+        told to install it (display-mode:standalone on Android/Chrome,
+        navigator.standalone on iOS Safari);
+     3. not dismissed in the last 90 days — this is a site people open every
+        morning, so a permanent banner would tax every visit to deliver a
+        one-time instruction. Dismiss is remembered, and the whole thing is
+        wrapped in try/catch because Safari private mode throws on localStorage.
+   The instructions differ per platform because the menu item genuinely differs. */
+(function(){{
+  var box=document.getElementById('a2hs'); if(!box) return;
+  var x=document.getElementById('a2hs-x');
+  var KEY='amd-a2hs-off', DAYS=90;
+  function off(){{
+    try{{
+      var v=localStorage.getItem(KEY);
+      return !!v && (Date.now()-parseInt(v,10)) < DAYS*864e5;
+    }}catch(e){{return false}}
+  }}
+  var standalone = (window.matchMedia && matchMedia('(display-mode:standalone)').matches)
+                   || navigator.standalone===true;
+  var touch = matchMedia('(hover:none) and (pointer:coarse)').matches;
+  if(standalone || !touch || off()) return;
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent)
+            || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
+  box.classList.add(ios ? 'is-ios' : 'is-and');
+  box.hidden = false;
+  x.addEventListener('click', function(){{
+    box.hidden = true;
+    try{{localStorage.setItem(KEY, String(Date.now()))}}catch(e){{}}
+  }});
+}})();
 
 /* ---- reading progress + which section am I in ----
    scaleX on a fixed bar (compositor-only, no layout work per scroll event) and
@@ -1331,6 +1589,25 @@ if ISO:
         pass
     _seen_path.write_text(json.dumps(_seen, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
                           encoding="utf-8")
+
+# --- Remember today's HEADLINES too -----------------------------------------
+# seen-urls.json can only catch the same link twice. A genuine follow-up is a
+# DIFFERENT article about the same developing story, so the url check is blind
+# to exactly the case that matters most to the reader: "this ran yesterday —
+# what changed?". Storing headlines lets tomorrow's run recognise the thread.
+if ISO:
+    _stories[ISO] = [{"t": (i.get("title", "") or "").strip(),
+                      "u": _norm_url(i.get("url", ""))}
+                     for i in data["items"] if (i.get("title", "") or "").strip()]
+    try:
+        _cut2 = datetime.strptime(ISO, "%Y-%m-%d") - timedelta(days=14)
+        _stories = {d: v for d, v in _stories.items()
+                    if re.match(r"^\d{4}-\d{2}-\d{2}$", d)
+                    and datetime.strptime(d, "%Y-%m-%d") >= _cut2}
+    except Exception:
+        pass
+    _stories_path.write_text(json.dumps(_stories, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                             encoding="utf-8")
 
 print(f"OK index.html total={total} sections=" + ",".join(f"{s}:{len(groups[s])}" for s in data["sections"])
       + (f"  ⚠ {_warn} warning(s) — 見上面 stderr" if _warn else "  (0 warnings)"))

@@ -141,6 +141,14 @@ def item_block(it, is_last):
     title = esc(pick(it, "title_en", "title"))
     summary = esc(pick(it, "summary_en", "summary"))
     why = esc(pick(it, "why_en", "why"))
+    # Since yesterday — the delta against an earlier issue. It goes ABOVE the summary
+    # because an email reader who saw the earlier story needs the change first, and
+    # this is the one line that tells them the thread moved rather than repeated.
+    fu_raw = str(it.get("followup_en", "") or it.get("followup", "")).strip()
+    followup = (f'<p style="margin:9px 0 0 0;padding:8px 11px;border-left:3px solid #60BDF1;'
+                f'background-color:#EEF7FD;font-family:{SANS};font-size:12.5px;line-height:1.5;'
+                f'color:#3C4B47;" class="ink"><strong style="color:#1D6F9E;">Since yesterday:</strong> '
+                f'{esc(fu_raw)}</p>') if fu_raw else ""
     border = "" if is_last else f"border-bottom:1px solid {LINE};"
     pad = "padding:14px 0 0 0;" if is_last else "padding:14px 0 18px 0;"
     return f'''<div style="{pad}{border}">
@@ -149,6 +157,7 @@ def item_block(it, is_last):
   <div class="item-title" style="margin-top:10px;font-family:{SANS};font-size:16px;font-weight:700;line-height:1.35;">
     <a href="{url}" target="_blank" style="color:{INK};text-decoration:none;" class="ink">{title}</a>
   </div>
+{followup}
   <p style="margin:7px 0 0 0;font-family:{SANS};font-size:13.5px;line-height:1.5;color:#3C4B47;" class="ink">{summary}</p>
   <p style="margin:8px 0 0 0;font-family:{SANS};font-size:12.5px;line-height:1.45;color:{MUTED};" class="muted"><strong style="color:{JADE_D};" class="jade-text">Why it matters:</strong> {why}</p>
 </div>'''
