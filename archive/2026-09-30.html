@@ -217,8 +217,21 @@ h1{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin
    under AA (that needs 18.5px, or 14pt bold), so it needed 4.5 and did not have it.
    .90 gives 5.13:1 and still reads as a quieter layer than the quote. */
 .thesis .eyebrow{color:rgba(255,255,255,.9)}
-.thesis blockquote{font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}
-.thesis p{max-width:820px;margin:0;color:rgba(255,255,255,.85);font-size:16.5px}
+/* The headline and the body MUST share one measure, or they read as mis-aligned.
+   Measured at 1280px with only the body capped: the headline ran to x=1117 while
+   the body stopped at x=937 — 181px short — and because the headline's own three
+   line-ends sat within 33px of each other it implied a hard right edge the body
+   then failed to reach. The fix is NOT to widen the body: at the headline's 1028px
+   the body would run 62 full-width CJK chars per line, past the ~40-45 where CJK
+   reading starts needing a scan back to find the next line. So the HEADLINE comes
+   in to the body's measure instead. One shared var, so the two cannot drift apart.
+   At 820px both end within 5px of each other; headline stays 4 lines / 19 chars.
+   Note this only misread at >=1200px: at 1024px the headline already wrapped to 4
+   ragged lines (its own line-ends spread over 744px), which implies no right edge
+   at all, so the same 64px shortfall was invisible. A width-specific defect. */
+.thesis{--measure:820px}
+.thesis blockquote{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}
+.thesis p{max-width:var(--measure);margin:0;color:rgba(255,255,255,.85);font-size:16.5px}
 
 /* ---- category headers ---- */
 section[id]{scroll-margin-top:86px;margin:34px 0 0}
@@ -494,7 +507,7 @@ footer b{color:var(--ink)}
 
 <main class="wrap" id="main">
 <section id="sec0">
-<div class="cat-head c1"><span class="cat-emoji">📌</span><div class="cat-txt"><h2><span class="l-zh">AI大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></h2><p class="cat-desc"><span class="l-zh"></span><span class="l-en"></span></p></div><em><span class="l-zh">6 則</span><span class="l-en">6 items</span></em></div>
+<div class="cat-head c1"><span class="cat-emoji">🧠</span><div class="cat-txt"><h2><span class="l-zh">AI大模型 &amp; 市場動態</span><span class="l-en">AI Models &amp; Market</span></h2><p class="cat-desc"><span class="l-zh">今日 AI 產業最大的動作。</span><span class="l-en">The biggest moves in AI this morning.</span></p></div><em><span class="l-zh">6 則</span><span class="l-en">6 items</span></em></div>
 <div class="stories"><article class="story c1" id="s1">
 <div class="story-meta"><span class="src">VentureBeat</span><span class="date"><span class="l-zh">9月29日</span><span class="l-en">Sep 29</span></span><span class="no">01</span></div>
 <h3><a href="https://venturebeat.com/technology/openais-gpt-6-1-sol-offers-astra-like-performance-at-1-5th-price-a-new-ultrafast-tier-clocks-at-300-tokens-per-second" target="_blank" rel="noopener noreferrer"><span class="l-zh">OpenAI 改推 GPT-6.1 Sol，價格只要 Astra 五分之一</span><span class="l-en">OpenAI Ships GPT-6.1 Sol at One-Fifth of Astra&#x27;s Token Price</span></a></h3>
