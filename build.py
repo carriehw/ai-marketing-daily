@@ -1232,19 +1232,31 @@ if SITE_URL:
 # built, emit NOTHING and leave the system stack — a half-wired @font-face
 # pointing at missing files is worse than no webfont, because the page would then
 # claim a font it cannot load and the failure is silent.
+#
+# Every path that ends without a @font-face block MUST say so on stderr. The first
+# version only warned when fonts/ existed but was incomplete, and said nothing at
+# all when the directory was absent — which is exactly the case the scheduled run
+# hits (fresh session, fonts/ never fetched). Measured 2026-10-02: moving fonts/
+# away and rebuilding printed no warning and produced a page with 0 woff2
+# references. Silence on the most likely failure is the bug class this project
+# keeps paying for, so the quiet branch is now the loud one.
 _fontcss = ""
+_fontdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 try:
     import importlib.util as _ilu
     _fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_fonts.py")
-    if os.path.isdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")) \
-            and os.path.exists(_fp):
+    if not os.path.isdir(_fontdir):
+        print("  字體未齊，略過 @font-face（冇 fonts/ 資料夾 —— 排程要先 GET repo 嘅 "
+              "fonts/*.woff2 落本機）", file=sys.stderr)
+    elif not os.path.exists(_fp):
+        print("  字體未齊，略過 @font-face（冇 build_fonts.py）", file=sys.stderr)
+    else:
         _spec = _ilu.spec_from_file_location("_bf", _fp)
         _bf = _ilu.module_from_spec(_spec)
         _spec.loader.exec_module(_bf)
         _missing = [f for f, *_ in _bf.FACES
                     if not os.path.exists(os.path.join(
-                        os.path.dirname(os.path.abspath(__file__)), "fonts",
-                        f.rsplit(".", 1)[0] + ".woff2"))]
+                        _fontdir, f.rsplit(".", 1)[0] + ".woff2"))]
         if _missing:
             print("  字體未齊，略過 @font-face（缺 %s）" % ", ".join(_missing[:3]),
                   file=sys.stderr)

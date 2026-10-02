@@ -160,8 +160,17 @@ def verify(today, local_dir, checks, fetcher=fetch):
         checks.add(not bad, "引用嘅字體檔都取得到",
                    "共 %d 個 woff2，失敗：%s" % (len(refs), ", ".join(bad) or "無"))
     else:
-        # 冇引用唔係 fail（字體係選用），但要講明，否則「0 個全部成功」會被讀成通過。
-        checks.add(True, "引用嘅字體檔都取得到", "頁面冇引用 woff2（用系統字體）")
+        # 冇引用 = FAIL，唔係「用系統字體都可以」。
+        #
+        # 由 2026-10-02 起網站已經內嵌字體，所以 0 個引用唔再係一個選擇，而係退化。
+        # 呢個分支正係排程最易中嘅坑：build.py 嘅字體區塊設計成「fonts/ 唔齊就靜默
+        # 略過」（好過指向 404），而排程每朝喺 fresh session 入面要自己 GET 返
+        # build_fonts.py 同 fonts/*.woff2。若漏咗攞，頁面照樣出、照樣部署成功、
+        # 位元組亦對得上，只係字體默默消失 —— 若呢度判 PASS，就冇任何一道關卡會
+        # 發現，直到有人用 Windows 打開覺得「today 個版面有啲唔同」。
+        checks.add(False, "引用嘅字體檔都取得到",
+                   "頁面 0 個 woff2 引用 —— 字體已退化成系統字；"
+                   "排程要先 GET build_fonts.py 同 fonts/*.woff2 才跑 build.py")
 
     # --- 8. og:image 必須線上真的取得到，而且係圖 -------------------------
     # 分享卡最容易「本機有、冇傳上去」：本機 og/ 存在，Contents API 漏傳一個目錄，
@@ -293,7 +302,35 @@ def self_test(fetcher=fetch):
         print("  → 工具壞了：fail 清單係 %s（預期只有卡圖那項）\n" % f4)
         ok_all = False
 
-    print("self-test %s" % ("通過：四個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
+    # 對照 E：頁面完全冇 woff2 引用 —— 即排程喺 fresh session 漏咗攞 fonts/ 嘅情形。
+    # 呢個失敗最惡：所有檔案都「成功」，位元組線上本機一致，部署亦 success，只係字體
+    # 靜靜消失。所以要另造一個目錄（本機檔亦冇字體引用，令第 1 項位元組仍然相同），
+    # 證明攔住佢嘅係第 7 項本身，而唔係順手被位元組不符攔住。
+    d2 = tempfile.mkdtemp()
+    os.makedirs(os.path.join(d2, "archive"), exist_ok=True)
+    nofont = ("<title>AI Marketing Daily · %s</title>" % today
+              + OG_REF + '<div class="story">x</div>' * 10).encode()
+    with open(os.path.join(d2, "index.html"), "wb") as f:
+        f.write(nofont)
+    with open(os.path.join(d2, "archive/manifest.json"), "w") as f:
+        json.dump([{"date": today}, {"date": yday}], f)
+    c5 = verify(today, d2, Checks(), fetcher=fake({
+        "/index.html": (200, nofont),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ("列表 " + today).encode()),
+        ".jpg": (200, JPG_OK),
+    }))
+    f5 = [n for ok, n, _ in c5.rows if not ok]
+    print("  對照 E（頁面零個字體引用＝排程漏攞 fonts/，應該只有字體那項被攔住）")
+    c5.report()
+    if f5 == ["引用嘅字體檔都取得到"]:
+        print("  → 正確：字體靜默消失都攔得住\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期只有字體那項）\n" % f5)
+        ok_all = False
+
+    print("self-test %s" % ("通過：五個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
     return 0 if ok_all else 1
 
 
