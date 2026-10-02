@@ -127,20 +127,35 @@ LINKEDIN_URL  = data.get("linkedin_url", "https://www.linkedin.com/in/carriehuiw
 ISO           = str(data.get("date", "")).strip()
 
 # --- Traffic counting --------------------------------------------------------
-# Off unless data.json carries `analytics: {"provider":"goatcounter","code":"…"}`.
-# Deliberately opt-in and deliberately NOT defaulted to some guessed account
-# name: a script tag pointing at an endpoint that does not exist would load on
-# every reader's device, fail, and report nothing — a counter that looks wired
-# and measures zero is worse than no counter, because the zero reads as "nobody
-# visited" instead of "it was never connected".
-#
 # GoatCounter rather than Google Analytics, for reasons that are constraints and
 # not taste: this page is served from GitHub Pages with no server of its own, so
 # first-party logging is not available at all; GA4 sets identifiers and puts the
 # site inside GDPR/PDPO consent-banner territory for a daily brief that has no
 # login and collects nothing else. GoatCounter stores no cookie and no device
 # identifier, which keeps the page consent-free.
-_an = data.get("analytics") or {}
+#
+# The account lives HERE and not only in data.json — same reasoning as
+# LINKEDIN_URL above, and for a sharper reason. The routine writes data.json
+# fresh every morning from a session that has never seen yesterday's file. A
+# config key it forgets raises nothing: the page builds, the deploy succeeds,
+# every byte checks out, and the counter simply stops. Telling the routine to
+# carry the key forward would mean fetching the 150KB+ data.json back from the
+# repo to read one field, and that GET returns http_500 through the proxy (the
+# same large-file trap the routine already documents for index.html). An
+# instruction that cannot be followed is not a safeguard. So the default sits in
+# code, where a fresh session cannot drop it; data.json still overrides.
+#
+# The default is a verified account, not a guess — an endpoint that does not
+# exist would load on every reader's device, fail, and report nothing, and a
+# counter that looks wired while measuring zero is worse than no counter, because
+# the zero reads as "nobody visited" rather than "never connected". Measured
+# 2026-10-02: /count?test=1 on this code -> HTTP 200, while the same path on a
+# nonexistent account -> HTTP 400, so the 200 really does identify the account.
+# To switch counting off, set `"analytics": {"provider": ""}` in data.json.
+_AN_DEFAULT = {"provider": "goatcounter", "code": "carriehuiww"}
+_an = data.get("analytics")
+if not isinstance(_an, dict) or not _an:
+    _an = dict(_AN_DEFAULT)
 _an_provider = str(_an.get("provider", "")).strip().lower()
 _an_code = str(_an.get("code", "")).strip()
 # Self-hosted or custom domain allowed; default to the hosted service.

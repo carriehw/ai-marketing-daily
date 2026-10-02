@@ -187,6 +187,53 @@ def verify(today, local_dir, checks, fetcher=fetch):
     else:
         checks.add(False, "分享卡圖線上取得到", "頁面冇 og:image —— 分享到 Slack 會冇卡圖")
 
+    # --- 9. 統計器：首頁同存檔目錄頁都要有，而回報端點要真係收 ------------
+    # 呢項同第 7 項同一個病理：失敗完全靜默。漏咗 analytics 鍵、或者端點打錯字,
+    # 頁面照出、部署照成功、位元組照對，只係由嗰日起數字變成零 —— 而零會被讀成
+    # 「冇人睇」，唔係「冇接通」。所以唔只檢查「有冇 script 字樣」，要同時：
+    #   a. 兩個頁面都有 data-goatcounter（存檔目錄頁係另一個 generator 出，
+    #      兩次都試過獨立漏咗佢）；
+    #   b. 兩個頁面指住同一個端點（若 build.py 同 build_archive.py 嘅預設帳號
+    #      分叉，存檔會默默報去另一個帳號，總數永遠加唔埋）；
+    #   c. 真去 fetch 嗰個端點嘅 ?test=1，證明帳號存在 —— test=1 唔會記一筆，
+    #      所以驗證本身唔會刷花數字。有效性對照：唔存在嘅帳號回 400（實測
+    #      2026-10-02），所以 200 真係認得出帳號，唔係恆真。
+    # 但唔可以變成「關唔得」。若有人日後刻意寫 "analytics": {"provider": ""} 關掉統計，
+    # 呢項就唔應該攔住整日嘅出版 —— 咁樣就係對照 B 要防嘅假警報，日日阻住正常發佈。
+    # 所以先睇本機 data.json 係唔係明確關掉；只有「明確關掉」才略過。鍵缺失唔算關掉
+    # （generator 有預設值會照計），所以排程漏咗鍵依然會被下面攔住。
+    _an_off = False
+    try:
+        with open(lp("data.json"), "rb") as f:
+            _an_cfg = json.loads(f.read().decode("utf-8")).get("analytics")
+        _an_off = (isinstance(_an_cfg, dict) and _an_cfg
+                   and not str(_an_cfg.get("provider", "")).strip())
+    except Exception:
+        _an_off = False      # 讀唔到就照驗，唔好因為讀唔到配置而放行
+
+    def _eps(page_txt):
+        return sorted(set(re.findall(r"data-goatcounter','([^']+)'", page_txt)))
+
+    if _an_off:
+        checks.add(True, "統計器已接通且收得到",
+                   "data.json 明確關掉統計（analytics.provider 空）—— 略過，唔算失敗")
+    else:
+        ep_home, ep_arch = _eps(txt), _eps(itxt)
+        probs = []
+        if not ep_home:
+            probs.append("首頁冇統計器（data.json 嘅 analytics 鍵漏咗？）")
+        if not ep_arch:
+            probs.append("存檔目錄頁冇統計器")
+        if ep_home and ep_arch and ep_home != ep_arch:
+            probs.append("兩頁端點唔同：%s vs %s" % (ep_home, ep_arch))
+        if ep_home:
+            pc, _ = fetcher(ep_home[0] + "?test=1&p=/_verify")
+            if pc != 200:
+                probs.append("端點 %s 回 HTTP %s（帳號唔存在就係 400）" % (ep_home[0], pc))
+        checks.add(not probs, "統計器已接通且收得到",
+                   "端點 %s；問題：%s" % (ep_home[0] if ep_home else "無",
+                                         "；".join(probs) or "無"))
+
     return checks
 
 
@@ -217,8 +264,13 @@ def self_test(fetcher=fetch):
     # 等於加咗兩個永遠 pass 嘅恆真檢查 —— 正是這個檔案開頭要防嘅毛病。
     FONT_REF = "@font-face{src:url('/ai-marketing-daily/fonts/Inter-Regular.woff2')}"
     OG_REF = ('<meta property="og:image" content="%s/og/%s.jpg">' % (BASE, today))
+    # 同理，fixture 要帶住統計器，否則第 9 項喺每個對照都 fail，對照 B
+    # （一切正常）亦會變成永遠唔過，令整個 self-test 失去鑑別力。
+    EP = "https://carriehuiww.goatcounter.com/count"
+    AN_REF = "s.setAttribute('data-goatcounter','%s');" % EP
+    ARCH_LIST = ("列表 " + today + AN_REF).encode()
     local_html = ("<title>AI Marketing Daily · %s</title>" % today
-                  + FONT_REF + OG_REF
+                  + FONT_REF + OG_REF + AN_REF
                   + '<div class="story">x</div>' * 10).encode()
     WOFF_OK = b"wOF2" + b"\0" * 9000          # 夠大、magic 正確
     JPG_OK = b"\xff\xd8\xff" + b"\0" * 9000   # JPEG magic
@@ -228,14 +280,16 @@ def self_test(fetcher=fetch):
         json.dump([{"date": today}, {"date": yday}], f)
 
     stale = ("<title>AI Marketing Daily · %s</title>" % yday
-             + FONT_REF + OG_REF + '<div class="story">x</div>' * 10).encode()
+             + FONT_REF + OG_REF + AN_REF
+             + '<div class="story">x</div>' * 10).encode()
     c = verify(today, d, Checks(), fetcher=fake({
         "/index.html": (200, stale),
         "/archive/%s.html" % today: (404, b""),
         "manifest.json": (200, json.dumps([{"date": yday}]).encode()),
-        "/archive/": (200, ("列表 " + yday).encode()),
+        "/archive/": (200, ("列表 " + yday + AN_REF).encode()),
         ".woff2": (200, WOFF_OK),
         ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (200, b""),
     }))
     bad = [n for ok, n, _ in c.rows if not ok]
     print("  對照 A（線上仍是昨日版本，應該被攔住）")
@@ -252,9 +306,10 @@ def self_test(fetcher=fetch):
         "/index.html": (200, local_html),
         "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
         "manifest.json": (200, good_manifest),
-        "/archive/": (200, ("列表 " + today).encode()),
+        "/archive/": (200, ARCH_LIST),
         ".woff2": (200, WOFF_OK),
         ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (200, b""),
     }))
     print("  對照 B（一切正常，應該全部通過）")
     c2.report()
@@ -270,9 +325,10 @@ def self_test(fetcher=fetch):
         "/index.html": (200, local_html),
         "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
         "manifest.json": (200, good_manifest),
-        "/archive/": (200, ("列表 " + today).encode()),
+        "/archive/": (200, ARCH_LIST),
         ".woff2": (404, b""),
         ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (200, b""),
     }))
     f3 = [n for ok, n, _ in c3.rows if not ok]
     print("  對照 C（字體檔 404，應該只有字體那項被攔住）")
@@ -289,9 +345,10 @@ def self_test(fetcher=fetch):
         "/index.html": (200, local_html),
         "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
         "manifest.json": (200, good_manifest),
-        "/archive/": (200, ("列表 " + today).encode()),
+        "/archive/": (200, ARCH_LIST),
         ".woff2": (200, WOFF_OK),
         ".jpg": (200, b"<!doctype html><title>404</title>" + b" " * 9000),
+        "goatcounter.com/count": (200, b""),
     }))
     f4 = [n for ok, n, _ in c4.rows if not ok]
     print("  對照 D（og:image 回 HTTP 200 但內容係 HTML，應該只有卡圖那項被攔住）")
@@ -309,7 +366,7 @@ def self_test(fetcher=fetch):
     d2 = tempfile.mkdtemp()
     os.makedirs(os.path.join(d2, "archive"), exist_ok=True)
     nofont = ("<title>AI Marketing Daily · %s</title>" % today
-              + OG_REF + '<div class="story">x</div>' * 10).encode()
+              + OG_REF + AN_REF + '<div class="story">x</div>' * 10).encode()
     with open(os.path.join(d2, "index.html"), "wb") as f:
         f.write(nofont)
     with open(os.path.join(d2, "archive/manifest.json"), "w") as f:
@@ -318,8 +375,9 @@ def self_test(fetcher=fetch):
         "/index.html": (200, nofont),
         "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
         "manifest.json": (200, good_manifest),
-        "/archive/": (200, ("列表 " + today).encode()),
+        "/archive/": (200, ARCH_LIST),
         ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (200, b""),
     }))
     f5 = [n for ok, n, _ in c5.rows if not ok]
     print("  對照 E（頁面零個字體引用＝排程漏攞 fonts/，應該只有字體那項被攔住）")
@@ -330,7 +388,84 @@ def self_test(fetcher=fetch):
         print("  → 工具壞了：fail 清單係 %s（預期只有字體那項）\n" % f5)
         ok_all = False
 
-    print("self-test %s" % ("通過：五個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
+    # 對照 F：頁面完全冇統計器 —— 即 routine 喺 fresh session 寫 data.json 時漏咗
+    # analytics 鍵（或者有人改壞預設值）。同對照 E 同一個病理：檔案全部「成功」、
+    # 位元組一致、部署 success，只係由嗰日起數字變成零。要另造目錄，令第 1 項位元組
+    # 仍然相同，證明攔住佢嘅係第 9 項本身。
+    d3 = tempfile.mkdtemp()
+    os.makedirs(os.path.join(d3, "archive"), exist_ok=True)
+    nocount = ("<title>AI Marketing Daily · %s</title>" % today
+               + FONT_REF + OG_REF + '<div class="story">x</div>' * 10).encode()
+    with open(os.path.join(d3, "index.html"), "wb") as f:
+        f.write(nocount)
+    with open(os.path.join(d3, "archive/manifest.json"), "w") as f:
+        json.dump([{"date": today}, {"date": yday}], f)
+    c6 = verify(today, d3, Checks(), fetcher=fake({
+        "/index.html": (200, nocount),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ARCH_LIST),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (200, b""),
+    }))
+    f6 = [n for ok, n, _ in c6.rows if not ok]
+    print("  對照 F（頁面冇統計器＝漏咗 analytics，應該只有統計器那項被攔住）")
+    c6.report()
+    if f6 == ["統計器已接通且收得到"]:
+        print("  → 正確：統計器靜默消失都攔得住\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期只有統計器那項）\n" % f6)
+        ok_all = False
+
+    # 對照 G：兩個頁面都有統計器，但端點打錯字（帳號唔存在 → GoatCounter 回 400）。
+    # 刻意同對照 F 分開：F 證明「冇」攔得住，G 證明「有但收唔到」亦攔得住。若只有 F，
+    # 第 9 項就退化成「頁面有冇嗰串字」，而一個 typo 嘅端點照樣會過。
+    c7 = verify(today, d, Checks(), fetcher=fake({
+        "/index.html": (200, local_html),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ARCH_LIST),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, JPG_OK),
+        "goatcounter.com/count": (400, b""),   # 帳號唔存在嘅真實回應
+    }))
+    f7 = [n for ok, n, _ in c7.rows if not ok]
+    print("  對照 G（端點回 400＝帳號打錯字，應該只有統計器那項被攔住）")
+    c7.report()
+    if f7 == ["統計器已接通且收得到"]:
+        print("  → 正確：唔會只睇頁面有冇嗰串字\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期只有統計器那項）\n" % f7)
+        ok_all = False
+
+    # 對照 H：刻意關掉統計（data.json 寫 analytics.provider = ""）→ 第 9 項應該略過
+    # 而唔係 fail。呢個係針對上面「略過」分支嘅對照：一個會吞掉真失敗嘅逃生門，
+    # 比冇檢查更差，所以要同時證明兩件事 ——
+    #   H1 明確關掉 + 頁面冇統計器 → 唔算失敗（否則關唔得，日日阻住發佈）；
+    #   H2 冇寫 analytics 鍵（即排程漏咗）+ 頁面冇統計器 → 仍然 fail（對照 F 已證），
+    #      所以「鍵缺失」唔會被誤當成「刻意關掉」。
+    with open(os.path.join(d3, "data.json"), "w", encoding="utf-8") as f:
+        json.dump({"analytics": {"provider": ""}}, f)
+    c8 = verify(today, d3, Checks(), fetcher=fake({
+        "/index.html": (200, nocount),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ARCH_LIST),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, JPG_OK),
+    }))
+    f8 = [n for ok, n, _ in c8.rows if not ok]
+    print("  對照 H（刻意關掉統計，應該略過而唔係 fail）")
+    c8.report()
+    if not f8:
+        print("  → 正確：關得掉，唔會日日阻住發佈\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期一項都唔 fail）\n" % f8)
+        ok_all = False
+    os.remove(os.path.join(d3, "data.json"))   # 唔好污染對照 F 嘅目錄
+
+    print("self-test %s" % ("通過：八個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
     return 0 if ok_all else 1
 
 

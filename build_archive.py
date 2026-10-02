@@ -140,12 +140,17 @@ except Exception as _e:  # noqa: BLE001
 # Traffic counting on the directory page too. Browsing the back issues is a real
 # visit; leaving this page out would quietly under-count every reader who arrives
 # via 往期存檔. The day snapshots inherit the block from index.html verbatim, so
-# only this generated page needs its own copy — same opt-in data.json key, same
-# DNT/localhost guards, same two-host split (script from gc.zgo.at, hit to her
-# own /count; the per-site subdomain does NOT serve count.js — measured 404).
+# only this generated page needs its own copy — same DNT/localhost guards, same
+# two-host split (script from gc.zgo.at, hit to her own /count; the per-site
+# subdomain does NOT serve count.js — measured 404), and the same default account
+# as build.py so that a data.json written without the key still counts. Keep the
+# two defaults identical: if they drift, the archive quietly reports into a
+# different account than the front page and the totals stop adding up.
 _analytics = ""
 try:
-    _an = data.get("analytics") or {}
+    _an = data.get("analytics")
+    if not isinstance(_an, dict) or not _an:
+        _an = {"provider": "goatcounter", "code": "carriehuiww"}
     if str(_an.get("provider", "")).strip().lower() == "goatcounter":
         _code = str(_an.get("code", "")).strip()
         _host = str(_an.get("host", "")).strip() or (
