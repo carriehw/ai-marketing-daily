@@ -226,13 +226,24 @@ def verify(today, local_dir, checks, fetcher=fetch):
             probs.append("存檔目錄頁冇統計器")
         if ep_home and ep_arch and ep_home != ep_arch:
             probs.append("兩頁端點唔同：%s vs %s" % (ep_home, ep_arch))
+        # 探測端點嘅網絡錯誤唔等於今日冇出版。fetch() 三次都連唔上會 raise,
+        # 冇呢個 try 就會變成 exit 2 ——整日報 failed、而且另外八項根本唔會印出嚟,
+        # 得個完全啞嘅失敗。但「連唔上」同「帳號唔存在」要分開講：帳號有問題
+        # GoatCounter 係回 HTTP（400／404），唔係連線失敗；連線失敗係我哋這邊
+        # 嘅 DNS／TLS／timeout，唔應該攔住 Carrie 嘅出版。所以 HTTP 碼唔對 = 真失敗，
+        # 連唔上 = 照過但寫明「未能確認」，等人睇得到係未驗而唔係已驗過。
+        _ep_note = ""
         if ep_home:
-            pc, _ = fetcher(ep_home[0] + "?test=1&p=/_verify")
-            if pc != 200:
-                probs.append("端點 %s 回 HTTP %s（帳號唔存在就係 400）" % (ep_home[0], pc))
+            try:
+                pc, _ = fetcher(ep_home[0] + "?test=1&p=/_verify")
+                if pc != 200:
+                    probs.append("端點 %s 回 HTTP %s（帳號唔存在就係 400）"
+                                 % (ep_home[0], pc))
+            except Exception as e:
+                _ep_note = "；端點一時連唔上（%s），未能確認帳號，唔當今日失敗" % e
         checks.add(not probs, "統計器已接通且收得到",
-                   "端點 %s；問題：%s" % (ep_home[0] if ep_home else "無",
-                                         "；".join(probs) or "無"))
+                   "端點 %s；問題：%s%s" % (ep_home[0] if ep_home else "無",
+                                           "；".join(probs) or "無", _ep_note))
 
     return checks
 
@@ -465,7 +476,45 @@ def self_test(fetcher=fetch):
         ok_all = False
     os.remove(os.path.join(d3, "data.json"))   # 唔好污染對照 F 嘅目錄
 
-    print("self-test %s" % ("通過：八個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
+    # 對照 I：GoatCounter 一時連唔上（DNS／TLS／timeout，fetch 三次都 raise）。
+    # 呢個係第二個逃生門嘅對照。冇佢嘅時候，一個網絡抖動會由 verify() raise 出去
+    # 變成 exit 2 —— 整日報 failed，而另外八項根本唔會印出嚟，變成完全啞嘅失敗。
+    # 要同時證明兩件事：
+    #   I1 連唔上 → 唔當今日失敗（頁面真係出版咗，唔應該因為我哋呢邊嘅網絡而卡住）；
+    #   I2 但要喺 detail 講明「未能確認」，否則會被讀成「已驗過，統計正常」——
+    #      即係 Carrie 嘅假精準第②種：摘要那行寫得比內文肯定。
+    # 分辨得開係因為帳號出事 GoatCounter 回 HTTP（對照 G 嘅 400），唔係連線失敗。
+    def _flaky(url, **kw):
+        if "goatcounter.com/count" in url:
+            raise RuntimeError("連線逾時（模擬）")
+        for k, v in {
+            "/index.html": (200, local_html),
+            "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+            "manifest.json": (200, good_manifest),
+            "/archive/": (200, ARCH_LIST),
+            ".woff2": (200, WOFF_OK),
+            ".jpg": (200, JPG_OK),
+        }.items():
+            if k in url:
+                return v
+        return 200, b""
+
+    try:
+        c9 = verify(today, d, Checks(), fetcher=_flaky)
+        f9 = [n for ok, n, _ in c9.rows if not ok]
+        note9 = [dt for ok, n, dt in c9.rows if n == "統計器已接通且收得到"][0]
+    except Exception as e:
+        c9, f9, note9 = None, ["<verify 自身 raise：%s>" % e], ""
+    print("  對照 I（端點一時連唔上，應該唔當失敗、但要寫明未能確認）")
+    if c9 is not None:
+        c9.report()
+    if not f9 and "未能確認" in note9:
+        print("  → 正確：網絡抖動唔會冤枉今日停更，而且冇講大話\n")
+    else:
+        print("  → 工具壞了：fail 清單 %s；統計器那行寫「%s」\n" % (f9, note9))
+        ok_all = False
+
+    print("self-test %s" % ("通過：九個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
     return 0 if ok_all else 1
 
 
