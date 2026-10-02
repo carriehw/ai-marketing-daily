@@ -139,11 +139,18 @@ ISO           = str(data.get("date", "")).strip()
 # fresh every morning from a session that has never seen yesterday's file. A
 # config key it forgets raises nothing: the page builds, the deploy succeeds,
 # every byte checks out, and the counter simply stops. Telling the routine to
-# carry the key forward would mean fetching the 150KB+ data.json back from the
-# repo to read one field, and that GET returns http_500 through the proxy (the
-# same large-file trap the routine already documents for index.html). An
-# instruction that cannot be followed is not a safeguard. So the default sits in
-# code, where a fresh session cannot drop it; data.json still overrides.
+# carry the key forward would put the safeguard inside the very file that gets
+# rewritten wholesale every morning — i.e. it would rely on an unattended session
+# remembering something, which is exactly the failure mode this pipeline keeps
+# producing: every step reports success while a feature quietly disappears. An
+# instruction that has to be followed by hand is not a safeguard. So the default
+# sits in code, where a fresh session cannot drop it; data.json still overrides.
+#
+# (The original note here claimed the key could not even be read back, because a
+# GET on the 150KB+ data.json returned http_500 through the proxy. Re-measured
+# 2026-10-02: it returns 200, three times running, both raw and base64. The
+# conclusion stands; the reason above does not depend on proxy behaviour that can
+# change under us. Do not re-introduce the http_500 argument without measuring.)
 #
 # The default is a verified account, not a guess — an endpoint that does not
 # exist would load on every reader's device, fail, and report nothing, and a
