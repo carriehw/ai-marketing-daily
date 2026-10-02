@@ -76,7 +76,7 @@ on a day the translations are incomplete — it just shows Chinese in the EN vie
 
 Run:  PYTHONIOENCODING=utf-8 python3 build.py
 """
-import json, html, re, sys
+import json, html, os, re, sys, hashlib, urllib.parse
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -126,6 +126,54 @@ WEEKLY_URL    = data.get("weekly_url", "")
 LINKEDIN_URL  = data.get("linkedin_url", "https://www.linkedin.com/in/carriehuiww/")
 ISO           = str(data.get("date", "")).strip()
 
+# --- Traffic counting --------------------------------------------------------
+# Off unless data.json carries `analytics: {"provider":"goatcounter","code":"…"}`.
+# Deliberately opt-in and deliberately NOT defaulted to some guessed account
+# name: a script tag pointing at an endpoint that does not exist would load on
+# every reader's device, fail, and report nothing — a counter that looks wired
+# and measures zero is worse than no counter, because the zero reads as "nobody
+# visited" instead of "it was never connected".
+#
+# GoatCounter rather than Google Analytics, for reasons that are constraints and
+# not taste: this page is served from GitHub Pages with no server of its own, so
+# first-party logging is not available at all; GA4 sets identifiers and puts the
+# site inside GDPR/PDPO consent-banner territory for a daily brief that has no
+# login and collects nothing else. GoatCounter stores no cookie and no device
+# identifier, which keeps the page consent-free.
+_an = data.get("analytics") or {}
+_an_provider = str(_an.get("provider", "")).strip().lower()
+_an_code = str(_an.get("code", "")).strip()
+# Self-hosted or custom domain allowed; default to the hosted service.
+_an_host = str(_an.get("host", "")).strip() or (
+    f"https://{_an_code}.goatcounter.com" if _an_code else "")
+_analytics = ""
+if _an_provider == "goatcounter" and _an_code and _an_host:
+    _an_ep = _an_host.rstrip("/") + "/count"
+    _analytics = f'''
+<script>
+/* Cookie-free hit counter. Three guards, each for a specific failure:
+   1. DNT / Global Privacy Control — honoured before the request, not by asking
+      the vendor to honour it. If the reader signalled no tracking, the script is
+      never fetched, so there is nothing to opt out of afterwards.
+   2. localhost / file:// — otherwise every local build-and-check run in this
+      pipeline would post a hit and inflate the numbers I then report to her.
+   3. A load error is swallowed. The counter must never be able to break the
+      page it is measuring. */
+(function(){{try{{
+  var n=navigator;
+  if(n.doNotTrack==='1'||n.msDoNotTrack==='1'||window.doNotTrack==='1'
+     ||n.globalPrivacyControl===true)return;
+  var h=location.hostname;
+  if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='')return;
+  var s=document.createElement('script');
+  s.async=true;s.defer=true;
+  s.src='{_an_ep}.js';
+  s.setAttribute('data-goatcounter','{_an_ep}');
+  s.onerror=function(){{}};
+  document.head.appendChild(s);
+}}catch(e){{}}}})();
+</script>'''
+
 # action tag -> css class + English label
 ACT = {"可即用": "act", "要留意": "watch", "影響生意": "impact"}
 ACT_EN = {"可即用": "Ready to use", "要留意": "Worth watching", "影響生意": "Business impact"}
@@ -137,6 +185,36 @@ SEC_ID = {s: f"sec{i}" for i, s in enumerate(data["sections"])}
 # Colour class per section, 1-based to match the --c1..--c5 CSS vars; a 6th
 # section wraps round to c1 rather than falling back to grey.
 SEC_CLS = {s: f"c{(i % 5) + 1}" for i, s in enumerate(data["sections"])}
+
+_STOP = {"a", "an", "the", "of", "in", "on", "at", "to", "for", "and", "or", "its",
+         "with", "from", "as", "is", "are", "all", "by", "into", "out", "up", "new"}
+
+
+def story_slug(it):
+    """Content-derived anchor id, so a shared link keeps pointing at the story
+    the reader actually saw.
+
+    Every card used to be s1..s27, renumbered by that morning's section order.
+    Measured against the real archived pages, `#s7` resolved to four different
+    stories on four consecutive days (9/25 阿里 Token Foundry, 9/28 CTV 代理,
+    9/29 ChatGPT Sponsored Agents, 9/30 Amazon 買量後台) — so a link a colleague
+    pasted into Slack pointed at unrelated news within a day.
+
+    Shape: <up-to-5 English title words>-<6 hex of the normalised URL>.
+    The hash is the durable half: it is taken from host+path with `www.` and any
+    trailing slash removed, so the same story keeps the same suffix even when the
+    headline is reworded between days. Verified on the two URLs that recur in
+    seen-stories.json — the ChatGPT Sponsored Agents piece ran on 9/20 and 9/29
+    under different headlines and both resolve to `…-92c832`; Canva ProSuite
+    likewise to `…-b2a652`. That is why RESOLVER below is keyed on the suffix,
+    not on the whole slug.
+    """
+    en = str(it.get("title_en") or it.get("title") or "")
+    words = [w for w in re.sub(r"[^a-z0-9]+", "-", en.lower()).strip("-").split("-") if w]
+    head = "-".join([w for w in words if w not in _STOP][:5]) or "story"
+    p = urllib.parse.urlsplit(str(it.get("url") or ""))
+    norm = (p.netloc.lower().replace("www.", "") + p.path.rstrip("/")).encode()
+    return f"{head}-{hashlib.sha1(norm).hexdigest()[:6]}"
 # section -> English name (parallel array, fall back to the Chinese name)
 _sections_en = data.get("sections_en", [])
 SEC_EN = {}
@@ -879,10 +957,23 @@ _paywall_n = 0
 _DETAIL_MIN_CHARS = 420
 _detail_gap = []    # (no, source, paywalled) — no detail at all
 _detail_thin = []   # (no, source, chars)     — detail present but too short
+_slug_seen = {}     # slug -> card no, to catch a same-URL collision loudly
+_slug_of = {}       # card no -> slug, used by 三分鐘看完 and the s{n} alias map
 for s in data["sections"]:
     out = []
     for it in groups[s]:
         n += 1
+        sid = story_slug(it)
+        # Two cards from the same URL would share a slug and break in-page anchors.
+        # The dedupe upstream should make this impossible; if it ever happens, say
+        # so and disambiguate rather than emitting a duplicate id silently.
+        if sid in _slug_seen:
+            print(f"WARN #{n:02d} slug 撞 #{_slug_seen[sid]:02d}（{sid}）→ 加尾號區分，"
+                  "查下係唔係同一條 URL 出咗兩張卡", file=sys.stderr)
+            _warn += 1
+            sid = f"{sid}-{n}"
+        _slug_seen[sid] = n
+        _slug_of[n] = sid
         url = html.escape(str(it.get("url", "")))
         act = it.get("action", "要留意")
         act_cls = ACT.get(act, "watch")
@@ -960,10 +1051,21 @@ for s in data["sections"]:
         # 三分鐘看完 only lists what a reader must not miss — 可即用 and 影響生意.
         if act_cls in ("act", "impact"):
             tldr_rows.append(
-                f'<li><a href="#s{n}"><span class="t-tag {act_cls}">{bi(act, ACT_EN.get(act, act))}</span>'
+                f'<li><a href="#{sid}"><span class="t-tag {act_cls}">{bi(act, ACT_EN.get(act, act))}</span>'
                 f'{bi(it.get("title",""), it.get("title_en"))}</a></li>')
 
-        out.append(f'''<article class="story {sec_cls}" id="s{n}">
+        # id = the stable slug. The old positional s{n} survives as an empty anchor
+        # so links already shared against THIS issue keep landing in the right
+        # place; from tomorrow the slug is the one that travels.
+        #
+        # The anchor sits INSIDE the <article>, not before it. A sibling span is a
+        # direct child of .stories, and a grid item's display is blockified — so
+        # the first version turned every alias into a full grid cell and the
+        # measured layout went from 2 cards per row to 1 (cols '552px 552px',
+        # 首行 1 張, alias area 2,030,127px² at 1400px). That is exactly the
+        # 「格仔唔整齊」 Carrie asked me to fix, so the anchor goes inside where it
+        # is ordinary inline content and holds no grid track.
+        out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
 <div class="story-meta"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {fu}{body}
@@ -1119,9 +1221,71 @@ if SITE_URL:
         _base = _p if _p.endswith("/") else _p.rsplit("/", 1)[0] + "/"
     except Exception:
         _base = "/"
+
+# Webfonts. Same path trap as the icons above, so reuse _base: a relative
+# "fonts/…" would make archive/2026-09-29.html look in archive/fonts/, and a
+# root-relative "/fonts/…" 404s on a project site.
+#
+# The block is generated by build_fonts.py (single source of truth for the family
+# names, weights and unicode-range) rather than pasted here, so the CSS can never
+# drift from the woff2 files that were actually subset. If the fonts have not been
+# built, emit NOTHING and leave the system stack — a half-wired @font-face
+# pointing at missing files is worse than no webfont, because the page would then
+# claim a font it cannot load and the failure is silent.
+_fontcss = ""
+try:
+    import importlib.util as _ilu
+    _fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_fonts.py")
+    if os.path.isdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")) \
+            and os.path.exists(_fp):
+        _spec = _ilu.spec_from_file_location("_bf", _fp)
+        _bf = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_bf)
+        _missing = [f for f, *_ in _bf.FACES
+                    if not os.path.exists(os.path.join(
+                        os.path.dirname(os.path.abspath(__file__)), "fonts",
+                        f.rsplit(".", 1)[0] + ".woff2"))]
+        if _missing:
+            print("  字體未齊，略過 @font-face（缺 %s）" % ", ".join(_missing[:3]),
+                  file=sys.stderr)
+        else:
+            _fontcss = _bf.css(_base)
+except Exception as _e:  # noqa: BLE001 — never let font wiring break the build
+    print("  @font-face 生成失敗，維持系統字體：%s" % _e, file=sys.stderr)
+
+# preload only the two faces above the fold (body regular + the mono used by the
+# story numbers). Preloading all five would compete with the hero text for the
+# first connections and make the swap later, not earlier.
+_fontpre = ""
+if _fontcss:
+    _fontpre = (f'\n<link rel="preload" href="{_base}fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>'
+                f'\n<link rel="preload" href="{_base}fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>')
+
+# Share card. Absent an explicit og_image in data.json, use this issue's own card
+# built by build_ogimage.py at og/<ISO>.jpg.
+#
+# Three things here are load-bearing, all of them measured rather than assumed:
+#  1. It must be an ABSOLUTE url. Slack, WhatsApp, LinkedIn and Gmail fetch the
+#     image from their own servers with no page context, so a relative path is
+#     never resolved and the card renders blank — which is what the site did for
+#     its whole life: `twitter:card=summary_large_image` was declared while
+#     `og:image` appeared 0 times, i.e. a slot sized for a large image with no
+#     image in it.
+#  2. It must be DATED, not a rolling og.jpg. build_archive.py snapshots this page
+#     verbatim, so a rolling name would make the 9/20 archive page advertise
+#     9/30's headlines.
+#  3. og:image:width/height let the platform lay the card out before the image
+#     finishes downloading; without them some clients fall back to a small square.
+if not _og_image and SITE_URL:
+    _og_image = SITE_URL.rstrip("/") + f"/og/{ISO}.jpg"
 if _og_image:
     _og += (f'\n<meta property="og:image" content="{html.escape(_og_image)}">'
-            f'\n<meta name="twitter:image" content="{html.escape(_og_image)}">')
+            f'\n<meta property="og:image:width" content="1200">'
+            f'\n<meta property="og:image:height" content="630">'
+            f'\n<meta property="og:image:type" content="image/jpeg">'
+            f'\n<meta property="og:image:alt" content="{html.escape(SITE_TITLE_EN)} · {html.escape(date_disp_en)} — {total} stories">'
+            f'\n<meta name="twitter:image" content="{html.escape(_og_image)}">'
+            f'\n<meta name="twitter:image:alt" content="{html.escape(SITE_TITLE_EN)} · {html.escape(date_disp_en)}">')
 
 # Structured data: lets the archive surface as a dated collection in search.
 _ld = json.dumps({
@@ -1158,7 +1322,7 @@ page = f'''<!doctype html>
 <link rel="icon" href="{_base}favicon.ico" sizes="32x32">
 <link rel="icon" type="image/png" sizes="192x192" href="{_base}icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{_base}icon-180.png">
-<link rel="manifest" href="{_base}manifest.webmanifest">
+<link rel="manifest" href="{_base}manifest.webmanifest">{_fontpre}
 <!-- Standalone iOS: without this the status bar sits on paper-coloured page background
      and the time/battery go invisible. `black-translucent` would push content under the
      notch, so `default` is correct for a page with its own sticky topbar. -->
@@ -1182,6 +1346,13 @@ page = f'''<!doctype html>
 }}catch(e){{}}}})();
 </script>
 <style>
+/* ---- webfonts (generated by build_fonts.py; Latin + numerals only) ------------
+   Before this block the page named `Inter` and declared tabular numerals while
+   loading 0 font files, so on Windows/Android it silently fell through to a
+   system sans and the 等寬數字 claim was simply not true. CJK deliberately stays
+   on the system face — a subset Hant webfont is 4–9 MB, a worse trade on a
+   27-story mobile page than the substitution it would fix. ---------------------*/
+{_fontcss}
 /* ---- palette v1.0 — every value derived from icon-512.png ---------------------
    See brand/AI情報站-品牌規範-v1.0.md and brand/palette_check.py.
    The icon is a FOUR-corner gradient spanning 100° of hue:
@@ -1223,7 +1394,11 @@ html{{scroll-behavior:smooth}}
    scroll. Removed rather than relocated; the reading zone is meant to be flat
    paper (rule R4), and a second gradient down there would compete with the one
    piece of gradient that carries meaning. */
-body{{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC","Noto Sans HK",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}}
+/* InterLat first and CJK after it, in that order on purpose: the Latin subset has
+   no CJK glyphs, so Chinese falls through to the next family per-character — the
+   normal CSS cascade, not a bug. Reversing them would give Latin the CJK font's
+   proportional Latin, which is the mismatched look this change removes. */
+body{{margin:0;background:var(--paper);color:var(--ink);font-family:InterLat,Inter,"Noto Sans TC","Noto Sans HK",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.65}}
 a{{color:inherit}}
 /* --- language toggle: show the active language, hide the other ---
    The bare `.l-en{{display:none}}` is specificity 0,1,0, so ANY later rule like
@@ -1279,7 +1454,7 @@ html[data-lang="en"] .l-zh{{display:none}}
    bar. Extending the selector rather than copying the declarations keeps one source
    of truth; a copy would drift the moment either is touched. */
 .navlinks a,.mast-r>a.pill{{white-space:nowrap;font-size:13px;color:var(--on-dark-chip);text-decoration:none;border:1px solid rgba(247,245,239,.26);background:rgba(247,245,239,.07);padding:6px 12px;border-radius:99px}}
-.navlinks a i{{font-style:normal;color:var(--lime);margin-left:5px;font-variant-numeric:tabular-nums}}
+.navlinks a i{{font-style:normal;color:var(--lime);margin-left:5px;font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}}
 .navlinks a:hover,.mast-r>a.pill:hover{{border-color:var(--lime);color:var(--on-dark)}}
 .navlinks a.pill,.mast-r>a.pill{{background:var(--on-dark);color:var(--i-navy);border-color:var(--on-dark);font-weight:700}}
 .navlinks a.pill:hover,.mast-r>a.pill:hover{{background:var(--lime);border-color:var(--lime);color:var(--i-navy)}}
@@ -1302,7 +1477,18 @@ html[data-lang="en"] .l-zh{{display:none}}
   background:linear-gradient(135deg,var(--i-violet) 0%,var(--i-blue) 30%,var(--i-navy) 64%,var(--i-plum) 100%)}}
 .eyebrow{{color:var(--lime);font-weight:800;text-transform:uppercase;font-size:12.5px;letter-spacing:.14em}}
 h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margin:14px 0 18px;font-weight:800;color:var(--on-dark)}}
-.hero-sub{{font-size:clamp(16.5px,1.9vw,20px);color:var(--on-dark-2);max-width:660px;margin:0 0 20px}}
+/* text-wrap:balance — ONLY on short display text (this standfirst and the
+   .thesis headline), never on body copy. Measured, zh mode, 9 widths:
+   without it the standfirst broke 33 + 「動。」 at every width from 1000px up
+   (a 2-character orphan line, 6% of the widest line). With it: 18 + 17, 94%.
+   Scope matters — the same property on .story .sum shrank paragraphs by up to
+   276px to even the lines out, which re-creates the earlier complaint that the
+   content sits narrower than its own headline. balance evens SHORT text; on a
+   5-line paragraph it just makes the whole block narrow. Body copy is left alone.
+   text-wrap:pretty was measured too and moved nothing here (25 orphans before,
+   25 after) — chromium's pretty does not rebalance CJK. */
+.hero-sub{{font-size:clamp(16.5px,1.9vw,20px);color:var(--on-dark-2);max-width:660px;margin:0 0 20px;
+  text-wrap:balance}}
 .issue-meta{{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}}
 /* Direct child only. `span` as a descendant selector also caught the inner
    <span class="l-zh">/<span class="l-en"> that bi() emits, so each pill grew a
@@ -1380,7 +1566,7 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
    a distinct panel. Label 5.64:1, Lime figure 5.32:1 at the worst stop. */
 .stats{{display:grid;grid-template-columns:repeat({max(1, len(data["sections"]))},1fr);gap:1px;background:rgba(247,245,239,.18);border:1px solid rgba(247,245,239,.22);border-radius:14px;overflow:hidden;margin:20px 0 8px}}
 .stat{{background:rgba(247,245,239,.09);text-align:center;padding:15px 6px;text-decoration:none;color:var(--on-dark)}}
-.stat b{{display:block;font-size:27px;color:var(--lime);font-variant-numeric:tabular-nums;letter-spacing:-.03em}}
+.stat b{{display:block;font-size:27px;color:var(--lime);font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.03em}}
 .stat span{{font-size:11.5px;color:var(--on-dark);line-height:1.35;display:block}}
 /* Hover stops at 16%: at 20% the label fell to 4.6:1. */
 .stat:hover{{background:rgba(247,245,239,.16)}}
@@ -1405,7 +1591,12 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
    ragged lines (its own line-ends spread over 744px), which implies no right edge
    at all, so the same 64px shortfall was invisible. A width-specific defect. */
 .thesis{{--measure:820px}}
-.thesis blockquote{{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750}}
+/* balance here too — display text, same reasoning as .hero-sub above. Measured:
+   orphan last line at 5 of 9 widths (worst 9% of the widest line at 640-900px);
+   with balance, 81-87% at every width. The .thesis <p> below is body copy and
+   stays untouched. */
+.thesis blockquote{{max-width:var(--measure);font-size:clamp(23px,3.9vw,42px);line-height:1.1;letter-spacing:-.035em;margin:10px 0 16px;font-weight:750;
+  text-wrap:balance}}
 .thesis p{{max-width:var(--measure);margin:0;color:rgba(255,255,255,.85);font-size:16.5px}}
 
 /* ---- category headers ---- */
@@ -1464,7 +1655,7 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 /* Subscription flag: readers were clicking through and hitting a paywall with no
    warning. Flagging it on the card itself sets the expectation before the click. */
 .paywall{{display:inline-flex;align-items:center;gap:4px;font-weight:750;font-size:11.5px;padding:4px 9px;border-radius:999px;background:#fdf3e2;color:var(--amber);border:1px solid #edd9ab;white-space:nowrap}}
-.story .no{{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}}
+.story .no{{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}}
 .story h3{{font-size:clamp(18px,2.05vw,21.5px);line-height:1.28;letter-spacing:-.022em;margin:2px 0 10px;text-wrap:balance}}
 .story h3 a{{text-decoration:none}}
 .story h3 a:hover{{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}}
@@ -1526,7 +1717,7 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .tldr ol{{margin:0;padding-left:0;list-style:none;counter-reset:t}}
 .tldr li{{counter-increment:t;display:flex;gap:10px;align-items:baseline;padding:7px 0;border-top:1px solid rgba(222,219,210,.65)}}
 .tldr li:first-child{{border-top:0;padding-top:0}}
-.tldr li::before{{content:counter(t);flex:none;width:20px;font-size:11.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;padding-top:3px}}
+.tldr li::before{{content:counter(t);flex:none;width:20px;font-size:11.5px;font-weight:800;color:var(--accent);font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;padding-top:3px}}
 .tldr a{{text-decoration:none;color:var(--ink);font-size:14.5px;line-height:1.55}}
 .tldr a:hover{{color:var(--accent-d);text-decoration:underline;text-underline-offset:3px}}
 .tldr .t-tag{{font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:99px;margin-right:7px;white-space:nowrap;vertical-align:1px}}
@@ -1546,7 +1737,23 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .navlinks a.cur{{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-d);font-weight:700}}
 /* a card jumped to from 三分鐘看完 flashes once so the eye finds it */
 .story:target{{box-shadow:0 0 0 3px var(--accent)}}
-.story{{scroll-margin-top:96px}}
+/* Jump offset = the sticky topbar's real height, measured rather than guessed.
+   It was a flat 96px against a topbar that measures 121px at desktop widths and
+   at ≤560px (where .mast wraps to two rows), and 71px in the 561–760px band. So
+   every jump from 三分鐘看完 or a shared link parked the headline ~25px UNDER the
+   bar at the two widths most people read on. --jump follows the same breakpoints
+   as the topbar itself and carries 8px of breathing room. */
+:root{{--jump:129px}}
+.story{{scroll-margin-top:var(--jump)}}
+/* Legacy s{{n}} anchor, kept so links shared against an earlier issue still land.
+   It lives inside the card (a sibling would become a grid item and blow up the
+   two-column layout), takes no space, and carries the same scroll offset as the
+   card so the sticky header does not cover the headline it jumped to. The
+   :target ring is drawn on the card, not the 0×0 anchor, which has nothing to
+   outline. */
+.idalias{{display:inline;width:0;height:0;overflow:hidden;scroll-margin-top:var(--jump)}}
+.idalias:target + *,
+.story:has(> .idalias:target){{box-shadow:0 0 0 3px var(--accent)}}
 
 footer{{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 44px;font-size:13px;color:var(--muted);line-height:1.85}}
 footer b{{color:var(--ink)}}
@@ -1577,6 +1784,16 @@ footer b{{color:var(--ink)}}
 
 @media (max-width:1000px){{
   .stories{{grid-template-columns:1fr}}
+}}
+/* Jump offset for the one band where the sticky topbar is short. Measured
+   .topbar height: 121px at 1400px, 71px at 760px, 121px again at 560px — the
+   category pills drop out at 760px so the bar collapses to one row, then .mast
+   itself wraps to two rows below 561px and it is tall again. Hence an explicit
+   range rather than a plain max-width: a `max-width:760px` override would also
+   catch the ≤560px case, which needs the tall value. Written as its own block so
+   it does not depend on where it sits among the other media queries. */
+@media (min-width:561px) and (max-width:760px){{
+  :root{{--jump:79px}}
 }}
 @media (max-width:760px){{
   .hero{{padding-top:36px}}
@@ -1856,7 +2073,7 @@ document.getElementById('share').addEventListener('click',async()=>{{
   }},{{rootMargin:'-88px 0px -55% 0px'}});
   secs.forEach(function(s){{io.observe(s)}});
 }})();
-</script>
+</script>{_analytics}
 </body>
 </html>
 '''

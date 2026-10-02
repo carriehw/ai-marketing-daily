@@ -96,6 +96,38 @@ TOTAL      = len(data.get("items", []))
 ZH_DISP, EN_DISP = _canon_dates(ISO, data.get("date_display", ""), data.get("date_display_en", ""))
 SITE_URL   = data.get("site_url", "https://carriehw.github.io/ai-marketing-daily/")
 
+# Webfonts for the archive directory page. Derived from site_url exactly as in
+# build.py, NOT written as "../fonts/": this page lives at archive/index.html, so
+# a relative path happens to work here but would break the moment the directory
+# moves, and the two files would then disagree about where the fonts are. One
+# derivation rule, both files.
+#
+# The day snapshots do not need this — build_archive.py copies the built
+# index.html verbatim, so they already carry the @font-face block from build.py.
+_base = "/"
+try:
+    from urllib.parse import urlsplit
+    _p = urlsplit(SITE_URL).path or "/"
+    _base = _p if _p.endswith("/") else _p.rsplit("/", 1)[0] + "/"
+except Exception:
+    _base = "/"
+_fontcss = ""
+try:
+    import importlib.util as _ilu
+    _hd = Path(__file__).resolve().parent
+    _fp, _fd = _hd / "build_fonts.py", _hd / "fonts"
+    if _fp.exists() and _fd.is_dir():
+        _spec = _ilu.spec_from_file_location("_bf", str(_fp))
+        _bf = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_bf)
+        if all((_fd / (f.rsplit(".", 1)[0] + ".woff2")).exists()
+               for f, *_ in _bf.FACES):
+            _fontcss = _bf.css(_base)
+        else:
+            print("  存檔頁：字體未齊，略過 @font-face", file=sys.stderr)
+except Exception as _e:  # noqa: BLE001
+    print("  存檔頁 @font-face 生成失敗，維持系統字體：%s" % _e, file=sys.stderr)
+
 ARCH.mkdir(parents=True, exist_ok=True)
 
 # ---- 1) standalone snapshot of today's issue -------------------------------
@@ -260,12 +292,13 @@ page = f"""<!DOCTYPE html>
 }})();
 </script>
 <style>
+{_fontcss}
 *{{box-sizing:border-box}}
 :root{{--paper:{PAPER};--card:{CARD};--ink:{INK};--muted:{MUTED};--accent:{JADE};--accent-d:{JADE_D};--line:{LINE};
   --lime:{LIME};--on-dark:{ON_DARK};--on-dark-2:{ON_DARK_2};--i-navy:{I_NAVY}}}
 html,body{{margin:0}}
 /* Radial glow removed: it sat at 85% 0%, which the dark header now covers. */
-body{{background:var(--paper);color:var(--ink);font:16px/1.6 Inter,'Noto Sans TC',ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif}}
+body{{background:var(--paper);color:var(--ink);font:16px/1.6 InterLat,Inter,'Noto Sans TC',ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif}}
 .l-en{{display:none}} .l-zh{{display:inline}}
 html[data-lang="en"] .l-en{{display:inline}} html[data-lang="en"] .l-zh{{display:none}}
 .wrap{{max-width:820px;margin:0 auto;padding:0 20px}}

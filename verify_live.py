@@ -143,6 +143,41 @@ def verify(today, local_dir, checks, fetcher=fetch):
     n_story = len(re.findall(r'class="story\b', txt))
     checks.add(n_story >= 8, "首頁卡片數合理", "story 卡片 %d 張（下限 8）" % n_story)
 
+    # --- 7. 頁面引用嘅每一個 woff2 都必須線上真的取得到 -------------------
+    # 要攔嘅唔係「有冇寫 @font-face」——寫咗一樣可以指向 404。字體 404 嘅失敗係
+    # 完全靜默嘅：頁面照樣出，只係默默跌落系統字體，而我哋會以為字體已經生效。
+    # 所以逐個 url() 真去 fetch，並且驗內容真係 woff2（magic bytes 'wOF2'），
+    # 唔係 GitHub Pages 嘅 404 HTML 頁（佢都係 200 嗎？唔係，但驗 magic 更穩）。
+    refs = sorted(set(re.findall(r"url\('([^']*\.woff2)'\)", txt)))
+    if refs:
+        bad = []
+        for u in refs:
+            fu = u if u.startswith("http") else (
+                BASE.rsplit("/", 1)[0] + u if u.startswith("/") else BASE + "/" + u)
+            fc, fb = fetcher(fu)
+            if fc != 200 or not fb.startswith(b"wOF2"):
+                bad.append("%s(HTTP %s,%d bytes)" % (u.rsplit("/", 1)[-1], fc, len(fb)))
+        checks.add(not bad, "引用嘅字體檔都取得到",
+                   "共 %d 個 woff2，失敗：%s" % (len(refs), ", ".join(bad) or "無"))
+    else:
+        # 冇引用唔係 fail（字體係選用），但要講明，否則「0 個全部成功」會被讀成通過。
+        checks.add(True, "引用嘅字體檔都取得到", "頁面冇引用 woff2（用系統字體）")
+
+    # --- 8. og:image 必須線上真的取得到，而且係圖 -------------------------
+    # 分享卡最容易「本機有、冇傳上去」：本機 og/ 存在，Contents API 漏傳一個目錄，
+    # 線上就空白卡。而空白卡係睇唔出嘅 —— 要等有人分享到 Slack 才發現。
+    m_og = re.search(r'property="og:image" content="([^"]+)"', txt)
+    if m_og:
+        ou = m_og.group(1)
+        oc, ob = fetcher(ou)
+        is_img = ob[:3] == b"\xff\xd8\xff" or ob[:8] == b"\x89PNG\r\n\x1a\n"
+        checks.add(oc == 200 and is_img and len(ob) > 4096,
+                   "分享卡圖線上取得到",
+                   "%s HTTP %s，%d bytes，係圖=%s"
+                   % (ou.rsplit("/", 1)[-1], oc, len(ob), is_img))
+    else:
+        checks.add(False, "分享卡圖線上取得到", "頁面冇 og:image —— 分享到 Slack 會冇卡圖")
+
     return checks
 
 
@@ -169,18 +204,29 @@ def self_test(fetcher=fetch):
     d = tempfile.mkdtemp()
     os.makedirs(os.path.join(d, "archive"), exist_ok=True)
     today, yday = "2026-09-30", "2026-09-29"
-    local_html = ("<title>AI Marketing Daily · %s</title>" % today + '<div class="story">x</div>' * 10).encode()
+    # 本機頁面要帶住字體引用同 og:image，否則第 7、8 項冇嘢可驗，
+    # 等於加咗兩個永遠 pass 嘅恆真檢查 —— 正是這個檔案開頭要防嘅毛病。
+    FONT_REF = "@font-face{src:url('/ai-marketing-daily/fonts/Inter-Regular.woff2')}"
+    OG_REF = ('<meta property="og:image" content="%s/og/%s.jpg">' % (BASE, today))
+    local_html = ("<title>AI Marketing Daily · %s</title>" % today
+                  + FONT_REF + OG_REF
+                  + '<div class="story">x</div>' * 10).encode()
+    WOFF_OK = b"wOF2" + b"\0" * 9000          # 夠大、magic 正確
+    JPG_OK = b"\xff\xd8\xff" + b"\0" * 9000   # JPEG magic
     with open(os.path.join(d, "index.html"), "wb") as f:
         f.write(local_html)
     with open(os.path.join(d, "archive/manifest.json"), "w") as f:
         json.dump([{"date": today}, {"date": yday}], f)
 
-    stale = ("<title>AI Marketing Daily · %s</title>" % yday + '<div class="story">x</div>' * 10).encode()
+    stale = ("<title>AI Marketing Daily · %s</title>" % yday
+             + FONT_REF + OG_REF + '<div class="story">x</div>' * 10).encode()
     c = verify(today, d, Checks(), fetcher=fake({
         "/index.html": (200, stale),
         "/archive/%s.html" % today: (404, b""),
         "manifest.json": (200, json.dumps([{"date": yday}]).encode()),
         "/archive/": (200, ("列表 " + yday).encode()),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, JPG_OK),
     }))
     bad = [n for ok, n, _ in c.rows if not ok]
     print("  對照 A（線上仍是昨日版本，應該被攔住）")
@@ -198,6 +244,8 @@ def self_test(fetcher=fetch):
         "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
         "manifest.json": (200, good_manifest),
         "/archive/": (200, ("列表 " + today).encode()),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, JPG_OK),
     }))
     print("  對照 B（一切正常，應該全部通過）")
     c2.report()
@@ -207,7 +255,45 @@ def self_test(fetcher=fetch):
         print("  → 工具壞了：正常情況都 fail %d 項（假警報）\n" % len(c2.failed))
         ok_all = False
 
-    print("self-test %s" % ("通過：兩個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
+    # 對照 C：一切正常，但字體檔線上 404（最靜默嘅失敗）→ 第 7 項必須單獨 fail。
+    # 若呢個對照全 pass，即係第 7 項係恆真，加嚟冇用。
+    c3 = verify(today, d, Checks(), fetcher=fake({
+        "/index.html": (200, local_html),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ("列表 " + today).encode()),
+        ".woff2": (404, b""),
+        ".jpg": (200, JPG_OK),
+    }))
+    f3 = [n for ok, n, _ in c3.rows if not ok]
+    print("  對照 C（字體檔 404，應該只有字體那項被攔住）")
+    c3.report()
+    if f3 == ["引用嘅字體檔都取得到"]:
+        print("  → 正確：字體 404 攔得住，其餘唔受影響\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期只有字體那項）\n" % f3)
+        ok_all = False
+
+    # 對照 D：字體正常，但 og:image 回一個 HTML 錯誤頁（HTTP 200 都唔算圖）。
+    # 刻意用 200 而唔係 404：某些主機會用 200 送錯誤頁，純看狀態碼攔唔住。
+    c4 = verify(today, d, Checks(), fetcher=fake({
+        "/index.html": (200, local_html),
+        "/archive/%s.html" % today: (200, ("存檔 " + today).encode()),
+        "manifest.json": (200, good_manifest),
+        "/archive/": (200, ("列表 " + today).encode()),
+        ".woff2": (200, WOFF_OK),
+        ".jpg": (200, b"<!doctype html><title>404</title>" + b" " * 9000),
+    }))
+    f4 = [n for ok, n, _ in c4.rows if not ok]
+    print("  對照 D（og:image 回 HTTP 200 但內容係 HTML，應該只有卡圖那項被攔住）")
+    c4.report()
+    if f4 == ["分享卡圖線上取得到"]:
+        print("  → 正確：唔係圖就攔住，冇被 HTTP 200 騙到\n")
+    else:
+        print("  → 工具壞了：fail 清單係 %s（預期只有卡圖那項）\n" % f4)
+        ok_all = False
+
+    print("self-test %s" % ("通過：四個對照都符合預期" if ok_all else "不通過：檢查器本身有問題"))
     return 0 if ok_all else 1
 
 
