@@ -146,6 +146,18 @@ _an_code = str(_an.get("code", "")).strip()
 # Self-hosted or custom domain allowed; default to the hosted service.
 _an_host = str(_an.get("host", "")).strip() or (
     f"https://{_an_code}.goatcounter.com" if _an_code else "")
+# The counting endpoint and the script live on DIFFERENT hosts, and conflating
+# them is a silent-zero bug. Measured 2026-10-02:
+#   https://carriehuiww.goatcounter.com/count.js  -> 404
+#   https://gc.zgo.at/count.js                    -> 200, 9213 bytes
+# (validity control: a nonexistent *.goatcounter.com returns 400, so the 404 is
+# a real "this path does not exist here", not a catch-all.) The per-site
+# subdomain accepts the /count hit only; the script is served centrally. Build
+# the src from `script_host` and keep data-goatcounter pointing at her /count —
+# count.js reads the endpoint via querySelector('script[data-goatcounter]'), it
+# does not infer it from its own src, so the two may differ.
+_an_script = (str(_an.get("script_host", "")).strip().rstrip("/")
+              or "https://gc.zgo.at") + "/count.js"
 _analytics = ""
 if _an_provider == "goatcounter" and _an_code and _an_host:
     _an_ep = _an_host.rstrip("/") + "/count"
@@ -167,7 +179,7 @@ if _an_provider == "goatcounter" and _an_code and _an_host:
   if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='')return;
   var s=document.createElement('script');
   s.async=true;s.defer=true;
-  s.src='{_an_ep}.js';
+  s.src='{_an_script}';
   s.setAttribute('data-goatcounter','{_an_ep}');
   s.onerror=function(){{}};
   document.head.appendChild(s);

@@ -948,5 +948,28 @@ document.getElementById('share').addEventListener('click',async()=>{
   secs.forEach(function(s){io.observe(s)});
 })();
 </script>
+<script>
+/* Cookie-free hit counter. Three guards, each for a specific failure:
+   1. DNT / Global Privacy Control — honoured before the request, not by asking
+      the vendor to honour it. If the reader signalled no tracking, the script is
+      never fetched, so there is nothing to opt out of afterwards.
+   2. localhost / file:// — otherwise every local build-and-check run in this
+      pipeline would post a hit and inflate the numbers I then report to her.
+   3. A load error is swallowed. The counter must never be able to break the
+      page it is measuring. */
+(function(){try{
+  var n=navigator;
+  if(n.doNotTrack==='1'||n.msDoNotTrack==='1'||window.doNotTrack==='1'
+     ||n.globalPrivacyControl===true)return;
+  var h=location.hostname;
+  if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='')return;
+  var s=document.createElement('script');
+  s.async=true;s.defer=true;
+  s.src='https://gc.zgo.at/count.js';
+  s.setAttribute('data-goatcounter','https://carriehuiww.goatcounter.com/count');
+  s.onerror=function(){};
+  document.head.appendChild(s);
+}catch(e){}})();
+</script>
 </body>
 </html>

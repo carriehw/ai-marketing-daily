@@ -111,22 +111,67 @@ try:
     _base = _p if _p.endswith("/") else _p.rsplit("/", 1)[0] + "/"
 except Exception:
     _base = "/"
+# Same loud-on-every-path rule as build.py: the directory-absent case is the one
+# a fresh scheduled session actually hits, so it must not be the quiet one.
 _fontcss = ""
 try:
     import importlib.util as _ilu
     _hd = Path(__file__).resolve().parent
     _fp, _fd = _hd / "build_fonts.py", _hd / "fonts"
-    if _fp.exists() and _fd.is_dir():
+    if not _fd.is_dir():
+        print("  存檔頁：字體未齊，略過 @font-face（冇 fonts/ 資料夾 —— 排程要先 GET "
+              "repo 嘅 fonts/*.woff2 落本機）", file=sys.stderr)
+    elif not _fp.exists():
+        print("  存檔頁：字體未齊，略過 @font-face（冇 build_fonts.py）", file=sys.stderr)
+    else:
         _spec = _ilu.spec_from_file_location("_bf", str(_fp))
         _bf = _ilu.module_from_spec(_spec)
         _spec.loader.exec_module(_bf)
-        if all((_fd / (f.rsplit(".", 1)[0] + ".woff2")).exists()
-               for f, *_ in _bf.FACES):
-            _fontcss = _bf.css(_base)
+        _miss = [f for f, *_ in _bf.FACES
+                 if not (_fd / (f.rsplit(".", 1)[0] + ".woff2")).exists()]
+        if _miss:
+            print("  存檔頁：字體未齊，略過 @font-face（缺 %s）" % ", ".join(_miss[:3]),
+                  file=sys.stderr)
         else:
-            print("  存檔頁：字體未齊，略過 @font-face", file=sys.stderr)
+            _fontcss = _bf.css(_base)
 except Exception as _e:  # noqa: BLE001
     print("  存檔頁 @font-face 生成失敗，維持系統字體：%s" % _e, file=sys.stderr)
+
+# Traffic counting on the directory page too. Browsing the back issues is a real
+# visit; leaving this page out would quietly under-count every reader who arrives
+# via 往期存檔. The day snapshots inherit the block from index.html verbatim, so
+# only this generated page needs its own copy — same opt-in data.json key, same
+# DNT/localhost guards, same two-host split (script from gc.zgo.at, hit to her
+# own /count; the per-site subdomain does NOT serve count.js — measured 404).
+_analytics = ""
+try:
+    _an = data.get("analytics") or {}
+    if str(_an.get("provider", "")).strip().lower() == "goatcounter":
+        _code = str(_an.get("code", "")).strip()
+        _host = str(_an.get("host", "")).strip() or (
+            f"https://{_code}.goatcounter.com" if _code else "")
+        _scr = (str(_an.get("script_host", "")).strip().rstrip("/")
+                or "https://gc.zgo.at") + "/count.js"
+        if _code and _host:
+            _ep = _host.rstrip("/") + "/count"
+            _analytics = f"""
+<script>
+(function(){{try{{
+  var n=navigator;
+  if(n.doNotTrack==='1'||n.msDoNotTrack==='1'||window.doNotTrack==='1'
+     ||n.globalPrivacyControl===true)return;
+  var h=location.hostname;
+  if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='')return;
+  var s=document.createElement('script');
+  s.async=true;s.defer=true;
+  s.src='{_scr}';
+  s.setAttribute('data-goatcounter','{_ep}');
+  s.onerror=function(){{}};
+  document.head.appendChild(s);
+}}catch(e){{}}}})();
+</script>"""
+except Exception as _e:  # noqa: BLE001
+    print("  存檔頁統計器生成失敗，頁面照出：%s" % _e, file=sys.stderr)
 
 ARCH.mkdir(parents=True, exist_ok=True)
 
@@ -387,7 +432,7 @@ function setLang(l){{
 }}
 document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
 setLang(document.documentElement.getAttribute('data-lang')==='zh'?'zh':'en');
-</script>
+</script>{_analytics}
 </body>
 </html>"""
 (ARCH / "index.html").write_text(page, encoding="utf-8")
