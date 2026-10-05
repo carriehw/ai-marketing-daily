@@ -197,6 +197,73 @@ snap = re.sub(r"(<body[^>]*>)", r"\1" + banner, site_html, count=1)
 # On an archived page the header "📚 往期存檔" link (href="archive/") would point to
 # archive/archive/ — rewrite it to the archive index (./) instead.
 snap = snap.replace('href="archive/"', 'href="./"')
+
+# ---- 1a) point the snapshot's self-referencing fields at ITSELF -------------
+#
+# This script clones the built index.html and edits only the body banner and one
+# href, so every snapshot inherits the HOMEPAGE's <head> verbatim. Measured on
+# the live archive/2026-10-02.html: <title> and og:image were correctly dated
+# (build.py derives those from data.json), while canonical, og:url, the JSON-LD
+# "url" and the Share button's SHARE_URL all still read
+# ".../ai-marketing-daily/" — the homepage.
+#
+# Why each one matters, in the order a reader hits it:
+#   SHARE_URL  — a reader on a past issue taps Share and sends their colleague
+#                to TODAY's page. The story they were pointing at is not there.
+#   canonical  — tells search engines every one of the 60 archived pages is a
+#                duplicate of the homepage, so none of them should be indexed.
+#   og:url     — Slack/LinkedIn resolve the preview against the homepage, so the
+#                card shows today's headline over the archived day's og:image.
+#   JSON-LD    — the structured record claims datePublished of the archived day
+#                at the homepage's URL: two different days, one address.
+#
+# Each rewrite asserts it actually matched. A string-replace that silently finds
+# nothing is this project's recurring failure mode (build succeeds, bytes look
+# fine, the feature is quietly absent), and here it would be invisible: the page
+# renders identically whether the head was fixed or not. A changed field in
+# build.py's output must break THIS script loudly rather than produce 60 pages
+# that still point at the homepage.
+PAGE_URL = SITE_URL.rstrip("/") + f"/archive/{ISO}.html"
+_rewrites = [
+    ("canonical",
+     re.compile(r'(<link rel="canonical" href=")' + re.escape(SITE_URL) + r'(">)'),
+     r"\g<1>" + PAGE_URL + r"\g<2>"),
+    ("og:url",
+     re.compile(r'(<meta property="og:url" content=")' + re.escape(SITE_URL) + r'(">)'),
+     r"\g<1>" + PAGE_URL + r"\g<2>"),
+    # JSON-LD is compact JSON on one line ("url":"…"), inside the ld+json script.
+    ("JSON-LD url",
+     re.compile(r'("url":")' + re.escape(SITE_URL) + r'(")'),
+     r"\g<1>" + PAGE_URL + r"\g<2>"),
+    ("SHARE_URL",
+     re.compile(r'(const SHARE_URL=")' + re.escape(SITE_URL) + r'(";)'),
+     r"\g<1>" + PAGE_URL + r"\g<2>"),
+]
+_unmatched = []
+for _name, _pat, _repl in _rewrites:
+    snap, _n = _pat.subn(_repl, snap, count=1)
+    if not _n:
+        _unmatched.append(_name)
+
+# Validity control (known-different must read as different): if the comparison
+# below cannot tell a fixed field from an unfixed one, a pass means nothing. So
+# assert BOTH directions — the dated URL is present, and the bare homepage URL is
+# gone from the four fields.
+_still_home = []
+for _name, _pat, _ in _rewrites:
+    if _pat.search(snap):
+        _still_home.append(_name)
+
+if _unmatched or _still_home:
+    print("ERROR 存檔頁的自指欄位改不到，這一頁會聲稱自己是首頁：", file=sys.stderr)
+    if _unmatched:
+        print("      比對不到：" + "、".join(_unmatched)
+              + "\n      → build.py 的 <head> 格式改過了，對照 build.py 內這幾個欄位的寫法再更新上面的 regex。",
+              file=sys.stderr)
+    if _still_home:
+        print("      改完仍然指向首頁：" + "、".join(_still_home), file=sys.stderr)
+    sys.exit("ERROR: 存檔頁自指欄位未修正，停手不出檔 —— 出了也看不出問題，所以不能讓它靜靜過。")
+
 (ARCH / f"{ISO}.html").write_text(snap, encoding="utf-8")
 
 # ---- 2) upsert manifest ----------------------------------------------------

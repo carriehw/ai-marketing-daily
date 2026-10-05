@@ -64,6 +64,8 @@ Config keys in data.json (optional unless noted):
   sources_note_en: footer source list (English)
   sections       : ordered section names (中文)              [required]
   sections_en    : ordered section names (English, same order/length as sections)
+  sections_en_nav: SHORT English labels for the top category strip (same order).
+                   Optional — defaults per known section; see _SEC_NAV_EN.
   section_emoji  : per-section emoji (same order; defaults per known section)
   section_desc / section_desc_en : one-line descriptor per section (same order)
   items[]        : {title, summary, source, url, time, section, action, region, why,
@@ -255,6 +257,28 @@ SEC_EN = {}
 for _i, _s in enumerate(data["sections"]):
     SEC_EN[_s] = _sections_en[_i] if _i < len(_sections_en) else _s
 
+# section -> SHORT English label, for the top category strip ONLY.
+#
+# The strip is `overflow-x:auto` and gets 853px at every desktop width (.wrap caps
+# the masthead, so a wider window grants no extra room). Measured on the live page
+# at 1280/1366/1440/1512/1600/1920: the Chinese labels total 740px and fit, the
+# English ones total 935px and overflow by 82px at ALL SIX widths — the last chip
+# was clipped under the Archive button for every desktop reader, not just narrow
+# ones. Per-chip English-minus-Chinese: Creative Production Tools +69,
+# Industry Impact & Brand Cases +61, AI Models & Market Moves +35.
+#
+# The fix is a THIRD label, not a shorter `sections_en`: the section heading and
+# the hero stat block have room for the full name and read better with it, while
+# the chip is a 13px pill where "Creative Tools" says the same thing. Measured
+# offscreen with the real font: this set needs 553px, so it fits down to 900px.
+_SEC_NAV_EN = {
+    "AI 大模型 & 市場動態": "AI Models",
+    "廣告平台 & 行銷科技": "Ad Platforms",
+    "創意生產工具":       "Creative Tools",
+    "行業影響 & 品牌案例": "Industry & Brands",
+    "即學技巧 & 玩法":     "Tips",
+}
+
 # section -> emoji + descriptor. data.json may override via parallel arrays;
 # otherwise fall back to the defaults for the five standing sections.
 _SEC_DEFAULTS = {
@@ -296,6 +320,38 @@ for _i, _s in enumerate(data["sections"]):
 if _missing_desc:
     print("WARN 分類說明缺失（會渲染成空白的 .cat-desc）：" + "、".join(_missing_desc),
           "\n     → 在 _SEC_DEFAULTS 補這個分類，或在 data.json 的 section_desc 補上對應位置。",
+          file=sys.stderr)
+
+# Short English chip label per section. Resolution order: data.json override →
+# _SEC_NAV_EN default (space-insensitive, same reason as _norm_sec above) → the
+# full `sections_en`.
+#
+# The fallback is the dangerous branch: a renamed or newly added section lands on
+# the long label and silently re-creates the 82px overflow this exists to fix, so
+# it WARNS instead of passing quietly. 22 chars is the measured budget — the five
+# standing labels are 9..17 chars for 553px total against 853px available, which
+# leaves room for one longer label and no more.
+_nav_en_in = data.get("sections_en_nav", [])
+_SEC_NAV_EN_N = {_norm_sec(k): v for k, v in _SEC_NAV_EN.items()}
+SEC_NAV_EN = {}
+_nav_long = []
+for _i, _s in enumerate(data["sections"]):
+    if _i < len(_nav_en_in) and _nav_en_in[_i]:
+        SEC_NAV_EN[_s] = _nav_en_in[_i]
+        continue
+    _short = _SEC_NAV_EN_N.get(_norm_sec(_s))
+    if _short:
+        SEC_NAV_EN[_s] = _short
+        continue
+    SEC_NAV_EN[_s] = SEC_EN.get(_s, _s)
+    if len(SEC_NAV_EN[_s]) > 22:
+        _nav_long.append(f"{_s} → “{SEC_NAV_EN[_s]}”（{len(SEC_NAV_EN[_s])} 字）")
+
+if _nav_long:
+    print("WARN 導覽條的英文標籤太長，會把最後一個分類擠出可視區（實測溢出會回到 82px 以上）：\n     "
+          + "\n     ".join(_nav_long)
+          + "\n     → 在 build.py 的 _SEC_NAV_EN 補一個短標籤，或在 data.json 的 "
+            "sections_en_nav 對應位置填上（建議 22 字以內）。",
           file=sys.stderr)
 
 _MONTH_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -1148,9 +1204,22 @@ if tldr_rows:
 stats = "".join(
     f'<a class="stat" href="#{SEC_ID[s]}"><b>{len(groups[s])}</b><span>{bi(s, SEC_EN.get(s, s))}</span></a>'
     for s in data["sections"])
+# The strip uses the SHORT English label (see _SEC_NAV_EN) and skips sections with
+# no stories.
+#
+# An empty category still cost 137px of a 853px strip while its chip read "Tips 0"
+# and led to a page that says "no updates in this section today" — it spent the
+# scarcest horizontal space on the one destination with nothing to go to, and on
+# 2026-10-05 it was precisely that chip that got clipped. The section itself stays
+# on the page with its empty note, so the information is not lost; only the
+# shortcut to it goes. The hero `.stats` block keeps all five with their counts,
+# which is where "nothing today in this category" belongs — it is a grid that
+# wraps instead of a strip that overflows.
+_nav_secs = [s for s in data["sections"] if len(groups[s])]
 nav = "".join(
-    f'<a href="#{SEC_ID[s]}">{bi(s, SEC_EN.get(s, s))}<i>{len(groups[s])}</i></a>'
-    for s in data["sections"])
+    f'<a href="#{SEC_ID[s]}">{bi(s, SEC_NAV_EN.get(s, SEC_EN.get(s, s)))}'
+    f'<i>{len(groups[s])}</i></a>'
+    for s in _nav_secs)
 
 # Reader-facing: just state the fact. The editorial reasoning behind leaving a
 # section blank (better a gap than a padded duplicate) is Carrie's own rationale
@@ -1490,8 +1559,31 @@ html[data-lang="en"] .l-zh{{display:none}}
    the wrap then only happens where it is actually wanted. */
 .mast-r{{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;min-width:0}}
 .navlinks{{display:flex;gap:6px;align-items:center;overflow-x:auto;min-width:0;flex:1 1 auto;
-  scrollbar-width:none;-ms-overflow-style:none}}
+  scrollbar-width:none;-ms-overflow-style:none;scroll-behavior:smooth}}
 .navlinks::-webkit-scrollbar{{display:none}}
+/* Edge fade = the ONLY signal that the strip scrolls.
+   `min-width:0` above made the overflow scrollable instead of pushing the page
+   sideways, and that was only half a fix: with `scrollbar-width:none` there was
+   no scrollbar, no mask and no gradient, so a clipped chip read as broken
+   layout rather than as more content. Measured on the live page: the strip did
+   scroll (scrollLeft reached 82 and the last chip became fully visible), i.e. the
+   content was always reachable and nothing said so.
+
+   A mask rather than a gradient overlay: the sticky bar is translucent navy over
+   `backdrop-filter:blur()`, so an opaque gradient would have to hardcode the bar
+   colour and would still sit wrong over the blur. A mask is colour-independent.
+   Driven by `data-ovf` from JS (values "", "l", "r", "lr") so the fade appears on
+   the side that actually has hidden content — a permanent right fade would dim
+   the last chip even when scrolled to the end, which misreads as "still more".
+   28px: wide enough to read as a fade at 13px type, narrow enough not to eat a
+   chip's label. */
+.navlinks[data-ovf="r"]{{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}}
+.navlinks[data-ovf="l"]{{-webkit-mask-image:linear-gradient(to right,transparent,#000 28px);mask-image:linear-gradient(to right,transparent,#000 28px)}}
+.navlinks[data-ovf="lr"]{{-webkit-mask-image:linear-gradient(to right,transparent,#000 28px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,transparent,#000 28px,#000 calc(100% - 28px),transparent)}}
+/* Keyboard users get no mask at all while tabbing through the chips: a focus ring
+   under the faded edge is a focus ring you cannot see. :focus-within is on the
+   strip, so this lifts the fade for exactly as long as focus is inside it. */
+.navlinks:focus-within{{-webkit-mask-image:none!important;mask-image:none!important}}
 .brand{{flex:0 0 auto}}
 /* Every rule below covers BOTH the pills inside the scrolling strip and the two
    lifted out of it (`.mast-r>a.pill`). The base look was scoped to `.navlinks a`,
@@ -2004,6 +2096,10 @@ function setLang(l){{
   document.documentElement.lang=(l==='en'?'en':'zh-Hant');
   try{{localStorage.setItem('amd-lang',l)}}catch(e){{}}
   document.querySelectorAll('.langtog button').forEach(b=>{{const on=b.dataset.set===l;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')}});
+  /* The category strip fits in Chinese and overflows in English (measured: 740px
+     vs 935px against 853px available), so the edge fade has to be recomputed on
+     every switch. Guarded because setLang() runs before that script block. */
+  if(window.__navOvf)window.__navOvf();
 }}
 document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
 setLang(curLang()); // sync button highlight with the pre-paint language
@@ -2088,6 +2184,30 @@ document.getElementById('share').addEventListener('click',async()=>{{
   addEventListener('scroll',function(){{if(!pending){{pending=true;requestAnimationFrame(draw)}}}},{{passive:true}});
   addEventListener('resize',draw,{{passive:true}});
   draw();
+
+  /* Which edges of the category strip have hidden content → data-ovf, which the
+     CSS turns into a fade on that side only. 2px tolerance because scrollLeft is
+     fractional on fractional-DPR displays and an exact comparison leaves a
+     permanent 0.5px "there is more" fade at the end of the strip.
+
+     Runs on scroll, on resize, and after fonts load: the strip's content width
+     depends on the webfont, and measuring before it lands gives the fallback
+     font's metrics — which is how a fade can be correct on first paint and wrong
+     a moment later. Also re-run on the language toggle, since Chinese fits and
+     English does not. */
+  var nav=document.querySelector('.navlinks');
+  function navOvf(){{
+    if(!nav)return;
+    var l=nav.scrollLeft>2, r=nav.scrollLeft+nav.clientWidth<nav.scrollWidth-2;
+    nav.setAttribute('data-ovf',(l?'l':'')+(r?'r':''));
+  }}
+  if(nav){{
+    nav.addEventListener('scroll',navOvf,{{passive:true}});
+    addEventListener('resize',navOvf,{{passive:true}});
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(navOvf).catch(function(){{}});
+    window.__navOvf=navOvf;   /* setLang() calls this after switching language */
+    navOvf();
+  }}
 
   var links={{}};
   document.querySelectorAll('.navlinks a[href^="#"]').forEach(function(a){{links[a.getAttribute('href').slice(1)]=a}});
