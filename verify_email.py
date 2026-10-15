@@ -119,6 +119,37 @@ gate("preheader present", 40 <= len(pre_txt) <= 150, f"{len(pre_txt)} chars")
 overlap = set(re.findall(r"[a-z]{5,}", SUBJ.lower())) & set(re.findall(r"[a-z]{5,}", pre_txt.lower()))
 gate("preheader not a repeat", len(overlap) <= 2, f"shared words {sorted(overlap)}")
 
+# --- mobile first screen ----------------------------------------------------
+# The first headline being readable above the phone fold was won by measurement
+# (block top 514px, first line ending 540px, against iPhone SE Mail's ~560px
+# budget) and it is held by a handful of CSS rules that a later edit could drop
+# without anything looking wrong. The pixel itself is not re-measurable here:
+# that needs a browser, and only inside an iframe, because headless chromium
+# clamps a top-level window to a 500px minimum and would silently test the wrong
+# width. So this gate holds the structure instead — the rules must exist, and
+# each must sit inside the phone media query rather than apply everywhere.
+mq = re.search(r"@media only screen and \(max-width:620px\) \{(.*?)\n    \}", S, re.S)
+gate("phone media query present", bool(mq), "found" if mq else "MISSING")
+inside = mq.group(1) if mq else ""
+outside = S.replace(inside, "") if mq else S
+for rule in ("h1", "m-hide", "m-hide-cta", "outer-pad", "sec-desc"):
+    gate(f"fold rule inside media query: .{rule}", f".{rule} " in inside,
+         "inside" if f".{rule} " in inside else "NOT in the phone query")
+# Hiding .sec-desc or the hero blocks OUTSIDE the query would strip them on
+# desktop and in Outlook too — Outlook ignores media queries entirely, so an
+# unconditional rule is the difference between "hidden on phones" and "gone".
+for rule in ("sec-desc", "m-hide-cta", "outer-pad"):
+    gate(f"no unconditional .{rule}", f".{rule} {{" not in outside,
+         "media-query only")
+# CONTROL: the placement check must distinguish a rule that IS there from one
+# that is not, else both arms would read as a pass.
+gate("CONTROL fold-rule placement bites",
+     ".sec-desc " in inside and ".totally-not-a-rule " not in inside,
+     "control rule correctly absent")
+# The section description is hidden on phones, not deleted. Outlook shows it.
+n_desc = S.count('class="sec-desc"')
+gate("sec-desc text still in HTML", n_desc > 0, f"{n_desc} section descriptions")
+
 # --- banned connectives (her standing editorial rule) ---------------------
 zh = "".join(re.findall(r"[㐀-鿿]+", S))
 hits = [w for w in ("但是", "不過", "但") if w in zh]
