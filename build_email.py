@@ -430,8 +430,9 @@ def item_block(it, cat, is_last, is_lead=False):
 def section_block(idx, sec_zh, items, total_in_sec):
     solid, tint, ctext = CATS[(idx - 1) % len(CATS)]
     emoji, desc = _SEC_META_N.get(_norm_sec(sec_zh), ("", ""))
-    desc_html = (f'<div style="font-family:{SANS};font-size:12.5px;line-height:1.45;'
-                 f'color:{ON_DARK_CHIP};opacity:.9;padding-top:2px;">{esc(desc)}</div>'
+    desc_html = (f'<div class="sec-desc" style="font-family:{SANS};font-size:12.5px;'
+                 f'line-height:1.45;color:{ON_DARK_CHIP};opacity:.9;'
+                 f'padding-top:2px;">{esc(desc)}</div>'
                  if desc else "")
     emoji_cell = (f'<td valign="middle" style="font-size:20px;line-height:1;'
                   f'padding-right:11px;width:28px;">{emoji}</td>' if emoji else "")
@@ -594,6 +595,27 @@ page = f'''<!DOCTYPE html>
          and opening on a button. Desktop keeps both. */
       .m-hide-cta {{ display:none !important; max-height:0 !important;
                      overflow:hidden !important; mso-hide:all; }}
+      /* 12px of the remaining gap, from the only block above the fold carrying
+         no content at all: the outer wrapper's top gutter — the margin between
+         the client's chrome and the email. Desktop keeps 24px. */
+      .outer-pad {{ padding-top:12px !important; }}
+      /* The criterion that matters is "the first headline is READABLE above the
+         fold", not "its block starts above the fold". Those differ by a line:
+         with the gutter alone the block top reached 553px and the first line
+         ended at 578px, so on iPhone SE Mail (~560px) the headline opened
+         sliced through the middle — a screenshot caught what the block-top
+         measurement called a pass.
+
+         The remaining 18px comes from the section bar's description line, which
+         wraps to two lines (38px) at phone width to say what the category name
+         beside it already says ("Ad Platforms & MarTech" / "Platform rules, ad
+         products and martech shifts"). It orients a reader scanning the whole
+         site; it earns nothing in an email where the next thing is the story.
+         Hiding it buys 38px against an 18px need, so the first line clears the
+         fold with ~20px of margin rather than landing exactly on a budget that
+         is itself approximate. Desktop keeps the description. */
+      .sec-desc {{ display:none !important; max-height:0 !important;
+                   overflow:hidden !important; mso-hide:all; }}
     }}
     /* Dark mode mirrors the site's ink/paper inversion rather than inventing a
        second palette: paper -> near-black ink, cards -> one step up, accent
@@ -617,7 +639,7 @@ page = f'''<!DOCTYPE html>
   <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:{PAPER};opacity:0;">{preheader}&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-paper" style="background-color:{PAPER};width:100%;">
     <tr>
-      <td align="center" style="padding:24px 12px;">
+      <td align="center" class="outer-pad" style="padding:24px 12px;">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="container" style="width:600px;max-width:600px;">
 
           <!-- ============ Masthead: the site's dark identity zone ============
