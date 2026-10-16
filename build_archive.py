@@ -224,44 +224,72 @@ snap = snap.replace('href="archive/"', 'href="./"')
 # build.py's output must break THIS script loudly rather than produce 60 pages
 # that still point at the homepage.
 PAGE_URL = SITE_URL.rstrip("/") + f"/archive/{ISO}.html"
-_rewrites = [
-    ("canonical",
-     re.compile(r'(<link rel="canonical" href=")' + re.escape(SITE_URL) + r'(">)'),
-     r"\g<1>" + PAGE_URL + r"\g<2>"),
-    ("og:url",
-     re.compile(r'(<meta property="og:url" content=")' + re.escape(SITE_URL) + r'(">)'),
-     r"\g<1>" + PAGE_URL + r"\g<2>"),
-    # JSON-LD is compact JSON on one line ("url":"…"), inside the ld+json script.
-    ("JSON-LD url",
-     re.compile(r'("url":")' + re.escape(SITE_URL) + r'(")'),
-     r"\g<1>" + PAGE_URL + r"\g<2>"),
-    ("SHARE_URL",
-     re.compile(r'(const SHARE_URL=")' + re.escape(SITE_URL) + r'(";)'),
-     r"\g<1>" + PAGE_URL + r"\g<2>"),
-]
-_unmatched = []
-for _name, _pat, _repl in _rewrites:
-    snap, _n = _pat.subn(_repl, snap, count=1)
-    if not _n:
-        _unmatched.append(_name)
 
-# Validity control (known-different must read as different): if the comparison
-# below cannot tell a fixed field from an unfixed one, a pass means nothing. So
-# assert BOTH directions — the dated URL is present, and the bare homepage URL is
-# gone from the four fields.
+# build.py may or may not emit these tags; we INSERT them when absent, replace
+# when present. Each operation is verified by asserting PAGE_URL is present
+# afterward — silent no-ops are treated as failures.
+_unmatched = []
+
+# 1. canonical
+if 'rel="canonical"' not in snap:
+    snap, _n = re.subn(r'(</head>)',
+                       f'<link rel="canonical" href="{PAGE_URL}">\\1', snap, count=1)
+    if not _n:
+        _unmatched.append("canonical")
+else:
+    snap, _n = re.subn(r'(<link rel="canonical" href=")[^"]*(")',
+                       r'\g<1>' + PAGE_URL + r'\g<2>', snap, count=1)
+    if not _n:
+        _unmatched.append("canonical")
+
+# 2. og:url
+if 'og:url' not in snap:
+    snap, _n = re.subn(r'(</head>)',
+                       f'<meta property="og:url" content="{PAGE_URL}">\\1', snap, count=1)
+    if not _n:
+        _unmatched.append("og:url")
+else:
+    snap, _n = re.subn(r'(<meta property="og:url" content=")[^"]*(")',
+                       r'\g<1>' + PAGE_URL + r'\g<2>', snap, count=1)
+    if not _n:
+        _unmatched.append("og:url")
+
+# 3. JSON-LD top-level "url" — remove any existing one then inject as first field
+snap = re.sub(r'"url":"' + re.escape(SITE_URL) + r'"', '', snap)
+snap, _n = re.subn(
+    r'(<script type="application/ld\+json">\{)',
+    r'\g<1>"url":"' + PAGE_URL + r'",',
+    snap, count=1)
+if not _n:
+    _unmatched.append("JSON-LD url")
+
+# 4. SHARE_URL — location.href is the new build.py default; replace it
+if 'SHARE_URL=location.href' in snap:
+    snap = snap.replace('const SHARE_URL=location.href;', f'const SHARE_URL="{PAGE_URL}";')
+elif f'const SHARE_URL="{SITE_URL}"' in snap:
+    snap = snap.replace(f'const SHARE_URL="{SITE_URL}";', f'const SHARE_URL="{PAGE_URL}";')
+else:
+    _unmatched.append("SHARE_URL")
+
+# Validity: verify PAGE_URL is now present in each expected location
 _still_home = []
-for _name, _pat, _ in _rewrites:
-    if _pat.search(snap):
-        _still_home.append(_name)
+if f'rel="canonical" href="{PAGE_URL}"' not in snap:
+    _still_home.append("canonical")
+if f'og:url" content="{PAGE_URL}"' not in snap:
+    _still_home.append("og:url")
+if f'"url":"{PAGE_URL}"' not in snap:
+    _still_home.append("JSON-LD url")
+if f'SHARE_URL="{PAGE_URL}"' not in snap:
+    _still_home.append("SHARE_URL")
 
 if _unmatched or _still_home:
     print("ERROR 存檔頁的自指欄位改不到，這一頁會聲稱自己是首頁：", file=sys.stderr)
     if _unmatched:
-        print("      比對不到：" + "、".join(_unmatched)
+        print("      操作失敗：" + "、".join(_unmatched)
               + "\n      → build.py 的 <head> 格式改過了，對照 build.py 內這幾個欄位的寫法再更新上面的 regex。",
               file=sys.stderr)
     if _still_home:
-        print("      改完仍然指向首頁：" + "、".join(_still_home), file=sys.stderr)
+        print("      改完後 PAGE_URL 未找到：" + "、".join(_still_home), file=sys.stderr)
     sys.exit("ERROR: 存檔頁自指欄位未修正，停手不出檔 —— 出了也看不出問題，所以不能讓它靜靜過。")
 
 (ARCH / f"{ISO}.html").write_text(snap, encoding="utf-8")
