@@ -3,15 +3,18 @@
  "site_title_en": "AI Marketing Daily",
  "site_tagline": "AI Marketing Intelligence · HK / CN",
  "site_url": "https://carriehw.github.io/ai-marketing-daily/",
- "date": "2026-10-22",
- "date_display": "2026年10月22日 · 星期四",
- "date_display_en": "October 22, 2026 · Thursday",
- "sources_note": "資料來源：Adweek、TechCrunch、Anthropic、Digiday。資訊僅供參考，請以官方公告為準。",
- "sources_note_en": "Sources: Adweek, TechCrunch, Anthropic, Digiday. For reference only; please refer to official announcements.",
- "thesis": "AI 廣告工具效能進入財報驗證期，平台在代理商務與競價架構上的路線分歧正在加速行銷生態格局重組。",
- "thesis_en": "AI ad tools have crossed from promise to proven P&L impact, while diverging platform stances on agentic commerce and auction architecture are accelerating a structural reshaping of the marketing ecosystem.",
- "thesis_note": "Meta Q3 以 9.6% 轉化提升確立 AI 廣告工具的效能，Walmart 與 Amazon 在 AI 代理購物上押注相反，Prebid 向 Google 廣告科技核心發起挑戰，Netflix 引入 The Trade Desk 擴大程序化版圖——四條線同時指向：誰主導廣告交易的底層邏輯，答案正在這一個季度裡浮現。",
- "thesis_note_en": "Meta Q3 validates AI ad performance with a 9.6% conversion lift; Walmart and Amazon take opposite bets on agentic commerce; Prebid challenges Google's auction core; Netflix expands programmatic via The Trade Desk — four lines converging on one question: who controls the underlying logic of ad transactions, and this quarter is when the answer begins to take shape.",
+ "date": "2026-10-23",
+ "date_display": "2026年10月23日 · 星期五",
+ "date_display_en": "October 23, 2026 · Friday",
+ "sources_note": "本報整理自 TechCrunch、Anthropic、AdWeek、Digiday、Marketing Interactive、量子位、Google Ads Blog 及 Canva 等媒體。所有資訊截至發布當日，個別連結須訂閱方可閱讀全文。",
+ "sources_note_en": "Compiled from TechCrunch, Anthropic, AdWeek, Digiday, Marketing Interactive, Qbitai, Google Ads Blog, Canva, and others. All information accurate as of publication date. Some links may require subscriptions.",
+ "thesis": "AI 代理從試驗走向交易：今日多個版塊各有代理商業落地實例",
+ "thesis_en": "AI agents cross from pilot to transaction: agentic commerce examples span every section today",
+ "thesis_note": "Anthropic 推出 Claude Duet 讓代理自主執行任務與下單，Klook 透過 Meta Muse 讓旅遊體驗變成可對話預訂的商品，CNN International 在試驗讓代理自動議價廣告，Uber 讓代理協助 3 萬名員工處理日常任務，1Password 則正式推出代理身份驗證基礎架構。從概念到真實交易只差最後一個整合——準備窗口正在收窄。",
+ "thesis_note_en": "Anthropic launched Claude Duet for autonomous agent task execution and payments, Klook wired Meta Muse to handle travel bookings conversationally, CNN International is building infrastructure for agent-to-agent ad trading, Uber rolled out ChatGPT Work to all 30,000 employees, and 1Password shipped the first credential layer for AI agents. Conceptual to transactional is now one integration away — the preparation window is narrowing.",
+ "paywall_domains": [
+  "adweek.com"
+ ],
  "sections": [
   "AI 大模型 & 市場動態",
   "廣告平台 & 行銷科技",
@@ -21,251 +24,470 @@
  ],
  "sections_en": [
   "AI Models & Market Moves",
-  "Ad Platforms & Martech",
+  "Ad Platforms & Marketing Tech",
   "Creative Production Tools",
   "Industry Impact & Brand Cases",
-  "Tips, Tactics & Playbook"
+  "Learn & Apply"
  ],
  "items": [
   {
-   "title": "Walmart 推出 MCP 代理購物閘道，Amazon 反其道全面封鎖 AI 代理下單",
-   "title_en": "Walmart Opens Agent Gateway for AI Shoppers While Amazon Actively Blocks Them",
-   "summary": "Walmart 推出 MCP 伺服器 Agent Gateway，允許 ChatGPT 與 Gemini 等授權 AI 代理代客購物，並設消費上限與隱私保護；Amazon 則主動封鎖代理購物，兩大零售商對 AI 代理商務採截然相反的策略。",
-   "summary_en": "Walmart launched an MCP 'Agent Gateway' server enabling approved AI agents like ChatGPT and Gemini to shop on customers' behalf with spending caps and privacy controls. Amazon is actively blocking AI agent purchases — two polar-opposite bets on agentic commerce.",
+   "title": "Anthropic 推出 Claude Duet：企業代理 App，Claude Opus 5.5 驅動，6,000+ 服務接入",
+   "title_en": "Anthropic Launches Claude Duet: Agentic App on Claude Opus 5.5 with 6,000+ Connectors",
+   "summary": "Anthropic 推出企業代理應用 Claude Duet，以 Claude Opus 5.5 為基礎，在後台自主執行任務、建立摘要儀表板並可透過 Stripe 與 Shopify 完成付款，支援 6,000+ 連接器，目前向 Pro 及 Max 用戶開放候補申請。",
+   "summary_en": "Anthropic launched Claude Duet, an agentic app built on Claude Opus 5.5 that autonomously builds briefings, dashboards, and executes payments via Stripe and Shopify — supporting 6,000+ connectors, now in research preview for Pro and Max subscribers.",
    "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "time": "10月21日",
+   "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+   "time": "10月22日",
    "section": "AI 大模型 & 市場動態",
    "action": "影響生意",
    "region": "國際",
-   "why": "AI 代理商務時代到來，品牌電商廣告策略與受眾觸達邏輯需全面重新考量。",
-   "why_en": "Agentic commerce is arriving; brand e-commerce ad strategy and audience targeting logic will need a fundamental rethink.",
+   "why": "企業代理 App 進入商用階段，代理商可為客戶部署 Duet 自動化日常行銷運營任務，催生 AI 代理顧問服務線。",
+   "why_en": "Agentic apps are now production-ready — agencies can deploy Duet to automate routine marketing ops for clients and build new AI agent consulting service lines.",
    "highlights": [
-    "Walmart 推出 MCP 伺服器 Agent Gateway，允許 ChatGPT、Gemini 等授權 AI 代理代客下單，並設每日消費上限與隱私保護機制。",
-    "Amazon 採取截然相反的立場，主動封鎖所有 AI 代理自動完成購買，要求消費者親自操作結帳流程。",
-    "兩大零售商的策略分歧預示品牌將面臨全新競爭維度：在 AI 代理推薦系統中的「可被發現性」，或成未來電商競爭的核心指標。"
+    "Claude Duet 建立於 Claude Opus 5.5，支援 6,000+ 連接器，可在後台自主執行任務並主動推送建議與摘要。",
+    "可透過 Stripe Link 與 Shopify Pay 代用戶完成付款，每筆須用戶逐一審批；設有敏感資料分類器，不會外洩信用卡號或身份證件資訊。",
+    "Pro 及 Max 方案用戶可申請候補，iOS、Android 及 Claude.ai 網頁版均可使用；競爭對手 OpenAI Dots 與 Meta Muse 已在相同賽道布局。"
    ],
    "highlights_en": [
-    "Walmart launched an MCP server called Agent Gateway, allowing approved AI agents including ChatGPT and Gemini to complete purchases on behalf of users, with daily spending limits and privacy controls.",
-    "Amazon is taking the opposite approach, actively blocking AI agents from completing purchases and requiring human checkout.",
-    "The strategic divergence signals a new competitive frontier for brands: 'agent discoverability' — surfacing in AI agent shopping recommendations — may become the next critical optimization metric."
+    "Claude Duet runs on Claude Opus 5.5, connects to 6,000+ services, and proactively delivers recommendations and briefings in the background.",
+    "It can execute payments via Stripe Link and Shopify Pay, with mandatory per-transaction user approval; a built-in classifier prevents leaking credit card numbers or government IDs.",
+    "Available to Pro and Max subscribers via waitlist on iOS, Android, and the web — directly competing with OpenAI Dots and Meta Muse in the professional agent space."
    ],
-   "pattern": "品牌商品能否在 AI 代理購物推薦中出現，將決定其在新型消費渠道的觸及率；類似搜尋引擎優化的競爭邏輯，可能在 AI 代理時代以新的形式重演。",
-   "pattern_en": "Whether a brand's products surface in AI agent shopping recommendations will define reach in this new consumer channel — the SEO competition logic of the past may replay in a new form for the agentic commerce era.",
-   "detail": "Walmart 的 Agent Gateway 採用 Model Context Protocol（MCP）標準，允許授權的 AI 代理——目前包括 ChatGPT 與 Google Gemini——以消費者的 Wallet 帳戶直接下單，無需消費者打開應用程式或重新輸入付款資料。每日消費上限與隱私設定由消費者自行配置，這意味著整個授權流程是明確的選擇加入，而非默認開放。\n\nAmazon 的立場與此完全相反。Amazon 正在收緊系統對 AI 代理自動完成購買的支援，要求消費者在最後一步親自確認。這一分歧有其商業邏輯：Amazon 的廣告收入高度依賴 Sponsored Products 的競投機制，而 AI 代理介入之後，真實的消費行為信號可能被繞過，令廣告定向的精準度下降。Walmart 自身廣告業務體量遠小於 Amazon，加之其電商業務長期追趕，開放代理商務帶來增量流量的潛在收益，高於其保護現有廣告生態的必要性。\n\n對品牌來說，這是一個需要提前部署的戰場。AI 代理推薦商品時，決策依據是商品描述的清晰度、評分、庫存與定價等結構化數據，而非實時廣告競投。這套邏輯更接近搜尋引擎優化——品牌需要確保商品數據的準確與完整，讓 AI 代理在代購清單中能夠識別與推薦其商品，而不只是依賴廣告曝光。一個已在 Walmart Agent Gateway 上優化了商品內容的品牌，在 Amazon 最終開放代理商務時同樣佔有先發優勢。",
-   "detail_en": "Walmart's Agent Gateway uses the Model Context Protocol (MCP), allowing authorized AI agents — currently including ChatGPT and Google Gemini — to complete purchases through a consumer's Wallet account without the user opening the app or re-entering payment details. Daily spending limits and privacy settings are configured by the consumer, meaning the entire authorization flow is an explicit opt-in rather than a default.\n\nAmazon is taking the exact opposite position, quietly tightening system restrictions on AI agents completing automated purchases and requiring human confirmation at the final step. The divergence has a clear commercial logic: Amazon's ad revenue depends heavily on its Sponsored Products auction, and AI agent intermediation threatens to bypass real-time consumer behavior signals that make ad targeting precise. Walmart's own ad business is far smaller, and its e-commerce operation is in structural catch-up mode — the incremental traffic from agentic commerce is worth more than protecting an existing ad ecosystem.\n\nFor brands, this is a front that requires early preparation. When AI agents select products to recommend, they evaluate structured data — description clarity, ratings, inventory, and pricing — not real-time ad bids. The emerging logic is closer to SEO than programmatic advertising. Brands that optimize their product data for AI agent discoverability on Walmart's platform today will carry that advantage when Amazon eventually opens the same door."
+   "pattern": "市場正在形成「個人代理」與「企業代理」兩條線，Duet 選擇後者：不做私人雜務，而做業務層面的自主工作流。代理商若能掌握主流企業代理平台的接入與配置，可新增可收費的代理部署與維護服務。",
+   "pattern_en": "The agent market is bifurcating into personal-errand agents and professional workflow agents. Duet firmly targets the latter. Agencies that can configure and maintain enterprise agent deployments across Claude Duet, OpenAI Dots, and Muse will unlock a new billable service category."
   },
   {
-   "title": "Nielsen 調查：逾半數高管難以評核 AI 輔助工作，工具數量不減反增",
-   "title_en": "Nielsen Survey: Over Half of Executives Can't Evaluate AI-Assisted Work, Tool Sprawl Worsens",
-   "summary": "Nielsen 調查 1,700 名高管，超過 50% 難以評估員工 AI 輔助工作的品質；AI 工具數目不減反增，管理層需在績效考核中評估提示詞能力，39% 已用 AI 起草績效考核。",
-   "summary_en": "A Nielsen survey of 1,700 senior leaders found over 50% struggle to evaluate AI-assisted employee work quality. AI tool sprawl is increasing, managers now weigh prompt skills in performance reviews, and 39% use AI to draft those reviews.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
-   "time": "10月21日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "國際",
-   "why": "代理商需建立清晰的 AI 工作流程品質審核機制，否則難以向客戶保證輸出品質。",
-   "why_en": "Agencies must establish clear AI workflow quality review mechanisms, or they cannot credibly assure clients of output quality.",
-   "highlights": [
-    "Nielsen 調查 1,700 名高管，超過 50% 表示無法可靠地評核員工 AI 輔助工作的實際品質與真實貢獻。",
-    "企業 AI 工具數目在過去一年不減反增，管理層被要求在員工績效考核中評估提示詞撰寫能力。",
-    "39% 的受訪高管已使用 AI 起草員工績效考核，但評估機制本身是否準確尚待驗證，存在系統性偏差風險。"
-   ],
-   "highlights_en": [
-    "A Nielsen survey of 1,700 senior leaders found over 50% cannot reliably evaluate the actual quality and true contribution of AI-assisted employee work.",
-    "AI tool sprawl increased over the past year rather than consolidating, and managers are now expected to assess employees' prompt engineering skills in performance reviews.",
-    "39% of respondents used AI to draft performance reviews, but the accuracy of AI-assisted evaluation mechanisms remains unverified and carries systemic bias risk."
-   ],
-   "detail": "Nielsen 的調查覆蓋 1,700 名資深管理層，超過 50% 坦言難以評核員工 AI 輔助工作的真實品質。這一困境有其根源：當員工使用 AI 輔助完成報告、分析或提案，最終產出的文字可能更流暢，格式更整齊，卻未必比員工獨立完成更具洞察力或準確性。管理層在評核時面對的是「看似更好的輸出」，卻缺乏可靠的方法區分 AI 潤色與真實思考之間的邊界。\n\n調查同時揭示一個弔詭的現象：企業的 AI 工具數目不減反增，平均每名員工使用的 AI 工具已超過三種。管理層被要求在績效考核中評估員工的「提示詞能力」，卻有 39% 的受訪高管坦言已開始用 AI 撰寫員工的績效考核——亦即用 AI 評核員工用 AI 完成的工作。這種雙重依賴製造了系統性風險：任何評估鏈條中的偏差都會被放大，而不是被糾正。\n\n對代理商的啟示在於：內部品質管控的框架需要提前建立，而非在客戶提出質疑時才補救。具體而言，代理商需要定義哪些類型的工作可以 AI 輔助、哪些需要人工全程，並建立可審查的審核記錄。這套機制不僅保護交付品質，也是對客戶呈現代理商作為「可信賴 AI 工作夥伴」定位的最具說服力的方式。",
-   "detail_en": "Nielsen's survey of 1,700 senior leaders found over 50% openly acknowledge difficulty evaluating the true quality of AI-assisted employee work. The root cause is structural: when employees use AI to assist with reports, analysis, or pitches, the output may appear more polished and better formatted, yet not necessarily more accurate or insightful than unassisted work. Managers face 'improved-looking outputs' with no reliable method to distinguish AI polish from genuine thinking.\n\nThe survey also reveals a paradox: AI tool sprawl is increasing rather than consolidating, with the average employee now using more than three AI tools. Managers are expected to evaluate employees' 'prompt engineering skills' in performance reviews — yet 39% of surveyed executives admitted they already use AI to draft those performance reviews. This creates a double-dependency: using AI to evaluate work done with AI, where any bias in the evaluation chain gets amplified rather than corrected.\n\nFor agencies, the implication is that internal quality control frameworks need to be built proactively, not assembled in response to client questions. Practically, this means defining which types of work are AI-assisted, which require fully human execution, and building auditable review records. That mechanism protects delivery quality and is also the most persuasive way to position an agency as a 'trustworthy AI work partner' to clients who are wrestling with exactly the same management challenge."
-  },
-  {
-   "title": "Anthropic 任命哈佛物理學家 Stubbs 加入長期利益信託，強化公益使命監督",
-   "title_en": "Anthropic Appoints Harvard Physicist Stubbs to Long-Term Benefit Trust",
-   "summary": "哈佛物理學家兼前科學院長 Christopher Stubbs 加入 Anthropic 長期利益信託；信託擁有董事會關鍵職位的任命權，確保公司在商業增長與公益使命之間取得平衡。",
-   "summary_en": "Harvard physicist and former Dean of Science Christopher Stubbs joins Anthropic's Long-Term Benefit Trust, which holds board appointment authority to balance commercial growth with the public benefit mission.",
+   "title": "Anthropic 將 Agent Skills 標準捐贈 Linux Foundation 旗下 AAIF，70+ 平台已接入、安裝近 2.8 億次",
+   "title_en": "Anthropic Donates Agent Skills Standard to Linux Foundation's AAIF — 70+ Platforms, 280M Installs",
+   "summary": "Anthropic 把 Agent Skills 開放標準及品牌、GitHub 組織、agentskills.io 網域移交 Agentic AI Foundation，由 Anthropic、Block 與 OpenAI 共同創辦，ChatGPT、Cursor、GitHub Copilot 等 70+ 平台已整合，全球安裝近 2.8 億次。",
+   "summary_en": "Anthropic transferred Agent Skills — an open standard enabling AI agents to acquire specialized capabilities — to the Agentic AI Foundation (AAIF) under the Linux Foundation. Co-founded with Block and OpenAI, the standard has 70+ platform integrations and nearly 280 million installs.",
    "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-   "time": "10月21日",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "time": "10月22日",
    "section": "AI 大模型 & 市場動態",
    "action": "要留意",
    "region": "國際",
-   "why": "Anthropic 強化獨立科學監督，有助企業客戶評估長期合作的可信度與合規性。",
-   "why_en": "Anthropic's strengthened independent scientific oversight helps enterprise clients assess long-term trustworthiness and compliance posture.",
+   "why": "AI 代理基礎設施走向多廠商中立治理，代理商技術選型的廠商鎖定風險降低，長期規劃更有依據。",
+   "why_en": "Neutral governance of agentic infrastructure reduces vendor lock-in risk for agencies building on AI agents — a green light for longer-term technology commitments.",
    "highlights": [
-    "Christopher Stubbs 曾任哈佛大學科學院長，亦曾擔任白宮科技政策辦公室顧問，具備豐富的跨學科科學監督經驗。",
-    "Anthropic 長期利益信託擁有公司董事會關鍵職位的任命權，是確保公益使命不被商業利益凌駕的核心機制。",
-    "此舉與 Anthropic 近期提出的 AI 安全立法草案一脈相承，顯示其正積極構建企業客戶所需的負責任 AI 治理架構。"
+    "Agent Skills 標準由「一個包含 SKILL.md 的資料夾」組成，採用速度超越 MCP，自 2025 年 12 月發布起，ChatGPT、Cursor、GitHub Copilot 等 70+ 平台已接入。",
+    "Anthropic 此前已將 MCP 捐贈予同一基金會，今次再捐贈 Agent Skills，延續其「多廠商共治」策略，避免單一公司控制核心 AI 代理基礎設施。",
+    "Anthropic、Google、OpenAI 等公司的工程師將共同維護標準，下一步路線圖包括版本管理、安全指引及企業合規能力。"
    ],
    "highlights_en": [
-    "Christopher Stubbs served as Harvard's Dean of Science and as a White House science policy advisor, bringing deep cross-disciplinary scientific oversight experience.",
-    "Anthropic's Long-Term Benefit Trust holds key board appointment authority, serving as the core mechanism ensuring the public benefit mission cannot be overridden by commercial interests.",
-    "This appointment aligns with Anthropic's recent AI safety legislation proposal, signaling proactive construction of the responsible AI governance frameworks enterprise clients increasingly require."
-   ],
-   "detail": "Christopher Stubbs 的學術與政策背景在 Anthropic 的治理架構中具有特定意義。他曾擔任哈佛大學物理系及天文學系的主任，並主持哈佛科學院長一職，同時曾受邀擔任白宮科技政策辦公室顧問。他的研究領域橫跨精密測量物理與宇宙學，這一背景令他習慣在不確定性環境下做出可追責的決策——這正是 AI 治理所需的核心素養。\n\nAnthropic 長期利益信託的設計目的，是在公司商業利益與公共利益之間設置一道獨立防線。信託持有對 Anthropic 董事會關鍵職位的任命權，確保即使公司估值大幅上升或外部投資方施壓，使命方向也不會被輕易偏移。Stubbs 的加入是信託在近期的第二次人事補充，此前 Anthropic 在今年稍早已提出 AI 安全立法草案，建議對可能造成大規模傷亡的模型賦予法院封鎖權。\n\n從市場角度觀察，企業客戶在評估 AI 供應商時，治理透明度的優先級正在上升。尤其是金融、醫療、法律等高度受監管行業的買方，在引入 AI 工具前需要向其合規部門和董事會說明供應商的責任機制。Anthropic 系統性地強化獨立治理架構，有助於在這類採購決策中脫穎而出，形成與 OpenAI 及 Google 的差異化定位。",
-   "detail_en": "Christopher Stubbs brings a specific combination of academic and policy experience to Anthropic's governance structure. He served as chair of Harvard's physics and astronomy departments, Dean of Science, and as a White House OSTP advisor. His research spans precision measurement physics and cosmology — a background that trains decision-making under uncertainty in high-stakes environments, which is precisely what AI governance requires.\n\nAnthropic's Long-Term Benefit Trust is designed to serve as an independent firewall between the company's commercial interests and public benefit. The Trust holds appointment authority over key board positions, ensuring the company's mission cannot be easily redirected by valuation pressures or investor influence. Stubbs' appointment is the Trust's second recent addition; Anthropic also proposed AI safety legislation earlier this year, recommending courts be given authority to block models capable of causing mass casualties.\n\nFrom a market perspective, governance transparency is rising as a criterion in enterprise AI vendor evaluation, particularly in heavily regulated sectors like finance, healthcare, and legal services. Buyers in these sectors need to explain vendor accountability mechanisms to their own compliance teams and boards before deploying AI. Anthropic's systematic strengthening of its independent governance architecture helps it stand out in those procurement decisions, creating a differentiated position relative to OpenAI and Google."
+    "Agent Skills is a folder-based standard (a SKILL.md file) that has outpaced MCP adoption since its December 2025 launch — 70+ platforms integrated, including ChatGPT, Cursor, and GitHub Copilot.",
+    "Anthropic previously donated MCP to the same foundation; donating Agent Skills continues its pattern of neutral multi-vendor governance, preventing any single company from controlling agentic AI infrastructure.",
+    "Engineers from Anthropic, Google, and OpenAI will co-maintain the standard; upcoming roadmap includes versioned releases, security guidance, and enterprise compliance features."
+   ]
   },
   {
-   "title": "Meta Q3 廣告收入 631 億美元：AI 工具令轉化率升 9.6%，代理購物均訂 200 美元以上",
-   "title_en": "Meta Q3 Ad Revenue Hits $63.1B: AI Tools Boost Conversions 9.6%, Agent Shopping Averages $200+",
-   "summary": "Meta Q3 廣告收入 631 億美元（按年增 26%），AI GEM 模型令應用廣告轉化率升 9.6%，逾千萬廣告主使用生成式 AI 工具；Muse 代理購物平均訂單逾 200 美元，夥伴廣告年增逾 97%。",
-   "summary_en": "Meta Q3 ad revenue hit $63.1B (+26% YoY). AI GEM model boosted app ad conversions 9.6%; nearly 10M advertisers use generative AI creative tools. Muse agent shopping averaged $200+ per order; partnership ads surged 97%+ YoY to a $15B annual run rate.",
-   "source": "Adweek",
-   "url": "https://www.adweek.com/media/meta-beats-q3-expectations-with-strong-earnings/",
+   "title": "OpenAI 籌 300 億美元、估值 1.25 兆，IPO 前夕最大私募；Anthropic 亦揚言估值 1.5–2 兆上市",
+   "title_en": "OpenAI Eyes $30B Raise at $1.25T Valuation Ahead of IPO; Anthropic Targets $1.5–2T",
+   "summary": "OpenAI 正與 Coatue 及阿聯酋投資方商討最高 300 億美元融資，估值達 1.25 兆美元，較今年 3 月的 8,520 億上漲約 50%；Anthropic 據報亦正準備 S-1，目標估值 1.5–2 兆美元。",
+   "summary_en": "OpenAI is negotiating up to $30 billion at a $1.25T pre-money valuation led by Coatue and UAE investors — about 50% above its March $852B round. Anthropic is reportedly preparing its S-1 targeting a $1.5–2T public valuation.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+   "time": "10月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際",
+   "why": "主要 AI 供應商持續高估值融資，定價與服務可靠性上行壓力不變，評估長期 AI 工具合約時應留意鎖定條款。",
+   "why_en": "Both major AI suppliers are raising at ever-higher valuations — pricing pressure and uptime SLAs will only increase; review lock-in clauses before committing to long-term AI tool contracts.",
+   "highlights": [
+    "OpenAI 今年 3 月估值 8,520 億美元，新輪估值 1.25 兆美元，溢價近 50%；阿聯酋投資方可能附帶算力容量協議。",
+    "OpenAI 已於 2026 年 6 月提交保密 IPO 文件，此輪私募顯示其傾向以更高估值上市而非急於公開。",
+    "Anthropic 最新一輪估值已近 1 兆美元，若按目標 1.5–2 兆上市，兩家主要 AI 廠商估值將並駕齊驅，形成市場二極格局。"
+   ],
+   "highlights_en": [
+    "OpenAI's March 2026 valuation was $852B; the new round at $1.25T represents a ~50% premium. UAE investors may bring compute capacity alongside capital.",
+    "OpenAI filed confidential IPO paperwork in June 2026 but appears to be delaying public markets in favor of building valuation privately first.",
+    "Anthropic last raised at near $1T; targeting $1.5–2T on the public markets would put the two leading AI labs at comparable scale, creating a genuine AI duopoly."
+   ]
+  },
+  {
+   "title": "OpenAI Decisions API 全面開放：100–180 毫秒決策，決策模型新賽道正式成形",
+   "title_en": "OpenAI Decisions API Goes Live: 100–180ms Decisions, New Model Category Takes Shape",
+   "summary": "OpenAI 的 Decisions API 基於 ChatGPT Luna 模型優化，支援語音與視覺輸入，回應時間 100–180 毫秒，進入由 Jev（TypeSafe，估值 76 億美元）開創的「超級分類器」決策模型市場。",
+   "summary_en": "OpenAI's Decisions API — built on a reconfigured ChatGPT Luna model — supports voice and visual inputs with 100–180ms response times, entering the decision model market pioneered by Jev (TypeSafe, valued at $7.6B).",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+   "time": "10月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際",
+   "why": "決策模型比 LLM 快 10 倍、成本低 90%，廣告投放規則自動化、意圖分類與受眾分層等場景值得評估接入。",
+   "why_en": "Decision models are 10× faster and 90% cheaper than LLMs for high-frequency classification tasks — ad targeting rules, audience segmentation, and tool routing are natural early use cases.",
+   "highlights": [
+    "Decisions API 建於 ChatGPT Luna，回應時間 100–180 毫秒，支援語音與圖像輸入，Box、Datadog、Ramp 等為早期用戶。",
+    "競爭格局：Jev（TypeSafe，市場先行者）、D1 Ultra（Liquid）、Elephant-1（Base Labs）、今日新加入 OpenAI；各家均以「超級分類器」定位，取代 LLM 在需要高速決策的工作流節點。",
+    "此類決策模型在多選意圖識別、有序決策等場景耗用 Token 可比 LLM 減少 90%，同日中國蚂蚁數科亦發布同類產品。"
+   ],
+   "highlights_en": [
+    "OpenAI Decisions API runs on ChatGPT Luna with 100–180ms response; early adopters include Box, Datadog, and Ramp, using it for rapid classification and workflow routing.",
+    "The competitive field: Jev (TypeSafe, market pioneer), D1 Ultra (Liquid), Elephant-1 (Base Labs), and now OpenAI — all positioning as 'super classifiers' to replace LLMs at high-frequency decision nodes.",
+    "Decision models use up to 90% fewer tokens than LLMs for classification tasks; China's Ant Digital launched a competing model the same day."
+   ]
+  },
+  {
+   "title": "Uber 全球 3 萬名員工全面部署 ChatGPT Work，八成早期用戶為非工程師",
+   "title_en": "Uber Rolls Out ChatGPT Work to All 30,000 Global Employees; 80% of Early Adopters Non-Engineers",
+   "summary": "Uber 完成 3 萬名員工的 ChatGPT Work 全球部署，從 1,000 人試點擴大，財務、營運與產品部門均採用，80% 早期使用者為非工程師，透過「AI pods」模式加速各部門用例探索。",
+   "summary_en": "Uber expanded ChatGPT Work from a 1,000-person pilot to its full 30,000-employee global workforce — with 80% of early adopters being non-engineers using it for data analysis, localization, and workflow dashboards.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+   "time": "10月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "大型企業 AI 全員化加速，客戶已在大規模部署，代理商需準備提供 AI 工作流導入與員工培訓服務。",
+   "why_en": "Large-scale non-technical employee AI deployment is accelerating — clients will need agencies to help with AI workflow integration and change management training, not just tools procurement.",
+   "highlights": [
+    "Uber 以「AI pods」形式配對 30 名 AI 工程師與跨職能業務團隊，進行兩週自動化短衝，加速財務分析、本地化文件及工作流儀表板等用例。",
+    "早期採用者 80% 為非技術人員，顯示 AI 工作流工具已從工程部門向整個組織普及；Uber 計劃追蹤使用情況與效益，而非設定固定 KPI。",
+    "OpenAI ChatGPT Work 自 2026 年 7 月推出以來積極搶企業市場，與 Anthropic、Google Workspace AI 等競爭；Uber 的全員部署是其重要里程碑。"
+   ],
+   "highlights_en": [
+    "Uber's 'AI pods' pair 30 AI engineers with cross-functional teams for two-week automation sprints, targeting use cases in financial analysis, materials localization, and workflow dashboards.",
+    "80% of early adopters were non-engineers — confirming that enterprise AI tooling has crossed from engineering teams to the broader organization; Uber plans to track adoption organically rather than with fixed KPIs.",
+    "ChatGPT Work launched in July 2026; Uber's 30,000-seat deployment is a significant milestone for OpenAI's enterprise ambitions, competing against Anthropic and Google Workspace AI."
+   ]
+  },
+  {
+   "title": "MIT 研究：AI 代理在虛擬島嶼「空閒」30 小時後自發玩耍，發現設計師未知的物理機制",
+   "title_en": "MIT Study: AI Agents Spontaneously 'Play' During 30 Hours of Free Time, Discover Hidden Physics",
+   "summary": "MIT 將 13 個 Claude 代理空閒 30 小時，代理自發發明挑戰並獨立發現設計師未知的物理機制，此後在結構化任務上表現優於對照組。",
+   "summary_en": "MIT placed 13 Claude Opus 4.7 agents on a virtual island for 30 idle hours; they spontaneously invented challenges, with 6 independently discovering an unintended physics mechanic the designers didn't know existed. These agents later outperformed controls on assigned tasks.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+   "time": "10月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "國際",
+   "why": "探索式訓練可提升代理後續執行複雜任務的能力，企業評估 AI 代理服務時可將此列為考量指標。",
+   "why_en": "Exploratory environments improve later task performance — agencies specifying AI agent deployments should ask vendors whether their models receive unstructured exploration time as part of training.",
+   "highlights": [
+    "13 個 Claude Opus 4.7 代理在虛擬沙盒中無指令運行 30 小時，自發發明遊戲與挑戰；其中 6 個代理各自獨立發現同一個設計師未察覺的隱藏物理漏洞。",
+    "「玩耍後」代理在後續結構化任務中的表現優於從未玩耍的相同代理，研究者認為自由探索可讓 AI 積累「有用的隱性知識」。",
+    "加州大學伯克利分校認知科學家指出，研究尚未能確認是否存在真正的「認知」，所見行為可能是更精密的模式匹配，而非真實玩耍。"
+   ],
+   "highlights_en": [
+    "13 Claude Opus 4.7 agents ran 30 hours in a sandbox with no instructions, spontaneously inventing challenges; 6 independently found an identical hidden physics mechanic the island designers didn't know existed.",
+    "Post-play agents outperformed zero-play controls on structured tasks, suggesting free exploration accumulates transferable implicit knowledge — mirroring theories of childhood development.",
+    "UC Berkeley cognitive scientist notes the paper doesn't confirm genuine cognition; behavior may be sophisticated pattern matching rather than true play, and the result awaits replication."
+   ]
+  },
+  {
+   "title": "蚂蚁數科 LingDT-Decision-1.0 登場：決策速度比 LLM 快 10 倍、耗 Token 減少 90%",
+   "title_en": "Ant Digital Launches LingDT-Decision-1.0: 10× Faster, 90% Fewer Tokens Than LLMs",
+   "summary": "阿里旗下蚂蚁數科發布 LingDT-Decision-1.0（4B 及 27B 版），在 23 個開源基準上聲稱超越微軟 Microsoft-Decision-1 及 Jev，耗 Token 比同類 LLM 減少 90%，速度快 10 倍，面向客服路由、風控與代理工具選取。",
+   "summary_en": "Ant Digital (Alibaba's fintech arm) launched LingDT-Decision-1.0 in 4B and 27B versions, claiming to outperform Microsoft-Decision-1 and Jev across 23 open-source benchmarks. Targets customer service routing, risk control, and AI agent tool selection.",
+   "source": "量子位",
+   "url": "https://www.qbitai.com/2026/10/504879.html",
+   "time": "10月22日",
+   "section": "AI 大模型 & 市場動態",
+   "action": "要留意",
+   "region": "中國",
+   "why": "中國決策模型進場競爭，高頻分類工作流的代理商可追蹤以評估成本基準。",
+   "why_en": "China-developed decision models entering this market will accelerate cost competition — agencies running high-volume classification workflows should track Chinese alternatives for cost benchmarking.",
+   "highlights": [
+    "LingDT-Decision-1.0 設有 4B 與 27B 兩個版本，在 23 個開源基準中 27B 版本聲稱超越 Microsoft-Decision-1、Jev 1.13.0 及 Fastino/GLiDE；多選任務上 4B 版本亦超過 16 個競品。",
+    "全球首創「原生多選」能力，可在單次推理中同時識別多個意圖；亦支援有序依賴決策（DAG），適用於需多步驟判斷的工作流。",
+    "耗 Token 比 DS-V4-flash 等 LLM 減少約 97%，回應速度快 10 倍，已透過蚂蚁數科 DTMaaS 平台開放企業訂閱。"
+   ],
+   "highlights_en": [
+    "LingDT-Decision-1.0 has 4B and 27B variants; the 27B claims to outperform Microsoft-Decision-1, Jev 1.13.0, and Fastino/GLiDE across 23 open-source benchmarks, with both sizes beating 16 models on multi-select tasks.",
+    "Claims two global firsts: native multi-select (identifying multiple simultaneous intents in one inference pass) and sequential DAG decision-making for dependency-ordered multi-step workflows.",
+    "Token consumption is reportedly ~97% lower than LLMs like DS-V4-flash, with 10× faster responses. Available via Ant Digital's DTMaaS enterprise platform."
+   ]
+  },
+  {
+   "title": "Meta 廣告 AI「自動美化」引廣告主反彈：多品牌撤稿，10/30 新條款令廣告主負全責",
+   "title_en": "Meta AI 'Glow-ups' Spark Advertiser Backlash: Brands Pull Ads, Oct 30 Terms Shift Liability to Advertisers",
+   "summary": "Meta 未經授權自動為廣告加入 AI 圖片與輪播，多間代理商被逼撤回廣告；10/30 起新條款令廣告主對 AI 生成內容獨自負責。",
+   "summary_en": "Meta is automatically modifying ads with AI-generated images, sitelinks, and carousels without advertiser consent. Multiple agencies pulled live campaigns. New commercial terms effective Oct. 30 make advertisers 'solely responsible' for AI-generated ad content.",
+   "source": "AdWeek",
+   "url": "https://adweek.com/media/advertisers-pull-meta-ads-that-had-unwanted-ai-glow-ups/",
+   "time": "10月23日",
+   "section": "廣告平台 & 行銷科技",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "黑五前夕廣告可能被 AI 擅改，需立即逐一關閉 Meta AI 自動化功能，10/30 起廣告主負全責。",
+   "why_en": "With Black Friday less than a month away, any Meta campaign not explicitly opting out of AI automation is at risk of unauthorized modification. Agencies must audit and disable all Meta AI features now — the Oct. 30 terms shift liability squarely to advertisers.",
+   "highlights": [
+    "Meta AI 會在廣告主不知情下自動加入 AI 生成圖片、站點連結及輪播，相關關閉開關藏於「折疊選單」，多間代理商需完整暫停廣告才能解除。",
+    "實體書店 Bookshop.org 公開在 Threads 投訴後，代理商 Exverus 及多家同業確認問題普遍存在，距黑色星期五剛好一個月。",
+    "Meta 10 月 30 日起生效的新商務條款要求廣告主對 AI 生成的廣告內容「獨自負責」，責任轉移模式類似過去的 UGC 政策演變。"
+   ],
+   "highlights_en": [
+    "Meta's AI automatically adds generated images, sitelinks, and carousels to ads without advertiser knowledge; the opt-out controls are hidden in collapsed menus, requiring agencies to pause entire campaigns to disable.",
+    "Bookshop.org publicly called out Meta on Threads; agency Exverus and multiple peers confirmed the problem is widespread — all triggered just one month before Black Friday/Cyber Monday.",
+    "New Meta commercial terms effective Oct. 30 make advertisers 'solely responsible' for AI-generated ad content — a liability shift modeled after earlier UGC policy evolutions."
+   ],
+   "pattern": "平台逐步把 AI 生成責任轉移至廣告主，類似 UGC 責任邏輯；代理商需把「明確關閉所有 AI 自動化功能」納入定期帳戶稽核清單，並在客戶合約中明訂 AI 生成內容的審批流程。",
+   "pattern_en": "Platform liability shifts for AI-generated content are following the same playbook as UGC policies. Agencies should add 'disable all AI automation features' to routine account audit checklists, and build AI content approval workflows into client agreements."
+  },
+  {
+   "title": "CNN International 搶先建構代理人廣告市場架構，目標 2027 年 Q1 出首批代理交易收益",
+   "title_en": "CNN International Building Agentic Ad Market Infrastructure — First Revenue Target: Q1 2027",
+   "summary": "CNN International 搭建架構讓 AI 代理自主協商廣告交易，協議範圍與可讀性測試已完成，目標 2027 Q1 出首批代理收益。",
+   "summary_en": "CNN International is building infrastructure for agent-to-agent ad trading, completing protocol scoping (Q2) and LLM readability tests (Q3). Revenue target is Q1 2027. Industry standards remain fragmented with two competing frameworks overlapping on ~13 functions.",
+   "source": "Digiday",
+   "url": "https://digiday.com/media/why-cnn-international-is-building-for-agentic-ad-market-that-barely-exists-yet/",
    "time": "10月22日",
    "section": "廣告平台 & 行銷科技",
-   "action": "可即用",
-   "region": "國際",
-   "why": "Meta AI 廣告工具效能已有財報實證，評估客戶啟用 Advantage+ 與 GEM 模型的時機已到。",
-   "why_en": "Meta AI ad tool performance is now earnings-validated; it's time to assess Advantage+ and GEM model adoption for clients.",
-   "highlights": [
-    "Meta Q3 廣告收入達 631 億美元，按年增長 26%，遠超市場預期；Q3 總收入為 646 億美元。",
-    "AI GEM 模型令應用類廣告轉化率提升 9.6%，逾千萬廣告主已在使用生成式 AI 創意工具。",
-    "Muse 代理購物平均訂單逾 200 美元，夥伴廣告年增逾 97%，年化規模突破 150 億美元，Zuckerberg 預告未來收取交易佣金。"
-   ],
-   "highlights_en": [
-    "Meta Q3 ad revenue reached $63.1B, up 26% year-over-year, beating market expectations; total Q3 revenue was $64.6B.",
-    "The AI GEM model boosted app ad conversion rates by 9.6%, with nearly 10 million advertisers now using generative AI creative tools.",
-    "Muse agent shopping averaged over $200 per order; partnership ads surged 97%+ YoY to a $15B annual run rate, with Zuckerberg signaling future transaction fee collection."
-   ],
-   "followup": "10 月 21 日我們報過 Meta Muse 40 天美國下載突破千萬、七日留存率達 30%——用戶增長維度的數字。今日 Q3 財報電話會揭示商業側：AI GEM 模型令應用廣告轉化率升 9.6%，代理購物平均訂單逾 200 美元，夥伴廣告年增逾 97%——增長規模已轉化為可量化的廣告效能，Zuckerberg 同時預告未來將收取代理購物交易佣金，Muse 商務渠道的免費視窗可能比預期更短。",
-   "followup_en": "On October 21 we reported Meta Muse's 40-day milestone of 10M US downloads with 30% 7-day retention — the user growth side. Today's Q3 earnings call revealed the commerce side: the AI GEM model lifted app ad conversions 9.6%, agent shopping averaged $200+ per order, and partnership ads surged 97%+ YoY. Zuckerberg also signaled future transaction fees on Muse commerce — the free window for brands on this channel may close sooner than expected.",
-   "pattern": "Zuckerberg 預告未來向代理購物收取交易佣金，意味 Muse 商務渠道的免費時期可能有限；品牌現在建立的商品數據優化與代理購物流程，可能在佣金制上線後佔據先發優勢。",
-   "pattern_en": "Zuckerberg's transaction fee signal means Muse's free commerce window may be closing. Brands that optimize product data and agent shopping flows now stand to hold an early-mover advantage when the commission model launches.",
-   "detail": "Meta Q3 的業績數字之所以對廣告代理商具有直接的實務意義，在於它第一次將 AI 廣告工具的效能轉化為財報中可引用的具體數字。AI GEM 模型令應用類廣告的轉化率提升了 9.6%，這不是模擬測試或內部基準，而是跨越逾千萬廣告主的真實結果。已開啟 Advantage+ 購物廣告活動的廣告主，不少都在 Q3 中見證了成本效率的顯著改善——代理商現在可以以此作為向客戶推薦遷移至全自動化廣告的具體依據。\n\nMuse 商務數據是另一個不可忽視的信號。代理購物的平均訂單金額逾 200 美元，顯示 Muse 用戶已從「體驗新功能」轉變為有實際購買意圖的消費群體。夥伴廣告（Partnership Ads）的年增幅逾 97%，年化規模突破 150 億美元，反映品牌在社交電商的投入正在加速。Zuckerberg 在電話會議中明確預告未來將向 Muse 代理購物收取交易佣金，意味著這個渠道進入收費模式的時間表已被提前確立。\n\n對代理商的下一步行動而言，三件事值得立即著手：其一，檢視旗下客戶中還有多少廣告活動未開啟 Advantage+，逐步協助遷移；其二，為有 D2C 電商業務的客戶評估夥伴廣告的潛力，現在切入的成本低於 12 個月後；其三，確認客戶的 Muse 商品數據是否完整——在佣金制正式上線前建立基礎，是最具成本效益的準備方式。",
-   "detail_en": "Meta Q3 results matter directly to advertising agencies because they translate AI ad tool performance into auditable, earnings-call numbers for the first time. The AI GEM model's 9.6% lift in app ad conversion rates was not a lab benchmark — it was a real-world result across nearly 10 million advertisers. Advertisers running Advantage+ Shopping campaigns saw meaningful efficiency improvements in Q3, giving agencies a concrete, defensible basis to recommend migration to AI-optimized automated campaigns to clients who have been hesitant.\n\nMuse commerce data carries a separate signal. Average order values above $200 for agent shopping purchases indicate that Muse's user base has moved from novelty early adopters to consumers with real purchase intent. Partnership Ads' 97%+ YoY growth to a $15B annual run rate reflects accelerating brand investment in social commerce. Zuckerberg's explicit foreshadowing of future transaction fees on Muse agent purchases is notable: it means the timeline for this channel transitioning from free to paid is no longer speculative.\n\nFor agencies, three actions are worth prioritizing immediately: first, audit how many client campaigns have not yet migrated to Advantage+, and begin transitioning them with Q3 data as justification; second, evaluate Partnership Ads potential for clients with D2C e-commerce, where the entry cost is lower now than it will be in 12 months; third, verify client product data completeness on Muse — building that foundation before the commission model launches is the most cost-effective preparation strategy."
-  },
-  {
-   "title": "Prebid 提案翻轉競價架構：讓 Google GAM 競投 Prebid，目標 2027 年初落實",
-   "title_en": "Prebid Proposes Inverting the Ad Auction: Google GAM Bids Into Prebid, Targeting Early 2027",
-   "summary": "Prebid 提出讓 Google GAM 競投 Prebid 拍賣的新架構，繞過法院要求強制拆分 GAM 與 AdX；Google 已嘗試縮減法院條款，Prebid 目標 2027 年初落實，蘋果 iOS 限制同期加劇廣告科技集中化。",
-   "summary_en": "Prebid proposed inverting the ad auction so Google GAM bids into Prebid's auction, separating GAM and AdX without court-ordered divestiture. Google has attempted to claw back court provisions; Prebid targets early 2027 implementation, as Apple iOS restrictions simultaneously intensify adtech concentration.",
-   "source": "Digiday",
-   "url": "https://digiday.com/marketing/ad-tech-briefing-can-flipping-the-ad-auction-wrest-control-of-ad-tech-from-google/",
-   "time": "10月20日",
-   "section": "廣告平台 & 行銷科技",
    "action": "要留意",
    "region": "國際",
-   "why": "程序化廣告競價邏輯面臨結構性重塑，代理商需提前評估 DSP 策略的應對方案。",
-   "why_en": "Programmatic ad bidding logic faces structural reshaping; agencies should proactively assess DSP strategy contingencies.",
+   "why": "代理人廣告交易首批案例 1–2 年內將出現，現在開始研究競爭標準，利於提前做好 DSP 選型準備。",
+   "why_en": "The first real agentic ad transactions are 1–2 years away. Agencies should begin tracking competing standards now — the infrastructure choices made today will shape programmatic buying options by 2028.",
    "highlights": [
-    "Prebid 提出新競價架構，讓 Google Ad Manager 以競投方式進入 Prebid 拍賣，取代現有由 Prebid 向 GAM 填充競投的模式。",
-    "此架構旨在實現 GAM 與 AdX 的功能分離，同時繞過法院直接要求強制拆分的裁定；Google 已嘗試縮減法院授命條款。",
-    "Prebid 目標 2027 年初正式落實，蘋果 iOS 對身份解析商的封鎖同期加劇廣告科技集中化問題，兩者合力重塑競價格局。"
+    "CNN International 正教其代理讀取業務規則並確保庫存對 LLM 可讀，Q2 完成協議範圍訂定、Q3 完成可讀性測試、Q4 分析買家行為，首批收益目標 Q1 2027。",
+    "目前市場存在兩套競爭標準，功能重疊約 13 項；代理認證、庫存品質定義與責任歸屬問題尚未有行業共識。",
+    "早期場景聚焦效果廣告，品牌廣告的代理化交易需要更長時間；CNN International 表示需與買家方「一邊建設一邊溝通」。"
    ],
    "highlights_en": [
-    "Prebid proposed a new auction architecture where Google Ad Manager bids into Prebid's auction, replacing the current setup where Prebid bids into GAM for unfilled inventory.",
-    "The architecture aims to achieve functional separation of GAM and AdX while bypassing court-ordered divestiture; Google has already attempted to roll back court-mandated provisions.",
-    "Prebid targets early 2027 for formalization; Apple iOS's concurrent blocking of identity resolution firms is intensifying adtech concentration, with both forces reshaping the bidding landscape."
-   ],
-   "detail": "Prebid 的「翻轉競價」提案針對的是一個長期存在的結構性不公平：在現有架構中，Prebid 的拍賣要等 Google Ad Manager（GAM）填充不到的庫存才能競投，Google 實際上在自己平台上享有「最終裁決權」。新架構的核心邏輯是反轉這一關係——讓 GAM 以標準競投者身份進入 Prebid 的拍賣，與其他 DSP 在同等條件下競爭，Prebid 作為中立的競價平台保留最終決定權。\n\n這一提案的背景是 Google 廣告科技反壟斷訴訟的持續推進。法院已裁定要求強制拆分 GAM 與 AdX，並對 Google 的廣告科技業務設置結構性限制。Google 則在積極向法院爭取縮減相關條款的範圍。Prebid 的提案本質上是一個行業自律方案：如果 GAM 能以公平競投者的身份參與 Prebid 拍賣，強制拆分的司法程序可能變得不那麼必要。目標時間表是 2027 年初正式落實。\n\n對代理商的直接影響有兩個層面。短期內，這一架構變化尚在提案階段，代理商的程序化採購策略無需立即調整。中期而言，若 Prebid 的提案獲得採納，Google 在供給側廣告科技的議價能力將被系統性削弱，DSP 在程序化競投中的平等性將提升，有助於整體成本效率。代理商應追蹤訴訟進展與 Google 的應對動態，在 2027 年預算規劃時預留策略彈性。",
-   "detail_en": "Prebid's 'auction flip' proposal targets a long-standing structural advantage: in the current setup, Prebid's auction only gets access to inventory Google Ad Manager couldn't fill, effectively giving Google 'last look' rights on its own platform. The proposed architecture inverts this relationship — GAM would participate in Prebid's auction as a standard bidder, competing with other DSPs on equal terms, with Prebid maintaining final arbitration as the neutral auction layer.\n\nThe proposal is framed against the ongoing Google adtech antitrust proceedings. Courts have ruled for forced separation of GAM and AdX, with structural restrictions on Google's adtech business. Google is actively pushing back to narrow the scope of court-mandated provisions. Prebid's proposal is essentially an industry self-regulation alternative: if GAM can participate as a fair bidder in Prebid's auction, the judicial forced divestiture process may become less urgent. The target timeline for formalization is early 2027.\n\nThe direct impact for agencies has two dimensions. In the near term, this architecture change remains in proposal form and requires no immediate adjustments to programmatic buying strategy. In the medium term, if Prebid's proposal is adopted, Google's pricing leverage in supply-side adtech will be systematically reduced, improving DSP parity in programmatic bidding and lifting overall cost efficiency. Agencies should track litigation progress and Google's response, and preserve strategic flexibility in their 2027 budget planning."
+    "CNN International has completed protocol scoping (Q2 2026) and LLM readability tests (Q3); Q4 focuses on analyzing buyer behavior before targeting first agentic revenue in Q1 2027.",
+    "Two competing industry standards overlap on roughly 13 functions; agent authentication, inventory quality definitions, and accountability for misread briefs remain unresolved.",
+    "Early agentic ad use cases focus on performance campaigns; brand advertising is expected to take longer to reach automated negotiation."
+   ]
   },
   {
-   "title": "Netflix 引入 The Trade Desk 為程序化夥伴，推出 Pixel 追蹤工具；Q3 廣告目標下調 10%",
-   "title_en": "Netflix Names The Trade Desk as Programmatic Partner, Launches Pixel; Lowers 2026 Ad Target 10%",
-   "summary": "Netflix 下調 2026 年廣告收入目標至 27 億美元，新增 The Trade Desk 為程序化合作夥伴，同步推出 Netflix Pixel 及 Conversion API；廣告業務仍按年增長逾 80%，Q3 總收入 129 億美元。",
-   "summary_en": "Netflix lowered its 2026 ad revenue target to $2.7B, added The Trade Desk as a programmatic partner, and launched Netflix Pixel and Conversion API. Ad revenue still grew 80%+ YoY; Q3 total revenue reached $12.9B.",
-   "source": "Adweek",
-   "url": "https://www.adweek.com/convergent-tv/netflix-lowers-expected-ad-revenue-after-slower-rollout-of-capabilities/",
-   "time": "10月21日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "可即用",
-   "region": "國際",
-   "why": "Netflix 程序化渠道擴大，CTV 媒體計劃可納入 The Trade Desk 採購路徑。",
-   "why_en": "Netflix's programmatic expansion means CTV media plans can now include The Trade Desk buying paths.",
-   "highlights": [
-    "Netflix 將 2026 年廣告收入目標下調 10%，從 30 億降至 27 億美元，主因廣告功能推出速度慢於計劃。",
-    "The Trade Desk 成 Netflix 新程序化採購合作夥伴，同時推出 Netflix Pixel 轉化追蹤工具及 Conversion API，支援第一方數據比對。",
-    "儘管目標下調，Netflix 廣告業務仍按年增長逾 80%，Q3 總收入達 129 億美元，廣告層訂閱用戶持續增長。"
-   ],
-   "highlights_en": [
-    "Netflix lowered its 2026 ad revenue target by 10%, from $3B to $2.7B, citing slower-than-planned rollout of advertising capabilities.",
-    "The Trade Desk is named a new programmatic buying partner; Netflix also launched Netflix Pixel for conversion tracking and a Conversion API for first-party data matching.",
-    "Despite the lowered target, Netflix's ad business still grew over 80% year-over-year, with Q3 total revenue reaching $12.9B and ad-supported tier subscribers continuing to grow."
-   ],
-   "detail": "Netflix Q3 廣告收入目標下調的原因，據其管理層在財報電話會議中的說法，是廣告功能的推出速度慢於原定計劃——包括頻次管理、受眾定向工具與程序化採購介面——而非廣告層訂閱用戶增長不及預期。後者實際上持續穩健成長，Netflix 的廣告曝光量亦在增加。換言之，目前的瓶頸在供給側（廣告工具的成熟度），而非需求側。\n\n引入 The Trade Desk 作為新的程序化採購合作夥伴，是 Netflix 在廣告技術基礎設施上的重要擴展。此前 Netflix 的程序化渠道較為集中（主要透過 The Trade Desk 的直接合作以外，還有部分 DV360 路徑），新的夥伴關係意味著買方可透過更標準化的 DSP 工作流程採購 Netflix 庫存，降低了進入門檻。Netflix Pixel 與 Conversion API 的推出則補足了歸因端的缺口，讓廣告主可以追蹤 Netflix 廣告在其站外轉化中的貢獻。\n\n對計劃中 CTV 預算的代理商而言，2026 年底及 2027 年初是重新評估 Netflix 的時間節點。廣告工具的成熟度正在逐步到位，The Trade Desk 渠道的開放降低了採購複雜度，而廣告層用戶的持續增長確保了庫存規模。Netflix 廣告業務按年增長仍逾 80%，下調目標更多反映管理層的審慎，而非業務本身的衰退。",
-   "detail_en": "Netflix's ad revenue target reduction stems from slower-than-planned rollout of advertising capabilities — including frequency management, audience targeting tools, and programmatic buying interfaces — rather than weak growth in ad-supported tier subscribers, which continued to grow healthily. The bottleneck is on the supply side (ad tool maturity), not the demand side.\n\nAdding The Trade Desk as a new programmatic partner represents an important expansion of Netflix's advertising technology infrastructure. Previously, Netflix's programmatic access was relatively concentrated; the new partnership allows buyers to purchase Netflix inventory through more standardized DSP workflows, reducing the entry barrier for programmatic activation. The launch of Netflix Pixel and Conversion API addresses the attribution gap, enabling advertisers to measure how Netflix ads contribute to off-platform conversion outcomes.\n\nFor agencies managing CTV budgets, late 2026 and early 2027 represent the right window to reassess Netflix. Ad tool maturity is progressively improving, The Trade Desk channel reduces purchasing complexity, and the growing ad-supported subscriber base ensures meaningful inventory scale. Netflix's ad business still grew over 80% year-over-year; the target reduction reflects management conservatism more than an underlying business problem."
-  },
-  {
-   "title": "YouTube 廣告曝光時間佔串流平台 44%，Tubi 以 12% 排第二",
-   "title_en": "YouTube Commands 44% of Streaming Ad Exposure Time; Tubi Ranks Second at 12%",
-   "summary": "Comscore 2026 年 8 月數據顯示 YouTube 在串流廣告曝光時間佔 44%，Tubi 排第二（12%）；整體串流廣告曝光仍只佔電視廣告 21%，低於其收視份額，CTV 庫存增長空間仍在。",
-   "summary_en": "Comscore's August 2026 data shows YouTube led all streamers with 44% of ad exposure time; Tubi ranked second at 12%. Overall streaming ad exposure still represents just 21% of TV advertising, below its viewership share, leaving room for CTV inventory growth.",
-   "source": "Digiday",
-   "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-youtube-tubi-top-streamers-share-of-ad-exposure-time/",
-   "time": "10月21日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "可即用",
-   "region": "國際",
-   "why": "YouTube 是串流廣告效率最高的渠道，加大 CTV 預算比重有具體數據支撐。",
-   "why_en": "YouTube is the most efficient streaming ad channel; concrete data now supports increasing CTV budget weighting.",
-   "highlights": [
-    "Comscore 2026 年 8 月數據顯示，YouTube 在所有串流平台的廣告曝光時間佔比達 44%，維持絕對領先地位。",
-    "Tubi 以 12% 排第二，Netflix、Amazon Prime Video 與 Peacock 爭奪第三，比例受足球與橄欖球球季顯著影響。",
-    "整體串流廣告曝光時間僅佔電視廣告 21%，低於其在整體收視時間的份額，顯示 CTV 廣告仍有相當增長空間。"
-   ],
-   "highlights_en": [
-    "Comscore's August 2026 data shows YouTube commanded 44% of all streaming platform ad exposure time, maintaining an absolute lead.",
-    "Tubi ranked second at 12%; Netflix, Amazon Prime Video, and Peacock compete for third, with rankings heavily influenced by football and sports seasons.",
-    "Overall streaming ad exposure still represents just 21% of total TV advertising, below its share of total viewing time, indicating significant room for CTV ad inventory growth."
-   ],
-   "detail": "Comscore 的廣告曝光時間份額數據，與 Nielsen 等機構的收視份額數據存在一個系統性差距：串流平台的收視份額遠高於其廣告曝光份額，根源在於部分串流服務的免費廣告層相對較新，而訂閱用戶（無廣告）仍佔相當比例。YouTube 之所以能佔到 44% 的廣告曝光份額，一方面因為其幾乎全部內容均有廣告，另一方面其觀看時長本身在串流平台中已處於領先位置。\n\nTubi 以 12% 排名第二，這一數字遠高於其在整體收視份額中的比重，反映了 FAST（免費廣告支援串流）頻道的廣告密度特徵——Tubi 的全部庫存均為有廣告版本，且其廣告負載（每小時廣告時長）通常高於 SVOD 轉廣告層的競爭對手。Netflix、Amazon Prime Video 與 Peacock 在廣告曝光份額上的競爭尤其受到球季節目的影響：NFL 與 NBA 直播及相關節目能在短時間內大幅提升廣告曝光，令排名出現季節性波動。\n\n從媒體計劃的角度，這份數據有三個實務含義：其一，在串流廣告組合中優先配置 YouTube 的 CTV 庫存，是效率最高的預設起點；其二，FAST 渠道（以 Tubi 為代表）適合追求觸及廣度而非精準定向的品牌意識預算；其三，廣告曝光份額整體只佔電視廣告 21%，說明 CTV 廣告庫存仍有顯著增長空間，過去幾年 CTV 增加預算的決策，後視鏡看來時機正確。",
-   "detail_en": "Comscore's ad exposure time share data carries a systematic gap relative to overall viewership share data: streaming platforms' ad exposure share is substantially below their viewership share, because a significant portion of subscribers use ad-free tiers and many platforms' ad-supported tiers are relatively new. YouTube commands 44% of ad exposure time partly because virtually all its content carries advertising, and partly because it already leads total viewing time on streaming platforms.\n\nTubi ranking second at 12% — well above its share of total viewership — reflects the structural characteristics of FAST (Free Ad-Supported Streaming) channels: Tubi's entire inventory is ad-supported, and its ad load (ads per viewing hour) typically exceeds SVOD-to-ad-tier competitors. Netflix, Amazon Prime Video, and Peacock face heavy seasonal volatility in their ad exposure rankings, with NFL and NBA content capable of sharply shifting the numbers within a single quarter.\n\nFor media planning, this data has three practical implications: first, prioritizing YouTube's CTV inventory in streaming ad mixes is the highest-efficiency default starting point; second, FAST channels (led by Tubi) suit brand awareness budgets seeking broad reach rather than precision targeting; third, streaming ad exposure still represents only 21% of total TV advertising, confirming that CTV inventory has substantial room to grow — the decision to increase CTV budget allocations in recent years looks correct in retrospect."
-  },
-  {
-   "title": "Recursive 發布 Flint：由 AI 系統主導構建的開源輕量編程模型，M4 Pro 本機可跑",
-   "title_en": "Recursive Launches Flint: Open-Source Laptop Coding Model Largely Built by AI",
-   "summary": "Recursive 開源輕量模型 Flint 由旗下 AI 研究系統 Eureka Machine 主導構建，可在 M4 Pro MacBook 以每秒 131 tokens 運行，SWE-Bench 表現優於同級開源模型，採 Apache 2.0 授權免費使用。",
-   "summary_en": "Recursive's open-source Flint was largely built by its Eureka Machine AI system, runs at 131 tokens/sec on an M4 Pro MacBook, outperforms comparable open-source models on SWE-Bench Verified, and is free under Apache 2.0.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-   "time": "10月21日",
+   "title": "Canva 推出自研 AI 圖像生成模型 Canva Craft：構圖先規劃後生成，支援 55 種語言文字與 30+ 比例",
+   "title_en": "Canva Launches In-House AI Image Model Canva Craft: Plan-Then-Render, 55 Languages, 30+ Aspect Ratios",
+   "summary": "Canva 推出自研 AI 圖像模型 Canva Craft，兩階段構圖架構先規劃後渲染，支援 55 種語言文字、2K 解析度與 Magic Layers 可編輯輸出。",
+   "summary_en": "Canva launched Canva Craft, its first in-house AI image generation model. It uses a two-stage architecture that plans composition before rendering, supports in-image text in 55 languages, 2K resolution, 30+ aspect ratios, and outputs editable layers via Magic Layers.",
+   "source": "Canva",
+   "url": "https://www.canva.com/newsroom/news/canva-craft/",
+   "time": "10月23日",
    "section": "創意生產工具",
    "action": "可即用",
    "region": "國際",
-   "why": "本機輕量模型技術成熟，代理商可探索設備端 AI 以降成本並保護客戶數據。",
-   "why_en": "Mature local lightweight models enable agencies to explore on-device AI to reduce costs and protect client data privacy.",
+   "why": "內嵌在 Canva 工作流中，省去匯入步驟，代理商製作社交廣告首版素材速度可再提升。",
+   "why_en": "Canva Craft integrates directly into the design workflow — no import step needed. Agencies producing social ad first drafts can cut production time further, with editable layer outputs reducing revision rounds.",
    "highlights": [
-    "Flint 由 Recursive 旗下 AI 研究系統 Eureka Machine 主導構建，該系統自動識別程式錯誤模式並生成相應訓練數據。",
-    "在 M4 Pro MacBook 上可達每秒 131 tokens 的推理速度，在 SWE-Bench Verified 評分上優於所有同等規模以下的開源模型。",
-    "Flint 採 Apache 2.0 授權完全免費開源，可在設備端本機運行，無需將代碼上傳至雲端，適合有數據保護要求的工作場景。"
+    "Canva Craft 採兩階段架構：先以 AI 規劃構圖、物件位置與視覺層次，再渲染圖像；修改時可針對特定元素調整，不需重新生成整張圖。",
+    "支援 55 種語言的圖內可讀文字（含中文、日文等）、2K 解析度輸出、30+ 種比例，輸出結果與 Magic Layers 整合，可拆解為可獨立編輯的設計元素。",
+    "已透過 Canva MCP Server 向開發者開放公開 API，代理商技術團隊可將其整合至自有素材生成工作流程。"
    ],
    "highlights_en": [
-    "Flint was largely built by Recursive's Eureka Machine AI research system, which autonomously identifies coding error patterns and generates corresponding training data.",
-    "It achieves 131 tokens/second on an M4 Pro MacBook and outperforms all comparable open-source models under 50B parameters on SWE-Bench Verified.",
-    "Flint is fully open-source under Apache 2.0, runs locally on-device, and requires no code upload to the cloud, making it suitable for privacy-sensitive workflows."
-   ],
-   "detail": "Flint 的構建方式是其最值得關注的技術面向，超過其本身作為一款工具的實用性。Recursive 旗下的 AI 研究系統 Eureka Machine，負責自主識別程式錯誤的常見模式、生成對應的訓練數據，並對模型進行迭代訓練。這種「AI 訓練 AI」的架構，讓模型的改進速度理論上能夠超越純人工標注的數據準備速度，同時讓整個訓練管線的邊際成本持續下降。\n\n從性能數據看，Flint 在 M4 Pro MacBook 上的推理速度為每秒 131 tokens，在 SWE-Bench Verified 基準測試中的表現優於所有同等參數規模以下的開源模型。更重要的是，它能在消費級筆記型電腦上本機運行，無需 GPU 服務器或雲端 API 調用——這直接回應了創意與技術工作者在處理敏感代碼時不希望上傳至第三方服務的核心痛點。Flint 採用 Apache 2.0 授權，商業使用無需授權費。\n\n對廣告與行銷代理商而言，Flint 的意義不在於取代現有的 AI 輔助寫作工具，而在於它開啟了一類新的應用場景：本機運行的代碼輔助工具，可以在不上傳客戶資料的情況下協助處理涉及 CRM 數據、廣告投放腳本或客戶匯報自動化的技術任務。隨著本機模型技術持續成熟，代理商可以開始探索以設備端 AI 處理敏感工作流程的可能性，而 Flint 是目前這個賽道中成本最低的入門選項之一。",
-   "detail_en": "Flint's construction methodology is arguably more significant than its utility as a standalone tool. Recursive's Eureka Machine AI research system autonomously identifies common coding error patterns, generates corresponding training data, and iterates the model. This AI-training-AI architecture means model improvement velocity can theoretically outpace human-labeled data preparation, while the marginal cost of the training pipeline continues to fall.\n\nPerformance-wise, Flint achieves 131 tokens/second on an M4 Pro MacBook and outperforms all comparable open-source models under 50 billion parameters on SWE-Bench Verified. More importantly, it runs entirely on a consumer laptop without GPU servers or cloud API calls — directly addressing the core concern of creative and technical workers who are unwilling to upload sensitive code to third-party services. Flint is Apache 2.0 licensed with no commercial usage fees.\n\nFor advertising and marketing agencies, Flint's relevance lies not in displacing existing AI writing tools, but in opening a new category of use cases: locally-run code assistance that can handle technical tasks involving CRM data, ad trafficking scripts, or client reporting automation without transmitting client data offsite. As on-device model technology continues to mature, agencies can begin exploring device-side AI for sensitive workflows — and Flint is currently one of the lowest-cost entry points in this space."
+    "Canva Craft's two-stage architecture separates compositional planning from image rendering — enabling precise per-element edits without regenerating the full image.",
+    "Supports legible in-image text across 55 languages, 2K resolution, and 30+ aspect ratios. Outputs integrate with Magic Layers for converting generated images into independently editable design elements.",
+    "A public API is available via Canva MCP Server, allowing agency tech teams to integrate Canva Craft into custom asset generation pipelines."
+   ]
   },
   {
-   "title": "Forbes 加入 Google AI 新聞計劃：以版權換 AI 摘要引用，流量跌 45% 的媒體抉擇",
-   "title_en": "Forbes Joins Google AI News Pilot: Trading Content Rights for AI Citations Amid 45% Traffic Drop",
-   "summary": "Forbes 加入 Google 付費 AI 新聞計劃，換取 AI 文章摘要、語音簡報及引用連結，但未披露金額；Forbes 年流量跌約 45%，計劃轉向讀者忠誠度與多元收入，Google 計劃已覆蓋逾 400 家媒體。",
-   "summary_en": "Forbes joined Google's paid News AI pilot, granting content rights in exchange for AI-driven article overviews, audio briefings, and attribution links. Forbes traffic dropped roughly 45% YoY; it's pivoting to reader loyalty and diversified revenue. The program covers 400+ publishers.",
-   "source": "Digiday",
-   "url": "https://digiday.com/media/forbes-looks-to-google-ai-pilot-for-insights-as-publishers-seek-value-beyond-the-click/",
-   "time": "10月20日",
+   "title": "微軟 AI 診斷系統正確率 83%，達通科醫生的兩倍以上，Suleyman 稱向「醫療超智能」邁進",
+   "title_en": "Microsoft AI Diagnoses Complex Cases at 83% vs. 36% for Generalist Doctors; Suleyman Eyes 'Medical Superintelligence'",
+   "summary": "微軟 MAI-DxO 系統正確診斷率達 83%，比通科醫師的 36% 高出逾倍，採多代理審議框架，研究刊於《科學》期刊。",
+   "summary_en": "Microsoft's MAI-DxO AI system correctly diagnosed 83% of complex NEJM cases versus 36% for generalist physicians using reference materials, published in Science. CEO Suleyman says medical superintelligence is achievable within 24–36 months.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+   "time": "10月22日",
    "section": "行業影響 & 品牌案例",
    "action": "要留意",
    "region": "國際",
-   "why": "媒體 AI 引用流量正取代傳統點擊，內容行銷與 SEO 策略需同步調整應對。",
-   "why_en": "AI citation traffic is replacing traditional click-through for media; content marketing and SEO strategies need to adapt accordingly.",
+   "why": "AI 多代理審議框架在專業診斷上超越個人專家，廣告效果分析與媒體計劃審核場景值得參考。",
+   "why_en": "AI multi-agent deliberation panels are now outperforming individual domain experts in medicine. The same architecture — multiple agents querying, testing, and debating — applies to marketing campaign diagnosis and media planning review.",
    "highlights": [
-    "Forbes 加入 Google 付費 AI 新聞計劃，向 Google 授予更廣泛的內容使用權，換取其文章在 AI Overview 中的摘要展示、語音簡報及引用連結。",
-    "Forbes 過去一年流量下跌約 45%，正積極轉向訂閱、活動及多元收入模式，此次加入 AI 計劃亦有助獲取用戶數據洞察。",
-    "Google 的 AI 新聞計劃已覆蓋逾 400 家媒體，顯示搜尋流量從傳統點擊向 AI 引用轉移的趨勢已形成系統性影響。"
+    "MAI-DxO 採多代理架構模擬一組醫生，相互質詢、下單測試並辯論診斷，最終正確率 83%，通科醫師加上參考資料僅 36%；研究案例來自《新英格蘭醫學雜誌》，刊於《科學》期刊。",
+    "主要收益來自底層 GPT-5 及 GPT-5.5 模型而非微軟的編排層，尚未與專科醫師比較；正在與 Beth Israel Deaconess 醫學中心展開真實臨床評估。",
+    "Suleyman 預計醫療 AI 將在 24–36 個月內提升「一個數量級」，微軟正將其整合為現有臨床工具的商業差異化賣點。"
    ],
    "highlights_en": [
-    "Forbes joined Google's paid News AI pilot, granting Google expanded content rights in exchange for AI Overview summaries, audio briefings, and attribution links for its articles.",
-    "Forbes saw roughly a 45% year-over-year traffic decline and is actively pivoting to subscriptions, events, and diversified revenue; joining the AI pilot also provides user insight data.",
-    "Google's AI news program now covers 400+ publishers, signaling that the shift from traditional search clicks to AI citation has created systemic impacts across the media landscape."
+    "MAI-DxO's multi-agent system — where agents query patients, order tests, and debate diagnoses — scored 83% on NEJM complex cases vs. 36% for generalists with reference materials; published in Science.",
+    "Most gains appear attributable to underlying GPT-5/5.5 models rather than Microsoft's orchestration layer; specialist physicians were not included in the comparison.",
+    "Microsoft is partnering with Beth Israel Deaconess for real-world evaluation; Suleyman forecasts healthcare AI improves 'an order of magnitude' within 24–36 months."
+   ]
+  },
+  {
+   "title": "Omnicom 奪可口可樂北美媒體業務 7.85 億美元，Pepsi 輸可樂奪的「控股集團可樂大戰」",
+   "title_en": "Omnicom Lands Coca-Cola's $785M North American Media Account in Near-Symmetrical Holdco Cola Swap",
+   "summary": "Omnicom 以 7.85 億美元年費奪可口可樂北美媒體帳戶，12 月 1 日起生效；WPP 保全球業務。金額近乎等與 Omnicom 本月失去的 PepsiCo 帳戶，控股集團可樂帳戶完成對調。",
+   "summary_en": "Omnicom secured Coca-Cola's U.S. and Canada media account at ~$785M annually, effective Dec. 1. WPP retains the global account. The win nearly offsets Omnicom's recent PepsiCo loss to Publicis — completing a near-symmetrical cola-wars account swap across rival holdcos.",
+   "source": "Digiday",
+   "url": "https://digiday.com/media-buying/omnicom-lands-coca-colas-north-american-media-business/",
+   "time": "10月23日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "國際",
+   "why": "大型帳戶流向折射控股集團 AI 工具競爭力，研究 Omnicom 以 756 億美元規模作比稿籌碼的策略。",
+   "why_en": "Large account movements signal which holdcos are winning on AI tools, data capabilities, and negotiating scale. Omnicom's $75.6B billings pitch is a case study in how scale becomes a client argument.",
+   "highlights": [
+    "可口可樂北美媒體評審只有 Omnicom 及電通競逐，WPP 選擇棄戰北美、集中保住全球業務；12 月 1 日起 Omnicom 接手，同日 Q3 業績報告顯示按年增長 7.2%，稱合並 IPG 後的融合壓力「大致完成」。",
+    "Omnicom 上月剛失去 PepsiCo 北美媒體帳戶（約 7.8 億美元）予 Publicis，今次奪回可口可樂金額相近，兩大可樂品牌在兩大控股集團間對調完成。",
+    "可口可樂 CMO 指 70% 廣告預算已流向社交媒體與創作者內容；Omnicom 以合並後 756 億美元年費總額（佔全球行銷集團年費的 31%）的議價規模作為比稿核心論點。"
    ],
-   "detail": "Forbes 加入 Google AI 新聞計劃，本質上是出版商在 AI 搜尋時代的一次公開定價測試。傳統搜尋引擎優化的核心邏輯是：讓文章出現在搜尋結果第一頁，吸引點擊，帶動廣告曝光或訂閱轉化。這一邏輯正在被 Google AI Overview 系統性地侵蝕——用戶拿到 AI 摘要後，點擊原始連結的動機大幅降低，Forbes 約 45% 的流量跌幅是這一趨勢的直接體現。\n\nForbes 加入 Google 付費計劃，意味著它選擇了「與其被摘要，不如將摘要授權賺費」的策略，以獲取 AI 引用連結、語音簡報機會及用戶行為洞察作為回報。具體交換條款未披露，但 Google 的同類計劃已覆蓋逾 400 家媒體，說明業界已形成一定的市場定價共識。這是出版商對 AI 流量損失問題，在版權訴訟之外的另一條務實應對路徑。\n\n對品牌內容行銷與 SEO 策略的啟示在於：如果主流媒體已開始針對「AI 引用可見性」而非「點擊流量」重新優化內容結構，品牌的自有媒體內容也需要跟進相同邏輯。未來的 KPI 體系可能需要納入「AI 引用率」——即品牌相關主題在 Google AI Overview 或類似系統中被引用的頻率與準確度——而非單純追蹤自然搜尋點擊量。代理商若能提前建立對客戶 AI 引用表現的監測框架，將在下一輪 SEO 工具迭代中佔據先機。",
-   "detail_en": "Forbes joining Google's paid News AI pilot is essentially a public pricing test for publishers in the AI search era. The core logic of traditional SEO was to appear on the first page of search results, drive clicks, and generate ad impressions or subscription conversions. Google AI Overview is systematically eroding this logic — once users receive AI-generated summaries, their motivation to click through to original sources drops significantly. Forbes's roughly 45% traffic decline directly reflects this trend.\n\nBy joining the paid program, Forbes chose the strategy of 'if you're going to be summarized, get paid for licensing the summaries' — in exchange for AI citation links, audio briefing inclusion, and user behavior insights. The specific financial terms were not disclosed, but Google's equivalent programs now span 400+ publishers, suggesting the industry has reached a working market price consensus. This represents a pragmatic path for publishers dealing with AI traffic erosion, alongside the copyright litigation route.\n\nThe implication for brand content marketing and SEO strategy is that if mainstream media is already restructuring content for 'AI citation visibility' rather than 'click traffic,' brand-owned media content needs to follow the same logic. Future KPI frameworks may need to incorporate an 'AI citation rate' — how frequently and accurately brand-relevant topics appear in Google AI Overview and similar systems — rather than tracking organic search clicks alone. Agencies that build client AI citation monitoring frameworks early will be positioned ahead of the next cycle of SEO tool evolution."
+   "highlights_en": []
+  },
+  {
+   "title": "Publicis Marcel 委任首位 CEO：從員工工具轉型為 90 個客戶的 AI 代理服務平台",
+   "title_en": "Publicis Marcel Names First CEO: Internal AI Tool Evolves Into a 90-Client Agent Services Platform",
+   "summary": "Publicis 任命 Scott Hagedorn 為 Marcel 首位 CEO，Marcel 已從員工工具演變為向 90 個客戶提供服務的 AI 代理平台，有 400 名全球員工，將擴展至創作者行銷、體育文化與 AI 搜尋三個版塊。",
+   "summary_en": "Publicis appointed Scott Hagedorn as Marcel's first CEO. The platform has evolved from an internal tool to an external AI agent service provider for 90 clients, employing 400 globally, with plans to expand into creator marketing, sports and culture, and AI search.",
+   "source": "AdWeek",
+   "url": "https://adweek.com/agencies/marcel-gets-its-first-ceo-as-publicis-competes-with-off-the-shelf-ai/",
+   "time": "10月23日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "國際",
+   "why": "控股集團把 AI 平台獨立品牌化並委任 CEO，是向客戶展示 AI 策略可持續的信號，中型代理商可參考。",
+   "why_en": "Holdcos branding AI platforms independently and appointing CEOs signals a long-term commitment clients can plan around. Mid-size agencies building internal AI capabilities can study Marcel's positioning evolution.",
+   "highlights": [
+    "Marcel 由員工工具演變為向 90 個外部客戶提供服務的 AI 代理平台，現有 400 名全球員工，Scott Hagedorn（前首席解決方案架構師）擔任 CEO 兼保留原職。",
+    "Publicis 以 Marcel 的廣告行銷專有訓練作為核心差異化，聲稱比 ChatGPT 等通用工具更了解行銷場景，為企業客戶建立定制 AI 代理。",
+    "下一步擴展版塊：創作者行銷、體育與文化（結合 Publicis 的 IMG 資源）、AI 搜尋，每個版塊將配備專屬代理能力。"
+   ],
+   "highlights_en": [
+    "Marcel evolved from an internal Publicis tool to an external AI agent services platform with 90 clients and 400 global employees; Scott Hagedorn becomes CEO while retaining his role as chief solutions architect.",
+    "Publicis pitches Marcel as a marketing-native AI platform that understands advertising context better than off-the-shelf tools like ChatGPT — building custom AI agents for enterprise clients.",
+    "Expansion targets three new verticals: creator marketing, sports and culture (leveraging Publicis's IMG relationship), and AI search — each with dedicated agent capabilities."
+   ]
+  },
+  {
+   "title": "e-Conomy SEA 2026：東南亞 AI 用戶達 2.43 億，數字經濟 GMV 3,680 億美元，2035 年目標 1 兆",
+   "title_en": "e-Conomy SEA 2026: 243M GenAI Users, $368B Digital Economy GMV, Path to $1T by 2035",
+   "summary": "Google、Temasek 與貝恩聯合報告：東南亞數字經濟 GMV 達 3,680 億美元（年增 17%），GenAI 採用速度是手機互聯網的 4 倍，用戶達 2.43 億；93% 消費者已將 AI 納入購買決策。",
+   "summary_en": "The 11th Google-Temasek-Bain e-Conomy SEA report puts 2026 digital economy GMV at $368B (+17% YoY), with 243M GenAI users — 4× faster adoption than mobile internet. 93% of consumers integrate AI into purchase decisions; 75% would allow AI agents to shop autonomously.",
+   "source": "Marketing Interactive",
+   "url": "https://www.marketing-interactive.com/sea-s-digital-economy-races-towards-us-1-trillion-as-ai-takes-the-wheel",
+   "time": "10月22日",
+   "section": "行業影響 & 品牌案例",
+   "action": "影響生意",
+   "region": "國際",
+   "why": "東南亞 AI 購物佔比上升，廣告策略需及早整合對話式購物與代理購物場景，SEA 是本區域重要增長市場。",
+   "why_en": "SEA is a critical growth market for HK agencies. With 75% of consumers open to AI-agent shopping and GenAI driving purchase decisions, ad strategies must incorporate conversational commerce and agentic purchasing scenarios now.",
+   "highlights": [
+    "東南亞電商 GMV 達 2,260 億美元（年增 18%），線上媒體收入 440 億美元（年增 22%，為最快增長板塊）；新加坡 GMV 預計達 310 億美元，2035 年目標 590 億美元。",
+    "93% 東南亞消費者已將 AI 融入購買決策，75% 表示願意讓 AI 代理獨立完成購物；GenAI 旅遊規劃佔比達 26%，首次超越社交媒體（23%）。",
+    "GenAI 普及速度為手機互聯網的 4 倍，企業 AI 應用最強的市場為新加坡與馬來西亞（採用率 45–60%）；整體 AI 使用預計到 2030 年增長 60 倍。"
+   ],
+   "highlights_en": [
+    "SEA eCommerce GMV hit $226B (+18%), with online media revenue at $44B (+22%, fastest-growing sector); Singapore GMV projected at $31B in 2026, targeting $59B by 2035.",
+    "93% of consumers already integrate AI into purchasing decisions; 75% would allow AI agents to complete purchases independently. GenAI now accounts for 26% of travel planning journeys — surpassing social media's 23% for the first time.",
+    "GenAI adoption in SEA scaled 4× faster than mobile internet; enterprise AI is strongest in Singapore and Malaysia (45–60% adoption rate). Overall AI usage is projected to grow 60× by 2030."
+   ]
+  },
+  {
+   "title": "Klook 接入 Meta Muse：AI 旅遊代理在對話中完成預訂，隨 Muse 日本登場同步上線",
+   "title_en": "Klook Wires Into Meta Muse: AI Travel Agent Completes Bookings Conversationally, Launches With Japan Debut",
+   "summary": "Klook 將 42.6 萬個可訂選項接入 Meta Muse，用戶與 Muse 對話即可搜尋並預訂旅遊體驗，隨 Muse 日本登場同步上線。",
+   "summary_en": "HK-based Klook wired its 426,000 bookable offerings across 4,600+ destinations into Meta Muse, enabling conversational travel booking — search, compare, and checkout within a single chat. Launched alongside Muse's Japan market debut.",
+   "source": "Marketing Interactive",
+   "url": "https://www.marketing-interactive.com/klook-and-meta-put-ai-in-the-travel-agent-s-seat",
+   "time": "10月23日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "香港",
+   "why": "旅遊 AI 代理購物落地案例，Klook 整合模式可作為規劃代理購物接入策略的參考框架。",
+   "why_en": "First meaningful HK-linked agentic commerce launch of the week. Agencies serving travel and retail clients should study Klook's integration model as a template for their own client agentic commerce strategies.",
+   "followup": "10月21日我們報過 Meta Muse 在美上線40天下載破千萬、七日留存率30%，遠高於同類均值。今日 Muse 隨日本市場開幕繼續擴張，旅遊平台 Klook 成為首批深度接入夥伴——Muse 由社交閒聊場景延伸至旅遊預訂交易，代理購物不再只是概念，而是真實完成的訂單。",
+   "followup_en": "On Oct 21 we covered Meta Muse reaching 10M US downloads in 40 days with a 30% day-7 retention rate. Today Muse expands to Japan, with Klook as its first deep travel commerce partner — Muse has moved from social conversation to real transactions, agentic shopping is now an order placed, not a concept discussed.",
+   "highlights": [
+    "Klook 將 4,600+ 目的地的 42.6 萬個可預訂體驗接入 Meta Muse，用戶在對話中即可搜索、比較取消政策並直接下單，確認信息在聊天介面內完成呈現。",
+    "Muse 在執行付款前要求用戶確認，隱私保護透過「Canva Shield」方案實現；Klook 指此整合有助提升小型獨立商戶的曝光，讓長尾選項透過 AI 匹配被發現。",
+    "整合與 Muse 日本首發同步上線，是 Muse 由社交功能向旅遊交易商業化的第一個公開落地案例。"
+   ],
+   "highlights_en": [
+    "Klook wired 426,000 bookable experiences across 4,600+ destinations into Meta Muse; users can search, compare cancellation policies, and place orders within a single conversation thread.",
+    "Muse requires user approval before executing payments; Klook highlights the integration boosts visibility for smaller independent merchants through AI-powered niche matching.",
+    "The launch coincides with Muse's Japan market debut — the first publicly announced case of Muse expanding from social engagement to travel commerce transactions."
+   ]
+  },
+  {
+   "title": "Target 推出 AI 購物助理「Ask Target」，以對話推薦迎接 2026 年假日旺季",
+   "title_en": "Target Launches 'Ask Target' AI Shopping Assistant for Conversational Gift Recommendations This Holiday",
+   "summary": "Target 推出 AI 購物助理「Ask Target」，用戶以對話方式建立心願清單及獲取推薦，搭配 8,000+ 假日新品，零售聯合會預測今年假日銷售可突破 1 兆美元。",
+   "summary_en": "Target launched 'Ask Target,' a beta conversational AI shopping tool that builds wishlists and provides personalized recommendations. The holiday push pairs 8,000+ new gifts (half under $20) with AI-powered discovery. NRF forecasts U.S. holiday retail could hit $1 trillion.",
+   "source": "Digiday",
+   "url": "https://digiday.com/marketing/targets-holiday-push-stresses-affordability-exclusives-and-an-ai-assistant/",
+   "time": "10月22日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "國際",
+   "why": "大型零售商假日行銷全面整合 AI 助理，代理商需評估對話式推薦功能的接入時機與方式。",
+   "why_en": "Major retailers are making AI shopping assistants a standard part of holiday marketing. Agencies planning e-commerce holiday activations for retail clients should assess conversational recommendation integration as a table-stakes feature.",
+   "highlights": [
+    "「Ask Target」讓用戶以對話方式建立自用或他人的心願清單，並以自然語言查詢推薦（如「50 美元以下的低調奢華禮物」），現於 Target.com 與 App 同步測試。",
+    "Target 同時推出 AI 相片搜索、AI 評論摘要與個性化「再次購買」功能，旗下電商工具全面 AI 化；自有品牌（80% 服裝為自有品牌）主打「高質感低於預算」定位。",
+    "美國零售聯合會預測 2026 年假日零售銷售額增長 4.2%，可能突破 1 兆美元大關，部分由物價上升帶動。"
+   ],
+   "highlights_en": [
+    "'Ask Target' enables conversational wishlists and natural-language gift recommendations (e.g., 'quiet luxury gift under $50'), currently in beta on Target.com and the app.",
+    "Target also launched AI photo search, AI review summaries, and a personalized 'Buy Again' feature — accelerating AI integration across its full e-commerce toolset; 80% of its apparel is own-brand.",
+    "NRF forecasts 4.2% YoY growth in 2026 U.S. holiday retail sales, potentially breaking $1 trillion — partially driven by higher prices rather than volume alone."
+   ]
+  },
+  {
+   "title": "Digiday：廣告主比稿選代理商的方式正在改變，閉門比稿與去比稿成趨勢",
+   "title_en": "Digiday: How Advertisers Choose Holdcos Is Changing — Closed Pitches and No-Pitch Awards on the Rise",
+   "summary": "Digiday 報告：大客戶比稿周期縮短，閉門比稿與直接委任增加，廣告主先自審組織能力才接觸代理商，控股集團差異化難度持續上升。",
+   "summary_en": "Digiday's Future of Marketing Briefing reports that traditional year-long pitches are shortening, some clients are using closed pitches or skipping them entirely (e.g., PepsiCo moved to Publicis without a formal pitch), and advertisers increasingly audit their own organizations before engaging agencies.",
+   "source": "Digiday",
+   "url": "https://digiday.com/marketing/future-of-marketing-briefing-advertisers-have-more-ways-than-ever-to-choose-a-holdco-and-free-holdcos-to-choose-from/",
+   "time": "10月23日",
+   "section": "行業影響 & 品牌案例",
+   "action": "要留意",
+   "region": "國際",
+   "paywall": true,
+   "why": "大型帳戶比稿機制在變，代理商新業務策略需考量客戶已從公開比稿轉向定向議價。",
+   "why_en": "The mechanics of large-account pitches are shifting. Agencies building new business strategies should account for clients increasingly using closed pitches or direct appointments — which rewards relationships and reputation over pitch theater.",
+   "highlights": [
+    "傳統一年制公開比稿正在縮短：可口可樂北美只有兩家控股集團競逐，WPP 棄戰；部分客戶（如 PepsiCo）直接委任控股集團而不經正式比稿。",
+    "廣告主在比稿前更多先審視自身組織能力，決定哪些功能自建、哪些外包，然後才接觸代理商；比稿顧問業務仍在增長，但比稿周期縮短。",
+    "三大控股集團（Publicis、Omnicom、WPP）主導市場，但合並後選擇收窄，部分客戶因競品已選同一集團而被逼使用次佳方案；2027 年預計將出現新一波大型比稿。"
+   ],
+   "highlights_en": [
+    "Traditional year-long pitches are shortening: Coca-Cola's North American review had just two holdcos compete; WPP sat it out. PepsiCo moved to Publicis with no formal pitch at all.",
+    "Advertisers increasingly audit their own organizations — deciding what to keep in-house vs. outsource — before engaging agencies; pitch consultancies remain busy but pitch cycles are compressing.",
+    "The Big Three holdcos dominate, but post-merger consolidation has narrowed client options; some advertisers are effectively locked out of their preferred holdco due to competitor conflicts. A wave of new large reviews is forecast for 2027."
+   ]
+  },
+  {
+   "title": "1Password for Agents 上線：AI 代理代人登錄帳戶，密碼對代理全程不可見",
+   "title_en": "1Password for Agents: AI Agents Can Log Into Your Accounts Without Ever Seeing Your Password",
+   "summary": "1Password 推出企業代理身份驗證，AI 代理透過三方驗證代人登錄帳戶而不接觸密碼，相容 Claude Duet 與 OpenAI Dots；美國銀行業已對代理暗中操作帳戶感到警覺。",
+   "summary_en": "1Password launched '1Password for Agents,' enabling AI agents to log into user accounts via a three-party verification loop — the agent never sees the password. Compatible with Claude Duet, OpenAI Dots, and Meta Muse. U.S. banks are reportedly alarmed by agents operating inside customer accounts.",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+   "time": "10月22日",
+   "section": "即學技巧 & 玩法",
+   "action": "可即用",
+   "region": "國際",
+   "why": "代理商為客戶建立 AI 代理工作流時需管理帳戶存取，此方案是目前最成熟的落地選擇。",
+   "why_en": "Agencies building AI agent workflows for clients need a credential management layer. 1Password for Agents is the first production-ready option — assess it before deploying agents that need account access.",
+   "highlights": [
+    "系統透過三方驗證：代理申請→1Password 核實代理身份→用戶確認→1Password 代填憑證；全程密碼不會接觸代理，每次存取需用戶明確批准。",
+    "相容主流代理平台：Claude Duet（Anthropic）、OpenAI Dots、ChatGPT Work、Grok Bot、Meta Muse，更多合作夥伴在洽談中；直接解決了「把密碼交給代理等於失控」的核心痛點。",
+    "美國銀行業已探測到代理在用戶帳戶內的活動，形容情況「令人震驚」，核心問題是銀行無法分辨代理行動是否獲用戶授權；1Password 方案處理憑證暴露問題，代理存取合規議題仍需行業共識。"
+   ],
+   "highlights_en": [
+    "Three-party loop: agent requests access → 1Password verifies agent identity → user approves → 1Password fills credentials. The agent never sees the password; every access event requires explicit user approval.",
+    "Compatible with Claude Duet, OpenAI Dots, ChatGPT Work, Grok Bot, and Meta Muse; directly addresses the 'handing passwords to agents means losing control' security gap.",
+    "U.S. banks are detecting agentic activity inside customer accounts and describe the situation as 'horrifying' — unable to distinguish user-authorized agent actions from unauthorized ones. 1Password resolves credential exposure but broader agentic access governance remains unsettled."
+   ]
+  },
+  {
+   "title": "Google Demand Gen 十月更新：Data Manager 擴展至 DV360 與 GA，轉化量平均提升逾 20%",
+   "title_en": "Google Demand Gen October Drop: Data Manager Expands to DV360 and GA, Avg. 20%+ Conversion Uplift",
+   "summary": "Google Demand Gen 十月更新推出三項新功能：Data Strength Uplift 指標、Data Manager 擴展至 DV360 和 Google Analytics、以及增強轉化在 DV360/GA 的部署，使用 Google Tag Gateway 的廣告主平均轉化量提升逾 20%。",
+   "summary_en": "Google's October Demand Gen drop adds three features: a Data Strength Uplift metric in the Google Ads UI, Data Manager expansion to DV360 and GA, and Enhanced Conversions coming to DV360/GA. Advertisers using Google Tag Gateway see 20%+ average conversion uplift.",
+   "source": "Google Ads Blog",
+   "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
+   "time": "10月23日",
+   "section": "即學技巧 & 玩法",
+   "action": "可即用",
+   "region": "國際",
+   "why": "Data Manager 擴展至 DV360 和 GA 意味著廣告主可在更多平台統一管理第一方數據，強化投標信號，今日就能開啟並驗證連接。",
+   "why_en": "Data Manager expansion to DV360 and GA means consistent first-party data management across Google's full stack — activating this now improves bidding signals ahead of the holiday season.",
+   "highlights": [
+    "新增 Data Strength Uplift 指標，直接在 Google Ads 介面顯示數據配置帶來的轉化增量，無需跑自定義報告即可量化第一方數據的 ROI。",
+    "Data Manager 正式擴展至 Display & Video 360 及 Google Analytics，增強轉化（Enhanced Conversions）亦即將在 DV360/GA 推出，統一跨平台測量精度。",
+    "實測案例：保險比較平台 The Zebra 啟用 Google Tag Gateway 後轉化量升 16%、轉化總值升 19%；整體 Demand Gen 廣告主平均轉化提升逾 20%。"
+   ],
+   "highlights_en": [
+    "New Data Strength Uplift metric in the Google Ads UI quantifies conversion gains from your specific data configuration — no custom reporting needed to measure first-party data ROI.",
+    "Data Manager is expanding to Display & Video 360 and Google Analytics; Enhanced Conversions is coming to both, creating a unified measurement layer across Google's full ad stack.",
+    "Real-world result: insurance platform The Zebra saw 16% conversion volume growth and 19% conversion value growth after implementing Google Tag Gateway. Overall Demand Gen advertisers see 20%+ average conversion uplift."
+   ]
   }
  ]
 }
