@@ -1174,7 +1174,7 @@ for s in data["sections"]:
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {fu}{body}
 {take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><button class="copy-team-brief" type="button" data-story="{sid}" aria-label="{html.escape(bi_attr('複製精簡新聞情報', 'Copy concise team brief'))}">{bi("Copy Team Brief", "Copy Team Brief")}</button><button class="story-share" type="button" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}" aria-label="{html.escape(bi_attr('分享這則新聞', 'Share this story'))}">{bi("分享新聞", "Share story")}</button>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
@@ -1668,6 +1668,10 @@ html[data-lang="en"] .l-zh{{display:none}}
 .langtog button+button{{border-left:1px solid rgba(247,245,239,.26)}}
 .langtog button.on{{background:var(--lime);color:var(--i-navy);font-weight:700}}
 .langtog button:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+.langtog.locale-links a{{display:inline-block;color:var(--on-dark-3);font:inherit;font-size:12px;font-weight:700;padding:7px 9px;text-decoration:none;line-height:1.4;border-right:1px solid rgba(247,245,239,.22);white-space:nowrap}}
+.langtog.locale-links a:last-child{{border-right:0}}
+.langtog.locale-links a:hover,.langtog.locale-links a:focus-visible{{color:var(--i-navy);background:var(--lime)}}
+.langtog.locale-links a:focus-visible{{outline:2px solid var(--lime);outline-offset:-2px}}
 /* Mobile jump menu shows all five categories without occupying a permanent row. */
 .mobile-category-menu{{display:none;position:relative;flex:none}}
 .mobile-category-menu>summary{{list-style:none;cursor:pointer;color:var(--on-dark);font:inherit;font-size:12.5px;font-weight:700;border:1px solid rgba(247,245,239,.3);padding:7px 10px;border-radius:999px;white-space:nowrap}}
@@ -1885,7 +1889,7 @@ body.is-filtering-news .thesis,body.is-filtering-news .more-brief{{display:none!
   .discovery-scope button{{font-size:12px}}
 }}
 @media print{{
-  .discovery,#archive-search-results,#brief-manual,.copy-team-brief{{display:none!important}}
+  .discovery,#archive-search-results,#brief-manual,.story-actions{{display:none!important}}
   body.view-archive-search main#main > section[id^="sec"]{{display:block!important}}
 }}
 /* ---- category headers ---- */
@@ -1992,12 +1996,18 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .signal.impact{{background:var(--accent-soft);color:var(--accent)}}
 .chip{{font-size:11.5px;padding:5px 10px;border-radius:99px;white-space:nowrap}}
 .chip.region{{border:1px solid var(--line);color:var(--muted)}}
-.copy-team-brief{{font:inherit;font-size:12.5px;font-weight:750;color:#fff;background:var(--accent-d);border:1px solid var(--accent-d);border-radius:999px;padding:8px 12px;cursor:pointer}}
-.copy-team-brief:hover{{background:var(--i-navy)}}
-.copy-team-brief:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
-.story-share{{font:inherit;font-size:12.5px;font-weight:750;color:var(--accent-d);background:#fff;border:1px solid var(--accent);border-radius:999px;padding:8px 12px;cursor:pointer}}
-.story-share:hover{{background:var(--accent-soft)}}
-.story-share:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+/* Only one action control per card; secondary choices live in a flyout. */
+.story-actions{{position:relative;z-index:1;flex:none}}
+.story-actions[open]{{z-index:15}}
+.story-actions>summary{{font:inherit;font-size:12.5px;font-weight:750;color:#fff;background:var(--accent-d);border:1px solid var(--accent-d);border-radius:999px;padding:8px 13px;cursor:pointer;white-space:nowrap;list-style:none}}
+.story-actions>summary::-webkit-details-marker{{display:none}}
+.story-actions>summary::after{{content:"⌄";margin-left:5px}}
+.story-actions[open]>summary::after{{content:"⌃"}}
+.story-actions>summary:hover{{background:var(--i-navy)}}
+.story-actions>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:3px}}
+.story-actions-menu{{position:absolute;right:0;bottom:calc(100% + 7px);width:190px;max-width:calc(100vw - 32px);z-index:25;display:grid;gap:2px;padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 9px 24px rgba(16,17,20,.18)}}
+.story-actions-menu button{{background:transparent;border:0;color:var(--ink);text-align:left;border-radius:8px;font:inherit;font-weight:700;font-size:13px;line-height:1.45;padding:12px 10px;cursor:pointer;min-height:44px}}
+.story-actions-menu button:hover,.story-actions-menu button:focus-visible{{background:var(--accent-soft);outline:2px solid var(--accent)}}
 .readsrc{{text-decoration:none;font-weight:800;font-size:13px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 .readsrc:hover{{background:var(--accent)}}
 .empty{{margin:0;padding:22px 24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.5)}}
@@ -2185,10 +2195,11 @@ footer b{{color:var(--ink)}}
          with flex:none instead. -->
     <a class="pill fix" href="archive/">{bi("歷史存檔", "Archive")}</a>
     <button id="share" type="button">{bi("分享", "Share")}</button>
-    <div class="langtog" role="group" aria-label="Language / 語言">
-      <button type="button" data-set="en" class="on" aria-pressed="true" aria-label="English">EN</button>
-      <button type="button" data-set="zh" aria-pressed="false" aria-label="繁體中文（台灣・香港）">中文</button>
-    </div>
+    <nav class="langtog locale-links" aria-label="Language / 語言 / 语言">
+      <a href="{_base}zh-hant/" hreflang="zh-Hant">繁</a>
+      <a href="{_base}zh-hans/" hreflang="zh-Hans">简</a>
+      <a href="{_base}en/" hreflang="en">EN</a>
+    </nav>
   </div>
 </div></div></div>
 
@@ -2323,10 +2334,23 @@ async function shareLink(value,title){{
   showBox(value);
 }}
 document.getElementById('share').addEventListener('click',()=>shareLink(languageShareUrl(),document.title));
-document.querySelectorAll('.story-share').forEach(b=>b.addEventListener('click',()=>{{
-  const title=(curLang()==='zh'?b.dataset.titleZh:b.dataset.titleEn)||document.title;
-  shareLink(languageShareUrl(b.dataset.story),title);
-}}));
+document.querySelectorAll('.story-actions').forEach(menu=>{{
+  menu.querySelector('[data-action="share"]').addEventListener('click',()=>{{
+    const title=(curLang()==='zh'?menu.dataset.titleZh:menu.dataset.titleEn)||document.title;
+    menu.open=false;
+    shareLink(languageShareUrl(menu.dataset.story),title);
+  }});
+}});
+document.addEventListener('click',e=>{{
+  document.querySelectorAll('.story-actions[open]').forEach(menu=>{{
+    if(!menu.contains(e.target))menu.open=false;
+  }});
+}});
+document.addEventListener('keydown',e=>{{
+  if(e.key==='Escape')document.querySelectorAll('.story-actions[open]').forEach(menu=>{{
+    menu.open=false;menu.querySelector('summary').focus();
+  }});
+}});
 
 /* ---- add-to-home-screen hint ----
    Three gates, all of which must pass before the tip appears:
