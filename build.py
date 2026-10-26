@@ -1169,12 +1169,22 @@ for s in data["sections"]:
         # 首行 1 張, alias area 2,030,127px² at 1400px). That is exactly the
         # 「格仔唔整齊」 Carrie asked me to fix, so the anchor goes inside where it
         # is ordinary inline content and holds no grid track.
+        # Reader-first summary stays fully visible in Quick Scan, while the
+        # previously published highlights, insight and long-form reporting remain
+        # available under a semantic native-details disclosure. No facts are cut.
+        scan = (f'<div class="scan-brief">'
+                f'<p class="scan-summary"><b>{bi("發生什麼", "WHAT HAPPENED")}</b>'
+                f'{bi(it.get("summary",""),it.get("summary_en"))}</p>'
+                f'<p class="scan-impact"><b>{bi("Marketing 影響", "WHY IT MATTERS")}</b>'
+                f'{bi(it.get("why",""),it.get("why_en"))}</p></div>')
+
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
 <div class="story-meta"><span class="src">{src}</span>{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
-{fu}{body}
-{take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{scan}
+<details class="story-expanded"><summary>{bi("深入閱讀：重點及分析", "Deep read: key points and analysis")}</summary>
+<div class="story-expanded-body">{fu}{body}{take}{pat}{detail}</div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
@@ -2178,6 +2188,99 @@ footer b{{color:var(--ink)}}
   a[href^="http"]::after{{content:" (" attr(href) ")";font-size:9.5px;color:#666;word-break:break-all}}
   .readsrc::after{{content:none}}
 }}
+/* -------- Reader-first visual system: reduced chrome, content first -------- */
+.navlinks{{display:none!important}}
+.mobile-category-menu{{display:block!important;z-index:21}}
+.mobile-category-menu>summary{{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:64px;padding:9px 11px}}
+.top-search{{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;color:var(--on-dark);border:1px solid rgba(247,245,239,.3);border-radius:999px;text-decoration:none;flex:none}}
+.top-search:hover{{color:var(--lime);border-color:var(--lime)}}
+.top-search:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+.mast-r>a.pill,#share{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:8px 12px}}
+.langtog.locale-links a{{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:35px;padding:8px 8px}}
+.hero{{padding:30px 0 24px;margin-bottom:0}}
+.hero-feature-grid{{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(18px,3.3vw,45px)}}
+.hero-intro{{min-width:0}}
+.hero-intro h1{{font-size:clamp(34px,4.1vw,55px);line-height:1.1;letter-spacing:-.045em;margin:12px 0 12px}}
+.hero-intro .hero-sub{{font-size:clamp(15px,1.45vw,17px);line-height:1.55;margin-bottom:15px}}
+.hero-intro .issue-meta{{gap:7px;margin-bottom:10px}}
+.hero-intro .issue-meta>span{{font-size:12px;padding:5px 10px}}
+.hero-intro .issue-meta>span:nth-child(2),
+.hero-intro .issue-meta>span:nth-child(4){{display:none}}
+.hero-intro .byline{{padding:9px 0 0;gap:5px 8px;flex-wrap:wrap}}
+.hero-feature-grid .top-stories{{margin:0;min-width:0}}
+.hero-feature-grid .lead-heading{{margin-bottom:9px}}
+.hero-feature-grid .lead-row{{padding:14px 16px;min-height:78px}}
+.hero-feature-grid .lead-info strong{{font-size:clamp(14px,1.3vw,16px);line-height:1.42}}
+.hero-feature-grid .lead-info small{{font-size:12px}}
+.post-hero-notes{{margin-top:15px}}
+.edition-notes{{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}}
+.edition-notes>summary{{list-style:none;cursor:pointer;padding:12px 16px;font-size:13px;font-weight:750;color:var(--accent-d);min-height:44px;display:flex;align-items:center}}
+.edition-notes>summary::-webkit-details-marker{{display:none}}
+.edition-notes>summary::after{{content:"＋";margin-left:auto}}
+.edition-notes[open]>summary::after{{content:"−"}}
+.edition-notes>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:-2px}}
+.edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{{margin:0 16px 14px}}
+.edition-notes .thesis{{margin-top:8px}}
+.edition-notes .more-brief{{margin-bottom:16px}}
+/* Quick Scan is the default even without JS. Every article retains the full
+   body in a semantic <details> control, including subscriber-only reporting. */
+.scan-brief{{display:grid;gap:10px;margin:3px 0 14px}}
+.scan-brief p{{margin:0;line-height:1.6}}
+.scan-brief b{{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}}
+.scan-summary{{font-size:15px;color:var(--body)}}
+.scan-impact{{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}}
+.scan-impact b{{color:var(--accent-d)}}
+.story-expanded{{border-top:1px solid var(--line);margin:0 0 12px}}
+.story-expanded>summary{{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}}
+.story-expanded>summary::-webkit-details-marker{{display:none}}
+.story-expanded>summary::after{{content:"⌄";margin-left:9px;font-size:16px}}
+.story-expanded[open]>summary::after{{content:"⌃"}}
+.story-expanded>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.story-expanded-body{{padding:4px 0 8px}}
+.story:has(> .story-expanded[open]) .scan-brief{{display:none}}
+.story:has(> .story-expanded[open]) .story-expanded{{margin-top:6px}}
+.story .story-foot{{gap:8px}}
+.story-actions>summary{{display:inline-flex;align-items:center;min-height:44px}}
+.readsrc{{display:inline-flex;align-items:center;min-height:44px}}
+.reading-toolbar{{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}}
+.reading-toolbar-label{{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}}
+.reading-switch{{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}}
+.reading-switch button{{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}}
+.reading-switch button[aria-pressed="true"]{{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}}
+.reading-switch button:focus-visible{{outline:2px solid var(--accent-d);outline-offset:2px}}
+.reading-toolbar-hint{{font-size:12px;color:var(--muted)}}
+body.view-archive-search .reading-toolbar{{display:none!important}}
+body.is-filtering-news .hero-feature-grid{{grid-template-columns:1fr}}
+body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
+@media(max-width:900px){{
+  .hero-feature-grid{{grid-template-columns:1fr;gap:18px}}
+  .hero-intro h1{{font-size:clamp(32px,5vw,46px)}}
+  .hero-feature-grid .top-stories{{margin-top:2px}}
+  .hero-feature-grid .lead-row{{min-height:0}}
+}}
+@media(max-width:560px){{
+  .mast-r{{width:100%;justify-content:space-between;gap:6px;flex-wrap:nowrap}}
+  .mobile-category-menu>summary{{min-width:56px;padding:8px 9px}}
+  .top-search{{min-width:38px;min-height:44px}}
+  .mast-r>a.pill,#share{{padding:7px 8px;font-size:12px}}
+  .langtog.locale-links a{{padding:7px 6px;min-width:29px;min-height:44px}}
+  .hero{{padding:18px 0 22px}}
+  .hero-feature-grid{{gap:17px}}
+  .hero-intro h1{{font-size:clamp(29px,8vw,38px);margin:9px 0 10px}}
+  .hero-intro .hero-sub{{font-size:15px;line-height:1.48;margin-bottom:12px}}
+  .hero-intro .byline{{font-size:12px;padding-top:7px}}
+  .hero-feature-grid .lead-row{{padding:12px;gap:10px}}
+  .hero-feature-grid .lead-info strong{{font-size:14px}}
+  .post-hero-notes{{margin-top:12px}}
+  .scan-summary{{font-size:15px}}
+  .scan-impact{{font-size:14px}}
+  .reading-toolbar-hint{{width:100%}}
+  .discovery{{margin-top:12px}}
+}}
+@media print{{
+  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{{display:none!important}}
+  .story-expanded-body{{display:block!important}}
+}}
 </style>
 </head>
 <body>
@@ -2191,6 +2294,7 @@ footer b{{color:var(--ink)}}
       <summary>{bi("分類", "Sections")}</summary>
       <nav class="mobile-cat-list" aria-label="{html.escape(bi_attr('跳至新聞分類', 'Jump to news category'))}">{nav}</nav>
     </details>
+    <a class="top-search" href="#news-explorer" aria-label="{html.escape(bi_attr('搜尋新聞', 'Search news'))}" title="{html.escape(bi_attr('搜尋新聞', 'Search news'))}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></a>
     <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
          scrolling category strip, and a control placed inside it scrolls away with
          the categories: measured at 1280px, Share's right edge landed at x=1455 on
@@ -2208,6 +2312,7 @@ footer b{{color:var(--ink)}}
 </div></div></div>
 
 <header class="hero"><div class="wrap">
+  <div class="hero-feature-grid"><div class="hero-intro">
   <div class="eyebrow">{bi("每日情報", "Daily Brief")}　·　{bi(date_disp, date_disp_en)}</div>
   <h1>{_h1(HEADLINE, HEADLINE_EN)}</h1>
   <p class="hero-sub">{bi(STANDFIRST, STANDFIRST_EN)}</p>
@@ -2217,11 +2322,11 @@ footer b{{color:var(--ink)}}
     <span>{bi(f"約 {READ_MIN} 分鐘讀完", f"{READ_MIN}-minute read")}</span>
     <span>{bi("🟢 即用　·　🟡 留意　·　🟣 影響生意", "🟢 Act · 🟡 Watch · 🟣 Business impact")}</span>
   </div>
-  {top3_html}
   <div class="byline">
     <span class="who">{bi("主編：" + BYLINE, "Curated by " + BYLINE)}</span><span class="dot">·</span>
     <span>{bi(BYLINE_ROLE, BYLINE_ROLE_EN)}</span>{('<span class="dot">·</span>' + _weekly_link) if _weekly_link else ''}{('<span class="dot">·</span>' + _li_link) if _li_link else ''}
-  </div>
+  </div></div>
+  {top3_html}</div>
   <!-- The .heroacts row is gone. It held "分享給同事" and "📚 歷史存檔" — and the
        sticky topbar already carries an Archive pill, so BOTH buttons were duplicates
        of controls one scroll-line above them, costing first-screen space on every
@@ -2247,11 +2352,13 @@ footer b{{color:var(--ink)}}
     </p>
     <button id="a2hs-x" type="button" aria-label="{html.escape(bi_attr('關閉這個提示', 'Dismiss this tip'))}">✕</button>
   </div>
-  <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
-  <div class="stats">{stats}</div>
 </div></header>
 
-<div class="wrap">{thesis_html}{more_brief_html}</div>
+<div class="wrap post-hero-notes">
+  <details class="edition-notes"><summary>{bi("今日策略觀察與延伸摘要", "Editorial context & more highlights")}</summary>
+    {thesis_html}{more_brief_html}
+  </details>
+</div>
 
 <main class="wrap" id="main">
   <section class="discovery" id="news-explorer" aria-label="{html.escape(bi_attr('搜尋及篩選新聞','Search and filter news'))}">
@@ -2273,6 +2380,14 @@ footer b{{color:var(--ink)}}
     <div class="archive-results-list" id="archive-result-list"></div>
     <button type="button" id="archive-more" hidden>{bi("顯示更多結果","Show more results")}</button>
   </section>
+  <div class="reading-toolbar" id="news-reading-mode">
+    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
+    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
+      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
+      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
+    </div>
+    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
+  </div>
 {sections_html}
 </main>
 
@@ -2320,6 +2435,45 @@ if(mobileCategories){{
   document.addEventListener('click',e=>{{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;}});
 }}
 setLang(curLang()); // sync button highlight with the pre-paint language
+/* Reading preference is session-scoped: Quick Scan is the accessible default,
+   Deep Read opens published analysis, each card can still expand individually. */
+(function(){{
+  const quick=document.getElementById('view-quick');
+  const deep=document.getElementById('view-deep');
+  const cards=[...document.querySelectorAll('details.story-expanded')];
+  if(!quick||!deep||!cards.length)return;
+  function apply(mode,save){{
+    const expanded=mode==='deep';
+    cards.forEach(d=>{{d.open=expanded}});
+    quick.setAttribute('aria-pressed',expanded?'false':'true');
+    deep.setAttribute('aria-pressed',expanded?'true':'false');
+    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
+    if(save){{try{{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}}catch(e){{}}}}
+  }}
+  quick.addEventListener('click',()=>apply('quick',true));
+  deep.addEventListener('click',()=>apply('deep',true));
+  let saved='quick';
+  try{{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}}catch(e){{}}
+  apply(saved==='deep'?'deep':'quick',false);
+  const search=document.querySelector('.top-search');
+  if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{{
+    try{{document.getElementById('news-query').focus({{preventScroll:true}})}}catch(e){{}}
+  }}));
+  let printState=null;
+  addEventListener('beforeprint',()=>{{
+    const note=document.querySelector('.edition-notes');
+    printState={{cards:cards.map(d=>d.open),notes:note?note.open:null}};
+    cards.forEach(d=>{{d.open=true}});
+    if(note)note.open=true;
+  }});
+  addEventListener('afterprint',()=>{{
+    if(!printState)return;
+    cards.forEach((d,i)=>{{d.open=!!printState.cards[i]}});
+    const note=document.querySelector('.edition-notes');
+    if(note&&printState.notes!==null)note.open=printState.notes;
+    printState=null;
+  }});
+}})();
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}
 function languageShareUrl(storyId){{
   // A shared article points to its permanent edition, not tomorrow's homepage.

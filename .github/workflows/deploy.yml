@@ -75,7 +75,29 @@ jobs:
           python verify_discovery.py
           python verify_locales.py --self-test
           python verify_locales.py
+          python verify_reader_ui.py
           node --check discovery-zh-hans.js
+
+      - name: Browser QA for desktop/tablet/mobile reading layouts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check verify_reader_browser.js
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory .. >/tmp/reader-site-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          node verify_reader_browser.js
+
+      - name: Upload visual QA screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reader-first-ui-screenshots
+          path: reader-screenshots/
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Check generated artifacts before deploy
         shell: bash
