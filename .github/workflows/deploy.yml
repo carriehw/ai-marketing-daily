@@ -75,6 +75,7 @@ jobs:
           python verify_discovery.py
           python verify_locales.py --self-test
           python verify_locales.py
+          python verify_reader_ui.py
           node --check discovery-zh-hans.js
 
       - name: Check generated artifacts before deploy
