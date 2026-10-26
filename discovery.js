@@ -45,6 +45,14 @@
   };
   const stableStoryUrl = (id) => archiveUrl(edition.date + '.html' + (id ? '#' + id : ''));
   const setStatus = message => { status.textContent = message; };
+  function refreshLocaleControls() {
+    for (const sel of [category, signal]) {
+      for (const opt of sel.options) {
+        opt.textContent = lang() === 'en' ? opt.dataset.en : opt.dataset.zh;
+      }
+    }
+    input.placeholder = lang() === 'en' ? input.dataset.placeholderEn : input.dataset.placeholderZh;
+  }
   const filtersActive = () => input.value.trim() || category.value !== 'all' || signal.value !== 'all';
   const scopeChange = where => {
     mode = where;
@@ -169,9 +177,11 @@
   });
   more.addEventListener('click', () => { visibleLimit += 24; renderHistory(); });
   const watchLang = new MutationObserver(() => {
+    refreshLocaleControls();
     render();
   });
   watchLang.observe(document.documentElement, {attributes: true, attributeFilter:['data-lang']});
+  refreshLocaleControls();
   render();
 
   const formatTeamBrief = item => {
@@ -187,8 +197,8 @@
       '',
       name,
       '',
-      (isEn ? 'What happened: ' : '發生咩事：') + summary,
-      (isEn ? 'Why marketers care: ' : '對 Marketer 嘅影響：') + why,
+      (isEn ? 'What happened: ' : '發生什麼：') + summary,
+      (isEn ? 'Why marketers care: ' : '對行銷團隊的影響：') + why,
       next ? (isEn ? 'Recommended next step: ' : '建議下一步：') + next : '',
       '',
       (isEn ? 'Source: ' : '資料來源：') + source + ' | ' + item.time,
