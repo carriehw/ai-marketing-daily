@@ -113,7 +113,7 @@ def card(story, i):
 <a href="%s" style="font:%s 700 %spx/1.28 %s;color:%s;text-decoration:none">%s</a>
 %s%s<div style="padding-top:12px">%s</div>
 </td></tr></table></td></tr>''' % (
-        BORDER, accent, intro, accent, esc(story["source"]), esc(story.get("time","")),
+        BORDER, accent, intro, accent, esc(story["source"]), "",
         link, "", fsize, FONT, INK, esc(story["title_en"]), summary, why, pill(story))
 
 actions = []
