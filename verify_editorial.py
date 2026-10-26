@@ -91,6 +91,8 @@ def audit(data, proof, expected_date=None):
         docs=e.get("source_documents",[])
         if not docs:bad.append(f"{prefix} source documents absent")
         support_urls={d.get("url") for d in docs}
+        if it.get("verification_url") and it.get("verification_url") not in support_urls:
+            bad.append(f"{prefix} public verification URL not in evidence record")
         for doc in docs:
             if not URL_RE.match(doc.get("url","")):bad.append(f"{prefix} invalid supporting source URL")
             if doc.get("source_class") not in {"A","B","C"}:bad.append(f"{prefix} unsupported source class")
