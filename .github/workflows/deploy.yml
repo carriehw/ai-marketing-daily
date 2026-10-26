@@ -65,6 +65,8 @@ jobs:
           PYTHONIOENCODING=utf-8 python build_locales.py
           PYTHONIOENCODING=utf-8 python build_email.py
           python verify_email.py
+          PYTHONIOENCODING=utf-8 python build_team_edm.py
+          python verify_team_edm.py
           PYTHONIOENCODING=utf-8 python build_email_zh.py
           python -m unittest -q test_email_zh
           python verify_ux.py --data data.json --html index.html
@@ -95,6 +97,9 @@ jobs:
           done
           test -s archive/search-index-zh-hans.json
           test -s email.html
+          test -s edm/team.html
+          test -s edm/subject.txt
+          test -s edm/payload.json
           test -s email-zh.html
           test -s email-zh-subject.txt
           test -s edm/feed.xml
