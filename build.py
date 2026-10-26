@@ -2188,6 +2188,99 @@ footer b{{color:var(--ink)}}
   a[href^="http"]::after{{content:" (" attr(href) ")";font-size:9.5px;color:#666;word-break:break-all}}
   .readsrc::after{{content:none}}
 }}
+/* -------- Reader-first visual system: reduced chrome, content first -------- */
+.navlinks{{display:none!important}}
+.mobile-category-menu{{display:block!important;z-index:21}}
+.mobile-category-menu>summary{{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:64px;padding:9px 11px}}
+.top-search{{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;color:var(--on-dark);border:1px solid rgba(247,245,239,.3);border-radius:999px;text-decoration:none;flex:none}}
+.top-search:hover{{color:var(--lime);border-color:var(--lime)}}
+.top-search:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+.mast-r>a.pill,#share{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:8px 12px}}
+.langtog.locale-links a{{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:35px;padding:8px 8px}}
+.hero{{padding:30px 0 24px;margin-bottom:0}}
+.hero-feature-grid{{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(18px,3.3vw,45px)}}
+.hero-intro{{min-width:0}}
+.hero-intro h1{{font-size:clamp(34px,4.1vw,55px);line-height:1.1;letter-spacing:-.045em;margin:12px 0 12px}}
+.hero-intro .hero-sub{{font-size:clamp(15px,1.45vw,17px);line-height:1.55;margin-bottom:15px}}
+.hero-intro .issue-meta{{gap:7px;margin-bottom:10px}}
+.hero-intro .issue-meta>span{{font-size:12px;padding:5px 10px}}
+.hero-intro .issue-meta>span:nth-child(2),
+.hero-intro .issue-meta>span:nth-child(4){{display:none}}
+.hero-intro .byline{{padding:9px 0 0;gap:5px 8px;flex-wrap:wrap}}
+.hero-feature-grid .top-stories{{margin:0;min-width:0}}
+.hero-feature-grid .lead-heading{{margin-bottom:9px}}
+.hero-feature-grid .lead-row{{padding:14px 16px;min-height:78px}}
+.hero-feature-grid .lead-info strong{{font-size:clamp(14px,1.3vw,16px);line-height:1.42}}
+.hero-feature-grid .lead-info small{{font-size:12px}}
+.post-hero-notes{{margin-top:15px}}
+.edition-notes{{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}}
+.edition-notes>summary{{list-style:none;cursor:pointer;padding:12px 16px;font-size:13px;font-weight:750;color:var(--accent-d);min-height:44px;display:flex;align-items:center}}
+.edition-notes>summary::-webkit-details-marker{{display:none}}
+.edition-notes>summary::after{{content:"＋";margin-left:auto}}
+.edition-notes[open]>summary::after{{content:"−"}}
+.edition-notes>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:-2px}}
+.edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{{margin:0 16px 14px}}
+.edition-notes .thesis{{margin-top:8px}}
+.edition-notes .more-brief{{margin-bottom:16px}}
+/* Quick Scan is the default even without JS. Every article retains the full
+   body in a semantic <details> control, including subscriber-only reporting. */
+.scan-brief{{display:grid;gap:10px;margin:3px 0 14px}}
+.scan-brief p{{margin:0;line-height:1.6}}
+.scan-brief b{{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}}
+.scan-summary{{font-size:15px;color:var(--body)}}
+.scan-impact{{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}}
+.scan-impact b{{color:var(--accent-d)}}
+.story-expanded{{border-top:1px solid var(--line);margin:0 0 12px}}
+.story-expanded>summary{{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}}
+.story-expanded>summary::-webkit-details-marker{{display:none}}
+.story-expanded>summary::after{{content:"⌄";margin-left:9px;font-size:16px}}
+.story-expanded[open]>summary::after{{content:"⌃"}}
+.story-expanded>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.story-expanded-body{{padding:4px 0 8px}}
+.story:has(> .story-expanded[open]) .scan-brief{{display:none}}
+.story:has(> .story-expanded[open]) .story-expanded{{margin-top:6px}}
+.story .story-foot{{gap:8px}}
+.story-actions>summary{{display:inline-flex;align-items:center;min-height:44px}}
+.readsrc{{display:inline-flex;align-items:center;min-height:44px}}
+.reading-toolbar{{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}}
+.reading-toolbar-label{{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}}
+.reading-switch{{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}}
+.reading-switch button{{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}}
+.reading-switch button[aria-pressed="true"]{{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}}
+.reading-switch button:focus-visible{{outline:2px solid var(--accent-d);outline-offset:2px}}
+.reading-toolbar-hint{{font-size:12px;color:var(--muted)}}
+body.view-archive-search .reading-toolbar{{display:none!important}}
+body.is-filtering-news .hero-feature-grid{{grid-template-columns:1fr}}
+body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
+@media(max-width:900px){{
+  .hero-feature-grid{{grid-template-columns:1fr;gap:18px}}
+  .hero-intro h1{{font-size:clamp(32px,5vw,46px)}}
+  .hero-feature-grid .top-stories{{margin-top:2px}}
+  .hero-feature-grid .lead-row{{min-height:0}}
+}}
+@media(max-width:560px){{
+  .mast-r{{width:100%;justify-content:space-between;gap:6px;flex-wrap:nowrap}}
+  .mobile-category-menu>summary{{min-width:56px;padding:8px 9px}}
+  .top-search{{min-width:38px;min-height:44px}}
+  .mast-r>a.pill,#share{{padding:7px 8px;font-size:12px}}
+  .langtog.locale-links a{{padding:7px 6px;min-width:29px;min-height:44px}}
+  .hero{{padding:18px 0 22px}}
+  .hero-feature-grid{{gap:17px}}
+  .hero-intro h1{{font-size:clamp(29px,8vw,38px);margin:9px 0 10px}}
+  .hero-intro .hero-sub{{font-size:15px;line-height:1.48;margin-bottom:12px}}
+  .hero-intro .byline{{font-size:12px;padding-top:7px}}
+  .hero-feature-grid .lead-row{{padding:12px;gap:10px}}
+  .hero-feature-grid .lead-info strong{{font-size:14px}}
+  .post-hero-notes{{margin-top:12px}}
+  .scan-summary{{font-size:15px}}
+  .scan-impact{{font-size:14px}}
+  .reading-toolbar-hint{{width:100%}}
+  .discovery{{margin-top:12px}}
+}}
+@media print{{
+  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{{display:none!important}}
+  .story-expanded-body{{display:block!important}}
+}}
 </style>
 </head>
 <body>
