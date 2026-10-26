@@ -44,7 +44,7 @@ class Inventory(HTMLParser):
             self.articles.append(a.get("id", ""))
         if tag == "a" and "lead-row" in klass:
             self.leads.append(a.get("href", ""))
-        if tag == "button" and "story-share" in klass:
+        if tag == "details" and "story-actions" in klass:
             self.share_buttons.append(a)
         if tag == "span" and "source-kind" in klass:
             self.kind_labels += 1
@@ -77,7 +77,12 @@ def main():
     if len(inv.articles) != n:
         failures.append(f"article count mismatch: {len(inv.articles)} != {n}")
     if len(inv.share_buttons) != n:
-        failures.append(f"share button count mismatch: {len(inv.share_buttons)} != {n}")
+        failures.append(f"share/copy menu count mismatch: {len(inv.share_buttons)} != {n}")
+    if (len(re.findall(r'<button\b[^>]*data-action="copy"', content)) != n or
+        len(re.findall(r'<button\b[^>]*data-action="share"', content)) != n):
+        failures.append("both share and copy must be accessible from every single menu")
+    if 'class="copy-team-brief"' in content or 'class="story-share"' in content:
+        failures.append("redundant old card buttons must be removed")
     if inv.kind_labels != n:
         failures.append("missing source-kind labels")
     for b in inv.share_buttons:
@@ -96,7 +101,7 @@ def main():
     js_markers = ("function languageShareUrl(storyId)",
                   "searchParams.set('lang',curLang())",
                   "'archive/'+ISSUE_DATE+'.html'",
-                  "document.querySelectorAll('.story-share')",
+                  "document.querySelectorAll('.story-actions')",
                   "mobileCategories.open=false")
     for marker in js_markers:
         if marker not in content:
