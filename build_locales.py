@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlsplit
+import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup, NavigableString, Comment
 from opencc import OpenCC
@@ -292,6 +293,26 @@ def main():
                 archive.get("title",""),archive.get("title_en",""),archive["total"])
             target.write_text(html_output,encoding="utf-8")
             built+=1
+    # Sitemap includes only real published language routes; three-way hreflang
+    # groups include the source language as recommended by Google Search Central.
+    ns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xhtml="http://www.w3.org/1999/xhtml"
+    ET.register_namespace("",ns)
+    ET.register_namespace("xhtml",xhtml)
+    rootxml=ET.Element("{"+ns+"}urlset")
+    for kind,dt in [("home",date),("directory",date)]+[("issue",issue["date"]) for issue in manifest]:
+        for locale in LOCALES:
+            el=ET.SubElement(rootxml,"{"+ns+"}url")
+            ET.SubElement(el,"{"+ns+"}loc").text=locale_url(base,locale,kind,dt)
+            if kind!="directory":
+                ET.SubElement(el,"{"+ns+"}lastmod").text=dt
+            for alt,code in LOCALES.items():
+                ET.SubElement(el,"{"+xhtml+"}link",{
+                    "rel":"alternate","hreflang":code,
+                    "href":locale_url(base,alt,kind,dt)})
+    ET.ElementTree(rootxml).write(root/"sitemap.xml",encoding="utf-8",xml_declaration=True)
+    (root/"robots.txt").write_text("User-agent: *\\nAllow: /\\nSitemap: "+
+        base.rstrip("/")+"/sitemap.xml\\n",encoding="utf-8")
     print(f"PASS localized: {built} generated files, {len(manifest)} issues across three languages, current {date}")
 
 if __name__=="__main__":
