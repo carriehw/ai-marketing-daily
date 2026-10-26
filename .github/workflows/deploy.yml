@@ -56,9 +56,14 @@ jobs:
           set -euo pipefail
           PYTHONIOENCODING=utf-8 python build.py
           PYTHONIOENCODING=utf-8 python build_archive.py
+          PYTHONIOENCODING=utf-8 python build_search_index.py
+          python build_search_index.py --self-test
           PYTHONIOENCODING=utf-8 python build_email.py
           python verify_email.py
           python verify_ux.py --data data.json --html index.html
+          node --check discovery.js
+          python verify_discovery.py --self-test
+          python verify_discovery.py
 
       - name: Check generated artifacts before deploy
         shell: bash
@@ -68,6 +73,8 @@ jobs:
           test -s index.html
           test -s "archive/$DATE.html"
           test -s archive/manifest.json
+          test -s archive/search-index.json
+          test -s discovery.js
           test -s email.html
           python - <<'PY'
           import json
