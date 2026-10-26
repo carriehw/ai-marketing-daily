@@ -18,6 +18,13 @@ const assert = require('node:assert/strict');
         const height=width<=390?844:850;
         const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1});
         const page=await context.newPage();
+        // Route historical index to this candidate build, not the public live
+        // site. A PR test must not depend on production deploy/network status.
+        const localIndex=path.join(process.cwd(),'archive',
+          locale==='zh-hans'?'search-index-zh-hans.json':'search-index.json');
+        await page.route('**/archive/search-index*.json', async route=>{
+          await route.fulfill({status:200,contentType:'application/json',path:localIndex});
+        });
         const errors=[];
         page.on('pageerror',e=>errors.push(e.message));
         await page.goto(base+locale+'/',{waitUntil:'domcontentloaded',timeout:30000});
