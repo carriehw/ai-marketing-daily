@@ -43,7 +43,7 @@ def md(s):
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 
-def run(data, today_md, strict=True):
+def run(data, today_md, strict=True, same_day_verified_urls=None):
     """回傳 (fails, checks)。fails 是 list of str。"""
     fails, checks = [], 0
     items = data["items"]
@@ -51,7 +51,7 @@ def run(data, today_md, strict=True):
     # --- 1. 每則都要有可解析的 time，且不得等於今日（今日發表的新聞當然存在，
     #        只是 2026-10-26 那一輪的「今日」全部是填空的預設值，所以這裡要求
     #        明示：若真有今日新聞，把它的 url 加進 ALLOW_TODAY 並寫明核實來源）
-    ALLOW_TODAY = set()
+    # Only evidence with a specifically recorded publication date may allow a true same-day story.\n    # The evidence document must be reviewed; this is structural checking, not a substitute for source inspection.\n    ALLOW_TODAY = set(same_day_verified_urls or [])
     for i, it in enumerate(items, 1):
         checks += 1
         tm = md(str(it.get("time", "")))
@@ -144,7 +144,22 @@ def main():
     today_md = (m, dd)
 
     data = json.load(open(a.data, encoding="utf-8"))
-    fails, checks = run(data, today_md)
+    same_day_allowed = set()
+    proof_path = __import__("pathlib").Path("editorial/evidence") / (a.today + ".json")
+    if proof_path.is_file():
+        proof = json.load(open(proof_path, encoding="utf-8"))
+        for story in proof.get("stories", []):
+            if story.get("editorial_decision") != "approved" or story.get("needs_human_review") is not False:
+                continue
+            if story.get("source_date_display") != f"{m}月{dd}日":
+                continue
+            for doc in story.get("source_documents", []):
+                if (doc.get("source_publication_date") == a.today
+                    and doc.get("source_class") in ("A", "B")
+                    and len(doc.get("evidence_locator", "")) >= 12):
+                    same_day_allowed.add(story.get("source_story_url"))
+                    break
+    fails, checks = run(data, today_md, same_day_verified_urls=same_day_allowed)
 
     print(f"=== 日期與時序閘門 {a.today} ===")
 
