@@ -317,7 +317,18 @@ def main():
             issue_date=archive["date"]
             target=lang_dir/"archive"/(issue_date+".html")
             if target.is_file() and issue_date!=date:
-                continue
+                # Historical pages are normally immutable. One previous i18n
+                # release accidentally rendered every Simplified edition with
+                # literal "html" in place of <!DOCTYPE html>. Repair those
+                # affected snapshots from their ORIGINAL published issue and
+                # leave valid immutable history untouched.
+                if locale!="zh-hans":
+                    continue
+                with target.open("r",encoding="utf-8") as previous:
+                    prefix=previous.read(96)
+                if prefix.lstrip().lower().startswith("<!doctype html>"):
+                    continue
+                print(f"REPAIR legacy zh-hans archive DOCTYPE: {issue_date}")
             source=(archive_dir/(issue_date+".html")).read_text(encoding="utf-8")
             html_output=render(source,locale,"issue",base,issue_date,
                 archive.get("title",""),archive.get("title_en",""),archive["total"])
