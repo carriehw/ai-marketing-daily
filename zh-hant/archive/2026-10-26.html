@@ -694,6 +694,99 @@ footer b{color:var(--ink)}
   a[href^="http"]::after{content:" (" attr(href) ")";font-size:9.5px;color:#666;word-break:break-all}
   .readsrc::after{content:none}
 }
+/* -------- Reader-first visual system: reduced chrome, content first -------- */
+.navlinks{display:none!important}
+.mobile-category-menu{display:block!important;z-index:21}
+.mobile-category-menu>summary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:64px;padding:9px 11px}
+.top-search{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;color:var(--on-dark);border:1px solid rgba(247,245,239,.3);border-radius:999px;text-decoration:none;flex:none}
+.top-search:hover{color:var(--lime);border-color:var(--lime)}
+.top-search:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.mast-r>a.pill,#share{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:8px 12px}
+.langtog.locale-links a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:35px;padding:8px 8px}
+.hero{padding:30px 0 24px;margin-bottom:0}
+.hero-feature-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:clamp(18px,3.3vw,45px)}
+.hero-intro{min-width:0}
+.hero-intro h1{font-size:clamp(34px,4.1vw,55px);line-height:1.1;letter-spacing:-.045em;margin:12px 0 12px}
+.hero-intro .hero-sub{font-size:clamp(15px,1.45vw,17px);line-height:1.55;margin-bottom:15px}
+.hero-intro .issue-meta{gap:7px;margin-bottom:10px}
+.hero-intro .issue-meta>span{font-size:12px;padding:5px 10px}
+.hero-intro .issue-meta>span:nth-child(2),
+.hero-intro .issue-meta>span:nth-child(4){display:none}
+.hero-intro .byline{padding:9px 0 0;gap:5px 8px;flex-wrap:wrap}
+.hero-feature-grid .top-stories{margin:0;min-width:0}
+.hero-feature-grid .lead-heading{margin-bottom:9px}
+.hero-feature-grid .lead-row{padding:14px 16px;min-height:78px}
+.hero-feature-grid .lead-info strong{font-size:clamp(14px,1.3vw,16px);line-height:1.42}
+.hero-feature-grid .lead-info small{font-size:12px}
+.post-hero-notes{margin-top:15px}
+.edition-notes{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.edition-notes>summary{list-style:none;cursor:pointer;padding:12px 16px;font-size:13px;font-weight:750;color:var(--accent-d);min-height:44px;display:flex;align-items:center}
+.edition-notes>summary::-webkit-details-marker{display:none}
+.edition-notes>summary::after{content:"＋";margin-left:auto}
+.edition-notes[open]>summary::after{content:"−"}
+.edition-notes>summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{margin:0 16px 14px}
+.edition-notes .thesis{margin-top:8px}
+.edition-notes .more-brief{margin-bottom:16px}
+/* Quick Scan is the default even without JS. Every article retains the full
+   body in a semantic <details> control, including subscriber-only reporting. */
+.scan-brief{display:grid;gap:10px;margin:3px 0 14px}
+.scan-brief p{margin:0;line-height:1.6}
+.scan-brief b{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}
+.scan-summary{font-size:15px;color:var(--body)}
+.scan-impact{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}
+.scan-impact b{color:var(--accent-d)}
+.story-expanded{border-top:1px solid var(--line);margin:0 0 12px}
+.story-expanded>summary{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}
+.story-expanded>summary::-webkit-details-marker{display:none}
+.story-expanded>summary::after{content:"⌄";margin-left:9px;font-size:16px}
+.story-expanded[open]>summary::after{content:"⌃"}
+.story-expanded>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.story-expanded-body{padding:4px 0 8px}
+.story:has(> .story-expanded[open]) .scan-brief{display:none}
+.story:has(> .story-expanded[open]) .story-expanded{margin-top:6px}
+.story .story-foot{gap:8px}
+.story-actions>summary{display:inline-flex;align-items:center;min-height:44px}
+.readsrc{display:inline-flex;align-items:center;min-height:44px}
+.reading-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}
+.reading-toolbar-label{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}
+.reading-switch{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}
+.reading-switch button{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}
+.reading-switch button[aria-pressed="true"]{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}
+.reading-switch button:focus-visible{outline:2px solid var(--accent-d);outline-offset:2px}
+.reading-toolbar-hint{font-size:12px;color:var(--muted)}
+body.view-archive-search .reading-toolbar{display:none!important}
+body.is-filtering-news .hero-feature-grid{grid-template-columns:1fr}
+body.is-filtering-news .hero-feature-grid .hero-intro{max-width:740px}
+@media(max-width:900px){
+  .hero-feature-grid{grid-template-columns:1fr;gap:18px}
+  .hero-intro h1{font-size:clamp(32px,5vw,46px)}
+  .hero-feature-grid .top-stories{margin-top:2px}
+  .hero-feature-grid .lead-row{min-height:0}
+}
+@media(max-width:560px){
+  .mast-r{width:100%;justify-content:space-between;gap:6px;flex-wrap:nowrap}
+  .mobile-category-menu>summary{min-width:56px;padding:8px 9px}
+  .top-search{min-width:38px;min-height:44px}
+  .mast-r>a.pill,#share{padding:7px 8px;font-size:12px}
+  .langtog.locale-links a{padding:7px 6px;min-width:29px;min-height:44px}
+  .hero{padding:18px 0 22px}
+  .hero-feature-grid{gap:17px}
+  .hero-intro h1{font-size:clamp(29px,8vw,38px);margin:9px 0 10px}
+  .hero-intro .hero-sub{font-size:15px;line-height:1.48;margin-bottom:12px}
+  .hero-intro .byline{font-size:12px;padding-top:7px}
+  .hero-feature-grid .lead-row{padding:12px;gap:10px}
+  .hero-feature-grid .lead-info strong{font-size:14px}
+  .post-hero-notes{margin-top:12px}
+  .scan-summary{font-size:15px}
+  .scan-impact{font-size:14px}
+  .reading-toolbar-hint{width:100%}
+  .discovery{margin-top:12px}
+}
+@media print{
+  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{display:none!important}
+  .story-expanded-body{display:block!important}
+}
 </style>
 <style>
 .locale-links{display:inline-flex!important;flex:none;align-items:center;border:1px solid rgba(247,245,239,.3);border-radius:99px;overflow:hidden}
@@ -714,6 +807,7 @@ footer b{color:var(--ink)}
 <summary>分類</summary>
 <nav aria-label="跳至新聞分類 / Jump to news category" class="mobile-cat-list"><a href="#sec0">AI 大模型 &amp; 市場動態<i>4</i></a><a href="#sec1">廣告平台 &amp; 行銷科技<i>2</i></a><a href="#sec2">創意生產工具<i>1</i></a><a href="#sec3">行業影響 &amp; 品牌案例<i>3</i></a><a href="#sec4">即學技巧 &amp; 玩法<i>4</i></a></nav>
 </details>
+<a aria-label="搜尋新聞 / Search news" class="top-search" href="#news-explorer" title="搜尋新聞 / Search news"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg></a>
 <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
          scrolling category strip, and a control placed inside it scrolls away with
          the categories: measured at 1280px, Share's right edge landed at x=1455 on
@@ -726,6 +820,7 @@ footer b{color:var(--ink)}
 </div>
 </div></div></div>
 <header class="hero"><div class="wrap">
+<div class="hero-feature-grid"><div class="hero-intro">
 <div class="eyebrow">每日情報　·　2026年10月26日 · 星期一</div>
 <h1>少一點 AI 噪音。<br/>多一點行銷訊號。</h1>
 <p class="hero-sub">每天一份。每則只講三件事：發生什麼、對行銷人有何影響、今天是否要行動。</p>
@@ -735,11 +830,11 @@ footer b{color:var(--ink)}
 <span>約 7 分鐘讀完</span>
 <span>🟢 即用　·　🟡 留意　·　🟣 影響生意</span>
 </div>
-<section aria-label="今日三則重點新聞 / Today’s top three stories" class="top-stories"><div class="lead-heading"><b>今日必讀 TOP 3</b><span>精選重點，點擊跳至內文</span></div><div class="lead-panel"><a class="lead-row" href="#apple-expands-safari-anti-tracking-0b7396"><span class="lead-rank">01</span><span class="lead-info"><strong>Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建</strong><small>Campaign Asia · 影響生意</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a><a class="lead-row" href="#chatgpt-ads-expands-89-countries-7eb202"><span class="lead-rank">02</span><span class="lead-info"><strong>ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分</strong><small>Campaign Asia · 影響生意</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a><a class="lead-row" href="#canva-launches-craft-image-dream-06ddfd"><span class="lead-rank">03</span><span class="lead-info"><strong>Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃</strong><small>TechCrunch · 可即用</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a></div></section>
 <div class="byline">
 <span class="who">主編：Carrie Hui</span><span class="dot">·</span>
 <span>AI 行銷策略 · 旅遊零售與大中華區</span><span class="dot">·</span><a aria-label="Carrie Hui 的 LinkedIn（新視窗開啟） / Carrie Hui on LinkedIn (opens in a new tab)" class="byline-link li" href="https://www.linkedin.com/in/carriehuiww/" rel="noopener noreferrer me" target="_blank"><svg aria-hidden="true" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"></path></svg><span>LinkedIn</span></a>
-</div>
+</div></div>
+<section aria-label="今日三則重點新聞 / Today’s top three stories" class="top-stories"><div class="lead-heading"><b>今日必讀 TOP 3</b><span>精選重點，點擊跳至內文</span></div><div class="lead-panel"><a class="lead-row" href="#apple-expands-safari-anti-tracking-0b7396"><span class="lead-rank">01</span><span class="lead-info"><strong>Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建</strong><small>Campaign Asia · 影響生意</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a><a class="lead-row" href="#chatgpt-ads-expands-89-countries-7eb202"><span class="lead-rank">02</span><span class="lead-info"><strong>ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分</strong><small>Campaign Asia · 影響生意</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a><a class="lead-row" href="#canva-launches-craft-image-dream-06ddfd"><span class="lead-rank">03</span><span class="lead-info"><strong>Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃</strong><small>TechCrunch · 可即用</small></span><span aria-hidden="true" class="lead-arrow">↗</span></a></div></section></div>
 <!-- The .heroacts row is gone. It held "分享給同事" and "📚 歷史存檔" — and the
        sticky topbar already carries an Archive pill, so BOTH buttons were duplicates
        of controls one scroll-line above them, costing first-screen space on every
@@ -765,10 +860,10 @@ footer b{color:var(--ink)}
 </p>
 <button aria-label="關閉這個提示 / Dismiss this tip" id="a2hs-x" type="button">✕</button>
 </div>
-<div class="legend"><span class="lg"><span class="signal act">可即用</span>今天可用／節省工時</span><span class="lg"><span class="signal watch">要留意</span>平台或趨勢變動</span><span class="lg"><span class="signal impact">影響生意</span>代理商生態／客戶／法規</span></div>
-<div class="stats"><a class="stat" href="#sec0"><b>4</b><span>AI 大模型 &amp; 市場動態</span></a><a class="stat" href="#sec1"><b>2</b><span>廣告平台 &amp; 行銷科技</span></a><a class="stat" href="#sec2"><b>1</b><span>創意生產工具</span></a><a class="stat" href="#sec3"><b>3</b><span>行業影響 &amp; 品牌案例</span></a><a class="stat" href="#sec4"><b>4</b><span>即學技巧 &amp; 玩法</span></a></div>
 </div></header>
-<div class="wrap"><section class="section">
+<div class="wrap post-hero-notes">
+<details class="edition-notes"><summary>今日策略觀察與延伸摘要</summary>
+<section class="section">
 <div class="thesis">
 <div class="eyebrow">今日核心訊號</div>
 <blockquote>本期三條重點：ChatGPT廣告擴張、Safari第三方身份解析防護、Canva自研圖像模型。所有數字與產品狀態按原始公告核實。</blockquote>
@@ -777,7 +872,9 @@ footer b{color:var(--ink)}
 </section><details class="more-brief"><summary>延伸重點摘要 · 6 則</summary><section aria-labelledby="tldr-h" class="tldr">
 <div class="tldr-head"><b id="tldr-h">三分鐘看完</b><span>今天 9 則屬可即用或影響生意，先看這 6 個</span></div>
 <ol><li><a href="#chatgpt-ads-expands-89-countries-7eb202"><span class="t-tag impact">影響生意</span>ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分</a></li><li><a href="#apple-expands-safari-anti-tracking-0b7396"><span class="t-tag impact">影響生意</span>Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建</a></li><li><a href="#campaign-asia-examines-scam-ads-60c81c"><span class="t-tag impact">影響生意</span>Campaign Asia：亞太AI詐騙廣告威脅品牌信任，驗證制度受關注</a></li><li><a href="#canva-launches-craft-image-dream-06ddfd"><span class="t-tag act">可即用</span>Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃</a></li><li><a href="#apollo-economist-finds-little-visible-f7d447"><span class="t-tag impact">影響生意</span>Apollo經濟師：標普493企業財務指標未見明顯AI回報</a></li><li><a href="#sej-analysis-100-websites-says-e0f427"><span class="t-tag act">可即用</span>SEJ分析：100個網站的AI引薦流量仍小，主張研究Agentic Search</a></li></ol>
-</section></details></div>
+</section></details>
+</details>
+</div>
 <main class="wrap" id="main">
 <section aria-label="搜尋及篩選新聞 / Search and filter news" class="discovery" id="news-explorer">
 <div class="discovery-head"><h2>探索新聞</h2><p>關鍵字、主題、影響程度</p></div>
@@ -798,35 +895,47 @@ footer b{color:var(--ink)}
 <div class="archive-results-list" id="archive-result-list"></div>
 <button hidden="" id="archive-more" type="button">顯示更多結果</button>
 </section>
+<div class="reading-toolbar" id="news-reading-mode">
+<span class="reading-toolbar-label">閱讀模式</span>
+<div aria-label="新聞閱讀模式 / News reading mode" class="reading-switch" role="group">
+<button aria-pressed="true" id="view-quick" type="button">快速掃描</button>
+<button aria-pressed="false" id="view-deep" type="button">深入閱讀</button>
+</div>
+<span class="reading-toolbar-hint">每則可獨立展開完整內容</span>
+</div>
 <section id="sec0">
 <div class="cat-head c1"><span class="cat-emoji">🧠</span><div class="cat-txt"><h2>AI 大模型 &amp; 市場動態</h2><p class="cat-desc">今日 AI 產業最大的動作。</p></div><em>4 則</em></div>
 <div class="stories"><article class="story c1" data-no="1" id="chatgpt-ads-expands-89-countries-7eb202"><span aria-hidden="true" class="idalias" id="s1"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">媒體報道</span><span class="date">10月22日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">01</span></div>
 <h3><a href="https://www.campaignasia.com/article/chatgpt-ads-hit-100-000-advertisers-expand-to-26-more-countries/42amjak36k54ev3m68p97n3sdj" rel="noopener noreferrer" target="_blank">ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>逾10萬廣告主是累計曾投放數字，並非單週活躍帳戶。</li><li>OpenAI宣布新增26個國家，ChatGPT Ads服務範圍擴至89國。</li><li>廣告於Free和Go方案展示；可投放受眾規模不能直接以12億週活推算。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>Media Planning可以將ChatGPT Ads納入市場適用性評估，同時向客戶清楚區分平台週活、廣告版位受眾和實際投放成效。</p></div>
-<div class="predict"><b class="k">趨勢觀察</b><p>ChatGPT正由新興廣告測試渠道走向多市場媒體規劃選項；品牌安全和成效衡量工具的成熟程度仍需獨立驗證。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 202 字）</summary><div class="detail-body"><p>OpenAI於10月21日宣布ChatGPT Ads新增26個國家，合計覆蓋89個市場。自平台推出廣告八個多月以來，累計超過10萬名廣告主曾經開展投放；這不是最新的每月或每週活躍廣告主數。OpenAI提及ChatGPT每週逾12億使用者，也不是廣告版位能接觸到的實際人數。</p><p>OpenAI明確指出，廣告只會出現在Free與Go方案；Plus、Pro和Enterprise訂閱維持無廣告。代理商評估新渠道時，應先核對投放地區、方案受眾邊界、可用廣告目標與衡量工具，避免將整體用戶規模當作可預訂媒體量。OpenAI另於8月公布廣告年化收入運行率達10億美元，這是早前不同時間點的指標，並非10月21日公告的新收入數字。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="chatgpt-ads-expands-89-countries-7eb202" data-title-en="ChatGPT Ads expands to 89 countries; 100,000 advertisers is cumulative, not active reach" data-title-zh="ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://openai.com/index/chatgpt-ads-expands-26-new-countries/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/chatgpt-ads-hit-100-000-advertisers-expand-to-26-more-countries/42amjak36k54ev3m68p97n3sdj" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>OpenAI在10月21日宣布ChatGPT Ads新增26個市場至89國，逾10萬廣告主為推出以來累計曾投放數；12億週活指ChatGPT所有用戶，並非廣告可觸及人數。</p><p class="scan-impact"><b>Marketing 影響</b>Media Planning可以將ChatGPT Ads納入市場適用性評估，同時向客戶清楚區分平台週活、廣告版位受眾和實際投放成效。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>逾10萬廣告主是累計曾投放數字，並非單週活躍帳戶。</li><li>OpenAI宣布新增26個國家，ChatGPT Ads服務範圍擴至89國。</li><li>廣告於Free和Go方案展示；可投放受眾規模不能直接以12億週活推算。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>Media Planning可以將ChatGPT Ads納入市場適用性評估，同時向客戶清楚區分平台週活、廣告版位受眾和實際投放成效。</p></div><div class="predict"><b class="k">趨勢觀察</b><p>ChatGPT正由新興廣告測試渠道走向多市場媒體規劃選項；品牌安全和成效衡量工具的成熟程度仍需獨立驗證。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 202 字）</summary><div class="detail-body"><p>OpenAI於10月21日宣布ChatGPT Ads新增26個國家，合計覆蓋89個市場。自平台推出廣告八個多月以來，累計超過10萬名廣告主曾經開展投放；這不是最新的每月或每週活躍廣告主數。OpenAI提及ChatGPT每週逾12億使用者，也不是廣告版位能接觸到的實際人數。</p><p>OpenAI明確指出，廣告只會出現在Free與Go方案；Plus、Pro和Enterprise訂閱維持無廣告。代理商評估新渠道時，應先核對投放地區、方案受眾邊界、可用廣告目標與衡量工具，避免將整體用戶規模當作可預訂媒體量。OpenAI另於8月公布廣告年化收入運行率達10億美元，這是早前不同時間點的指標，並非10月21日公告的新收入數字。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="chatgpt-ads-expands-89-countries-7eb202" data-title-en="ChatGPT Ads expands to 89 countries; 100,000 advertisers is cumulative, not active reach" data-title-zh="ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://openai.com/index/chatgpt-ads-expands-26-new-countries/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/chatgpt-ads-hit-100-000-advertisers-expand-to-26-more-countries/42amjak36k54ev3m68p97n3sdj" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c1" data-no="2" id="block-demonstrates-full-duplex-dessa-1d813c"><span aria-hidden="true" class="idalias" id="s2"></span>
 <div class="story-meta"><span class="src">TechCrunch</span><span class="source-kind">媒體報道</span><span class="date">10月24日</span><span class="no">02</span></div>
 <h3><a href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" rel="noopener noreferrer" target="_blank">Block展示Dessa全雙工語音AI，仍未對公眾開放</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>全雙工技術支援較自然的插話及即時語音互動。</li><li>Block稱模型可在MacBook M4 Max或更高規格設備本地運行。</li><li>目前未全面開放；展示效果並非獨立客服商業部署驗證。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>值得留意語音客服及品牌互動演進；尚未開放的模型不應即時列入客戶可採購工具清單。</p></div>
-<div class="predict"><b class="k">趨勢觀察</b><p>全雙工情緒原生語音AI正在重塑品牌語音觸點——下一個競爭前線不是文字生成，而是AI聲音的情緒真實性。品牌語音識別（voice identity）將成為代理商可主動建議的新服務線。</p></div><details class="detail"><summary>看詳細內容（約 160 字）</summary><div class="detail-body"><p>Block旗下研究團隊展示Dessa模型，主打語音與語音直接互動，以及說話時仍能聆聽用戶的全雙工設計。TechCrunch於10月24日報道，團隊宣稱模型可以在MacBook M4 Max等本地硬件上運行，並展示包含停頓及情緒語調的對話。</p><p>目前Dessa尚未對公眾提供使用，團隊正在招募安全研究人員。對Marketer而言，更合適的下一步是整理品牌語音體驗需求，例如插話處理、多語言、真人交接和私隱保障；未有獨立測試前不應推斷轉化率或客服成本改善幅度。</p><p class="why-src">整理自：TechCrunch</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="block-demonstrates-full-duplex-dessa-1d813c" data-title-en="Block demonstrates full-duplex Dessa voice AI; public access remains closed" data-title-zh="Block展示Dessa全雙工語音AI，仍未對公眾開放"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Block於10月23日展示可同時聆聽和回應的Dessa語音模型，稱能在MacBook M4 Max等設備上運行；目前只邀請安全研究人員測試。</p><p class="scan-impact"><b>Marketing 影響</b>值得留意語音客服及品牌互動演進；尚未開放的模型不應即時列入客戶可採購工具清單。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>全雙工技術支援較自然的插話及即時語音互動。</li><li>Block稱模型可在MacBook M4 Max或更高規格設備本地運行。</li><li>目前未全面開放；展示效果並非獨立客服商業部署驗證。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>值得留意語音客服及品牌互動演進；尚未開放的模型不應即時列入客戶可採購工具清單。</p></div><div class="predict"><b class="k">趨勢觀察</b><p>全雙工情緒原生語音AI正在重塑品牌語音觸點——下一個競爭前線不是文字生成，而是AI聲音的情緒真實性。品牌語音識別（voice identity）將成為代理商可主動建議的新服務線。</p></div><details class="detail"><summary>看詳細內容（約 160 字）</summary><div class="detail-body"><p>Block旗下研究團隊展示Dessa模型，主打語音與語音直接互動，以及說話時仍能聆聽用戶的全雙工設計。TechCrunch於10月24日報道，團隊宣稱模型可以在MacBook M4 Max等本地硬件上運行，並展示包含停頓及情緒語調的對話。</p><p>目前Dessa尚未對公眾提供使用，團隊正在招募安全研究人員。對Marketer而言，更合適的下一步是整理品牌語音體驗需求，例如插話處理、多語言、真人交接和私隱保障；未有獨立測試前不應推斷轉化率或客服成本改善幅度。</p><p class="why-src">整理自：TechCrunch</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="block-demonstrates-full-duplex-dessa-1d813c" data-title-en="Block demonstrates full-duplex Dessa voice AI; public access remains closed" data-title-zh="Block展示Dessa全雙工語音AI，仍未對公眾開放"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c1" data-no="3" id="deepseek-reportedly-raises-about-15b-28df3a"><span aria-hidden="true" class="idalias" id="s3"></span>
 <div class="story-meta"><span class="src">TechCrunch</span><span class="source-kind">媒體報道</span><span class="date">10月22日</span><span class="no">03</span></div>
 <h3><a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" rel="noopener noreferrer" target="_blank">DeepSeek據報籌得約150億美元；騰訊與寧德時代被列為潛在投資者</a></h3>
-<div class="followup"><b class="k">昨日續篇</b><p>10月21日本站曾報道美國機構對DeepSeek的使用限制；10月22日的新資料屬媒體融資消息，未獲交易文件獨立確認。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>約150億美元屬媒體轉述的融資報道，並非已公布交易文件。</li><li>騰訊及寧德時代在原報道中是潛在投資者，未確認為領投方。</li><li>美國聯邦機構對DeepSeek的限制與融資消息屬不同事件，不能據此推斷因果。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>評估AI供應商時，分開核對合規、股權及資金來源；未經確認的融資傳聞不能當作採購保證。</p></div>
-<details class="detail"><summary>看詳細內容（約 182 字）</summary><div class="detail-body"><p>TechCrunch在10月22日引述Bloomberg報道DeepSeek可能完成約150億美元、折合約人民幣1,000億元的融資。報道把騰訊和寧德時代列為潛在投資者，並提及公司可能最快在2027年尋求上市。DeepSeek當時未就查詢作出確認，因此投資者名單、交易條款及上市時間均應保留『據報／可能』等限定。</p><p>相關報道出現在美國聯邦文職機構被要求移除DeepSeek技術後數日，時間相近不足以證明任何投資是限制措施直接促成。代理商採用中國AI服務時，仍需自行查核客戶所在司法管轄區的資料處理、供應鏈安全及合同安排。</p><p class="why-src">整理自：TechCrunch</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-cn">中國</span></span><details class="story-actions" data-story="deepseek-reportedly-raises-about-15b-28df3a" data-title-en="DeepSeek reportedly raises about $15B; Tencent and CATL named as potential investors" data-title-zh="DeepSeek據報籌得約150億美元；騰訊與寧德時代被列為潛在投資者"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>TechCrunch引述Bloomberg稱DeepSeek傳出約150億美元融資，騰訊及寧德時代屬潛在投資方；截至報道時公司未回覆查詢，投資方及條款不宜寫成已確認。</p><p class="scan-impact"><b>Marketing 影響</b>評估AI供應商時，分開核對合規、股權及資金來源；未經確認的融資傳聞不能當作採購保證。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="followup"><b class="k">昨日續篇</b><p>10月21日本站曾報道美國機構對DeepSeek的使用限制；10月22日的新資料屬媒體融資消息，未獲交易文件獨立確認。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>約150億美元屬媒體轉述的融資報道，並非已公布交易文件。</li><li>騰訊及寧德時代在原報道中是潛在投資者，未確認為領投方。</li><li>美國聯邦機構對DeepSeek的限制與融資消息屬不同事件，不能據此推斷因果。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>評估AI供應商時，分開核對合規、股權及資金來源；未經確認的融資傳聞不能當作採購保證。</p></div><details class="detail"><summary>看詳細內容（約 182 字）</summary><div class="detail-body"><p>TechCrunch在10月22日引述Bloomberg報道DeepSeek可能完成約150億美元、折合約人民幣1,000億元的融資。報道把騰訊和寧德時代列為潛在投資者，並提及公司可能最快在2027年尋求上市。DeepSeek當時未就查詢作出確認，因此投資者名單、交易條款及上市時間均應保留『據報／可能』等限定。</p><p>相關報道出現在美國聯邦文職機構被要求移除DeepSeek技術後數日，時間相近不足以證明任何投資是限制措施直接促成。代理商採用中國AI服務時，仍需自行查核客戶所在司法管轄區的資料處理、供應鏈安全及合同安排。</p><p class="why-src">整理自：TechCrunch</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-cn">中國</span></span><details class="story-actions" data-story="deepseek-reportedly-raises-about-15b-28df3a" data-title-en="DeepSeek reportedly raises about $15B; Tencent and CATL named as potential investors" data-title-zh="DeepSeek據報籌得約150億美元；騰訊與寧德時代被列為潛在投資者"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c1" data-no="4" id="iflytek-announces-spark-x2-6-8cb916"><span aria-hidden="true" class="idalias" id="s4"></span>
 <div class="story-meta"><span class="src">量子位</span><span class="source-kind">廠商資料</span><span class="date">10月23日</span><span class="no">04</span></div>
 <h3><a href="https://www.qbitai.com/2026/10/505083.html" rel="noopener noreferrer" target="_blank">科大訊飛公布星火X2.6與SparkAudio 1.0；效能數據屬廠商自述</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>星火X2.6主打更長上下文及端雲協同。</li><li>SparkAudio 1.0及TaaS平台展示語音與工作流組合方案。</li><li>量子位頁面標示獲廠商授權轉載，效率與成本數字須當作廠商聲稱。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>內地AI方案選型要比較實際使用成本、私隱要求及本地部署能力，避免將供應商benchmark當成客戶實測。</p></div>
-<div class="predict"><b class="k">趨勢觀察</b><p>中國AI供應商推動由單一模型向應用及部署平台延伸；實際採購價值仍要由工作流測試驗證。</p></div><details class="detail"><summary>看詳細內容（約 162 字）</summary><div class="detail-body"><p>科大訊飛於10月的開發者活動公布星火X2.6、SparkAudio 1.0及星辰TaaS平台，展示將模型、語音服務與應用部署結合的產品方向。相關量子位文章註明由科大訊飛提供並獲授權轉載，屬廠商提供的資料。</p><p>原報道中的上下文長度、語音效果提升、回應速度與調用成本數據，應理解為廠商測試或宣傳口徑，並未在此獲獨立驗證。對客戶實際有幫助的工作，是使用自家語料、流量及審核要求做小規模測試，比較全成本和維運風險。</p><p class="why-src">整理自：量子位</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-cn">中國</span></span><details class="story-actions" data-story="iflytek-announces-spark-x2-6-8cb916" data-title-en="iFlytek announces Spark X2.6 and SparkAudio 1.0; performance claims are vendor-reported" data-title-zh="科大訊飛公布星火X2.6與SparkAudio 1.0；效能數據屬廠商自述"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.qbitai.com/2026/10/505083.html" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>科大訊飛1024開發者活動公布星火X2.6、SparkAudio 1.0及星辰TaaS平台；報道由廠商供稿轉載，模型效能提升及成本節省尚需第三方驗證。</p><p class="scan-impact"><b>Marketing 影響</b>內地AI方案選型要比較實際使用成本、私隱要求及本地部署能力，避免將供應商benchmark當成客戶實測。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>星火X2.6主打更長上下文及端雲協同。</li><li>SparkAudio 1.0及TaaS平台展示語音與工作流組合方案。</li><li>量子位頁面標示獲廠商授權轉載，效率與成本數字須當作廠商聲稱。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>內地AI方案選型要比較實際使用成本、私隱要求及本地部署能力，避免將供應商benchmark當成客戶實測。</p></div><div class="predict"><b class="k">趨勢觀察</b><p>中國AI供應商推動由單一模型向應用及部署平台延伸；實際採購價值仍要由工作流測試驗證。</p></div><details class="detail"><summary>看詳細內容（約 162 字）</summary><div class="detail-body"><p>科大訊飛於10月的開發者活動公布星火X2.6、SparkAudio 1.0及星辰TaaS平台，展示將模型、語音服務與應用部署結合的產品方向。相關量子位文章註明由科大訊飛提供並獲授權轉載，屬廠商提供的資料。</p><p>原報道中的上下文長度、語音效果提升、回應速度與調用成本數據，應理解為廠商測試或宣傳口徑，並未在此獲獨立驗證。對客戶實際有幫助的工作，是使用自家語料、流量及審核要求做小規模測試，比較全成本和維運風險。</p><p class="why-src">整理自：量子位</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-cn">中國</span></span><details class="story-actions" data-story="iflytek-announces-spark-x2-6-8cb916" data-title-en="iFlytek announces Spark X2.6 and SparkAudio 1.0; performance claims are vendor-reported" data-title-zh="科大訊飛公布星火X2.6與SparkAudio 1.0；效能數據屬廠商自述"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.qbitai.com/2026/10/505083.html" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article></div>
 </section>
 <section id="sec1">
@@ -834,16 +943,18 @@ footer b{color:var(--ink)}
 <div class="stories"><article class="story c2" data-no="5" id="apple-expands-safari-anti-tracking-0b7396"><span aria-hidden="true" class="idalias" id="s5"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">媒體報道</span><span class="date">10月21日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">05</span></div>
 <h3><a href="https://www.campaignasia.com/article/apple-breaks-silence-on-adtech-block-it-s-not-enough-to-block-cross-site-cookies/4hbg0rsktvcxvzq2sxmbbcp6mq" rel="noopener noreferrer" target="_blank">Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建</a></h3>
-<div class="followup"><b class="k">昨日續篇</b><p>10月13日本站報道Safari追蹤防護引發業界疑慮；10月19日Apple WebKit官方技術解釋釐清咗實際封鎖範圍。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>封鎖對象是用於跨網站追蹤的第三方身份解析基建網域。</li><li>第一方個人化並非WebKit此次政策針對的追蹤模式。</li><li>對身份配對、受眾回傳及歸因的影響，須按供應商及實際技術路徑評估。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>Media及Analytics團隊應盤點身份配對供應商，驗證Safari／OS 27版本追蹤變化，不要假設所有識別機制全面停用。</p></div>
-<details class="detail"><summary>看詳細內容（本站整理，約 202 字）</summary><div class="detail-body"><p>Apple WebKit於2026年10月19日發文解釋，跨網站Cookie受限後，部分第三方技術會利用登入電郵等資料，集中建立可連結不同網站的身份識別圖譜。WebKit宣布在iOS、iPadOS、macOS與visionOS 27對應版本中，於網域層級阻擋指定第三方身份解析基建的網絡存取，以減低跨站追蹤。</p><p>此技術措施的對象並非『所有廣告識別符』或全部廣告投放活動。WebKit亦明確指出，網站自身的第一方個人化並非這項追蹤防護的目標。廣告主應檢查採用的Identity Vendor、資料傳輸路徑及受眾配對機制，再按裝置與瀏覽器版本測試歸因表現。原來較籠統的『一律攔截』表述已在本期編輯覆核中修正。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="apple-expands-safari-anti-tracking-0b7396" data-title-en="Apple expands Safari anti-tracking protection to third-party identity-resolution infrastructure" data-title-zh="Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/apple-breaks-silence-on-adtech-block-it-s-not-enough-to-block-cross-site-cookies/4hbg0rsktvcxvzq2sxmbbcp6mq" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Apple WebKit於10月19日說明，OS 27系列Safari與WebKit在網域層級封鎖第三方身份解析基建的連線以阻止跨站追蹤；並非所有廣告識別符一律失效。</p><p class="scan-impact"><b>Marketing 影響</b>Media及Analytics團隊應盤點身份配對供應商，驗證Safari／OS 27版本追蹤變化，不要假設所有識別機制全面停用。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="followup"><b class="k">昨日續篇</b><p>10月13日本站報道Safari追蹤防護引發業界疑慮；10月19日Apple WebKit官方技術解釋釐清咗實際封鎖範圍。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>封鎖對象是用於跨網站追蹤的第三方身份解析基建網域。</li><li>第一方個人化並非WebKit此次政策針對的追蹤模式。</li><li>對身份配對、受眾回傳及歸因的影響，須按供應商及實際技術路徑評估。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>Media及Analytics團隊應盤點身份配對供應商，驗證Safari／OS 27版本追蹤變化，不要假設所有識別機制全面停用。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 202 字）</summary><div class="detail-body"><p>Apple WebKit於2026年10月19日發文解釋，跨網站Cookie受限後，部分第三方技術會利用登入電郵等資料，集中建立可連結不同網站的身份識別圖譜。WebKit宣布在iOS、iPadOS、macOS與visionOS 27對應版本中，於網域層級阻擋指定第三方身份解析基建的網絡存取，以減低跨站追蹤。</p><p>此技術措施的對象並非『所有廣告識別符』或全部廣告投放活動。WebKit亦明確指出，網站自身的第一方個人化並非這項追蹤防護的目標。廣告主應檢查採用的Identity Vendor、資料傳輸路徑及受眾配對機制，再按裝置與瀏覽器版本測試歸因表現。原來較籠統的『一律攔截』表述已在本期編輯覆核中修正。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="apple-expands-safari-anti-tracking-0b7396" data-title-en="Apple expands Safari anti-tracking protection to third-party identity-resolution infrastructure" data-title-zh="Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/apple-breaks-silence-on-adtech-block-it-s-not-enough-to-block-cross-site-cookies/4hbg0rsktvcxvzq2sxmbbcp6mq" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c2" data-no="6" id="campaign-asia-examines-scam-ads-60c81c"><span aria-hidden="true" class="idalias" id="s6"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">媒體報道</span><span class="date">10月22日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">06</span></div>
 <h3><a href="https://www.campaignasia.com/article/ai-scam-ads-are-getting-smarter-faster-and-harder-to-stop-in-apac/4p77g5wjmyjjjw4a8e040th74r" rel="noopener noreferrer" target="_blank">Campaign Asia：亞太AI詐騙廣告威脅品牌信任，驗證制度受關注</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>AI生成影音及視覺素材，增加仿冒品牌與名人的風險。</li><li>廣告主身份驗證、檢舉回應及相似名稱監察值得納入品牌安全工作。</li><li>報道描述業界趨勢，不代表所有亞太市場詐騙增長快於歐美。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>品牌安全策略需要覆蓋冒牌廣告及消費者被誤導風險，不只是一般投放版位相鄰性。</p></div>
-<details class="detail"><summary>看詳細內容（本站整理，約 168 字）</summary><div class="detail-body"><p>Campaign Asia調查報道關注亞太市場利用生成式AI製作詐騙廣告的問題，包括冒充名人、仿製品牌識別及利用低成本素材更換廣告。這些風險涉及消費者信任與品牌聲譽，亦令廣告審核和舉報程序受到更多關注。</p><p>現階段應避免把個別案例直接概括成『整個亞太詐騙擴散速度超過歐美』，亦不宜在缺乏量度方法時引用具體降本比例。品牌可以建立定期搜尋冒名關鍵字、平台檢舉時限紀錄，以及與法務及客服協作的取證流程。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-hk">香港</span></span><details class="story-actions" data-story="campaign-asia-examines-scam-ads-60c81c" data-title-en="Campaign Asia examines AI scam ads and brand-trust risks across APAC" data-title-zh="Campaign Asia：亞太AI詐騙廣告威脅品牌信任，驗證制度受關注"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/ai-scam-ads-are-getting-smarter-faster-and-harder-to-stop-in-apac/4p77g5wjmyjjjw4a8e040th74r" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Campaign Asia報道生成式AI令仿冒素材更易製作，並訪問亞太廣告業對詐騙廣告、廣告主驗證及品牌安全的關注；跨市場擴散速度尚難作統一量化比較。</p><p class="scan-impact"><b>Marketing 影響</b>品牌安全策略需要覆蓋冒牌廣告及消費者被誤導風險，不只是一般投放版位相鄰性。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>AI生成影音及視覺素材，增加仿冒品牌與名人的風險。</li><li>廣告主身份驗證、檢舉回應及相似名稱監察值得納入品牌安全工作。</li><li>報道描述業界趨勢，不代表所有亞太市場詐騙增長快於歐美。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>品牌安全策略需要覆蓋冒牌廣告及消費者被誤導風險，不只是一般投放版位相鄰性。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 168 字）</summary><div class="detail-body"><p>Campaign Asia調查報道關注亞太市場利用生成式AI製作詐騙廣告的問題，包括冒充名人、仿製品牌識別及利用低成本素材更換廣告。這些風險涉及消費者信任與品牌聲譽，亦令廣告審核和舉報程序受到更多關注。</p><p>現階段應避免把個別案例直接概括成『整個亞太詐騙擴散速度超過歐美』，亦不宜在缺乏量度方法時引用具體降本比例。品牌可以建立定期搜尋冒名關鍵字、平台檢舉時限紀錄，以及與法務及客服協作的取證流程。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-hk">香港</span></span><details class="story-actions" data-story="campaign-asia-examines-scam-ads-60c81c" data-title-en="Campaign Asia examines AI scam ads and brand-trust risks across APAC" data-title-zh="Campaign Asia：亞太AI詐騙廣告威脅品牌信任，驗證制度受關注"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/ai-scam-ads-are-getting-smarter-faster-and-harder-to-stop-in-apac/4p77g5wjmyjjjw4a8e040th74r" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article></div>
 </section>
 <section id="sec2">
@@ -851,9 +962,10 @@ footer b{color:var(--ink)}
 <div class="stories"><article class="story c3" data-no="7" id="canva-launches-craft-image-dream-06ddfd"><span aria-hidden="true" class="idalias" id="s7"></span>
 <div class="story-meta"><span class="src">TechCrunch</span><span class="source-kind">媒體報道</span><span class="date">10月22日</span><span class="no">07</span></div>
 <h3><a href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/" rel="noopener noreferrer" target="_blank">Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃</a></h3>
-<div class="followup"><b class="k">昨日續篇</b><p>10月23日我們報過Canva推出自研圖像生成模型Canva Craft，以人工設計模板訓練、支援55種語言文字與30種以上比例。TechCrunch在10月22日的報道（早於我們那一則）載有三個當時未提的細節：解析度已確認達2K、計劃透過MCP協議接入ChatGPT與Gemini（讓第三方AI助手內可直接調用Canva生成能力），以及研發核心來自2024年收購的Leonardo.ai——確認Craft是Canva長期AI策略的自研核心，而非外購模型改版。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Craft採取構圖規劃後再渲染的兩階段架構。</li><li>Canva稱模型訓練重視人工設計模板，支援可編輯圖層工作流。</li><li>Dream Lab和Public API已提供；Canva MCP屬Coming Soon，不能視為已普遍可用。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>設計及Content團隊可以針對品牌字體、版式與多尺寸廣告圖做實測，將廠商榜單宣稱與實際產出品質分開評估。</p></div>
-<details class="detail"><summary>看詳細內容（約 181 字）</summary><div class="detail-body"><p>Canva在10月22日發布Craft，首次由自家Canva Research團隊從頭訓練圖像基礎模型。其架構先建立構圖計劃，再進行圖像渲染；Canva稱有助改善文字、版式與元素位置控制，模型可產出最高2K解析度與三十多種比例。</p><p>官方文章指出，Craft已可經Dream Lab及公共API使用，而Canva MCP整合仍標示『Coming Soon』。對代理商而言，較合適的下一步是選擇幾組已確認品牌規範的素材做同題比較，檢查文字準確率、設計可編輯性、多尺寸一致性及真正製作時間；Canva所述排行榜屬其引用的評測結果，不代表每間agency的成品都會達到同一水準。</p><p class="why-src">整理自：TechCrunch</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="canva-launches-craft-image-dream-06ddfd" data-title-en="Canva launches Craft image model in Dream Lab and API; MCP rollout still upcoming" data-title-zh="Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.canva.com/newsroom/news/canva-craft/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Canva於10月22日推出自研Craft圖像生成模型，支援最高2K、30多種比例，已在Dream Lab及Public API提供；Canva MCP整合在官方文章標示Coming Soon。</p><p class="scan-impact"><b>Marketing 影響</b>設計及Content團隊可以針對品牌字體、版式與多尺寸廣告圖做實測，將廠商榜單宣稱與實際產出品質分開評估。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="followup"><b class="k">昨日續篇</b><p>10月23日我們報過Canva推出自研圖像生成模型Canva Craft，以人工設計模板訓練、支援55種語言文字與30種以上比例。TechCrunch在10月22日的報道（早於我們那一則）載有三個當時未提的細節：解析度已確認達2K、計劃透過MCP協議接入ChatGPT與Gemini（讓第三方AI助手內可直接調用Canva生成能力），以及研發核心來自2024年收購的Leonardo.ai——確認Craft是Canva長期AI策略的自研核心，而非外購模型改版。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Craft採取構圖規劃後再渲染的兩階段架構。</li><li>Canva稱模型訓練重視人工設計模板，支援可編輯圖層工作流。</li><li>Dream Lab和Public API已提供；Canva MCP屬Coming Soon，不能視為已普遍可用。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>設計及Content團隊可以針對品牌字體、版式與多尺寸廣告圖做實測，將廠商榜單宣稱與實際產出品質分開評估。</p></div><details class="detail"><summary>看詳細內容（約 181 字）</summary><div class="detail-body"><p>Canva在10月22日發布Craft，首次由自家Canva Research團隊從頭訓練圖像基礎模型。其架構先建立構圖計劃，再進行圖像渲染；Canva稱有助改善文字、版式與元素位置控制，模型可產出最高2K解析度與三十多種比例。</p><p>官方文章指出，Craft已可經Dream Lab及公共API使用，而Canva MCP整合仍標示『Coming Soon』。對代理商而言，較合適的下一步是選擇幾組已確認品牌規範的素材做同題比較，檢查文字準確率、設計可編輯性、多尺寸一致性及真正製作時間；Canva所述排行榜屬其引用的評測結果，不代表每間agency的成品都會達到同一水準。</p><p class="why-src">整理自：TechCrunch</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="canva-launches-craft-image-dream-06ddfd" data-title-en="Canva launches Craft image model in Dream Lab and API; MCP rollout still upcoming" data-title-zh="Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.canva.com/newsroom/news/canva-craft/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article></div>
 </section>
 <section id="sec3">
@@ -861,23 +973,26 @@ footer b{color:var(--ink)}
 <div class="stories"><article class="story c4" data-no="8" id="apollo-economist-finds-little-visible-f7d447"><span aria-hidden="true" class="idalias" id="s8"></span>
 <div class="story-meta"><span class="src">TechCrunch</span><span class="source-kind">媒體報道</span><span class="date">10月25日</span><span class="no">08</span></div>
 <h3><a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" rel="noopener noreferrer" target="_blank">Apollo經濟師：標普493企業財務指標未見明顯AI回報</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Slok指出科技七大以外的標普493，人均收入與利潤率曲線大致持平。</li><li>『AI零回報』是作者對整體趨勢的評論，不等於所有企業項目均無ROI。</li><li>評估AI投資應看實際交付、工作效率和增量業務表現。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>客戶問AI ROI時，應準備可重現的業務指標與測試設計，不要只引用節省工時或模型能力作為成效證明。</p></div>
-<div class="predict"><b class="k">趨勢觀察</b><p>「AI採用率」與「AI回報率」是兩回事：能說清楚哪些工作流具體改善了客戶利潤率的代理商，在下一輪預算審查中將比其他人更具說服力。把AI投入轉化為可量化業績的能力，將成為代理商差異化的新護城河。</p></div><details class="detail"><summary>看詳細內容（約 184 字）</summary><div class="detail-body"><p>Apollo首席經濟師Torsten Slok於10月24日發表分析，將標普500的科技七大與其他493間成分股比較。他認為科技七大以外，企業的每名員工收入及利潤率尚未呈現清晰的AI紅利，並質疑AI投資是否已普遍轉化為財務回報。</p><p>這個比較反映的是宏觀財務指標的同時期走勢，不是逐家企業用對照組驗證AI項目成效的研究，因此不宜推斷『所有非科技企業AI投入都零回報』。代理商可以將此視為提醒：在向客戶介紹AI workflow時，加入明確的成本、增量效果及實際工作節省指標，才能支撐下一輪預算審批。</p><p class="why-src">整理自：TechCrunch</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="apollo-economist-finds-little-visible-f7d447" data-title-en="Apollo economist finds little visible AI payoff in S&amp;P 493 financial indicators" data-title-zh="Apollo經濟師：標普493企業財務指標未見明顯AI回報"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.apollo.com/institutional/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Apollo首席經濟師Torsten Slok於10月24日分析標普493的利潤率及人均收入走勢，認為尚未看到科技七大以外企業出現明顯AI財務回報；屬宏觀推論而非逐間企業因果研究。</p><p class="scan-impact"><b>Marketing 影響</b>客戶問AI ROI時，應準備可重現的業務指標與測試設計，不要只引用節省工時或模型能力作為成效證明。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Slok指出科技七大以外的標普493，人均收入與利潤率曲線大致持平。</li><li>『AI零回報』是作者對整體趨勢的評論，不等於所有企業項目均無ROI。</li><li>評估AI投資應看實際交付、工作效率和增量業務表現。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>客戶問AI ROI時，應準備可重現的業務指標與測試設計，不要只引用節省工時或模型能力作為成效證明。</p></div><div class="predict"><b class="k">趨勢觀察</b><p>「AI採用率」與「AI回報率」是兩回事：能說清楚哪些工作流具體改善了客戶利潤率的代理商，在下一輪預算審查中將比其他人更具說服力。把AI投入轉化為可量化業績的能力，將成為代理商差異化的新護城河。</p></div><details class="detail"><summary>看詳細內容（約 184 字）</summary><div class="detail-body"><p>Apollo首席經濟師Torsten Slok於10月24日發表分析，將標普500的科技七大與其他493間成分股比較。他認為科技七大以外，企業的每名員工收入及利潤率尚未呈現清晰的AI紅利，並質疑AI投資是否已普遍轉化為財務回報。</p><p>這個比較反映的是宏觀財務指標的同時期走勢，不是逐家企業用對照組驗證AI項目成效的研究，因此不宜推斷『所有非科技企業AI投入都零回報』。代理商可以將此視為提醒：在向客戶介紹AI workflow時，加入明確的成本、增量效果及實際工作節省指標，才能支撐下一輪預算審批。</p><p class="why-src">整理自：TechCrunch</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="apollo-economist-finds-little-visible-f7d447" data-title-en="Apollo economist finds little visible AI payoff in S&amp;P 493 financial indicators" data-title-zh="Apollo經濟師：標普493企業財務指標未見明顯AI回報"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.apollo.com/institutional/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c4" data-no="9" id="omnicom-reports-7-2-q3-558948"><span aria-hidden="true" class="idalias" id="s9"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">媒體報道</span><span class="date">10月23日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">09</span></div>
 <h3><a href="https://www.campaignasia.com/article/john-wren-calls-merger-headwinds-substantially-done-as-omnicom-posts-7-2-growth/43f1bn0mnq66120b82bhm8dbdy" rel="noopener noreferrer" target="_blank">Omnicom公布Q3核心有機增長7.2%，整合IPG接近完成</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Q3整體報告收入約64億美元，核心業務收入約60億美元。</li><li>7.2%是核心業務有機增長，不是集團總收入增長率。</li><li>CEO表示整合IPG接近完成，預期2026年成本協同目標達9億美元。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>控股集團整合會影響廣告比稿、供應商策略與服務能力；分析成效時應分清報告口徑與實際有機增長。</p></div>
-<details class="detail"><summary>看詳細內容（本站整理，約 158 字）</summary><div class="detail-body"><p>Omnicom在10月22日公布截至9月30日的第三季業績。公司報告總收入約64億美元，核心業務收入約60億美元；核心業務同比有機增長7.2%，而非整體報告收入直接增長7.2%。行政總裁John Wren表示，Interpublic（IPG）整合接近完成，集團全年預期實現約9億美元成本削減協同。</p><p>集團整合對agency競爭格局、團隊配置和技術採購均有潛在影響。評估其市場表現時，需留意合併後的可比收入及已出售業務等財報調整，避免單靠絕對收入增幅判斷自然增長。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="omnicom-reports-7-2-q3-558948" data-title-en="Omnicom reports 7.2% Q3 core organic growth as IPG integration nears completion" data-title-zh="Omnicom公布Q3核心有機增長7.2%，整合IPG接近完成"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.omc.com/newsroom/omnicom-reports-third-quarter-2026-results/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/john-wren-calls-merger-headwinds-substantially-done-as-omnicom-posts-7-2-growth/43f1bn0mnq66120b82bhm8dbdy" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Omnicom於10月22日公布Q3報告：總收入約64億美元，核心業務有機增長7.2%；CEO表示IPG整合接近完成，全年成本協同目標9億美元。</p><p class="scan-impact"><b>Marketing 影響</b>控股集團整合會影響廣告比稿、供應商策略與服務能力；分析成效時應分清報告口徑與實際有機增長。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>Q3整體報告收入約64億美元，核心業務收入約60億美元。</li><li>7.2%是核心業務有機增長，不是集團總收入增長率。</li><li>CEO表示整合IPG接近完成，預期2026年成本協同目標達9億美元。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>控股集團整合會影響廣告比稿、供應商策略與服務能力；分析成效時應分清報告口徑與實際有機增長。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 158 字）</summary><div class="detail-body"><p>Omnicom在10月22日公布截至9月30日的第三季業績。公司報告總收入約64億美元，核心業務收入約60億美元；核心業務同比有機增長7.2%，而非整體報告收入直接增長7.2%。行政總裁John Wren表示，Interpublic（IPG）整合接近完成，集團全年預期實現約9億美元成本削減協同。</p><p>集團整合對agency競爭格局、團隊配置和技術採購均有潛在影響。評估其市場表現時，需留意合併後的可比收入及已出售業務等財報調整，避免單靠絕對收入增幅判斷自然增長。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="omnicom-reports-7-2-q3-558948" data-title-en="Omnicom reports 7.2% Q3 core organic growth as IPG integration nears completion" data-title-zh="Omnicom公布Q3核心有機增長7.2%，整合IPG接近完成"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.omc.com/newsroom/omnicom-reports-third-quarter-2026-results/" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.campaignasia.com/article/john-wren-calls-merger-headwinds-substantially-done-as-omnicom-posts-7-2-growth/43f1bn0mnq66120b82bhm8dbdy" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c4" data-no="10" id="coca-cola-appoints-omnicom-north-e0e647"><span aria-hidden="true" class="idalias" id="s10"></span>
 <div class="story-meta"><span class="src">Adweek</span><span class="source-kind">媒體報道</span><span class="date">10月22日</span><span class="no">10</span></div>
 <h3><a href="https://www.adweek.com/agencies/omnicom-nabs-coca-colas-north-america-media-account-while-wpp-retains-globally/" rel="noopener noreferrer" target="_blank">可口可樂重新分配媒體業務：Omnicom負責北美、WPP保留其他主要市場</a></h3>
-<div class="followup"><b class="k">昨日續篇</b><p>10月23日我們報過Omnicom奪可口可樂北美媒體業務7.85億美元，「控股集團可樂大戰」正式開打。Adweek在10月22日的報道（早於我們那一則）載有完整格局：可口可樂同時進行北美與全球兩場獨立比稿——Omnicom奪北美，WPP則保留自2020年起總值逾40億美元的全球整合行銷帳戶（涵蓋創意、製作與創作者行銷）。Publicis主動退出的原因是近期獲取PepsiCo業務，存在直接競爭客戶的利益衝突，並非比稿落敗。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>北美媒體交予Omnicom，全球創意繼續由WPP Open X負責。</li><li>WPP媒體業務保留除北美、日本及南韓以外的市場。</li><li>日本及南韓媒體繼續交由Dentsu，不屬今次比稿範圍。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>大型品牌以市場和服務功能分拆agency合作，提醒客戶團隊同時管理全球一致性及各地媒體執行責任。</p></div>
-<details class="detail"><summary>看詳細內容（約 168 字）</summary><div class="detail-body"><p>可口可樂在10月22日公布完成全球Marketing Operating System檢討。根據品牌官方新聞稿，Omnicom被選為北美媒體代理商；WPP Open X保留其他全球媒體業務（北美、日本及南韓除外），並繼續負責全球創意；日本及南韓媒體則由Dentsu延續管理，兩地不屬今次檢討範圍。</p><p>部分行業媒體指出，Publicis先前因接獲PepsiCo業務而退出相關北美業務，屬比稿背景，不應混同可口可樂對合作架構的官方確認。對跨市場客戶而言，關鍵是為不同代理商定好統一衡量方法、品牌資產存取及責任分工。</p><p class="why-src">整理自：Adweek</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="coca-cola-appoints-omnicom-north-e0e647" data-title-en="Coca-Cola appoints Omnicom in North America, retains WPP for most other global media" data-title-zh="可口可樂重新分配媒體業務：Omnicom負責北美、WPP保留其他主要市場"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.coca-colacompany.com/media-center/coca-cola-company-selects-agency-partners" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.adweek.com/agencies/omnicom-nabs-coca-colas-north-america-media-account-while-wpp-retains-globally/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>可口可樂於10月22日公布：Omnicom接掌北美媒體，WPP Open X維持其他主要市場媒體與全球創意業務；日本及南韓媒體繼續由Dentsu負責。</p><p class="scan-impact"><b>Marketing 影響</b>大型品牌以市場和服務功能分拆agency合作，提醒客戶團隊同時管理全球一致性及各地媒體執行責任。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="followup"><b class="k">昨日續篇</b><p>10月23日我們報過Omnicom奪可口可樂北美媒體業務7.85億美元，「控股集團可樂大戰」正式開打。Adweek在10月22日的報道（早於我們那一則）載有完整格局：可口可樂同時進行北美與全球兩場獨立比稿——Omnicom奪北美，WPP則保留自2020年起總值逾40億美元的全球整合行銷帳戶（涵蓋創意、製作與創作者行銷）。Publicis主動退出的原因是近期獲取PepsiCo業務，存在直接競爭客戶的利益衝突，並非比稿落敗。</p></div><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>北美媒體交予Omnicom，全球創意繼續由WPP Open X負責。</li><li>WPP媒體業務保留除北美、日本及南韓以外的市場。</li><li>日本及南韓媒體繼續交由Dentsu，不屬今次比稿範圍。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>大型品牌以市場和服務功能分拆agency合作，提醒客戶團隊同時管理全球一致性及各地媒體執行責任。</p></div><details class="detail"><summary>看詳細內容（約 168 字）</summary><div class="detail-body"><p>可口可樂在10月22日公布完成全球Marketing Operating System檢討。根據品牌官方新聞稿，Omnicom被選為北美媒體代理商；WPP Open X保留其他全球媒體業務（北美、日本及南韓除外），並繼續負責全球創意；日本及南韓媒體則由Dentsu延續管理，兩地不屬今次檢討範圍。</p><p>部分行業媒體指出，Publicis先前因接獲PepsiCo業務而退出相關北美業務，屬比稿背景，不應混同可口可樂對合作架構的官方確認。對跨市場客戶而言，關鍵是為不同代理商定好統一衡量方法、品牌資產存取及責任分工。</p><p class="why-src">整理自：Adweek</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal watch">要留意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="coca-cola-appoints-omnicom-north-e0e647" data-title-en="Coca-Cola appoints Omnicom in North America, retains WPP for most other global media" data-title-zh="可口可樂重新分配媒體業務：Omnicom負責北美、WPP保留其他主要市場"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="evidence-link" href="https://www.coca-colacompany.com/media-center/coca-cola-company-selects-agency-partners" rel="noopener noreferrer" target="_blank">核實依據 ↗</a><a class="readsrc" href="https://www.adweek.com/agencies/omnicom-nabs-coca-colas-north-america-media-account-while-wpp-retains-globally/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article></div>
 </section>
 <section id="sec4">
@@ -885,30 +1000,34 @@ footer b{color:var(--ink)}
 <div class="stories"><article class="story c5" data-no="11" id="sej-analysis-100-websites-says-e0f427"><span aria-hidden="true" class="idalias" id="s11"></span>
 <div class="story-meta"><span class="src">Search Engine Journal</span><span class="source-kind">分析觀點</span><span class="date">10月23日</span><span class="no">11</span></div>
 <h3><a href="https://www.searchenginejournal.com/geo-is-a-distraction-heres-where-the-real-opportunity-is/593870/" rel="noopener noreferrer" target="_blank">SEJ分析：100個網站的AI引薦流量仍小，主張研究Agentic Search</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>作者樣本中ChatGPT引薦流量約為Google自然搜尋的0.62%，所有LLM約0.73%。</li><li>樣本只涵蓋研究中的100個網站，不能自動推至所有行業。</li><li>作者建議先做好關鍵轉化追蹤，再研究Google購物與Agentic Search基礎設施。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>GEO是否值得投資應按自家第一方搜尋和轉化數據判斷；不適宜只追逐AI提及次數。</p></div>
-<details class="detail"><summary>看詳細內容（約 159 字）</summary><div class="detail-body"><p>Search Engine Journal作者Marie Haynes以100個網站的數據討論AI搜尋引薦流量的規模。文章提到，在其研究樣本中，ChatGPT引薦流量僅及Google自然搜尋流量的約0.62%，各LLM合計約0.73%；她認為商業網站仍不應忽略Google搜尋的主導地位。</p><p>這篇文章係作者對市場策略的分析，抽樣結構、行業組成和追蹤方法會影響結果。作者亦建議Marketers先為網站定義清楚的Conversion Events，再研究Universal Cart、UCP與WebMCP等代理型商業基礎設施。對客戶實務最有用的做法，是按自家Analytics驗證AI引薦比例、成交貢獻及增量效果。</p><p class="why-src">整理自：Search Engine Journal</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="sej-analysis-100-websites-says-e0f427" data-title-en="SEJ analysis of 100 websites says AI referrals remain small, urges agentic search planning" data-title-zh="SEJ分析：100個網站的AI引薦流量仍小，主張研究Agentic Search"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.searchenginejournal.com/geo-is-a-distraction-heres-where-the-real-opportunity-is/593870/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Search Engine Journal作者Marie Haynes分析100個網站流量，指出其樣本中ChatGPT引薦流量遠低於Google自然搜尋，並主張Marketers開始研究代理型搜尋；樣本結果不代表所有行業。</p><p class="scan-impact"><b>Marketing 影響</b>GEO是否值得投資應按自家第一方搜尋和轉化數據判斷；不適宜只追逐AI提及次數。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>作者樣本中ChatGPT引薦流量約為Google自然搜尋的0.62%，所有LLM約0.73%。</li><li>樣本只涵蓋研究中的100個網站，不能自動推至所有行業。</li><li>作者建議先做好關鍵轉化追蹤，再研究Google購物與Agentic Search基礎設施。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>GEO是否值得投資應按自家第一方搜尋和轉化數據判斷；不適宜只追逐AI提及次數。</p></div><details class="detail"><summary>看詳細內容（約 159 字）</summary><div class="detail-body"><p>Search Engine Journal作者Marie Haynes以100個網站的數據討論AI搜尋引薦流量的規模。文章提到，在其研究樣本中，ChatGPT引薦流量僅及Google自然搜尋流量的約0.62%，各LLM合計約0.73%；她認為商業網站仍不應忽略Google搜尋的主導地位。</p><p>這篇文章係作者對市場策略的分析，抽樣結構、行業組成和追蹤方法會影響結果。作者亦建議Marketers先為網站定義清楚的Conversion Events，再研究Universal Cart、UCP與WebMCP等代理型商業基礎設施。對客戶實務最有用的做法，是按自家Analytics驗證AI引薦比例、成交貢獻及增量效果。</p><p class="why-src">整理自：Search Engine Journal</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="sej-analysis-100-websites-says-e0f427" data-title-en="SEJ analysis of 100 websites says AI referrals remain small, urges agentic search planning" data-title-zh="SEJ分析：100個網站的AI引薦流量仍小，主張研究Agentic Search"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.searchenginejournal.com/geo-is-a-distraction-heres-where-the-real-opportunity-is/593870/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c5" data-no="12" id="iab-hk-c26-discusses-how-7add93"><span aria-hidden="true" class="idalias" id="s12"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">媒體報道</span><span class="date">10月23日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">12</span></div>
 <h3><a href="https://www.campaignasia.com/article/how-brands-can-remain-discoverable-in-the-age-of-agentic-ai-commerce/4k4r0kp2v87fz194qmjhnq944n" rel="noopener noreferrer" target="_blank">IAB HK C26討論Agentic Commerce：品牌如何保持被AI發現</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>業界討論AI代理可能如何改變搜尋、比較及產品推薦。</li><li>品牌產品資訊準確性及可機器讀取程度值得提前檢查。</li><li>尚未有證據顯示傳統搜尋或點擊漏斗已全面失效。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>香港品牌可以小規模測試AI對品牌產品資料的引用方式，並觀察相關觸點是否真的增加詢盤。</p></div>
-<details class="detail"><summary>看詳細內容（本站整理，約 148 字）</summary><div class="detail-body"><p>Campaign Asia在10月23日報道IAB HK Conversations 2026（C26）論壇對Agentic Commerce的討論。核心議題係當消費者開始用AI協助資訊搜尋、選項比較和購物任務，品牌可以如何維持產品資訊正確、容易被系統理解及被用戶信任。</p><p>論壇討論可用作品牌策略規劃的情境提示，不能直接視為AI代理已經掌控所有購物決策。品牌可優先處理結構化產品資訊、庫存與價錢同步、常見問題的準確性，以及實際查詢和轉化記錄，再決定投入程度。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-hk">香港</span></span><details class="story-actions" data-story="iab-hk-c26-discusses-how-7add93" data-title-en="IAB HK C26 discusses how brands stay discoverable in agentic commerce" data-title-zh="IAB HK C26討論Agentic Commerce：品牌如何保持被AI發現"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/how-brands-can-remain-discoverable-in-the-age-of-agentic-ai-commerce/4k4r0kp2v87fz194qmjhnq944n" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Campaign Asia報道IAB香港C26活動討論消費者使用AI代理搜尋和購物的趨勢，以及品牌在產品資訊、搜尋可見性和信任建立上的挑戰；屬行業討論而非市場已全面轉型的證明。</p><p class="scan-impact"><b>Marketing 影響</b>香港品牌可以小規模測試AI對品牌產品資料的引用方式，並觀察相關觸點是否真的增加詢盤。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>業界討論AI代理可能如何改變搜尋、比較及產品推薦。</li><li>品牌產品資訊準確性及可機器讀取程度值得提前檢查。</li><li>尚未有證據顯示傳統搜尋或點擊漏斗已全面失效。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>香港品牌可以小規模測試AI對品牌產品資料的引用方式，並觀察相關觸點是否真的增加詢盤。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 148 字）</summary><div class="detail-body"><p>Campaign Asia在10月23日報道IAB HK Conversations 2026（C26）論壇對Agentic Commerce的討論。核心議題係當消費者開始用AI協助資訊搜尋、選項比較和購物任務，品牌可以如何維持產品資訊正確、容易被系統理解及被用戶信任。</p><p>論壇討論可用作品牌策略規劃的情境提示，不能直接視為AI代理已經掌控所有購物決策。品牌可優先處理結構化產品資訊、庫存與價錢同步、常見問題的準確性，以及實際查詢和轉化記錄，再決定投入程度。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-hk">香港</span></span><details class="story-actions" data-story="iab-hk-c26-discusses-how-7add93" data-title-en="IAB HK C26 discusses how brands stay discoverable in agentic commerce" data-title-zh="IAB HK C26討論Agentic Commerce：品牌如何保持被AI發現"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/how-brands-can-remain-discoverable-in-the-age-of-agentic-ai-commerce/4k4r0kp2v87fz194qmjhnq944n" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c5" data-no="13" id="campaign-asia-opinion-argues-marketing-dc0f43"><span aria-hidden="true" class="idalias" id="s13"></span>
 <div class="story-meta"><span class="src">Campaign Asia</span><span class="source-kind">分析觀點</span><span class="date">10月23日</span><span class="paywall" title="原文需要訂閱才可閱讀 / Source requires a subscription">🔒需訂閱</span><span class="no">13</span></div>
 <h3><a href="https://www.campaignasia.com/article/the-click-is-no-longer-the-point-and-other-myths-of-search-era-marketing/4n2q8wrqht1ywtfsg5anrn4bdr" rel="noopener noreferrer" target="_blank">Campaign Asia觀點：AI搜尋時代不應只以點擊衡量影響力</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>AI回答可能令部分發現及比較行為不再依賴傳統點擊。</li><li>評論主張擴大評估指標，包括品牌影響及隱私友善的增量測量。</li><li>CTR、點擊及轉化仍視業務目的有價值；不宜用單一新KPI取代全部衡量。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>Agency報表應區分到達、互動及增量商業效果，避免以同一個指標解釋所有品牌影響。</p></div>
-<details class="detail"><summary>看詳細內容（本站整理，約 163 字）</summary><div class="detail-body"><p>Campaign Asia的評論文章討論傳統搜尋點擊作為Marketing KPI的局限。作者認為，AI摘要、比較和代理型操作可能令部分消費者在未進入品牌網站之前已完成部分判斷，因此單靠CTR未必足以衡量全部品牌影響力。</p><p>此文屬策略評論，不是一項證明所有點擊KPI已失效的控制實驗。廣告主可以根據目標加入品牌搜尋、合資格詢盤、購物意向、實際增量測試與私隱友善歸因，同時保留有解釋力的CTR及Conversion指標。最重要的是區分相關性與因果關係。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="campaign-asia-opinion-argues-marketing-dc0f43" data-title-en="Campaign Asia opinion argues marketing influence needs metrics beyond clicks" data-title-zh="Campaign Asia觀點：AI搜尋時代不應只以點擊衡量影響力"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/the-click-is-no-longer-the-point-and-other-myths-of-search-era-marketing/4n2q8wrqht1ywtfsg5anrn4bdr" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>Campaign Asia評論文章探討AI回覆及代理型搜尋如何使部分決策發生在點擊之前，提醒Marketers兼顧隱私與增量成效衡量；『點擊已無價值』並非已證實事實。</p><p class="scan-impact"><b>Marketing 影響</b>Agency報表應區分到達、互動及增量商業效果，避免以同一個指標解釋所有品牌影響。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>AI回答可能令部分發現及比較行為不再依賴傳統點擊。</li><li>評論主張擴大評估指標，包括品牌影響及隱私友善的增量測量。</li><li>CTR、點擊及轉化仍視業務目的有價值；不宜用單一新KPI取代全部衡量。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>Agency報表應區分到達、互動及增量商業效果，避免以同一個指標解釋所有品牌影響。</p></div><details class="detail"><summary>看詳細內容（本站整理，約 163 字）</summary><div class="detail-body"><p>Campaign Asia的評論文章討論傳統搜尋點擊作為Marketing KPI的局限。作者認為，AI摘要、比較和代理型操作可能令部分消費者在未進入品牌網站之前已完成部分判斷，因此單靠CTR未必足以衡量全部品牌影響力。</p><p>此文屬策略評論，不是一項證明所有點擊KPI已失效的控制實驗。廣告主可以根據目標加入品牌搜尋、合資格詢盤、購物意向、實際增量測試與私隱友善歸因，同時保留有解釋力的CTR及Conversion指標。最重要的是區分相關性與因果關係。</p><p class="why-src">原文需訂閱，以上為本站整理；來源：Campaign Asia</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal impact">影響生意</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="campaign-asia-opinion-argues-marketing-dc0f43" data-title-en="Campaign Asia opinion argues marketing influence needs metrics beyond clicks" data-title-zh="Campaign Asia觀點：AI搜尋時代不應只以點擊衡量影響力"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://www.campaignasia.com/article/the-click-is-no-longer-the-point-and-other-myths-of-search-era-marketing/4n2q8wrqht1ywtfsg5anrn4bdr" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article>
 <article class="story c5" data-no="14" id="techcrunch-surveys-assistants-accessed-through-1697c2"><span aria-hidden="true" class="idalias" id="s14"></span>
 <div class="story-meta"><span class="src">TechCrunch</span><span class="source-kind">媒體報道</span><span class="date">10月24日</span><span class="no">14</span></div>
 <h3><a href="https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/" rel="noopener noreferrer" target="_blank">TechCrunch盤點訊息內AI助手：iMessage、SMS及WhatsApp成服務入口</a></h3>
-<div class="block"><b class="k">重點摘要</b><ul class="kh"><li>文章介紹多款無須另開傳統AI應用程式的訊息型代理產品。</li><li>各產品支援iMessage、SMS、WhatsApp或其他訊息渠道的程度不同。</li><li>品牌可先測試自己業務的預約、查詢和人工轉介，不應直接假設普及率及轉化收益。</li></ul></div>
-<div class="take"><b class="k">行業洞察</b><p>WhatsApp在香港行銷與客服場景普遍，值得研究訊息原生AI體驗；選工具時要核對私隱、權限及人工交接。</p></div>
-<details class="detail"><summary>看詳細內容（約 170 字）</summary><div class="detail-body"><p>TechCrunch於10月24日更新訊息內AI助手盤點，介紹可透過SMS、iMessage、WhatsApp及部分其他通訊服務使用的產品，應用涉及提醒、預約、資訊查詢和購物協助。不同工具有公開版、Beta、邀請制或付費安排，亦不是每一款都支援所有訊息渠道。</p><p>對香港品牌而言，適合優先設計的試驗可能係常見客服查詢、門店預約與產品資訊確認；每一步都應可交由真人處理，並明確告知資料用途。文章屬市場盤點，不能用產品清單推算消費者採用率，也不應保證能降低服務成本。</p><p class="why-src">整理自：TechCrunch</p></div></details><div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="techcrunch-surveys-assistants-accessed-through-1697c2" data-title-en="TechCrunch surveys AI assistants accessed through SMS, iMessage and WhatsApp" data-title-zh="TechCrunch盤點訊息內AI助手：iMessage、SMS及WhatsApp成服務入口"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
+<div class="scan-brief"><p class="scan-summary"><b>發生什麼</b>TechCrunch於10月24日整理多款透過訊息工具使用的AI助手，涵蓋預約、工作任務和購物支援；不同產品的渠道、地區、收費及開放程度差異很大。</p><p class="scan-impact"><b>Marketing 影響</b>WhatsApp在香港行銷與客服場景普遍，值得研究訊息原生AI體驗；選工具時要核對私隱、權限及人工交接。</p></div>
+<details class="story-expanded"><summary>深入閱讀：重點及分析</summary>
+<div class="story-expanded-body"><div class="block"><b class="k">重點摘要</b><ul class="kh"><li>文章介紹多款無須另開傳統AI應用程式的訊息型代理產品。</li><li>各產品支援iMessage、SMS、WhatsApp或其他訊息渠道的程度不同。</li><li>品牌可先測試自己業務的預約、查詢和人工轉介，不應直接假設普及率及轉化收益。</li></ul></div><div class="take"><b class="k">行業洞察</b><p>WhatsApp在香港行銷與客服場景普遍，值得研究訊息原生AI體驗；選工具時要核對私隱、權限及人工交接。</p></div><details class="detail"><summary>看詳細內容（約 170 字）</summary><div class="detail-body"><p>TechCrunch於10月24日更新訊息內AI助手盤點，介紹可透過SMS、iMessage、WhatsApp及部分其他通訊服務使用的產品，應用涉及提醒、預約、資訊查詢和購物協助。不同工具有公開版、Beta、邀請制或付費安排，亦不是每一款都支援所有訊息渠道。</p><p>對香港品牌而言，適合優先設計的試驗可能係常見客服查詢、門店預約與產品資訊確認；每一步都應可交由真人處理，並明確告知資料用途。文章屬市場盤點，不能用產品清單推算消費者採用率，也不應保證能降低服務成本。</p><p class="why-src">整理自：TechCrunch</p></div></details></div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal act">可即用</span><span class="chip region r-intl">國際</span></span><details class="story-actions" data-story="techcrunch-surveys-assistants-accessed-through-1697c2" data-title-en="TechCrunch surveys AI assistants accessed through SMS, iMessage and WhatsApp" data-title-zh="TechCrunch盤點訊息內AI助手：iMessage、SMS及WhatsApp成服務入口"><summary>分享／複製</summary><div class="story-actions-menu"><button data-action="copy" type="button">複製 Team Brief</button><button data-action="share" type="button">分享新聞連結</button></div></details><a class="readsrc" href="https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/" rel="noopener noreferrer" target="_blank">閱讀原文 →</a></div>
 </article></div>
 </section>
 </main>
@@ -956,6 +1075,45 @@ if(mobileCategories){
   document.addEventListener('click',e=>{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;});
 }
 setLang(curLang()); // sync button highlight with the pre-paint language
+/* Reading preference is session-scoped: Quick Scan is the accessible default,
+   Deep Read opens published analysis, each card can still expand individually. */
+(function(){
+  const quick=document.getElementById('view-quick');
+  const deep=document.getElementById('view-deep');
+  const cards=[...document.querySelectorAll('details.story-expanded')];
+  if(!quick||!deep||!cards.length)return;
+  function apply(mode,save){
+    const expanded=mode==='deep';
+    cards.forEach(d=>{d.open=expanded});
+    quick.setAttribute('aria-pressed',expanded?'false':'true');
+    deep.setAttribute('aria-pressed',expanded?'true':'false');
+    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
+    if(save){try{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}catch(e){}}
+  }
+  quick.addEventListener('click',()=>apply('quick',true));
+  deep.addEventListener('click',()=>apply('deep',true));
+  let saved='quick';
+  try{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}catch(e){}
+  apply(saved==='deep'?'deep':'quick',false);
+  const search=document.querySelector('.top-search');
+  if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{
+    try{document.getElementById('news-query').focus({preventScroll:true})}catch(e){}
+  }));
+  let printState=null;
+  addEventListener('beforeprint',()=>{
+    const note=document.querySelector('.edition-notes');
+    printState={cards:cards.map(d=>d.open),notes:note?note.open:null};
+    cards.forEach(d=>{d.open=true});
+    if(note)note.open=true;
+  });
+  addEventListener('afterprint',()=>{
+    if(!printState)return;
+    cards.forEach((d,i)=>{d.open=!!printState.cards[i]});
+    const note=document.querySelector('.edition-notes');
+    if(note&&printState.notes!==null)note.open=printState.notes;
+    printState=null;
+  });
+})();
 function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
 function languageShareUrl(storyId){
   // A shared article points to its permanent edition, not tomorrow's homepage.
