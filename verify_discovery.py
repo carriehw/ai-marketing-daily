@@ -61,11 +61,11 @@ def audit(root):
                    'id="brief-manual"','id="brief-manual-text"'):
         if marker not in html:errors.append("missing reader control "+marker)
     for marker in ("fetch(new URL('archive/search-index.json'",
-                   "document.querySelectorAll('.copy-team-brief')",
+                   "document.querySelectorAll('.story-actions')",
                    "formatTeamBrief", "function archiveRows()", "input.addEventListener('input'"):
         if marker not in js:errors.append("missing wired user action "+marker)
-    count=html.count('class="copy-team-brief"')
-    if count!=len(data["items"]):errors.append("copy brief buttons missing or duplicated")
+    count=html.count('class="story-actions"')
+    if count!=len(data["items"]):errors.append("share/copy menus missing or duplicated")
     return errors,index,payload if m else {}
 
 def self_test():
