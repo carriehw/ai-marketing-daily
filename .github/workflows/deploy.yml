@@ -58,6 +58,7 @@ jobs:
           PYTHONIOENCODING=utf-8 python build_archive.py
           PYTHONIOENCODING=utf-8 python build_email.py
           python verify_email.py
+          python verify_ux.py --data data.json --html index.html
 
       - name: Check generated artifacts before deploy
         shell: bash

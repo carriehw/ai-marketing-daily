@@ -1076,6 +1076,14 @@ for s in data["sections"]:
         reg = it.get("region", "")
         reg_cls = REG.get(reg, "r-other")
         src = html.escape(str(it.get("source", "")))
+        _kinds = {
+            "official": ("官方公告", "Official"),
+            "reported": ("媒體報道", "Reported"),
+            "vendor": ("廠商資料", "Vendor-supplied"),
+            "analysis": ("分析觀點", "Analysis"),
+        }
+        _kind = _kinds.get(str(it.get("source_kind", "reported")), _kinds["reported"])
+        source_kind_badge = f'<span class="source-kind">{bi(_kind[0], _kind[1])}</span>'
         tm = str(it.get("time", ""))
         sec_cls = SEC_CLS[s]
 
@@ -1162,15 +1170,43 @@ for s in data["sections"]:
         # 「格仔唔整齊」 Carrie asked me to fix, so the anchor goes inside where it
         # is ordinary inline content and holds no grid track.
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
-<div class="story-meta"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
+<div class="story-meta"><span class="src">{src}</span>{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {fu}{body}
 {take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><button class="story-share" type="button" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}" aria-label="{html.escape(bi_attr('分享這則新聞', 'Share this story'))}">{bi("分享新聞", "Share story")}</button>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
 total = n
+
+# Homepage Top 3 are ranked by the published editorial evidence score, not by
+# the section order or an automated guess about news importance.
+_score_map = {}
+try:
+    _proof_file = ROOT / "editorial" / "evidence" / f"{ISO}.json"
+    _proof = json.loads(_proof_file.read_text(encoding="utf-8"))
+    _score_map = {e.get("title_zh",""): int(e.get("editorial_relevance_score",{}).get("total",0))
+                  for e in _proof.get("stories",[]) if e.get("editorial_decision")=="approved"}
+except (OSError, ValueError, TypeError) as _err:
+    print(f"NOTE Top Stories relevance scores unavailable: {_err}", file=sys.stderr)
+_ranked = sorted(enumerate(data["items"]),
+                 key=lambda pair: (-_score_map.get(pair[1].get("title",""),0),pair[0]))[:3]
+_lead_rows=[]
+for _rank, (_, _it) in enumerate(_ranked,1):
+    _aid=story_slug(_it)
+    _act=_it.get("action","要留意")
+    _lead_rows.append(
+        f'<a class="lead-row" href="#{html.escape(_aid)}">'
+        f'<span class="lead-rank">{_rank:02d}</span>'
+        f'<span class="lead-info"><strong>{bi(_it.get("title",""),_it.get("title_en"))}</strong>'
+        f'<small>{bi(_it.get("source",""),_it.get("source",""))} · {bi(_act,ACT_EN.get(_act,_act))}</small></span>'
+        f'<span class="lead-arrow" aria-hidden="true">↗</span></a>')
+top3_html = (f'<section class="top-stories" aria-label="{html.escape(bi_attr("今日三則重點新聞", "Today’s top three stories"))}">'
+             f'<div class="lead-heading"><b>{bi("今日必讀 TOP 3", "TODAY’S TOP 3")}</b>'
+             f'<span>{bi("精選重點，點擊跳至內文", "Essential stories · jump to brief")}</span></div>'
+             f'<div class="lead-panel">{"".join(_lead_rows)}</div></section>')
+
 READ_MIN = data.get("read_minutes") or max(3, round(total * 0.5))
 
 if _paywall_n:
@@ -1607,6 +1643,21 @@ html[data-lang="en"] .l-zh{{display:none}}
 .langtog button+button{{border-left:1px solid rgba(247,245,239,.26)}}
 .langtog button.on{{background:var(--lime);color:var(--i-navy);font-weight:700}}
 .langtog button:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+/* Mobile jump menu shows all five categories without occupying a permanent row. */
+.mobile-category-menu{{display:none;position:relative;flex:none}}
+.mobile-category-menu>summary{{list-style:none;cursor:pointer;color:var(--on-dark);font:inherit;font-size:12.5px;font-weight:700;border:1px solid rgba(247,245,239,.3);padding:7px 10px;border-radius:999px;white-space:nowrap}}
+.mobile-category-menu>summary::-webkit-details-marker{{display:none}}
+.mobile-category-menu>summary::after{{content:"⌄";margin-left:5px;color:var(--lime)}}
+.mobile-category-menu[open]>summary::after{{content:"⌃"}}
+.mobile-category-menu>summary:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+.mobile-cat-list{{position:absolute;right:0;top:calc(100% + 9px);width:285px;max-width:calc(100vw - 32px);max-height:60vh;overflow-y:auto;z-index:50;padding:8px;background:#fff;color:var(--ink);border-radius:14px;border:1px solid var(--line);box-shadow:0 14px 32px rgba(0,0,0,.18)}}
+.mobile-cat-list a{{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 12px;color:var(--ink);text-decoration:none;border-radius:8px;font-size:13px;font-weight:650}}
+.mobile-cat-list a:hover,.mobile-cat-list a:focus-visible{{background:var(--accent-soft);outline-color:var(--accent)}}
+.mobile-cat-list i{{font-style:normal;color:var(--accent-d);font-family:ui-monospace,monospace;flex:none}}
+@media (max-width:560px){{
+  .mobile-cat-list{{left:0;right:auto}}
+}}
+
 
 /* ---- hero: the dark identity zone -------------------------------------------
    The four stops are the icon's own four corners, in the icon's own spatial order
@@ -1640,6 +1691,22 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
    nested capsules. `>` keeps the pill on the outer wrapper alone. */
 .issue-meta>span{{border:1px solid rgba(247,245,239,.28);background:rgba(247,245,239,.08);padding:7px 13px;border-radius:999px;font-size:13px;color:var(--on-dark-chip)}}
 .issue-meta>span b{{color:var(--on-dark);font-weight:700}}
+/* Editorially ranked headline shortcuts provide immediate utility on first view. */
+.top-stories{{margin:14px 0 20px}}
+.lead-heading{{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:9px}}
+.lead-heading b{{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:.12em}}
+.lead-heading span{{color:var(--on-dark-2);font-size:12px}}
+.lead-panel{{overflow:hidden;background:var(--card);border-radius:17px;box-shadow:0 10px 30px rgba(0,0,0,.1)}}
+.lead-row{{display:flex;align-items:center;gap:14px;padding:11px 18px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}}
+.lead-row:last-child{{border-bottom:0}}
+.lead-row:hover,.lead-row:focus-visible{{background:#f2f0ff}}
+.lead-row:focus-visible{{outline:2px solid var(--lime);outline-offset:-2px}}
+.lead-rank{{color:var(--accent);font-size:17px;font-weight:900;font-family:PlexMonoLat,ui-monospace,monospace;flex:none}}
+.lead-info{{min-width:0;flex:1;display:block}}
+.lead-info strong{{font-size:clamp(14px,1.55vw,16px);line-height:1.38;font-weight:800;display:block}}
+.lead-info small{{display:block;font-size:11.5px;color:var(--muted);margin-top:3px}}
+.lead-arrow{{font-size:17px;color:var(--accent-d);flex:none}}
+
 /* slim byline (personal credit, no full profile card) */
 .byline{{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 0 4px;border-top:1px solid rgba(247,245,239,.2);font-size:13.5px;color:var(--on-dark-3)}}
 .byline .who{{color:var(--on-dark);font-weight:750}}
@@ -1743,6 +1810,10 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
   text-wrap:balance}}
 .thesis p{{max-width:var(--measure);margin:0;color:rgba(255,255,255,.85);font-size:16.5px}}
 
+.more-brief{{margin-top:16px}}
+.more-brief>summary{{cursor:pointer;display:inline-flex;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:99px;color:var(--accent-d);font-size:13px;font-weight:750}}
+.more-brief>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.more-brief .tldr{{margin:12px 0 0}}
 /* ---- category headers ---- */
 section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .cat-head{{display:flex;align-items:center;gap:14px;padding:15px 20px;border-radius:16px;color:#fff;margin:0 0 4px}}
@@ -1785,6 +1856,7 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
    obvious to land. Now the title dominates, 行業洞察 is the single tinted block,
    and everything else is plain body text on an 8px spacing rhythm. */
 .story-meta{{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:12px}}
+.source-kind{{font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 8px;line-height:1.4}}
 .src{{font-weight:750;padding:4px 10px;border-radius:999px;letter-spacing:.02em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 /* Pill text uses --cNt, NOT --cN. The solid category colour on its own tint only
    reaches 4.34–4.56:1 for the three blue-violet hues — under AA for 12px text.
@@ -1846,6 +1918,9 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .signal.impact{{background:var(--accent-soft);color:var(--accent)}}
 .chip{{font-size:11.5px;padding:5px 10px;border-radius:99px;white-space:nowrap}}
 .chip.region{{border:1px solid var(--line);color:var(--muted)}}
+.story-share{{font:inherit;font-size:12.5px;font-weight:750;color:var(--accent-d);background:#fff;border:1px solid var(--accent);border-radius:999px;padding:8px 12px;cursor:pointer}}
+.story-share:hover{{background:var(--accent-soft)}}
+.story-share:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
 .readsrc{{text-decoration:none;font-weight:800;font-size:13px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 .readsrc:hover{{background:var(--accent)}}
 .empty{{margin:0;padding:22px 24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.5)}}
@@ -1943,7 +2018,7 @@ footer b{{color:var(--ink)}}
   .hero{{padding-top:36px}}
   /* 2 columns; an odd section count would leave a dangling empty cell, so the
      last stat spans the full row instead of showing a blank box. */
-  .stats{{grid-template-columns:repeat(2,1fr)}}
+  .stats{{display:none}}
   .stats>.stat:last-child:nth-child(odd){{grid-column:1/-1}}
   .story{{padding:20px 18px}}
   .cat-head{{padding:13px 15px;gap:11px}}
@@ -1952,6 +2027,7 @@ footer b{{color:var(--ink)}}
      `flex:none` an empty `flex:1 1 auto` item still pushes the remaining controls
      around. */
   .navlinks a:not(.pill){{display:none}}
+  .mobile-category-menu{{display:block}}
   .navlinks{{flex:none}}
   .tldr{{padding:16px 17px;border-radius:14px}}
   .tldr a{{font-size:14px}}
@@ -1963,7 +2039,13 @@ footer b{{color:var(--ink)}}
    spacing and type-scale only — nothing is hidden, and the desktop layout is
    untouched. Measured on a 390x844 viewport: first card moves ~210px up. */
 @media (max-width:460px){{
-  .hero{{padding:24px 0 6px}}
+  .hero{{padding:22px 0 14px}}
+  .top-stories{{margin:10px 0 14px}}
+  .lead-row{{padding:11px 12px;gap:9px}}
+  .lead-info strong{{font-size:13.5px}}
+  .lead-info small{{font-size:11px}}
+  .legend{{display:none}}
+  .issue-meta>span:last-child{{display:none}}
   h1{{font-size:clamp(31px,8.6vw,40px);margin:10px 0 12px;letter-spacing:-.045em}}
   .hero-sub{{font-size:15.5px;line-height:1.5;margin:0 0 15px}}
   /* The four pills were one per row at this width. Smaller type and tighter
@@ -2014,6 +2096,10 @@ footer b{{color:var(--ink)}}
   <div class="brand">{bi(SITE_TITLE, SITE_TITLE_EN)}<small>{html.escape(SITE_TAGLINE)}</small></div>
   <div class="mast-r">
     <div class="navlinks">{nav}</div>
+    <details class="mobile-category-menu" id="mobile-categories">
+      <summary>{bi("分類", "Sections")}</summary>
+      <nav class="mobile-cat-list" aria-label="{html.escape(bi_attr('跳至新聞分類', 'Jump to news category'))}">{nav}</nav>
+    </details>
     <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
          scrolling category strip, and a control placed inside it scrolls away with
          the categories: measured at 1280px, Share's right edge landed at x=1455 on
@@ -2035,10 +2121,11 @@ footer b{{color:var(--ink)}}
   <p class="hero-sub">{bi(STANDFIRST, STANDFIRST_EN)}</p>
   <div class="issue-meta">
     <span><b>{total}</b>{bi(" 則 · ", " stories · ")}<b>{len(data["sections"])}</b>{bi(" 個分類", " categories")}</span>
-    <span>{bi("每則附一手來源", "Every story sourced")}</span>
+    <span>{bi("每則附可查核資料來源", "Every story has traceable sources")}</span>
     <span>{bi(f"約 {READ_MIN} 分鐘讀完", f"{READ_MIN}-minute read")}</span>
     <span>{bi("🟢 即用　·　🟡 留意　·　🟣 影響生意", "🟢 Act · 🟡 Watch · 🟣 Business impact")}</span>
   </div>
+  {top3_html}
   <div class="byline">
     <span class="who">{bi("主編：" + BYLINE, "Curated by " + BYLINE)}</span><span class="dot">·</span>
     <span>{bi(BYLINE_ROLE, BYLINE_ROLE_EN)}</span>{('<span class="dot">·</span>' + _weekly_link) if _weekly_link else ''}{('<span class="dot">·</span>' + _li_link) if _li_link else ''}
@@ -2070,10 +2157,9 @@ footer b{{color:var(--ink)}}
   </div>
   <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
   <div class="stats">{stats}</div>
-  {tldr_html}
 </div></header>
 
-<div class="wrap">{thesis_html}</div>
+<div class="wrap">{thesis_html}<details class="more-brief"><summary>{bi("延伸重點摘要 · 6 則", "More key highlights · 6 picks")}</summary>{tldr_html}</details></div>
 
 <main class="wrap" id="main">
 {sections_html}
@@ -2095,6 +2181,7 @@ footer b{{color:var(--ink)}}
 <div id="toast"></div>
 <script>
 const SHARE_URL={json.dumps(SITE_URL) if SITE_URL else "location.href"};
+const ISSUE_DATE={json.dumps(ISO)};
 const MSG={{zh:'連結已複製，可直接分享給同事', en:'Link copied — share it with your team'}};
 function curLang(){{return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}}
 function setLang(l){{
@@ -2108,17 +2195,35 @@ function setLang(l){{
   if(window.__navOvf)window.__navOvf();
 }}
 document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+const mobileCategories=document.getElementById('mobile-categories');
+if(mobileCategories){{
+  mobileCategories.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{{mobileCategories.open=false;}}));
+  document.addEventListener('keydown',e=>{{if(e.key==='Escape'&&mobileCategories.open){{mobileCategories.open=false;mobileCategories.querySelector('summary').focus();}}}});
+  document.addEventListener('click',e=>{{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;}});
+}}
 setLang(curLang()); // sync button highlight with the pre-paint language
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}
-function legacyCopy(){{const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{{ok=document.execCommand('copy')}}catch(e){{}}ta.remove();return ok}}
-function showBox(){{const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}}
-document.getElementById('share').addEventListener('click',async()=>{{
-  const msg=MSG[curLang()];
-  if(navigator.share){{try{{await navigator.share({{title:document.title,url:SHARE_URL}});return}}catch(e){{if(e.name==='AbortError')return}}}}
-  try{{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}}catch(e){{}}
-  if(legacyCopy()){{toast(msg);return}}
-  showBox();
-}});
+function languageShareUrl(storyId){{
+  // A shared article points to its permanent edition, not tomorrow's homepage.
+  const base=(storyId ? SHARE_URL.replace(/\\/?$/, '/')+'archive/'+ISSUE_DATE+'.html' : SHARE_URL);
+  const u=new URL(base,location.href);
+  u.searchParams.set('lang',curLang());
+  u.hash=storyId||'';
+  return u.href;
+}}
+function legacyCopy(value){{const ta=document.createElement('textarea');ta.value=value;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{{ok=document.execCommand('copy')}}catch(e){{}}ta.remove();return ok}}
+function showBox(value){{const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=value;inp.focus();inp.select()}}
+async function shareLink(value,title){{
+  if(navigator.share){{try{{await navigator.share({{title:title,url:value}});return}}catch(e){{if(e.name==='AbortError')return}}}}
+  try{{await navigator.clipboard.writeText(value);toast(MSG[curLang()]);return}}catch(e){{}}
+  if(legacyCopy(value)){{toast(MSG[curLang()]);return}}
+  showBox(value);
+}}
+document.getElementById('share').addEventListener('click',()=>shareLink(languageShareUrl(),document.title));
+document.querySelectorAll('.story-share').forEach(b=>b.addEventListener('click',()=>{{
+  const title=(curLang()==='zh'?b.dataset.titleZh:b.dataset.titleEn)||document.title;
+  shareLink(languageShareUrl(b.dataset.story),title);
+}}));
 
 /* ---- add-to-home-screen hint ----
    Three gates, all of which must pass before the tip appears:
