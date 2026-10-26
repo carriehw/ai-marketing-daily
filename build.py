@@ -2282,6 +2282,70 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
   .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{{display:none!important}}
   .story-expanded-body{{display:block!important}}
 }}
+/* ---------- Phase 3: search after reading, editorial-first card actions ---------- */
+/* Source verification is source metadata, never a third CTA in the card footer. */
+.story-meta{{gap:6px 9px;line-height:1.5;align-items:center;margin-bottom:9px}}
+.story-meta .src{{font-size:12px;padding:4px 9px}}
+.story-meta .source-kind{{font-size:11px;padding:4px 8px}}
+.story-meta .date{{font-size:12px;color:var(--muted)}}
+.story-meta .evidence-link{{font-size:12px;font-weight:700;padding:5px 3px;min-height:32px;display:inline-flex;align-items:center;text-underline-offset:3px}}
+.story-meta .evidence-link:hover{{color:var(--accent-d)}}
+.story-taxonomy{{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:1px 0 12px}}
+.story-taxonomy .signal{{font-size:12px;font-weight:750;padding:4px 10px}}
+.story-taxonomy .chip{{font-size:12px;padding:4px 10px}}
+.story-foot{{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:9px;align-items:center;margin-top:auto;padding-top:15px;border-top:1px solid var(--line)}}
+.story-foot .readsrc{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:9px 17px;border-radius:999px;font-size:13px;font-weight:800;color:#fff;background:var(--accent-d);text-decoration:none;white-space:nowrap}}
+.story-foot .readsrc:hover{{background:var(--i-navy)}}
+.story-foot .readsrc:focus-visible{{outline:2px solid var(--accent);outline-offset:3px}}
+.story-foot .story-actions{{margin:0}}
+.story-foot .story-actions>summary{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:9px 16px;color:var(--accent-d);background:transparent;border:1px solid #a49bdc;border-radius:999px;font-size:13px;font-weight:750}}
+.story-foot .story-actions>summary:hover{{background:var(--accent-soft);border-color:var(--accent-d)}}
+.story-foot .story-actions>summary:focus-visible{{outline:2px solid var(--accent-d);outline-offset:3px}}
+.story-foot .story-actions-menu{{bottom:calc(100% + 9px);right:auto;left:0}}
+/* Search is a secondary journey: the fixed magnifier remains the primary
+   discovery affordance, with results immediately below the search panel. */
+main#main > .discovery{{margin-top:42px;margin-bottom:12px;scroll-margin-top:102px}}
+main#main > .discovery:before{{content:"";display:block;height:1px;background:var(--line);margin-bottom:22px}}
+.today-search-results{{margin:12px 0 18px}}
+.today-search-results[hidden]{{display:none!important}}
+#today-result-list .today-hit{{scroll-margin-top:90px}}
+#news-explorer .discovery-head h2{{font-size:clamp(19px,2.4vw,23px)}}
+/* Search never hides the published news: no jumpy page collapse when scope
+   switches at the footer, and no "results above search field" anti-pattern. */
+body.view-archive-search main#main > section[id^="sec"]{{display:block!important}}
+body.view-archive-search .top-stories,
+body.view-archive-search .thesis,
+body.view-archive-search .more-brief,
+body.is-filtering-news .top-stories,
+body.is-filtering-news .thesis,
+body.is-filtering-news .more-brief{{display:initial}}
+/* Print stays a readable editorial copy, not a duplicated search results list. */
+@media print{{
+  .today-search-results,.archive-search-results,.discovery{{display:none!important}}
+}}
+/* Fine-grained touch/reading improvements, without changing the brand system. */
+.story-expanded>summary,.edition-notes>summary,
+#view-quick,#view-deep,.discovery-reset,.discovery-scope button,
+#archive-more,.mobile-cat-list a{{min-height:44px}}
+.story h3{{overflow-wrap:anywhere;hyphens:auto}}
+.scan-brief p,.story-expanded-body p{{overflow-wrap:break-word}}
+.story-actions-menu button{{font-size:13px;min-height:44px}}
+@media(max-width:560px){{
+  .story{{padding:19px 16px}}
+  .story h3{{font-size:clamp(18px,4.8vw,21px);line-height:1.37;margin-bottom:11px}}
+  .story-meta{{gap:5px 7px}}
+  .story-meta .src,.story-meta .source-kind,.story-meta .date,
+  .story-meta .evidence-link{{font-size:12px}}
+  .story-taxonomy{{gap:6px;margin-bottom:12px}}
+  .scan-brief p{{line-height:1.66}}
+  .story-foot{{gap:8px;padding-top:13px}}
+  .story-foot .readsrc,.story-foot .story-actions>summary{{min-height:44px;font-size:13px;padding:9px 13px}}
+  main#main > .discovery{{margin-top:30px}}
+  main#main > .discovery:before{{margin-bottom:16px}}
+  .history-hit{{padding:15px 14px}}
+  .history-hit strong{{font-size:14px;line-height:1.55}}
+  .discovery-scope button{{min-height:44px}}
+}}
 </style>
 </head>
 <body>
