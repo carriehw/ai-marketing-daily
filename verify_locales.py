@@ -11,7 +11,7 @@ import re
 import sys
 from pathlib import Path
 from urllib.parse import urlsplit
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Doctype, NavigableString
 
 LOCALES={"en":"en","zh-hant":"zh-Hant","zh-hans":"zh-Hans"}
 LOCALE_OG={"en":"en_US","zh-hant":"zh_HK","zh-hans":"zh_CN"}
@@ -22,6 +22,16 @@ def url_for(base,loc,kind,date):
 def expected(page,base,kind,date,locale,count):
     failures=[]
     soup=BeautifulSoup(page,"html.parser")
+    # This regression gate protects ALL independent locales from a visibly
+    # rendered "html" bar and browser Quirks Mode. Check the serialized
+    # DOCTYPE, not just that an <html> element exists.
+    if not page.lstrip().lower().startswith("<!doctype html>"):
+        failures.append(f"{locale}/{kind}: missing leading DOCTYPE (stray text before HTML)")
+    if not soup.contents or not isinstance(soup.contents[0], Doctype):
+        failures.append(f"{locale}/{kind}: parsed DOCTYPE was lost or displaced")
+    if any(isinstance(node, NavigableString) and not isinstance(node, Doctype)
+           and node.strip() for node in soup.contents):
+        failures.append(f"{locale}/{kind}: stray top-level text before/after document")
     page_url=url_for(base,locale,kind,date)
     if not soup.html or soup.html.get("lang")!=LOCALES[locale]:
         failures.append(f"{locale}/{kind}: document lang incorrect")
@@ -120,7 +130,14 @@ def audit(root):
             item=issue["date"]
             path=root/locale/"archive"/(item+".html")
             if not path.is_file():problems.append("Missing historical locale page "+locale+"/"+item)
-            else:all_dates.add(item)
+            else:
+                all_dates.add(item)
+                # Check every older archive as well: the bug touched all 78 issues.
+                # Read only a small prefix to avoid reparsing each whole page.
+                with path.open("r",encoding="utf-8") as stream:
+                    prefix=stream.read(120)
+                if not prefix.lstrip().lower().startswith("<!doctype html>"):
+                    problems.append("Archive lost DOCTYPE or starts with stray text: "+locale+"/"+item)
         output_stats[locale]={"issues":len(all_dates),
                               "homepage":(root/locale/"index.html").stat().st_size if (root/locale/"index.html").is_file() else 0}
     search=json.loads((root/"archive/search-index.json").read_text(encoding="utf-8"))
@@ -149,6 +166,7 @@ def self_test():
 <a href="https://example.org/news/zh-hant/">繁</a>
 <a href="https://example.org/news/zh-hans/" aria-current="page">简</a></nav></body></html>"""
     assert not expected(src,base,"home","2026-10-26","zh-hans",0)
+    assert expected(src.replace("<!doctype html>","html"),base,"home","2026-10-26","zh-hans",0)
     assert expected(src.replace('hreflang="zh-Hant"','hreflang="wrong"'),
                     base,"home","2026-10-26","zh-hans",0)
     assert expected(src.replace('rel="canonical" href="https://example.org/news/zh-hans/"',
