@@ -1068,7 +1068,7 @@ for s in data["sections"]:
         evidence_url = html.escape(str(it.get("verification_url", "")).strip())
         primary_link = (
             f'<a class="evidence-link" href="{evidence_url}" target="_blank" rel="noopener noreferrer">'
-            f'{bi("核實依據 ↗", "Evidence ↗")}</a>'
+            f'{bi("補充來源 ↗", "Supporting source ↗")}</a>'
             if evidence_url.startswith(("https://", "http://")) and evidence_url != url else ""
         )
         act = it.get("action", "要留意")
@@ -1179,12 +1179,13 @@ for s in data["sections"]:
                 f'{bi(it.get("why",""),it.get("why_en"))}</p></div>')
 
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
-<div class="story-meta"><span class="src">{src}</span>{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
+<div class="story-meta"><span class="src">{src}</span>{primary_link}{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
+<div class="story-taxonomy"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></div>
 {scan}
 <details class="story-expanded"><summary>{bi("深入閱讀：重點及分析", "Deep read: key points and analysis")}</summary>
 <div class="story-expanded-body">{fu}{body}{take}{pat}{detail}</div></details>
-<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+<div class="story-foot"><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 ↗", "Read original ↗")}</a><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享", "Share")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details></div>
 </article>''')
     cards[s] = "\n".join(out)
 
