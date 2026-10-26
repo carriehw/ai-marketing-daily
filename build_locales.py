@@ -18,6 +18,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup, NavigableString, Comment, Doctype
 from opencc import OpenCC
+from author_profile import refresh_profiles
 
 ROOT = Path(__file__).resolve().parent
 CC = OpenCC("t2s")
@@ -334,6 +335,10 @@ def main():
                 archive.get("title",""),archive.get("title_en",""),archive["total"])
             target.write_text(html_output,encoding="utf-8")
             built+=1
+    # Author/contact details are current site furniture, including on immutable
+    # issue snapshots. Refresh that bounded section without changing old news.
+    profile_count=refresh_profiles(root,base)
+    print(f"PASS author/contact profile refreshed on {profile_count} routes")
     # Sitemap includes only real published language routes; three-way hreflang
     # groups include the source language as recommended by Google Search Central.
     ns="http://www.sitemaps.org/schemas/sitemap/0.9"

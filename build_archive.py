@@ -21,6 +21,7 @@ Options:
 import json, html, re, sys, os, argparse
 from pathlib import Path
 from datetime import datetime
+from author_profile import with_author_profile
 
 JADE, JADE_D, INK, MUTED, LINE, PAPER, CARD = (
     "#5a42f4", "#4632d4", "#101114", "#656a73", "#dedbd2", "#f7f5ef", "#ffffff")
@@ -545,6 +546,6 @@ setLang(document.documentElement.getAttribute('data-lang')==='zh'?'zh':'en');
 </script>{_analytics}
 </body>
 </html>"""
-(ARCH / "index.html").write_text(page, encoding="utf-8")
+(ARCH / "index.html").write_text(with_author_profile(page, SITE_URL), encoding="utf-8")
 
 print(f"OK archive/  snapshot={ISO}.html  issues={count}  (latest {ISO}, total items={TOTAL})")

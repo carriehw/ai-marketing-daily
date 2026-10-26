@@ -81,6 +81,7 @@ Run:  PYTHONIOENCODING=utf-8 python3 build.py
 import json, html, os, re, sys, hashlib, urllib.parse
 from pathlib import Path
 from datetime import datetime, timedelta
+from author_profile import with_author_profile
 
 ROOT = Path(__file__).parent
 
@@ -2718,7 +2719,7 @@ document.addEventListener('keydown',e=>{{
 </html>
 '''
 
-(ROOT / "index.html").write_text(page, encoding="utf-8")
+(ROOT / "index.html").write_text(with_author_profile(page, SITE_URL), encoding="utf-8")
 
 # --- Remember today's urls so tomorrow's run can spot a repeat ---------------
 # Keyed by date and pruned to 14 days. Re-running today just overwrites today's
