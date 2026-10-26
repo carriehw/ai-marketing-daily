@@ -60,7 +60,7 @@ def audit(root):
                    'id="archive-result-list"','id="news-reset"',
                    'id="brief-manual"','id="brief-manual-text"'):
         if marker not in html:errors.append("missing reader control "+marker)
-    for marker in ("fetch(new URL('archive/search-index.json'",
+    for marker in ("fetch(new URL(searchPath",
                    "document.querySelectorAll('.story-actions')",
                    "formatTeamBrief", "function archiveRows()", "input.addEventListener('input'"):
         if marker not in js:errors.append("missing wired user action "+marker)
