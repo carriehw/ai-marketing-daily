@@ -10,6 +10,8 @@ This only generates artifacts. Sending is owned by the separately authorised
 Microsoft 365 flow, after the production issue/date checks.
 """
 import datetime as dt
+import base64
+import email.utils
 import hashlib
 import html
 import json
@@ -23,6 +25,12 @@ ISSUE = dt.date.fromisoformat(DATA["date"])
 TODAY = ISSUE.isoformat()
 ITEMS = DATA["items"]
 assert len(ITEMS) >= 10, "Not enough verified stories to make a team EDM"
+from verify_editorial import audit
+EVIDENCE_PATH = ROOT / "editorial" / "evidence" / (TODAY + ".json")
+EVIDENCE = json.loads(EVIDENCE_PATH.read_text(encoding="utf-8"))
+editorial_errors = audit(DATA, EVIDENCE, TODAY)
+if editorial_errors:
+    raise ValueError("EDM editorial hold: " + "; ".join(editorial_errors))
 SITE = DATA.get("site_url", "https://carriehw.github.io/ai-marketing-daily/").split("?")[0].rstrip("/") + "/"
 OUT = ROOT / "edm"
 OUT.mkdir(exist_ok=True)
@@ -96,25 +104,35 @@ CATCOLORS = {"AI 大模型 & 市場動態": "#39689F",
              "即學技巧 & 玩法": "#7D266B"}
 def pill(story):
     bg, fg = PILL.get(story.get("action"), (TINT, VIOLET))
-    return '<span style="display:inline-block;background:%s;color:%s;padding:5px 9px;border-radius:99px;font:700 10px %s;letter-spacing:.5px">%s</span>' % (
-        bg, fg, FONT, esc(LABELS.get(story.get("action"), "SIGNAL")))
+    return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>'
+            '<td nowrap="nowrap" bgcolor="%s" style="background-color:%s;color:%s;'
+            'padding:6px 10px;border-radius:12px;font-family:%s;font-size:10px;'
+            'font-weight:700;line-height:16px;white-space:nowrap;letter-spacing:.5px">%s'
+            '</td></tr></table>') % (bg, bg, fg, FONT, esc(LABELS.get(story.get("action"), "SIGNAL")))
+
+def gap(px):
+    return '<tr><td height="%d" style="height:%dpx;font-size:1px;line-height:%dpx;mso-line-height-rule:exactly">&nbsp;</td></tr>' % (px, px, px)
 
 def card(story, i):
     link = esc(url_for(story, "story-%d" % (i+1)))
     accent = CATCOLORS.get(story["section"], VIOLET)
-    intro = '<div style="font-size:10px;font-weight:800;color:%s;letter-spacing:1.4px;padding-bottom:8px">TODAY’S TOP STORY</div>' % accent if i == 0 else ""
-    fsize = "22" if i == 0 else ("18" if i < 3 else "16")
-    summary = "" if i >= 3 else '<p style="margin:9px 0 0;font-size:14px;line-height:1.55;color:#3C3F45">%s</p>' % esc(story["summary_en"])
-    why = '<div style="background:%s;border-left:3px solid %s;padding:10px 13px;margin-top:12px;font-size:13px;line-height:1.5;color:%s"><b style="color:%s">WHY IT MATTERS</b> — %s</div>' % (
-        TINT, VIOLET, INK, VIOLET, esc(story["why_en"])) if i < 3 else '<p style="margin:8px 0 0;font-size:13px;line-height:1.5;color:#3C3F45">%s</p>' % esc(story["why_en"])
-    return '''<tr><td style="padding:0 22px 12px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td bgcolor="#FFFFFF" style="background:#FFFFFF;border:1px solid %s;border-top:4px solid %s;border-radius:14px;padding:18px 20px">
-%s<div style="font-size:11px;font-weight:700;letter-spacing:.45px;color:%s;padding-bottom:7px">%s &nbsp;·&nbsp; %s</div>
-<a href="%s" style="font:%s 700 %spx/1.28 %s;color:%s;text-decoration:none">%s</a>
-%s%s<div style="padding-top:12px">%s</div>
-</td></tr></table></td></tr>''' % (
-        BORDER, accent, intro, accent, esc(story["source"]), "",
-        link, "", fsize, FONT, INK, esc(story["title_en"]), summary, why, pill(story))
+    fsize, leading = (22, 30) if i == 0 else ((18, 25) if i < 3 else (16, 23))
+    rows = []
+    if i == 0:
+        rows += [f'<tr><td style="font-size:10px;line-height:16px;font-weight:700;color:{accent};letter-spacing:1.4px">TODAY’S TOP STORY</td></tr>', gap(8)]
+    source_date = re.fullmatch(r"(\d{1,2})月(\d{1,2})日", story["time"])
+    published = dt.date(ISSUE.year, int(source_date[1]), int(source_date[2])).strftime("%d %b %Y")
+    rows += [f'<tr><td style="font-size:11px;line-height:17px;font-weight:700;color:{accent}">{esc(story["source"])} &nbsp;·&nbsp; {published}</td></tr>', gap(8)]
+    rows += [f'<tr><td style="font-size:{fsize}px;line-height:{leading}px;font-weight:700;color:{INK}"><a href="{link}" style="font-family:{FONT};font-size:{fsize}px;line-height:{leading}px;font-weight:700;color:{INK};text-decoration:none">{esc(story["title_en"])}</a></td></tr>']
+    if i < 3:
+        rows += [gap(10), f'<tr><td style="font-size:14px;line-height:22px;color:#3C3F45">{esc(story["summary_en"])}</td></tr>']
+        rows += [gap(12), f'<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="{TINT}" style="background-color:{TINT};border-left:3px solid {VIOLET};padding:12px 13px;font-size:13px;line-height:21px;color:{INK}"><b style="color:{VIOLET};font-weight:700">WHY IT MATTERS</b> — {esc(story["why_en"])}</td></tr></table></td></tr>']
+    else:
+        rows += [gap(10), f'<tr><td style="font-size:13px;line-height:21px;color:#3C3F45">{esc(story["why_en"])}</td></tr>']
+    rows += [gap(14), '<tr><td>' + pill(story) + '</td></tr>']
+    return (f'<tr><td class="mobile-pad" style="padding:0 22px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>'
+            f'<td bgcolor="{WHITE}" style="background-color:{WHITE};border:1px solid {BORDER};border-top:4px solid {accent};border-radius:14px;padding:18px 20px">'
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">' + ''.join(rows) + '</table></td></tr></table></td></tr>' + gap(16))
 
 actions = []
 seen_actions = set()
@@ -189,6 +207,30 @@ Internal agency briefing · Headlines link to the online edition.<br>
     PAPER, PAPER, VIOLET, INK, actions_html,
     PAPER, PAPER, VIOLET, VIOLET, site_link, FONT, MUTED, len(ITEMS),
     esc(DATE))
+# Email clients commonly discard body/head inheritance. Declare the font on
+# every text-bearing element, including nested table cells and inline links.
+doc = doc.replace('<html lang="en">', '<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office">')
+doc = doc.replace('<style>', '''<!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+<style>
+table { border-collapse:separate; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+td { mso-line-height-rule:at-least; }
+a { text-decoration:none; }
+''', 1)
+doc = doc.replace('font-weight:800', 'font-weight:700')
+doc = doc.replace('font:700 14px ' + FONT, 'font-family:' + FONT + ';font-weight:700;font-size:14px;line-height:20px')
+doc = doc.replace('display:inline-block;padding:14px 26px', 'display:block;padding:0')
+doc = doc.replace('background:%s;border-radius:30px' % VIOLET,
+                  'background-color:%s;border-radius:24px;padding:14px 26px;mso-padding-alt:14px 26px' % VIOLET)
+doc = doc.replace('<table class="wrap" role="presentation" width="620"',
+                  '<!--[if mso]><table role="presentation" width="620" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]--><table class="wrap" role="presentation" width="100%"')
+doc = doc.replace('style="width:620px;max-width:100%"', 'style="width:100%;max-width:620px"')
+doc = doc.replace('</table></td></tr></table></body>', '</table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></body>')
+def explicit_font(match):
+    tag = match.group(0)
+    if 'style="' not in tag:
+        return tag[:-1] + ' style="font-family:' + FONT + '">'
+    return tag.replace('style="', 'style="font-family:' + FONT + ';', 1)
+doc = re.sub(r'<(?:body|table|td|div|p|a|span|b)\b[^>]*>', explicit_font, doc)
 assert len(doc.encode("utf-8")) < 102400, "EDM HTML too large"
 (OUT / "team.html").write_text(doc, encoding="utf-8")
 (OUT / "subject.txt").write_text(SUBJECT + "\n", encoding="utf-8")
@@ -198,7 +240,25 @@ payload = {
     "subject": SUBJECT,
     "headline_count": len(ITEMS),
     "featured_count": len(picked),
+    "template_version": "outlook-2026-10-26-v2",
+    "verification_status": "editorial_approved",
+    "evidence_sha256": hashlib.sha256(EVIDENCE_PATH.read_bytes()).hexdigest(),
+    "data_sha256": hashlib.sha256((ROOT / "data.json").read_bytes()).hexdigest(),
+    "edition_id": "ai-marketing-daily-en-" + TODAY,
     "html": doc,
 }
-(OUT / "payload.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+payload_text = json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n"
+(OUT / "payload.json").write_text(payload_text, encoding="utf-8")
+# The standard RSS connector transports the identical JSON bytes as plain
+# base64, preventing RSS/HTML sanitisation and avoiding a Premium HTTP action.
+transport = base64.b64encode(payload_text.encode("utf-8")).decode("ascii")
+pubdate = email.utils.format_datetime(dt.datetime.combine(ISSUE, dt.time(9, 30), dt.timezone(dt.timedelta(hours=8))))
+feed = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+        '<title>AI Marketing Daily English payload</title><link>' + esc(SITE + 'edm/payload.json') + '</link>'
+        '<description>Encoded transport of the canonical English JSON payload.</description><language>en</language>'
+        '<item><title>' + esc(SUBJECT) + '</title><link>' + esc(SITE + 'edm/payload.json') + '</link>'
+        '<guid isPermaLink="false">' + esc(payload['edition_id']) + '</guid><pubDate>' + pubdate + '</pubDate>'
+        '<description>' + transport + '</description></item></channel></rss>\n')
+(OUT / "payload-feed.xml").write_text(feed, encoding="utf-8")
 print("Generated English team EDM: %s, %d featured of %d" % (TODAY, len(picked), len(ITEMS)))
+
