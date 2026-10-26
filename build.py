@@ -1357,7 +1357,8 @@ _og = f'''<meta name="description" content="{html.escape(_desc_en)}">
 <meta name="twitter:title" content="{html.escape(SITE_TITLE_EN)} · {html.escape(date_disp_en)}">
 <meta name="twitter:description" content="{html.escape(_desc_en)}">'''
 if SITE_URL:
-    _og += f'\n<meta property="og:url" content="{html.escape(SITE_URL)}">\n<link rel="canonical" href="{html.escape(SITE_URL)}">'
+    _og += (f'\n<meta property="og:url" content="{html.escape(SITE_URL)}">'
+            f'\n<link rel="canonical" href="{html.escape(SITE_URL.rstrip("/") + "/en/")}">')
 
 # Icon/manifest hrefs must carry the project path prefix. This is a GitHub Pages
 # PROJECT site (/ai-marketing-daily/), so a root-relative "/icon-192.png" would
