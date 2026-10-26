@@ -1242,6 +1242,12 @@ if tldr_rows:
   <div class="tldr-head"><b id="tldr-h">{bi("三分鐘看完", "The 3-minute version")}</b><span>{_sub}</span></div>
   <ol>{"".join(_shown)}</ol>
 </section>'''
+more_brief_html = ""
+if tldr_html:
+    _count = min(len(tldr_rows), _TLDR_MAX)
+    more_brief_html = (f'<details class="more-brief"><summary>'
+                       f'{bi(f"延伸重點摘要 · {_count} 則", f"More highlights · {_count} picks")}'
+                       f'</summary>{tldr_html}</details>')
 
 stats = "".join(
     f'<a class="stat" href="#{SEC_ID[s]}"><b>{len(groups[s])}</b><span>{bi(s, SEC_EN.get(s, s))}</span></a>'
@@ -2159,7 +2165,7 @@ footer b{{color:var(--ink)}}
   <div class="stats">{stats}</div>
 </div></header>
 
-<div class="wrap">{thesis_html}<details class="more-brief"><summary>{bi("延伸重點摘要 · 6 則", "More key highlights · 6 picks")}</summary>{tldr_html}</details></div>
+<div class="wrap">{thesis_html}{more_brief_html}</div>
 
 <main class="wrap" id="main">
 {sections_html}
