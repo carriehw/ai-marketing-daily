@@ -1169,12 +1169,22 @@ for s in data["sections"]:
         # 首行 1 張, alias area 2,030,127px² at 1400px). That is exactly the
         # 「格仔唔整齊」 Carrie asked me to fix, so the anchor goes inside where it
         # is ordinary inline content and holds no grid track.
+        # Reader-first summary stays fully visible in Quick Scan, while the
+        # previously published highlights, insight and long-form reporting remain
+        # available under a semantic native-details disclosure. No facts are cut.
+        scan = (f'<div class="scan-brief">'
+                f'<p class="scan-summary"><b>{bi("發生什麼", "WHAT HAPPENED")}</b>'
+                f'{bi(it.get("summary",""),it.get("summary_en"))}</p>'
+                f'<p class="scan-impact"><b>{bi("Marketing 影響", "WHY IT MATTERS")}</b>'
+                f'{bi(it.get("why",""),it.get("why_en"))}</p></div>')
+
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
 <div class="story-meta"><span class="src">{src}</span>{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
-{fu}{body}
-{take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{scan}
+<details class="story-expanded"><summary>{bi("深入閱讀：重點及分析", "Deep read: key points and analysis")}</summary>
+<div class="story-expanded-body">{fu}{body}{take}{pat}{detail}</div></details>
+<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
