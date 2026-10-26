@@ -1065,6 +1065,12 @@ for s in data["sections"]:
         _slug_seen[sid] = n
         _slug_of[n] = sid
         url = html.escape(str(it.get("url", "")))
+        evidence_url = html.escape(str(it.get("verification_url", "")).strip())
+        primary_link = (
+            f'<a class="readsrc" href="{evidence_url}" target="_blank" rel="noopener noreferrer">'
+            f'{bi("核實依據 ↗", "Evidence ↗")}</a>'
+            if evidence_url.startswith(("https://", "http://")) and evidence_url != url else ""
+        )
         act = it.get("action", "要留意")
         act_cls = ACT.get(act, "watch")
         reg = it.get("region", "")
@@ -1160,7 +1166,7 @@ for s in data["sections"]:
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {fu}{body}
 {take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
