@@ -1643,6 +1643,21 @@ html[data-lang="en"] .l-zh{{display:none}}
 .langtog button+button{{border-left:1px solid rgba(247,245,239,.26)}}
 .langtog button.on{{background:var(--lime);color:var(--i-navy);font-weight:700}}
 .langtog button:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+/* Mobile jump menu shows all five categories without occupying a permanent row. */
+.mobile-category-menu{{display:none;position:relative;flex:none}}
+.mobile-category-menu>summary{{list-style:none;cursor:pointer;color:var(--on-dark);font:inherit;font-size:12.5px;font-weight:700;border:1px solid rgba(247,245,239,.3);padding:7px 10px;border-radius:999px;white-space:nowrap}}
+.mobile-category-menu>summary::-webkit-details-marker{{display:none}}
+.mobile-category-menu>summary::after{{content:"⌄";margin-left:5px;color:var(--lime)}}
+.mobile-category-menu[open]>summary::after{{content:"⌃"}}
+.mobile-category-menu>summary:focus-visible{{outline:2px solid var(--lime);outline-offset:2px}}
+.mobile-cat-list{{position:absolute;right:0;top:calc(100% + 9px);width:285px;max-width:calc(100vw - 32px);max-height:60vh;overflow-y:auto;z-index:50;padding:8px;background:#fff;color:var(--ink);border-radius:14px;border:1px solid var(--line);box-shadow:0 14px 32px rgba(0,0,0,.18)}}
+.mobile-cat-list a{{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 12px;color:var(--ink);text-decoration:none;border-radius:8px;font-size:13px;font-weight:650}}
+.mobile-cat-list a:hover,.mobile-cat-list a:focus-visible{{background:var(--accent-soft);outline-color:var(--accent)}}
+.mobile-cat-list i{{font-style:normal;color:var(--accent-d);font-family:ui-monospace,monospace;flex:none}}
+@media (max-width:560px){{
+  .mobile-cat-list{{left:0;right:auto}}
+}}
+
 
 /* ---- hero: the dark identity zone -------------------------------------------
    The four stops are the icon's own four corners, in the icon's own spatial order
@@ -2081,6 +2096,10 @@ footer b{{color:var(--ink)}}
   <div class="brand">{bi(SITE_TITLE, SITE_TITLE_EN)}<small>{html.escape(SITE_TAGLINE)}</small></div>
   <div class="mast-r">
     <div class="navlinks">{nav}</div>
+    <details class="mobile-category-menu" id="mobile-categories">
+      <summary>{bi("分類", "Sections")}</summary>
+      <nav class="mobile-cat-list" aria-label="{html.escape(bi_attr('跳至新聞分類', 'Jump to news category'))}">{nav}</nav>
+    </details>
     <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
          scrolling category strip, and a control placed inside it scrolls away with
          the categories: measured at 1280px, Share's right edge landed at x=1455 on
@@ -2162,6 +2181,7 @@ footer b{{color:var(--ink)}}
 <div id="toast"></div>
 <script>
 const SHARE_URL={json.dumps(SITE_URL) if SITE_URL else "location.href"};
+const ISSUE_DATE={json.dumps(ISO)};
 const MSG={{zh:'連結已複製，可直接分享給同事', en:'Link copied — share it with your team'}};
 function curLang(){{return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}}
 function setLang(l){{
@@ -2175,17 +2195,35 @@ function setLang(l){{
   if(window.__navOvf)window.__navOvf();
 }}
 document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+const mobileCategories=document.getElementById('mobile-categories');
+if(mobileCategories){{
+  mobileCategories.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{{mobileCategories.open=false;}}));
+  document.addEventListener('keydown',e=>{{if(e.key==='Escape'&&mobileCategories.open){{mobileCategories.open=false;mobileCategories.querySelector('summary').focus();}}}});
+  document.addEventListener('click',e=>{{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;}});
+}}
 setLang(curLang()); // sync button highlight with the pre-paint language
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}
-function legacyCopy(){{const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{{ok=document.execCommand('copy')}}catch(e){{}}ta.remove();return ok}}
-function showBox(){{const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}}
-document.getElementById('share').addEventListener('click',async()=>{{
-  const msg=MSG[curLang()];
-  if(navigator.share){{try{{await navigator.share({{title:document.title,url:SHARE_URL}});return}}catch(e){{if(e.name==='AbortError')return}}}}
-  try{{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}}catch(e){{}}
-  if(legacyCopy()){{toast(msg);return}}
-  showBox();
-}});
+function languageShareUrl(storyId){{
+  // A shared article points to its permanent edition, not tomorrow's homepage.
+  const base=(storyId ? SHARE_URL.replace(/\\/?$/, '/')+'archive/'+ISSUE_DATE+'.html' : SHARE_URL);
+  const u=new URL(base,location.href);
+  u.searchParams.set('lang',curLang());
+  u.hash=storyId||'';
+  return u.href;
+}}
+function legacyCopy(value){{const ta=document.createElement('textarea');ta.value=value;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{{ok=document.execCommand('copy')}}catch(e){{}}ta.remove();return ok}}
+function showBox(value){{const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=value;inp.focus();inp.select()}}
+async function shareLink(value,title){{
+  if(navigator.share){{try{{await navigator.share({{title:title,url:value}});return}}catch(e){{if(e.name==='AbortError')return}}}}
+  try{{await navigator.clipboard.writeText(value);toast(MSG[curLang()]);return}}catch(e){{}}
+  if(legacyCopy(value)){{toast(MSG[curLang()]);return}}
+  showBox(value);
+}}
+document.getElementById('share').addEventListener('click',()=>shareLink(languageShareUrl(),document.title));
+document.querySelectorAll('.story-share').forEach(b=>b.addEventListener('click',()=>{{
+  const title=(curLang()==='zh'?b.dataset.titleZh:b.dataset.titleEn)||document.title;
+  shareLink(languageShareUrl(b.dataset.story),title);
+}}));
 
 /* ---- add-to-home-screen hint ----
    Three gates, all of which must pass before the tip appears:
