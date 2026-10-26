@@ -8,7 +8,7 @@
  "date_display_en": "October 26, 2026 · Monday",
  "sources_note": "資料來自OpenAI、Apple WebKit、Canva、Omnicom、可口可樂官方公告，以及具來源標示的媒體報道。各則消息日期以原文為準。",
  "sources_note_en": "Sources include original OpenAI, Apple WebKit, Canva, Omnicom and Coca-Cola announcements, alongside attributed industry reporting. Dates refer to original publications.",
- "thesis": "今日最重要三條：ChatGPT廣告擴張、Safari第三方身份解析防護、Canva自研圖像模型。所有數字與產品狀態按原始公告核實。",
+ "thesis": "本期三條重點：ChatGPT廣告擴張、Safari第三方身份解析防護、Canva自研圖像模型。所有數字與產品狀態按原始公告核實。",
  "thesis_en": "Today's three key shifts: ChatGPT Ads expansion, Safari identity-resolution protection, and Canva's new image model. Figures and rollout status are checked against original sources.",
  "thesis_note": "10月26日編輯覆核：保留原始消息日期，清楚區分已確認事實、媒體報道及行業觀點。",
  "thesis_note_en": "October 26 editorial review: original source dates are preserved; verified facts, reported claims and commentary are clearly distinguished.",
@@ -167,7 +167,7 @@
     "WebKit distinguishes first-party personalisation from cross-site tracking.",
     "Attribution and identity-matching impact depends on the vendor and technical implementation."
    ],
-   "detail": "Apple WebKit於2026年10月19日發文解釋，跨網站Cookie受限後，部分第三方技術會利用登入電郵等資料，集中建立可連結不同網站的身份識別圖譜。WebKit宣布在iOS、iPadOS、macOS與visionOS 27對應版本中，於網域層級阻擋指定第三方身份解析基建的網絡存取，以減低跨站追蹤。\n\n此技術措施的對象並非『所有廣告識別符』或全部廣告投放活動。WebKit亦明確指出，網站自身的第一方個人化並非這項追蹤防護的目標。廣告主應檢查採用的Identity Vendor、資料傳輸路徑及受眾配對機制，再按裝置與瀏覽器版本測試歸因表現。原來較籠統的『一律攔截』表述已在10月26日編輯覆核中修正。",
+   "detail": "Apple WebKit於2026年10月19日發文解釋，跨網站Cookie受限後，部分第三方技術會利用登入電郵等資料，集中建立可連結不同網站的身份識別圖譜。WebKit宣布在iOS、iPadOS、macOS與visionOS 27對應版本中，於網域層級阻擋指定第三方身份解析基建的網絡存取，以減低跨站追蹤。\n\n此技術措施的對象並非『所有廣告識別符』或全部廣告投放活動。WebKit亦明確指出，網站自身的第一方個人化並非這項追蹤防護的目標。廣告主應檢查採用的Identity Vendor、資料傳輸路徑及受眾配對機制，再按裝置與瀏覽器版本測試歸因表現。原來較籠統的『一律攔截』表述已在本期編輯覆核中修正。",
    "detail_en": "In an October 19 WebKit post, Apple explained that some third-party identity-resolution services use details such as login email addresses to link activity across different websites. Safari and WebKit in iOS, iPadOS, macOS and visionOS 27 block network access to this third-party infrastructure at the domain level to prevent cross-site tracking.\n\nThis does not mean every advertising identifier or ad-delivery mechanism is universally blocked. WebKit explicitly distinguishes first-party personalisation from cross-site tracking. Advertisers should examine identity vendors and data flows before assessing audience matching or attribution across browser and OS releases. An earlier over-broad headline was corrected in this October 26 editorial revision."
   },
   {
