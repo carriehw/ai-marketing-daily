@@ -68,10 +68,11 @@ Current known assets include:
 
 1. Re-read the current source files and their actual command-line instructions before execution; preserve section labels, branding, analytics, link anchors and existing hard-won presentation safeguards.
 2. **Never update only `data.json` and call it a published website.** The repository's Pages deploy copies files; rendered `index.html`, archive, and distribution assets must be rebuilt and committed consistently.
-3. Keep article evidence records linked to the issued edition. Capture revision/commit SHA.
-4. Run all compatible local checks and builds in the order required by the CURRENT code; don't guess script order. Verify no unintended changes to older archives, analytics, fonts, translated copy, share graphics, EDM and shared URLs.
-5. Upload/commit coherently. A branch/PR is appropriate for structural code or policy changes; content publication can follow the established safe path when all checks pass.
-6. Do not modify active production workflows, disable analytics, replace historical archives, or introduce secrets without explicit security review.
+3. Create a genuine `editorial/evidence/YYYY-MM-DD.json` packet covering **all** stories in that edition. Execute `python3 editorial/check_evidence.py --data data.json --evidence editorial/evidence/YYYY-MM-DD.json`. **Exit 1 blocks publication**. Then perform independent semantic source validation: a structural PASS proves the fields and review records are present, **not** that the news is factually true. The checker is currently not integrated into the legacy Pages deploy and must be invoked explicitly by the publishing operator. Unit-test CI: `.github/workflows/editorial-qa.yml`.
+4. Keep article evidence records linked to the issued edition. Capture revision/commit SHA.
+5. Run all compatible local checks and builds in the order required by the CURRENT code; don't guess script order. Verify no unintended changes to older archives, analytics, fonts, translated copy, share graphics, EDM and shared URLs.
+6. Upload/commit coherently. A branch/PR is appropriate for structural code or policy changes; content publication can follow the established safe path when all checks pass.
+7. Do not modify active production workflows, disable analytics, replace historical archives, or introduce secrets without explicit security review.
 
 **Known mismatch to resolve:** current `verify_live.py` expects at least eight story cards, whereas this Constitution explicitly permits fewer verified stories. Update and test this guard before deliberately issuing a shorter edition; never add filler to satisfy a number.
 
@@ -110,7 +111,7 @@ GitHub revision: [SHA / not committed]
 
 ## K. Future improvement, not falsely reported as deployed
 
-- Build a machine-enforced fact-check artifact and CI publication blocker. Documentation and templates are **not by themselves** a functioning facts-checking engine.
+- Structural evidence validation and unit-test CI now exist. **Remaining:** integrate the gate into the established production build-and-publish workflow after backfilling all new-issue evidence packets and running end-to-end failure-case tests. Structural validation is **not** factual verification.
 - Establish stable article IDs and a corrections index, richer engagement instrumentation and Team Brief copy/share controls.
 - Perform a live trial run with failure-case controls before claiming end-to-end autonomous publication.
 - Keep existing weekly AI social-content preparation separate. Repurpose **verified** stories only after the site edition itself passes review.
