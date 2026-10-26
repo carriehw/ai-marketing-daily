@@ -1,0 +1,210 @@
+html
+<html data-lang="zh" lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AI・营销情报 · 历史存档</title>
+<script>/* Static edition: URL determines language. */</script>
+<style>
+@font-face{font-family:'InterLat';font-style:normal;font-weight:400;font-display:swap;src:url('/ai-marketing-daily/fonts/Inter-Regular.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-2033,U+20AC,U+2026,U+2192,U+2190,U+2191,U+2193,U+2713,U+2714,U+FEFF}@font-face{font-family:'InterLat';font-style:normal;font-weight:600;font-display:swap;src:url('/ai-marketing-daily/fonts/Inter-SemiBold.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-2033,U+20AC,U+2026,U+2192,U+2190,U+2191,U+2193,U+2713,U+2714,U+FEFF}@font-face{font-family:'InterLat';font-style:normal;font-weight:700;font-display:swap;src:url('/ai-marketing-daily/fonts/Inter-Bold.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-2033,U+20AC,U+2026,U+2192,U+2190,U+2191,U+2193,U+2713,U+2714,U+FEFF}@font-face{font-family:'PlexMonoLat';font-style:normal;font-weight:400;font-display:swap;src:url('/ai-marketing-daily/fonts/IBMPlexMono-Regular.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-2033,U+20AC,U+2026,U+2192,U+2190,U+2191,U+2193,U+2713,U+2714,U+FEFF}@font-face{font-family:'PlexMonoLat';font-style:normal;font-weight:500;font-display:swap;src:url('/ai-marketing-daily/fonts/IBMPlexMono-Medium.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-2033,U+20AC,U+2026,U+2192,U+2190,U+2191,U+2193,U+2713,U+2714,U+FEFF}
+*{box-sizing:border-box}
+:root{--paper:#f7f5ef;--card:#ffffff;--ink:#101114;--muted:#656a73;--accent:#5a42f4;--accent-d:#4632d4;--line:#dedbd2;
+  --lime:#d3fe66;--on-dark:#f7f5ef;--on-dark-2:#d6d4e8;--i-navy:#11154a}
+html,body{margin:0}
+/* Radial glow removed: it sat at 85% 0%, which the dark header now covers. */
+body{background:var(--paper);color:var(--ink);font:16px/1.6 InterLat,Inter,'Noto Sans TC',ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif}
+.l-en{display:none} .l-zh{display:inline}
+html[data-lang="en"] .l-en{display:inline} html[data-lang="en"] .l-zh{display:none}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+/* Dark identity zone, same four icon corners and same spatial order as the
+   homepage hero, so the archive reads as the same publication rather than a
+   plain file index. Reading zone below stays warm paper (rule R4).
+   Every pairing below is checked against the LIGHTEST stop #553fba — the worst
+   case: Paper 6.86:1, on-dark-2 5.15:1, Lime 6.46:1. */
+header{border-top:4px solid var(--lime);color:var(--on-dark);border-bottom:1px solid rgba(247,245,239,.14);padding:26px 0 22px;
+  background:linear-gradient(135deg,#553fba 0%,#2f5582 30%,#11154a 64%,#7d266b 100%)}
+.mast{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+h1{font-size:24px;margin:0;font-weight:700;color:var(--on-dark)} h1 .k{color:var(--lime)}
+/* MUST stay scoped to `header`. .sub is reused by the "共 59 期 / 59 issues"
+   count line inside <main>, which sits on warm paper — a bare `.sub` set to
+   on-dark-2 rendered that line at 1.33:1, invisible. The contrast checker could not catch
+   this: the pairing it was asked about (on-dark-2 over the gradient) passes; the
+   defect was the SELECTOR reaching a second element on a different background. */
+header .sub{color:var(--on-dark-2);font-size:14px;margin-top:6px}
+main .sub{color:var(--muted);font-size:14px}
+.mast-r{display:flex;align-items:center;gap:12px}
+.back{font-size:13px;color:var(--on-dark);text-decoration:none;border:1px solid rgba(247,245,239,.34);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.back:hover{border-color:var(--lime);color:var(--lime)}
+.langtog{display:inline-flex;border:1px solid rgba(247,245,239,.34);border-radius:999px;overflow:hidden}
+.langtog button{border:0;background:transparent;color:var(--on-dark-2);font:inherit;font-size:12px;padding:6px 11px;cursor:pointer}
+.langtog button.on{background:var(--lime);color:var(--i-navy)}
+main{padding:22px 0 60px}
+.issue{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 22px;margin:0 0 10px;text-decoration:none;color:var(--ink);box-shadow:0 4px 18px rgba(16,17,20,.04)}
+.issue:hover{border-color:var(--accent)}
+.issue .d{font-weight:600;font-size:16px}
+.issue .meta{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:14px;white-space:nowrap}
+.issue .cnt{color:var(--accent);font-weight:700}
+/* Was var(--jade) — a variable that is defined nowhere in this file or the
+   homepage, so the arrow silently inherited .issue's --ink instead of the accent
+   it was written to use. Fixed to --accent while auditing the palette. */
+.issue .go{color:var(--accent);font-weight:700;font-size:18px;margin-left:4px}
+/* ---- quarter headings ------------------------------------------------------
+   Colours are stated explicitly, never inherited from a shared class. The bug
+   this file already carries a comment about (`.sub` reaching a second element on
+   a different background and rendering at 1.33:1) came from exactly that kind of
+   reuse, so `.qtr-h` gets its own selectors on the warm-paper zone only:
+   --ink on --paper = 14.2:1, --muted on --paper = 5.3:1.
+   First group has no top margin — a gap above the newest issue would read as a
+   rendering fault at the top of the page. */
+.qtr{margin:0 0 4px}
+.qtr+.qtr{margin-top:30px}
+.qtr-h,.mon-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 10px}
+/* Quarter is the louder of the two: a rule line plus ink. Month is a quiet label
+   with no rule, so the two levels are told apart by weight and colour rather than
+   by size alone (at 13-14px a 1px size step is not a hierarchy). */
+.qtr-h{padding:0 4px 8px;border-bottom:1px solid var(--line);font-size:15px;font-weight:700;color:var(--ink);letter-spacing:.02em}
+.mon-h{padding:0 4px;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:none}
+.qtr-h+.mon-h{margin-top:2px}
+.issue+.mon-h{margin-top:20px}
+.qtr-h .qn,.mon-h .qn{font-weight:600;color:var(--muted);font-size:12.5px;white-space:nowrap}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:18px 0 40px;text-align:center}
+</style>
+<style>
+.locale-links{display:inline-flex!important;flex:none;align-items:center;border:1px solid rgba(247,245,239,.3);border-radius:99px;overflow:hidden}
+.locale-links a{font:inherit;font-size:12px;font-weight:700;color:#dedcf1;display:inline-block;line-height:1.4;text-decoration:none;padding:7px 9px;border-right:1px solid rgba(247,245,239,.2);white-space:nowrap}
+.locale-links a:last-child{border-right:0}
+.locale-links a.on{background:#d3fe66;color:#11154a}
+.locale-links a:focus-visible{outline:2px solid #d3fe66;outline-offset:-2px}
+@media(max-width:460px){.locale-links a{padding:7px 7px;font-size:11.5px}}
+</style><link href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/" rel="canonical"/><link href="https://carriehw.github.io/ai-marketing-daily/en/archive/" hreflang="en" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/" hreflang="zh-Hant" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/" hreflang="zh-Hans" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/archive/" hreflang="x-default" rel="alternate"/><meta content="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/" property="og:url"/><meta content="zh_CN" property="og:locale"/><meta content="AI・营销情报 · 历史存档" property="og:title"/><meta content="AI・营销情报 · 历史存档" name="twitter:title"/></head>
+<body>
+<header><div class="wrap">
+<div class="mast">
+<div>
+<h1>历史存档</h1>
+<div class="sub">AI・营销情报 · 每日精选逐日累积</div>
+</div>
+<div class="mast-r">
+<a class="back" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/">← 今日最新</a>
+<nav aria-label="Language / 语言 / 语言" class="langtog locale-links"><a href="https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/" hreflang="zh-Hant">繁</a><a aria-current="page" class="on" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/" hreflang="zh-Hans">简</a><a href="https://carriehw.github.io/ai-marketing-daily/en/archive/" hreflang="en">EN</a></nav>
+</div>
+</div>
+</div></header>
+<main class="wrap">
+<p class="sub" style="margin:0 0 16px">共 <b>78</b> 期</p>
+<section class="qtr"><h2 class="qtr-h"><span>2026 年第四季</span><span class="qn">19 期</span></h2>
+<h3 class="mon-h"><span>2026 年 10 月</span><span class="qn">19 期</span></h3>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-26.html"><span class="d">2026年10月26日 · 星期一</span><span class="meta"><span class="cnt">14</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-23.html"><span class="d">2026年10月23日 · 星期五</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-22.html"><span class="d">2026年10月22日 · 星期四</span><span class="meta"><span class="cnt">9</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-21.html"><span class="d">2026年10月21日 · 星期三</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-20.html"><span class="d">2026年10月20日 · 星期二</span><span class="meta"><span class="cnt">22</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-16.html"><span class="d">2026年10月16日 · 星期五</span><span class="meta"><span class="cnt">22</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-15.html"><span class="d">2026年10月15日 · 星期四</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-14.html"><span class="d">2026年10月14日 · 星期三</span><span class="meta"><span class="cnt">17</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-13.html"><span class="d">2026年10月13日 · 星期二</span><span class="meta"><span class="cnt">16</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-12.html"><span class="d">2026年10月12日 · 星期一</span><span class="meta"><span class="cnt">9</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-11.html"><span class="d">2026年10月11日 · 星期日</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-10.html"><span class="d">2026年10月10日 · 星期六</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-09.html"><span class="d">2026年10月9日 · 星期五</span><span class="meta"><span class="cnt">16</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-08.html"><span class="d">2026年10月8日 · 星期四</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-07.html"><span class="d">2026年10月7日 · 星期三</span><span class="meta"><span class="cnt">12</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-06.html"><span class="d">2026年10月6日 · 星期二</span><span class="meta"><span class="cnt">12</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-05.html"><span class="d">2026年10月5日 · 星期一</span><span class="meta"><span class="cnt">9</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-04.html"><span class="d">2026年10月4日 · 星期日</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-10-02.html"><span class="d">2026年10月2日 · 星期五</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+</section>
+<section class="qtr"><h2 class="qtr-h"><span>2026 年第三季</span><span class="qn">59 期</span></h2>
+<h3 class="mon-h"><span>2026 年 9 月</span><span class="qn">27 期</span></h3>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-30.html"><span class="d">2026年9月30日 · 星期三</span><span class="meta"><span class="cnt">27</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-29.html"><span class="d">2026年9月29日 · 星期二</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-28.html"><span class="d">2026年9月28日 · 星期一</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-25.html"><span class="d">2026年9月25日 · 星期五</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-24.html"><span class="d">2026年9月24日 · 星期四</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-23.html"><span class="d">2026年9月23日 · 星期三</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-22.html"><span class="d">2026年9月22日 · 星期二</span><span class="meta"><span class="cnt">16</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-21.html"><span class="d">2026年9月21日 · 星期一</span><span class="meta"><span class="cnt">13</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-20.html"><span class="d">2026年9月20日 · 星期日</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-19.html"><span class="d">2026年9月19日 · 星期六</span><span class="meta"><span class="cnt">12</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-18.html"><span class="d">2026年9月18日 · 星期五</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-17.html"><span class="d">2026年9月17日 · 星期四</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-16.html"><span class="d">2026年9月16日 · 星期三</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-15.html"><span class="d">2026年9月15日 · 星期二</span><span class="meta"><span class="cnt">17</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-14.html"><span class="d">2026年9月14日 · 星期一</span><span class="meta"><span class="cnt">10</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-13.html"><span class="d">2026年9月13日 · 星期日</span><span class="meta"><span class="cnt">17</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-12.html"><span class="d">2026年9月12日 · 星期六</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-11.html"><span class="d">2026年9月11日 · 星期五</span><span class="meta"><span class="cnt">17</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-10.html"><span class="d">2026年9月10日 · 星期四</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-09.html"><span class="d">2026年9月9日 · 星期三</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-08.html"><span class="d">2026年9月8日 · 星期二</span><span class="meta"><span class="cnt">13</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-07.html"><span class="d">2026年9月7日 · 星期一</span><span class="meta"><span class="cnt">12</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-06.html"><span class="d">2026年9月6日 · 星期日</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-05.html"><span class="d">2026年9月5日 · 星期六</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-04.html"><span class="d">2026年9月4日 · 星期五</span><span class="meta"><span class="cnt">17</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-03.html"><span class="d">2026年9月3日 · 星期四</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-09-02.html"><span class="d">2026年9月2日 · 星期三</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<h3 class="mon-h"><span>2026 年 8 月</span><span class="qn">23 期</span></h3>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-31.html"><span class="d">2026年8月31日 · 星期一</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-26.html"><span class="d">2026年8月26日 · 星期三</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-23.html"><span class="d">2026年8月23日 · 星期日</span><span class="meta"><span class="cnt">21</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-22.html"><span class="d">2026年8月22日 · 星期六</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-21.html"><span class="d">2026年8月21日 · 星期五</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-20.html"><span class="d">2026年8月20日 · 星期四</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-19.html"><span class="d">2026年8月19日 · 星期三</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-17.html"><span class="d">2026年8月17日 · 星期一</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-16.html"><span class="d">2026年8月16日 · 星期日</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-15.html"><span class="d">2026年8月15日 · 星期六</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-14.html"><span class="d">2026年8月14日 · 星期五</span><span class="meta"><span class="cnt">21</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-13.html"><span class="d">2026年8月13日 · 星期四</span><span class="meta"><span class="cnt">15</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-12.html"><span class="d">2026年8月12日 · 星期三</span><span class="meta"><span class="cnt">19</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-11.html"><span class="d">2026年8月11日 · 星期二</span><span class="meta"><span class="cnt">20</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-09.html"><span class="d">2026年8月9日 · 星期日</span><span class="meta"><span class="cnt">27</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-08.html"><span class="d">2026年8月8日 · 星期六</span><span class="meta"><span class="cnt">24</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-07.html"><span class="d">2026年8月7日 · 星期五</span><span class="meta"><span class="cnt">29</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-06.html"><span class="d">2026年8月6日 · 星期四</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-05.html"><span class="d">2026年8月5日 · 星期三</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-04.html"><span class="d">2026年8月4日 · 星期二</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-03.html"><span class="d">2026年8月3日 · 星期一</span><span class="meta"><span class="cnt">18</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-02.html"><span class="d">2026年8月2日 · 星期日</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html"><span class="d">2026年8月1日 · 星期六</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<h3 class="mon-h"><span>2026 年 7 月</span><span class="qn">9 期</span></h3>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-31.html"><span class="d">2026年7月31日 · 星期五</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-30.html"><span class="d">2026年7月30日 · 星期四</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-29.html"><span class="d">2026年7月29日 · 星期三</span><span class="meta"><span class="cnt">24</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-28.html"><span class="d">2026年7月28日 · 星期二</span><span class="meta"><span class="cnt">26</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-27.html"><span class="d">2026年7月27日 · 星期一</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-26.html"><span class="d">2026年7月26日 · 星期日</span><span class="meta"><span class="cnt">29</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-25.html"><span class="d">2026年7月25日 · 星期六</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-24.html"><span class="d">2026年7月24日 · 星期五</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+<a class="issue" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-07-23.html"><span class="d">2026年7月23日 · 星期四</span><span class="meta"><span class="cnt">30</span>条精选<span class="go">→</span></span></a>
+</section>
+</main>
+<footer><div class="wrap">历史存档 · 由 2026年7月23日 起</div></footer>
+<script>
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang = l==='en'?'en':'zh-Hans';
+  try{localStorage.setItem('amd-lang',l);}catch(e){}
+  document.querySelectorAll('.langtog button').forEach(b=>b.classList.toggle('on', b.dataset.set===l));
+}
+document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+setLang(document.documentElement.getAttribute('data-lang')==='zh'?'zh':'en');
+</script>
+<script>
+(function(){try{
+  var n=navigator;
+  if(n.doNotTrack==='1'||n.msDoNotTrack==='1'||window.doNotTrack==='1'
+     ||n.globalPrivacyControl===true)return;
+  var h=location.hostname;
+  if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='')return;
+  var s=document.createElement('script');
+  s.async=true;s.defer=true;
+  s.src='https://gc.zgo.at/count.js';
+  s.setAttribute('data-goatcounter','https://carriehuiww.goatcounter.com/count');
+  s.onerror=function(){};
+  document.head.appendChild(s);
+}catch(e){}})();
+</script>
+</body>
+</html>

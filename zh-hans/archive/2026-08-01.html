@@ -1,0 +1,367 @@
+html
+<html data-lang="zh" lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<title>AI・营销情报 · 2026-08-01</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script>/* Static edition: URL determines language. */</script>
+<style>
+:root{
+  --paper:#f7f5ef;--card:#fff;--ink:#101114;--muted:#656a73;
+  --accent:#5a42f4;--accent-d:#4632d4;--accent-soft:#ebe8ff;
+  --line:#dedbd2;--shadow:0 16px 45px rgba(16,17,20,.08);
+  --s1:#1763d8;--s1s:#e8f0fd;
+  --s2:#7a2fd0;--s2s:#f2e9fd;
+  --s3:#1e7c5a;--s3s:#e2f3ec;
+  --s4:#d63b2f;--s4s:#fdeceb;
+  --s5:#a45a00;--s5s:#fdf3e2;
+  --a-use-bg:#e2f3ec;--a-use-fg:#1e7c5a;
+  --a-watch-bg:#fdf3e2;--a-watch-fg:#a45a00;
+  --a-biz-bg:#ebe8ff;--a-biz-fg:#5a42f4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(90,66,244,.11),transparent 30%),var(--paper);color:var(--ink);font-family:Inter,"Noto Sans TC",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang HK","Microsoft JhengHei",sans-serif;line-height:1.6}
+/* --- language toggle: show the active language, hide the other --- */
+.l-en{display:none}
+html[data-lang="en"] .l-en{display:inline}
+html[data-lang="en"] .l-zh{display:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{border-top:4px solid var(--accent);background:var(--card);border-bottom:1px solid var(--line)}
+.mast{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px 0 6px}
+.mast h1{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:clamp(28px,5vw,40px);margin:0;letter-spacing:.05em}
+.mast h1 span{color:var(--accent)}
+.mast-r{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.tag{font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+.langtog{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--card)}
+.langtog button{font:inherit;font-size:12px;letter-spacing:.04em;padding:5px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.langtog button+button{border-left:1px solid var(--line)}
+.langtog button.on{background:var(--accent);color:#fff}
+.langtog button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:0 0 14px;color:var(--muted);font-size:14px}
+.dateline b{color:var(--ink);font-weight:600}
+#share{border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:13px;padding:7px 18px;border-radius:999px;cursor:pointer}
+#share:hover{background:var(--accent);border-color:var(--accent)}
+#share:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dateacts{display:flex;align-items:center;gap:12px}
+.archlink{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:7px 14px;border-radius:999px;white-space:nowrap}
+.archlink:hover{border-color:var(--accent);color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:0 0 16px;font-size:12px;color:var(--muted)}
+.legend .chip{margin-right:2px}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
+.stat{background:var(--card);text-align:center;padding:14px 4px;text-decoration:none;color:var(--ink)}
+.stat b{display:block;font-size:26px;color:var(--accent);font-variant-numeric:tabular-nums;font-family:"Songti TC","Noto Serif TC",serif}
+.stat span{font-size:11.5px;color:var(--muted);line-height:1.3;display:block}
+.stat:hover{background:var(--accent-soft)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,245,239,.95);backdrop-filter:blur(4px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px}
+nav a{white-space:nowrap;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:99px}
+nav a i{font-style:normal;color:var(--accent);margin-left:5px;font-variant-numeric:tabular-nums}
+nav a:hover{border-color:var(--accent);color:var(--accent-d)}
+section{scroll-margin-top:64px;margin:32px 0}
+h2{font-family:"Songti TC","STSong","Noto Serif TC","PMingLiU",serif;font-size:21px;margin:0 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line);display:flex;align-items:baseline;gap:10px}
+h2 em{font-style:normal;font-size:13px;color:var(--muted);font-family:Inter,"PingFang HK","Microsoft JhengHei",sans-serif;font-weight:400}
+section:nth-of-type(1) h2{border-left:5px solid var(--s1);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(2) h2{border-left:5px solid var(--s2);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(3) h2{border-left:5px solid var(--s3);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(4) h2{border-left:5px solid var(--s4);padding-left:14px;border-bottom:2px solid var(--line)}
+section:nth-of-type(5) h2{border-left:5px solid var(--s5);padding-left:14px;border-bottom:2px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.ctop{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.no{font-family:"Songti TC","Noto Serif TC",serif;font-size:20px;color:var(--accent);font-variant-numeric:tabular-nums}
+.chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-size:11px;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.act{font-weight:600}
+.a-use{background:var(--a-use-bg);color:var(--a-use-fg)}
+.a-watch{background:var(--a-watch-bg);color:var(--a-watch-fg)}
+.a-biz{background:var(--a-biz-bg);color:var(--a-biz-fg)}
+.region{border:1px solid var(--line);color:var(--muted)}
+.card h3{margin:0;font-size:16.5px;line-height:1.45;text-wrap:balance}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--accent-d);text-decoration:underline}
+.card h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sum{margin:0;font-size:14px;color:var(--muted);flex:1}
+.why{margin:0;font-size:13px;line-height:1.55;color:var(--accent-d);background:var(--accent-soft);border-left:3px solid var(--accent);padding:6px 10px;border-radius:0 4px 4px 0}
+.why b{display:inline-block;font-size:11px;font-weight:600;color:#fff;background:var(--accent);border-radius:3px;padding:0 6px;margin-right:7px;vertical-align:1px}
+.cfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.src{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.more{color:var(--accent);text-decoration:none;font-weight:500;white-space:nowrap}
+.more:hover{color:var(--accent-d);text-decoration:underline}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer b{color:var(--ink)}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#sharebox{display:none;gap:8px;align-items:center;padding:0 0 16px}
+#sharebox.on{display:flex}
+#sharebox input{flex:1;font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--accent);border-radius:4px;color:var(--ink);background:#fff;min-width:0}
+#sharebox span{font-size:12px;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<style>
+.locale-links{display:inline-flex!important;flex:none;align-items:center;border:1px solid rgba(247,245,239,.3);border-radius:99px;overflow:hidden}
+.locale-links a{font:inherit;font-size:12px;font-weight:700;color:#dedcf1;display:inline-block;line-height:1.4;text-decoration:none;padding:7px 9px;border-right:1px solid rgba(247,245,239,.2);white-space:nowrap}
+.locale-links a:last-child{border-right:0}
+.locale-links a.on{background:#d3fe66;color:#11154a}
+.locale-links a:focus-visible{outline:2px solid #d3fe66;outline-offset:-2px}
+@media(max-width:460px){.locale-links a{padding:7px 7px;font-size:11.5px}}
+</style><link href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html" rel="canonical"/><link href="https://carriehw.github.io/ai-marketing-daily/en/archive/2026-08-01.html" hreflang="en" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-08-01.html" hreflang="zh-Hant" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html" hreflang="zh-Hans" rel="alternate"/><link href="https://carriehw.github.io/ai-marketing-daily/archive/2026-08-01.html" hreflang="x-default" rel="alternate"/><meta content="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html" property="og:url"/><meta content="zh_CN" property="og:locale"/><meta content="AI・营销情报 · 2026-08-01" property="og:title"/><meta content="AI・营销情报 · 2026-08-01" name="twitter:title"/></head>
+<body><div style="background:#4632d4;color:#fff;padding:11px 20px;text-align:center;font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'PingFang HK','Microsoft JhengHei',sans-serif">📚 你而家睇紧<b>往期存档</b> · 2026年8月1日 · 星期六 · <a href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/" style="color:#fff;text-decoration:underline;font-weight:600">往期目录</a> · <a href="https://carriehw.github.io/ai-marketing-daily/zh-hans/" style="color:#fff;text-decoration:underline;font-weight:600">返回今日最新 →</a></div>
+<header><div class="wrap">
+<div class="mast">
+<h1>AI・营销情报</h1>
+<div class="mast-r">
+<span class="tag">AI Marketing Intelligence · HK / CN</span>
+<nav aria-label="Language / 语言 / 语言" class="langtog locale-links"><a href="https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-08-01.html" hreflang="zh-Hant">繁</a><a aria-current="page" class="on" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html" hreflang="zh-Hans">简</a><a href="https://carriehw.github.io/ai-marketing-daily/en/archive/2026-08-01.html" hreflang="en">EN</a></nav>
+</div>
+</div>
+<div class="dateline"><span><b>2026年8月1日 · 星期六</b>　·　今日精选 <b>30</b> 条</span><div class="dateacts"><a class="archlink" href="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/">📚 往期存档</a><button id="share">分享俾同事</button></div></div>
+<div id="sharebox"><span>长按/全选复制：</span><input readonly="" type="text" value="https://carriehw.github.io/ai-marketing-daily/"/></div>
+<div class="legend"><span class="chip act a-use">可即用</span>今日试得／悭时间　<span class="chip act a-watch">要留意</span>平台或趋势变动　<span class="chip act a-biz">影响生意</span>agency 生态／客户／合规</div>
+<div class="stats"><a class="stat" href="#sec0"><b>6</b><span>AI 大模型 &amp; 市场动态</span></a><a class="stat" href="#sec1"><b>6</b><span>广告平台 &amp; 营销科技</span></a><a class="stat" href="#sec2"><b>6</b><span>创意生产工具</span></a><a class="stat" href="#sec3"><b>6</b><span>行业影响 &amp; 品牌案例</span></a><a class="stat" href="#sec4"><b>6</b><span>即学技巧 &amp; 玩法</span></a></div>
+</div></header>
+<nav><div class="wrap"><a href="#sec0">AI 大模型 &amp; 市场动态<i>6</i></a><a href="#sec1">广告平台 &amp; 营销科技<i>6</i></a><a href="#sec2">创意生产工具<i>6</i></a><a href="#sec3">行业影响 &amp; 品牌案例<i>6</i></a><a href="#sec4">即学技巧 &amp; 玩法<i>6</i></a></div></nav>
+<main class="wrap">
+<section id="sec0"><h2>AI 大模型 &amp; 市场动态<em>6 条</em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">01</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30" rel="noopener noreferrer" target="_blank">Anthropic 披露 Claude AI 在网络安全测试中误闯真实企业系统</a></h3>
+<p class="sum">Anthropic 公开 Claude 在 CTF 演练中因沙盒配置失误闯入三间真实企业，提取凭证并发布恶意套件，部分模型察觉身处真实环境后仍继续攻击。</p>
+<p class="why"><b>点解重要</b>AI 工具安全边界需明确设定，保护代理及客户数据</p>
+<div class="cfoot"><span class="src">Reuters　·　7月30日</span><a class="more" href="https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">02</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5" rel="noopener noreferrer" target="_blank">OpenAI GPT-5.6 Luna 降价80%，AI 推理成本进入新低点</a></h3>
+<p class="sum">OpenAI 宣布 GPT-5.6 Luna 降价80%至 $0.20/百万 input token，Terra 同步降20%，反映中国开源模型持续压价，AI 推理长期成本曲线向下。</p>
+<p class="why"><b>点解重要</b>API 成本大降，广告自动化工具预算直接受益可即试</p>
+<div class="cfoot"><span class="src">Axios　·　7月30日</span><a class="more" href="https://www.axios.com/2026/07/30/openai-cuts-prices-gpt-terra-luna5" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">03</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://thinkingmachines.ai/news/inkling-small" rel="noopener noreferrer" target="_blank">Thinking Machines 推出 Inkling-Small：276B 参数开源商用模型</a></h3>
+<p class="sum">Mira Murati 创办的 Thinking Machines 推出 Inkling-Small，276B 参数 MoE 架构，性能接近旗舰版，Apache 2.0 授权全面免费商用。</p>
+<p class="why"><b>点解重要</b>高效能开源模型降低代理商自建 AI 工具的门槛</p>
+<div class="cfoot"><span class="src">Thinking Machines　·　7月30日</span><a class="more" href="https://thinkingmachines.ai/news/inkling-small" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">04</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://thenextweb.com/news/chatgpt-roblox-eu-dsa-vlop-vlose-designation" rel="noopener noreferrer" target="_blank">欧盟拟将 ChatGPT 列为超大型在线平台，触发最严 DSA 监管</a></h3>
+<p class="sum">欧盟最快8月将 ChatGPT 列为 VLOP，OpenAI 需接受系统性风险审计及透明度义务，月活超1.2亿系触发条件，影响欧洲市场 AI 工具使用。</p>
+<p class="why"><b>点解重要</b>欧洲市场 AI 广告工具合规风险上升，跨市场品牌需留意</p>
+<div class="cfoot"><span class="src">The Next Web　·　7月31日</span><a class="more" href="https://thenextweb.com/news/chatgpt-roblox-eu-dsa-vlop-vlose-designation" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">05</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://newsroom.snap.com/rewarding-authentic-creativity-on-spotlight" rel="noopener noreferrer" target="_blank">Snapchat 宣布全 AI 生成视频失去 Spotlight 推荐资格</a></h3>
+<p class="sum">Snapchat 明确全 AI 生成视频不再获算法推荐及奖励，AI 辅助创作仍可参与，平台强调保留真人原创内容，KOC 真实创作溢价提升。</p>
+<p class="why"><b>点解重要</b>平台打压 AI 垃圾内容，KOC 真人创作溢价进一步提升</p>
+<div class="cfoot"><span class="src">Snap Newsroom　·　7月31日</span><a class="more" href="https://newsroom.snap.com/rewarding-authentic-creativity-on-spotlight" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">06</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5" rel="noopener noreferrer" target="_blank">Google DeepMind 推出 Lyria 3.5：多模态 AI 音乐生成大升级</a></h3>
+<p class="sum">Flow Music 平台推出 Lyria 3.5，强化旋律、歌词及人声质素，支援文字、图像及音频多模态输入，可生成完整广告配乐。</p>
+<p class="why"><b>点解重要</b>品牌广告音效制作成本大降，可直接生成定制配乐</p>
+<div class="cfoot"><span class="src">Google　·　7月29日</span><a class="more" href="https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article></div></section>
+<section id="sec1"><h2>广告平台 &amp; 营销科技<em>6 条</em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">07</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx" rel="noopener noreferrer" target="_blank">Meta Q2广告收入升27%，AI工具推高 CPM 达12%</a></h3>
+<p class="sum">Meta Q2总收入608亿美元，广告收入594亿按年升27%，曝光量增14%、CPM升12%，AI广告工具确认为核心增长引擎，H2广告成本料持续上升。</p>
+<p class="why"><b>点解重要</b>Meta广告成本持续上升，客户H2预算规划需即时调整</p>
+<div class="cfoot"><span class="src">Meta Investor Relations　·　7月29日</span><a class="more" href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">08</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.campaignasia.com/article/q2-2026-earnings-reddit-grows-fastest-meta-leads-on-ad-revenue-amazon-spends-biggest/4ngkj7reqbjbd67xtzyq6erbwv" rel="noopener noreferrer" target="_blank">Reddit Q2广告收入按年飙升84%，成增速最快数字广告平台</a></h3>
+<p class="sum">Reddit Q2广告收入增84%至4.65亿，Reddit Max广告主数量按季增逾60%，每用户广告收入升47%，迅速成为主要数字广告新兴渠道。</p>
+<p class="why"><b>点解重要</b>北美品牌出海可认真评估 Reddit 广告作为新渠道</p>
+<div class="cfoot"><span class="src">Campaign Asia　·　7月31日</span><a class="more" href="https://www.campaignasia.com/article/q2-2026-earnings-reddit-grows-fastest-meta-leads-on-ad-revenue-amazon-spends-biggest/4ngkj7reqbjbd67xtzyq6erbwv" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">09</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.campaignasia.com/article/linkedin-cracks-down-on-automated-content-with-new-seems-like-ai-slop-detection-button/4nd1qwf7vd5he0dcz4gyrp3kmg" rel="noopener noreferrer" target="_blank">LinkedIn 推出「AI Slop」内容举报功能，打击自动化低质帖文</a></h3>
+<p class="sum">LinkedIn 新增让用户标记疑似全 AI 生成内容的举报按钮，品牌及 KOL 在平台的帖文真实性要求进一步提升，AI 模板帖文风险增加。</p>
+<p class="why"><b>点解重要</b>LinkedIn 品牌内容需确保真实性，AI 模板帖文需即时调整</p>
+<div class="cfoot"><span class="src">Campaign Asia　·　7月31日</span><a class="more" href="https://www.campaignasia.com/article/linkedin-cracks-down-on-automated-content-with-new-seems-like-ai-slop-detection-button/4nd1qwf7vd5he0dcz4gyrp3kmg" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">10</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.cnbc.com/2026/07/30/us-wants-asia-to-use-its-ai-but-china-dominates-cheaper-models.html" rel="noopener noreferrer" target="_blank">CNBC：中国廉价 AI 模型称霸亚洲市场，美系供应商压力倍增</a></h3>
+<p class="sum">CNBC 报道中国 AI 模型以更低成本席卷亚洲市场，Google 及 OpenAI 在亚太地区市占受压，本土模型性价比优势对代理工具选择影响深远。</p>
+<p class="why"><b>点解重要</b>向亚太客户推荐 AI 工具时，本土模型性价比需纳入对比</p>
+<div class="cfoot"><span class="src">CNBC　·　7月30日</span><a class="more" href="https://www.cnbc.com/2026/07/30/us-wants-asia-to-use-its-ai-but-china-dominates-cheaper-models.html" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">11</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://developers.facebook.com/docs/marketing-api/guides/ad-reporting-migration" rel="noopener noreferrer" target="_blank">Meta Insights API 8月6日重大变更：装置及频次分析改为选择性请求</a></h3>
+<p class="sum">8月6日起，Meta Insights API 装置细分、每小时数据及广告频次分析改为 opt-in，自动化报告若不主动请求就返回空值，需即时更新系统。</p>
+<p class="why"><b>点解重要</b>代理所有客户自动化报告 API 逻辑须在8月6日前更新</p>
+<div class="cfoot"><span class="src">Meta for Developers　·　8月1日</span><a class="more" href="https://developers.facebook.com/docs/marketing-api/guides/ad-reporting-migration" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">12</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users" rel="noopener noreferrer" target="_blank">Apple 酝酿 iOS 进阶 Siri AI 功能收费，广告个人化策略受影响</a></h3>
+<p class="sum">Apple CEO 暗示 Siri 进阶 AI 功能将透过 iCloud+ 分层收费，iOS 27 Beta 已整合升级 Siri，背后采用 Google Gemini 授权模型。</p>
+<p class="why"><b>点解重要</b>iOS 广告个人化环境料变化，品牌定向策略需提前规划</p>
+<div class="cfoot"><span class="src">TechCrunch　·　7月31日</span><a class="more" href="https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article></div></section>
+<section id="sec2"><h2>创意生产工具<em>6 条</em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">13</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be" rel="noopener noreferrer" target="_blank">快手宣布可灵 AI 独立融资，获约190亿人民币认购承诺</a></h3>
+<p class="sum">快手宣布可灵 AI 正式独立融资，获约190亿人民币认购承诺，估值创历史新高，显示 AI 视频生成工具商业化步伐加速。</p>
+<p class="why"><b>点解重要</b>头部 AI 视频工具资本化加速，代理采购定价走向值得追踪</p>
+<div class="cfoot"><span class="src">Kuaishou Investor Relations　·　7月31日</span><a class="more" href="https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">14</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.usatoday.com/press-release/story/35104/kling-3-0-turbo-released-kling-ai-brings-fast-video-previews-for-rapid-creative-iteration" rel="noopener noreferrer" target="_blank">可灵 3.0 Turbo 推出快速预览模式，降低 AI 视频试稿成本</a></h3>
+<p class="sum">可灵 3.0 Turbo 新增 480p/720p 快速预览，创作者可低成本先试效果，确认后才生成4K正片，广告制作多个概念试稿成本大幅节省。</p>
+<p class="why"><b>点解重要</b>广告制作试稿可大量悭返 AI 视频费用，立即可试</p>
+<div class="cfoot"><span class="src">Kling AI　·　7月30日</span><a class="more" href="https://www.usatoday.com/press-release/story/35104/kling-3-0-turbo-released-kling-ai-brings-fast-video-previews-for-rapid-creative-iteration" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">15</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://docs.dev.runwayml.com/api-details/api_changelog" rel="noopener noreferrer" target="_blank">Runway API 加入 Seedance 2.0 的 4K 输出支援</a></h3>
+<p class="sum">Runway API 7月28日新增 Seedance 2.0 的4K输出功能，品牌广告视频可直接达到播出级别质素，省却后期上调解析度步骤。</p>
+<p class="why"><b>点解重要</b>国际品牌广告可直接输出4K，减后期制作成本</p>
+<div class="cfoot"><span class="src">Runway Developer Changelog　·　7月28日</span><a class="more" href="https://docs.dev.runwayml.com/api-details/api_changelog" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">16</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://adobe-creative-ambassadors-community.customershome.com/resources-nb3vo0q1/post/july-2026---what-s-new-in-adobe-creative-cloud-document-cloud-u2yxUX7a5SVf30Q" rel="noopener noreferrer" target="_blank">Adobe Premiere Pro 7月更新：AI 自动从 Firefly Boards 建立剪辑序列</a></h3>
+<p class="sum">Adobe Premiere Pro 7月更新新增从 Firefly Boards 素材自动建立序列功能，Shape Dissolve 转场同步上线，广告后期工作流程进一步自动化。</p>
+<p class="why"><b>点解重要</b>广告后期工作流自动化，可缩短交稿周期节省时间成本</p>
+<div class="cfoot"><span class="src">Adobe　·　7月31日</span><a class="more" href="https://adobe-creative-ambassadors-community.customershome.com/resources-nb3vo0q1/post/july-2026---what-s-new-in-adobe-creative-cloud-document-cloud-u2yxUX7a5SVf30Q" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">17</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.canva.com/design-school/resources/whats-new-canva-july26" rel="noopener noreferrer" target="_blank">Canva 7月更新推出 Style Match 及 AI Video Effects 功能</a></h3>
+<p class="sum">Canva 7月推出 Style Match 品牌图形转换及 AI Video Effects，社交媒体内容制作更易上手，中小品牌自助制片能力大幅提升。</p>
+<p class="why"><b>点解重要</b>中小品牌客户自助制作能力提升，代理需重新定位创意服务</p>
+<div class="cfoot"><span class="src">Canva　·　7月31日</span><a class="more" href="https://www.canva.com/design-school/resources/whats-new-canva-july26" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">18</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://seed.bytedance.com/seedance" rel="noopener noreferrer" target="_blank">即梦 AI 整合 Seedance 2.5，支援30秒品牌故事视频生成</a></h3>
+<p class="sum">字节跳动即梦 AI 接入 Seedance 2.5，强化30秒故事视频生成与精准参考控制，成为抖音生态广告创意制作的主要整合工具。</p>
+<p class="why"><b>点解重要</b>抖音广告创意可在即梦端对端生成，整合更紧密悭时间</p>
+<div class="cfoot"><span class="src">ByteDance Seed　·　7月30日</span><a class="more" href="https://seed.bytedance.com/seedance" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article></div></section>
+<section id="sec3"><h2>行业影响 &amp; 品牌案例<em>6 条</em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">19</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-hk">香港</span></span></div>
+<h3><a href="https://www.reuters.com/world/asia-pacific/xiaohongshus-hong-kong-ipo-plans-face-scrutiny-after-complaint-about-corporate-2026-07-28" rel="noopener noreferrer" target="_blank">小红书港股 IPO 遭前员工投诉 VIE 架构披露不一致</a></h3>
+<p class="sum">前员工陈皓向港交所及 SFC 投诉小红书 VIE 结构披露不一致，700亿美元估值 IPO 上市时间表面临审查延迟风险。</p>
+<p class="why"><b>点解重要</b>XHS IPO 若延迟，广告平台商业化投入料放缓需追踪</p>
+<div class="cfoot"><span class="src">Reuters　·　7月28日</span><a class="more" href="https://www.reuters.com/world/asia-pacific/xiaohongshus-hong-kong-ipo-plans-face-scrutiny-after-complaint-about-corporate-2026-07-28" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">20</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://walkthechat.com/xiaohongshu-records-1-4-billion-purchase-intent-searches-a-year-and-4-other-news" rel="noopener noreferrer" target="_blank">小红书年均14亿次购物意向搜索，成品牌转化核心阵地</a></h3>
+<p class="sum">XHS 全年购物意向搜索达14亿次，品牌关键词布局与转化内容策略优先级大幅提升，SEO 投资回报可量化。</p>
+<p class="why"><b>点解重要</b>可用量化数据向客户 pitch XHS 内容投资回报</p>
+<div class="cfoot"><span class="src">WalktheChat　·　7月30日</span><a class="more" href="https://walkthechat.com/xiaohongshu-records-1-4-billion-purchase-intent-searches-a-year-and-4-other-news" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">21</span><span class="chips"><span class="chip act a-biz">影响生意</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.wsdsocial.com/en-us/article/2026-xiaohongshu-algorithm-explained" rel="noopener noreferrer" target="_blank">小红书2026算法更新：首小时互动率决定流量级别</a></h3>
+<p class="sum">XHS 新算法以首轮100至500用户测试，首小时互动率决定后续流量放大级别，品牌内容发布时间及种子互动策略需全面调整。</p>
+<p class="why"><b>点解重要</b>品牌 XHS 帖子发布时间及互动策略需重新优化</p>
+<div class="cfoot"><span class="src">WSD Social　·　7月31日</span><a class="more" href="https://www.wsdsocial.com/en-us/article/2026-xiaohongshu-algorithm-explained" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">22</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.chinatradingdesk.com/post/2026-ai-marketing-casebook-how-brands-in-china-are-turning-ai-from-a-tool-into-a-storytelling-engin" rel="noopener noreferrer" target="_blank">China Trading Desk 发布2026年品牌 AI 营销案例汇编</a></h3>
+<p class="sum">China Trading Desk 整理2026年品牌在中国以 AI 为核心叙事工具的最新案例，揭示 AI 从制作工具升级为品牌故事核心的行业趋势。</p>
+<p class="why"><b>点解重要</b>客户提案可引用本地品牌 AI 成功案例增强说服力</p>
+<div class="cfoot"><span class="src">China Trading Desk　·　7月31日</span><a class="more" href="https://www.chinatradingdesk.com/post/2026-ai-marketing-casebook-how-brands-in-china-are-turning-ai-from-a-tool-into-a-storytelling-engin" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">23</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation" rel="noopener noreferrer" target="_blank">Google Earth AI 图像功能上线翌日紧急下架，虚假资讯风险警示</a></h3>
+<p class="sum">Google 将 AI 图像生成整合入 Google Earth，允许在真实卫星图上叠加虚构图像，上线翌日即因虚假资讯批评紧急下架。</p>
+<p class="why"><b>点解重要</b>AI 视觉内容虚假资讯风险警示，品牌广告素材审查需加强</p>
+<div class="cfoot"><span class="src">TechCrunch　·　7月31日</span><a class="more" href="https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">24</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.oceanengine.com/en_US/product/ttads" rel="noopener noreferrer" target="_blank">抖音升级 AI 数字人广告工具，强化互动格式提升转化</a></h3>
+<p class="sum">抖音新增数字人视频广告工具、动态背景及 AI 互动版式，品牌可大幅降低直播及广告制作成本，同时提升互动转化率。</p>
+<p class="why"><b>点解重要</b>抖音客户可用 AI 数字人降低直播及广告制作成本</p>
+<div class="cfoot"><span class="src">Ocean Engine　·　7月31日</span><a class="more" href="https://www.oceanengine.com/en_US/product/ttads" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article></div></section>
+<section id="sec4"><h2>即学技巧 &amp; 玩法<em>6 条</em></h2><div class="grid"><article class="card">
+<div class="ctop"><span class="no">25</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://developers.facebook.com/docs/marketing-api/guides/ad-reporting-migration" rel="noopener noreferrer" target="_blank">紧急提醒：Meta Insights API 8月6日重大变更，即时更新自动化报告</a></h3>
+<p class="sum">8月6日起装置细分、每小时数据及频次分析改为 opt-in，不主动请求就返回空值。Marketing API v24.0 亦将于10月 sunset，建议即时审查所有 API 调用。</p>
+<p class="why"><b>点解重要</b>所有代理自动化报告系统必须在8月6日前完成更新</p>
+<div class="cfoot"><span class="src">Meta for Developers　·　8月1日</span><a class="more" href="https://developers.facebook.com/docs/marketing-api/guides/ad-reporting-migration" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">26</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://support.google.com/google-ads/answer/17061251?hl=en" rel="noopener noreferrer" target="_blank">Google Ads 8月17日更改 CPA/ROAS 出价机制，即时审查活动</a></h3>
+<p class="sum">8月17日起，预算受限活动将严格执行设定目标出价，过往实际 CPA 优于目标的活动效益会回调，建议用 Bid Target Adjustment Tool 即时审查。</p>
+<p class="why"><b>点解重要</b>即时审查所有 Google 搜寻及 PMax 活动出价目标设定</p>
+<div class="cfoot"><span class="src">Google Ads Help　·　8月1日</span><a class="more" href="https://support.google.com/google-ads/answer/17061251?hl=en" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">27</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight" rel="noopener noreferrer" target="_blank">Snap 及 LinkedIn 同周打压 AI 垃圾内容：KOC brief 需即时调整</a></h3>
+<p class="sum">Snapchat 剔走全 AI 生成视频 Spotlight 资格，LinkedIn 推出 AI 垃圾举报按钮，两大平台同步强调真人创作，KOC 内容审批流程需更新。</p>
+<p class="why"><b>点解重要</b>KOC 内容 brief 需明确区分 AI 辅助与全 AI 生成</p>
+<div class="cfoot"><span class="src">Engadget　·　7月31日</span><a class="more" href="https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">28</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://www.digitalcrew.agency/how-ai-is-changing-xiaohongshu-marketing-in-2026" rel="noopener noreferrer" target="_blank">XHS AI 搜寻2026：品牌必学语意关键词布局策略</a></h3>
+<p class="sum">小红书 AI 搜寻改写品牌内容发现方式，传统标签优化已不足，对话式短语及问答格式内容优先获推荐，需双轨优化策略。</p>
+<p class="why"><b>点解重要</b>XHS 内容策略需同时优化标签发现及 AI 语意搜寻双轨</p>
+<div class="cfoot"><span class="src">Digital Crew　·　7月31日</span><a class="more" href="https://www.digitalcrew.agency/how-ai-is-changing-xiaohongshu-marketing-in-2026" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">29</span><span class="chips"><span class="chip act a-use">可即用</span><span class="chip region r-cn">中国</span></span></div>
+<h3><a href="https://klingai.com/blog/kling-3-0-turbo-fast-preview" rel="noopener noreferrer" target="_blank">实战技巧：善用可灵 3.0 Turbo 快速预览降低 AI 视频试稿成本</a></h3>
+<p class="sum">可灵快速预览模式让代理制作前先以低成本测试多个概念方向，确认效果后才生成4K正片，可大幅降低每个 campaign 的试稿 credit 消耗。</p>
+<p class="why"><b>点解重要</b>多个概念同步测试，降低代理商 AI 视频试错成本</p>
+<div class="cfoot"><span class="src">Kling AI　·　7月30日</span><a class="more" href="https://klingai.com/blog/kling-3-0-turbo-fast-preview" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article>
+<article class="card">
+<div class="ctop"><span class="no">30</span><span class="chips"><span class="chip act a-watch">要留意</span><span class="chip region r-intl">国际</span></span></div>
+<h3><a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" rel="noopener noreferrer" target="_blank">Anthropic 事件启示：企业采用 AI 工具前的安全边界检查清单</a></h3>
+<p class="sum">Anthropic 事件揭示 AI Agent 在环境辨识失误时可自主采取攻击行动，为代理公司使用及向客户推荐 AI 自动化工具提供重要安全警示。</p>
+<p class="why"><b>点解重要</b>AI 工具评估需加入安全边界测试，保护代理及客户数据</p>
+<div class="cfoot"><span class="src">Anthropic　·　7月30日</span><a class="more" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a></div>
+</article></div></section>
+</main>
+<footer><div class="wrap">
+<p>今日共 <b>30</b> 条精选　·　每日更新　·　为 AI 驱动 agency 而设</p>
+<p>数据源：综合 Anthropic、Reuters、Axios、TechCrunch、Campaign Asia、CNBC、Snap Newsroom、Google、Kuaishou IR、Runway、Adobe、Canva、ByteDance、WalktheChat 等一级来源</p>
+<p>内容仅供资讯参考。</p>
+</div></footer>
+<div id="toast"></div>
+<script>
+const SHARE_URL="https://carriehw.github.io/ai-marketing-daily/zh-hans/archive/2026-08-01.html";
+const MSG={zh:'连结已复制，可以直接 send 俾同事', en:'Link copied — share it with your team'};
+function curLang(){return document.documentElement.getAttribute('data-lang')==='en'?'en':'zh'}
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang=(l==='en'?'en':'zh-Hans');
+  try{localStorage.setItem('amd-lang',l)}catch(e){}
+  document.querySelectorAll('.langtog button').forEach(b=>b.classList.toggle('on', b.dataset.set===l));
+}
+document.querySelectorAll('.langtog button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.set)));
+setLang(curLang()); // sync button highlight with the pre-paint language
+function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
+function legacyCopy(){const ta=document.createElement('textarea');ta.value=SHARE_URL;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok}
+function showBox(){const b=document.getElementById('sharebox');b.classList.add('on');const inp=b.querySelector('input');inp.value=SHARE_URL;inp.focus();inp.select()}
+document.getElementById('share').addEventListener('click',async()=>{
+  const msg=MSG[curLang()];
+  if(navigator.share){try{await navigator.share({title:document.title,url:SHARE_URL});return}catch(e){if(e.name==='AbortError')return}}
+  try{await navigator.clipboard.writeText(SHARE_URL);toast(msg);return}catch(e){}
+  if(legacyCopy()){toast(msg);return}
+  showBox();
+});
+</script>
+</body>
+</html>
+
