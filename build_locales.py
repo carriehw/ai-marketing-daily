@@ -57,7 +57,10 @@ def locale_url(base,locale,kind,date=""):
 
 def rewrite_meta(soup,key,which,value):
     tag=soup.find("meta",attrs={key:which})
-    if tag:tag["content"]=value
+    if not tag:
+        tag=soup.new_tag("meta",attrs={key:which})
+        soup.head.append(tag)
+    tag["content"]=value
 
 def replace_script(script,content):
     script.clear()
