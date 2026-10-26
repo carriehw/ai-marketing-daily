@@ -67,7 +67,7 @@ The **Editorial Relevance Score** ranks **already fact-checked** candidates (max
 
 **Editorial priority:** `80–100` Top Story candidate; `65–79` Main Brief candidate; `50–64` Radar or context; `0–49` usually omit. Human editorial judgement and source uncertainty can **downgrade** any item. High scores **never override verification gates**.
 
-Choose **up to three** lead stories, a compact main brief of verified developments, and optional Radar headlines. **No daily news quota.** An empty category is preferable to filler. Distinguish genuine updates of an ongoing story from simple duplicate coverage; link back and state what materially changed.
+Choose **up to three** lead stories, a compact main brief of verified developments, and optional Radar headlines. **Daily editorial service standard: at least 10 individually source-verified, genuinely relevant full-news items for automatic publication; target 12–18.** Three are highlighted as Top Stories, rather than being the whole issue. Short Radar items do not count toward the ten unless they meet the full story and evidence standard. When fewer than ten qualify, expand credible discovery; if still short, hold automatic publication and report the gap for Publisher review. Never fill the quota with duplicate or unsupported items. An empty category is preferable to filler. Distinguish genuine updates of an ongoing story from simple duplicate coverage; link back and state what materially changed.
 
 For action labels, separate:
 - **Impact:** High / Medium / Low.
