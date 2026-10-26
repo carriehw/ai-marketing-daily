@@ -14,8 +14,8 @@ const assert = require('node:assert/strict');
   let count = 0;
   try {
     for (const locale of ['zh-hant','zh-hans','en']) {
-      for (const width of [390,768,1280]) {
-        const height=width===390?844:850;
+      for (const width of [320,390,768,1280]) {
+        const height=width<=390?844:850;
         const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1});
         const page=await context.newPage();
         const errors=[];
@@ -57,6 +57,22 @@ const assert = require('node:assert/strict');
           assert.ok(layout.top.top>=layout.intro.bottom-2,locale+' mobile layout overlap');
           assert.ok(layout.firstLead<height,locale+' first lead not visible without scroll');
         }
+        const footer=page.locator('main#main article.story').first().locator('.story-foot');
+        assert.equal(await footer.locator('a.readsrc').count(),1,locale+' original CTA missing');
+        assert.equal(await footer.locator('details.story-actions').count(),1,locale+' share control missing');
+        assert.equal(await footer.locator('.evidence-link').count(),0,locale+' evidence is still a footer CTA');
+        assert.equal(await page.locator('main#main article.story .story-meta .evidence-link').count()>=1,true,locale+' supporting source missing from source metadata');
+        assert.equal(await page.locator('main#main article.story .story-taxonomy').count(),14,locale+' tags not located near news context');
+        const info=await page.evaluate(()=>{
+          const last=document.querySelector('main#main section[id^="sec"]:last-of-type');
+          const search=document.getElementById('news-explorer');
+          const main=document.getElementById('main');
+          return {last:main.querySelectorAll('section[id^="sec"]').length,
+                  searchChild:[...main.children].indexOf(search),
+                  searchTop:search.getBoundingClientRect().top,
+                  lastStoryTop:[...main.querySelectorAll('article.story')].at(-1).getBoundingClientRect().bottom};
+        });
+        assert.ok(info.searchTop>info.lastStoryTop-5,locale+' bottom search not placed after all news');
         assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick default not collapsed');
         await page.locator('#view-deep').click();
         assert.equal(await page.locator('details.story-expanded[open]').count(),14,locale+' Deep Read did not open every card');
@@ -69,10 +85,23 @@ const assert = require('node:assert/strict');
         await page.waitForFunction(()=>document.activeElement?.id==='news-query',{timeout:4000});
         await page.locator('#news-query').fill('Canva');
         await page.waitForTimeout(180);
-        const shown=await page.locator('article.story:visible').count();
-        assert.ok(shown>=1&&shown<14,locale+' search filtering did not work: '+shown);
+        const shown=await page.locator('#today-result-list a.today-hit:visible').count();
+        assert.ok(shown>=1&&shown<14,locale+' search results did not appear below field: '+shown);
+        assert.equal(await page.locator('article.story:visible').count(),14,locale+' search hid original news');
+        const positions=await page.evaluate(()=>{
+          const input=document.getElementById('news-query').getBoundingClientRect();
+          const result=document.querySelector('#today-result-list .today-hit').getBoundingClientRect();
+          return {inputBottom:input.bottom,resultTop:result.top};
+        });
+        assert.ok(positions.resultTop>positions.inputBottom,locale+' results appear above search');
         await page.locator('#news-reset').click();
-        assert.equal(await page.locator('article.story:visible').count(),14,locale+' reset failed');
+        assert.equal(await page.locator('article.story:visible').count(),14,locale+' reset hid original news');
+        assert.equal(await page.locator('#today-result-list .today-hit:visible').count(),0,locale+' reset left stale results');
+        await page.locator('#scope-archive').click();
+        await page.waitForSelector('#archive-result-list a.history-hit',{state:'visible',timeout:15000});
+        assert.ok(await page.locator('#archive-result-list a.history-hit').count()>=1,locale+' archive search unavailable');
+        await page.locator('#scope-today').click();
+        assert.equal(await page.locator('article.story:visible').count(),14,locale+' archive switch hid original news');
         await page.screenshot({path:path.join(output,locale+'-'+width+'.png'),fullPage:false});
         assert.deepEqual(errors,[],locale+' JavaScript page errors');
         console.log('PASS '+locale+' '+width+'px',JSON.stringify({scrollWidth:layout.scrollWidth,firstLead:Math.round(layout.firstLead),visibleAfterSearch:shown}));
