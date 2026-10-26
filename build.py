@@ -1067,7 +1067,7 @@ for s in data["sections"]:
         url = html.escape(str(it.get("url", "")))
         evidence_url = html.escape(str(it.get("verification_url", "")).strip())
         primary_link = (
-            f'<a class="readsrc" href="{evidence_url}" target="_blank" rel="noopener noreferrer">'
+            f'<a class="evidence-link" href="{evidence_url}" target="_blank" rel="noopener noreferrer">'
             f'{bi("核實依據 ↗", "Evidence ↗")}</a>'
             if evidence_url.startswith(("https://", "http://")) and evidence_url != url else ""
         )
@@ -2009,6 +2009,9 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .story-actions-menu{{position:absolute;right:0;bottom:calc(100% + 7px);width:190px;max-width:calc(100vw - 32px);z-index:25;display:grid;gap:2px;padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 9px 24px rgba(16,17,20,.18)}}
 .story-actions-menu button{{background:transparent;border:0;color:var(--ink);text-align:left;border-radius:8px;font:inherit;font-weight:700;font-size:13px;line-height:1.45;padding:12px 10px;cursor:pointer;min-height:44px}}
 .story-actions-menu button:hover,.story-actions-menu button:focus-visible{{background:var(--accent-soft);outline:2px solid var(--accent)}}
+.evidence-link{{font-size:12.5px;font-weight:750;color:var(--accent-d);text-decoration:underline;text-underline-offset:3px;padding:7px 3px;white-space:nowrap}}
+.evidence-link:hover{{color:var(--i-navy)}}
+.evidence-link:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
 .readsrc{{text-decoration:none;font-weight:800;font-size:13px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:999px;white-space:nowrap}}
 .readsrc:hover{{background:var(--accent)}}
 .empty{{margin:0;padding:22px 24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);font-size:14.5px;background:rgba(255,255,255,.5)}}
