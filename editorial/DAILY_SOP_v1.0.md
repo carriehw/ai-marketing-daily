@@ -62,6 +62,19 @@ For every candidate likely to appear, build an evidence record as in [evidence-t
 6. Prepare `title`, `summary`, `highlights`, `why`, and bilingual `*_en` with identical facts and numbers. Optional `followup` covers **what actually changed**; `pattern` must be identifiable as analysis.
 7. Reader-facing detail adds genuine substance rather than repeating highlights or making an unsourced mini-essay.
 
+## E1. Search, filtering and reusable Team Brief output
+
+The website exposes today's story search, section and impact filters, a historical bilingual search catalogue, and a per-story **Copy Team Brief**. For every newly published story:
+
+1. Supply complete, useful **`next_step` and `next_step_en`** fields when a concrete action is warranted. Next steps are editorial recommendations; they must be proportionate to the evidence and carry no invented benefit or measured outcome. If no responsible action exists, leave the next step empty rather than padding.
+2. Keep **`summary`/`summary_en`, `why`/`why_en`, original `url`, source name and publication date** factual and bilingual, because they are used as the shareable team brief.
+3. A team brief includes a **dated archive permalink and original source link**, never an unqualified claim that the team independently tested the product.
+4. Run `build_search_index.py` **after** `build_archive.py` to update `archive/search-index.json`. The archive index contains historical *published* article metadata (not unpublished research); legacy archive records without stable story anchors resolve to the correct issue page.
+5. Run `verify_discovery.py` and `node --check discovery.js` as part of the publication gate. Neither source-record checks nor index checks are a substitute for testing actual browser interactions.
+6. Search and Copy buttons must preserve `?lang=zh`/`?lang=en` and must never send article sharing to a rolling homepage when dated permalinks exist.
+7. Accessibility: controls must retain visible labels, keyboard navigation, minimum phone-friendly touch sizes, a live result count and a no-results state. Do not expose a disabled/inert control as working.
+8. Use existing GoatCounter pageview measurement only as an indicator; do not claim shares, qualified leads or downloads that are not actually measured.
+
 ## F. Editing and independent review
 
 - **First pass — Researcher:** source and evidence collection.
