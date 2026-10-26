@@ -32,6 +32,17 @@ Produce a verified **HKT-dated edition of the website** with matching content, a
 - **If the technical website checker expects at least eight cards and fewer than eight are verified, do not pad the issue**: review/update that gate, explicitly flag any exception, and only publish when the amended gate and evidence controls pass.
 - The minimum quota and target refer to **daily full-issue totals**, not the homepage's **three Top Stories**.
 
+## B2. Three independent language editions (effective 2026-10-26)
+
+- The verified fact base remains `data.json` with Traditional Chinese and English fields. Do **not** invent a separate set of news claims to fill the Simplified Chinese edition. Maintain source, date, headline qualifiers, accessible product status and brand/legal terms identically in all three versions.
+- Publish independently addressable HTML pages and historic archives under `/zh-hant/`, `/zh-hans/` and `/en/`; each has **its own canonical**, language-marked `<html lang>`, localized metadata, reciprocal `hreflang`, independent share URL, and sitemap inclusion. Legacy `/?lang=zh` and `/?lang=en` keep working for older links.
+- The Simplified version starts from OpenCC `t2s` converted published Chinese, then follows a controlled Mainland marketing glossary and issue-specific AI editorial review. **Automated script conversion cannot certify native Chinese expression or prove factual truth**; the issue's `editorial/localization_review/YYYY-MM-DD.json` record must contain one explicit caveat review per story and openly state the scope. Additional professional/native proofread is appropriate before relying on content in client campaigns.
+- Each daily issue produces the same **number and order of underlying stories, original sources, source dates and unique stable story anchor IDs**, in all three languages.
+- Release gate: `build.py` → `build_archive.py` → `build_search_index.py` → `build_locales.py`, with `verify_editorial.py`, `verify_dates.py`, `verify_ux.py`, `verify_discovery.py` and `verify_locales.py` all passing. GitHub Pages production must additionally pass `verify_locales_live.py`.
+- **Never claim that three localized editions are live from source changes alone.** Verify each production homepage, dated archive, localized search asset and sitemap before announcing.
+- Per-story card has one **「分享／複製」 / Share / Copy** control. The disclosure exposes exactly two actions: share the permanent article link or copy a sourced marketing team brief. Keep touch and keyboard usability, ESC dismissal and translation aligned.
+- The archived older issues are originally published snapshots subsequently localized; changes of language do **not** mean their original source facts were retrospectively re-verified.
+
 ## C. Discovery and shortlist
 
 Search selectively across:
