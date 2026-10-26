@@ -104,7 +104,7 @@ def translate_hans(soup):
                 fail("Bad embedded discovery data: "+str(exc))
             continue
         if script.string:
-            replace_script(script,to_hans(str(script.string)))
+            replace_script(script,to_hans(str(script.string)).replace("'zh-Hant'","'zh-Hans'"))
     for node in list(soup.find_all(string=True)):
         if isinstance(node,Comment):continue
         if node.parent and node.parent.name in ("script","style"):continue
@@ -163,8 +163,14 @@ def render(source,locale,kind,base,date,issue_title,issue_title_en,issue_count):
         payload["edition_base"]=locale_url(base,locale,"home")
         payload["site_base"]=base
         replace_script(sc,json.dumps(payload,ensure_ascii=False,separators=(",",":")).replace("<",r"\u003c"))
-    # In legacy pages the script URLs were relative or path-prefixed to main base.
-    # Our locale pages use absolute project-scoped /discovery.js, unchanged.
+    # Keep the compiled client separate from the page's locale so its in-app status
+    # and copy confirmation are also in idiomatic Simplified Chinese.
+    if locale=="zh-hans":
+        for sc in soup.find_all("script",src=True):
+            src=str(sc["src"])
+            if src.endswith("/discovery.js") or src=="discovery.js":
+                sc["src"]=src.rsplit("/",1)[0]+"/discovery-zh-hans.js" if "/" in src else "discovery-zh-hans.js"
+    # In legacy pages scripts may use older UI; archives remain fully readable.
     # Meta and JSON-LD are strictly per-language; don't canonically collapse them.
     canonical=soup.find("link",rel="canonical")
     if not canonical:
@@ -274,8 +280,6 @@ def main():
             issue=issues[date]
             rendered=render(source,locale,kind,base,date,
                 data.get("headline",""),data.get("headline_en",""),issue["total"])
-            if locale=="zh-hans":
-                rendered=render_hans_js(rendered)
             location.write_text(rendered,encoding="utf-8")
             built+=1
         for archive in manifest:
@@ -286,15 +290,9 @@ def main():
             source=(archive_dir/(issue_date+".html")).read_text(encoding="utf-8")
             html_output=render(source,locale,"issue",base,issue_date,
                 archive.get("title",""),archive.get("title_en",""),archive["total"])
-            if locale=="zh-hans":html_output=render_hans_js(html_output)
             target.write_text(html_output,encoding="utf-8")
             built+=1
     print(f"PASS localized: {built} generated files, {len(manifest)} issues across three languages, current {date}")
-
-def render_hans_js(markup):
-    """Replace the external user-facing Chinese UI file on simplified pages."""
-    return markup.replace('"/ai-marketing-daily/discovery.js"',
-                          '"/ai-marketing-daily/discovery-zh-hans.js"')
 
 if __name__=="__main__":
     main()
