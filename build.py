@@ -1174,7 +1174,7 @@ for s in data["sections"]:
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
 {fu}{body}
 {take}
-{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><button class="story-share" type="button" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}" aria-label="{html.escape(bi_attr('分享這則新聞', 'Share this story'))}">{bi("分享新聞", "Share story")}</button>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+{pat}{detail}<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><button class="copy-team-brief" type="button" data-story="{sid}" aria-label="{html.escape(bi_attr('複製精簡新聞情報', 'Copy concise team brief'))}">{bi("Copy Team Brief", "Copy Team Brief")}</button><button class="story-share" type="button" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}" aria-label="{html.escape(bi_attr('分享這則新聞', 'Share this story'))}">{bi("分享新聞", "Share story")}</button>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
 </article>''')
     cards[s] = "\n".join(out)
 
@@ -1470,6 +1470,25 @@ _ld = json.dumps({
         **({"publisher": {"@type": "Organization", "name": i["source"]}} if i.get("source") else {}),
     } for i in data["items"][:25]],
 }, ensure_ascii=False, separators=(",", ":"))
+
+# Frozen per-edition copy, not a live feed. Escape < for safe JSON in script tag.
+_discovery_items = []
+for _section_idx, _section_name in enumerate(data["sections"]):
+    for _it in groups[_section_name]:
+        _discovery_items.append({
+            "id": story_slug(_it), "section": _section_idx,
+            "signal": ACT.get(_it.get("action", "要留意"), "watch"),
+            "title": _it.get("title", ""), "title_en": _it.get("title_en", ""),
+            "summary": _it.get("summary", ""), "summary_en": _it.get("summary_en", ""),
+            "why": _it.get("why", ""), "why_en": _it.get("why_en", ""),
+            "next_step": _it.get("next_step", ""), "next_step_en": _it.get("next_step_en", ""),
+            "source": _it.get("source", ""), "time": _it.get("time", ""),
+            "url": _it.get("url", ""),
+        })
+_discovery_data = json.dumps({
+    "date": ISO, "site_base": _base,
+    "sections": data["sections"], "items": _discovery_items
+}, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
 
 page = f'''<!doctype html>
 <html lang="en" data-lang="en">
@@ -1924,6 +1943,9 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .signal.impact{{background:var(--accent-soft);color:var(--accent)}}
 .chip{{font-size:11.5px;padding:5px 10px;border-radius:99px;white-space:nowrap}}
 .chip.region{{border:1px solid var(--line);color:var(--muted)}}
+.copy-team-brief{{font:inherit;font-size:12.5px;font-weight:750;color:#fff;background:var(--accent-d);border:1px solid var(--accent-d);border-radius:999px;padding:8px 12px;cursor:pointer}}
+.copy-team-brief:hover{{background:var(--i-navy)}}
+.copy-team-brief:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
 .story-share{{font:inherit;font-size:12.5px;font-weight:750;color:var(--accent-d);background:#fff;border:1px solid var(--accent);border-radius:999px;padding:8px 12px;cursor:pointer}}
 .story-share:hover{{background:var(--accent-soft)}}
 .story-share:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
@@ -2185,6 +2207,13 @@ footer b{{color:var(--ink)}}
   <span>{bi("頁首", "Top")}</span>
 </button>
 <div id="toast"></div>
+<div id="brief-manual" hidden role="region" aria-label="{html.escape(bi_attr('手動複製情報','Manual brief copy'))}">
+  <p>{bi("無法自動複製，請選取以下內容手動複製：","Automatic copy is unavailable. Select and copy the text below:")}</p>
+  <textarea id="brief-manual-text" readonly aria-label="{html.escape(bi_attr('新聞情報文字','Brief text'))}"></textarea>
+  <button id="brief-manual-close" type="button">{bi("關閉","Close")}</button>
+</div>
+<script type="application/json" id="news-discovery-data">{_discovery_data}</script>
+<script src="{_base}discovery.js" defer></script>
 <script>
 const SHARE_URL={json.dumps(SITE_URL) if SITE_URL else "location.href"};
 const ISSUE_DATE={json.dumps(ISO)};
@@ -2211,7 +2240,7 @@ setLang(curLang()); // sync button highlight with the pre-paint language
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}
 function languageShareUrl(storyId){{
   // A shared article points to its permanent edition, not tomorrow's homepage.
-  const base=(storyId ? SHARE_URL.replace(/\\/?$/, '/')+'archive/'+ISSUE_DATE+'.html' : SHARE_URL);
+  const base=(storyId ? (SHARE_URL.includes('/archive/') ? SHARE_URL : SHARE_URL.replace(/\\/?$/, '/')+'archive/'+ISSUE_DATE+'.html') : SHARE_URL);
   const u=new URL(base,location.href);
   u.searchParams.set('lang',curLang());
   u.hash=storyId||'';
