@@ -5,6 +5,7 @@ updates cannot discard them. Historical news remains unchanged: only the
 bounded author section and its stylesheet link are refreshed.
 """
 import html
+import hashlib
 import re
 from pathlib import Path
 from urllib.parse import quote, urlsplit
@@ -13,6 +14,7 @@ LINKEDIN = "https://www.linkedin.com/in/carriehuiww/"
 EMAIL = "carrie.hui@i-click.com"
 START = "<!-- author-profile:start -->"
 END = "<!-- author-profile:end -->"
+CSS_VERSION = hashlib.sha256(Path(__file__).with_name("author-profile.css").read_bytes()).hexdigest()[:12]
 
 COPY = {
     "zh-hant": {
@@ -93,7 +95,7 @@ def with_author_profile(page, site_url, locale=None):
                   '', page, flags=re.I)
     page = re.sub(re.escape(START) + r'.*?' + re.escape(END) + r'\s*',
                   '', page, flags=re.S)
-    css = html.escape(asset_base(site_url) + "author-profile.css", quote=True)
+    css = html.escape(asset_base(site_url) + "author-profile.css?v=" + CSS_VERSION, quote=True)
     link = f'<link id="author-profile-css" rel="stylesheet" href="{css}">\n'
     if not re.search(r'</head\s*>', page, re.I) or not re.search(r'<footer\b', page, re.I):
         raise ValueError("Author profile requires an HTML head and site footer")

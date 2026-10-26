@@ -1,5 +1,5 @@
 /* Shared author furniture. Every selector is scoped away from daily news UI. */
-.author-profile{margin-top:44px;margin-bottom:0;scroll-margin-top:100px}
+.author-profile#about-carrie{margin:44px auto 0;scroll-margin-top:100px}
 .author-profile .author-profile-card{display:grid;grid-template-columns:210px minmax(0,1fr);align-items:start;gap:36px;background:#fff;border:1px solid #dedbd2;border-radius:24px;padding:36px;text-align:left;color:#101114;box-shadow:0 6px 24px rgba(17,21,74,.035)}
 .author-profile .author-profile-photo{display:block;width:210px;height:280px;max-width:100%;object-fit:cover;object-position:50% 28%;border-radius:16px;background:#777b82}
 .author-profile .author-profile-label{margin:0 0 8px;color:#4632d4;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1.5}
@@ -21,7 +21,7 @@
   .author-profile .author-profile-photo{width:160px;height:214px}
 }
 @media(max-width:560px){
-  .author-profile{margin-top:32px}
+  .author-profile#about-carrie{margin-top:32px}
   .author-profile .author-profile-card{grid-template-columns:minmax(0,1fr);gap:22px;padding:24px;border-radius:20px}
   .author-profile .author-profile-photo{width:144px;height:180px;object-position:50% 28%;border-radius:12px}
   .author-profile #author-profile-name{font-size:25px}
