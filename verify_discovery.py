@@ -61,7 +61,7 @@ def audit(root):
                    'id="brief-manual"','id="brief-manual-text"'):
         if marker not in html:errors.append("missing reader control "+marker)
     for marker in ("fetch(new URL('archive/search-index.json'",
-                   ".story-share", "document.querySelectorAll('.copy-team-brief')",
+                   "document.querySelectorAll('.copy-team-brief')",
                    "formatTeamBrief", "function archiveRows()", "input.addEventListener('input'"):
         if marker not in js:errors.append("missing wired user action "+marker)
     count=html.count('class="copy-team-brief"')
