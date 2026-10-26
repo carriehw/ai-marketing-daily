@@ -254,14 +254,24 @@ else:
     if not _n:
         _unmatched.append("og:url")
 
-# 3. JSON-LD top-level "url" — remove any existing one then inject as first field
-snap = re.sub(r'"url":"' + re.escape(SITE_URL) + r'"', '', snap)
-snap, _n = re.subn(
-    r'(<script type="application/ld\+json">\{)',
-    r'\g<1>"url":"' + PAGE_URL + r'",',
-    snap, count=1)
-if not _n:
-    _unmatched.append("JSON-LD url")
+# 3. Update JSON-LD as structured JSON. The former string-replacement code
+# deleted only the original URL token (leaving an extra comma) and silently
+# published invalid JSON on archived issues. Do not manipulate JSON via regex
+# field splicing: parse and serialize the whole object instead.
+_ld_match = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)',
+                      snap, flags=re.S)
+if not _ld_match:
+    _unmatched.append("JSON-LD script")
+else:
+    try:
+        _ld = json.loads(_ld_match.group(2))
+        if not isinstance(_ld, dict):
+            raise ValueError("JSON-LD root must be an object")
+        _ld["url"] = PAGE_URL
+        _ld_text = json.dumps(_ld, ensure_ascii=False, separators=(",", ":"))
+        snap = snap[:_ld_match.start(2)] + _ld_text + snap[_ld_match.end(2):]
+    except (ValueError, TypeError) as _exc:
+        _unmatched.append("JSON-LD invalid: " + str(_exc))
 
 # 4. SHARE_URL — location.href is the new build.py default; replace it
 if 'SHARE_URL=location.href' in snap:
