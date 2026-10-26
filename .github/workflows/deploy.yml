@@ -136,3 +136,7 @@ jobs:
           done
           echo "::error::Production live validation failed. Do not report as published."
           exit 1
+
+      - name: Verify production serves historical search and interaction assets
+        if: github.event_name != 'pull_request'
+        run: python verify_discovery_live.py
