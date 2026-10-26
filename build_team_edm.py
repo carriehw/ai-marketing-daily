@@ -107,7 +107,7 @@ def card(story, i):
     summary = "" if i >= 3 else '<p style="margin:9px 0 0;font-size:14px;line-height:1.55;color:#3C3F45">%s</p>' % esc(story["summary_en"])
     why = '<div style="background:%s;border-left:3px solid %s;padding:10px 13px;margin-top:12px;font-size:13px;line-height:1.5;color:%s"><b style="color:%s">WHY IT MATTERS</b> — %s</div>' % (
         TINT, VIOLET, INK, VIOLET, esc(story["why_en"])) if i < 3 else '<p style="margin:8px 0 0;font-size:13px;line-height:1.5;color:#3C3F45">%s</p>' % esc(story["why_en"])
-    return '''<tr><td style="padding:0 22px 12px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    return '''<tr><td style="padding:0 22px 12px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>
 <td bgcolor="#FFFFFF" style="background:#FFFFFF;border:1px solid %s;border-top:4px solid %s;border-radius:14px;padding:18px 20px">
 %s<div style="font-size:11px;font-weight:700;letter-spacing:.45px;color:%s;padding-bottom:7px">%s &nbsp;·&nbsp; %s</div>
 <a href="%s" style="font:%s 700 %spx/1.28 %s;color:%s;text-decoration:none">%s</a>
