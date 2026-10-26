@@ -1839,6 +1839,55 @@ h1{{font-size:clamp(38px,6.4vw,74px);line-height:1.0;letter-spacing:-.05em;margi
 .more-brief>summary{{cursor:pointer;display:inline-flex;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:99px;color:var(--accent-d);font-size:13px;font-weight:750}}
 .more-brief>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
 .more-brief .tldr{{margin:12px 0 0}}
+/* Archive-backed bilingual discovery and reusable intelligence briefs. */
+.discovery{{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin:24px 0 12px;box-shadow:0 6px 28px rgba(16,17,20,.04)}}
+.discovery-head{{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}}
+.discovery-head h2{{font-size:22px;letter-spacing:-.03em;margin:0;color:var(--ink)}}
+.discovery-head p{{margin:0;font-size:12px;color:var(--muted)}}
+.discovery-scope{{display:flex;gap:6px;margin-bottom:13px;flex-wrap:wrap}}
+.discovery-scope button{{font:inherit;font-size:13px;font-weight:700;color:var(--accent-d);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}}
+.discovery-scope button[aria-pressed="true"]{{background:var(--i-navy);color:#fff;border-color:var(--i-navy)}}
+.discovery-scope button:focus-visible,.copy-team-brief:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.discovery-controls{{display:grid;grid-template-columns:minmax(220px,2fr) minmax(140px,1fr) minmax(140px,1fr) auto;gap:10px;align-items:end}}
+.discovery-field{{display:grid;gap:5px;font-size:12px;font-weight:750;color:var(--muted);min-width:0}}
+.discovery-field input,.discovery-field select{{width:100%;min-width:0;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #a9aab5;border-radius:10px;min-height:44px;padding:9px 10px}}
+.discovery-field input:focus-visible,.discovery-field select:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+.discovery-reset{{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);border:1px solid var(--line);border-radius:10px;background:#fff;min-height:44px;padding:9px 12px;cursor:pointer}}
+.discovery-reset:hover{{background:var(--accent-soft)}}
+.discovery-status{{font-size:13px;color:var(--muted);margin:12px 0 0}}
+.discovery-empty{{padding:16px;border:1px dashed var(--line);border-radius:10px;font-size:13px;color:var(--muted);background:var(--paper)}}
+.archive-search-results{{margin:14px 0 18px}}
+.archive-results-list{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.history-hit{{display:grid;gap:5px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--ink);text-decoration:none}}
+.history-hit strong{{font-size:14px;line-height:1.5}}
+.history-hit small{{font-size:11px;color:var(--accent-d)}}
+.history-hit span{{font-size:12px;color:var(--muted);line-height:1.55}}
+.history-hit:hover,.history-hit:focus-visible{{border-color:var(--accent);outline-color:var(--accent)}}
+#archive-more{{font:inherit;margin:12px auto;display:block;cursor:pointer;padding:10px 16px;border:1px solid var(--accent);background:#fff;border-radius:99px;color:var(--accent-d)}}
+#archive-more[hidden],.archive-search-results[hidden],.discovery-empty[hidden],#brief-manual[hidden]{{display:none!important}}
+#brief-manual{{position:fixed;inset:auto 10px 15px;max-width:650px;margin:0 auto;padding:12px 16px;background:#fff;border:2px solid var(--accent);border-radius:14px;box-shadow:0 12px 38px rgba(0,0,0,.18);z-index:60}}
+#brief-manual p{{margin:0 0 8px;font-size:13px}}
+#brief-manual textarea{{width:100%;min-height:125px;font-size:13px;resize:vertical;border:1px solid var(--line);border-radius:8px;padding:10px}}
+#brief-manual-close{{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:7px 13px;cursor:pointer}}
+main#main .story[hidden],main#main section[hidden]{{display:none!important}}
+body.view-archive-search main#main > section[id^="sec"]{{display:none!important}}
+body.view-archive-search .top-stories,body.view-archive-search .thesis,
+body.view-archive-search .more-brief,body.is-filtering-news .top-stories,
+body.is-filtering-news .thesis,body.is-filtering-news .more-brief{{display:none!important}}
+@media (max-width:850px){{
+  .discovery-controls{{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .discovery-field:first-child{{grid-column:1/-1}}
+  .archive-results-list{{grid-template-columns:1fr}}
+}}
+@media (max-width:460px){{
+  .discovery{{padding:17px 14px;border-radius:16px}}
+  .discovery-controls{{gap:8px}}
+  .discovery-scope button{{font-size:12px}}
+}}
+@media print{{
+  .discovery,#archive-search-results,#brief-manual,.copy-team-brief{{display:none!important}}
+  body.view-archive-search main#main > section[id^="sec"]{{display:block!important}}
+}}
 /* ---- category headers ---- */
 section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 .cat-head{{display:flex;align-items:center;gap:14px;padding:15px 20px;border-radius:16px;color:#fff;margin:0 0 4px}}
@@ -2190,6 +2239,25 @@ footer b{{color:var(--ink)}}
 <div class="wrap">{thesis_html}{more_brief_html}</div>
 
 <main class="wrap" id="main">
+  <section class="discovery" id="news-explorer" aria-label="{html.escape(bi_attr('搜尋及篩選新聞','Search and filter news'))}">
+    <div class="discovery-head"><h2>{bi("探索新聞","Find intelligence")}</h2><p>{bi("關鍵字、主題、影響程度","Keyword · category · priority")}</p></div>
+    <div class="discovery-scope" role="group" aria-label="{html.escape(bi_attr('搜尋範圍','Search scope'))}">
+      <button id="scope-today" type="button" aria-pressed="true">{bi("今日新聞","Today's news")}</button>
+      <button id="scope-archive" type="button" aria-pressed="false">{bi("歷史新聞","All archives")}</button>
+    </div>
+    <div class="discovery-controls">
+      <label class="discovery-field" for="news-query">{bi("搜尋關鍵字","Search keywords")}<input id="news-query" type="search" autocomplete="off" data-placeholder-zh="例如：ChatGPT、歸因、Canva" data-placeholder-en="e.g. ChatGPT, attribution, Canva"></label>
+      <label class="discovery-field" for="news-section">{bi("新聞主題","Category")}<select id="news-section"><option value="all" data-zh="全部主題" data-en="All categories">全部主題</option>{''.join(f'<option value="{n}" data-zh="{html.escape(name, quote=True)}" data-en="{html.escape(SEC_EN.get(name,name), quote=True)}">{html.escape(name)}</option>' for n,name in enumerate(data["sections"]))}</select></label>
+      <label class="discovery-field" for="news-signal">{bi("重要程度","Priority")}<select id="news-signal"><option value="all" data-zh="全部重要程度" data-en="All priorities">全部重要程度</option><option value="impact" data-zh="影響生意" data-en="Business impact">影響生意</option><option value="act" data-zh="可即用" data-en="Ready to use">可即用</option><option value="watch" data-zh="要留意" data-en="Worth watching">要留意</option></select></label>
+      <button class="discovery-reset" id="news-reset" type="button">{bi("重設","Reset")}</button>
+    </div>
+    <p class="discovery-status" role="status" aria-live="polite" id="news-status">{bi("載入今日新聞…","Loading today's news…")}</p>
+    <p class="discovery-empty" id="news-empty" hidden>{bi("暫時搵唔到符合條件嘅新聞，試吓其他關鍵字或重設篩選。","No matching news. Try another keyword or reset the filters.")}</p>
+  </section>
+  <section class="archive-search-results" id="archive-search-results" hidden>
+    <div class="archive-results-list" id="archive-result-list"></div>
+    <button type="button" id="archive-more" hidden>{bi("顯示更多結果","Show more results")}</button>
+  </section>
 {sections_html}
 </main>
 
