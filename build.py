@@ -2362,6 +2362,18 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
 </div>
 
 <main class="wrap" id="main">
+  <div class="reading-toolbar" id="news-reading-mode">
+    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
+    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
+      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
+      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
+    </div>
+    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
+  </div>
+{sections_html}
+  <!-- Search is secondary to today's news: use the sticky search icon any time.
+       Its matching results render directly underneath this bottom tool, never
+       above the user's scroll position. -->
   <section class="discovery" id="news-explorer" aria-label="{html.escape(bi_attr('搜尋及篩選新聞','Search and filter news'))}">
     <div class="discovery-head"><h2>{bi("探索新聞","Find intelligence")}</h2><p>{bi("關鍵字、主題、影響程度","Keyword · category · priority")}</p></div>
     <div class="discovery-scope" role="group" aria-label="{html.escape(bi_attr('搜尋範圍','Search scope'))}">
@@ -2377,19 +2389,13 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
     <p class="discovery-status" role="status" aria-live="polite" id="news-status">{bi("載入今日新聞…","Loading today's news…")}</p>
     <p class="discovery-empty" id="news-empty" hidden>{bi("暫時搵唔到符合條件嘅新聞，試吓其他關鍵字或重設篩選。","No matching news. Try another keyword or reset the filters.")}</p>
   </section>
+  <section class="today-search-results" id="today-search-results" aria-label="{html.escape(bi_attr('今日新聞搜尋結果','Today search results'))}" hidden>
+    <div class="archive-results-list" id="today-result-list"></div>
+  </section>
   <section class="archive-search-results" id="archive-search-results" hidden>
     <div class="archive-results-list" id="archive-result-list"></div>
     <button type="button" id="archive-more" hidden>{bi("顯示更多結果","Show more results")}</button>
   </section>
-  <div class="reading-toolbar" id="news-reading-mode">
-    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
-    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
-      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
-      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
-    </div>
-    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
-  </div>
-{sections_html}
 </main>
 
 <footer><div class="wrap">
