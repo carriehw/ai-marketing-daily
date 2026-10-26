@@ -223,7 +223,17 @@ def render(source,locale,kind,base,date,issue_title,issue_title_en,issue_count):
                     if locale=="zh-hans":item["headline"]=to_hans(item.get("headline",""))
             replace_script(script,json.dumps(data,ensure_ascii=False,separators=(",",":")).replace("<",r"\u003c"))
         except (ValueError,TypeError) as exc:
-            fail("Broken JSON-LD: "+str(exc))
+            # Some 2026 legacy archive templates shipped malformed JSON-LD.
+            # They remain readable articles: replace only broken machine metadata
+            # with a minimal, truthful CollectionPage based on the dated archive.
+            # Never repair a broken field by inventing title, publisher or dates.
+            print(f"WARN {date}: legacy JSON-LD invalid ({exc}); replaced with minimal CollectionPage")
+            fallback={
+                "@context":"https://schema.org","@type":"CollectionPage",
+                "name":title_value,"url":new_url,
+                "datePublished":date,"inLanguage":[LOCALES[locale]]
+            }
+            replace_script(script,json.dumps(fallback,ensure_ascii=False,separators=(",",":")))
     if locale=="zh-hans":
         translate_hans(soup)
         # Re-set language after translation of JS and source body.
