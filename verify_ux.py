@@ -105,7 +105,7 @@ def main():
         failures.append("mobile category control not visible in mobile stylesheet")
 
     # Check syntax of browser scripts with Node if installed, not raw HTML comments.
-    scripts = re.findall(r"<script\\b([^>]*)>(.*?)</script>", content, re.S)
+    scripts = re.findall(r"<script\b([^>]*)>(.*?)</script>", content, re.S)
     for index, (attrs, script) in enumerate(scripts):
         if "application/json" in attrs or "application/ld+json" in attrs:
             continue
