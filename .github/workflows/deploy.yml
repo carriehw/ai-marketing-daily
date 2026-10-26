@@ -12,9 +12,11 @@ permissions:
   pages: write
   id-token: write
 
+# PR checks never hold the production deploy hostage. A new commit cancels
+# only the older checks of the same PR, never an active main-site deployment.
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('reader-pr-{0}', github.event.pull_request.number) || 'pages-main' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   editorial-build:
