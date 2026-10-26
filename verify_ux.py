@@ -78,7 +78,8 @@ def main():
         failures.append(f"article count mismatch: {len(inv.articles)} != {n}")
     if len(inv.share_buttons) != n:
         failures.append(f"share/copy menu count mismatch: {len(inv.share_buttons)} != {n}")
-    if content.count('data-action="copy"') != n or content.count('data-action="share"') != n:
+    if (len(re.findall(r'<button\\b[^>]*data-action="copy"', content)) != n or
+        len(re.findall(r'<button\\b[^>]*data-action="share"', content)) != n):
         failures.append("both share and copy must be accessible from every single menu")
     if 'class="copy-team-brief"' in content or 'class="story-share"' in content:
         failures.append("redundant old card buttons must be removed")
