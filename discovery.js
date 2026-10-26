@@ -11,6 +11,7 @@
   catch (err) { console.warn('News discovery data unavailable', err); return; }
 
   const siteBase = new URL(edition.site_base, location.origin);
+  const editionBase = new URL(edition.edition_base || edition.site_base, location.origin);
   const byId = new Map(edition.items.map(item => [item.id, item]));
   const input = document.getElementById('news-query');
   const category = document.getElementById('news-section');
@@ -39,7 +40,7 @@
   const cards = Array.from(document.querySelectorAll('main#main article.story'));
   const sections = Array.from(document.querySelectorAll('main#main section[id^="sec"]'));
   const archiveUrl = (path) => {
-    const url = new URL('archive/' + path, siteBase);
+    const url = new URL('archive/' + path, editionBase);
     url.searchParams.set('lang', lang());
     return url.href;
   };
@@ -142,7 +143,9 @@
     if (historical || archiveError) return renderHistory();
     if (!request) {
       setStatus(tr('正在載入歷史新聞目錄…', 'Loading archive search index…'));
-      request = fetch(new URL('archive/search-index.json', siteBase), {credentials:'omit'})
+      const searchPath = document.documentElement.lang === 'zh-Hans'
+        ? 'archive/search-index-zh-hans.json' : 'archive/search-index.json';
+      request = fetch(new URL(searchPath, siteBase), {credentials:'omit'})
         .then(response => {
           if (!response.ok) throw new Error('Archive index HTTP ' + response.status);
           return response.json();
@@ -225,9 +228,12 @@
     dummy.remove();
     return success;
   }
-  document.querySelectorAll('.copy-team-brief').forEach(button => {
+  document.querySelectorAll('.story-actions').forEach(menu => {
+    const button = menu.querySelector('[data-action="copy"]');
+    if (!button) return;
     button.addEventListener('click', async () => {
-      const item = byId.get(button.dataset.story);
+      menu.open = false;
+      const item = byId.get(menu.dataset.story);
       if (!item) return;
       const contents = formatTeamBrief(item);
       const ok = await writeClipboard(contents);
