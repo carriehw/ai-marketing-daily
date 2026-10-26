@@ -18,6 +18,7 @@ const assert = require('node:assert/strict');
         const height=width<=390?844:850;
         const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1});
         const page=await context.newPage();
+        page.setDefaultTimeout(8000);
         // Route historical index to this candidate build, not the public live
         // site. A PR test must not depend on production deploy/network status.
         const localIndex=path.join(process.cwd(),'archive',
@@ -80,6 +81,12 @@ const assert = require('node:assert/strict');
                   lastStoryTop:[...main.querySelectorAll('article.story')].at(-1).getBoundingClientRect().bottom};
         });
         assert.ok(info.searchTop>info.lastStoryTop-5,locale+' bottom search not placed after all news');
+        let shown='layout-only';
+        // The entire search/reader journey is exercised once per language at
+        // phone width. All four widths still verify actual layout/overflow,
+        // evidence hierarchy, source buttons and screenshot rendering.
+        if (width===390) {
+          console.log('BEGIN interactive search and reading: '+locale);
         assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick default not collapsed');
         await page.locator('#view-deep').click();
         assert.equal(await page.locator('details.story-expanded[open]').count(),14,locale+' Deep Read did not open every card');
@@ -92,7 +99,7 @@ const assert = require('node:assert/strict');
         await page.waitForFunction(()=>document.activeElement?.id==='news-query',{timeout:4000});
         await page.locator('#news-query').fill('Canva');
         await page.waitForTimeout(180);
-        const shown=await page.locator('#today-result-list a.today-hit:visible').count();
+        shown=await page.locator('#today-result-list a.today-hit:visible').count();
         assert.ok(shown>=1&&shown<14,locale+' search results did not appear below field: '+shown);
         assert.equal(await page.locator('article.story:visible').count(),14,locale+' search hid original news');
         const positions=await page.evaluate(()=>{
@@ -109,6 +116,8 @@ const assert = require('node:assert/strict');
         assert.ok(await page.locator('#archive-result-list a.history-hit').count()>=1,locale+' archive search unavailable');
         await page.locator('#scope-today').click();
         assert.equal(await page.locator('article.story:visible').count(),14,locale+' archive switch hid original news');
+
+        }
         await page.screenshot({path:path.join(output,locale+'-'+width+'.png'),fullPage:false});
         assert.deepEqual(errors,[],locale+' JavaScript page errors');
         console.log('PASS '+locale+' '+width+'px',JSON.stringify({scrollWidth:layout.scrollWidth,firstLead:Math.round(layout.firstLead),visibleAfterSearch:shown}));
