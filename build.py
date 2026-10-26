@@ -2319,6 +2319,13 @@ body.view-archive-search .more-brief,
 body.is-filtering-news .top-stories,
 body.is-filtering-news .thesis,
 body.is-filtering-news .more-brief{{display:initial}}
+/* On 320px devices keep search, archive, sections and language visible.
+   Per-article share is always available; the redundant global share hides. */
+@media(max-width:360px){{
+  #share{{display:none!important}}
+  .mast-r{{gap:4px}}
+  .mobile-category-menu>summary{{min-width:50px;padding:7px 8px}}
+}}
 /* Print stays a readable editorial copy, not a duplicated search results list. */
 @media print{{
   .today-search-results,.archive-search-results,.discovery{{display:none!important}}
