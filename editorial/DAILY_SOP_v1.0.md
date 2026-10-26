@@ -1,0 +1,118 @@
+# AI Marketing Daily — Daily Operating SOP v1.0
+
+**Owner:** Carrie Hui · **Effective:** 2026-10-26 · **Timezone:** Asia/Hong_Kong  
+**Authority:** Read [Editorial Constitution v1.0](./EDITORIAL_CONSTITUTION_v1.0.md) first; this SOP is subordinate to it.  
+**Repository:** `carriehw/ai-marketing-daily` · **Live:** https://carriehw.github.io/ai-marketing-daily/?lang=zh
+
+## A. Daily run contract (outcome, not just attempts)
+
+Produce a verified **HKT-dated edition of the website** with matching content, archives and distribution assets **only when the entire pipeline can be completed safely**. Report the outcome explicitly as one of:
+- **PUBLISHED & VERIFIED** — exact live URL, HKT date, number of articles, source-check coverage, archive link, tested build/revision evidence.
+- **ALREADY CURRENT — AUDITED** — today's edition already live; no duplicate issue created; report material corrections, if any.
+- **DRAFT / HELD** — evidence, editorial or approval gates not passed; no claim of publication.
+- **FAILED** — tool, access, build, deploy or live-verification failure; report the failing step, last confirmed live date, remediation and whether readers may see an old issue.
+
+**Never report “success” solely because GitHub accepted a commit or the home page returned HTTP 200.**
+
+## B. Preflight: inspect and avoid collisions
+
+1. Resolve **today's date and edition weekday in HKT**, not from UTC system time.
+2. Read the current Constitution, this SOP, `data.json`, `seen-stories.json` and `seen-urls.json`, the current site, and recent GitHub commits. Determine whether another editor/routine **already prepared or published today's edition**.
+3. Check repository write access and actual available execution tools. GitHub Pages `deploy.yml` **deploys committed artifacts**; it does **not itself collect news or execute the Python build scripts**. An automation with only permission to write JSON is **not** sufficient to publish a new issue.
+4. If current live edition already has today's HKT date, **audit instead of replacing it blindly**. Make only separately verified corrections where safe and traceable.
+5. If another update is in progress or newer repository files appear during editing, refresh the upstream state before any write; avoid overwriting a concurrent run.
+
+## C. Discovery and shortlist
+
+Search selectively across:
+- **Primary:** OpenAI, Google/Google Ads, Meta, Apple WebKit, Microsoft, Anthropic, TikTok, Tencent, ByteDance, Alibaba, LinkedIn, regulatory/industry bodies, original research and public filings.
+- **Independent / trade reporting:** reputable global/APAC news outlets, Adweek, Campaign Asia, Digiday, AdExchanger, Search Engine Journal, TechCrunch, Marketing-Interactive, SocialBeta and credible China-market outlets as appropriate.
+
+This is an **illustrative watch list**, never a blanket credibility endorsement. Capture source publication date and actual event date; exclude repeating mere rewrites of news already covered. Track true developments as follow-ups.
+
+Look beyond model-launch hype: media-buying rules, search and measurement, brand safety, consumer behaviour, creative workflows, CRM, privacy, retail media, AI-led search and agency economics.
+
+## D. Verification: hard stop for unsupported facts
+
+For every candidate likely to appear, build an evidence record as in [evidence-template.json](./evidence-template.json). Record:
+- Stable story ID; exact working source URLs and source type; event date, publication/update date and HKT verification timestamp.
+- **Atomic pivotal claims**, verbatim evidence locator/excerpt, support strength (`verified` / `attributed` / `uncertain` / `rejected`), region/rollout caveats and whether the original text was accessible.
+- A second-pass challenge to names, product version, money and units, percentages, samples, dates, causal claims, status/timing and headlines.
+- Whether corroboration is required/available and outstanding ambiguities.
+
+**Remove or hold unsupported pivotal claims.** No unverifiable quote, made-up source, assertion solely from an AI-generated summary, or extrapolated performance guarantee. For higher-risk items requiring human judgement, mark `needs_human_review` and do not auto-publish that item.
+
+## E. Score, select, and package
+
+1. Rate *already verified* candidates on Constitution's 100-point marketer-relevance rubric. Keep scoring rationale; don't pad categories.
+2. Nominate up to three lead stories, verified main stories and optional Radar, with a clear editorial takeaway.
+3. Each main story has: **What happened / Why marketers care / Recommended action / What remains uncertain if material / Source + actual date.**
+4. Separate **Impact** (High, Medium, Low) from **Response** (Act Now, Test, Monitor, Inform). Existing website fields `action` (`影響生意`, `可即用`, `要留意`) remain compatible until a tested UI/schema migration; map without silently changing meaning.
+5. Headlines must not upgrade a company's claim into an established independent fact or upgrade a pilot to general availability.
+6. Prepare `title`, `summary`, `highlights`, `why`, and bilingual `*_en` with identical facts and numbers. Optional `followup` covers **what actually changed**; `pattern` must be identifiable as analysis.
+7. Reader-facing detail adds genuine substance rather than repeating highlights or making an unsourced mini-essay.
+
+## F. Editing and independent review
+
+- **First pass — Researcher:** source and evidence collection.
+- **Second pass — Fact Checker:** reopen primary source(s) independently; explicitly compare headline and material claims with evidence. Do not accept the first AI writer's confidence as verification.
+- **Final pass — Senior Marketing Editor:** assess relevance, commercial reasoning, language, sensible actions, title accuracy, share utility and consistency.
+- **Safety exceptions:** legal/regulatory interpretation, market-moving information, exceptional performance claims, unresolved conflicting reporting, major reputational allegations and unsupported high-impact news: human editorial review or hold.
+
+If evidence is missing, do not populate a “verified” field for appearance's sake. The site must not claim independent verification that didn't occur.
+
+## G. Build and commit (existing repository mechanics)
+
+Current known assets include:
+`data.json`, `build.py`, `build_email.py`, `build_archive.py`, `build_ogimage.py`, `verify_email.py`, `verify_live.py` and archive manifests.
+
+1. Re-read the current source files and their actual command-line instructions before execution; preserve section labels, branding, analytics, link anchors and existing hard-won presentation safeguards.
+2. **Never update only `data.json` and call it a published website.** The repository's Pages deploy copies files; rendered `index.html`, archive, and distribution assets must be rebuilt and committed consistently.
+3. Keep article evidence records linked to the issued edition. Capture revision/commit SHA.
+4. Run all compatible local checks and builds in the order required by the CURRENT code; don't guess script order. Verify no unintended changes to older archives, analytics, fonts, translated copy, share graphics, EDM and shared URLs.
+5. Upload/commit coherently. A branch/PR is appropriate for structural code or policy changes; content publication can follow the established safe path when all checks pass.
+6. Do not modify active production workflows, disable analytics, replace historical archives, or introduce secrets without explicit security review.
+
+**Known mismatch to resolve:** current `verify_live.py` expects at least eight story cards, whereas this Constitution explicitly permits fewer verified stories. Update and test this guard before deliberately issuing a shorter edition; never add filler to satisfy a number.
+
+## H. Verification after publication
+
+Check with cache bypass where possible:
+- Actual live `index.html` date and article fingerprint match the newly built edition.
+- Actual live `archive/YYYY-MM-DD.html` exists and shows the intended HKT date.
+- `archive/manifest.json` lists today with no loss of past archives; archive directory lists the issue.
+- Primary source links point to relevant material, bilingual content and card anchors work, social share preview and fonts load.
+- The delivered EDM (if in scope) is consistent with the website. Run `verify_email.py` if it is being generated.
+- Use `verify_live.py` where executable; failing checks are **not** an editorial success.
+- Correctness of today's published **news** must be checked separately from these technical verifications.
+
+If any check fails, mark **FAILED**, preserve previous valid edition where possible, explain the last confirmed live date. Report errors immediately.
+
+## I. Corrections and high-impact alerts
+
+- Log `Correction`, `Update`, or `Retraction` as defined in the Constitution, with affected headline, exact change, source and GitHub revision.
+- An active factual error in a top story is an editorial incident. Prioritise a corrected live article, not a silent rewrite.
+- Avoid declaring dramatic financial, legal or brand-safety assertions without evidence. Place uncertainty in plain sight.
+
+## J. Daily status report format (to Carrie)
+
+```
+AI Marketing Daily｜YYYY-MM-DD (HKT)
+Status: PUBLISHED & VERIFIED / ALREADY CURRENT — AUDITED / DRAFT — HELD / FAILED
+Live edition: [URL + verified date]  |  Archive: [URL]
+Selected: N published / N held  |  Top stories: [up to three short headings]
+Verification: [material claims checked, notable qualifications]
+Corrections: [none / dated change & evidence]
+Marketing angle: [one short practical observation]
+Blocker / next step: [only if needed]
+GitHub revision: [SHA / not committed]
+```
+
+## K. Future improvement, not falsely reported as deployed
+
+- Build a machine-enforced fact-check artifact and CI publication blocker. Documentation and templates are **not by themselves** a functioning facts-checking engine.
+- Establish stable article IDs and a corrections index, richer engagement instrumentation and Team Brief copy/share controls.
+- Perform a live trial run with failure-case controls before claiming end-to-end autonomous publication.
+- Keep existing weekly AI social-content preparation separate. Repurpose **verified** stories only after the site edition itself passes review.
+
+**Revision:** v1.0 · **2026-10-26**.
