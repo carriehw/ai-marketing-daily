@@ -2201,6 +2201,7 @@ footer b{{color:var(--ink)}}
       <summary>{bi("分類", "Sections")}</summary>
       <nav class="mobile-cat-list" aria-label="{html.escape(bi_attr('跳至新聞分類', 'Jump to news category'))}">{nav}</nav>
     </details>
+    <a class="top-search" href="#news-explorer" aria-label="{html.escape(bi_attr('搜尋新聞', 'Search news'))}" title="{html.escape(bi_attr('搜尋新聞', 'Search news'))}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></a>
     <!-- Archive and Share sit OUTSIDE .navlinks. .navlinks is the horizontally
          scrolling category strip, and a control placed inside it scrolls away with
          the categories: measured at 1280px, Share's right edge landed at x=1455 on
@@ -2218,6 +2219,7 @@ footer b{{color:var(--ink)}}
 </div></div></div>
 
 <header class="hero"><div class="wrap">
+  <div class="hero-feature-grid"><div class="hero-intro">
   <div class="eyebrow">{bi("每日情報", "Daily Brief")}　·　{bi(date_disp, date_disp_en)}</div>
   <h1>{_h1(HEADLINE, HEADLINE_EN)}</h1>
   <p class="hero-sub">{bi(STANDFIRST, STANDFIRST_EN)}</p>
@@ -2227,11 +2229,11 @@ footer b{{color:var(--ink)}}
     <span>{bi(f"約 {READ_MIN} 分鐘讀完", f"{READ_MIN}-minute read")}</span>
     <span>{bi("🟢 即用　·　🟡 留意　·　🟣 影響生意", "🟢 Act · 🟡 Watch · 🟣 Business impact")}</span>
   </div>
-  {top3_html}
   <div class="byline">
     <span class="who">{bi("主編：" + BYLINE, "Curated by " + BYLINE)}</span><span class="dot">·</span>
     <span>{bi(BYLINE_ROLE, BYLINE_ROLE_EN)}</span>{('<span class="dot">·</span>' + _weekly_link) if _weekly_link else ''}{('<span class="dot">·</span>' + _li_link) if _li_link else ''}
-  </div>
+  </div></div>
+  {top3_html}</div>
   <!-- The .heroacts row is gone. It held "分享給同事" and "📚 歷史存檔" — and the
        sticky topbar already carries an Archive pill, so BOTH buttons were duplicates
        of controls one scroll-line above them, costing first-screen space on every
@@ -2257,11 +2259,13 @@ footer b{{color:var(--ink)}}
     </p>
     <button id="a2hs-x" type="button" aria-label="{html.escape(bi_attr('關閉這個提示', 'Dismiss this tip'))}">✕</button>
   </div>
-  <div class="legend"><span class="lg"><span class="signal act">{bi("可即用", "Ready to use")}</span>{bi("今天可用／節省工時", "try today / save time")}</span><span class="lg"><span class="signal watch">{bi("要留意", "Worth watching")}</span>{bi("平台或趨勢變動", "platform / trend shift")}</span><span class="lg"><span class="signal impact">{bi("影響生意", "Business impact")}</span>{bi("代理商生態／客戶／法規", "agency / client / compliance")}</span></div>
-  <div class="stats">{stats}</div>
 </div></header>
 
-<div class="wrap">{thesis_html}{more_brief_html}</div>
+<div class="wrap post-hero-notes">
+  <details class="edition-notes"><summary>{bi("今日策略觀察與延伸摘要", "Editorial context & more highlights")}</summary>
+    {thesis_html}{more_brief_html}
+  </details>
+</div>
 
 <main class="wrap" id="main">
   <section class="discovery" id="news-explorer" aria-label="{html.escape(bi_attr('搜尋及篩選新聞','Search and filter news'))}">
@@ -2283,6 +2287,14 @@ footer b{{color:var(--ink)}}
     <div class="archive-results-list" id="archive-result-list"></div>
     <button type="button" id="archive-more" hidden>{bi("顯示更多結果","Show more results")}</button>
   </section>
+  <div class="reading-toolbar" id="news-reading-mode">
+    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
+    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
+      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
+      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
+    </div>
+    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
+  </div>
 {sections_html}
 </main>
 
