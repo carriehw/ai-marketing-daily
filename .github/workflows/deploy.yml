@@ -60,6 +60,9 @@ jobs:
           python build_search_index.py --self-test
           PYTHONIOENCODING=utf-8 python build_email.py
           python verify_email.py
+          # Chinese HTML + RSS bridge; runs only after editorial evidence passes
+          PYTHONIOENCODING=utf-8 python build_email_zh.py
+          python -m unittest -q test_email_zh
           python verify_ux.py --data data.json --html index.html
           node --check discovery.js
           python verify_discovery.py --self-test
@@ -76,6 +79,10 @@ jobs:
           test -s archive/search-index.json
           test -s discovery.js
           test -s email.html
+          test -s email-zh.html
+          test -s email-zh-subject.txt
+          test -s edm/feed.xml
+          test -s edm/manifest.json
           python - <<'PY'
           import json
           from pathlib import Path
@@ -97,7 +104,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html archive/ email.html email-subject.txt
+          git add index.html archive/ email.html email-subject.txt email-zh.html email-zh-subject.txt edm/
           if ! git diff --cached --quiet; then
             git commit -m "chore(build): regenerate verified issue ${{ steps.edition.outputs.date }} [skip ci]"
             git push origin HEAD:main
