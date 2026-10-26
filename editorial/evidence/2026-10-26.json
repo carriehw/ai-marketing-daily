@@ -564,5 +564,21 @@
       "official_source": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/"
     }
   ],
-  "release_status": "pending_live_validation"
+  "release_status": "published_verified",
+  "release": {
+    "run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40265724235",
+    "live_verified_at_hkt": "2026-10-26T11:46:58+08:00",
+    "live_checks": [
+      "homepage byte-for-byte match",
+      "HKT edition date",
+      "archive issue HTTP 200 dated",
+      "manifest 78 issues including today",
+      "fonts",
+      "share image",
+      "counter endpoint"
+    ],
+    "published_story_count": 14,
+    "build_commit": "3a2a8b2336",
+    "human_semantic_review_note": "This is an editorial source-based check; automated code enforces evidence presence, structural agreement and release artifacts, not semantic truth from a webpage."
+  }
 }
