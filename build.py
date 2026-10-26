@@ -2435,6 +2435,45 @@ if(mobileCategories){{
   document.addEventListener('click',e=>{{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;}});
 }}
 setLang(curLang()); // sync button highlight with the pre-paint language
+/* Reading preference is session-scoped: Quick Scan is the accessible default,
+   Deep Read opens published analysis, each card can still expand individually. */
+(function(){{
+  const quick=document.getElementById('view-quick');
+  const deep=document.getElementById('view-deep');
+  const cards=[...document.querySelectorAll('details.story-expanded')];
+  if(!quick||!deep||!cards.length)return;
+  function apply(mode,save){{
+    const expanded=mode==='deep';
+    cards.forEach(d=>{{d.open=expanded}});
+    quick.setAttribute('aria-pressed',expanded?'false':'true');
+    deep.setAttribute('aria-pressed',expanded?'true':'false');
+    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
+    if(save){{try{{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}}catch(e){{}}}}
+  }}
+  quick.addEventListener('click',()=>apply('quick',true));
+  deep.addEventListener('click',()=>apply('deep',true));
+  let saved='quick';
+  try{{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}}catch(e){{}}
+  apply(saved==='deep'?'deep':'quick',false);
+  const search=document.querySelector('.top-search');
+  if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{{
+    try{{document.getElementById('news-query').focus({{preventScroll:true}})}}catch(e){{}}
+  }}));
+  let printState=null;
+  addEventListener('beforeprint',()=>{{
+    const note=document.querySelector('.edition-notes');
+    printState={{cards:cards.map(d=>d.open),notes:note?note.open:null}};
+    cards.forEach(d=>{{d.open=true}});
+    if(note)note.open=true;
+  }});
+  addEventListener('afterprint',()=>{{
+    if(!printState)return;
+    cards.forEach((d,i)=>{{d.open=!!printState.cards[i]}});
+    const note=document.querySelector('.edition-notes');
+    if(note&&printState.notes!==null)note.open=printState.notes;
+    printState=null;
+  }});
+}})();
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}
 function languageShareUrl(storyId){{
   // A shared article points to its permanent edition, not tomorrow's homepage.
