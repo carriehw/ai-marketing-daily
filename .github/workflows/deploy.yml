@@ -62,6 +62,7 @@ jobs:
           python verify_email.py
           python verify_ux.py --data data.json --html index.html
           node --check discovery.js
+          python verify_discovery.py --self-test
           python verify_discovery.py
 
       - name: Check generated artifacts before deploy
