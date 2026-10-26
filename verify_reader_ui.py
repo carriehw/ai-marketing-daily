@@ -41,6 +41,16 @@ for language in ("en","zh-hant","zh-hans"):
             issues.append(f"{label}: editorial context not hidden behind optional disclosure")
         if not soup.select_one("#news-explorer") or not soup.select_one("#news-reading-mode"):
             issues.append(f"{label}: discovery or reading controls not found")
+        main=soup.select_one("main#main")
+        direct=[child for child in main.children if getattr(child,"name",None)]
+        news=[child for child in direct if child.name=="section" and (child.get("id","").startswith("sec"))]
+        search=soup.select_one("main#main > section#news-explorer")
+        if not search or not news or direct.index(search)<=max(direct.index(child) for child in news):
+            issues.append(f"{label}: news must appear before search")
+        if not soup.select_one("#today-search-results #today-result-list"):
+            issues.append(f"{label}: no in-place today's search results")
+        if not soup.select_one("#archive-search-results #archive-result-list"):
+            issues.append(f"{label}: archive search results missing")
         if not soup.select_one('#view-quick[aria-pressed="true"]'):
             issues.append(f"{label}: Quick Scan should be active by default")
         if not soup.select_one('#view-deep[aria-pressed="false"]'):
@@ -63,8 +73,16 @@ for language in ("en","zh-hant","zh-hans"):
                 issues.append(f"{label}: published key points/insight not preserved {i}")
             if len(article.select(".story-foot details.story-actions"))!=1:
                 issues.append(f"{label}: share/copy controls lost {i}")
-            if not article.select_one(".story-foot .readsrc[href^='https://']"):
+            if len(article.select(".story-foot .readsrc[href^='https://']"))!=1:
                 issues.append(f"{label}: original source link lost {i}")
+            if article.select(".story-foot .evidence-link,.story-foot .signal,.story-foot .chip"):
+                issues.append(f"{label}: redundant footer metadata or evidence still renders as CTA {i}")
+            if len(article.select(".story-taxonomy .signal, .story-taxonomy .region"))!=2:
+                issues.append(f"{label}: classification tags missing from story context {i}")
+            if len(article.select(".story-foot > a, .story-foot > details"))!=2:
+                issues.append(f"{label}: footer must contain only two direct actions {i}")
+            if article.select_one(".evidence-link") and not article.select_one(".story-meta .evidence-link"):
+                issues.append(f"{label}: supporting-source link not adjacent to publisher {i}")
         css="\n".join(x.get_text() for x in soup.select("style"))
         needed=(".hero-feature-grid{display:grid", ".scan-brief{display:grid",
                 ".story-expanded>summary{", ".reading-toolbar{display:flex",
