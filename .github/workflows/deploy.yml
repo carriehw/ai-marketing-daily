@@ -1,12 +1,14 @@
-name: Deploy to GitHub Pages
+name: Verified AI Marketing Daily Build & Deploy
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -15,20 +17,114 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  editorial-build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout latest committed source and archive
         uses: actions/checkout@v4
-      - name: Setup Pages
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Resolve actual Hong Kong edition date
+        id: edition
+        shell: bash
+        run: |
+          DATE="$(TZ=Asia/Hong_Kong date +%F)"
+          DATA_DATE="$(python -c 'import json;print(json.load(open("data.json",encoding="utf-8"))["date"])')"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "Current HKT date: $DATE, issue date: $DATA_DATE"
+          test "$DATA_DATE" = "$DATE"
+
+      - name: Self-test editorial gate (positive and negative controls)
+        run: python verify_editorial.py --self-test
+
+      - name: Enforce editorial evidence and 10-news floor
+        run: python verify_editorial.py --today "${{ steps.edition.outputs.date }}"
+
+      - name: Validate publication dates and story chronology
+        run: python verify_dates.py --today "${{ steps.edition.outputs.date }}"
+
+      - name: Build site, archive and bilingual email from same data
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONIOENCODING=utf-8 python build.py
+          PYTHONIOENCODING=utf-8 python build_archive.py
+          PYTHONIOENCODING=utf-8 python build_email.py
+          python verify_email.py
+
+      - name: Check generated artifacts before deploy
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="${{ steps.edition.outputs.date }}"
+          test -s index.html
+          test -s "archive/$DATE.html"
+          test -s archive/manifest.json
+          test -s email.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data.json").read_text(encoding="utf-8"))
+          date=data["date"]
+          home=Path("index.html").read_text(encoding="utf-8")
+          arch=Path(f"archive/{date}.html").read_text(encoding="utf-8")
+          manifest=json.loads(Path("archive/manifest.json").read_text(encoding="utf-8"))
+          assert date in home and date in arch
+          assert any(entry.get("date")==date for entry in manifest)
+          assert len(data["items"])>=10
+          print(f"PASS built and archived {len(data['items'])} stories on {date}")
+          PY
+
+      - name: Commit generated edition artifacts
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html archive/ email.html email-subject.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(build): regenerate verified issue ${{ steps.edition.outputs.date }} [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Already built; no generated artifacts changed"
+          fi
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Upload verified site artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
       - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request'
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify production site really displays this edition
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          DATE="${{ steps.edition.outputs.date }}"
+          for attempt in 1 2 3 4 5 6; do
+            echo "Live validation attempt $attempt on HKT edition $DATE"
+            if python verify_live.py --today "$DATE" --dir .; then
+              echo "PUBLISHED & VERIFIED: $DATE"
+              exit 0
+            fi
+            if [ "$attempt" -lt 6 ]; then sleep 20; fi
+          done
+          echo "::error::Production live validation failed. Do not report as published."
+          exit 1
