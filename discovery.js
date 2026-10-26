@@ -22,13 +22,16 @@
   const status = document.getElementById('news-status');
   const archiveBox = document.getElementById('archive-search-results');
   const archiveList = document.getElementById('archive-result-list');
+  const todayBox = document.getElementById('today-search-results');
+  const todayList = document.getElementById('today-result-list');
   const more = document.getElementById('archive-more');
   const empty = document.getElementById('news-empty');
   const manualBox = document.getElementById('brief-manual');
   const manualInput = document.getElementById('brief-manual-text');
   const manualClose = document.getElementById('brief-manual-close');
   if (!input || !category || !signal || !scopeToday || !scopeArchive ||
-      !reset || !status || !archiveBox || !archiveList || !more || !empty) return;
+      !reset || !status || !archiveBox || !archiveList || !todayBox ||
+      !todayList || !more || !empty) return;
 
   let mode = 'today';
   let historical = null, archiveError = false, visibleLimit = 24, request = null;
@@ -38,7 +41,6 @@
   const qs = (key) => normal(key).split(/\s+/).filter(Boolean);
   const hasAll = (hay, terms) => terms.every(term => hay.includes(term));
   const cards = Array.from(document.querySelectorAll('main#main article.story'));
-  const sections = Array.from(document.querySelectorAll('main#main section[id^="sec"]'));
   const archiveUrl = (path) => {
     const url = new URL('archive/' + path, editionBase);
     url.searchParams.set('lang', lang());
@@ -59,35 +61,54 @@
     mode = where;
     scopeToday.setAttribute('aria-pressed', where === 'today' ? 'true' : 'false');
     scopeArchive.setAttribute('aria-pressed', where === 'archive' ? 'true' : 'false');
-    document.body.classList.toggle('view-archive-search', where === 'archive');
     panel.classList.toggle('is-history', where === 'archive');
     archiveBox.hidden = where !== 'archive';
+    todayBox.hidden = where !== 'today' || !filtersActive();
+    empty.hidden = true;
     if (where === 'archive') ensureHistory();
     else render();
   };
   function renderToday() {
     const terms = qs(input.value);
     const sec = category.value, sig = signal.value;
-    let count = 0;
-    cards.forEach(el => {
-      const item = byId.get(el.id);
-      const combined = item ? normal([
+    const active = !!filtersActive();
+    todayList.replaceChildren();
+    todayBox.hidden = !active;
+    archiveBox.hidden = true;
+    empty.hidden = true;
+    if (!active) {
+      setStatus(tr('今日共有 ' + edition.items.length + ' 則新聞。輸入關鍵字或選擇分類開始搜尋。',
+                   edition.items.length + ' stories today. Enter a keyword or choose a filter.'));
+      return;
+    }
+    const results = edition.items.filter(item => {
+      const combined = normal([
         item.title, item.title_en, item.summary, item.summary_en,
-        item.why, item.why_en, item.source,
-      ].join(' ')) : '';
-      const match = !!item && (sec === 'all' || String(item.section) === sec)
+        item.why, item.why_en, item.source
+      ].join(' '));
+      return (sec === 'all' || String(item.section) === sec)
         && (sig === 'all' || item.signal === sig)
         && hasAll(combined, terms);
-      el.hidden = !match;
-      if (match) count++;
     });
-    sections.forEach(el => {
-      el.hidden = !el.querySelector('article.story:not([hidden])');
-    });
-    document.body.classList.toggle('is-filtering-news', !!filtersActive());
-    empty.hidden = count !== 0;
-    setStatus(tr(`找到 ${count} 則今日新聞（共 ${cards.length} 則）`,
-                 `${count} of ${cards.length} today's stories`));
+    for (const item of results) {
+      const target = document.getElementById(item.id);
+      if (!target) continue;
+      const link = document.createElement('a');
+      link.className = 'history-hit today-hit';
+      link.href = '#' + encodeURIComponent(item.id);
+      const title = document.createElement('strong');
+      title.textContent = lang() === 'en' ? item.title_en : item.title;
+      const meta = document.createElement('small');
+      meta.textContent = item.source + ' · ' +
+        tr('點擊前往完整新聞', 'Jump to full story');
+      const excerpt = document.createElement('span');
+      excerpt.textContent = lang() === 'en' ? item.summary_en : item.summary;
+      link.append(title, meta, excerpt);
+      todayList.appendChild(link);
+    }
+    empty.hidden = results.length !== 0;
+    setStatus(tr('找到 ' + results.length + ' 則今日新聞（共 ' + edition.items.length + ' 則），結果顯示如下。',
+                 results.length + ' of ' + edition.items.length + ' stories. Results appear below.'));
   }
   function archiveRows() {
     if (!historical) return [];

@@ -1068,7 +1068,7 @@ for s in data["sections"]:
         evidence_url = html.escape(str(it.get("verification_url", "")).strip())
         primary_link = (
             f'<a class="evidence-link" href="{evidence_url}" target="_blank" rel="noopener noreferrer">'
-            f'{bi("核實依據 ↗", "Evidence ↗")}</a>'
+            f'{bi("補充來源 ↗", "Supporting source ↗")}</a>'
             if evidence_url.startswith(("https://", "http://")) and evidence_url != url else ""
         )
         act = it.get("action", "要留意")
@@ -1179,12 +1179,13 @@ for s in data["sections"]:
                 f'{bi(it.get("why",""),it.get("why_en"))}</p></div>')
 
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
-<div class="story-meta"><span class="src">{src}</span>{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
+<div class="story-meta"><span class="src">{src}</span>{primary_link}{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
+<div class="story-taxonomy"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></div>
 {scan}
 <details class="story-expanded"><summary>{bi("深入閱讀：重點及分析", "Deep read: key points and analysis")}</summary>
 <div class="story-expanded-body">{fu}{body}{take}{pat}{detail}</div></details>
-<div class="story-foot"><span class="foot-tags"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></span><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享／複製", "Share / Copy")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details>{primary_link}<a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 →", "Read original →")}</a></div>
+<div class="story-foot"><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 ↗", "Read original ↗")}</a><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享", "Share")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details></div>
 </article>''')
     cards[s] = "\n".join(out)
 
@@ -2281,6 +2282,77 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
   .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{{display:none!important}}
   .story-expanded-body{{display:block!important}}
 }}
+/* ---------- Phase 3: search after reading, editorial-first card actions ---------- */
+/* Source verification is source metadata, never a third CTA in the card footer. */
+.story-meta{{gap:6px 9px;line-height:1.5;align-items:center;margin-bottom:9px}}
+.story-meta .src{{font-size:12px;padding:4px 9px}}
+.story-meta .source-kind{{font-size:11px;padding:4px 8px}}
+.story-meta .date{{font-size:12px;color:var(--muted)}}
+.story-meta .evidence-link{{font-size:12px;font-weight:700;padding:5px 3px;min-height:32px;display:inline-flex;align-items:center;text-underline-offset:3px}}
+.story-meta .evidence-link:hover{{color:var(--accent-d)}}
+.story-taxonomy{{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:1px 0 12px}}
+.story-taxonomy .signal{{font-size:12px;font-weight:750;padding:4px 10px}}
+.story-taxonomy .chip{{font-size:12px;padding:4px 10px}}
+.story-foot{{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:9px;align-items:center;margin-top:auto;padding-top:15px;border-top:1px solid var(--line)}}
+.story-foot .readsrc{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:9px 17px;border-radius:999px;font-size:13px;font-weight:800;color:#fff;background:var(--accent-d);text-decoration:none;white-space:nowrap}}
+.story-foot .readsrc:hover{{background:var(--i-navy)}}
+.story-foot .readsrc:focus-visible{{outline:2px solid var(--accent);outline-offset:3px}}
+.story-foot .story-actions{{margin:0}}
+.story-foot .story-actions>summary{{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:9px 16px;color:var(--accent-d);background:transparent;border:1px solid #a49bdc;border-radius:999px;font-size:13px;font-weight:750}}
+.story-foot .story-actions>summary:hover{{background:var(--accent-soft);border-color:var(--accent-d)}}
+.story-foot .story-actions>summary:focus-visible{{outline:2px solid var(--accent-d);outline-offset:3px}}
+.story-foot .story-actions-menu{{bottom:calc(100% + 9px);right:auto;left:0}}
+/* Search is a secondary journey: the fixed magnifier remains the primary
+   discovery affordance, with results immediately below the search panel. */
+main#main > .discovery{{margin-top:42px;margin-bottom:12px;scroll-margin-top:102px}}
+main#main > .discovery:before{{content:"";display:block;height:1px;background:var(--line);margin-bottom:22px}}
+.today-search-results{{margin:12px 0 18px}}
+.today-search-results[hidden]{{display:none!important}}
+#today-result-list .today-hit{{scroll-margin-top:90px}}
+#news-explorer .discovery-head h2{{font-size:clamp(19px,2.4vw,23px)}}
+/* Search never hides the published news: no jumpy page collapse when scope
+   switches at the footer, and no "results above search field" anti-pattern. */
+body.view-archive-search main#main > section[id^="sec"]{{display:block!important}}
+body.view-archive-search .top-stories,
+body.view-archive-search .thesis,
+body.view-archive-search .more-brief,
+body.is-filtering-news .top-stories,
+body.is-filtering-news .thesis,
+body.is-filtering-news .more-brief{{display:initial}}
+/* On 320px devices keep search, archive, sections and language visible.
+   Per-article share is always available; the redundant global share hides. */
+@media(max-width:360px){{
+  #share{{display:none!important}}
+  .mast-r{{gap:4px}}
+  .mobile-category-menu>summary{{min-width:50px;padding:7px 8px}}
+}}
+/* Print stays a readable editorial copy, not a duplicated search results list. */
+@media print{{
+  .today-search-results,.archive-search-results,.discovery{{display:none!important}}
+}}
+/* Fine-grained touch/reading improvements, without changing the brand system. */
+.story-expanded>summary,.edition-notes>summary,
+#view-quick,#view-deep,.discovery-reset,.discovery-scope button,
+#archive-more,.mobile-cat-list a{{min-height:44px}}
+.story h3{{overflow-wrap:anywhere;hyphens:auto}}
+.scan-brief p,.story-expanded-body p{{overflow-wrap:break-word}}
+.story-actions-menu button{{font-size:13px;min-height:44px}}
+@media(max-width:560px){{
+  .story{{padding:19px 16px}}
+  .story h3{{font-size:clamp(18px,4.8vw,21px);line-height:1.37;margin-bottom:11px}}
+  .story-meta{{gap:5px 7px}}
+  .story-meta .src,.story-meta .source-kind,.story-meta .date,
+  .story-meta .evidence-link{{font-size:12px}}
+  .story-taxonomy{{gap:6px;margin-bottom:12px}}
+  .scan-brief p{{line-height:1.66}}
+  .story-foot{{gap:8px;padding-top:13px}}
+  .story-foot .readsrc,.story-foot .story-actions>summary{{min-height:44px;font-size:13px;padding:9px 13px}}
+  main#main > .discovery{{margin-top:30px}}
+  main#main > .discovery:before{{margin-bottom:16px}}
+  .history-hit{{padding:15px 14px}}
+  .history-hit strong{{font-size:14px;line-height:1.55}}
+  .discovery-scope button{{min-height:44px}}
+}}
 </style>
 </head>
 <body>
@@ -2361,6 +2433,18 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
 </div>
 
 <main class="wrap" id="main">
+  <div class="reading-toolbar" id="news-reading-mode">
+    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
+    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
+      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
+      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
+    </div>
+    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
+  </div>
+{sections_html}
+  <!-- Search is secondary to today's news: use the sticky search icon any time.
+       Its matching results render directly underneath this bottom tool, never
+       above the user's scroll position. -->
   <section class="discovery" id="news-explorer" aria-label="{html.escape(bi_attr('搜尋及篩選新聞','Search and filter news'))}">
     <div class="discovery-head"><h2>{bi("探索新聞","Find intelligence")}</h2><p>{bi("關鍵字、主題、影響程度","Keyword · category · priority")}</p></div>
     <div class="discovery-scope" role="group" aria-label="{html.escape(bi_attr('搜尋範圍','Search scope'))}">
@@ -2376,19 +2460,13 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
     <p class="discovery-status" role="status" aria-live="polite" id="news-status">{bi("載入今日新聞…","Loading today's news…")}</p>
     <p class="discovery-empty" id="news-empty" hidden>{bi("暫時搵唔到符合條件嘅新聞，試吓其他關鍵字或重設篩選。","No matching news. Try another keyword or reset the filters.")}</p>
   </section>
+  <section class="today-search-results" id="today-search-results" aria-label="{html.escape(bi_attr('今日新聞搜尋結果','Today search results'))}" hidden>
+    <div class="archive-results-list" id="today-result-list"></div>
+  </section>
   <section class="archive-search-results" id="archive-search-results" hidden>
     <div class="archive-results-list" id="archive-result-list"></div>
     <button type="button" id="archive-more" hidden>{bi("顯示更多結果","Show more results")}</button>
   </section>
-  <div class="reading-toolbar" id="news-reading-mode">
-    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
-    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
-      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
-      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
-    </div>
-    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
-  </div>
-{sections_html}
 </main>
 
 <footer><div class="wrap">
