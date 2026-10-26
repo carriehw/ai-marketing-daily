@@ -22,6 +22,16 @@ Produce a verified **HKT-dated edition of the website** with matching content, a
 4. If current live edition already has today's HKT date, **audit instead of replacing it blindly**. Make only separately verified corrections where safe and traceable.
 5. If another update is in progress or newer repository files appear during editing, refresh the upstream state before any write; avoid overwriting a concurrent run.
 
+
+## B1. Daily coverage service level (approved 2026-10-26)
+
+- **Editorial floor: 10 individually verified, sufficiently marketing-relevant full news items per Hong Kong edition.**
+- **Preferred full-coverage target: 12–18 verified items** across the existing five editorial categories, including **3 lead stories**, **7–10 additional main stories**, and, where useful, **2–5 short Radar signals**. Radar signals can be separate briefs and are not counted towards the 10 full-news floor unless they meet the same verification/content standard.
+- Source discovery should expand across appropriate first-party and reputable independent sources when the preliminary set falls below 10; do not repeat yesterday's unchanged story, split one development artificially, invent facts, or upgrade unverifiable rumours to meet the count.
+- If fewer than 10 independently verified meaningful items exist after reasonable discovery, **publish the honest lower count only when each item passes all quality gates** and log `below_editorial_floor` with the number and why; inform Carrie that the count target was missed. Quality and truthful publication outrank the numeric target.
+- **If the technical website checker expects at least eight cards and fewer than eight are verified, do not pad the issue**: review/update that gate, explicitly flag any exception, and only publish when the amended gate and evidence controls pass.
+- The minimum quota and target refer to **daily full-issue totals**, not the homepage's **three Top Stories**.
+
 ## C. Discovery and shortlist
 
 Search selectively across:
