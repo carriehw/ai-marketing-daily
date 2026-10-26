@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
-from bs4 import BeautifulSoup, NavigableString, Comment
+from bs4 import BeautifulSoup, NavigableString, Comment, Doctype
 from opencc import OpenCC
 
 ROOT = Path(__file__).resolve().parent
@@ -116,7 +116,11 @@ def translate_hans(soup):
         if script.string:
             replace_script(script,to_hans(str(script.string)).replace("'zh-Hant'","'zh-Hans'"))
     for node in list(soup.find_all(string=True)):
-        if isinstance(node,Comment):continue
+        # BeautifulSoup treats <!DOCTYPE html> as a Doctype NavigableString.
+        # Replacing it with plain NavigableString("html") destroys the DOCTYPE,
+        # leaves stray "html" text before <html>, and triggers Quirks Mode.
+        # Never translate document-control nodes.
+        if isinstance(node,(Comment,Doctype)):continue
         if node.parent and node.parent.name in ("script","style"):continue
         if node.strip():node.replace_with(to_hans(str(node)))
     for element in soup.find_all(True):
@@ -259,6 +263,13 @@ def main():
         assert locale_url("https://example.org/news/","zh-hans","issue","2026-10-26")=="https://example.org/news/zh-hans/archive/2026-10-26.html"
         sample='<html><head><title>Hi</title></head><body><span class="l-zh">你好</span><span class="l-en">hello</span></body></html>'
         assert "hello" not in render(sample,"zh-hans","issue","https://example.org/news/","2026-10-26","新聞","News",1)
+        fixture='<!DOCTYPE html><html lang="zh-Hant"><head><title>行銷情報</title></head><body><p>繁體內容</p></body></html>'
+        translated=render(fixture,"zh-hans","home","https://example.org/news/","2026-10-26","新聞","News",1)
+        assert translated.lstrip().lower().startswith("<!doctype html>"), translated[:80]
+        assert translated.count("<!DOCTYPE html>")==1
+        assert not translated.lstrip().startswith("html")
+        assert "繁體內容" not in translated
+        assert "繁体内容" in translated
         print("PASS locale conversion, directory URLs and truly language-specific text")
         return
     root=Path(args.root)
@@ -306,7 +317,18 @@ def main():
             issue_date=archive["date"]
             target=lang_dir/"archive"/(issue_date+".html")
             if target.is_file() and issue_date!=date:
-                continue
+                # Historical pages are normally immutable. One previous i18n
+                # release accidentally rendered every Simplified edition with
+                # literal "html" in place of <!DOCTYPE html>. Repair those
+                # affected snapshots from their ORIGINAL published issue and
+                # leave valid immutable history untouched.
+                if locale!="zh-hans":
+                    continue
+                with target.open("r",encoding="utf-8") as previous:
+                    prefix=previous.read(96)
+                if prefix.lstrip().lower().startswith("<!doctype html>"):
+                    continue
+                print(f"REPAIR legacy zh-hans archive DOCTYPE: {issue_date}")
             source=(archive_dir/(issue_date+".html")).read_text(encoding="utf-8")
             html_output=render(source,locale,"issue",base,issue_date,
                 archive.get("title",""),archive.get("title_en",""),archive["total"])
