@@ -1,0 +1,29 @@
+name: Editorial evidence gate tests
+
+on:
+  push:
+    paths:
+      - "editorial/check_evidence.py"
+      - "editorial/test_check_evidence.py"
+      - ".github/workflows/editorial-qa.yml"
+  pull_request:
+    paths:
+      - "editorial/**"
+      - ".github/workflows/editorial-qa.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Syntax validation
+        run: python -m py_compile editorial/check_evidence.py editorial/test_check_evidence.py
+      - name: Positive and negative gate controls
+        run: python -m unittest discover -v -s editorial -p 'test_check_evidence.py'
