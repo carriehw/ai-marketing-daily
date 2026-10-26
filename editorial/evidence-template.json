@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "YYYY-MM-DD",
+  "status": "draft",
+  "editorial_owner": "Carrie Hui",
+  "verified_at_hkt": "YYYY-MM-DDTHH:mm:ss+08:00",
+  "stories": [
+    {
+      "story_id": "YYYY-MM-DD-short-stable-id",
+      "working_title_zh": "待填寫",
+      "event_date": "YYYY-MM-DD",
+      "first_published_date": "YYYY-MM-DD",
+      "source_documents": [
+        {
+          "url": "https://example.com/original-document",
+          "publisher": "待填寫",
+          "source_class": "A",
+          "accessed_at_hkt": "YYYY-MM-DDTHH:mm:ss+08:00",
+          "access_state": "accessible",
+          "notes": "所涉段落、方法或使用限制"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "待核實之可單獨判斷的事實",
+          "support_url": "https://example.com/original-document",
+          "evidence_locator": "標題／章節／頁數／短引述（需實際核對）",
+          "status": "uncertain",
+          "caveat": "適用地區、時間、樣本、功能開放程度等",
+          "second_pass_checked": false
+        }
+      ],
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 0,
+        "business_impact": 0,
+        "actionability": 0,
+        "market_relevance": 0,
+        "novelty": 0
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "editorial_decision": "hold",
+      "needs_human_review": true,
+      "review_notes": "未完成核實，不得發布為事實。"
+    }
+  ],
+  "release": {
+    "github_commit_sha": null,
+    "live_verified_at_hkt": null,
+    "live_date_match": false,
+    "archive_date_match": false,
+    "claims_gate_passed": false
+  }
+}
