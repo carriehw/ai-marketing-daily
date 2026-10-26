@@ -66,6 +66,28 @@ def audit(data, proof, expected_date=None):
         if e.get("source_date_display")!=it.get("time"):bad.append(f"{prefix} proof date mismatch")
         if e.get("editorial_decision")!="approved" or e.get("needs_human_review") is not False:
             bad.append(f"{prefix} unresolved editorial decision")
+        # Editorial relevance ranking is separate from source verification.
+        score=e.get("editorial_relevance_score",{})
+        dimensions={"direct_marketing_relevance":30,"business_impact":25,
+                    "actionability":20,"market_relevance":15,"novelty":10}
+        if not isinstance(score,dict):
+            bad.append(f"{prefix} editorial scoring record missing")
+        else:
+            valid_score=True
+            subtotal=0
+            for dim,cap in dimensions.items():
+                value=score.get(dim)
+                if type(value) is not int or not 0<=value<=cap:
+                    valid_score=False
+                    bad.append(f"{prefix} invalid editorial score: {dim}")
+                else:
+                    subtotal+=value
+            if valid_score:
+                if score.get("total")!=subtotal:
+                    bad.append(f"{prefix} editorial score arithmetic mismatch")
+                if subtotal<50:
+                    bad.append(f"{prefix} low marketer relevance: {subtotal}/100")
+
         docs=e.get("source_documents",[])
         if not docs:bad.append(f"{prefix} source documents absent")
         support_urls={d.get("url") for d in docs}
@@ -94,7 +116,7 @@ def self_test():
     proof={"edition_date_hkt":"2026-10-26","coverage_floor":10,"release_status":"pending_live_validation","stories":[]}
     for it in data["items"]:
         u="https://example.com/source"
-        proof["stories"].append({"title_zh":it["title"],"source_story_url":it["url"],"source_date_display":it["time"],"editorial_decision":"approved","needs_human_review":False,"reviewed_by":"second pass","independent_review":"reopened source","source_documents":[{"url":u,"source_class":"B","evidence_locator":"example original reporting exact section","limitations":"example method not universal"}],"claims":[{"claim_zh":"a","support_url":u,"evidence_locator":"exact source evidence","status":"attributed"}]*3})
+        proof["stories"].append({"title_zh":it["title"],"source_story_url":it["url"],"source_date_display":it["time"],"editorial_decision":"approved","needs_human_review":False,"editorial_relevance_score":{"direct_marketing_relevance":20,"business_impact":20,"actionability":16,"market_relevance":12,"novelty":8,"total":76},"reviewed_by":"second pass","independent_review":"reopened source","source_documents":[{"url":u,"source_class":"B","evidence_locator":"example original reporting exact section","limitations":"example method not universal"}],"claims":[{"claim_zh":"a","support_url":u,"evidence_locator":"exact source evidence","status":"attributed"}]*3})
     def passes(d,p):return len(audit(d,p,"2026-10-26"))==0
     if not passes(data,proof):return False,"valid control rejected"
     if passes(data,{**proof,"stories":proof["stories"][:-1]}):return False,"missing evidence not rejected"
