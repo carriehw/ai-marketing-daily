@@ -782,7 +782,7 @@ _ZH_FLAG = {
 # 同比/同項/同級 are the ones that bite in this beat: a price table writes
 # 「Astra 同項為 10／1／50 美元」and a market report writes 「同比增長超過 100%」,
 # both of which a blind conjunction swap turns into 與項/與比 — reads as a typo.
-_TONG_OK = re.compile(r"(相同|同步|共同|同質|同時|同業|同一|同事|認同|同意|不同|同期|同類|同儕|同盟|同行|同名|贊同|雷同"
+_TONG_OK = re.compile(r"(相同|同步|共同|協同|協同效應|同質|同時|同業|同一|同事|認同|同意|不同|同期|同類|同儕|同盟|同行|同名|贊同|雷同"
                       r"|同比|同項|同級|同款|同價|同等|同組|同區|同日|同月|同年|同源|同檔|同城|同齡|同儕|同僚|同窗|同好)")
 # the space is optional because Latin brand names get one ("整合同 AI 原生對手")
 _TONG_CONJ = re.compile(r"([一-鿿A-Za-z0-9]{2,10})( ?)同( ?)([一-鿿A-Za-z0-9]{2,10})")
