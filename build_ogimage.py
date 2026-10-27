@@ -31,7 +31,10 @@ import os
 import subprocess
 import sys
 
-CH = "/usr/bin/chromium" if os.path.exists("/usr/bin/chromium") else "chromium"
+# CI's Playwright installs Chromium to its cache, not /usr/bin. The caller can
+# supply that actual binary path while the local desktop default stays intact.
+CH = os.environ.get("AMD_CHROMIUM") or (
+    "/usr/bin/chromium" if os.path.exists("/usr/bin/chromium") else "chromium")
 W, H = 1200, 630
 
 # Measured off icon-512.png (44×44 px corner averages). See 品牌規範 §1.
