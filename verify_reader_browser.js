@@ -9,6 +9,15 @@ const assert = require('node:assert/strict');
 (async function main() {
   const base = process.env.READER_TEST_URL || 'http://127.0.0.1:8765/ai-marketing-daily/';
   const browser = await chromium.launch({headless: true, args:['--no-sandbox']});
+  const issue=JSON.parse(fs.readFileSync(path.join(process.cwd(),'data.json'),'utf8'));
+  const expectedStoryCount=issue.items.length;
+  const hay=item=>[item.title,item.title_en,item.summary,item.summary_en,item.why,item.why_en,item.source].join(' ').toLowerCase();
+  // Test a search term unique to the current edition rather than hardcode
+  // yesterday's news brand (e.g., Canva), which disappears next day.
+  const first=issue.items[0];
+  const uniqueTerm=(String(first.title_en).match(/[a-z]{5,}/gi)||[])
+    .find(w=>issue.items.filter(item=>hay(item).includes(w.toLowerCase())).length===1);
+  assert.ok(uniqueTerm, 'Cannot find a unique test query in first story');
   const output = path.join(process.cwd(), 'reader-screenshots');
   fs.mkdirSync(output,{recursive:true});
   let count = 0;
@@ -56,7 +65,7 @@ const assert = require('node:assert/strict');
         assert.equal(layout.lang,locale==='en'?'en':locale==='zh-hans'?'zh-Hans':'zh-Hant', locale+' language');
         assert.ok(layout.scrollWidth<=width+2,locale+' '+width+' horizontal overflow: '+JSON.stringify(layout));
         assert.equal(layout.top3,3,locale+' top three');
-        assert.equal(layout.stories,14,locale+' article count');
+        assert.equal(layout.stories,expectedStoryCount,locale+' article count');
         assert.notEqual(layout.nav,'none',locale+' category menu hidden');
         assert.equal(layout.oldnav,'none',locale+' redundant category strip shown');
         assert.ok(layout.search<=width+2&&layout.langNav<=width+2&&layout.menu<=width+2,locale+' controls off screen: '+JSON.stringify(layout));
@@ -70,7 +79,7 @@ const assert = require('node:assert/strict');
         assert.equal(await footer.locator('details.story-actions').count(),1,locale+' share control missing');
         assert.equal(await footer.locator('.evidence-link').count(),0,locale+' evidence is still a footer CTA');
         assert.equal(await page.locator('main#main article.story .story-meta .evidence-link').count()>=1,true,locale+' supporting source missing from source metadata');
-        assert.equal(await page.locator('main#main article.story .story-taxonomy').count(),14,locale+' tags not located near news context');
+        assert.equal(await page.locator('main#main article.story .story-taxonomy').count(),expectedStoryCount,locale+' tags not located near news context');
         const info=await page.evaluate(()=>{
           const last=document.querySelector('main#main section[id^="sec"]:last-of-type');
           const search=document.getElementById('news-explorer');
@@ -89,7 +98,7 @@ const assert = require('node:assert/strict');
           console.log('BEGIN interactive search and reading: '+locale);
         assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick default not collapsed');
         await page.locator('#view-deep').click();
-        assert.equal(await page.locator('details.story-expanded[open]').count(),14,locale+' Deep Read did not open every card');
+        assert.equal(await page.locator('details.story-expanded[open]').count(),expectedStoryCount,locale+' Deep Read did not open every card');
         assert.equal(await page.locator('#view-deep').getAttribute('aria-pressed'),'true');
         await page.locator('#view-quick').click();
         assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick Scan did not close');
@@ -97,11 +106,11 @@ const assert = require('node:assert/strict');
         assert.equal(await page.locator('details.story-expanded[open]').count(),1,locale+' individual Deep Read failed');
         await page.locator('.top-search').click();
         await page.waitForFunction(()=>document.activeElement?.id==='news-query',{timeout:4000});
-        await page.locator('#news-query').fill('Canva');
+        await page.locator('#news-query').fill(uniqueTerm);
         await page.waitForTimeout(180);
         shown=await page.locator('#today-result-list a.today-hit:visible').count();
-        assert.ok(shown>=1&&shown<14,locale+' search results did not appear below field: '+shown);
-        assert.equal(await page.locator('article.story:visible').count(),14,locale+' search hid original news');
+        assert.ok(shown>=1&&shown<expectedStoryCount,locale+' search results did not appear below field: '+shown);
+        assert.equal(await page.locator('article.story:visible').count(),expectedStoryCount,locale+' search hid original news');
         const positions=await page.evaluate(()=>{
           const input=document.getElementById('news-query').getBoundingClientRect();
           const result=document.querySelector('#today-result-list .today-hit').getBoundingClientRect();
@@ -109,13 +118,13 @@ const assert = require('node:assert/strict');
         });
         assert.ok(positions.resultTop>positions.inputBottom,locale+' results appear above search');
         await page.locator('#news-reset').click();
-        assert.equal(await page.locator('article.story:visible').count(),14,locale+' reset hid original news');
+        assert.equal(await page.locator('article.story:visible').count(),expectedStoryCount,locale+' reset hid original news');
         assert.equal(await page.locator('#today-result-list .today-hit:visible').count(),0,locale+' reset left stale results');
         await page.locator('#scope-archive').click();
         await page.waitForSelector('#archive-result-list a.history-hit',{state:'visible',timeout:15000});
         assert.ok(await page.locator('#archive-result-list a.history-hit').count()>=1,locale+' archive search unavailable');
         await page.locator('#scope-today').click();
-        assert.equal(await page.locator('article.story:visible').count(),14,locale+' archive switch hid original news');
+        assert.equal(await page.locator('article.story:visible').count(),expectedStoryCount,locale+' archive switch hid original news');
 
         }
         await page.screenshot({path:path.join(output,locale+'-'+width+'.png'),fullPage:false});

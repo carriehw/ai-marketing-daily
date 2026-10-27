@@ -1,475 +1,331 @@
 {
- "site_title": "AI・行銷情報",
- "site_title_en": "AI Marketing Daily",
- "site_tagline": "AI Marketing Intelligence · HK / CN",
- "site_url": "https://carriehw.github.io/ai-marketing-daily/",
- "date": "2026-10-26",
- "date_display": "2026年10月26日 · 星期一",
- "date_display_en": "October 26, 2026 · Monday",
- "sources_note": "資料來自OpenAI、Apple WebKit、Canva、Omnicom、可口可樂官方公告，以及具來源標示的媒體報道。各則消息日期以原文為準。",
- "sources_note_en": "Sources include original OpenAI, Apple WebKit, Canva, Omnicom and Coca-Cola announcements, alongside attributed industry reporting. Dates refer to original publications.",
- "thesis": "本期三條重點：ChatGPT廣告擴張、Safari第三方身份解析防護、Canva自研圖像模型。所有數字與產品狀態按原始公告核實。",
- "thesis_en": "Today's three key shifts: ChatGPT Ads expansion, Safari identity-resolution protection, and Canva's new image model. Figures and rollout status are checked against original sources.",
- "thesis_note": "10月26日編輯覆核：保留原始消息日期，清楚區分已確認事實、媒體報道及行業觀點。",
- "thesis_note_en": "October 26 editorial review: original source dates are preserved; verified facts, reported claims and commentary are clearly distinguished.",
- "sections": [
-  "AI 大模型 & 市場動態",
-  "廣告平台 & 行銷科技",
-  "創意生產工具",
-  "行業影響 & 品牌案例",
-  "即學技巧 & 玩法"
- ],
- "sections_en": [
-  "AI Models & Market Moves",
-  "Ad Platforms & MarTech",
-  "Creative Production Tools",
-  "Industry Impact & Brand Cases",
-  "Tips, Tactics & Tools"
- ],
- "items": [
-  {
-   "title": "ChatGPT Ads累計逾10萬廣告主，擴至89國；投放受眾須與整體週活區分",
-   "title_en": "ChatGPT Ads expands to 89 countries; 100,000 advertisers is cumulative, not active reach",
-   "summary": "OpenAI在10月21日宣布ChatGPT Ads新增26個市場至89國，逾10萬廣告主為推出以來累計曾投放數；12億週活指ChatGPT所有用戶，並非廣告可觸及人數。",
-   "summary_en": "OpenAI expanded ChatGPT Ads to 89 countries on October 21. The 100,000-plus advertiser figure counts businesses that have run campaigns since launch; 1.2 billion weekly ChatGPT users is not an ad-reach estimate.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/chatgpt-ads-hit-100-000-advertisers-expand-to-26-more-countries/42amjak36k54ev3m68p97n3sdj",
-   "time": "10月22日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "Media Planning可以將ChatGPT Ads納入市場適用性評估，同時向客戶清楚區分平台週活、廣告版位受眾和實際投放成效。",
-   "why_en": "Media planners can evaluate country-level availability while distinguishing total weekly usage from ad-addressable reach and actual campaign performance.",
-   "highlights": [
-    "逾10萬廣告主是累計曾投放數字，並非單週活躍帳戶。",
-    "OpenAI宣布新增26個國家，ChatGPT Ads服務範圍擴至89國。",
-    "廣告於Free和Go方案展示；可投放受眾規模不能直接以12億週活推算。"
-   ],
-   "highlights_en": [
-    "100,000-plus advertisers is a cumulative since-launch count, not weekly active accounts.",
-    "OpenAI added 26 markets, bringing ChatGPT Ads availability to 89 countries.",
-    "Ads appear on Free and Go; weekly usage is not equivalent to addressable ad inventory."
-   ],
-   "pattern": "ChatGPT正由新興廣告測試渠道走向多市場媒體規劃選項；品牌安全和成效衡量工具嘅成熟程度仍需獨立驗證。",
-   "pattern_en": "ChatGPT Ads is becoming a multi-market planning option; brand suitability and measurement maturity still require independent assessment.",
-   "detail": "OpenAI於10月21日宣布ChatGPT Ads新增26個國家，合計覆蓋89個市場。自平台推出廣告八個多月以來，累計超過10萬名廣告主曾經開展投放；這不是最新的每月或每週活躍廣告主數。OpenAI提及ChatGPT每週逾12億使用者，也不是廣告版位能接觸到的實際人數。\n\nOpenAI明確指出，廣告只會出現在Free與Go方案；Plus、Pro和Enterprise訂閱維持無廣告。代理商評估新渠道時，應先核對投放地區、方案受眾邊界、可用廣告目標與衡量工具，避免將整體用戶規模當作可預訂媒體量。OpenAI另於8月公布廣告年化收入運行率達10億美元，這是早前不同時間點的指標，並非10月21日公告的新收入數字。",
-   "detail_en": "On October 21, OpenAI said ChatGPT Ads was expanding to 26 additional countries, bringing the total to 89. More than 100,000 advertisers have run campaigns since its launch over eight months earlier. This is not a current weekly or monthly active advertiser count. The company's figure of more than 1.2 billion weekly ChatGPT users is likewise not a measure of advertising reach.\n\nOpenAI states that ads appear only on Free and Go plans, while Plus, Pro and Enterprise subscriptions remain ad-free. Media planners should check market access, addressable audience, objectives and measurement options before using broad product reach in proposals. OpenAI's $1 billion annualised advertising revenue run rate was announced in August, not as a new October 21 revenue result.",
-   "verification_url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/",
-   "source_kind": "reported",
-   "next_step": "先核對可投放市場、廣告可接觸受眾與衡量方式，再決定是否納入下一輪媒體測試。",
-   "next_step_en": "Check available markets, ad-addressable reach and measurement before proposing a pilot."
-  },
-  {
-   "title": "Block展示Dessa全雙工語音AI，仍未對公眾開放",
-   "title_en": "Block demonstrates full-duplex Dessa voice AI; public access remains closed",
-   "summary": "Block於10月23日展示可同時聆聽和回應的Dessa語音模型，稱能在MacBook M4 Max等設備上運行；目前只邀請安全研究人員測試。",
-   "summary_en": "Block demonstrated Dessa, a full-duplex speech model capable of listening while responding. The company says it can run on a MacBook M4 Max-class device, but it is not available to the public.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-   "time": "10月24日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "國際",
-   "why": "值得留意語音客服及品牌互動演進；尚未開放的模型不應即時列入客戶可採購工具清單。",
-   "why_en": "Voice CX is worth monitoring, but an unreleased research model should not be presented as deployable client technology.",
-   "highlights": [
-    "全雙工技術支援較自然嘅插話及即時語音互動。",
-    "Block稱模型可在MacBook M4 Max或更高規格設備本地運行。",
-    "目前未全面開放；展示效果並非獨立客服商業部署驗證。"
-   ],
-   "highlights_en": [
-    "Full-duplex speech allows overlapping listening and speaking.",
-    "Block says Dessa runs locally on hardware such as the MacBook M4 Max.",
-    "Public access is unavailable; demonstrations are not proof of production performance."
-   ],
-   "pattern": "全雙工情緒原生語音AI正在重塑品牌語音觸點——下一個競爭前線不是文字生成，而是AI聲音的情緒真實性。品牌語音識別（voice identity）將成為代理商可主動建議的新服務線。",
-   "pattern_en": "Full-duplex, emotion-native voice AI is reshaping brand voice touchpoints. The next competitive frontier isn't text generation — it's the emotional authenticity of AI voices. Brand voice identity design is becoming a new service line agencies can proactively pitch.",
-   "paywall": false,
-   "detail": "Block旗下研究團隊展示Dessa模型，主打語音與語音直接互動，以及說話時仍能聆聽用戶的全雙工設計。TechCrunch於10月24日報道，團隊宣稱模型可以在MacBook M4 Max等本地硬件上運行，並展示包含停頓及情緒語調的對話。\n\n目前Dessa尚未對公眾提供使用，團隊正在招募安全研究人員。對Marketer而言，更合適的下一步是整理品牌語音體驗需求，例如插話處理、多語言、真人交接和私隱保障；未有獨立測試前不應推斷轉化率或客服成本改善幅度。",
-   "detail_en": "Block's researchers demonstrated Dessa, a speech-to-speech model using a full-duplex approach so the assistant can listen while speaking. TechCrunch reported on October 24 that the company says the model runs on local hardware such as a MacBook M4 Max, with demonstrations featuring pauses and emotionally expressive speech.\n\nDessa is not publicly available and its team is seeking safety researchers. For marketers, the actionable step is to identify requirements for branded voice interactions—interruptions, language support, handoff to a person and privacy safeguards—not to assume untested conversion or support-cost gains.",
-   "verification_url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-   "source_kind": "reported",
-   "next_step": "將插話處理、多語言、私隱與真人交接列入語音客服概念測試清單，等待產品正式開放。",
-   "next_step_en": "Define interruption, multilingual, privacy and human-handoff requirements; monitor public availability."
-  },
-  {
-   "title": "DeepSeek據報籌得約150億美元；騰訊與寧德時代被列為潛在投資者",
-   "title_en": "DeepSeek reportedly raises about $15B; Tencent and CATL named as potential investors",
-   "summary": "TechCrunch引述Bloomberg稱DeepSeek傳出約150億美元融資，騰訊及寧德時代屬潛在投資方；截至報道時公司未回覆查詢，投資方及條款不宜寫成已確認。",
-   "summary_en": "TechCrunch cited Bloomberg reporting a roughly $15 billion DeepSeek financing round. Tencent and CATL were described as potential investors; the company had not responded to requests for confirmation.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-   "time": "10月22日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "中國",
-   "why": "評估AI供應商時，分開核對合規、股權及資金來源；未經確認的融資傳聞不能當作採購保證。",
-   "why_en": "AI vendor reviews should distinguish regulatory exposure from unconfirmed financing; headlines are not procurement guarantees.",
-   "followup": "10月21日本站曾報道美國機構對DeepSeek的使用限制；10月22日的新資料屬媒體融資消息，未獲交易文件獨立確認。",
-   "followup_en": "The October 21 edition covered US restrictions on DeepSeek. The October 22 update is a separately reported financing development, not independently verified transaction documentation.",
-   "highlights": [
-    "約150億美元屬媒體轉述的融資報道，並非已公布交易文件。",
-    "騰訊及寧德時代在原報道中是潛在投資者，未確認為領投方。",
-    "美國聯邦機構對DeepSeek的限制與融資消息屬不同事件，不能據此推斷因果。"
-   ],
-   "highlights_en": [
-    "The approximately $15B financing is reported, not verified via a transaction filing.",
-    "Tencent and CATL were described as potential investors, not confirmed lead backers.",
-    "The proximity to US restrictions does not establish causation."
-   ],
-   "paywall": false,
-   "detail": "TechCrunch在10月22日引述Bloomberg報道DeepSeek可能完成約150億美元、折合約人民幣1,000億元的融資。報道把騰訊和寧德時代列為潛在投資者，並提及公司可能最快在2027年尋求上市。DeepSeek當時未就查詢作出確認，因此投資者名單、交易條款及上市時間均應保留『據報／可能』等限定。\n\n相關報道出現在美國聯邦文職機構被要求移除DeepSeek技術後數日，時間相近不足以證明任何投資是限制措施直接促成。代理商採用中國AI服務時，仍需自行查核客戶所在司法管轄區的資料處理、供應鏈安全及合同安排。",
-   "detail_en": "TechCrunch cited Bloomberg on October 22 in reporting that DeepSeek had raised roughly $15 billion, or around RMB 100 billion. Tencent and CATL were mentioned as potential investors, and a possible 2027 IPO was also discussed. DeepSeek had not responded to a request for comment. Investor identities, deal terms and listing plans therefore remain reported, not confirmed by filings.\n\nThe report followed US federal restrictions on DeepSeek by a few days. Timing does not prove that restrictions caused financing decisions. Agencies evaluating AI vendors should separately review local compliance, data treatment, vendor dependencies and actual contract terms.",
-   "verification_url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-   "source_kind": "reported",
-   "next_step": "將融資內容標記為媒體報道，供應商風險評估仍以實際合約及合規文件為準。",
-   "next_step_en": "Treat fundraising as reported; base vendor risk decisions on actual contracts and compliance documentation."
-  },
-  {
-   "title": "科大訊飛公布星火X2.6與SparkAudio 1.0；效能數據屬廠商自述",
-   "title_en": "iFlytek announces Spark X2.6 and SparkAudio 1.0; performance claims are vendor-reported",
-   "summary": "科大訊飛1024開發者活動公布星火X2.6、SparkAudio 1.0及星辰TaaS平台；報道由廠商供稿轉載，模型效能提升及成本節省尚需第三方驗證。",
-   "summary_en": "iFlytek announced Spark X2.6, SparkAudio 1.0 and the Xingchen TaaS platform at its 1024 developer event. Performance and cost reductions in the supplied report are company claims, not independently validated benchmarks.",
-   "source": "量子位",
-   "url": "https://www.qbitai.com/2026/10/505083.html",
-   "time": "10月23日",
-   "section": "AI 大模型 & 市場動態",
-   "action": "要留意",
-   "region": "中國",
-   "why": "內地AI方案選型要比較實際使用成本、私隱要求及本地部署能力，避免將供應商benchmark當成客戶實測。",
-   "why_en": "China-market AI procurement should compare real workload costs, privacy and deployment options rather than treating vendor benchmarks as independent results.",
-   "highlights": [
-    "星火X2.6主打更長上下文及端雲協同。",
-    "SparkAudio 1.0及TaaS平台展示語音與工作流組合方案。",
-    "量子位頁面標示獲廠商授權轉載，效率與成本數字須當作廠商聲稱。"
-   ],
-   "highlights_en": [
-    "Spark X2.6 emphasises longer context and cloud-device coordination.",
-    "SparkAudio 1.0 and TaaS extend its speech and workflow offerings.",
-    "Reported performance and savings figures originate from vendor-supplied content."
-   ],
-   "paywall": false,
-   "detail": "科大訊飛於10月的開發者活動公布星火X2.6、SparkAudio 1.0及星辰TaaS平台，展示將模型、語音服務與應用部署結合的產品方向。相關量子位文章註明由科大訊飛提供並獲授權轉載，屬廠商提供的資料。\n\n原報道中的上下文長度、語音效果提升、回應速度與調用成本數據，應理解為廠商測試或宣傳口徑，並未在此獲獨立驗證。對客戶實際有幫助的工作，是使用自家語料、流量及審核要求做小規模測試，比較全成本和維運風險。",
-   "detail_en": "At its October developer event, iFlytek announced Spark X2.6, SparkAudio 1.0 and the Xingchen TaaS platform, outlining a combined model, speech and workflow offering. The referenced QbitAI piece identifies itself as content supplied by iFlytek and republished with permission.\n\nContext size, voice improvement, latency and cost claims should therefore be treated as vendor assertions rather than independently reproduced benchmarks. Client procurement teams should run smaller tests on representative workloads, with genuine data-governance, integration and operating-cost requirements.",
-   "pattern": "中國AI供應商推動由單一模型向應用及部署平台延伸；實際採購價值仍要由工作流測試驗證。",
-   "pattern_en": "China's AI providers are expanding beyond models into integrated deployment platforms; procurement value still needs workflow-specific testing.",
-   "verification_url": "https://www.qbitai.com/2026/10/505083.html",
-   "source_kind": "vendor",
-   "next_step": "用自家工作流、小規模語料及真實成本做評測，唔好直接套用廠商所報效能。",
-   "next_step_en": "Run representative workload and cost tests instead of relying on vendor performance claims."
-  },
-  {
-   "title": "Apple擴大Safari跨站追蹤防護：封鎖第三方身份解析基建",
-   "title_en": "Apple expands Safari anti-tracking protection to third-party identity-resolution infrastructure",
-   "summary": "Apple WebKit於10月19日說明，OS 27系列Safari與WebKit在網域層級封鎖第三方身份解析基建的連線以阻止跨站追蹤；並非所有廣告識別符一律失效。",
-   "summary_en": "Apple WebKit says Safari and WebKit in its OS 27 releases block network access to third-party identity-resolution infrastructure at the domain level to prevent cross-site tracking. It is not a blanket ban on every advertising identifier.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/apple-breaks-silence-on-adtech-block-it-s-not-enough-to-block-cross-site-cookies/4hbg0rsktvcxvzq2sxmbbcp6mq",
-   "time": "10月21日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "影響生意",
-   "region": "國際",
-   "followup": "10月13日本站報道Safari追蹤防護引發業界疑慮；10月19日Apple WebKit官方技術解釋釐清咗實際封鎖範圍。",
-   "followup_en": "Earlier coverage addressed industry concerns around Safari tracking limits; WebKit's October 19 technical explanation clarifies the scope of the new protections.",
-   "why": "Media及Analytics團隊應盤點身份配對供應商，驗證Safari／OS 27版本追蹤變化，唔好假設所有識別機制全面停用。",
-   "why_en": "Media and analytics teams should audit identity-resolution dependencies and measure OS 27 changes rather than assuming all identifiers are disabled.",
-   "highlights": [
-    "封鎖對象係用於跨網站追蹤的第三方身份解析基建網域。",
-    "第一方個人化並非WebKit此次政策針對的追蹤模式。",
-    "對身份配對、受眾回傳及歸因的影響，須按供應商及實際技術路徑評估。"
-   ],
-   "highlights_en": [
-    "The block targets third-party identity-resolution infrastructure at the domain level.",
-    "WebKit distinguishes first-party personalisation from cross-site tracking.",
-    "Attribution and identity-matching impact depends on the vendor and technical implementation."
-   ],
-   "detail": "Apple WebKit於2026年10月19日發文解釋，跨網站Cookie受限後，部分第三方技術會利用登入電郵等資料，集中建立可連結不同網站的身份識別圖譜。WebKit宣布在iOS、iPadOS、macOS與visionOS 27對應版本中，於網域層級阻擋指定第三方身份解析基建的網絡存取，以減低跨站追蹤。\n\n此技術措施的對象並非『所有廣告識別符』或全部廣告投放活動。WebKit亦明確指出，網站自身的第一方個人化並非這項追蹤防護的目標。廣告主應檢查採用的Identity Vendor、資料傳輸路徑及受眾配對機制，再按裝置與瀏覽器版本測試歸因表現。原來較籠統的『一律攔截』表述已在本期編輯覆核中修正。",
-   "detail_en": "In an October 19 WebKit post, Apple explained that some third-party identity-resolution services use details such as login email addresses to link activity across different websites. Safari and WebKit in iOS, iPadOS, macOS and visionOS 27 block network access to this third-party infrastructure at the domain level to prevent cross-site tracking.\n\nThis does not mean every advertising identifier or ad-delivery mechanism is universally blocked. WebKit explicitly distinguishes first-party personalisation from cross-site tracking. Advertisers should examine identity vendors and data flows before assessing audience matching or attribution across browser and OS releases. An earlier over-broad headline was corrected in this October 26 editorial revision.",
-   "verification_url": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/",
-   "source_kind": "reported",
-   "next_step": "審核Identity Resolution供應商與Safari資料流，按裝置及系統版本測試配對和歸因。",
-   "next_step_en": "Audit identity-resolution vendors and Safari data flows; test matching and attribution by OS version."
-  },
-  {
-   "title": "Campaign Asia：亞太AI詐騙廣告威脅品牌信任，驗證制度受關注",
-   "title_en": "Campaign Asia examines AI scam ads and brand-trust risks across APAC",
-   "summary": "Campaign Asia報道生成式AI令仿冒素材更易製作，並訪問亞太廣告業對詐騙廣告、廣告主驗證及品牌安全的關注；跨市場擴散速度尚難作統一量化比較。",
-   "summary_en": "Campaign Asia examines how generative tools can lower the barrier to producing impersonation scams and the resulting APAC concerns over advertiser verification and brand trust. Comparative regional growth rates remain unclear.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/ai-scam-ads-are-getting-smarter-faster-and-harder-to-stop-in-apac/4p77g5wjmyjjjw4a8e040th74r",
-   "time": "10月22日",
-   "section": "廣告平台 & 行銷科技",
-   "action": "影響生意",
-   "region": "香港",
-   "why": "品牌安全策略需要覆蓋冒牌廣告及消費者被誤導風險，唔只係一般投放版位相鄰性。",
-   "why_en": "Brand safety needs to address fraudulent impersonation and consumer deception as well as conventional adjacency.",
-   "highlights": [
-    "AI生成影音及視覺素材，增加仿冒品牌與名人的風險。",
-    "廣告主身份驗證、檢舉回應及相似名稱監察值得納入品牌安全工作。",
-    "報道描述業界趨勢，不代表所有亞太市場詐騙增長快於歐美。"
-   ],
-   "highlights_en": [
-    "Generative media lowers production friction for impersonation scams.",
-    "Advertiser identity checks, takedown response and impersonation monitoring merit attention.",
-    "The report does not establish that fraud is growing faster in every APAC market than in Europe or the US."
-   ],
-   "detail": "Campaign Asia調查報道關注亞太市場利用生成式AI製作詐騙廣告的問題，包括冒充名人、仿製品牌識別及利用低成本素材更換廣告。這些風險涉及消費者信任與品牌聲譽，亦令廣告審核和舉報程序受到更多關注。\n\n現階段應避免把個別案例直接概括成『整個亞太詐騙擴散速度超過歐美』，亦不宜在缺乏量度方法時引用具體降本比例。品牌可以建立定期搜尋冒名關鍵字、平台檢舉時限紀錄，以及與法務及客服協作的取證流程。",
-   "detail_en": "Campaign Asia reports on the use of generative media in scam ads affecting APAC audiences, including celebrity impersonation, brand imitation and low-cost creative replacement. Such misuse can damage consumer trust and put more pressure on ad review and reporting mechanisms.\n\nIndividual examples do not prove that scams are spreading faster across APAC than in all Western markets, nor do they establish a universal production cost reduction. Brands can audit impersonation keywords, document platform-reporting response times, and coordinate evidence gathering among legal, CX and media teams.",
-   "verification_url": "https://www.campaignasia.com/article/ai-scam-ads-are-getting-smarter-faster-and-harder-to-stop-in-apac/4p77g5wjmyjjjw4a8e040th74r",
-   "source_kind": "reported",
-   "next_step": "建立冒名品牌廣告監察、檢舉及法務升級機制，並保留取證紀錄。",
-   "next_step_en": "Set up impersonation monitoring, takedown escalation and evidence preservation."
-  },
-  {
-   "title": "Canva發布自研Craft圖像模型：Dream Lab與API已開放，MCP整合仍在規劃",
-   "title_en": "Canva launches Craft image model in Dream Lab and API; MCP rollout still upcoming",
-   "summary": "Canva於10月22日推出自研Craft圖像生成模型，支援最高2K、30多種比例，已在Dream Lab及Public API提供；Canva MCP整合在官方文章標示Coming Soon。",
-   "summary_en": "Canva launched its in-house Craft image model on October 22. It supports up to 2K output and more than 30 aspect ratios, with access through Dream Lab and the public API; the Canva MCP integration is marked 'Coming Soon'.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-   "time": "10月22日",
-   "section": "創意生產工具",
-   "action": "可即用",
-   "region": "國際",
-   "why": "設計及Content團隊可以針對品牌字體、版式與多尺寸廣告圖做實測，將廠商榜單宣稱與實際產出質素分開評估。",
-   "why_en": "Creative teams can test branded layouts and multi-format output while treating vendor ranking claims separately from their own quality assessments.",
-   "highlights": [
-    "Craft採取構圖規劃後再渲染的兩階段架構。",
-    "Canva稱模型訓練重視人工設計模板，支援可編輯圖層工作流。",
-    "Dream Lab和Public API已提供；Canva MCP屬Coming Soon，不能視為已普遍可用。"
-   ],
-   "highlights_en": [
-    "Craft uses a two-stage composition-planning and rendering architecture.",
-    "Canva says human-made design templates play an important role in training.",
-    "Dream Lab and the public API are available; Canva MCP remains marked Coming Soon."
-   ],
-   "paywall": false,
-   "followup": "10月23日我們報過Canva推出自研圖像生成模型Canva Craft，以人工設計模板訓練、支援55種語言文字與30種以上比例。TechCrunch在10月22日的報道（早於我們那一則）載有三個當時未提的細節：解析度已確認達2K、計劃透過MCP協議接入ChatGPT與Gemini（讓第三方AI助手內可直接調用Canva生成能力），以及研發核心來自2024年收購的Leonardo.ai——確認Craft是Canva長期AI策略的自研核心，而非外購模型改版。",
-   "followup_en": "On October 23 we reported Canva launching Craft, its first in-house image model trained on design templates rather than photographs, supporting 55 languages and 30+ aspect ratios. Today's TechCrunch report adds three new details: output resolution confirmed at 2K; planned MCP integration with ChatGPT and Gemini (enabling direct invocation from third-party AI assistants); and the core development team comes from the 2024 Leonardo.ai acquisition — confirming Craft is central to Canva's long-term AI strategy, not a rebranded third-party model.",
-   "detail": "Canva在10月22日發布Craft，首次由自家Canva Research團隊從頭訓練圖像基礎模型。其架構先建立構圖計劃，再進行圖像渲染；Canva稱有助改善文字、版式與元素位置控制，模型可產出最高2K解析度與三十多種比例。\n\n官方文章指出，Craft已可經Dream Lab及公共API使用，而Canva MCP整合仍標示『Coming Soon』。對代理商而言，較合適的下一步是選擇幾組已確認品牌規範的素材做同題比較，檢查文字準確率、設計可編輯性、多尺寸一致性及真正製作時間；Canva所述排行榜屬其引用的評測結果，不代表每間agency的成品都會達到同一水準。",
-   "detail_en": "On October 22, Canva introduced Craft, its first image foundation model trained in-house by Canva Research. The model uses a composition-planning stage followed by rendering, which Canva says improves control over typography, elements and layout. It offers output up to 2K resolution and over 30 aspect ratios.\n\nCanva's official article states that Craft is available through Dream Lab and a public API; Canva MCP integration is marked 'Coming Soon'. Agencies can compare brand-template prompts, text accuracy, editable layers, aspect-ratio consistency and production time in a controlled test. Vendor-cited rankings should not be confused with a guarantee of every client's output quality.",
-   "verification_url": "https://www.canva.com/newsroom/news/canva-craft/",
-   "source_kind": "reported",
-   "next_step": "以真實品牌設計規範測試文字準確性、可編輯圖層與不同廣告尺寸，記錄製作時間。",
-   "next_step_en": "Test typography, editable layers and multiple ad formats against approved brand assets."
-  },
-  {
-   "title": "Apollo經濟師：標普493企業財務指標未見明顯AI回報",
-   "title_en": "Apollo economist finds little visible AI payoff in S&P 493 financial indicators",
-   "summary": "Apollo首席經濟師Torsten Slok於10月24日分析標普493的利潤率及人均收入走勢，認為尚未看到科技七大以外企業出現明顯AI財務回報；屬宏觀推論而非逐間企業因果研究。",
-   "summary_en": "Apollo chief economist Torsten Slok argues that margins and revenue per worker across the S&P 493 have remained broadly flat. This is a macro-level interpretation, not a causal test of every company's AI projects.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "time": "10月25日",
-   "section": "行業影響 & 品牌案例",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "客戶問AI ROI時，應準備可重現的業務指標與測試設計，唔好只引用節省工時或模型能力作為成效證明。",
-   "why_en": "Clients asking about AI ROI need reproducible business metrics and credible experiments, not just headline productivity claims.",
-   "highlights": [
-    "Slok指出科技七大以外的標普493，人均收入與利潤率曲線大致持平。",
-    "『AI零回報』是作者對整體趨勢的評論，不等於所有企業項目均無ROI。",
-    "評估AI投資應看實際交付、工作效率和增量業務表現。"
-   ],
-   "highlights_en": [
-    "Slok describes broadly flat revenue-per-worker and margins outside the Magnificent Seven.",
-    "His 'zero payoff' formulation is a macro interpretation, not proof that every AI deployment fails.",
-    "AI ROI should be measured at workflow and business-outcome level."
-   ],
-   "pattern": "「AI採用率」與「AI回報率」是兩回事：能說清楚哪些工作流具體改善了客戶利潤率的代理商，在下一輪預算審查中將比其他人更具說服力。把AI投入轉化為可量化業績的能力，將成為代理商差異化的新護城河。",
-   "pattern_en": "'AI adoption rate' and 'AI return rate' are two different things. Agencies that can clearly articulate which specific workflows improved client profit margins will be more persuasive in the next budget review. The ability to translate AI investment into measurable business outcomes is becoming a new agency competitive moat.",
-   "paywall": false,
-   "detail": "Apollo首席經濟師Torsten Slok於10月24日發表分析，將標普500的科技七大與其他493間成分股比較。他認為科技七大以外，企業的每名員工收入及利潤率尚未呈現清晰的AI紅利，並質疑AI投資是否已普遍轉化為財務回報。\n\n這個比較反映的是宏觀財務指標的同時期走勢，不是逐家企業用對照組驗證AI項目成效的研究，因此不宜推斷『所有非科技企業AI投入都零回報』。代理商可以將此視為提醒：在向客戶介紹AI workflow時，加入明確的成本、增量效果及實際工作節省指標，才能支撐下一輪預算審批。",
-   "detail_en": "In an October 24 commentary, Apollo chief economist Torsten Slok compared the Magnificent Seven with the other 493 constituents of the S&P 500. He notes broadly flat profit margins and revenue per employee outside the technology leaders and questions whether AI investment has translated into widespread financial returns.\n\nThis is a macro comparison, not a controlled test of every company's AI deployment. It cannot establish that every non-tech AI project returns nothing. Agencies should treat it as a prompt to measure real business costs, incremental performance and workflow savings before making ROI claims.",
-   "verification_url": "https://www.apollo.com/institutional/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-   "source_kind": "reported",
-   "next_step": "為AI流程設定增量表現、成本及可重現性指標，而非只統計使用次數。",
-   "next_step_en": "Define incremental outcomes, costs and reproducibility metrics for AI workflows."
-  },
-  {
-   "title": "Omnicom公布Q3核心有機增長7.2%，整合IPG接近完成",
-   "title_en": "Omnicom reports 7.2% Q3 core organic growth as IPG integration nears completion",
-   "summary": "Omnicom於10月22日公布Q3報告：總收入約64億美元，核心業務有機增長7.2%；CEO表示IPG整合接近完成，全年成本協同目標9億美元。",
-   "summary_en": "Omnicom reported approximately $6.4 billion in third-quarter revenue and 7.2% core-operations organic growth. Its CEO said IPG integration was nearly complete and reiterated a $900 million 2026 cost-synergy target.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/john-wren-calls-merger-headwinds-substantially-done-as-omnicom-posts-7-2-growth/43f1bn0mnq66120b82bhm8dbdy",
-   "time": "10月23日",
-   "section": "行業影響 & 品牌案例",
-   "action": "要留意",
-   "region": "國際",
-   "why": "控股集團整合會影響廣告比稿、供應商策略與服務能力；分析成效時應分清報告口徑與實際有機增長。",
-   "why_en": "Holding-company consolidation can change pitches and capability portfolios; interpretation depends on separating reported and underlying organic performance.",
-   "highlights": [
-    "Q3整體報告收入約64億美元，核心業務收入約60億美元。",
-    "7.2%是核心業務有機增長，不是集團總收入增長率。",
-    "CEO表示整合IPG接近完成，預期2026年成本協同目標達9億美元。"
-   ],
-   "highlights_en": [
-    "Reported Q3 revenue was about $6.4B; core operations revenue was about $6.0B.",
-    "The 7.2% figure refers to core organic growth, not reported total revenue growth.",
-    "Management expects $900M in 2026 cost-reduction synergies as integration progresses."
-   ],
-   "detail": "Omnicom在10月22日公布截至9月30日的第三季業績。公司報告總收入約64億美元，核心業務收入約60億美元；核心業務同比有機增長7.2%，而非整體報告收入直接增長7.2%。行政總裁John Wren表示，Interpublic（IPG）整合接近完成，集團全年預期實現約9億美元成本削減協同。\n\n集團整合對agency競爭格局、團隊配置和技術採購均有潛在影響。評估其市場表現時，需留意合併後的可比收入及已出售業務等財報調整，避免單靠絕對收入增幅判斷自然增長。",
-   "detail_en": "Omnicom published its Q3 results on October 22 for the quarter ending September 30. Reported revenue was about $6.4 billion, with core-operations revenue near $6.0 billion and 7.2% underlying organic growth. The latter is not the same as growth in total reported revenue. CEO John Wren said the integration of Interpublic was nearly complete, with an expected $900 million of 2026 cost-reduction synergies.\n\nAgency leaders should consider the possible consequences for pitches, talent and technology procurement while reviewing like-for-like and adjusted figures rather than treating post-acquisition revenue scale as organic growth.",
-   "verification_url": "https://www.omc.com/newsroom/omnicom-reports-third-quarter-2026-results/",
-   "source_kind": "reported",
-   "next_step": "審視大型Agency整合對比稿、採購議價及跨地區服務安排的可能影響。",
-   "next_step_en": "Review possible implications for pitches, vendor terms and cross-market service coverage."
-  },
-  {
-   "title": "可口可樂重新分配媒體業務：Omnicom負責北美、WPP保留其他主要市場",
-   "title_en": "Coca-Cola appoints Omnicom in North America, retains WPP for most other global media",
-   "summary": "可口可樂於10月22日公布：Omnicom接掌北美媒體，WPP Open X維持其他主要市場媒體與全球創意業務；日本及南韓媒體繼續由Dentsu負責。",
-   "summary_en": "Coca-Cola confirmed Omnicom for North American media, WPP Open X for media elsewhere except Japan and South Korea, and Dentsu for media in those two markets. WPP Open X continues global creative work.",
-   "source": "Adweek",
-   "url": "https://www.adweek.com/agencies/omnicom-nabs-coca-colas-north-america-media-account-while-wpp-retains-globally/",
-   "time": "10月22日",
-   "section": "行業影響 & 品牌案例",
-   "action": "要留意",
-   "region": "國際",
-   "why": "大型品牌以市場和服務功能分拆agency合作，提醒客戶團隊同時管理全球一致性及各地媒體執行責任。",
-   "why_en": "Global marketers must balance central brand consistency with clear local market media ownership across multiple agency partners.",
-   "highlights": [
-    "北美媒體交予Omnicom，全球創意繼續由WPP Open X負責。",
-    "WPP媒體業務保留除北美、日本及南韓以外的市場。",
-    "日本及南韓媒體繼續交由Dentsu，唔屬今次比稿範圍。"
-   ],
-   "highlights_en": [
-    "Omnicom takes North American media; WPP Open X keeps global creative.",
-    "WPP retains media outside North America, Japan and South Korea.",
-    "Dentsu continues to handle Japan and South Korea media outside the review."
-   ],
-   "paywall": false,
-   "followup": "10月23日我們報過Omnicom奪可口可樂北美媒體業務7.85億美元，「控股集團可樂大戰」正式開打。Adweek在10月22日的報道（早於我們那一則）載有完整格局：可口可樂同時進行北美與全球兩場獨立比稿——Omnicom奪北美，WPP則保留自2020年起總值逾40億美元的全球整合行銷帳戶（涵蓋創意、製作與創作者行銷）。Publicis主動退出的原因是近期獲取PepsiCo業務，存在直接競爭客戶的利益衝突，並非比稿落敗。",
-   "followup_en": "On October 23 we reported Omnicom winning Coca-Cola's North America media business at 85M — the holding group \"Coke vs. Pepsi war\" was underway. Today Adweek fills in the full picture: Coca-Cola ran two simultaneous separate reviews — Omnicom won North America, while WPP retained the global integrated marketing account (valued at B+ in 2020, covering creative, production, and creator marketing). Publicis withdrew voluntarily due to conflict of interest from its recent PepsiCo win — it did not lose the pitch.",
-   "detail": "可口可樂在10月22日公布完成全球Marketing Operating System檢討。根據品牌官方新聞稿，Omnicom被選為北美媒體代理商；WPP Open X保留其他全球媒體業務（北美、日本及南韓除外），並繼續負責全球創意；日本及南韓媒體則由Dentsu延續管理，兩地不屬今次檢討範圍。\n\n部分行業媒體指出，Publicis先前因接獲PepsiCo業務而退出相關北美業務，屬比稿背景，不應混同可口可樂對合作架構的官方確認。對跨市場客戶而言，關鍵是為不同代理商定好統一衡量方法、品牌資產存取及責任分工。",
-   "detail_en": "Coca-Cola announced the completion of its global marketing operating-system review on October 22. In its official release, the company confirms Omnicom as North American media partner, WPP Open X as media partner elsewhere except Japan and South Korea, and WPP Open X as global creative partner. Dentsu continues media duties in Japan and South Korea, which were outside the current review.\n\nTrade coverage has linked the North America changes to Publicis stepping away after its PepsiCo business move; this is market context rather than a new Coca-Cola contract term. Multinational marketers should define clear measurement standards, brand-asset permissions and accountability across their agency roster.",
-   "verification_url": "https://www.coca-colacompany.com/media-center/coca-cola-company-selects-agency-partners",
-   "source_kind": "reported",
-   "next_step": "跨區品牌應統一各代理商的媒體衡量、素材權限與責任分工。",
-   "next_step_en": "Standardise measurement, creative permissions and accountabilities across agency partners."
-  },
-  {
-   "title": "SEJ分析：100個網站的AI引薦流量仍小，主張研究Agentic Search",
-   "title_en": "SEJ analysis of 100 websites says AI referrals remain small, urges agentic search planning",
-   "summary": "Search Engine Journal作者Marie Haynes分析100個網站流量，指出其樣本中ChatGPT引薦流量遠低於Google自然搜尋，並主張Marketers開始研究代理型搜尋；樣本結果不代表所有行業。",
-   "summary_en": "Search Engine Journal contributor Marie Haynes reviewed traffic data from 100 sites, found much smaller ChatGPT referrals than Google organic search in her sample, and argues for experimenting with agentic search.",
-   "source": "Search Engine Journal",
-   "url": "https://www.searchenginejournal.com/geo-is-a-distraction-heres-where-the-real-opportunity-is/593870/",
-   "time": "10月23日",
-   "section": "即學技巧 & 玩法",
-   "action": "可即用",
-   "region": "國際",
-   "why": "GEO是否值得投資應按自家第一方搜尋和轉化數據判斷；唔適宜只追逐AI提及次數。",
-   "why_en": "GEO investment should follow first-party search and conversion data, rather than visibility mentions alone.",
-   "highlights": [
-    "作者樣本中ChatGPT引薦流量約為Google自然搜尋的0.62%，所有LLM約0.73%。",
-    "樣本只涵蓋研究中的100個網站，不能自動推至所有行業。",
-    "作者建議先做好關鍵轉化追蹤，再研究Google購物與Agentic Search基礎設施。"
-   ],
-   "highlights_en": [
-    "In the author's sample, ChatGPT referrals were about 0.62% of Google organic traffic and all LLMs about 0.73%.",
-    "The 100-site sample should not be generalised to every sector.",
-    "The author prioritises conversion-event measurement and experiments with agentic commerce."
-   ],
-   "paywall": false,
-   "detail": "Search Engine Journal作者Marie Haynes以100個網站的數據討論AI搜尋引薦流量的規模。文章提到，在其研究樣本中，ChatGPT引薦流量僅及Google自然搜尋流量的約0.62%，各LLM合計約0.73%；她認為商業網站仍不應忽略Google搜尋的主導地位。\n\n這篇文章係作者對市場策略的分析，抽樣結構、行業組成和追蹤方法會影響結果。作者亦建議Marketers先為網站定義清楚的Conversion Events，再研究Universal Cart、UCP與WebMCP等代理型商業基礎設施。對客戶實務最有用的做法，是按自家Analytics驗證AI引薦比例、成交貢獻及增量效果。",
-   "detail_en": "Marie Haynes used data from 100 websites in a Search Engine Journal analysis of AI search referrals. In that sample, ChatGPT referral traffic represented about 0.62% of Google organic traffic; all LLMs combined represented around 0.73%. She argues that marketers should not overlook Google Search while exploring agentic commerce.\n\nThis is an opinion-led analysis based on a specific sample, not a universal industry census. The article urges businesses to define reliable conversion events and start learning about technologies such as Universal Cart, UCP and WebMCP. Agencies can ground GEO and agentic search investments in their own analytics and incremental business outcomes.",
-   "verification_url": "https://www.searchenginejournal.com/geo-is-a-distraction-heres-where-the-real-opportunity-is/593870/",
-   "source_kind": "analysis",
-   "next_step": "先量度自家網站AI引薦流量與成交表現，再決定GEO或Agentic Search資源分配。",
-   "next_step_en": "Measure first-party AI referrals and conversions before allocating GEO or agentic-search budget."
-  },
-  {
-   "title": "IAB HK C26討論Agentic Commerce：品牌如何保持被AI發現",
-   "title_en": "IAB HK C26 discusses how brands stay discoverable in agentic commerce",
-   "summary": "Campaign Asia報道IAB香港C26活動討論消費者使用AI代理搜尋和購物的趨勢，以及品牌在產品資訊、搜尋可見性和信任建立上的挑戰；屬行業討論而非市場已全面轉型的證明。",
-   "summary_en": "At IAB HK C26, industry participants discussed AI agents in product discovery and shopping, and how brands may remain visible and trusted. This is an industry discussion, not proof of universal consumer adoption.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/how-brands-can-remain-discoverable-in-the-age-of-agentic-ai-commerce/4k4r0kp2v87fz194qmjhnq944n",
-   "time": "10月23日",
-   "section": "即學技巧 & 玩法",
-   "action": "影響生意",
-   "region": "香港",
-   "why": "香港品牌可以小規模測試AI對品牌產品資料的引用方式，並觀察相關觸點是否真的增加詢盤。",
-   "why_en": "Hong Kong brands can test how AI systems represent their product information and whether agent-led discovery yields qualified enquiries.",
-   "highlights": [
-    "業界討論AI代理可能如何改變搜尋、比較及產品推薦。",
-    "品牌產品資訊準確性及可機器讀取程度值得提前檢查。",
-    "尚未有證據顯示傳統搜尋或點擊漏斗已全面失效。"
-   ],
-   "highlights_en": [
-    "Industry speakers explored AI-mediated search, comparison and recommendation.",
-    "Accurate, machine-readable product data is a sensible preparation area.",
-    "There is no evidence here that conventional search funnels have universally disappeared."
-   ],
-   "detail": "Campaign Asia在10月23日報道IAB HK Conversations 2026（C26）論壇對Agentic Commerce的討論。核心議題係當消費者開始用AI協助資訊搜尋、選項比較和購物任務，品牌可以如何維持產品資訊正確、容易被系統理解及被用戶信任。\n\n論壇討論可用作品牌策略規劃的情境提示，不能直接視為AI代理已經掌控所有購物決策。品牌可優先處理結構化產品資訊、庫存與價錢同步、常見問題的準確性，以及實際查詢和轉化記錄，再決定投入程度。",
-   "detail_en": "Campaign Asia covered discussions at IAB HK Conversations 2026 on agentic commerce. The event explored how marketers could remain discoverable and trusted when consumers use AI to research options and carry out shopping tasks.\n\nConference discussion is a useful scenario-planning signal, not evidence that agents already control all consumer purchases. Brands can begin with accurate product specifications, price and stock feeds, FAQs and tracking of any enquiries or orders attributed to those journeys.",
-   "verification_url": "https://www.campaignasia.com/article/how-brands-can-remain-discoverable-in-the-age-of-agentic-ai-commerce/4k4r0kp2v87fz194qmjhnq944n",
-   "source_kind": "reported",
-   "next_step": "改善結構化產品資訊、價格與庫存準確性，並小規模測試AI產品搜尋結果。",
-   "next_step_en": "Improve structured product, price and stock data and test AI product-discovery outcomes."
-  },
-  {
-   "title": "Campaign Asia觀點：AI搜尋時代不應只以點擊衡量影響力",
-   "title_en": "Campaign Asia opinion argues marketing influence needs metrics beyond clicks",
-   "summary": "Campaign Asia評論文章探討AI回覆及代理型搜尋如何使部分決策發生在點擊之前，提醒Marketers兼顧隱私與增量成效衡量；『點擊已無價值』並非已證實事實。",
-   "summary_en": "A Campaign Asia opinion piece argues that AI answers and agentic search may shift some decisions before clicks, prompting marketers to consider privacy-aware incremental measurement alongside traditional traffic KPIs.",
-   "source": "Campaign Asia",
-   "url": "https://www.campaignasia.com/article/the-click-is-no-longer-the-point-and-other-myths-of-search-era-marketing/4n2q8wrqht1ywtfsg5anrn4bdr",
-   "time": "10月23日",
-   "section": "即學技巧 & 玩法",
-   "action": "影響生意",
-   "region": "國際",
-   "why": "Agency報表應區分到達、互動及增量商業效果，避免以同一個指標解釋所有品牌影響。",
-   "why_en": "Agency reporting should separate traffic, engagement and incremental outcomes rather than overclaiming from a single metric.",
-   "highlights": [
-    "AI回答可能令部分發現及比較行為不再依賴傳統點擊。",
-    "評論主張擴大評估指標，包括品牌影響及隱私友善的增量測量。",
-    "CTR、點擊及轉化仍視業務目的有價值；唔宜用單一新KPI取代全部衡量。"
-   ],
-   "highlights_en": [
-    "AI answers may shift some discovery and comparison before conventional clicks.",
-    "The opinion recommends broader, privacy-conscious and incremental measurement.",
-    "Clicks and conversions remain relevant depending on the campaign objective."
-   ],
-   "detail": "Campaign Asia的評論文章討論傳統搜尋點擊作為Marketing KPI的局限。作者認為，AI摘要、比較和代理型操作可能令部分消費者在未進入品牌網站之前已完成部分判斷，因此單靠CTR未必足以衡量全部品牌影響力。\n\n此文屬策略評論，不是一項證明所有點擊KPI已失效的控制實驗。廣告主可以根據目標加入品牌搜尋、合資格詢盤、購物意向、實際增量測試與私隱友善歸因，同時保留有解釋力的CTR及Conversion指標。最重要的是區分相關性與因果關係。",
-   "detail_en": "A Campaign Asia opinion article examines the limits of clicks as a universal marketing KPI. It argues that AI summaries, comparisons and agent-led tasks may influence some decisions before a consumer lands on a brand's site.\n\nThis is a strategic viewpoint, not a controlled finding that all click metrics are obsolete. Marketers can measure brand search, qualified leads, purchase behaviour, causal incrementality and privacy-conscious attribution while retaining CTR and conversions where appropriate. The key is to distinguish correlations from demonstrated effects.",
-   "verification_url": "https://www.campaignasia.com/article/the-click-is-no-longer-the-point-and-other-myths-of-search-era-marketing/4n2q8wrqht1ywtfsg5anrn4bdr",
-   "source_kind": "analysis",
-   "next_step": "同時追蹤點擊、合資格詢盤和增量業績，按業務目標選擇KPI。",
-   "next_step_en": "Measure traffic, qualified enquiries and incrementality using objectives-appropriate KPIs."
-  },
-  {
-   "title": "TechCrunch盤點訊息內AI助手：iMessage、SMS及WhatsApp成服務入口",
-   "title_en": "TechCrunch surveys AI assistants accessed through SMS, iMessage and WhatsApp",
-   "summary": "TechCrunch於10月24日整理多款透過訊息工具使用的AI助手，涵蓋預約、工作任務和購物支援；不同產品的渠道、地區、收費及開放程度差異很大。",
-   "summary_en": "TechCrunch surveyed AI agents accessible through messaging interfaces such as SMS, iMessage and WhatsApp. Products vary widely by supported channel, region, price and access stage.",
-   "source": "TechCrunch",
-   "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-   "time": "10月24日",
-   "section": "即學技巧 & 玩法",
-   "action": "可即用",
-   "region": "國際",
-   "why": "WhatsApp在香港行銷與客服場景普遍，值得研究訊息原生AI體驗；選工具時要核對私隱、權限及人工交接。",
-   "why_en": "Messaging-native assistants merit exploration in Hong Kong CX, provided access, privacy and human handoff are tested.",
-   "highlights": [
-    "文章介紹多款無須另開傳統AI應用程式的訊息型代理產品。",
-    "各產品支援iMessage、SMS、WhatsApp或其他訊息渠道的程度不同。",
-    "品牌可先測試自己業務的預約、查詢和人工轉介，唔應直接假設普及率及轉化收益。"
-   ],
-   "highlights_en": [
-    "A range of assistants operate through familiar messaging interfaces.",
-    "Support for iMessage, SMS, WhatsApp and other channels differs by product.",
-    "Brands should test bookings, enquiries and human handoff without assuming adoption or revenue gains."
-   ],
-   "paywall": false,
-   "detail": "TechCrunch於10月24日更新訊息內AI助手盤點，介紹可透過SMS、iMessage、WhatsApp及部分其他通訊服務使用的產品，應用涉及提醒、預約、資訊查詢和購物協助。不同工具有公開版、Beta、邀請制或付費安排，亦不是每一款都支援所有訊息渠道。\n\n對香港品牌而言，適合優先設計的試驗可能係常見客服查詢、門店預約與產品資訊確認；每一步都應可交由真人處理，並明確告知資料用途。文章屬市場盤點，不能用產品清單推算消費者採用率，也不應保證能降低服務成本。",
-   "detail_en": "TechCrunch's October 24 update surveyed AI assistants that work through text interfaces including SMS, iMessage, WhatsApp and other messaging services. Use cases range from reminders and research to shopping and reservations. Availability, access restrictions, pricing and channel support differ substantially by product.\n\nFor Hong Kong brands, reasonable pilots include FAQ support, store appointments and checking product information, with clear consent and easy human handoff. A product roundup does not establish consumer adoption rates or a guaranteed reduction in customer-service costs.",
-   "verification_url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-   "source_kind": "reported",
-   "next_step": "在訊息型AI客服測試加入用戶同意、權限控制、真人交接和錯誤回應檢查。",
-   "next_step_en": "Include consent, permissions, human handoff and error handling in messaging-agent pilots."
-  }
- ]
+  "site_title": "AI・行銷情報",
+  "site_title_en": "AI Marketing Daily",
+  "site_tagline": "AI Marketing Intelligence · HK / CN",
+  "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+  "date": "2026-10-27",
+  "date_display": "2026年10月27日 · 星期二",
+  "date_display_en": "October 27, 2026 · Tuesday",
+  "sources_note": "本期來源包括Google Ads Help、Pinterest Newsroom、Stagwell、Bloomreach、Google Search Central、Google Developers、Glance、Mozilla，以及Digiday與MARKETING-INTERACTIVE直接報道。日期依原文。",
+  "sources_note_en": "Original sources include Google Ads Help, Pinterest Newsroom, Stagwell, Bloomreach, Google Search Central, Google Developers, Glance, Mozilla, and reporting by Digiday and MARKETING-INTERACTIVE. Dates match original publications.",
+  "thesis": "10月27日重點：Google搜尋廣告 AI 評價摘要適用範圍、Pinterest 程序化採購新渠道，以及 Stagwell 收購 Freestar。平台開放程度與商業效益仍須按來源分辨。",
+  "thesis_en": "October 27 key developments: Google's AI-generated Search ad review summaries, Pinterest's expanded programmatic buying, and Stagwell's Freestar acquisition. Rollout limits and commercial outcomes remain distinct from announcements.",
+  "thesis_note": "10月27日編輯二次核實：原文發布日期、適用市場及廠商聲稱均按來源保留限制；內容無獨立實測成效保證。",
+  "thesis_note_en": "October 27 second-pass editorial review: original dates, available markets and attributed vendor claims are qualified; no independent performance guarantee is implied.",
+  "sections": [
+    "AI 大模型 & 市場動態",
+    "廣告平台 & 行銷科技",
+    "創意生產工具",
+    "行業影響 & 品牌案例",
+    "即學技巧 & 玩法"
+  ],
+  "sections_en": [
+    "AI Models & Market Moves",
+    "Ad Platforms & MarTech",
+    "Creative Production Tools",
+    "Industry Impact & Brand Cases",
+    "Tips, Tactics & Tools"
+  ],
+  "items": [
+    {
+      "title": "Google搜尋廣告加入AI評價摘要；目前只支援四個英語市場",
+      "title_en": "Google documents AI-generated review summaries in Search ads, limited to four English-language markets",
+      "summary": "Google新說明文件確認，Search廣告可出現由網上評價生成的AI摘要，適用美國、澳洲、英國及印度的英語搜尋；相關功能並非香港市場全面開放。",
+      "summary_en": "Google documents AI-generated review summaries within eligible Search ads in English-language searches in the US, Australia, UK and India. The feature is not documented as generally available in Hong Kong.",
+      "why": "廣告內容開始納入由平台自動生成的第三方評價重點，品牌需要同時留意評論管理、廣告審核及不同市場的功能限制。",
+      "why_en": "Ad creative can now include platform-generated review commentary. Brands should check review quality, ad suitability and market restrictions rather than assume universal availability.",
+      "detail": "Google Ads Help解釋，Review summaries會由網上評價自動整理正面客戶意見，作為Search廣告的一部分展示。官方列明只支援Google.com的Search廣告、美國、澳洲、英國及印度英語搜尋，藥物等敏感類別除外。廣告主不能自行編輯摘要，Google亦只會在預測有利廣告表現時展示。Search Engine Land於10月26日報道這份新文件；官方說明頁未標示首次上線日期。\n\n因此，這是一項值得跨市場搜尋廣告團隊關注的廣告素材變化，並不代表所有廣告都會出現評價摘要，亦未有資料證明實際轉換率一定改善。",
+      "detail_en": "Google Ads Help says review summaries automatically synthesize positive online reviews into commentary that may appear with Search ads. Eligibility is limited to Search campaigns on Google.com in English in the US, Australia, UK and India, excluding sensitive verticals such as pharmaceuticals. Advertisers cannot edit the generated text, and Google shows it only when predicted to help ad performance. Search Engine Land covered the documentation on October 26; the help page itself does not state a launch date.\n\nThis is relevant to multinational search advertisers, not evidence of global availability or guaranteed conversion gains.",
+      "next_step": "先核對各帳戶及市場資格，檢視公開評價品質及品牌風險；不要將功能當成可手動控制的廣告附加素材。",
+      "next_step_en": "Check market and account eligibility, review public customer feedback, and avoid treating the AI-generated copy as an editable asset.",
+      "source": "Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+      "time": "10月26日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "僅限美、澳、英、印四個英語市場的Google.com Search廣告。",
+        "摘要由Google AI生成，廣告主不可直接修改。",
+        "Google只在預測有利廣告成效時展示，未有保證。"
+      ],
+      "highlights_en": [
+        "Eligible only for English-language Google.com Search ads in the US, Australia, UK and India.",
+        "Google AI generates the summary; advertisers cannot directly edit it.",
+        "Display is conditional on predicted benefit, not guaranteed."
+      ],
+      "verification_url": "https://searchengineland.com/google-confirms-ai-generated-review-summaries-in-search-ads-498977",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Pinterest於指定市場開放程序化廣告採購，亞太透過Google Ad Manager接入",
+      "title_en": "Pinterest opens selected programmatic inventory, with Google Ad Manager support in APAC",
+      "summary": "Pinterest於10月26日宣布Programmatic Deals在指定市場正式開放，企業廣告主可透過合作DSP採購部分展示及影片廣告庫存。",
+      "summary_en": "Pinterest announced general availability of Programmatic Deals in selected markets on October 26, enabling enterprise buyers to access selected display and video inventory through partner DSPs.",
+      "why": "媒體團隊可研究Pinterest由社交平台採購走向既有程序化工作流的機會，尤其是美容、生活方式及購物探索場景。",
+      "why_en": "Media planners can evaluate how Pinterest fits existing programmatic workflows, particularly for beauty, lifestyle and discovery-led campaigns.",
+      "detail": "Pinterest官方表示，Programmatic Deals透過Magnite等供應方合作夥伴接入，亞太及拉美亦與Google Ad Manager合作。需求方渠道包括Amazon Ads、Google Display & Video 360及Yahoo DSP。這些合作旨在令企業廣告主在既有媒體採購流程中納入Pinterest指定展示與影片庫存。\n\n官方引用Moroccanoil於2026年6月的個案成效；該數據屬特定廣告活動的廠商案例，不能推算一般廣告主會取得相同結果。公告沒有逐一列出香港等所有市場及帳戶的實際開通範圍。",
+      "detail_en": "Pinterest says Programmatic Deals connects selected display and video inventory to existing buying workflows via supply-side partners including Magnite. In APAC and Latin America, it also works with Google Ad Manager. Demand-side partners named include Amazon Ads, Google Display & Video 360 and Yahoo DSP.\n\nThe Moroccanoil metrics in the release are a vendor-reported June 2026 case study, not a benchmark for other advertisers. The announcement does not enumerate every eligible country or account, so Hong Kong availability should not be assumed.",
+      "next_step": "向Pinterest或DSP代表確認香港及目標市場可用性、庫存、衡量方式與交易條件，先做小規模測試。",
+      "next_step_en": "Ask Pinterest or DSP partners to confirm country access, inventory, measurement and deal terms before piloting.",
+      "source": "Pinterest Newsroom",
+      "url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+      "time": "10月26日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "Programmatic Deals只在指定全球市場開放。",
+        "Magnite及Google Ad Manager參與供應方接入；部分DSP支援採購。",
+        "品牌個案成效不可視作所有投放的保證。"
+      ],
+      "highlights_en": [
+        "Availability is limited to selected markets.",
+        "Magnite and Google Ad Manager support supply access; named DSPs offer buying routes.",
+        "Brand case-study results are not guaranteed outcomes."
+      ],
+      "verification_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Stagwell收購Freestar，進一步整合出版商程序化廣告供應鏈",
+      "title_en": "Stagwell acquires Freestar to expand publisher monetization and programmatic supply",
+      "summary": "Stagwell於10月26日公布收購出版商變現公司Freestar，計劃將其能力納入Owned Media及Media and Commerce業務。",
+      "summary_en": "Stagwell announced its acquisition of publisher monetization company Freestar on October 26, planning to integrate its capabilities into Owned Media and Media and Commerce.",
+      "why": "代理商與媒體供應商的邊界持續改變，品牌值得留意庫存透明度、供應路徑與採購利益衝突管理。",
+      "why_en": "The acquisition highlights convergence between agency buying and publisher supply. Brands should scrutinize transparency, supply paths and potential conflicts.",
+      "detail": "Stagwell官方公告確認收購Freestar。Freestar提供出版商變現服務及pubOS技術，交易將其能力納入Stagwell旗下Owned Media業務，並與其Media and Commerce生態系統整合。AdExchanger獨立報道亦確認交易已完成，交易金額未有披露。\n\nStagwell提出縮短供應路徑、強化受眾情報及利用AI Media Machine作代理決策等方向，屬未來整合計劃；目前沒有獨立數據證明相關效率或廣告成效已實現。",
+      "detail_en": "Stagwell's October 26 announcement confirms the acquisition of Freestar, whose pubOS platform and publisher services are to join Stagwell's Owned Media business. Independent AdExchanger reporting also says the deal closed and that the price was undisclosed.\n\nClaims about shorter supply paths, stronger audience intelligence and AI Media Machine integration describe the intended strategy. They are not independently measured performance outcomes.",
+      "next_step": "檢視供應路徑透明度、收費結構及庫存品質，將收購後的新能力視作待驗證方案。",
+      "next_step_en": "Review supply-path transparency, fees and inventory quality, treating integration benefits as claims to validate.",
+      "source": "Stagwell",
+      "url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+      "time": "10月26日",
+      "section": "行業影響 & 品牌案例",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "Stagwell已宣布收購Freestar。",
+        "Freestar的出版商變現技術將納入Owned Media生態。",
+        "交易金額未披露，整合效益仍待驗證。"
+      ],
+      "highlights_en": [
+        "Stagwell announced its acquisition of Freestar.",
+        "Freestar's monetization services will join the Owned Media ecosystem.",
+        "Deal value was undisclosed; integration benefits remain unproven."
+      ],
+      "verification_url": "https://www.adexchanger.com/agencies/stagwell-acquires-publisher-monetization-network-freestar/",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Bloomreach開放External Segments，支援外部客群接入行銷觸達",
+      "title_en": "Bloomreach makes External Segments available for activating audiences from external data systems",
+      "summary": "Bloomreach於10月26日宣布External Segments功能可用，讓外部數據倉庫、CDP或reverse ETL建立的客群透過API接入行銷平台。",
+      "summary_en": "Bloomreach announced availability of External Segments on October 26, allowing audiences from warehouses, CDPs and reverse ETL systems to be passed into its engagement platform through APIs.",
+      "why": "品牌若已在自家數據平台建立客群，可研究減少重複建立分群邏輯的可能性，同時需要核對資料流與授權。",
+      "why_en": "Brands with established audience models can assess whether the feature reduces duplicated segmentation work while reviewing consent, data movement and governance.",
+      "detail": "Bloomreach官方表示，External Segments可讓任何能呼叫其開放API的系統傳送客群，供Bloomreach行銷觸達使用，並與原生分群並存。公司把此模式稱為zero-copy activation，並提到Loomi可在多個渠道運用相關客群訊號。\n\nZero-copy是供應商對架構的描述，並不能證明所有部署都完全沒有資料轉移。企業仍需逐項核對API、個人資料同意、資料保留及跨系統處理方式。",
+      "detail_en": "Bloomreach says External Segments lets external warehouses, CDPs or reverse ETL tools send audiences into its engagement platform through an open API, alongside native segments. It positions the capability as 'zero-copy activation' and describes Loomi using the resulting audiences across channels.\n\n'Zero-copy' is a vendor characterization, not proof that every implementation involves no data movement. Data governance, consent, API permissions and retention still require review.",
+      "next_step": "由資料及CRM團隊核對API流程、授權、同意管理與數據回傳，再決定是否試行。",
+      "next_step_en": "Have data and CRM teams validate API flows, permissions, consent and feedback loops before a pilot.",
+      "source": "Bloomreach",
+      "url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+      "time": "10月26日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "外部數據倉庫、CDP及reverse ETL客群可經API接入。",
+        "公司表示功能已提供，與原生分群並行。",
+        "zero-copy屬供應商技術描述，仍需按實際部署核實。"
+      ],
+      "highlights_en": [
+        "External audiences can enter via API from warehouses, CDPs and reverse ETL tools.",
+        "Bloomreach says the feature is available alongside native segmentation.",
+        "Zero-copy claims need implementation-level validation."
+      ],
+      "verification_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Google更新分享型網頁防垃圾內容指引，建議按用途限制索引",
+      "title_en": "Google updates spam guidance for shared pages, generated content and web apps",
+      "summary": "Google Search Central文件新增對分享頁、生成內容及web apps被濫用的警示，建議非供公開搜尋發現的分享頁使用noindex或阻止爬取。",
+      "summary_en": "Google Search Central guidance addresses spam abuse on shared pages, generated content and web apps, recommending noindex or crawl restrictions for pages intended for sharing rather than public search discovery.",
+      "why": "品牌網站與AI工具開發團隊要區分真正需要被搜尋的內容，以及可能產生大量低質分享頁的功能。",
+      "why_en": "Site and AI-product teams should distinguish pages meant for public discovery from utility or sharing pages that could generate low-value indexable content.",
+      "detail": "Google官方指引提醒，提供用戶發布分享頁、生成內容或web apps的平台，可能被垃圾內容濫用。對原本用於直接分享、協作或工具用途，而非希望出現在公開搜尋結果的頁面，文件建議預設採用noindex或阻擋爬取。Search Engine Land於10月26日報道這項文件變動。\n\n這不是對所有AI生成內容的全面封鎖要求。真正具有原創價值、供公開搜尋的頁面仍應按搜尋政策與內容品質獨立判斷。",
+      "detail_en": "Google warns that platforms allowing users to publish shared pages, generated content or web apps can be abused for spam. For pages designed for direct sharing, collaboration or utility rather than public discovery, it recommends noindex or crawl restrictions. Search Engine Land reported the documentation change on October 26.\n\nThis is not a blanket rule to block all AI-generated content. Publicly useful, original pages require separate indexing and quality decisions.",
+      "next_step": "審核網站分享頁、AI生成頁及用戶內容路徑，按公開搜尋用途決定index/noindex。",
+      "next_step_en": "Audit shared and generated-content URLs and set indexing policy according to intended public-search use.",
+      "source": "Google Search Central",
+      "url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+      "time": "10月26日",
+      "section": "即學技巧 & 玩法",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "分享型頁面及web apps可能被濫用作垃圾內容。",
+        "Google建議非供公開搜尋的分享頁使用noindex或限制爬取。",
+        "不是所有AI生成內容都需要一律封鎖。"
+      ],
+      "highlights_en": [
+        "Shared pages and web apps can be abused for spam.",
+        "Google recommends noindex or crawl restrictions for pages not meant for public discovery.",
+        "The advice is not a blanket ban on AI-generated pages."
+      ],
+      "verification_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "淘寶新加坡雙十一加碼線下廣告，強調購物探索而非只講價格",
+      "title_en": "Taobao doubles physical advertising spend in Singapore for 11.11 and emphasizes discovery",
+      "summary": "MARKETING-INTERACTIVE報道，淘寶今年新加坡雙十一的實體廣告支出增加一倍，整體活動投入逾人民幣1億元，涵蓋補貼、運費優惠及廣告。",
+      "summary_en": "MARKETING-INTERACTIVE reports that Taobao doubled physical advertising spend in Singapore for 11.11, while total campaign investment exceeds RMB100 million across subsidies, shipping incentives and advertising.",
+      "why": "跨境電商平台正嘗試以品牌故事、地鐵及戶外媒體建立非促銷期間的購物需求，值得研究線上線下整合。",
+      "why_en": "The campaign illustrates how cross-border commerce brands can connect OOH, creators and in-app experiences beyond discount-only messaging.",
+      "detail": "報道引述淘寶新加坡負責人Cora Cai表示，平台希望讓消費者認識其更廣泛的商品及生活方式選擇。活動利用地鐵列車、戶外廣告與演員張凌赫形象，連結App內活動及尋寶機制。\n\n報道提到逾人民幣1億元的整體新加坡活動投入，範圍包括消費補貼、運費優惠及廣告，不能把全部金額解讀成戶外廣告預算。投放加碼與成效之間亦未有獨立因果證據。",
+      "detail_en": "Taobao Singapore country head Cora Cai told MARKETING-INTERACTIVE that the campaign aims to communicate a broader product-discovery proposition. MRT and OOH placements featuring actor Zhang Linghe connect to in-app themed content and a treasure-hunt mechanic.\n\nThe reported RMB100 million-plus refers to total Singapore campaign investment, including subsidies, shipping and advertising—not OOH media spend alone. The report does not independently establish incremental sales impact.",
+      "next_step": "分析戶外廣告、App活動及品牌認知指標如何互相配合，避免只用短期銷售衡量。",
+      "next_step_en": "Assess how OOH, in-app engagement and brand metrics work together rather than using short-term sales alone.",
+      "source": "MARKETING-INTERACTIVE",
+      "url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+      "time": "10月26日",
+      "section": "行業影響 & 品牌案例",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "淘寶新加坡今年雙十一實體廣告支出較去年增加一倍。",
+        "逾人民幣1億元屬整體活動投入，並非純廣告預算。",
+        "地鐵及戶外廣告連接App內品牌互動。"
+      ],
+      "highlights_en": [
+        "Physical ad spend in Singapore reportedly doubled year on year.",
+        "RMB100m-plus is total campaign investment, not OOH spend alone.",
+        "MRT and outdoor placements connect to in-app engagement."
+      ],
+      "verification_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Daily Mail與品牌測試GEO可見度服務，正式產品尚未推出",
+      "title_en": "Daily Mail pilots GEO visibility services with brands ahead of a planned product",
+      "summary": "Digiday於10月26日報道，Daily Mail正在美國、英國及澳洲進行約12至15個GEO測試，研究品牌如何出現在AI生成答案。",
+      "summary_en": "Digiday reported on October 26 that the Daily Mail is running around 12–15 GEO tests in the US, UK and Australia to study how brands appear in AI-generated answers.",
+      "why": "媒體與品牌正探索AI回答中的可見度量度及商業模式，與傳統SEO及點擊歸因有不同挑戰。",
+      "why_en": "Publishers and brands are experimenting with AI-answer visibility measurement, which raises questions beyond traditional SEO clicks and referral attribution.",
+      "detail": "Digiday引述Daily Mail SEO及電商主管Carly Steven於業界活動分享，團隊正以消費者可能使用的提示詞追蹤不同AI平台回答、引用來源及品牌出現情況。她提到約12至15項測試，正式產品預計明年才推出。\n\n其中一個未具名個案的可見度改善屬受訪者描述，沒有完整公開方法供獨立驗證。團隊亦承認AI曝光與實際轉換之間仍存在歸因缺口。這是試驗性服務，不應當作已成熟的GEO採購產品。",
+      "detail_en": "Digiday quoted Daily Mail SEO and ecommerce director Carly Steven describing 12–15 tests that track consumer prompts, citations and brand visibility across AI platforms. The publisher expects to formalize an offering next year.\n\nAn early unnamed-brand visibility result was reported by the interviewee without a fully public methodology. The team also acknowledges attribution gaps between AI mentions and conversions. This is a pilot, not an established commercial product.",
+      "next_step": "先建立自家品牌AI提及與引用基準，將品牌可見度和實際業務成效分開追蹤。",
+      "next_step_en": "Establish an AI-mention and citation baseline while keeping visibility separate from proven business outcomes.",
+      "source": "Digiday",
+      "url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+      "time": "10月26日",
+      "section": "行業影響 & 品牌案例",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "Daily Mail表示正在美英澳進行約12–15項GEO測試。",
+        "正式商業產品仍屬規劃，預期明年推出。",
+        "AI可見度與實際轉換的歸因尚待驗證。"
+      ],
+      "highlights_en": [
+        "Daily Mail says it is running 12–15 GEO tests across the US, UK and Australia.",
+        "A formal commercial product is planned for next year.",
+        "Visibility-to-conversion attribution remains unresolved."
+      ],
+      "verification_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Google DV360 API v5進入公開測試，新增YouTube排除控制及DOOH訂單支援",
+      "title_en": "Google DV360 API v5 enters public beta with YouTube exclusions and DOOH order support",
+      "summary": "Google開發者10月22日更新確認Display & Video 360 API v5公開測試，新增廣告主層級YouTube影片及頻道排除目標、DOOH insertion orders等功能。",
+      "summary_en": "Google's October 22 developer release notes confirm a public beta of Display & Video 360 API v5, including advertiser-level YouTube video/channel exclusions and digital out-of-home insertion-order support.",
+      "why": "使用DV360 API自動化投放或報表的代理商應先評估版本遷移對排除名單、受眾管理及DOOH流程的影響。",
+      "why_en": "Agencies automating DV360 workflows should assess migration impacts on exclusions, audience management and DOOH operations.",
+      "detail": "Google官方release notes列明v5為public beta，新增廣告主層級YouTube影片及頻道排除、DOOH插單支援、部分交易與受眾介面調整，並將Customer Match受眾管理方法轉向Data Manager API。Google同頁仍標示v4為最新正式API版本。\n\n因此，v5不等於已完成穩定版全面替換。現有整合應閱讀v4→v5遷移文件，測試相容性、權限及資料同步後再切換。",
+      "detail_en": "Google's release notes identify v5 as a public beta, adding advertiser-level YouTube video/channel exclusion controls, DOOH insertion-order support and changes to deals and audience methods. Customer Match management methods move toward the Data Manager API. The same documentation still labels v4 as the latest stable version.\n\nV5 should not be described as a general stable replacement. Existing integrations need migration testing for permissions, compatibility and data flows.",
+      "next_step": "盤點現有DV360 API整合，建立v4至v5測試清單，先驗證再遷移。",
+      "next_step_en": "Inventory DV360 API integrations and test v4-to-v5 compatibility before migration.",
+      "source": "Google for Developers",
+      "url": "https://developers.google.com/display-video/api/release-notes",
+      "time": "10月22日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "DV360 API v5目前屬public beta，v4仍是最新正式版。",
+        "新增YouTube影片及頻道排除、DOOH訂單支援。",
+        "Customer Match等介面變動需要遷移測試。"
+      ],
+      "highlights_en": [
+        "DV360 API v5 is a public beta; v4 remains the latest stable version.",
+        "Adds YouTube exclusion targeting and DOOH insertion-order support.",
+        "Customer Match and other API changes require migration testing."
+      ],
+      "verification_url": "https://developers.google.com/display-video/api/release-notes",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "L Catterton投資AI購物平台Glance，交易金額未披露",
+      "title_en": "L Catterton invests in AI shopping platform Glance; financial terms undisclosed",
+      "summary": "Glance於10月26日公布L Catterton策略投資，重點發展跨手機、連網電視等場景的AI購物探索。",
+      "summary_en": "Glance announced an October 26 strategic investment from L Catterton, focused on AI-assisted product discovery across smartphones, connected TVs and other screens.",
+      "why": "AI購物入口正從搜尋結果延伸至裝置與內容場景，品牌值得留意商品資料及曝光方式的變化。",
+      "why_en": "AI shopping discovery is expanding beyond search into device and content environments, raising questions for product data and retail visibility.",
+      "detail": "Glance官方公告稱，L Catterton將投資其AI個人化購物平台，支援美國市場擴張。Glance表示已透過Samsung、Motorola及DIRECTV等合作在手機及電視裝置上提供體驗。交易條款及金額未有披露。\n\n平台對消費者觸及規模、購物轉換及未來市場機會的描述屬當事方說法，未見獨立成效數據。投資消息可作AI Commerce渠道觀察，不能當成品牌已可全面投放的新廣告產品。",
+      "detail_en": "Glance says L Catterton made a strategic investment to support the AI personal-shopping platform, with particular focus on US expansion. It cites device and distribution partnerships with Samsung, Motorola and DIRECTV. Transaction terms were not disclosed.\n\nReach, shopping conversion and future market potential are company claims without independent performance verification. The investment is an agentic-commerce signal, not proof of a universally available new advertising product.",
+      "next_step": "留意裝置端AI購物如何展示商品資料及品牌，先核對可用市場與商業合作模式。",
+      "next_step_en": "Monitor how device-based AI shopping surfaces products and brands; verify markets and commercial access.",
+      "source": "Glance Newsroom",
+      "url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+      "time": "10月26日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "L Catterton於10月26日公布策略投資Glance。",
+        "Glance描述手機、CTV等跨屏AI購物場景。",
+        "交易金額未披露，成效仍待獨立核實。"
+      ],
+      "highlights_en": [
+        "L Catterton announced a strategic investment in Glance on October 26.",
+        "Glance positions its AI shopping experience across mobile and CTV.",
+        "Deal terms were undisclosed; performance claims remain unverified."
+      ],
+      "verification_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+      "source_kind": "editorial_draft"
+    },
+    {
+      "title": "Firefox邀請經典網路迷因人物拍廣告，以懷舊重新談私隱與AI選擇",
+      "title_en": "Firefox reunites early internet meme figures in a nostalgia-led privacy campaign",
+      "summary": "Mozilla於10月25日介紹Firefox新品牌活動，邀請早期互聯網迷因人物重聚，主打開放網路、私隱及用戶選擇。",
+      "summary_en": "Mozilla introduced a new Firefox brand campaign on October 25 featuring early internet meme figures, emphasizing the open web, privacy and user choice.",
+      "why": "以文化記憶連接品牌定位，提供一個不同於純功能訴求的挑戰者品牌創意案例。",
+      "why_en": "The campaign shows how a challenger brand can use shared cultural memory to reinforce positioning rather than rely solely on feature-led messaging.",
+      "detail": "Mozilla官方文章介紹活動邀請Overly Attached Girlfriend、Dancing Matt及Annoying Orange等早期網絡人物參與，透過「The Internet You Loved Is Still Here」重新表達Firefox的獨立瀏覽器定位。活動由We Believers策劃，並以用戶私隱、追蹤與AI功能選擇作品牌主張。\n\nMozilla對產品優勢的說法屬品牌訊息，並無提供足以證明活動帶來下載或市場份額增長的數據。相關活動另有專業媒體報道，惟不能由報道推算活動成效。",
+      "detail_en": "Mozilla's official post describes a campaign featuring Overly Attached Girlfriend, Dancing Matt and Annoying Orange under 'The Internet You Loved Is Still Here.' Created with We Believers, the work uses nostalgia to reinforce Firefox's independent-browser positioning around privacy, tracking and choice over AI features.\n\nThe product comparisons are brand messaging, not independent evidence of downloads or market-share gains. MARKETING-INTERACTIVE also covered the campaign on October 26.",
+      "next_step": "評估品牌有冇具辨識度的歷史文化資產可重新演繹，同時為創意設定實際成效指標。",
+      "next_step_en": "Identify authentic cultural assets the brand can revisit, while defining measurable campaign objectives.",
+      "source": "Mozilla Blog",
+      "url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+      "time": "10月25日",
+      "section": "行業影響 & 品牌案例",
+      "region": "國際",
+      "action": "要留意",
+      "highlights": [
+        "Mozilla以早期網路迷因人物重塑Firefox品牌敘事。",
+        "活動聚焦開放網路、私隱及AI功能選擇。",
+        "尚無獨立成效數據證明品牌活動結果。"
+      ],
+      "highlights_en": [
+        "Mozilla revisits early internet memes to tell Firefox's brand story.",
+        "The campaign emphasizes the open web, privacy and AI-feature choice.",
+        "No independent outcome data establishes campaign impact."
+      ],
+      "verification_url": "https://www.marketing-interactive.com/firefox-brings-back-meme-royalty-for-an-internet-throwback",
+      "source_kind": "editorial_draft"
+    }
+  ]
 }
