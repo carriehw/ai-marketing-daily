@@ -1,19 +1,22 @@
 {
-  "schema_version": "editorial-discovery-draft-v1",
+  "schema_version": "editorial-discovery-draft-v1.1",
   "edition_date_hkt": "2026-10-27",
   "status": "DRAFT_HELD",
-  "hold_reason": "below_editorial_floor; 0 stories have completed all release evidence and independent second-pass review; do not publish",
+  "hold_reason": "0 full release-ready bilingual/tri-lingual stories with complete claim-level evidence, independent second-pass and build/live verification; quality floor 10; keep production unchanged",
   "reference_head_sha": "2a1c89385da4d080a3e2cdc09c5ccc0d6a09a39b",
-  "source_search_scope": "Original announcements dated 2026-10-22 to 2026-10-26; excludes prior seen-story duplicates and stale reprints.",
+  "source_search_scope": "Original sources and reputable reporting published 2026-10-22 through 2026-10-27 HKT (mostly Oct 25-26 in US/EU); checked duplicates against published seen-urls; event date and publication date separated.",
   "confirmed_repo_previous_edition": "2026-10-26",
   "confirmed_repo_previous_count": 14,
   "release_ready_story_count": 0,
-  "source_read_candidates_count": 8,
+  "source_read_candidates_count": 23,
   "notes": [
     "A source-read candidate is not an approved full-news item. Provisional scores are editorial triage only.",
     "Do not mark editorial_approved or alter edm/payload.json while the issue is held.",
     "No public website or Outlook dispatch was attempted. Public live HTTP access unavailable in this run.",
-    "Follow current Editorial Constitution and Daily SOP; expand discovery, complete full claim-level bilingual evidence, and rerun release gate before publication."
+    "Follow current Editorial Constitution and Daily SOP; expand discovery, complete full claim-level bilingual evidence, and rerun release gate before publication.",
+    "Supplementary research expanded initial 8 to 24 tracked distinct candidates, 23 source-read; source count is not verified publication count. Original eight candidate objects preserved.",
+    "External live website/EDM HTTP access not available from this tool runtime; repository main data.json still dated 2026-10-26.",
+    "No publication or email sending attempted in this run; main remains untouched."
   ],
   "candidates": [
     {
@@ -119,6 +122,327 @@
       "caveat": "業界首創及60%改善屬未獨立證實的供應商自述，風險較高；不得直接發布成既定事實。",
       "relevance_provisional": 60,
       "review_status": "hold_unverified_performance"
+    },
+    {
+      "slug": "google-search-ads-review-summaries",
+      "title_zh": "Google Search Ads 新增AI生成評價摘要；目前僅限四個英語市場",
+      "source": "https://support.google.com/google-ads/answer/18760807?hl=en",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "A",
+      "source_locator": "Google Ads Help: About Review summaries / Eligibility and availability / Key considerations; Search Engine Land 26 Oct",
+      "claim_summary": "Google官方說明Search ads的AI評價摘要從網上評價生成，適用美國、澳洲、英國、印度英語搜尋；Search Engine Land 10月26日報道新文件。",
+      "caveat": "Google Help文件頁面未顯示首次發布日期；10月26日係報道日期；廣告主不可編輯摘要，並非所有市場及廣告都會展示。",
+      "relevance_provisional": 91,
+      "review_status": "source_and_secondary_read_requires_full_bilingual_packet",
+      "secondary_sources": [
+        "https://searchengineland.com/google-confirms-ai-generated-review-summaries-in-search-ads-498977"
+      ],
+      "claim_checks": [
+        {
+          "claim": "Google AI會由網上評價生成Search Ads摘要",
+          "support": "Google Ads Help / How review summaries work",
+          "status": "verified"
+        },
+        {
+          "claim": "只限US/AU/UK/IN英語搜尋，並排除藥物等敏感行業",
+          "support": "Google Ads Help / Eligibility and availability",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "slug": "google-ads-policy-summary",
+      "title_zh": "Google Ads推出集中政策問題總覽頁面",
+      "source": "https://searchengineland.com/google-ads-introduces-centralized-dashboard-for-tracking-policy-issues-499005",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Search Engine Land 26 Oct 2026 / Policy Summary / Admin → Policy → Summary",
+      "claim_summary": "報道指Google Ads新增Policy Summary頁，集中展示帳戶層級及廣告/素材群組政策問題。",
+      "caveat": "需補Google官方更新記錄或產品內實際頁面驗證；功能開放範圍、帳戶權限未知。",
+      "relevance_provisional": 86,
+      "review_status": "needs_primary_document_or_product_verification"
+    },
+    {
+      "slug": "google-user-shared-pages-indexing",
+      "title_zh": "Google建議分享頁、生成內容與網頁App預設防止垃圾內容被索引",
+      "source": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "A",
+      "source_locator": "Google Search Central: Prevent user-generated spam / When pages are created for direct sharing / Search Engine Land 26 Oct",
+      "claim_summary": "Google官方文件指分享頁、生成內容及web apps可能遭垃圾內容濫用，供直接分享而非搜尋發現的頁面宜使用noindex或阻擋爬取。",
+      "caveat": "適用情境係非公開搜尋用途嘅分享頁；不能延伸成所有AI內容都應noindex；官方頁未見明確首次更新日期。",
+      "relevance_provisional": 83,
+      "review_status": "source_and_secondary_read_requires_full_bilingual_packet",
+      "secondary_sources": [
+        "https://searchengineland.com/google-search-says-you-should-block-indexing-of-link-shared-content-499040"
+      ],
+      "claim_checks": [
+        {
+          "claim": "分享型頁面可採noindex或robots.txt阻擋索引",
+          "support": "Google Search Central / Prevent user-generated spam",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "slug": "affle-mediasmarttv-ctv",
+      "title_zh": "Affle旗下Mediasmart推出自助CTV採購平台，主打以成果衡量廣告",
+      "source": "https://www.adexchanger.com/tv/mobile-ad-tech-holding-company-affle-wants-to-sell-ctv-ads-like-app-installs/",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "AdExchanger 26 Oct 2026 / Interview Sameer Sondhi / MediasmartTV",
+      "claim_summary": "AdExchanger採訪Affle北美管理層，報道旗下Mediasmart在10月26日推出MediasmartTV自助CTV產品。",
+      "caveat": "供應規模、按成果收費及轉換歸因屬公司說法，未獨立核實；勿把2020年Household Sync舊新聞當新產品。",
+      "relevance_provisional": 78,
+      "review_status": "needs_product_docs_and_claim_level_verification"
+    },
+    {
+      "slug": "taobao-singapore-ooh-1111",
+      "title_zh": "淘寶新加坡雙十一增加線下媒體投放，強化商品探索定位",
+      "source": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "MARKETING-INTERACTIVE 26 Oct / Cora Cai interview",
+      "claim_summary": "媒體採訪淘寶新加坡負責人，報道本年度線下廣告投入增倍；逾人民幣1億元屬整體新加坡活動投入，包含補貼、運費優惠與廣告。",
+      "caveat": "不可把人民幣1億元寫成OOH媒體預算；增加一倍係公司受訪陳述，非獨立財務核數。",
+      "relevance_provisional": 80,
+      "review_status": "source_read_requires_attribution_and_full_claim_packet"
+    },
+    {
+      "slug": "visa-visual-identity-ai-commerce",
+      "title_zh": "Visa更新品牌視覺系統，引入獨立V符號及Visa Sans字體",
+      "source": "https://production.marketing-interactive.com/visa-refreshes-visual-identity",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "MARKETING-INTERACTIVE 26 Oct / new V symbol and Visa Sans",
+      "claim_summary": "報道Visa更新字體、動態與圖像識別，沿用Visa名稱及現有主要字標，新增獨立V符號。",
+      "caveat": "需核對Visa品牌官方手冊與全球推出日期；此係品牌識別更新，不能寫成支付產品功能推出。",
+      "relevance_provisional": 70,
+      "review_status": "needs_first_party_visual_identity_source"
+    },
+    {
+      "slug": "daily-mail-geo-tests",
+      "title_zh": "Daily Mail正與品牌測試GEO服務，正式產品仍在規劃",
+      "source": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Digiday 26 Oct / Carly Steven interview / 12-15 tests",
+      "claim_summary": "Digiday報道Daily Mail在美英澳進行約12–15個GEO測試，研究品牌於AI回答中的可見度，預計明年推出正式服務。",
+      "caveat": "屬測試階段，測試數量及上市時間為受訪方陳述；不可寫成已推出商業產品或證明成效。",
+      "relevance_provisional": 81,
+      "review_status": "source_read_requires_full_claim_packet"
+    },
+    {
+      "slug": "us-election-ctv-ad-prices",
+      "title_zh": "美國中期選舉政治廣告推高部分地區TV與CTV採購成本",
+      "source": "https://digiday.com/media-buying/midterm-political-spending-throws-spanner-into-regional-advertiser-holiday-plans/",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Digiday 26 Oct / US midterm advertiser interviews / AdImpact forecasts",
+      "claim_summary": "報道政治媒體投放與Q4零售廣告檔期重疊，令部分搖擺州TV與串流媒體庫存價格及排期受壓。",
+      "caveat": "屬美國區域性投放問題，市場估算需另核對AdImpact原始報告，不能泛化到APAC。",
+      "relevance_provisional": 64,
+      "review_status": "needs_forecast_method_and_geo_qualifier"
+    },
+    {
+      "slug": "firefox-internet-you-loved-campaign",
+      "title_zh": "Firefox推出懷舊互聯網廣告活動，重新強調私隱及瀏覽器自主權",
+      "source": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+      "first_published_date": "2026-10-25",
+      "event_date": "2026-10-25",
+      "source_class": "A",
+      "source_locator": "Mozilla official blog 25 Oct / campaign creative team / Marketing-Interactive 26 Oct",
+      "claim_summary": "Mozilla官方公布邀請早期網絡迷因人物參與新活動，訴求Firefox作為保護私隱、可自行選擇AI功能的瀏覽器。",
+      "caveat": "Mozilla對隱私功能的比較屬品牌宣傳；不能據此推論實際用戶增長或廣告轉換。",
+      "relevance_provisional": 71,
+      "review_status": "source_and_secondary_read_requires_full_bilingual_packet",
+      "secondary_sources": [
+        "https://production.marketing-interactive.com/firefox-brings-back-meme-royalty-for-an-internet-throwback"
+      ]
+    },
+    {
+      "slug": "duolingo-apple-duo-stunt",
+      "title_zh": "Duolingo借iPhone發售設置Apple Duo街頭活動",
+      "source": "https://production.marketing-interactive.com/duolingo-goes-apple-picking-with-cheeky-iphone-duo-stunt",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "MARKETING-INTERACTIVE 26 Oct / brand Instagram photo report",
+      "claim_summary": "Duolingo利用iPhone Duo的命名與綠色蘋果攤位進行品牌話題營銷。",
+      "caveat": "原始社交帖及實際地點、日期未獨立核實；相關活動屬創意案例，AI/MarTech直接相關性較低。",
+      "relevance_provisional": 55,
+      "review_status": "radar_only_needs_original_social_post"
+    },
+    {
+      "slug": "stagwell-palantir-ai-partnership",
+      "title_zh": "Stagwell與Palantir擴大AI行銷合作，仍需區分願景與已交付功能",
+      "source": "https://www.stagwellglobal.com/stagwell-stgw-and-palantir-pltr-expand-ai-partnership-to-transform-enterprise-marketing/",
+      "first_published_date": "2026-10-22",
+      "event_date": "2026-10-22",
+      "source_class": "A",
+      "source_locator": "Stagwell first-party 22 Oct 2026 / expansion of November 2025 agreement",
+      "claim_summary": "官方宣布擴大2025年合作，計劃把Palantir軟件用於Stagwell Machine系列行銷產品與企業流程。",
+      "caveat": "已過5日，須確認前期刊期未報過且仍具當日新聞價值；預期效益屬前瞻聲稱。",
+      "relevance_provisional": 77,
+      "review_status": "older_event_relevance_review_required"
+    },
+    {
+      "slug": "martech-marketo-alternatives-analysis",
+      "title_zh": "MarTech評論：新一代AI行銷自動化產品挑戰傳統Marketo工作流",
+      "source": "https://martech.org/the-next-wave-of-marketing-automation-is-taking-aim-at-marketo/",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "C",
+      "source_locator": "MarTech 26 Oct / Moni Oloyede analysis / Paminga Inflection.io Phave",
+      "claim_summary": "作者評論多個新產品宣稱可簡化傳統行銷自動化系統，未有獨立性能比較。",
+      "caveat": "屬作者觀點與供應商定位，不是同日單一新產品發布；只可列Radar/觀察，不充當完整新聞。",
+      "relevance_provisional": 59,
+      "review_status": "radar_only_opinion_not_new_announcement"
+    },
+    {
+      "slug": "cloudflare-aeo-connect-commentary",
+      "title_zh": "Search Engine Land作者評論Cloudflare AI可見度量度工具",
+      "source": "https://searchengineland.com/cloudflare-upend-ai-visibility-space-498710",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Search Engine Land 26 Oct / first-person Connect 2026 conference account",
+      "claim_summary": "作者分享Cloudflare Connect期間展示的AEO報表及AI爬蟲觀察。",
+      "caveat": "Cloudflare AEO Visibility Dashboard於8月已發布早期使用，不能將舊功能寫成10月26日首次推出；作者預測與會場傳聞需分開。",
+      "relevance_provisional": 65,
+      "review_status": "hold_prior_announcement_and_opinion"
+    },
+    {
+      "slug": "search-engine-land-awards-2026",
+      "title_zh": "Search Engine Land公布2026搜尋行銷獎項得獎名單",
+      "source": "https://searchengineland.com/search-engine-land-awards-2026-and-the-winners-are-498526",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Search Engine Land 26 Oct / Awards 2026 results",
+      "claim_summary": "媒體公布搜尋、PPC及AI搜尋相關年度獎項得獎者。",
+      "caveat": "活動及獎項資訊可核實，與每日可執行行銷決策關聯有限；建議不列完整主稿。",
+      "relevance_provisional": 45,
+      "review_status": "reject_low_editorial_relevance"
+    },
+    {
+      "slug": "mcdonalds-fifa-sponsorship",
+      "title_zh": "Campaign Asia報道麥當勞結束長達32年的FIFA世界盃贊助",
+      "source": "https://www.campaignasia.com/news",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "B",
+      "source_locator": "Campaign Asia news listing 26 Oct / headline only",
+      "claim_summary": "新聞列表指麥當勞退出長期世界盃贊助。",
+      "caveat": "只讀到列表摘要，未查到原始官方確認與合約細節；不能當成已核實完整新聞。",
+      "relevance_provisional": 60,
+      "review_status": "discovery_only_requires_article_and_first_party"
+    },
+    {
+      "slug": "b2b-attribution-dark-social-opinion",
+      "title_zh": "AdExchanger評論B2B採購決策難由傳統廣告歸因全面捕捉",
+      "source": "https://www.adexchanger.com/data-driven-thinking/b2b-buying-decisions-are-moving-where-ad-tech-cant-see/",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "source_class": "C",
+      "source_locator": "AdExchanger 26 Oct / opinion by Margarita Savytska",
+      "claim_summary": "作者分析AI輔助研究與私密社交分享如何令B2B買家旅程更難由傳統追蹤衡量。",
+      "caveat": "明確屬意見分析，沒有當日獨立事件；不可列為實際新產品/政策新聞。",
+      "relevance_provisional": 52,
+      "review_status": "radar_only_opinion_not_new_announcement"
     }
+  ],
+  "phase": "supplementary_research_2026-10-27_1014_HKT",
+  "candidate_count": 24,
+  "published_story_count": 0,
+  "last_confirmed_repo_edition": "2026-10-26",
+  "last_confirmed_repo_count": 14,
+  "live_http_verified": false,
+  "main_data_blob_sha_at_review": "c950b452dae93d35bb1d5afff2fbd677c2d1f070",
+  "seen_urls_blob_sha_at_review": "21977d28038be7b52b5162e687a667f240361b65",
+  "source_groups_checked": [
+    "Pinterest newsroom",
+    "Google Ads Help and Search Central",
+    "Google DV360 API changelog",
+    "Bloomreach press",
+    "Stagwell press",
+    "Glance press",
+    "Oracle press",
+    "AdExchanger",
+    "Search Engine Land",
+    "Digiday",
+    "Marketing-Interactive",
+    "MarTech",
+    "Mozilla blog",
+    "Campaign Asia / Campaign India",
+    "Google/Meta policy reporting"
+  ],
+  "duplicate_exclusions": [
+    {
+      "slug": "klook-meta-muse",
+      "source": "https://www.marketing-interactive.com/klook-and-meta-put-ai-in-the-travel-agent-s-seat",
+      "reason": "already appears in seen-urls.json"
+    },
+    {
+      "slug": "salesforce-braze",
+      "source": "https://www.marketing-interactive.com/salesforce-to-buy-braze-in-ai-marketing-push",
+      "reason": "already appears in seen-urls.json; October 20 transaction not fresh"
+    },
+    {
+      "slug": "optimizerx-tradedesk",
+      "source": "https://www.optimizerx.com/blog/optimizerx-brings-net-new-authenticated-hcp-reach-to-the-trade-desk-through-openpath",
+      "reason": "first-party original dated Sep 22, 2026; October 26 coverage alone not a new partnership"
+    },
+    {
+      "slug": "cloudflare-aeo-visibility-august",
+      "source": "https://www.cloudflare.com/en-ca/press/press-releases/2026/cloudflare-adds-aeo-visibility-dashboard-to-its-aeo-suite-showing-brands-whether-ai-assistants-are-recommending-them/",
+      "reason": "feature initially announced Aug 6, not a new Oct 26 product launch"
+    },
+    {
+      "slug": "martechbot-agent-ops",
+      "source": "https://martech.org/restructuring-martech-ops-for-autonomous-ai-agents/",
+      "reason": "AI-generated editorial Q&A with no discrete new event; exclude from full news"
+    }
+  ],
+  "secondary_cross_checks": [
+    {
+      "slug": "stagwell-freestar",
+      "original": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+      "independent": "https://www.adexchanger.com/agencies/stagwell-acquires-publisher-monetization-network-freestar/",
+      "notes": "26 Oct official acquisition and independent reporting align; no transaction price disclosed; full bilingual evidence packet still pending."
+    },
+    {
+      "slug": "pinterest-programmatic-deals",
+      "original": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+      "notes": "Official 26 Oct confirms selected markets and DSP/SSP partners; geographic availability remains unspecified for Hong Kong."
+    },
+    {
+      "slug": "meta-commercial-terms-delay",
+      "original": "https://www.reuters.com/business/media-telecom/meta-delay-new-commercial-terms-criticised-by-publishers-advertisers-2026-10-23/",
+      "independent": "https://digiday.com/media/metas-new-scraping-terms-galvanize-publishers-into-collective-action/",
+      "notes": "26 Oct reporting notes Meta delayed rollout; legally sensitive terms and effective date require direct Meta policy document + human review."
+    }
+  ],
+  "blockers": [
+    "Need >=10 individually complete, nonduplicate, marketer-relevant stories with English and Traditional Chinese text and consistent Simplified Chinese localization; 24 source-read candidates do not equal 10 release-ready stories.",
+    "Every published material claim requires original locator, second-pass challenge, source/edition date, source accessibility and appropriate attribution; high-risk claims remain held.",
+    "No complete editorial/evidence/2026-10-27.json packet or executable release gate result yet.",
+    "GitHub connector can write UTF-8 source files but this run cannot execute repository build.py / build_archive.py / build_search_index.py / build_locales.py / validation or live GitHub Pages cache-bypass acceptance; local git access failed DNS, and public live site unavailable to web tool.",
+    "Never mark EDM payload editorial_approved or dispatch Outlook while edition remains HELD."
+  ],
+  "next_actions": [
+    "Complete claim-level packets and independent second-pass for high-priority Google Ads review summaries, Pinterest Programmatic Deals, Stagwell/Freestar, Google Search spam guidance, Bloomreach External Segments, Taobao SG OOH, Daily Mail GEO, Google Ads Policy Summary and Affle MediasmartTV.",
+    "Validate source event dates, market/rollout restrictions, product beta/GA, numerical claims, and confirm each item absent from seen-urls; reject stale/low relevance/opinion items from full-news quota.",
+    "Prepare complete bilingual content with exact original citations and recommended actions, then Simplified Chinese caveat review; keep release_ready_story_count at zero until all gates genuinely passed.",
+    "Execute required repository build and QA in a runtime with actual repo filesystem and Python/Node; then commit coherent site/archive/EDM and verify three production locales + payload with cache bypass.",
+    "Next scheduled stage should re-read this exact branch and merge cautiously with any newer GitHub edits; never overwrite main data.json based on draft alone."
   ]
 }
