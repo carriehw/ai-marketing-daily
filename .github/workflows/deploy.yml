@@ -52,6 +52,13 @@ jobs:
       - name: Enforce editorial evidence and 10-news floor
         run: python verify_editorial.py --today "${{ steps.edition.outputs.date }}"
 
+      - name: Enforce claim-level source packet and independently reviewed release evidence
+        shell: bash
+        run: |
+          DATE="${{ steps.edition.outputs.date }}"
+          python editorial/check_evidence.py --data data.json --evidence "editorial/evidence/$DATE.json"
+          python -m unittest discover -v -s editorial -p 'test_check_evidence.py'
+
       - name: Validate publication dates and story chronology
         run: python verify_dates.py --today "${{ steps.edition.outputs.date }}"
 
