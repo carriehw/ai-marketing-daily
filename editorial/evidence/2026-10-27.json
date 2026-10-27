@@ -1,0 +1,904 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-10-27",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "audit_status": "AI-assisted second-pass original-source review completed 2026-10-27 HKT; no independent real-world product testing claimed",
+  "verified_at_hkt": "2026-10-27T10:28:47+08:00",
+  "status": "reviewed",
+  "editorial_owner": "Carrie Hui",
+  "stories": [
+    {
+      "story_id": "2026-10-27-google-review-summaries",
+      "title_zh": "Google搜尋廣告加入AI評價摘要；目前只支援四個英語市場",
+      "working_title_zh": "Google搜尋廣告加入AI評價摘要；目前只支援四個英語市場",
+      "source_story_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+      "published_article_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "source_class": "A",
+          "reference": "Google Ads Help 10月26日",
+          "evidence_locator": "Google Ads Help: Eligibility and availability / How review summaries work / Key considerations",
+          "limitations": "Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26",
+          "source_publication_date": null,
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Google Ads Help"
+        },
+        {
+          "url": "https://searchengineland.com/google-confirms-ai-generated-review-summaries-in-search-ads-498977",
+          "source_class": "B",
+          "reference": "Search Engine Land · 2026-10-26",
+          "source_publication_date": "2026-10-26",
+          "evidence_locator": "Published October 26 2026 at 12:51pm: Google confirms AI-generated review summaries in Search ads",
+          "limitations": "Secondary reporting establishes contemporaneous coverage, not initial rollout date",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Search Engine Land"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "僅限美、澳、英、印四個英語市場的Google.com Search廣告。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "Google Ads Help: Eligibility and availability / How review summaries work / Key considerations",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26"
+        },
+        {
+          "claim_zh": "摘要由Google AI生成，廣告主不可直接修改。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "Google Ads Help: Eligibility and availability / How review summaries work / Key considerations | Search ads on google.com, English US/AU/UK/India; Google creates positive-only review summaries and advertiser cannot edit text",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26"
+        },
+        {
+          "claim_zh": "正面網上評價由Google AI彙整，而摘要只有預測有利廣告表現時才展示。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "How review summaries work / Key considerations / only shows when predicted benefit",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "僅限美、澳、英、印四個英語市場的Google.com Search廣告。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "Google Ads Help: Eligibility and availability / How review summaries work / Key considerations",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "摘要由Google AI生成，廣告主不可直接修改。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "Google Ads Help: Eligibility and availability / How review summaries work / Key considerations | Search ads on google.com, English US/AU/UK/India; Google creates positive-only review summaries and advertiser cannot edit text",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "正面網上評價由Google AI彙整，而摘要只有預測有利廣告表現時才展示。",
+          "support_url": "https://support.google.com/google-ads/answer/18760807?hl=en",
+          "evidence_locator": "How review summaries work / Key considerations / only shows when predicted benefit",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Google Ads Help source for October 27 second pass. Search ads on google.com, English US/AU/UK/India; Google creates positive-only review summaries and advertiser cannot edit text. Caveat: Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Google official help article does not show initial publication date; Search Engine Land first reports document on Oct 26",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 13,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-pinterest-programmatic-deals",
+      "title_zh": "Pinterest於指定市場開放程序化廣告採購，亞太透過Google Ad Manager接入",
+      "working_title_zh": "Pinterest於指定市場開放程序化廣告採購，亞太透過Google Ad Manager接入",
+      "source_story_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+      "published_article_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "source_class": "A",
+          "reference": "Pinterest Newsroom 10月26日",
+          "evidence_locator": "Pinterest Newsroom: Driving programmatic growth through supply-side partnerships / Expanding demand-side access",
+          "limitations": "No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Pinterest Newsroom"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Programmatic Deals只在指定全球市場開放。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Pinterest Newsroom: Driving programmatic growth through supply-side partnerships / Expanding demand-side access",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case"
+        },
+        {
+          "claim_zh": "Magnite及Google Ad Manager參與供應方接入；部分DSP支援採購。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Pinterest Newsroom: Driving programmatic growth through supply-side partnerships / Expanding demand-side access | Programmatic Deals GA is explicitly in select global markets; Magnite primary SSP and Google Ad Manager in LATAM/APAC; Amazon Ads DVA+, DV360 and Yahoo DSP listed",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case"
+        },
+        {
+          "claim_zh": "Pinterest公告列出Amazon Ads DVA+、Google DV360及Yahoo DSP作為需求方。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Expanding demand-side access / DSP list in Pinterest Newsroom",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Programmatic Deals只在指定全球市場開放。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Pinterest Newsroom: Driving programmatic growth through supply-side partnerships / Expanding demand-side access",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Magnite及Google Ad Manager參與供應方接入；部分DSP支援採購。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Pinterest Newsroom: Driving programmatic growth through supply-side partnerships / Expanding demand-side access | Programmatic Deals GA is explicitly in select global markets; Magnite primary SSP and Google Ad Manager in LATAM/APAC; Amazon Ads DVA+, DV360 and Yahoo DSP listed",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Pinterest公告列出Amazon Ads DVA+、Google DV360及Yahoo DSP作為需求方。",
+          "support_url": "https://newsroom.pinterest.com/en-au/news/pinterest-programmatic-deals/",
+          "evidence_locator": "Expanding demand-side access / DSP list in Pinterest Newsroom",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Pinterest Newsroom source for October 27 second pass. Programmatic Deals GA is explicitly in select global markets; Magnite primary SSP and Google Ad Manager in LATAM/APAC; Amazon Ads DVA+, DV360 and Yahoo DSP listed. Caveat: No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. No per-country Taiwan/Hong Kong access or universal account availability; Moroccanoil results are one supplier case",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 14,
+        "novelty": 8,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-stagwell-freestar",
+      "title_zh": "Stagwell收購Freestar，進一步整合出版商程序化廣告供應鏈",
+      "working_title_zh": "Stagwell收購Freestar，進一步整合出版商程序化廣告供應鏈",
+      "source_story_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+      "published_article_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "source_class": "A",
+          "reference": "Stagwell 10月26日",
+          "evidence_locator": "Stagwell newsroom: October 26 2026 acquisition announcement / Owned Media integration",
+          "limitations": "Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Stagwell"
+        },
+        {
+          "url": "https://www.adexchanger.com/agencies/stagwell-acquires-publisher-monetization-network-freestar/",
+          "source_class": "B",
+          "reference": "AdExchanger · 2026-10-26",
+          "source_publication_date": "2026-10-26",
+          "evidence_locator": "Stagwell Acquires Publisher Monetization Network Freestar, October 26 2026",
+          "limitations": "Interview states deal has closed; claimed future efficiencies remain aspirational",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "AdExchanger"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Stagwell已宣布收購Freestar。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom: October 26 2026 acquisition announcement / Owned Media integration",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes"
+        },
+        {
+          "claim_zh": "Freestar的出版商變現技術將納入Owned Media生態。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom: October 26 2026 acquisition announcement / Owned Media integration | Acquisition completed; Freestar monetization and pubOS technology joins Stagwell Owned Media; Media and Commerce integration planned",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes"
+        },
+        {
+          "claim_zh": "Stagwell指出將整合Media and Commerce生態與AI Media Machine，屬後續計劃。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom / As part of Stagwell section",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Stagwell已宣布收購Freestar。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom: October 26 2026 acquisition announcement / Owned Media integration",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Freestar的出版商變現技術將納入Owned Media生態。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom: October 26 2026 acquisition announcement / Owned Media integration | Acquisition completed; Freestar monetization and pubOS technology joins Stagwell Owned Media; Media and Commerce integration planned",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Stagwell指出將整合Media and Commerce生態與AI Media Machine，屬後續計劃。",
+          "support_url": "https://www.stagwellglobal.com/stagwell-stgw-acquires-freestar-leading-publisher-advertising-services-company/",
+          "evidence_locator": "Stagwell newsroom / As part of Stagwell section",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Stagwell source for October 27 second pass. Acquisition completed; Freestar monetization and pubOS technology joins Stagwell Owned Media; Media and Commerce integration planned. Caveat: Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Transaction consideration undisclosed; supply path and AI improvements are plans, not measured outcomes",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-bloomreach-external-segments",
+      "title_zh": "Bloomreach開放External Segments，支援外部客群接入行銷觸達",
+      "working_title_zh": "Bloomreach開放External Segments，支援外部客群接入行銷觸達",
+      "source_story_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+      "published_article_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "source_class": "A",
+          "reference": "Bloomreach 10月26日",
+          "evidence_locator": "Bloomreach News Oct 26 2026: external segments / Built for an Open Composable Stack",
+          "limitations": "Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Bloomreach"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "外部數據倉庫、CDP及reverse ETL客群可經API接入。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach News Oct 26 2026: external segments / Built for an Open Composable Stack",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review"
+        },
+        {
+          "claim_zh": "公司表示功能已提供，與原生分群並行。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach News Oct 26 2026: external segments / Built for an Open Composable Stack | External Segments available, any system calling open API can push external audiences; native segments continue; warehouse CDP reverse ETL supported",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review"
+        },
+        {
+          "claim_zh": "Bloomreach宣稱zero-copy及開放API，但資料搬移與個資處理要按部署核對。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach news / external segments feature / open API and zero-copy claims",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "外部數據倉庫、CDP及reverse ETL客群可經API接入。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach News Oct 26 2026: external segments / Built for an Open Composable Stack",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "公司表示功能已提供，與原生分群並行。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach News Oct 26 2026: external segments / Built for an Open Composable Stack | External Segments available, any system calling open API can push external audiences; native segments continue; warehouse CDP reverse ETL supported",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Bloomreach宣稱zero-copy及開放API，但資料搬移與個資處理要按部署核對。",
+          "support_url": "https://www.bloomreach.com/en/news/2026/as-martech-consolidates-into-closed-systems-bloomreach-doubles-down-on-openness-with-zero-copy-activation-for-any-data-warehouse-or-cdp",
+          "evidence_locator": "Bloomreach news / external segments feature / open API and zero-copy claims",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Bloomreach source for October 27 second pass. External Segments available, any system calling open API can push external audiences; native segments continue; warehouse CDP reverse ETL supported. Caveat: Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Zero-copy is vendor claim and does not establish all deployments avoid data movement or need no consent review",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 19,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-google-shared-pages-spam",
+      "title_zh": "Google更新分享型網頁防垃圾內容指引，建議按用途限制索引",
+      "working_title_zh": "Google更新分享型網頁防垃圾內容指引，建議按用途限制索引",
+      "source_story_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+      "published_article_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "source_class": "A",
+          "reference": "Google Search Central 10月26日",
+          "evidence_locator": "Google Search Central: Prevent user-generated spam / Only index content meant for Search / Last updated October 26 2026",
+          "limitations": "Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Google Search Central"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "分享型頁面及web apps可能被濫用作垃圾內容。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central: Prevent user-generated spam / Only index content meant for Search / Last updated October 26 2026",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages"
+        },
+        {
+          "claim_zh": "Google建議非供公開搜尋的分享頁使用noindex或限制爬取。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central: Prevent user-generated spam / Only index content meant for Search / Last updated October 26 2026 | Google advises noindex or robots crawling restrictions on pages meant for direct sharing/collaboration rather than search discovery",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages"
+        },
+        {
+          "claim_zh": "Google指引針對可分享頁及生成內容遭垃圾訊息濫用，並非要求所有AI頁面禁止索引。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central / Only index content meant for Search",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "分享型頁面及web apps可能被濫用作垃圾內容。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central: Prevent user-generated spam / Only index content meant for Search / Last updated October 26 2026",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Google建議非供公開搜尋的分享頁使用noindex或限制爬取。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central: Prevent user-generated spam / Only index content meant for Search / Last updated October 26 2026 | Google advises noindex or robots crawling restrictions on pages meant for direct sharing/collaboration rather than search discovery",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Google指引針對可分享頁及生成內容遭垃圾訊息濫用，並非要求所有AI頁面禁止索引。",
+          "support_url": "https://developers.google.com/search/docs/monitor-debug/prevent-abuse",
+          "evidence_locator": "Google Search Central / Only index content meant for Search",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Google Search Central source for October 27 second pass. Google advises noindex or robots crawling restrictions on pages meant for direct sharing/collaboration rather than search discovery. Caveat: Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Scope is shared/generated spam abuse not categorical deindexing of all useful AI-generated public pages",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 18,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 7,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-taobao-sg-ooh",
+      "title_zh": "淘寶新加坡雙十一加碼線下廣告，強調購物探索而非只講價格",
+      "working_title_zh": "淘寶新加坡雙十一加碼線下廣告，強調購物探索而非只講價格",
+      "source_story_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+      "published_article_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "source_class": "B",
+          "reference": "MARKETING-INTERACTIVE 10月26日",
+          "evidence_locator": "MARKETING-INTERACTIVE Oct 26: OOH spend lead / Cora Cai interview / physical activation and campaign budget",
+          "limitations": "RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "MARKETING-INTERACTIVE"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "淘寶新加坡今年雙十一實體廣告支出較去年增加一倍。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE Oct 26: OOH spend lead / Cora Cai interview / physical activation and campaign budget",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal"
+        },
+        {
+          "claim_zh": "逾人民幣1億元屬整體活動投入，並非純廣告預算。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE Oct 26: OOH spend lead / Cora Cai interview / physical activation and campaign budget | Publication reports physical ads spend doubled, total Singapore campaign investment exceeding RMB100m including subsidies shipping advertising",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal"
+        },
+        {
+          "claim_zh": "新加坡活動包括張凌赫MRT車廂及App內互動，屬線上線下宣傳連結。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE / Zhang Linghe themed train cabins and app content",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "淘寶新加坡今年雙十一實體廣告支出較去年增加一倍。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE Oct 26: OOH spend lead / Cora Cai interview / physical activation and campaign budget",
+          "status": "attributed"
+        },
+        {
+          "claim_zh": "逾人民幣1億元屬整體活動投入，並非純廣告預算。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE Oct 26: OOH spend lead / Cora Cai interview / physical activation and campaign budget | Publication reports physical ads spend doubled, total Singapore campaign investment exceeding RMB100m including subsidies shipping advertising",
+          "status": "attributed"
+        },
+        {
+          "claim_zh": "新加坡活動包括張凌赫MRT車廂及App內互動，屬線上線下宣傳連結。",
+          "support_url": "https://www.marketing-interactive.com/taobao-doubles-ooh-spend-in-sg-as-it-looks-beyond-11-11-sales",
+          "evidence_locator": "MARKETING-INTERACTIVE / Zhang Linghe themed train cabins and app content",
+          "status": "attributed"
+        }
+      ],
+      "independent_review": "Independently reopened MARKETING-INTERACTIVE source for October 27 second pass. Publication reports physical ads spend doubled, total Singapore campaign investment exceeding RMB100m including subsidies shipping advertising. Caveat: RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. RMB100m is overall campaign investment, NOT OOH budget; unverified performance gains cannot be presented as causal",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 17,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 82
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-daily-mail-geo-tests",
+      "title_zh": "Daily Mail與品牌測試GEO可見度服務，正式產品尚未推出",
+      "working_title_zh": "Daily Mail與品牌測試GEO可見度服務，正式產品尚未推出",
+      "source_story_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+      "published_article_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "source_class": "B",
+          "reference": "Digiday 10月26日",
+          "evidence_locator": "Digiday October 26: Carly Steven at Digiday Media Strategies London / 12–15 tests / product early next year",
+          "limitations": "Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Digiday"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Daily Mail表示正在美英澳進行約12–15項GEO測試。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday October 26: Carly Steven at Digiday Media Strategies London / 12–15 tests / product early next year",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged"
+        },
+        {
+          "claim_zh": "正式商業產品仍屬規劃，預期明年推出。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday October 26: Carly Steven at Digiday Media Strategies London / 12–15 tests / product early next year | Publisher reports 12–15 pilot tests across US UK Australia and planned GEO product early in 2027",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged"
+        },
+        {
+          "claim_zh": "Digiday引述主管表示正式GEO服務尚未推出，預計2027年初商品化。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday / first paragraph / official product early next year",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Daily Mail表示正在美英澳進行約12–15項GEO測試。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday October 26: Carly Steven at Digiday Media Strategies London / 12–15 tests / product early next year",
+          "status": "attributed"
+        },
+        {
+          "claim_zh": "正式商業產品仍屬規劃，預期明年推出。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday October 26: Carly Steven at Digiday Media Strategies London / 12–15 tests / product early next year | Publisher reports 12–15 pilot tests across US UK Australia and planned GEO product early in 2027",
+          "status": "attributed"
+        },
+        {
+          "claim_zh": "Digiday引述主管表示正式GEO服務尚未推出，預計2027年初商品化。",
+          "support_url": "https://digiday.com/media/the-daily-mail-tests-geo-with-brands-ahead-of-ai-visibility-product/",
+          "evidence_locator": "Digiday / first paragraph / official product early next year",
+          "status": "attributed"
+        }
+      ],
+      "independent_review": "Independently reopened Digiday source for October 27 second pass. Publisher reports 12–15 pilot tests across US UK Australia and planned GEO product early in 2027. Caveat: Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Reporter quotes company manager; unnamed case efficacy and conversion claims are not independently verified; attribution gap acknowledged",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 18,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 80
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-dv360-api-v5-beta",
+      "title_zh": "Google DV360 API v5進入公開測試，新增YouTube排除控制及DOOH訂單支援",
+      "working_title_zh": "Google DV360 API v5進入公開測試，新增YouTube排除控制及DOOH訂單支援",
+      "source_story_url": "https://developers.google.com/display-video/api/release-notes",
+      "published_article_url": "https://developers.google.com/display-video/api/release-notes",
+      "source_date_display": "10月22日",
+      "event_date": "2026-10-22",
+      "first_published_date": "2026-10-22",
+      "source_documents": [
+        {
+          "url": "https://developers.google.com/display-video/api/release-notes",
+          "source_class": "A",
+          "reference": "Google for Developers 10月22日",
+          "evidence_locator": "Google Display & Video 360 API Release Notes: October 22 2026 New Features / latest API version v4 / migration guide",
+          "limitations": "Beta not general production version; existing integrations need permission, migration and compatibility checks",
+          "source_publication_date": "2026-10-22",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Google for Developers"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "DV360 API v5目前屬public beta，v4仍是最新正式版。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Display & Video 360 API Release Notes: October 22 2026 New Features / latest API version v4 / migration guide",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Beta not general production version; existing integrations need permission, migration and compatibility checks"
+        },
+        {
+          "claim_zh": "新增YouTube影片及頻道排除、DOOH訂單支援。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Display & Video 360 API Release Notes: October 22 2026 New Features / latest API version v4 / migration guide | v5 released in public beta; advertiser-level YouTube exclusions and DOOH insertion order support; current GA version listed as v4",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Beta not general production version; existing integrations need permission, migration and compatibility checks"
+        },
+        {
+          "claim_zh": "Google同頁列明v4仍為最新正式版並提供v4至v5遷移指引。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Developers / Latest API version v4 / v4 to v5 migration guide",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Beta not general production version; existing integrations need permission, migration and compatibility checks"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "DV360 API v5目前屬public beta，v4仍是最新正式版。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Display & Video 360 API Release Notes: October 22 2026 New Features / latest API version v4 / migration guide",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "新增YouTube影片及頻道排除、DOOH訂單支援。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Display & Video 360 API Release Notes: October 22 2026 New Features / latest API version v4 / migration guide | v5 released in public beta; advertiser-level YouTube exclusions and DOOH insertion order support; current GA version listed as v4",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Google同頁列明v4仍為最新正式版並提供v4至v5遷移指引。",
+          "support_url": "https://developers.google.com/display-video/api/release-notes",
+          "evidence_locator": "Google Developers / Latest API version v4 / v4 to v5 migration guide",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Google for Developers source for October 27 second pass. v5 released in public beta; advertiser-level YouTube exclusions and DOOH insertion order support; current GA version listed as v4. Caveat: Beta not general production version; existing integrations need permission, migration and compatibility checks. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Beta not general production version; existing integrations need permission, migration and compatibility checks",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 19,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 7,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-glance-investment",
+      "title_zh": "L Catterton投資AI購物平台Glance，交易金額未披露",
+      "working_title_zh": "L Catterton投資AI購物平台Glance，交易金額未披露",
+      "source_story_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+      "published_article_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-26",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "source_class": "A",
+          "reference": "Glance Newsroom 10月26日",
+          "evidence_locator": "Glance press release Oct 26 2026: L Catterton Announces Strategic Investment in Glance / terms",
+          "limitations": "Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Glance Newsroom"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "L Catterton於10月26日公布策略投資Glance。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance press release Oct 26 2026: L Catterton Announces Strategic Investment in Glance / terms",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach"
+        },
+        {
+          "claim_zh": "Glance描述手機、CTV等跨屏AI購物場景。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance press release Oct 26 2026: L Catterton Announces Strategic Investment in Glance / terms | L Catterton and Glance announce investment, smartphone and CTV shopping agent distribution, especially US plans",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach"
+        },
+        {
+          "claim_zh": "Glance公告明確說明投資交易金額與條款沒有披露。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance Newsroom / Terms of the transaction were not disclosed",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "L Catterton於10月26日公布策略投資Glance。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance press release Oct 26 2026: L Catterton Announces Strategic Investment in Glance / terms",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Glance描述手機、CTV等跨屏AI購物場景。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance press release Oct 26 2026: L Catterton Announces Strategic Investment in Glance / terms | L Catterton and Glance announce investment, smartphone and CTV shopping agent distribution, especially US plans",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Glance公告明確說明投資交易金額與條款沒有披露。",
+          "support_url": "https://glance.com/newsroom/pressrelease/l-catterton-announces-strategic-investment-in-glance",
+          "evidence_locator": "Glance Newsroom / Terms of the transaction were not disclosed",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Glance Newsroom source for October 27 second pass. L Catterton and Glance announce investment, smartphone and CTV shopping agent distribution, especially US plans. Caveat: Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Transaction terms undisclosed; reported device reach is vendor representation, not verified advertising reach",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 24,
+        "business_impact": 16,
+        "actionability": 14,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 74
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    },
+    {
+      "story_id": "2026-10-27-firefox-campaign",
+      "title_zh": "Firefox邀請經典網絡迷因人物拍廣告，以懷舊重新談私隱與AI選擇",
+      "working_title_zh": "Firefox邀請經典網絡迷因人物拍廣告，以懷舊重新談私隱與AI選擇",
+      "source_story_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+      "published_article_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+      "source_date_display": "10月25日",
+      "event_date": "2026-10-25",
+      "first_published_date": "2026-10-25",
+      "source_documents": [
+        {
+          "url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "source_class": "A",
+          "reference": "Mozilla Blog 10月25日",
+          "evidence_locator": "Mozilla October 25 2026 blog: Firefox reunites meme royalty / The team behind the comeback",
+          "limitations": "Marketing effect and downloads not independently measured; product privacy claims are company positioning",
+          "source_publication_date": "2026-10-25",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "Mozilla Blog"
+        },
+        {
+          "url": "https://www.marketing-interactive.com/firefox-brings-back-meme-royalty-for-an-internet-throwback",
+          "source_class": "B",
+          "reference": "MARKETING-INTERACTIVE · 2026-10-26",
+          "source_publication_date": "2026-10-26",
+          "evidence_locator": "Firefox brings back meme royalty for an internet throwback, Oct 26 2026",
+          "limitations": "News write-up confirms campaign assets but not their measured brand impact",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-27T10:28:47+08:00",
+          "publisher": "MARKETING-INTERACTIVE"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Mozilla以早期網絡迷因人物重塑Firefox品牌敘事。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla October 25 2026 blog: Firefox reunites meme royalty / The team behind the comeback",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Marketing effect and downloads not independently measured; product privacy claims are company positioning"
+        },
+        {
+          "claim_zh": "活動聚焦開放網絡、私隱及AI功能選擇。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla October 25 2026 blog: Firefox reunites meme royalty / The team behind the comeback | Campaign features viral web figures; privacy/user choice positioning; We Believers creative agency",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Marketing effect and downloads not independently measured; product privacy claims are company positioning"
+        },
+        {
+          "claim_zh": "Mozilla確認We Believers主導創意，活動訴求開放網絡、私隱及AI控制選擇。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla / The team behind the comeback / campaign creators",
+          "status": "verified",
+          "second_pass_checked": true,
+          "caveat": "Marketing effect and downloads not independently measured; product privacy claims are company positioning"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Mozilla以早期網絡迷因人物重塑Firefox品牌敘事。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla October 25 2026 blog: Firefox reunites meme royalty / The team behind the comeback",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "活動聚焦開放網絡、私隱及AI功能選擇。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla October 25 2026 blog: Firefox reunites meme royalty / The team behind the comeback | Campaign features viral web figures; privacy/user choice positioning; We Believers creative agency",
+          "status": "verified"
+        },
+        {
+          "claim_zh": "Mozilla確認We Believers主導創意，活動訴求開放網絡、私隱及AI控制選擇。",
+          "support_url": "https://blog.mozilla.org/en/firefox/come-back-to-firefox/",
+          "evidence_locator": "Mozilla / The team behind the comeback / campaign creators",
+          "status": "verified"
+        }
+      ],
+      "independent_review": "Independently reopened Mozilla Blog source for October 27 second pass. Campaign features viral web figures; privacy/user choice positioning; We Believers creative agency. Caveat: Marketing effect and downloads not independently measured; product privacy claims are company positioning. No human signoff or ad performance experiments implied.",
+      "reviewed_by": "AI Editorial Desk — 2026-10-27 independent source reread (not human product testing)",
+      "review_notes": "Claims and article bilingual qualifier challenged on October 27. Marketing effect and downloads not independently measured; product privacy claims are company positioning",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 22,
+        "business_impact": 14,
+        "actionability": 14,
+        "market_relevance": 12,
+        "novelty": 7,
+        "total": 69
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "low_score_override_rationale": null
+    }
+  ],
+  "corrections": [],
+  "release_status": "pending_live_validation",
+  "release": {
+    "github_commit_sha": null,
+    "live_verified_at_hkt": null,
+    "live_date_match": false,
+    "archive_date_match": false,
+    "claims_gate_passed": true
+  }
+}
