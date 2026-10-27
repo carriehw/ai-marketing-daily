@@ -99,6 +99,32 @@ jobs:
           trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
           node verify_reader_browser.js
 
+      - name: Build and validate today's dated social preview card
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check pillow==11.3.0
+          export AMD_CHROMIUM="$(node -p "require('playwright').chromium.executablePath()")"
+          test -x "$AMD_CHROMIUM"
+          OG_TMP="$(mktemp -d)"
+          trap 'rm -rf "$OG_TMP"' EXIT
+          TMPDIR="$OG_TMP" python build_ogimage.py --data data.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          date=json.loads(Path("data.json").read_text(encoding="utf-8"))["date"]
+          og=Path("og")/(date+".jpg")
+          assert og.is_file() and og.stat().st_size>4096, "Current OG image not generated"
+          with Image.open(og) as img:
+              assert img.format=="JPEG", "OG image is not a JPEG"
+              assert img.size==(1200,630), "OG preview must be 1200 x 630"
+          for locale in ["index.html","zh-hant/index.html","zh-hans/index.html","en/index.html"]:
+              html=Path(locale).read_text(encoding="utf-8")
+              assert f"/og/{date}.jpg" in html, "Incorrect OG image URL in "+locale
+          print(f"PASS current social share image: {og}, {og.stat().st_size} bytes, 1200x630 JPEG, four page references")
+          PY
+
       - name: Upload visual QA screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -115,6 +141,7 @@ jobs:
           DATE="${{ steps.edition.outputs.date }}"
           test -s index.html
           test -s "archive/$DATE.html"
+          test -s "og/$DATE.jpg"
           test -s archive/manifest.json
           test -s archive/search-index.json
           test -s discovery.js
@@ -156,7 +183,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html archive/ en/ zh-hant/ zh-hans/ discovery-zh-hans.js sitemap.xml robots.txt email.html email-subject.txt email-zh.html email-zh-subject.txt edm/
+          git add index.html archive/ en/ zh-hant/ zh-hans/ discovery-zh-hans.js sitemap.xml robots.txt email.html email-subject.txt email-zh.html email-zh-subject.txt edm/ og/
           if ! git diff --cached --quiet; then
             git commit -m "chore(build): regenerate verified issue ${{ steps.edition.outputs.date }} [skip ci]"
             git push origin HEAD:main
