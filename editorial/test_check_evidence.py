@@ -45,7 +45,7 @@ def fixtures():
                 "actionability": 18, "market_relevance": 13, "novelty": 9
             },
             "impact": "Medium", "recommended_response": "Monitor",
-            "editorial_decision": "publish", "needs_human_review": False
+            "editorial_decision": "approved", "needs_human_review": False
         }]
     }
     return data, evidence
@@ -55,6 +55,11 @@ class GateControls(unittest.TestCase):
     def test_valid_packet_passes(self):
         data, evidence = fixtures()
         self.assertEqual(assess(data, evidence), [])
+
+    def test_unapproved_publish_alias_fails(self):
+        data, evidence = fixtures()
+        evidence["stories"][0]["editorial_decision"] = "publish"
+        self.assertTrue(assess(data, evidence))
 
     def test_no_evidence_fails(self):
         data, evidence = fixtures()
