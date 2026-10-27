@@ -135,8 +135,8 @@ def assess(data, evidence):
                 bad("%s missing/invalid %s" % (tag, date_key))
             elif edition and val > edition + timedelta(days=1):
                 bad("%s future %s beyond timezone grace" % (tag, date_key))
-        if rec.get("editorial_decision") != "publish":
-            bad("%s not editor-approved for publication" % tag)
+        if rec.get("editorial_decision") != "approved":
+            bad("%s not editorial-approved for publication (approved required)" % tag)
         if rec.get("needs_human_review") is not False:
             bad("%s human-review hold not cleared" % tag)
         if rec.get("impact") not in ("High", "Medium", "Low"):
