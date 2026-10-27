@@ -16,7 +16,8 @@
     "Follow current Editorial Constitution and Daily SOP; expand discovery, complete full claim-level bilingual evidence, and rerun release gate before publication.",
     "Supplementary research expanded initial 8 to 24 tracked distinct candidates, 23 source-read; source count is not verified publication count. Original eight candidate objects preserved.",
     "External live website/EDM HTTP access not available from this tool runtime; repository main data.json still dated 2026-10-26.",
-    "No publication or email sending attempted in this run; main remains untouched."
+    "No publication or email sending attempted in this run; main remains untouched.",
+    "Ten bilingual story drafts and 20 provisional evidence claim entries saved on this branch. These are research/editorial DRAFTS, not ten independently verified, release-ready stories; independent second pass and all build/live checks remain outstanding."
   ],
   "candidates": [
     {
@@ -439,10 +440,16 @@
     "Never mark EDM payload editorial_approved or dispatch Outlook while edition remains HELD."
   ],
   "next_actions": [
+    "Independently re-open and challenge the 20 draft material claims in editorial/evidence/2026-10-27.json, fill accurate accessed/verified timestamps, add missing pivotal claims and qualify/hold any unsupported points. Do not auto-promote attributed drafts to verified.",
     "Complete claim-level packets and independent second-pass for high-priority Google Ads review summaries, Pinterest Programmatic Deals, Stagwell/Freestar, Google Search spam guidance, Bloomreach External Segments, Taobao SG OOH, Daily Mail GEO, Google Ads Policy Summary and Affle MediasmartTV.",
     "Validate source event dates, market/rollout restrictions, product beta/GA, numerical claims, and confirm each item absent from seen-urls; reject stale/low relevance/opinion items from full-news quota.",
     "Prepare complete bilingual content with exact original citations and recommended actions, then Simplified Chinese caveat review; keep release_ready_story_count at zero until all gates genuinely passed.",
     "Execute required repository build and QA in a runtime with actual repo filesystem and Python/Node; then commit coherent site/archive/EDM and verify three production locales + payload with cache bypass.",
     "Next scheduled stage should re-read this exact branch and merge cautiously with any newer GitHub edits; never overwrite main data.json based on draft alone."
-  ]
+  ],
+  "bilingual_article_drafts_path": "editorial/drafts/2026-10-27-articles.json",
+  "bilingual_article_drafts_count": 10,
+  "partial_evidence_path": "editorial/evidence/2026-10-27.json",
+  "partial_evidence_story_count": 10,
+  "partial_evidence_claim_count": 20
 }
