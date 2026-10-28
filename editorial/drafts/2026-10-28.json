@@ -2,7 +2,7 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "editorial_reranking_provisional_2026_10_28",
+  "phase": "1045_manual_continuation_evidence_triage",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
   "phase_saved_at_hkt": "2026-10-28T09:43:00+08:00",
@@ -1620,5 +1620,33 @@
     "Verify whether Forrester coverage has an actual new Oct26-28 study, otherwise exclude as stale",
     "Record per-story evidence, independent second-pass review and editorial approval before locking 10+ and finishing trilingual localization",
     "Build and publish only after full editorial and CI/live gates"
-  ]
+  ],
+  "phase_1045_manual_continuation": {
+    "status": "IN_PROGRESS_GATES_NOT_PASSED",
+    "run_date_hkt": "2026-10-28",
+    "carried_forward_from": "phase_1004_verification_continuation",
+    "source_reviewed_slugs": [
+      "singapore-switch-ai-enterprise-programmes",
+      "anymind-meta-live-commerce",
+      "google-genie-4",
+      "smartly-alter-agents-study",
+      "openai-oracle-apps-chatgpt",
+      "maybank-scam-calligraphy"
+    ],
+    "strongest_evidence_packets": [
+      "singapore-switch-ai-enterprise-programmes",
+      "anymind-meta-live-commerce",
+      "google-genie-4"
+    ],
+    "editorial_approval_count": 0,
+    "release_ready_count": 0,
+    "actions": [
+      "Prioritize primary+independent corroborated packets for editorial claim review, retaining all caveats",
+      "Do not misrepresent research previews, future partnerships or vendor performance claims as deployed results",
+      "Re-check unapproved remaining candidate packets against constitution before selection and final localization",
+      "No build/deploy without >=10 full verified approved trilingual stories"
+    ],
+    "deadline_status": "10:30_HKT_MISSED",
+    "reason": "Only six advanced source packets; editorial approval zero; minimum ten unmet"
+  }
 }
