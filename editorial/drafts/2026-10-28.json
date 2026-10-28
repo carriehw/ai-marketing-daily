@@ -297,6 +297,50 @@
         "uncertainties": "该计划最初于3月公布，10月27日政府确认首批24家企业；具体参与资格及后续工作坊安排仍需留意EnterpriseSG公告。这些是新加坡项目，并非香港资助计划。"
       },
       "draft_only": true
+    },
+    {
+      "slug": "mcdonalds-fifa-32-year-end",
+      "zh_hant": {
+        "what": "據10月27日業界報道，McDonald’s確認結束與FIFA世界盃長達32年的贊助合作。報道所指的是未來贊助安排，不應解讀為既有活動即時取消。",
+        "why": "大型品牌重新評估長期體育贊助，反映全球曝光、粉絲互動與投資回報之間需要重新取捨。",
+        "action": "檢視長期贊助的受眾觸達、品牌提升與銷售歸因，並比較其他體育及創作者合作形式。",
+        "uncertainties": "未取得雙方完整合約條款或未來媒體預算分配；不推斷終止原因或財務影響。"
+      },
+      "en": {
+        "what": "Industry reporting on October 27 said McDonald’s confirmed it is ending its 32-year FIFA World Cup sponsorship relationship. This concerns future sponsorship arrangements, not an immediate cancellation of previously executed activations.",
+        "why": "The move invites a fresh look at the trade-off between global reach, fan engagement and measurable return from long-term sports sponsorships.",
+        "action": "Review sponsorship reach, brand lift and attribution alongside alternative sports and creator partnerships.",
+        "uncertainties": "Full contract terms and future budget allocations have not been reviewed. Do not infer a specific motive or financial impact."
+      },
+      "zh_hans": {
+        "what": "据10月27日行业媒体报道，麦当劳确认结束与国际足联世界杯长达32年的赞助合作。相关决定涉及未来赞助安排，不代表此前已执行的营销活动被即时取消。",
+        "why": "大型品牌重新评估长期体育赞助，值得关注全球曝光、球迷互动与可衡量回报之间的取舍。",
+        "action": "复盘赞助触达、品牌提升及销售归因，并比较其他体育合作和创作者营销方案。",
+        "uncertainties": "尚未核对双方完整合同条款或未来预算分配，不推断终止原因及财务影响。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "meta-us-political-ad-restriction",
+      "zh_hant": {
+        "what": "Meta就2026年美國中期選舉公布選前最後一週限制新增政治、選舉及社會議題廣告。業界報道將限制期列為10月27日至11月3日；實際執行須以Meta政策及廣告帳戶提示為準。",
+        "why": "相關限制會影響政治及議題倡議廣告的排期、審批與預算分配，並提醒代理商將平台政策納入投放風險管理。",
+        "action": "涉及美國政治或社會議題廣告的團隊，應核對Meta官方政策、帳戶資格、時區與既有廣告處理規則，再安排投放。",
+        "uncertainties": "此處不延伸至一般商業廣告；各類廣告、例外及時區細節須以官方當時政策為準。"
+      },
+      "en": {
+        "what": "Meta announced a restriction on new political, electoral and social-issue ads during the final week before the 2026 US midterm elections. Industry reporting places the window at October 27–November 3; operational details should be checked against Meta’s policy and in-account notices.",
+        "why": "The restriction affects campaign scheduling and compliance for election-related and issue advocacy advertisers, underscoring the need to build platform policy into media planning.",
+        "action": "Teams handling US political or social-issue ads should confirm the official policy, account eligibility, applicable time zone and treatment of existing ads before scheduling.",
+        "uncertainties": "This should not be generalized to ordinary commercial advertising; precise exceptions and enforcement rules depend on the official policy in effect."
+      },
+      "zh_hans": {
+        "what": "Meta公布，2026年美国中期选举前最后一周将限制新增政治、选举及社会议题广告。行业媒体将限制期列为10月27日至11月3日；具体执行规则应以Meta官方政策及广告账户提示为准。",
+        "why": "限制措施影响选举及议题倡导广告的排期、审核和预算安排，也提醒代理商将平台政策纳入投放风险管理。",
+        "action": "负责美国政治或社会议题广告的团队，应先核对Meta官方政策、账户资格、适用时区及现有广告处理规则。",
+        "uncertainties": "不能将该限制泛化为普通商业广告禁令；具体例外及执行细则以当时官方政策为准。"
+      },
+      "draft_only": true
     }
   ],
   "candidates": [
@@ -914,7 +958,7 @@
       "release_ready": false
     }
   ],
-  "trilingual_working_copy_count": 10,
+  "trilingual_working_copy_count": 12,
   "phase_0945_preflight_completed": true,
   "publication_checkpoint": {
     "checked_at_hkt": "2026-10-28T09:43:00+08:00",
@@ -2455,5 +2499,18 @@
       "https://digiday.com/marketing/apples-growing-ads-business-puts-its-safari-blocklist-under-scrutiny/"
     ],
     "next_gate": "Finish independent evidence for held claims, check trilingual copy, approve eligible articles and run build/CI/live."
+  },
+  "editorial_two_missing_drafts_20261028": {
+    "completed_slugs": [
+      "mcdonalds-fifa-32-year-end",
+      "meta-us-political-ad-restriction"
+    ],
+    "total_trilingual_working_drafts": 12,
+    "decision": "DRAFT_ONLY_PENDING_FINAL_EVIDENCE_AND_APPROVAL",
+    "sources": [
+      "https://www.marketingdive.com/news/what-mcdonalds-dropping-its-fifa-sponsorship-means-for-sports-marketing/872775/",
+      "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+      "https://www.socialmediatoday.com/news/meta-outlines-political-ad-restrictions/832444/"
+    ]
   }
 }
