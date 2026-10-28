@@ -4,9 +4,31 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from xml.etree import ElementTree as ET
 import unittest
+from unittest.mock import patch
+from datetime import datetime, timezone
 from build_email_zh import build, rank, link
 
 class EDMSafetyTests(unittest.TestCase):
+    def test_rebuild_preserves_issue_feed_bytes_and_new_issue_gets_new_time(self):
+        with TemporaryDirectory() as temp:
+            root=Path(temp)
+            data=self.sample()
+            (root/"data.json").write_text(json.dumps(data,ensure_ascii=False),encoding="utf-8")
+            with patch("build_email_zh.datetime",wraps=datetime) as clock:
+                clock.now.return_value=datetime(2026,10,26,1,30,tzinfo=timezone.utc)
+                build(root)
+            first=(root/"edm/feed.xml").read_bytes()
+            with patch("build_email_zh.datetime",wraps=datetime) as clock:
+                clock.now.return_value=datetime(2026,10,27,2,30,tzinfo=timezone.utc)
+                build(root)
+                self.assertEqual(first,(root/"edm/feed.xml").read_bytes())
+                data["date"]="2026-10-27"
+                (root/"data.json").write_text(json.dumps(data,ensure_ascii=False),encoding="utf-8")
+                build(root)
+            item=ET.parse(root/"edm/feed.xml").find("./channel/item")
+            self.assertEqual(item.findtext("guid"),"ai-daily-2026-10-27")
+            self.assertEqual(item.findtext("pubDate"),"Tue, 27 Oct 2026 02:30:00 +0000")
+
     def sample(self,n=14):
         return {"date":"2026-10-26","sections":["廣告平台 & 行銷科技"],
                 "items":[{"title":"測試新聞 "+str(i),"url":"https://example.com/story/"+str(i),

@@ -143,3 +143,7 @@ The Constitution defines the **editorial standard**; the Daily SOP implements it
 - First lock the eligible editorial list and source verification; finalize Traditional Chinese, Simplified Chinese and English only for verified editorial-approved items. Existing draft translations may be reused after approval.
 - Maintain the **>=10 independently verified and approved full-story publication floor**, evidence, language parity, archive, newsletter, build/CI and live verification. Score does not count as verification. If fewer than ten pass, hold the issue.
 - Record each candidate's score, selected/held/rejected state and brief reason in the daily draft for auditability.
+
+### 2026-10-28 execution amendment — complete article packets and shared release receipts
+
+The adopted [handoff v2](./DAILY_SOP_v2.0.md) assigns source review and actual article closure to the editorial task, and build/browser/deploy/live acceptance to GitHub Actions. A single dated approved packet is compiled into matching article, evidence and localization inputs. A dated release receipt on main, matching its source/evidence bytes, actual >=10 live stories per language and successful linked workflow, is the authoritative completion signal for downstream tasks. An older HELD task-chat result cannot override that verified receipt. No factual, independent-review, human-hold, language or coverage gate is removed.

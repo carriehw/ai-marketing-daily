@@ -3,8 +3,9 @@ name: Editorial evidence gate tests
 on:
   push:
     paths:
-      - "editorial/check_evidence.py"
-      - "editorial/test_check_evidence.py"
+      - "editorial/**"
+      - "verify_editorial.py"
+      - "verify_dates.py"
       - ".github/workflows/editorial-qa.yml"
   pull_request:
     paths:
@@ -26,4 +27,6 @@ jobs:
       - name: Syntax validation
         run: python -m py_compile editorial/check_evidence.py editorial/test_check_evidence.py
       - name: Positive and negative gate controls
-        run: python -m unittest discover -v -s editorial -p 'test_check_evidence.py'
+        run: python -m unittest discover -v -s editorial -p 'test_*.py'
+      - name: Check completed per-story handoff packets without requiring a full issue
+        run: python editorial/edition_packet.py check-stories --today "$(TZ=Asia/Hong_Kong date +%F)"
