@@ -323,19 +323,19 @@
     {
       "slug": "meta-us-political-ad-restriction",
       "zh_hant": {
-        "what": "Meta就2026年美國中期選舉公布選前最後一週限制新增政治、選舉及社會議題廣告。業界報道將限制期列為10月27日至11月3日；實際執行須以Meta政策及廣告帳戶提示為準。",
+        "what": "Meta官方2026年美國中期選舉說明指出，選舉前最後一週將限制新增政治、選舉及社會議題廣告。業界報道指限制期為10月27日至11月3日；詳細執行時間與規則以Meta官方政策為準。",
         "why": "相關限制會影響政治及議題倡議廣告的排期、審批與預算分配，並提醒代理商將平台政策納入投放風險管理。",
         "action": "涉及美國政治或社會議題廣告的團隊，應核對Meta官方政策、帳戶資格、時區與既有廣告處理規則，再安排投放。",
         "uncertainties": "此處不延伸至一般商業廣告；各類廣告、例外及時區細節須以官方當時政策為準。"
       },
       "en": {
-        "what": "Meta announced a restriction on new political, electoral and social-issue ads during the final week before the 2026 US midterm elections. Industry reporting places the window at October 27–November 3; operational details should be checked against Meta’s policy and in-account notices.",
+        "what": "Meta’s official 2026 US midterm election guidance says it will restrict new political, electoral and social-issue ads in the final week before Election Day. Industry reporting identifies October 27–November 3 as the restriction window; precise enforcement details remain subject to Meta’s official policy.",
         "why": "The restriction affects campaign scheduling and compliance for election-related and issue advocacy advertisers, underscoring the need to build platform policy into media planning.",
         "action": "Teams handling US political or social-issue ads should confirm the official policy, account eligibility, applicable time zone and treatment of existing ads before scheduling.",
         "uncertainties": "This should not be generalized to ordinary commercial advertising; precise exceptions and enforcement rules depend on the official policy in effect."
       },
       "zh_hans": {
-        "what": "Meta公布，2026年美国中期选举前最后一周将限制新增政治、选举及社会议题广告。行业媒体将限制期列为10月27日至11月3日；具体执行规则应以Meta官方政策及广告账户提示为准。",
+        "what": "Meta官方2026年美国中期选举说明指出，选举前最后一周将限制新增政治、选举及社会议题广告。行业媒体称限制期为10月27日至11月3日；具体执行时间与规则以Meta官方政策为准。",
         "why": "限制措施影响选举及议题倡导广告的排期、审核和预算安排，也提醒代理商将平台政策纳入投放风险管理。",
         "action": "负责美国政治或社会议题广告的团队，应先核对Meta官方政策、账户资格、适用时区及现有广告处理规则。",
         "uncertainties": "不能将该限制泛化为普通商业广告禁令；具体例外及执行细则以当时官方政策为准。"
@@ -2584,14 +2584,20 @@
       },
       {
         "slug": "meta-us-political-ad-restriction",
-        "decision": "REVISE",
+        "decision": "APPROVED_EDITORIAL_CONDITIONAL",
         "three_languages_present": true,
-        "caveat": "Release blocked until evidence, build and live checks pass."
+        "caveat": "Official Meta midterm guidance supports final-week restriction; trade reports Oct27–Nov3. Do not generalize to commercial ads. Release remains gated by build/evidence/live checks."
       }
     ],
-    "conditional_approved": 11,
-    "revise": 1,
+    "conditional_approved": 12,
+    "revise": 0,
     "release_ready": 0,
     "status": "HELD_BUILD_AND_EVIDENCE"
+  },
+  "meta_policy_source_reconciliation": {
+    "primary": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "secondary": "https://www.socialmediatoday.com/news/meta-outlines-political-ad-restrictions/832444/",
+    "decision": "APPROVED_EDITORIAL_CONDITIONAL",
+    "limits": "Meta original confirms final-week restriction; exact dates from trade reporting. No general commercial-ad ban."
   }
 }
