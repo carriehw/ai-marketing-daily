@@ -5,7 +5,7 @@ Only generates artifacts; the existing editorial publication gate must run first
 import json, html, re, hashlib
 from pathlib import Path
 from datetime import datetime, timezone
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from urllib.parse import urlencode, urlsplit
 from xml.etree import ElementTree as ET
 
@@ -15,6 +15,17 @@ PALETTE=["#39689F","#3F5BC8","#6249D7","#9A3A9E","#7D266B"]
 PRIORITY={"影響生意":30,"可即用":24,"要留意":12}
 CATEGORY={"廣告平台 & 行銷科技":15,"行業影響 & 品牌案例":13,"AI 大模型 & 市場動態":10,"創意生產工具":8,"即學技巧 & 玩法":7}
 def e(v): return html.escape(str(v or ""),quote=True)
+def issue_pubdate(feed_path, issue_id):
+    """Keep an issue's first build time when an existing issue is rebuilt."""
+    try:
+        for item in ET.parse(feed_path).findall("./channel/item"):
+            value = item.findtext("pubDate")
+            if item.findtext("guid") == issue_id and value:
+                if parsedate_to_datetime(value).tzinfo is not None:
+                    return value
+    except (OSError, ET.ParseError, TypeError, ValueError):
+        pass
+    return format_datetime(datetime.now(timezone.utc))
 def rank(items):
     def key(entry):
         i,s=entry
@@ -76,7 +87,9 @@ def build(root=Path(".")):
     (root/"edm").mkdir(exist_ok=True)
     (root/"email-zh.html").write_text(doc,encoding="utf-8")
     (root/"email-zh-subject.txt").write_text(subject+"\n",encoding="utf-8")
-    rss=(f'<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>AI Marketing Daily HTML EDM</title><link>{HOME}</link><description>Verified daily Chinese news brief</description><item><title>{e(subject)}</title><link>{HOME}?lang=zh</link><guid isPermaLink="false">ai-daily-{date}</guid><pubDate>{format_datetime(datetime.now(timezone.utc))}</pubDate><description><![CDATA[{inner.replace("]]>", "]] >")}]]></description></item></channel></rss>')
+    issue_id="ai-daily-"+date
+    pubdate=issue_pubdate(root/"edm/feed.xml",issue_id)
+    rss=(f'<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>AI Marketing Daily HTML EDM</title><link>{HOME}</link><description>Verified daily Chinese news brief</description><item><title>{e(subject)}</title><link>{HOME}?lang=zh</link><guid isPermaLink="false">{issue_id}</guid><pubDate>{pubdate}</pubDate><description><![CDATA[{inner.replace("]]>", "]] >")}]]></description></item></channel></rss>')
     ET.fromstring(rss)
     (root/"edm/feed.xml").write_text(rss,encoding="utf-8")
     (root/"edm/manifest.json").write_text(json.dumps({"date":date,"stories":len(items),"highlights":6,"source":"data.json"},ensure_ascii=False),encoding="utf-8")
