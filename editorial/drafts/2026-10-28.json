@@ -2,7 +2,7 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "0945_fact_check_continuation",
+  "phase": "1004_source_evidence_handoff",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
   "phase_saved_at_hkt": "2026-10-28T09:43:00+08:00",
@@ -31,7 +31,9 @@
     "Full Smartly research report is not directly exposed by its landing page; sample was 250 US + 250 UK marketers surveyed 2026-07-21 to 2026-07-31; 99% includes professional OR personal use",
     "AnyMind partnership integration Q4 2026 Facebook and early 2027 Instagram is a vendor-specific timeline; do not conflate with broader Meta live ad availability",
     "Current GitHub Actions list has no 2026-10-28 production deployment; previous successful deploy was 2026-10-27",
-    "2026-10-28 CI failed date guard: main data.json still 2026-10-27 (GitHub Actions run 40617014055); expected and not proof of site build defect"
+    "2026-10-28 CI failed date guard: main data.json still 2026-10-27 (GitHub Actions run 40617014055); expected and not proof of site build defect",
+    "Remaining per-story editorial approvals and independent claim-level review",
+    "Evidence/localization review and build/CI/live checks not complete"
   ],
   "source_groups_checked": [
     "OpenAI first-party",
@@ -60,16 +62,20 @@
     "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
   ],
   "next_round_recommendations": [
+    "singapore-switch-ai-enterprise-programmes: Use 27 Oct government speech and The Edge as evidence; remove superseded missing-primary-source blocker; complete separate editorial and localization review.",
+    "anymind-meta-live-commerce: Approve qualified planned Q4 2026 Facebook / early 2027 Instagram language only; no performance claims.",
+    "google-genie-4: Keep research-preview status and low marketing priority; confirm creative-use restrictions before any production claim.",
+    "smartly-alter-agents-study: Seek full questionnaire and sampling/weighting, or omit sensitive quantitative generalizations; separate survey participants from general population.",
+    "openai-oracle-apps-chatgpt: Preserve 'in development' and US Marketplace scope; obtain independent availability evidence if making launch claims.",
+    "bluefish-paid-media: Confirm Paid Media Briefs actual access and supported platforms; no inferred autonomous buying or uplift.",
+    "universal-ads-campaign-management: Open canonical Business Wire and partner integration documentation; no claim all 12 fully active.",
+    "brandi-geo-content-compass: Confirm customer enablement/rollout and product docs; no guaranteed GEO gains.",
+    "mastercard-mrbeast-creator-commerce: Keep October 26 original date, qualify future planned offerings; lower AI relevance.",
+    "maybank-scam-calligraphy: Seek Maybank original release, preserve Oct 23 exhibition date and category-loss caveat.",
     "10:45: inspect CI run 40617014055 date guard; only rebuild after fully approved 2026-10-28 data.json and evidence files are ready.",
     "10:45: first refresh main and daily branch SHAs, main data.json, archive manifest, current Pages/CI status; if truly live and verified, mark ALREADY CURRENT and do not repeat work.",
     "Prioritise finishing claim-level independent second-pass and editorial approval for AnyMind/Meta, Smartly/Alter Agents, OpenAI/Oracle, Universal Ads, Bluefish and Brandi; require source-specific caveats and exact launch geography/tier.",
-    "AnyMind: first-party English release https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026 and independently reported https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce agree on partnership and partner integration timeline; country/account eligibility and deployment unverified. Distinguish Meta general live ad rollout from AnyMind integration.",
-    "Smartly: release https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html documents online survey of 500 marketers (250 US, 250 UK; Jul 21-31); 77% comfortable when humans approve; 99% used AI professionally OR personally. Full report https://www.smartly.io/agentic-ai-era-marketers-guide landing page visible but methodology/weighting/full questionnaire not inspected.",
-    "OpenAI/Oracle: https://openai.com/index/oracle-apps-in-chatgpt/ says Oracle AI Workspace is developing, not generally launched; Oracle Marketplace procurement of OpenAI tools described for US Oracle customers. Keep rollout language qualified.",
-    "Continue remaining high-value 10 working drafts plus 2-4 alternatives only where original evidence supports genuine distinct stories; exclude duplicates and stale items. Candidate pool 31 is NOT 31 verified.",
-    "Generate complete per-claim editorial/evidence/2026-10-28.json and editorial/localization_review/2026-10-28.json only after real review; maintain explicit approved and full-release-ready counts.",
-    "Only after 10+ truly verified full stories: prepare three-language data and EDM same-version, execute repo build scripts, all verify_* including live Pages; do not publish if live inspection or CI blocked.",
-    "If still below floor or no live access at 10:45, retain DRAFT_HELD and notify Carrie with actual counts, specific blockers and late-EDM dispatch risk; never trigger Outlook or social."
+    "AnyMind: first-party English release https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026 and independently reported https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce agree on partnership and partner integration timeline; country/account eligibility and deployment unverified. Distinguish Meta general live ad rollout from AnyMind integration."
   ],
   "working_copy_drafts": [
     {
@@ -276,19 +282,19 @@
         "what": "新加坡政府於10月27日SWITCH 2026活動介紹企業AI推動措施。當地媒體報道Champions of AI計劃首批涵蓋24間公司，並提及面向中小企的代理式AI工作坊；該計劃本身於3月已公布。",
         "why": "企業AI轉型正由工具試用延伸至流程重整、員工培訓與跨部門落地，對區域行銷及客戶服務團隊有參考價值。",
         "action": "關注新加坡官方後續的參與條件、工作坊資料及可量度案例。",
-        "uncertainties": "首批企業及工作坊的10月27日詳情仍待取得當日EnterpriseSG原始新聞稿核對，不能視為香港可申請項目。"
+        "uncertainties": "計劃最初於3月公布，10月27日政府確認首批24間企業；具體參與資格及後續工作坊安排仍須留意EnterpriseSG公告。這些屬新加坡措施，並非香港資助計劃。"
       },
       "en": {
         "what": "At SWITCH 2026 on October 27, Singapore officials discussed initiatives to accelerate enterprise AI adoption. Local reporting says the Champions of AI programme has an initial cohort of 24 companies and references agentic-AI workshops for SMEs. The underlying programme was originally announced in March.",
         "why": "Enterprise AI efforts increasingly involve process redesign, staff capability and cross-functional adoption, relevant to regional marketing and customer-service teams.",
         "action": "Watch for official eligibility rules, workshop materials and measurable case studies.",
-        "uncertainties": "The October 27 cohort and workshop details still require the day's original EnterpriseSG release; these are not Hong Kong application programmes."
+        "uncertainties": "The original programme was announced in March; October 27 brought confirmation of the first 24-company cohort. Detailed company eligibility and subsequent workshop expansion remain subject to EnterpriseSG updates. These are Singapore programmes, not Hong Kong grants."
       },
       "zh_hans": {
         "what": "新加坡政府于10月27日SWITCH 2026活动介绍推动企业应用AI的措施。当地媒体报道称，Champions of AI计划首批涉及24家企业，并提及面向中小企业的智能体AI工作坊。该计划最早已于3月公布。",
         "why": "企业AI转型正在从工具试用延伸至流程重塑、员工培训和跨部门落地，对区域营销与客户服务团队具有参考价值。",
         "action": "关注新加坡官方后续公布的参与条件、工作坊资料和可量化案例。",
-        "uncertainties": "10月27日的首批企业及工作坊细节仍需核对EnterpriseSG当日原始公告，不能视为香港可申请的项目。"
+        "uncertainties": "该计划最初于3月公布，10月27日政府确认首批24家企业；具体参与资格及后续工作坊安排仍需留意EnterpriseSG公告。这些是新加坡项目，并非香港资助计划。"
       },
       "draft_only": true
     }
@@ -1117,5 +1123,116 @@
       "Continue 4 remaining working drafts and qualified alternates, select 10 genuinely relevant distinct items",
       "No publish, no Outlook send, no social send while 0 full_release_ready"
     ]
+  },
+  "phase_1004_verification_continuation": {
+    "run_date_hkt": "2026-10-28",
+    "status": "DRAFT_HELD",
+    "main_data_sha_checked": "91b473a550f45babcd124a840d3971cd71c445dd",
+    "main_archive_sha_checked": "9c331723f779705139c948f55269747cf0640155",
+    "work_draft_sha_before_write": "feb193158f436463901bf875636d72587dc9e28c",
+    "live_site_check": "Attempted public /zh-hant/ page; web retrieval inaccessible. No verified live confirmation.",
+    "new_source_checks": [
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "status": "primary_government_speech_and_independent_trade_reporting_inspected",
+        "original_url": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+        "independent_url": "https://www.theedgesingapore.com/digitaledge/digital-economy/enterprisesg-expand-agentic-ai-workshops-smes",
+        "original_locator": "27 October 2026 speech, paragraphs 15–17: first cohort of 24 Champions of AI; paragraphs 24–26: hands-on agentic AI workshops helped close to 300 micro/small businesses; >100 global AI tools added to SMEs Go Digital.",
+        "independent_locator": "The Edge Singapore 27 Oct: 24 initial champions, pilot workshops over 280 firms; November expansion planned. The 24 is cohort, not new launch of original March programme.",
+        "correction": "Original 10-draft uncertainty that Oct 27 official source was missing is resolved using the government speech. Preserve March programme announcement versus October cohort announcement.",
+        "remaining": "Verify any named company list against official EnterpriseSG release if added; complete editor signoff, independent review role, evidence and language gate.",
+        "release_ready": false
+      },
+      {
+        "slug": "anymind-meta-live-commerce",
+        "status": "primary_and_trade_source_inspected",
+        "original_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+        "independent_url": "https://www.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+        "original_locator": "Oct 27 original release says Facebook integration Q4 2026; Instagram early 2027; 85 APAC studios is vendor-reported.",
+        "remaining": "Do not infer market-level availability or performance; editor signoff and evidence required.",
+        "release_ready": false
+      },
+      {
+        "slug": "google-genie-4",
+        "status": "primary_and_independent_coverage_inspected",
+        "original_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "independent_url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+        "original_locator": "Oct 27 DeepMind release confirms native audio, interactive world simulation; research preview limited to trusted testers, wider access planned.",
+        "remaining": "No independent benchmark or general commercial availability. Editor relevance/risk review required.",
+        "release_ready": false
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "status": "original_release_inspected",
+        "original_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+        "original_locator": "Oct 27 release: 500 marketers, 250 US/250 UK, Jul 21–31, 77% comfortable with AI advertising if human final approval.",
+        "remaining": "Full research report/methodology and question wording not inspected; no population-level generalisation. Independent methodological review and editor approval missing.",
+        "release_ready": false
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "status": "original_openai_release_inspected",
+        "original_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+        "original_locator": "Oct 27 release says Oracle AI Workspace is developing; US Oracle Marketplace procurement is separate and eligible customers only.",
+        "remaining": "Independent non-counterparty corroboration of availability absent; no assertion of general launch. Editor approval missing.",
+        "release_ready": false
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "status": "two_independent_reports_inspected",
+        "original_url": "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks",
+        "independent_url": "https://bakchormeeboy.com/2026/10/27/maybank-singapore-turns-scam-phrases-into-art-with-new-campaign-the-most-expensive-words/",
+        "original_locator": "Oct 23 exhibition launch, runs to Nov 1; scam category losses are not per-phrase causal losses.",
+        "remaining": "First-party Maybank campaign announcement not yet retrieved; keep as source-checked not editor-approved.",
+        "release_ready": false
+      }
+    ],
+    "story_level_priority_next_actions": [
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "action": "Use 27 Oct government speech and The Edge as evidence; remove superseded missing-primary-source blocker; complete separate editorial and localization review."
+      },
+      {
+        "slug": "anymind-meta-live-commerce",
+        "action": "Approve qualified planned Q4 2026 Facebook / early 2027 Instagram language only; no performance claims."
+      },
+      {
+        "slug": "google-genie-4",
+        "action": "Keep research-preview status and low marketing priority; confirm creative-use restrictions before any production claim."
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "action": "Seek full questionnaire and sampling/weighting, or omit sensitive quantitative generalizations; separate survey participants from general population."
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "action": "Preserve 'in development' and US Marketplace scope; obtain independent availability evidence if making launch claims."
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "action": "Confirm Paid Media Briefs actual access and supported platforms; no inferred autonomous buying or uplift."
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "action": "Open canonical Business Wire and partner integration documentation; no claim all 12 fully active."
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "action": "Confirm customer enablement/rollout and product docs; no guaranteed GEO gains."
+      },
+      {
+        "slug": "mastercard-mrbeast-creator-commerce",
+        "action": "Keep October 26 original date, qualify future planned offerings; lower AI relevance."
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "action": "Seek Maybank original release, preserve Oct 23 exhibition date and category-loss caveat."
+      }
+    ],
+    "editorial_approved_count": 0,
+    "full_release_ready_count": 0,
+    "technical_release_gates": "NOT_RUN: minimum ten approved stories absent",
+    "edm": "NOT_SENT; do not trigger private Outlook automation",
+    "handoff": "Next 10:45 run: review current SHA, then finish story-level claim checks and editorial approval. No auto-publish unless all gates pass."
   }
 }
