@@ -1,15 +1,15 @@
 {
   "edition_date_hkt": "2026-10-29",
   "queue_version": "2.0",
-  "updated_at_hkt": "2026-10-29T07:14:21+08:00",
+  "updated_at_hkt": "2026-10-29T07:17:17+08:00",
   "base_main_sha": "919184e08183dd25c94856112fea4153bf6164b6",
   "discovery_count": 22,
   "selection_threshold": 60,
   "approved_count": 12,
   "held_count": 0,
   "reserve_count": 10,
-  "publication_status": "CI_RETRY_READY",
-  "next_action": "Submit shortened headline and preserve all source/browser/share/live acceptance gates.",
+  "publication_status": "PUBLISHED & VERIFIED",
+  "next_action": "Complete. Reuse the verified dated release receipt; do not republish or reopen reserves for this edition.",
   "items": [
     {
       "story_id": "muse-singapore",
@@ -24,7 +24,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/muse-singapore.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "tiktok-safety",
@@ -39,7 +39,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/tiktok-safety.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "google-apps",
@@ -54,7 +54,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/google-apps.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "microsoft-ads",
@@ -69,7 +69,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/microsoft-ads.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "sprinklr-measurement",
@@ -84,7 +84,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/sprinklr-measurement.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "invoca-messaging",
@@ -99,7 +99,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/invoca-messaging.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "sprinklr-agents",
@@ -114,7 +114,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/sprinklr-agents.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "triton-seller",
@@ -129,7 +129,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/triton-seller.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "mai-image",
@@ -144,7 +144,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/mai-image.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "stackadapt-retargeting",
@@ -175,7 +175,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/clorox.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "dfi-anniversary",
@@ -222,7 +222,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/baidu-ocr.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "3business-ai",
@@ -301,7 +301,7 @@
       },
       "state": "APPROVED",
       "article_packet_path": "editorial/articles/2026-10-29/rime-prism.json",
-      "next_action": "Reuse complete reviewed packet for edition assembly."
+      "next_action": "Published and live-verified; preserve reviewed packet."
     },
     {
       "story_id": "selzy-mcp",
@@ -352,11 +352,13 @@
       "next_action": "Oct 27 model family from release tracker; find issuer/model cards and licensing before use."
     }
   ],
-  "last_ci_run_id": 40785678203,
-  "last_ci_conclusion": "failure",
-  "last_ci_failed_step": "Build share card: title overflow",
+  "last_ci_run_id": 40785959617,
+  "last_ci_conclusion": "success",
   "stage": "PUBLISHED & VERIFIED",
   "published_story_count": 12,
   "release_record": "editorial/releases/2026-10-29.json",
-  "verified_at_hkt": "2026-10-29T07:15:46+08:00"
+  "verified_at_hkt": "2026-10-29T07:15:46+08:00",
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40785959617",
+  "data_sha256": "2bb13a79afcf7c9a4dc9ed097fba5c925e2d9881c81abbd2b4ace4bdf682f595",
+  "deployed_evidence_sha256": "1cd41ee72976f84eb490ec34ed0ddbf350f9a4c716ada2d01f4d9787b1ab3d33"
 }
