@@ -1,7 +1,7 @@
 {
   "edition_date_hkt": "2026-10-29",
   "queue_version": "2.0",
-  "updated_at_hkt": "2026-10-29T07:12:04+08:00",
+  "updated_at_hkt": "2026-10-29T07:14:21+08:00",
   "base_main_sha": "919184e08183dd25c94856112fea4153bf6164b6",
   "discovery_count": 22,
   "selection_threshold": 60,
@@ -9,7 +9,7 @@
   "held_count": 0,
   "reserve_count": 10,
   "publication_status": "CI_RETRY_READY",
-  "next_action": "Submit correction adding reviewed official developer documentation; run full unchanged gates.",
+  "next_action": "Submit shortened headline and preserve all source/browser/share/live acceptance gates.",
   "items": [
     {
       "story_id": "muse-singapore",
@@ -352,7 +352,7 @@
       "next_action": "Oct 27 model family from release tracker; find issuer/model cards and licensing before use."
     }
   ],
-  "last_ci_run_id": 40785362229,
+  "last_ci_run_id": 40785678203,
   "last_ci_conclusion": "failure",
-  "last_ci_failed_step": "Browser QA: supporting source metadata"
+  "last_ci_failed_step": "Build share card: title overflow"
 }
