@@ -1,0 +1,3 @@
+此任務以GitHub carriehw/ai-marketing-daily main的 editorial/releases/YYYY-MM-DD.json 作當日期數正式完成訊號；YYYY-MM-DD必須係Asia/Hong_Kong當日。先核對receipt為PUBLISHED & VERIFIED、published_story_count>=10、三語文章數一致，data_sha256及deployed_evidence_sha256對應main實際data.json及editorial/evidence/YYYY-MM-DD.json，並透過GitHub工具核對receipt所連結workflow已success。可讀取公開網站時再核對當日日期及內容；直接Pages讀取受限時可採用該成功workflow的逐byte、三語實際文章數與Newsletter同版驗收證據，不能只靠HTTP 200。
+有效共享receipt與成功CI已匹配時，網站編輯或補查task-chat的舊HELD結果不再攔截圖文。分享對話讀不到不能假裝已讀，也不要求用戶重新貼對話。沒有有效receipt、hash不符、CI未成功或日期不符便保持待處理，按既有排程再查，每日最多通知一次等待原因。不得因工具未能讀舊任務結果而忽略一份可驗證的完成receipt。
+以上只取代舊的網站完成判斷。保留後文所有選題原文再核實、Notion成效brief、兩張4:5成品、三版文案、品牌／語言規範、逐日防重複和不代發布／不寄送限制。
