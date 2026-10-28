@@ -13,11 +13,11 @@
   "last_confirmed_live_edition": null,
   "last_confirmed_live_edition_note": "Live GitHub Pages URLs could not be fetched in this runtime; repository main data.json and archive/manifest.json both show 2026-10-27, and last Pages workflow succeeded 2026-10-27. Do not equate repo with live.",
   "source_search_scope": "2026-10-23 to 2026-10-28 HKT, prioritizing Oct 26–27 releases; original event dates preserved; 2026-10-23 and older candidates only for exclusion/context unless real new development.",
-  "source_read_candidates_count": 19,
-  "tracked_candidates_count": 30,
+  "source_read_candidates_count": 20,
+  "tracked_candidates_count": 31,
   "release_ready_story_count": 0,
   "published_story_count_today": 0,
-  "hold_reason": "08:45 second pass: 30 candidates, 19 source-read from first pass, 8 source packets reopened and claims challenged, 8 trilingual working copies; 0 independently approved full-release-ready items. Do not publish.",
+  "hold_reason": "08:45 second pass: 31 candidates, 20 source-read, 10 claim-challenged packets, 10 trilingual working copies, 0 independently approved full-release-ready.",
   "blockers": [
     "below_editorial_floor",
     "Independent claim-level second pass not yet completed for candidates",
@@ -55,6 +55,7 @@
     "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
   ],
   "next_round_recommendations": [
+    "Review 10 trilingual working copies in shared draft; 10 draft copies do NOT meet 10 verified publication minimum.",
     "09:45: re-read main SHA, daily branch SHA, live site and archive; stop if today's PUBLISHED & VERIFIED.",
     "Finish two additional distinct high-relevance full-story candidates beyond the 8 trilingual working copies; do not pad with conference agenda, duplicate news or old platform releases.",
     "Obtain full Smartly/Alter Agents methodology and check 77% denominator; independently verify AnyMind Meta rollout, Universal Ads integrations and Bluefish product availability.",
@@ -236,6 +237,50 @@
         "why": "品牌与创作者合作正在探索从内容触达延伸到支付、会员体验和创作者经营支持。",
         "action": "评估实际权益设计和衡量指标，不要仅凭粉丝规模推断转化效果。",
         "uncertainties": "具体上线时间、适用市场和商业效果尚未披露。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "maybank-scam-calligraphy",
+      "zh_hant": {
+        "what": "新加坡Maybank的反詐騙展覽「The Most Expensive Words」於10月23日開幕，10月27日獲媒體報道。展覽將常見詐騙話術變成中英文書法作品，並標示相關詐騙類別的已報告損失。",
+        "why": "這是品牌以文化藝術重新包裝公共教育訊息的創意案例，值得觀察其如何令觀眾停下來閱讀。",
+        "action": "檢視品牌教育內容是否有清楚行為指引，並把曝光與真正的認知或行為改變分開衡量。",
+        "uncertainties": "展覽展示的損失數字屬詐騙類別總額，並非某句話造成的損失；活動成效尚未公布。"
+      },
+      "en": {
+        "what": "Maybank Singapore opened its 'The Most Expensive Words' anti-scam exhibition on October 23, with trade coverage on October 27. It presents familiar scam phrases as Chinese and English calligraphy alongside reported losses for the relevant scam categories.",
+        "why": "The campaign is a creative example of using cultural art to make public-education messages worth stopping to read.",
+        "action": "Review whether education campaigns provide clear behavioural guidance, and measure awareness separately from actual behaviour change.",
+        "uncertainties": "Displayed losses relate to scam categories, not losses caused by particular phrases; campaign effectiveness is not yet established."
+      },
+      "zh_hans": {
+        "what": "新加坡Maybank的反诈骗展览“The Most Expensive Words”于10月23日开幕，10月27日获得行业媒体报道。展览把常见诈骗话术做成中英文书法作品，并标注相关诈骗类别的已报告损失。",
+        "why": "这是品牌通过文化艺术呈现公众教育信息的创意案例，值得观察其如何吸引观众停留和阅读。",
+        "action": "检查品牌教育内容是否提供清晰的行动指引，并将曝光量与认知或行为改变分开衡量。",
+        "uncertainties": "展示的损失数字属于相关诈骗类别的总额，并非某句话直接造成的损失；活动成效尚未公布。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "singapore-switch-ai-enterprise-programmes",
+      "zh_hant": {
+        "what": "新加坡政府於10月27日SWITCH 2026活動介紹企業AI推動措施。當地媒體報道Champions of AI計劃首批涵蓋24間公司，並提及面向中小企的代理式AI工作坊；該計劃本身於3月已公布。",
+        "why": "企業AI轉型正由工具試用延伸至流程重整、員工培訓與跨部門落地，對區域行銷及客戶服務團隊有參考價值。",
+        "action": "關注新加坡官方後續的參與條件、工作坊資料及可量度案例。",
+        "uncertainties": "首批企業及工作坊的10月27日詳情仍待取得當日EnterpriseSG原始新聞稿核對，不能視為香港可申請項目。"
+      },
+      "en": {
+        "what": "At SWITCH 2026 on October 27, Singapore officials discussed initiatives to accelerate enterprise AI adoption. Local reporting says the Champions of AI programme has an initial cohort of 24 companies and references agentic-AI workshops for SMEs. The underlying programme was originally announced in March.",
+        "why": "Enterprise AI efforts increasingly involve process redesign, staff capability and cross-functional adoption, relevant to regional marketing and customer-service teams.",
+        "action": "Watch for official eligibility rules, workshop materials and measurable case studies.",
+        "uncertainties": "The October 27 cohort and workshop details still require the day's original EnterpriseSG release; these are not Hong Kong application programmes."
+      },
+      "zh_hans": {
+        "what": "新加坡政府于10月27日SWITCH 2026活动介绍推动企业应用AI的措施。当地媒体报道称，Champions of AI计划首批涉及24家企业，并提及面向中小企业的智能体AI工作坊。该计划最早已于3月公布。",
+        "why": "企业AI转型正在从工具试用延伸至流程重塑、员工培训和跨部门落地，对区域营销与客户服务团队具有参考价值。",
+        "action": "关注新加坡官方后续公布的参与条件、工作坊资料和可量化案例。",
+        "uncertainties": "10月27日的首批企业及工作坊细节仍需核对EnterpriseSG当日原始公告，不能视为香港可申请的项目。"
       },
       "draft_only": true
     }
@@ -649,6 +694,18 @@
       "caveat": "多項個案可能先前發布，非單一新產品；不拆成多篇湊數，僅保留Kantar相關核查。",
       "relevance_provisional": 58,
       "review_status": "hold_roundup_not_new_product"
+    },
+    {
+      "slug": "singapore-switch-ai-enterprise-programmes",
+      "title_zh": "新加坡SWITCH 2026公布企業AI推動進展，24家首批企業及中小企工作坊待官方核實",
+      "source": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+      "supporting_source": "https://www.straitstimes.com/business/economy/singapore-unveils-new-initiatives-to-help-companies-harness-ai-such-as-to-develop-new-products",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_class": "A+B",
+      "relevance_provisional": 71,
+      "review_status": "source_read_original_official_speech_plus_independent_trade_details_not_primary_confirmed",
+      "caveat": "3月原有計劃；10月27首批24間企業及工作坊需當日EnterpriseSG正式公告確認，不可重複當新計劃。"
     }
   ],
   "editorial_decision": "hold_all_pending_second_pass",
@@ -663,7 +720,7 @@
     "08:45 source-check notes: corrected Mastercard source date to Oct 26; Bluefish Paid Media Briefs available now but future MCP integrations not; Brandi enablement limited; Oracle Workspace in development; Genie 4 restricted preview; Universal Ads original Business Wire canonical URL recovered through syndicated wire."
   ],
   "phase_0845_completed": true,
-  "second_pass_source_challenge_count": 8,
+  "second_pass_source_challenge_count": 10,
   "second_pass_source_challenges": [
     {
       "slug": "anymind-meta-live-commerce",
@@ -807,7 +864,40 @@
       ],
       "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
       "release_ready": false
+    },
+    {
+      "slug": "maybank-scam-calligraphy",
+      "source_reviewed_at_utc": "2026-10-28T00:51:34.629Z",
+      "original_url": "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks",
+      "secondary_url": "https://www.beritaharian.sg/singapura/maybank-lancar-pameran-seni-khat-tingkat-kesedaran-tentang-penipuan",
+      "claims_source_checked": [
+        "Exhibition opened Oct 23, coverage Oct 27, runs through Nov 1 at NAFA; creative turns scam language into bilingual calligraphy."
+      ],
+      "second_pass_challenge": "Campaign numbers reflect scam-category losses, not causal impact of words; campaign performance unmeasured; source is trade and independent reporting, original Maybank Oct 23 statement not read.",
+      "unresolved": [
+        "Locate Maybank original Oct 23 press release",
+        "Verify cited Singapore Police Force statistics if numbers included"
+      ],
+      "review_result": "secondary_reopened_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "singapore-switch-ai-enterprise-programmes",
+      "source_reviewed_at_utc": "2026-10-28T00:51:34.629Z",
+      "original_url": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+      "secondary_url": "https://www.straitstimes.com/business/economy/singapore-unveils-new-initiatives-to-help-companies-harness-ai-such-as-to-develop-new-products",
+      "claims_source_checked": [
+        "Official Oct 27 SWITCH speech addresses AI industrial initiatives.",
+        "Straits Times Oct 27 reporting names first 24 Champions of AI firms and SME agentic-AI workshops; original programme announced March 2."
+      ],
+      "second_pass_challenge": "Government speech does not independently substantiate 24-company cohort or workshop details; March programme must not be falsely labelled new October launch.",
+      "unresolved": [
+        "Find EnterpriseSG Oct 27 first-party release/factsheet",
+        "Verify 24-company roster and workshop participation details"
+      ],
+      "review_result": "original_speech_plus_reporting_reopened_not_independently_fact_checked",
+      "release_ready": false
     }
   ],
-  "trilingual_working_copy_count": 8
+  "trilingual_working_copy_count": 10
 }
