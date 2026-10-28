@@ -2,12 +2,12 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "0800_first_pass",
+  "phase": "0845_gap_first_second_pass",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
-  "phase_saved_at_hkt": "2026-10-28T08:09:13.103+08:00",
+  "phase_saved_at_hkt": "2026-10-28T08:50:59+08:00",
   "reference_head_sha": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
-  "reference_branch_head_sha_before_write": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
+  "reference_branch_head_sha_before_write": "507232cac8b77cd1af173ee70c189772749b1301",
   "confirmed_repo_previous_edition": "2026-10-27",
   "confirmed_repo_previous_count": 10,
   "last_confirmed_live_edition": null,
@@ -17,13 +17,16 @@
   "tracked_candidates_count": 30,
   "release_ready_story_count": 0,
   "published_story_count_today": 0,
-  "hold_reason": "below_editorial_floor: 0 full stories with completed original source evidence, independent second-pass, bilingual/trilingual editorial and build/live QA; stage is first-pass, not final daily outcome.",
+  "hold_reason": "08:45 second pass: 30 candidates, 19 source-read from first pass, 8 source packets reopened and claims challenged, 8 trilingual working copies; 0 independently approved full-release-ready items. Do not publish.",
   "blockers": [
     "below_editorial_floor",
     "Independent claim-level second pass not yet completed for candidates",
     "Some original vendor methods, market availability and first-party campaign documents not accessed",
     "Three-language build, editorial/check_evidence.py and live Pages verification not run",
-    "Direct live site/EDM fetch unavailable in this runtime; no deployment should be attempted"
+    "Direct live site/EDM fetch unavailable in this runtime; no deployment should be attempted",
+    "8 reviewed source packets are not a genuinely independent fact-check or formal editorial approval",
+    "10 complete release-ready stories, per-claim evidence JSON and localization review not yet available",
+    "Live Pages inaccessible to this runtime; cannot certify publication"
   ],
   "source_groups_checked": [
     "OpenAI first-party",
@@ -36,23 +39,28 @@
     "TechCrunch enterprise AI",
     "Comcast/Universal Ads wire release",
     "China advertising festival release",
-    "APAC agency and creative campaigns"
+    "APAC agency and creative campaigns",
+    "TikTok for Business official (Oct 5/6 release checked; stale for this edition)",
+    "Amazon Ads official (Sep 29 release checked; stale for this edition)",
+    "Google DeepMind official plus TechCrunch",
+    "Oracle and OpenAI dual first-party statements",
+    "Mastercard original Oct 26 announcement",
+    "Universal Ads original Business Wire syndicated full text",
+    "Hong Kong Digital Marketing Asia Oct 27-28 conference (agenda only, not breaking news)"
   ],
   "unsearched_source_groups": [
-    "TikTok for Business official product changelog and APAC rollout",
-    "Amazon Ads official updates",
     "Tencent/Alibaba/ByteDance Chinese-language first-party announcements",
     "Apple WebKit primary technical change log for 2026-10-19 identity rules",
     "Independent original data/methodology for Aditude, Forrester, Smartly research",
     "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
   ],
   "next_round_recommendations": [
-    "08:45: First check main SHA and today's daily branch, plus live 3-language site and archive; stop if another editor has published.",
-    "Prioritize AnyMind-Meta, Universal Ads, Smartly/Alter Agents, Bluefish and Brandi: reopen original documents, write atomic claim locators and independently challenge rollout and samples.",
-    "Locate Universal Ads official Business Wire, Smartly report methodology, Forrester original report, and Meta official political ads restriction if relevant.",
-    "Expand official TikTok, Amazon Ads, Tencent, Alibaba, Apple WebKit and APAC sources to find more distinct new developments, not duplicate 2026-10-27 stories.",
-    "Complete 10+ full bilingual story records with 1:1 Simplified Chinese caveat review; write editorial/evidence/2026-10-28.json only when factual packets exist.",
-    "Do not publish or mark Newsletter editorial_approved until all scripts, QA, production live cache-bypass and EDM payload/feed gates pass."
+    "09:45: re-read main SHA, daily branch SHA, live site and archive; stop if today's PUBLISHED & VERIFIED.",
+    "Finish two additional distinct high-relevance full-story candidates beyond the 8 trilingual working copies; do not pad with conference agenda, duplicate news or old platform releases.",
+    "Obtain full Smartly/Alter Agents methodology and check 77% denominator; independently verify AnyMind Meta rollout, Universal Ads integrations and Bluefish product availability.",
+    "Produce independent claim-level second-pass and editor approvals for 10+ selected stories; generate editorial/evidence/2026-10-28.json only when complete and truthful.",
+    "Complete Simplified Chinese localization caveat review, 10+ full data.json story objects, newsletter version sync and all build/QA/live gates; do not publish if any gate unavailable.",
+    "10:45 recovery should inherit this branch and explicitly report true source-read, editorial-approved and full-release-ready counts, with no duplicate email or social posting."
   ],
   "working_copy_drafts": [
     {
@@ -120,6 +128,116 @@
         "uncertainties": "公告未证明全面开放或已有独立验证的成效。"
       },
       "draft_only": true
+    },
+    {
+      "slug": "universal-ads-campaign-management",
+      "zh_hant": {
+        "what": "Universal Ads於10月27日宣布在Business Partners Program新增Campaign Management類別，讓12家首批合作夥伴把電視廣告採購接入既有媒體管理流程。平台表示支援API及MCP整合。",
+        "why": "對同時管理搜尋、社交及串流電視廣告的團隊，跨渠道規劃和衡量流程值得評估。",
+        "action": "向實際使用的合作平台確認整合進度、庫存覆蓋、地域及歸因方法，再考慮小額測試。",
+        "uncertainties": "12家是宣布的合作夥伴，未證明每一家已全面啟用或可於香港採購。"
+      },
+      "en": {
+        "what": "On October 27, Universal Ads announced a Campaign Management category in its Business Partners Program, naming 12 initial partners that can bring TV activation into existing media workflows. The platform says it supports API and MCP integrations.",
+        "why": "Teams planning across search, social and streaming TV can evaluate whether the integrations simplify cross-channel buying and measurement.",
+        "action": "Confirm partner integration status, inventory, geography and attribution before a limited test.",
+        "uncertainties": "The 12 partners are announced partners; full activation by each and Hong Kong availability have not been established."
+      },
+      "zh_hans": {
+        "what": "Universal Ads于10月27日宣布在Business Partners Program中新增Campaign Management类别，首批公布12家合作伙伴，可将电视广告投放接入现有媒体管理流程。平台称支持API和MCP集成。",
+        "why": "同时管理搜索、社交与流媒体电视广告的团队，可评估跨渠道规划和衡量流程。",
+        "action": "向所用合作平台确认集成进度、库存覆盖、适用地区和归因方法，再考虑小规模测试。",
+        "uncertainties": "12家为已公布的合作伙伴，不代表每家都已全面上线，也未确认香港地区的可用性。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "brandi-geo-content-compass",
+      "zh_hant": {
+        "what": "Brandi AI於10月27日宣布Content Compass 2.0、Brand Voice、Collections及分析功能更新，讓行銷與公關團隊根據AI答案中的品牌呈現情況，管理內容優化建議。",
+        "why": "GEO工作可以由單純監測提及，延伸至內容修訂與品牌語氣審批。",
+        "action": "先檢視品牌語氣規範與內容審批流程，要求產品示範如何追蹤建議及發布後的可見度。",
+        "uncertainties": "部分功能僅供現有客戶啟用或逐步推出，AI引用及成效改善未獲獨立驗證。"
+      },
+      "en": {
+        "what": "On October 27, Brandi AI announced Content Compass 2.0, Brand Voice, Collections and analytics updates for managing content recommendations informed by how brands appear in AI answers.",
+        "why": "GEO workflows may extend from mention monitoring into content revision and brand-voice approvals.",
+        "action": "Review brand guidelines and editorial sign-off, then request a demonstration of recommendation tracking and post-publication visibility measures.",
+        "uncertainties": "Some features require enablement or are rolling out; improved AI citations and outcomes have not been independently validated."
+      },
+      "zh_hans": {
+        "what": "Brandi AI于10月27日宣布Content Compass 2.0、Brand Voice、Collections和分析功能更新，帮助营销与公关团队根据AI回答中的品牌呈现情况管理内容优化建议。",
+        "why": "GEO工作可从品牌提及监测延伸至内容修订与品牌语调审核。",
+        "action": "先检查品牌语言规范和内容审批流程，再要求产品演示如何追踪优化建议及发布后的可见度。",
+        "uncertainties": "部分功能需要客户启用或正在逐步推出，AI引用及业务效果提升尚无独立验证。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "openai-oracle-apps-chatgpt",
+      "zh_hant": {
+        "what": "OpenAI與Oracle於10月27日公布擴大企業合作，計劃透過正在開發的Oracle AI Workspace，讓員工在ChatGPT介面使用經授權的Oracle應用及企業資料。OpenAI產品亦可供合資格美國Oracle Marketplace客戶採購。",
+        "why": "企業AI代理能否連接CRM、ERP及資料治理，是部署前的重要評估方向。",
+        "action": "先盤點內部資料權限、審批責任及現有Oracle系統，再向供應商核實產品時程與地區。",
+        "uncertainties": "Oracle AI Workspace仍處開發與推出規劃階段，不能視為全球全面開放。"
+      },
+      "en": {
+        "what": "On October 27, OpenAI and Oracle expanded their enterprise partnership. Oracle is developing AI Workspace to connect approved Oracle applications and data through a ChatGPT interface. Eligible US Oracle Marketplace customers can separately purchase certain OpenAI offerings.",
+        "why": "Integration with ERP, CRM and data governance matters more than the announcement alone for enterprise AI agents.",
+        "action": "Map permissions, approval owners and Oracle systems, then confirm product timing and regional access.",
+        "uncertainties": "Oracle AI Workspace is under development; general global availability is not established."
+      },
+      "zh_hans": {
+        "what": "OpenAI与Oracle于10月27日宣布扩大企业合作。Oracle正在开发AI Workspace，计划通过ChatGPT界面连接获得授权的Oracle应用与企业数据。符合条件的美国Oracle Marketplace客户另可采购部分OpenAI产品。",
+        "why": "企业AI智能体能否连接ERP、CRM与数据治理体系，是实际部署前的重要评估点。",
+        "action": "梳理内部数据权限、审批责任和现有Oracle系统，再向供应商确认上线时间及适用地区。",
+        "uncertainties": "Oracle AI Workspace仍在开发中，不能视为已在全球全面开放。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "google-genie-4",
+      "zh_hant": {
+        "what": "Google DeepMind於10月27日公布Genie 4互動世界模型，加入原生音效及即時場景調整。目前僅以研究預覽形式提供予可信測試者。",
+        "why": "即時互動場景可能成為創意概念與分鏡探索的研究方向，尚非現成廣告製作流程。",
+        "action": "創意團隊可追蹤正式開放與授權條件，暫毋須為此調整生產流程。",
+        "uncertainties": "模型仍有場景一致性、文字可讀性及音效準確度限制；商業用途與普及時間待確認。"
+      },
+      "en": {
+        "what": "Google DeepMind announced Genie 4 on October 27, adding native audio and real-time changes to interactive simulated worlds. It is currently a research preview for trusted testers.",
+        "why": "Interactive worlds could inform creative ideation and storyboarding research, rather than an available advertising-production workflow.",
+        "action": "Creative teams can monitor access and licensing announcements; no immediate production change is warranted.",
+        "uncertainties": "Scene consistency, legible text and audio accuracy remain limitations, while broad commercial access is unconfirmed."
+      },
+      "zh_hans": {
+        "what": "Google DeepMind于10月27日发布Genie 4交互式世界模型，加入原生音频与实时场景调整。目前仅面向受邀测试者提供研究预览。",
+        "why": "交互式场景未来或可用于创意构思与分镜探索，目前还不是成熟的广告生产流程。",
+        "action": "创意团队可关注正式开放和授权条件，现阶段无需调整生产流程。",
+        "uncertainties": "场景一致性、文字可读性和音频准确度仍有限制，广泛商用时间尚未确认。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "mastercard-mrbeast-creator-commerce",
+      "zh_hant": {
+        "what": "Mastercard於10月26日宣布與Beast Industries合作，規劃面向創作者及年輕消費者的聯名卡、體驗、商業工具及教育計劃。10月27日的媒體報道屬後續跟進。",
+        "why": "品牌與創作者合作正探索由內容曝光延伸至支付、會員體驗及創作者營商支援。",
+        "action": "研究合作的實際權益設計與衡量指標，避免單憑創作者粉絲數推定轉化。",
+        "uncertainties": "具體產品推出時間、地區及商業成效仍未披露。"
+      },
+      "en": {
+        "what": "Mastercard announced a partnership with Beast Industries on October 26, outlining planned co-branded cards, experiences, business tools and education for creators and younger consumers. October 27 trade coverage followed that announcement.",
+        "why": "Creator partnerships may connect content audiences with payments, loyalty experiences and business support.",
+        "action": "Evaluate actual benefits and measurement plans rather than assuming conversion from creator reach.",
+        "uncertainties": "Specific launch dates, markets and commercial outcomes remain undisclosed."
+      },
+      "zh_hans": {
+        "what": "Mastercard于10月26日宣布与Beast Industries合作，计划推出面向创作者和年轻消费者的联名卡、专属体验、商业工具与教育项目。10月27日的媒体报道属于后续跟进。",
+        "why": "品牌与创作者合作正在探索从内容触达延伸到支付、会员体验和创作者经营支持。",
+        "action": "评估实际权益设计和衡量指标，不要仅凭粉丝规模推断转化效果。",
+        "uncertainties": "具体上线时间、适用市场和商业效果尚未披露。"
+      },
+      "draft_only": true
     }
   ],
   "candidates": [
@@ -133,19 +251,32 @@
       "source_locator": "Official release Oct 27 / Facebook live video ads from Q4 2026; Instagram early 2027; AnyLive human/AI/hybrid",
       "caveat": "屬合作與計劃開放時間；各市場、帳戶資格、實際GMV效益未核實。",
       "relevance_provisional": 91,
-      "review_status": "source_read_first_pass_needs_second_pass"
+      "review_status": "primary_reopened_claims_challenged_independent_approval_pending",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+      "second_pass_unresolved": [
+        "Verify country-level availability and account eligibility",
+        "Confirm whether partners have deployed a working live campaign"
+      ]
     },
     {
       "slug": "universal-ads-campaign-management",
       "title_zh": "Comcast旗下Universal Ads推出Campaign Management合作類別，讓平台內採購電視廣告",
-      "source": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+      "source": "https://www.businesswire.com/news/home/20261027393868/en/",
       "source_class": "B",
       "first_published_date": "2026-10-27",
       "event_date": "2026-10-27",
       "source_locator": "Business Wire / 08:00 EDT Oct 27 / 12 launch partners / Campaign Management / API-first MCP-enabled",
       "caveat": "原始Business Wire連結待定位；合作夥伴整合能力及地區、實際可用性不可推定全量。",
       "relevance_provisional": 87,
-      "review_status": "search_result_read_original_wire_locator_pending"
+      "review_status": "wire_source_read_original_canonical_direct_inaccessible",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://www.businesswire.com/news/home/20261027393868/en/",
+      "second_pass_unresolved": [
+        "Directly inspect Business Wire canonical source if accessible",
+        "Verify each integration's current availability"
+      ],
+      "original_syndicated_copy": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html"
     },
     {
       "slug": "smartly-alter-agents-study",
@@ -157,7 +288,13 @@
       "source_locator": "Original commissioned research / July 21–31 online survey, 250 US + 250 UK, >=5 years experience; 77% final human approval, 81% disclosure trust",
       "caveat": "99%包含個人或工作用途；樣本非全球或香港；報告封面顯示September 2026，10月27是公告日期。",
       "relevance_provisional": 85,
-      "review_status": "source_read_first_pass_needs_methods_second_pass"
+      "review_status": "primary_reopened_claims_challenged_independent_approval_pending",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+      "second_pass_unresolved": [
+        "Obtain complete survey report and weighting/methodology",
+        "Check 77% question exact wording and denominator"
+      ]
     },
     {
       "slug": "bluefish-paid-media",
@@ -169,7 +306,13 @@
       "source_locator": "Bluefish press release 09:00 ET / four pillars AI Monitoring, Optimization, Orchestration, Measurement",
       "caveat": "廠商宣稱；不能聲稱所有平台已可直接買廣告或已有獨立量化成效。",
       "relevance_provisional": 83,
-      "review_status": "source_read_first_pass_needs_second_pass"
+      "review_status": "primary_reopened_claims_challenged_independent_approval_pending",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+      "second_pass_unresolved": [
+        "Check product documentation for supported accounts, paid activation and access",
+        "Do not include promotional revenue or benchmark numbers without source methods"
+      ]
     },
     {
       "slug": "brandi-geo-content-compass",
@@ -181,7 +324,13 @@
       "source_locator": "Brandi AI press release 06:10 ET / Content Compass 2.0 / Brand Voice / Collections / enhanced analytics",
       "caveat": "GEO visibility metrics與歸因方式待查；不能保證AI回答引用或營收提升。",
       "relevance_provisional": 80,
-      "review_status": "source_read_first_pass_needs_second_pass"
+      "review_status": "primary_reopened_claims_challenged_independent_approval_pending",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html",
+      "second_pass_unresolved": [
+        "Obtain live product docs/screens and independently confirm release availability",
+        "Confirm measurement definitions for visibility and citations"
+      ]
     },
     {
       "slug": "forrester-aeo-brand-growth",
@@ -217,19 +366,31 @@
       "source_locator": "OpenAI official Oct 27 / Working with Oracle in ChatGPT / Oracle AI Workspace developing / Oracle Marketplace US",
       "caveat": "Oracle AI Workspace正在開發，不等於普遍推出；130k/95k用戶及時間節省屬Oracle報告，須歸因。",
       "relevance_provisional": 72,
-      "review_status": "source_read_first_pass_needs_second_pass"
+      "review_status": "dual_first_party_review_workspace_development_not_launch",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+      "second_pass_unresolved": [
+        "Verify actual Workspace launch date, tiers and regional access",
+        "Check whether marketplace purchasing availability applies outside US"
+      ]
     },
     {
       "slug": "google-genie-4",
       "title_zh": "Google DeepMind公布Genie 4即時互動世界模型，僅向可信測試者初步推出",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+      "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "source_class": "A",
       "first_published_date": "2026-10-27",
       "event_date": "2026-10-27",
       "source_locator": "Google Blog Oct 27 / limited trusted testers; Project Genie Ultra 'coming soon'",
       "caveat": "與行銷創意直接應用尚屬推論；未普遍可用、不能當成現成廣告生成工具。",
       "relevance_provisional": 64,
-      "review_status": "source_read_first_pass_low_marketer_priority"
+      "review_status": "primary_and_trade_read_research_preview_low_priority",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "second_pass_unresolved": [
+        "Check specific tester access and whether commercial creative use permitted",
+        "Keep as lower-priority creative R&D, not top story"
+      ]
     },
     {
       "slug": "microsoft-kantar-link-ai-case",
@@ -258,14 +419,20 @@
     {
       "slug": "mastercard-mrbeast-creator-commerce",
       "title_zh": "Mastercard與MrBeast推出創作者商業化合作倡議",
-      "source": "https://www.marketing-interactive.com/mastercard-and-mrbeast-want-creators-to-cash-in-on-more-than-views",
+      "source": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html",
       "source_class": "B",
-      "first_published_date": "2026-10-27",
-      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-26",
+      "event_date": "2026-10-26",
       "source_locator": "MARKETING-INTERACTIVE Oct 27 / creator brand engagement and entrepreneurship initiatives",
       "caveat": "需Mastercard官方公告核對具體計劃、開放市場及實施時間。",
       "relevance_provisional": 73,
-      "review_status": "source_read_first_pass_needs_primary"
+      "review_status": "primary_source_read_oct26_followup_low_priority",
+      "second_pass_claim_challenge": "source_reopened_not_independent",
+      "second_pass_source_url": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html",
+      "second_pass_unresolved": [
+        "Confirm card product geography and launch timing",
+        "Avoid framing as Oct 27 launch or verified business outcomes"
+      ]
     },
     {
       "slug": "aleph-india-country-head",
@@ -492,6 +659,155 @@
     "Candidate count is research funnel, not verified story count.",
     "Provisional relevance numbers are triage only; Constitution ranking applies after fact checking.",
     "Existing 2026-10-27 main edition is 10 stories, replacing the stale 2026-10-26 status in the previous run's report.",
-    "No production files, archive, EDM or user/private flows changed."
-  ]
+    "No production files, archive, EDM or user/private flows changed.",
+    "08:45 source-check notes: corrected Mastercard source date to Oct 26; Bluefish Paid Media Briefs available now but future MCP integrations not; Brandi enablement limited; Oracle Workspace in development; Genie 4 restricted preview; Universal Ads original Business Wire canonical URL recovered through syndicated wire."
+  ],
+  "phase_0845_completed": true,
+  "second_pass_source_challenge_count": 8,
+  "second_pass_source_challenges": [
+    {
+      "slug": "anymind-meta-live-commerce",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+      "secondary_url": "https://www.marketing-interactive.com/agencies",
+      "claims_source_checked": [
+        "Official 27 Oct release: partnership with Meta; Facebook live video ads from Q4 2026 and Instagram in early 2027.",
+        "Brand site/app, marketplace store or business messaging listed as checkout paths; human, AnyLive AI and hybrid livestream models."
+      ],
+      "second_pass_challenge": "Timeline is planned future availability, not confirmation of launch across APAC. 85 studios is company-supplied, not performance evidence. Meta named spokesperson quoted; independently reported listing confirms announcement but not rollout.",
+      "unresolved": [
+        "Verify country-level availability and account eligibility",
+        "Confirm whether partners have deployed a working live campaign"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "universal-ads-campaign-management",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://www.businesswire.com/news/home/20261027393868/en/",
+      "secondary_url": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+      "claims_source_checked": [
+        "Business Wire original syndicated in full 27 Oct 08:00 EDT: Universal Ads announced new Campaign Management partner category.",
+        "12 named launch partners: Adlyse, Atrium, Concord, Kochava, Koddi, Olyzon, Orbee, Scale Up, SearchKings, Stellair AI, Topsort and WorkMagic.",
+        "API/MCP enabled; some partner platforms embed TV activation; this is not universal platform coverage."
+      ],
+      "second_pass_challenge": "Original Business Wire URL identified from source-version link, but direct Business Wire page was inaccessible; full original wire text read through Yahoo syndication. Partner-by-partner integrations and geography not independently tested.",
+      "unresolved": [
+        "Directly inspect Business Wire canonical source if accessible",
+        "Verify each integration's current availability"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "smartly-alter-agents-study",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+      "secondary_url": "https://www.smartly.io/agentic-ai-era-marketers-guide",
+      "claims_source_checked": [
+        "Oct 27 announcement; online survey fielded July 21–31, 2026 with 250 US and 250 UK marketers, each with at least five years' experience.",
+        "77% said comfortable with AI in advertising with final human approval; 81% said AI-generated-ad disclosure would increase brand trust.",
+        "Report landing page identifies report cover as September 2026, distinct from October 27 announcement."
+      ],
+      "second_pass_challenge": "Commissioned opt-in online survey; no generalisation to HK/APAC, global marketer population or consumers. Headline 99% usage covers personal/work contexts; avoid overstatement. Full PDF and weighting/recruitment methods not inspected.",
+      "unresolved": [
+        "Obtain complete survey report and weighting/methodology",
+        "Check 77% question exact wording and denominator"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "bluefish-paid-media",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+      "secondary_url": "https://app.dealroom.co/news/feed/bluefish-extends-ai-marketing-platform-into-paid-media-as-ai-ad-spend-nears-26-4b",
+      "claims_source_checked": [
+        "Oct 27 Bluefish announcement extends AMP into paid media.",
+        "Paid Media Briefs are described as available now for recommendations for Google and ChatGPT.",
+        "Sponsored publisher, creator, UGC and retail media levers plus MCP/API integrations are described as future expansion/development."
+      ],
+      "second_pass_challenge": "Recommendations are not proof of automated media buying or independent uplift. Vendor's 35% figure covers its own 5,810-topic, 3-category sample; exclude without methodology. $26.4B is third-party projection and $1B ChatGPT ads is annualised run-rate, not realised revenue; exclude unless independently corroborated.",
+      "unresolved": [
+        "Check product documentation for supported accounts, paid activation and access",
+        "Do not include promotional revenue or benchmark numbers without source methods"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "brandi-geo-content-compass",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html",
+      "secondary_url": "https://mybrandi.ai/geo-content-optimization-platform/",
+      "claims_source_checked": [
+        "Oct 27 announcement introduces Content Compass 2.0, Brand Voice, expanded Collections and analytics.",
+        "Brand Voice checks consistency with tone, target audience and language guidance; platform makes recommendations rather than writing entire editorial pieces.",
+        "Redesigned Optimization Hub and Brand Voice are available for enablement in customer workspaces; analytics and Collections enhancements are rolling out."
+      ],
+      "second_pass_challenge": "Secondary company page surfaced but could not be fetched; vendor-only claim. Do not infer AI search ranking gains, guaranteed citations, attribution causality, or all-user rollout.",
+      "unresolved": [
+        "Obtain live product docs/screens and independently confirm release availability",
+        "Confirm measurement definitions for visibility and citations"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "openai-oracle-apps-chatgpt",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+      "secondary_url": "https://www.oracle.com/asean/news/announcement/ai-world-oracle-reinvents-enterprise-computing-for-the-ai-era-with-openai-2026-10-27/",
+      "claims_source_checked": [
+        "Both OpenAI and Oracle issued dated Oct 27 official statements on enterprise integration and Oracle AI Workspace.",
+        "OpenAI states Oracle is developing Oracle AI Workspace; US Oracle Marketplace purchasing for OpenAI API, Codex and ChatGPT Work is separately described as available to eligible customers.",
+        "Oracle AI Workspace described as governed by permissions/approvals; not confirmed generally available."
+      ],
+      "second_pass_challenge": "Both sources are counterparties, not independent performance verification. Oracle's 130k ChatGPT and 95k Codex users and time-saved figures are Oracle-reported; omit in draft. Oracle's forward-looking disclaimer expressly notes future timing may change.",
+      "unresolved": [
+        "Verify actual Workspace launch date, tiers and regional access",
+        "Check whether marketplace purchasing availability applies outside US"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "google-genie-4",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "secondary_url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "claims_source_checked": [
+        "Google DeepMind announced Genie 4 Oct 27 with native audio and interactive world simulation.",
+        "Research preview currently restricted to trusted testers; later intended for Google AI Ultra subscribers and early Gemini API/AI Studio partners.",
+        "DeepMind acknowledges scene drift, legible text and audio accuracy limitations."
+      ],
+      "second_pass_challenge": "Potential film storyboarding is exploratory and quoted by TechCrunch, not a broadly released marketing tool. Marketing relevance lower than direct MarTech releases. No independent benchmark of model realism.",
+      "unresolved": [
+        "Check specific tester access and whether commercial creative use permitted",
+        "Keep as lower-priority creative R&D, not top story"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    },
+    {
+      "slug": "mastercard-mrbeast-creator-commerce",
+      "source_reviewed_at_utc": "2026-10-28T00:50:59.834Z",
+      "original_url": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html",
+      "secondary_url": "https://thebrandbeats.in/mastercard-partners-with-mrbeasts-beast-industries-to-help-creators-build-businesses/",
+      "claims_source_checked": [
+        "Mastercard's first-party announcement is dated Oct 26, not Oct 27.",
+        "Partnership with Beast Industries outlines prospective consumer/creator co-branded cards, experiences, business tools and education.",
+        "Specific country availability, launch dates and performance outcomes are not established."
+      ],
+      "second_pass_challenge": "Correct source/event date to Oct 26; Oct 27 trade coverage is follow-up, not new launch. Promotional aspiration is not measurable creator-income impact. Lower priority for AI/MarTech.",
+      "unresolved": [
+        "Confirm card product geography and launch timing",
+        "Avoid framing as Oct 27 launch or verified business outcomes"
+      ],
+      "review_result": "source_reopened_and_claims_challenged_not_independently_fact_checked",
+      "release_ready": false
+    }
+  ],
+  "trilingual_working_copy_count": 8
 }
