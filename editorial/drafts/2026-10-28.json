@@ -2,12 +2,12 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "0845_gap_first_second_pass",
+  "phase": "0945_publication_preflight_checkpoint",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
-  "phase_saved_at_hkt": "2026-10-28T08:50:59+08:00",
+  "phase_saved_at_hkt": "2026-10-28T09:43:00+08:00",
   "reference_head_sha": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
-  "reference_branch_head_sha_before_write": "507232cac8b77cd1af173ee70c189772749b1301",
+  "reference_branch_head_sha_before_write": "e759d295c373cdd1d17ae4d74f53600be410e071",
   "confirmed_repo_previous_edition": "2026-10-27",
   "confirmed_repo_previous_count": 10,
   "last_confirmed_live_edition": null,
@@ -17,7 +17,7 @@
   "tracked_candidates_count": 31,
   "release_ready_story_count": 0,
   "published_story_count_today": 0,
-  "hold_reason": "08:45 second pass: 31 candidates, 20 source-read, 10 claim-challenged packets, 10 trilingual working copies, 0 independently approved full-release-ready.",
+  "hold_reason": "Publication checkpoint: 31 distinct tracked candidates; 20 source-read; 10 trilingual working copies; 0 independently editorial-approved and full-release-ready; 2026-10-28 not present in main data.json or archive manifest. Live GitHub Pages unreachable, so production date cannot be certified. Mandatory evidence/localization/build/EDM/live gates not run.",
   "blockers": [
     "below_editorial_floor",
     "Independent claim-level second pass not yet completed for candidates",
@@ -26,7 +26,11 @@
     "Direct live site/EDM fetch unavailable in this runtime; no deployment should be attempted",
     "8 reviewed source packets are not a genuinely independent fact-check or formal editorial approval",
     "10 complete release-ready stories, per-claim evidence JSON and localization review not yet available",
-    "Live Pages inaccessible to this runtime; cannot certify publication"
+    "Live Pages inaccessible to this runtime; cannot certify publication",
+    "2026-10-28 main data.json and archive/manifest.json absent; main head 323ff1dd, daily head e759d295 at checkpoint",
+    "Full Smartly research report is not directly exposed by its landing page; sample was 250 US + 250 UK marketers surveyed 2026-07-21 to 2026-07-31; 99% includes professional OR personal use",
+    "AnyMind partnership integration Q4 2026 Facebook and early 2027 Instagram is a vendor-specific timeline; do not conflate with broader Meta live ad availability",
+    "Current GitHub Actions list has no 2026-10-28 production deployment; previous successful deploy was 2026-10-27"
   ],
   "source_groups_checked": [
     "OpenAI first-party",
@@ -55,13 +59,15 @@
     "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
   ],
   "next_round_recommendations": [
-    "Review 10 trilingual working copies in shared draft; 10 draft copies do NOT meet 10 verified publication minimum.",
-    "09:45: re-read main SHA, daily branch SHA, live site and archive; stop if today's PUBLISHED & VERIFIED.",
-    "Finish two additional distinct high-relevance full-story candidates beyond the 8 trilingual working copies; do not pad with conference agenda, duplicate news or old platform releases.",
-    "Obtain full Smartly/Alter Agents methodology and check 77% denominator; independently verify AnyMind Meta rollout, Universal Ads integrations and Bluefish product availability.",
-    "Produce independent claim-level second-pass and editor approvals for 10+ selected stories; generate editorial/evidence/2026-10-28.json only when complete and truthful.",
-    "Complete Simplified Chinese localization caveat review, 10+ full data.json story objects, newsletter version sync and all build/QA/live gates; do not publish if any gate unavailable.",
-    "10:45 recovery should inherit this branch and explicitly report true source-read, editorial-approved and full-release-ready counts, with no duplicate email or social posting."
+    "10:45: first refresh main and daily branch SHAs, main data.json, archive manifest, current Pages/CI status; if truly live and verified, mark ALREADY CURRENT and do not repeat work.",
+    "Prioritise finishing claim-level independent second-pass and editorial approval for AnyMind/Meta, Smartly/Alter Agents, OpenAI/Oracle, Universal Ads, Bluefish and Brandi; require source-specific caveats and exact launch geography/tier.",
+    "AnyMind: first-party English release https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026 and independently reported https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce agree on partnership and partner integration timeline; country/account eligibility and deployment unverified. Distinguish Meta general live ad rollout from AnyMind integration.",
+    "Smartly: release https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html documents online survey of 500 marketers (250 US, 250 UK; Jul 21-31); 77% comfortable when humans approve; 99% used AI professionally OR personally. Full report https://www.smartly.io/agentic-ai-era-marketers-guide landing page visible but methodology/weighting/full questionnaire not inspected.",
+    "OpenAI/Oracle: https://openai.com/index/oracle-apps-in-chatgpt/ says Oracle AI Workspace is developing, not generally launched; Oracle Marketplace procurement of OpenAI tools described for US Oracle customers. Keep rollout language qualified.",
+    "Continue remaining high-value 10 working drafts plus 2-4 alternatives only where original evidence supports genuine distinct stories; exclude duplicates and stale items. Candidate pool 31 is NOT 31 verified.",
+    "Generate complete per-claim editorial/evidence/2026-10-28.json and editorial/localization_review/2026-10-28.json only after real review; maintain explicit approved and full-release-ready counts.",
+    "Only after 10+ truly verified full stories: prepare three-language data and EDM same-version, execute repo build scripts, all verify_* including live Pages; do not publish if live inspection or CI blocked.",
+    "If still below floor or no live access at 10:45, retain DRAFT_HELD and notify Carrie with actual counts, specific blockers and late-EDM dispatch risk; never trigger Outlook or social."
   ],
   "working_copy_drafts": [
     {
@@ -717,7 +723,8 @@
     "Provisional relevance numbers are triage only; Constitution ranking applies after fact checking.",
     "Existing 2026-10-27 main edition is 10 stories, replacing the stale 2026-10-26 status in the previous run's report.",
     "No production files, archive, EDM or user/private flows changed.",
-    "08:45 source-check notes: corrected Mastercard source date to Oct 26; Bluefish Paid Media Briefs available now but future MCP integrations not; Brandi enablement limited; Oracle Workspace in development; Genie 4 restricted preview; Universal Ads original Business Wire canonical URL recovered through syndicated wire."
+    "08:45 source-check notes: corrected Mastercard source date to Oct 26; Bluefish Paid Media Briefs available now but future MCP integrations not; Brandi enablement limited; Oracle Workspace in development; Genie 4 restricted preview; Universal Ads original Business Wire canonical URL recovered through syndicated wire.",
+    "09:43 HKT preflight checkpoint added after independently reopening three original source pages. This is not a publication approval; no production site or EDM files changed."
   ],
   "phase_0845_completed": true,
   "second_pass_source_challenge_count": 10,
@@ -899,5 +906,53 @@
       "release_ready": false
     }
   ],
-  "trilingual_working_copy_count": 10
+  "trilingual_working_copy_count": 10,
+  "phase_0945_preflight_completed": true,
+  "publication_checkpoint": {
+    "checked_at_hkt": "2026-10-28T09:43:00+08:00",
+    "main_head_sha": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
+    "daily_head_sha_before_write": "e759d295c373cdd1d17ae4d74f53600be410e071",
+    "main_data_date": "2026-10-27",
+    "main_archive_latest_date": "2026-10-27",
+    "main_archive_latest_count": 10,
+    "latest_successful_pages_run_utc": "2026-10-27T02:42:52Z",
+    "live_site_access": "failed; web open internal error and container DNS unavailable",
+    "verified_story_count": 0,
+    "source_read_candidates_count": 20,
+    "tracked_candidates_count": 31,
+    "trilingual_drafts_count": 10,
+    "editorial_approved_count": 0,
+    "full_release_ready_count": 0,
+    "newsletter_payload_status": "HELD",
+    "release_gate": "FAIL",
+    "no_production_write": true,
+    "source_rechecks": [
+      {
+        "slug": "anymind-meta-live-commerce",
+        "original": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+        "independent_trade": "https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+        "source_publication_date": "2026-10-27",
+        "supported": "Partnership announced; partner integration Facebook from Q4 2026 and Instagram early 2027; brand site, marketplace and business messaging checkout paths announced.",
+        "unresolved": "Exact market/account eligibility, launch date, customer adoption and outcome data; independent trade mostly follows announcement.",
+        "status": "source_reopened_not_full_release_ready"
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "original": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+        "research_landing": "https://www.smartly.io/agentic-ai-era-marketers-guide",
+        "source_publication_date": "2026-10-27",
+        "supported": "500 online respondents: 250 US and 250 UK marketing professionals, 5+ years experience, July 21-31 2026; 99% AI use professionally or personally; 77% comfortable with AI in advertising if a human has final approval.",
+        "unresolved": "Full questionnaire, weighting, recruitment method, representativeness; do not extrapolate 99% to all global marketers.",
+        "status": "source_reopened_not_full_release_ready"
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "original": "https://openai.com/index/oracle-apps-in-chatgpt/",
+        "source_publication_date": "2026-10-27",
+        "supported": "Oracle AI Workspace described as in development; US Oracle customers can purchase OpenAI products via Oracle Marketplace using eligible credits.",
+        "unresolved": "Actual Workspace rollout, account eligibility outside US, independent production use.",
+        "status": "source_reopened_not_full_release_ready"
+      }
+    ]
+  }
 }
