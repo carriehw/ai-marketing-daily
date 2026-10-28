@@ -2219,5 +2219,35 @@
       "Create exact per-claim evidence, localization review and final editorial decisions before build; run build.py, build_archive.py, build_search_index.py, build_locales.py and all CI/live gates.",
       "If no live verification, report held even if GitHub commit succeeds; do not send email or social."
     ]
+  },
+  "editorial_incremental_review_latest": {
+    "status": "FACT_CHECK_PROGRESS_NOT_FINAL_RELEASE",
+    "reviewed": [
+      {
+        "slug": "anymind-meta-live-commerce",
+        "decision": "CONDITIONAL_EDITORIAL_PASS_FACTS",
+        "primary": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+        "secondary": "https://www.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+        "notes": "Partnership and Q4 Facebook / early 2027 Instagram confirmed; secondary appears announcement-derived, not independent deployment verification. Keep as announced/planned; no GMV claims."
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "decision": "CONDITIONAL_EDITORIAL_PASS_ATTRIBUTED_SURVEY",
+        "primary": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+        "notes": "500 surveyed (250 US/250 UK), Jul 21–31, >=5 years marketing experience; 77% conditional human final approval. 99% refers professional OR personal use. Do not generalize globally; independent methods verification pending."
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "decision": "CONDITIONAL_EDITORIAL_PASS_ANNOUNCEMENT_ONLY",
+        "primary": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+        "notes": "Business Wire syndicated first-party release confirms 12 named launch partners, API/MCP positioning. Not independent; avoid asserting all partner integrations operational."
+      }
+    ],
+    "full_release_ready_count_unchanged": 0,
+    "next_actions": [
+      "Independently challenge pivotal claims of remaining selected stories",
+      "Resolve methods/availability gaps or remove unsupported claims",
+      "Complete formal evidence JSON, tri-language review, editorial approvals, official builds and live gates before publishing"
+    ]
   }
 }
