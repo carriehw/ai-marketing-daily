@@ -1977,5 +1977,40 @@
       "Write editorial/evidence/2026-10-28.json and localization_review/2026-10-28.json; run full official build and CI; verify live date, archive, search, same-edition EDM",
       "Do not send Outlook or social; if late, acknowledge 10:30 dispatch risk"
     ]
+  },
+  "incremental_verification_20261028": {
+    "status": "PARTIAL_FACT_CHECK_NOT_RELEASE_APPROVAL",
+    "verified_primary_and_reporting": [
+      "anymind-meta-live-commerce",
+      "smartly-alter-agents-study",
+      "singapore-switch-ai-enterprise-programmes",
+      "openai-oracle-apps-chatgpt"
+    ],
+    "primary_or_syndicated_claims_checked": [
+      "universal-ads-campaign-management",
+      "bluefish-paid-media",
+      "brandi-geo-content-compass"
+    ],
+    "independent_reporting_checked": [
+      "maybank-scam-calligraphy"
+    ],
+    "source_urls": [
+      "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+      "https://www.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+      "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+      "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+      "https://www.straitstimes.com/business/economy/singapore-unveils-new-initiatives-to-help-companies-harness-ai-such-as-to-develop-new-products",
+      "https://openai.com/index/oracle-apps-in-chatgpt/",
+      "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+      "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+      "https://mybrandi.ai/press-release/brandi-ai-expands-its-ai-visibility-and-geo-platform/",
+      "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks"
+    ],
+    "next_actions": [
+      "Finish remaining story-level checks and independence assessment; syndicated press releases do not count as independent",
+      "Review exact claims against three-language copy; formal editorial approval and evidence schema",
+      "Run all build/CI/live gates only after 10 fully ready"
+    ],
+    "release_ready_count_unchanged": 0
   }
 }
