@@ -133,3 +133,13 @@ Roles may be implemented by tools/agents only when an actual separate check is p
 The Constitution defines the **editorial standard**; the Daily SOP implements it. Version both documents in GitHub. A policy change needs a dated commit, rationale and explicit acknowledgment of altered gates. Automation prompts must read and follow **the current version on the repository**, not rely on a past-chat instruction.
 
 **Adopted:** 2026-10-26 · **Next review:** after initial daily-operation evidence and quality results are collected.
+
+
+### 2026-10-28 amendment — 60-point direct selection rule
+
+- After full candidate discovery, de-duplication and initial editorial triage, place every candidate with a **provisional editorial priority score >=60/100** directly into the **selected-for-verification editorial list**; candidates below 60 are normally excluded (an explicit, documented Publisher exception is required to include one).
+- This is an automatic **selection for editorial processing**, not automatic fact approval or publication. A 60+ item that repeats prior coverage without material new information, has a misleading event date, lacks original evidence, or fails independent review must be marked `HELD/REJECTED` with reason; it must never bypass any release gate.
+- Assess material follow-ups on incremental verified developments, not mere related commentary. Where 60+ eligible items exceed the desired daily volume, process the highest-value items first, retain the others as qualified reserves; do not silently discard or translate everything prematurely.
+- First lock the eligible editorial list and source verification; finalize Traditional Chinese, Simplified Chinese and English only for verified editorial-approved items. Existing draft translations may be reused after approval.
+- Maintain the **>=10 independently verified and approved full-story publication floor**, evidence, language parity, archive, newsletter, build/CI and live verification. Score does not count as verification. If fewer than ten pass, hold the issue.
+- Record each candidate's score, selected/held/rejected state and brief reason in the daily draft for auditability.
