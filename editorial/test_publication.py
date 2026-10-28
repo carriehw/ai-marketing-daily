@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from edition_packet import current_packet, prepare, read_json, resolve_edition, validate, write_json
+from edition_packet import check_article_packet, check_stored_articles, current_packet, prepare, read_json, resolve_edition, validate, write_json
 from release_state import asset_paths, make_receipt, observe, plan, receipt_errors, sha, StoryCounter
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -75,6 +75,16 @@ class PublicationControls(unittest.TestCase):
         self.packet["evidence"]["stories"][0]["editorial_relevance_score"]["total"] = 59
         self.assertTrue(validate(self.packet, self.date))
 
+    def test_a_high_total_cannot_hide_zero_relevance_dimensions(self):
+        scores = self.packet["evidence"]["stories"][0]["editorial_relevance_score"]
+        for key in list(scores):
+            scores[key] = 100 if key == "total" else 0
+        self.assertTrue(validate(self.packet, self.date))
+
+    def test_unreviewed_claim_alias_cannot_enter_an_article_approval(self):
+        self.packet["evidence"]["stories"][0]["claims"][0]["status"] = "uncertain"
+        self.assertTrue(validate(self.packet, self.date))
+
     def test_changed_title_must_update_evidence_and_localization(self):
         self.packet["data"]["items"][0]["title"] = "Changed title without matching review"
         self.assertTrue(validate(self.packet, self.date))
@@ -101,6 +111,21 @@ class PublicationControls(unittest.TestCase):
             write_json(root / f"editorial/editions/{self.date}.json", self.packet)
             prepare(root, self.date)
             self.assertEqual(current_packet(root), self.packet)
+
+    def test_one_completed_article_can_be_saved_before_ten_are_ready(self):
+        p = {"edition_date_hkt": self.date, "state": "APPROVED", "article": self.packet["data"]["items"][0],
+             "evidence": self.packet["evidence"]["stories"][0],
+             "localization_review": self.packet["localization_review"]["items"][0]}
+        self.assertEqual(check_article_packet(p, self.date), [])
+        write_json(self.root / f"editorial/articles/{self.date}/first.json", p)
+        self.assertEqual(check_stored_articles(self.root, self.date), 1)
+
+    def test_partial_claims_cannot_be_saved_as_completed_article(self):
+        p = {"edition_date_hkt": self.date, "state": "APPROVED", "article": self.packet["data"]["items"][0],
+             "evidence": self.packet["evidence"]["stories"][0],
+             "localization_review": self.packet["localization_review"]["items"][0]}
+        p["evidence"]["claims"] = []
+        self.assertTrue(check_article_packet(p, self.date))
 
     def test_docs_do_not_force_yesterdays_issue_to_be_today(self):
         self.assertEqual(resolve_edition({"date": "2026-10-27"}, "2026-10-28", ["editorial/DAILY_SOP_v1.0.md"]), ("2026-10-27", False))

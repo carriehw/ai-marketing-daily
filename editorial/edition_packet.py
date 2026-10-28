@@ -14,8 +14,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from editorial.check_evidence import assess
-from verify_editorial import audit
+from editorial.check_evidence import assess, SCORES
+from verify_editorial import audit, SECTIONS
 
 
 def read_json(path):
@@ -43,11 +43,24 @@ def story_errors(article, proof, localization, edition):
             errors.append("missing actual review provenance: " + field)
     if len(proof.get("claims", [])) < 3:
         errors.append("at least three separately documented pivotal claims required")
+    if len({c.get("claim_zh") for c in proof.get("material_claims", [])}) < 3:
+        errors.append("at least three distinct pivotal material claims required")
+    signature = lambda c: tuple(c.get(k) for k in ("claim_zh", "support_url", "status", "evidence_locator"))
+    if {signature(c) for c in proof.get("claims", [])} != {signature(c) for c in proof.get("material_claims", [])}:
+        errors.append("claim aliases disagree with the reviewed material claims")
+    for language in ("", "_en"):
+        if len(article.get("highlights" + language, [])) < 2 or len(article.get("detail" + language, "").strip()) < 120:
+            errors.append("complete bilingual highlights and detailed content required")
+    if article.get("section") not in SECTIONS:
+        errors.append("unknown editorial category")
     if proof.get("title_zh") != article.get("title") or proof.get("source_story_url") != article.get("url"):
         errors.append("article and evidence identity/title mismatch")
     if proof.get("source_date_display") != article.get("time"):
         errors.append("article and evidence source-date mismatch")
-    if proof.get("editorial_relevance_score", {}).get("total", 0) < 60:
+    scores = proof.get("editorial_relevance_score", {})
+    if all(type(scores.get(key)) is int for key in SCORES) and scores.get("total") != sum(scores[key] for key in SCORES):
+        errors.append("score total differs from its reviewed dimensions")
+    if scores.get("total", 0) < 60:
         errors.append("selected article is below the 60-point processing threshold")
     if article.get("action") not in {"影響生意", "可即用", "要留意"}:
         errors.append("invalid website action enum; put the recommendation in next_step")
@@ -59,6 +72,25 @@ def story_errors(article, proof, localization, edition):
             len(localization.get("simplified_editorial_note", "")) < 35):
         errors.append("missing matching, reviewed localization and risk note")
     return errors
+
+
+def check_article_packet(packet, today):
+    if packet.get("edition_date_hkt") != today or packet.get("state") != "APPROVED":
+        return ["article packet is not an approved record for this edition"]
+    return story_errors(packet.get("article", {}), packet.get("evidence", {}),
+                        packet.get("localization_review", {}), today)
+
+
+def check_stored_articles(root, today):
+    approved = 0
+    for path in sorted((Path(root) / "editorial/articles" / today).glob("*.json")):
+        packet = read_json(path)
+        if packet.get("state") == "APPROVED":
+            errors = check_article_packet(packet, today)
+            if errors:
+                raise ValueError(str(path) + ": " + "; ".join(errors))
+            approved += 1
+    return approved
 
 
 def validate(packet, today):
@@ -129,12 +161,15 @@ def resolve_edition(data, wall_date, changed_paths, canonical_exists=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["snapshot", "prepare", "check", "resolve"])
+    parser.add_argument("command", choices=["snapshot", "prepare", "check", "resolve", "check-stories"])
     parser.add_argument("--today", required=True)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--before", default="")
     parser.add_argument("--outputs", type=Path)
     args = parser.parse_args()
+    if args.command == "check-stories":
+        print(f"PASS stored article packets: {check_stored_articles(args.root, args.today)} structurally complete approvals; not an issue publication")
+        return
     if args.command == "resolve":
         changed = []
         if re.fullmatch(r"[0-9a-f]{40}", args.before) and set(args.before) != {"0"}:

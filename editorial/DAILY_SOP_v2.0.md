@@ -53,6 +53,15 @@ requested Hong Kong date. Never infer a new issue from yesterday's pointer.
    reporting and record the access limitation. A blocked page does not approve a
    claim. Reuse approved translations after checking qualifiers and dates.
 
+Persist every complete article, even when fewer than ten are ready, in
+`editorial/articles/YYYY-MM-DD/STORY-SLUG.json` with `edition_date_hkt`,
+`state: APPROVED`, `article`, `evidence` and `localization_review` (the matching
+one-story objects from the adopted schema). Put its `article_packet_path` in the
+compact queue. Checkpoint tasks reuse those exact reviewed objects rather than
+rebuilding completed work. The editorial QA workflow runs `check-stories` against
+completed article packets; incomplete/conditional material stays in work records
+and cannot be counted as a completed article. The full edition still requires ten.
+
 The instruction to keep the original 14 candidates applied to **2026-10-28 only**.
 It is not a permanent daily candidate count. Later editions use their own dated
 queue; no subsequent task should restart that day's research unnecessarily.

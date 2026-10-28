@@ -28,3 +28,5 @@ jobs:
         run: python -m py_compile editorial/check_evidence.py editorial/test_check_evidence.py
       - name: Positive and negative gate controls
         run: python -m unittest discover -v -s editorial -p 'test_*.py'
+      - name: Check completed per-story handoff packets without requiring a full issue
+        run: python editorial/edition_packet.py check-stories --today "$(TZ=Asia/Hong_Kong date +%F)"
