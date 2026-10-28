@@ -1,0 +1,1190 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-10-29",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-10-29T07:14:21+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Actual source reads and separate-request same-assistant second pass. No independent human reviewer, sub-agent or product trial claimed.",
+  "review_provenance": {
+    "first_pass": "Direct original-source full text inspected this session; actual source access timestamps and raw-source hashes recorded per article.",
+    "second_pass": "Fresh HTTPS requests to original URLs; claims, dates, stages, denominator and unsupported outcome challenges recorded per article.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-10-29-microsoft-ads",
+      "title_zh": "Microsoft廣告開放轉換API",
+      "source_story_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+      "published_article_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "publisher": "Microsoft Advertising",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Turn high-quality measurement signals: generally available; paragraph stating works alongside Universal Event Tracking.; Keep AI-generated ad copy on brand: open pilot eligibility and up to 40 guidelines.; Get more visibility and controls, New targeting options: age/gender GA; devices coming weeks.",
+          "limitations": "Features have different rollout stages. Optimization benefits are Microsoft’s descriptions, not independent performance findings.",
+          "local_source_sha256": "9f4275f2392c00ec180c36bd09817bdbea431776cf5d26f7dc27fab4ff97fd3d"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Microsoft表示Conversions API已正式開放並與UET並行。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Turn high-quality measurement signals: generally available; paragraph stating works alongside Universal Event Tracking.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        },
+        {
+          "claim_zh": "messaging guidelines公開試行支援最多40項指引。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Keep AI-generated ad copy on brand: open pilot eligibility and up to 40 guidelines.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        },
+        {
+          "claim_zh": "Performance Max年齡及性別定向已正式開放，裝置定向仍在推出中。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Get more visibility and controls, New targeting options: age/gender GA; devices coming weeks.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Microsoft表示Conversions API已正式開放並與UET並行。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Turn high-quality measurement signals: generally available; paragraph stating works alongside Universal Event Tracking.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        },
+        {
+          "claim_zh": "messaging guidelines公開試行支援最多40項指引。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Keep AI-generated ad copy on brand: open pilot eligibility and up to 40 guidelines.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        },
+        {
+          "claim_zh": "Performance Max年齡及性別定向已正式開放，裝置定向仍在推出中。",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/october-2026/build-steer-and-measure-your-campaigns-with-ai-whats-new-in-microsoft-advertising-this-october",
+          "evidence_locator": "Get more visibility and controls, New targeting options: age/gender GA; devices coming weeks.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "各功能推出階段不同；公告中的優化效益屬平台說明，並非本刊獨立成效測試。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "9f4275f2392c00ec180c36bd09817bdbea431776cf5d26f7dc27fab4ff97fd3d",
+        "finding": "Second direct read confirmed GA versus open pilot and future rollout. Removed guaranteed performance language and did not merge future landing-page reporting into current availability."
+      },
+      "review_notes": "Second direct read confirmed GA versus open pilot and future rollout. Removed guaranteed performance language and did not merge future landing-page reporting into current availability. Minor editorial headline shortening after measured share-card overflow; full rollout and pilot qualifications unchanged in summary/detail.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 20,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "High",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-10-29-google-apps",
+      "title_zh": "Google開放Connected Apps平台預覽，讓品牌服務接入Search與Gemini",
+      "source_story_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+      "published_article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "publisher": "Google",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Opening announcement paragraph, dated Oct 28: preview of Connected Apps Platform.; Manage Connected Apps with ease, first paragraph: cloud-hosted MCP server / Android MCP / AppFunctions APIs.; Manage Connected Apps with ease: surface selection before review and traffic, latency, error-rate reporting.",
+          "limitations": "This is a phased preview. The announcement does not provide a full market list or guarantee traffic or sales.",
+          "local_source_sha256": "44079f26123d4385b6be33fa5ea46bf0bbde06a716e4b840e17be311e6d0c129"
+        },
+        {
+          "url": "https://developers.google.com/connected-apps",
+          "publisher": "Google for Developers",
+          "source_class": "A",
+          "source_publication_date": null,
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:11:31+08:00",
+          "access_method": "Direct HTTPS full documentation read, then separate request reopened.",
+          "evidence_locator": "Overview of the Connected Apps Platform; MCP server; Android MCP; Register and manage. Confirms preview application, MCP/AppFunctions paths and Console review/publishing.",
+          "limitations": "Same issuer documentation, not independent performance corroboration; publication date not stated on this overview.",
+          "local_source_sha256": "3d5396f6a41730a9783334c5f895555f8ae7819ffd007e8aa20dd378beb81e15"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Google於10月28日宣布Connected Apps Platform預覽。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Opening announcement paragraph, dated Oct 28: preview of Connected Apps Platform.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        },
+        {
+          "claim_zh": "平台支援雲端MCP及透過AppFunctions APIs的Android MCP。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Manage Connected Apps with ease, first paragraph: cloud-hosted MCP server / Android MCP / AppFunctions APIs.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        },
+        {
+          "claim_zh": "開發者可選Search、Gemini或兩者並查看流量、延遲及錯誤率。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Manage Connected Apps with ease: surface selection before review and traffic, latency, error-rate reporting.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Google於10月28日宣布Connected Apps Platform預覽。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Opening announcement paragraph, dated Oct 28: preview of Connected Apps Platform.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        },
+        {
+          "claim_zh": "平台支援雲端MCP及透過AppFunctions APIs的Android MCP。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Manage Connected Apps with ease, first paragraph: cloud-hosted MCP server / Android MCP / AppFunctions APIs.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        },
+        {
+          "claim_zh": "開發者可選Search、Gemini或兩者並查看流量、延遲及錯誤率。",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+          "evidence_locator": "Manage Connected Apps with ease: surface selection before review and traffic, latency, error-rate reporting.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是分階段預覽；公告未列出完整市場名單，亦未承諾接入必定帶來流量或成交。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "44079f26123d4385b6be33fa5ea46bf0bbde06a716e4b840e17be311e6d0c129",
+        "finding": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current.",
+        "supplementary_document_review": {
+          "url": "https://developers.google.com/connected-apps",
+          "accessed_at_hkt": "2026-10-29T07:11:35+08:00",
+          "source_sha256": "c6375151a6f08f9605e501644e5a88035da9de57d0cc4def401fe294d9f0899d",
+          "finding": "Reopened and inspected full developer overview. Confirms preview application, remote MCP / Android AppFunctions, authorization and Console registration/review. No new capability claim added."
+        }
+      },
+      "review_notes": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current. Added actual reviewed developer documentation as visible supporting source in metadata after browser QA reported no supporting link in this all-primary-source edition.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 10,
+        "total": 92
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-muse-singapore",
+      "title_zh": "Meta Muse擴展至新加坡，購物與旅遊連接功能將逐步開放",
+      "source_story_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "published_article_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "source_date_display": "10月27日",
+      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-27",
+      "source_documents": [
+        {
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "publisher": "Meta",
+          "source_class": "A",
+          "source_publication_date": "2026-10-27",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Page date Oct 27; final availability paragraph: iOS, Android and muse.ai in Singapore.; What Muse Can Do in Singapore: early local partners and progressive connector rollout.; Safety paragraph: choose access; checks before sensitive email or purchase actions.",
+          "limitations": "The official page is dated October 27; some Singapore reports appeared October 28. This does not establish Hong Kong availability or that every partner feature is live.",
+          "local_source_sha256": "e9118bfd22a3bdad8484c8aaba6825f1297958812fa54ee39da71d2f84c94afd"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Meta官方頁面宣布Muse已於新加坡提供。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "Page date Oct 27; final availability paragraph: iOS, Android and muse.ai in Singapore.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        },
+        {
+          "claim_zh": "首批本地夥伴包括Shopee、Grab、Singapore Airlines及Klook，功能分階段推出。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "What Muse Can Do in Singapore: early local partners and progressive connector rollout.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        },
+        {
+          "claim_zh": "用戶控制存取權限，購買及寄送電郵前須確認。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "Safety paragraph: choose access; checks before sensitive email or purchase actions.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Meta官方頁面宣布Muse已於新加坡提供。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "Page date Oct 27; final availability paragraph: iOS, Android and muse.ai in Singapore.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        },
+        {
+          "claim_zh": "首批本地夥伴包括Shopee、Grab、Singapore Airlines及Klook，功能分階段推出。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "What Muse Can Do in Singapore: early local partners and progressive connector rollout.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        },
+        {
+          "claim_zh": "用戶控制存取權限，購買及寄送電郵前須確認。",
+          "support_url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "evidence_locator": "Safety paragraph: choose access; checks before sensitive email or purchase actions.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "官方頁面日期為10月27日，部分新加坡報道於28日刊出；本刊保留官方日期。此消息不代表香港已推出，亦不代表全部夥伴功能已可用。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "eb17f6f5eb1b3a5052e8ea598f563d724da109463c3f744263e72479dc4b1799",
+        "finding": "Reopened page and checked date discrepancy with later regional reports. Retained official source date and phased connectors. New country launch is material beyond earlier Japan/Klook coverage; no worldwide or Hong Kong availability claim."
+      },
+      "review_notes": "Reopened page and checked date discrepancy with later regional reports. Retained official source date and phased connectors. New country launch is material beyond earlier Japan/Klook coverage; no worldwide or Hong Kong availability claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 93
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-tiktok-safety",
+      "title_zh": "TikTok在新加坡發布Brand Safety Center與AI廣告安全指南",
+      "source_story_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+      "published_article_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "publisher": "TikTok",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Dated opening paragraph: Center, Playbook, AI Safety Essentials; APAC forum in Singapore.; Opening paragraph: AI Safety Essentials developed with Responsible Marketing Advisory.; Brand controls and new protection tools: Safe spaces and Clear disclosure bullets.",
+          "limitations": "Guidance and platform controls do not guarantee zero risk. Platform-reported removal and brand-trust figures are not treated as independent outcomes.",
+          "local_source_sha256": "aa934c54a96054a5c2066a3c83f2c2bb471c263ee1fd52ebb635405c9bc4bc75"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "TikTok於10月28日公布Brand Safety Center與兩項指南。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Dated opening paragraph: Center, Playbook, AI Safety Essentials; APAC forum in Singapore.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        },
+        {
+          "claim_zh": "AI Safety Essentials與Responsible Marketing Advisory合作制定。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Opening paragraph: AI Safety Essentials developed with Responsible Marketing Advisory.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        },
+        {
+          "claim_zh": "TikTok列出Inventory Filter等控制及AI生成內容披露標籤。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Brand controls and new protection tools: Safe spaces and Clear disclosure bullets.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "TikTok於10月28日公布Brand Safety Center與兩項指南。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Dated opening paragraph: Center, Playbook, AI Safety Essentials; APAC forum in Singapore.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        },
+        {
+          "claim_zh": "AI Safety Essentials與Responsible Marketing Advisory合作制定。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Opening paragraph: AI Safety Essentials developed with Responsible Marketing Advisory.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        },
+        {
+          "claim_zh": "TikTok列出Inventory Filter等控制及AI生成內容披露標籤。",
+          "support_url": "https://newsroom.tiktok.com/tiktok-introduces-the-brand-safety-center-at-apac-responsible-media-forum-2026?lang=en-SG",
+          "evidence_locator": "Brand controls and new protection tools: Safe spaces and Clear disclosure bullets.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "指南與平台控制不能保證零風險；本刊未將平台自報移除率或品牌信任數字當作獨立成效。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "aa934c54a96054a5c2066a3c83f2c2bb471c263ee1fd52ebb635405c9bc4bc75",
+        "finding": "Reopened full source. Kept guide launch and named controls, omitted moderation statistics and Ipsos uplift figures because the underlying research was not independently inspected. No risk-free compliance claim."
+      },
+      "review_notes": "Reopened full source. Kept guide launch and named controls, omitted moderation statistics and Ipsos uplift figures because the underlying research was not independently inspected. No risk-free compliance claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 93
+      },
+      "impact": "High",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-10-29-invoca-messaging",
+      "title_zh": "Invoca推出Google Ads訊息代理beta，連接查詢、預約與轉換資料",
+      "source_story_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+      "published_article_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "publisher": "Invoca",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Opening dated announcement and Availability section: Messaging Agents For Google Ads in beta.; Expert Help bullets: personalized response, availability and appointment booking via RCS for Business.; Availability section: does not yet support conversations involving protected health information.",
+          "limitations": "Capabilities and measurement flows are attributed to Invoca. Sales outcomes were not independently tested, and the release does not list all eligible markets.",
+          "local_source_sha256": "db8d326a0c3c5b4d0296e0b32c6479ea26fd3ba5a082e92b72c754d19a8dc9c2"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Invoca於10月28日公布Google Ads訊息代理並標示beta。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Opening dated announcement and Availability section: Messaging Agents For Google Ads in beta.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        },
+        {
+          "claim_zh": "代理可透過RCS for Business回答問題及安排預約。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Expert Help bullets: personalized response, availability and appointment booking via RCS for Business.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        },
+        {
+          "claim_zh": "產品尚不支援涉及受保護健康資訊的對話。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Availability section: does not yet support conversations involving protected health information.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Invoca於10月28日公布Google Ads訊息代理並標示beta。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Opening dated announcement and Availability section: Messaging Agents For Google Ads in beta.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        },
+        {
+          "claim_zh": "代理可透過RCS for Business回答問題及安排預約。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Expert Help bullets: personalized response, availability and appointment booking via RCS for Business.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        },
+        {
+          "claim_zh": "產品尚不支援涉及受保護健康資訊的對話。",
+          "support_url": "https://www.invoca.com/press-release/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases",
+          "evidence_locator": "Availability section: does not yet support conversations involving protected health information.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能及量度路徑按Invoca公告歸因；未獨立測試成交效果，公告亦未列出完整適用市場。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "db8d326a0c3c5b4d0296e0b32c6479ea26fd3ba5a082e92b72c754d19a8dc9c2",
+        "finding": "Reopened canonical press release. Retained beta and health-information exclusion even though the companion blog uses broader availability wording. Omitted AI Mode audience numbers and ROI promises."
+      },
+      "review_notes": "Reopened canonical press release. Retained beta and health-information exclusion even though the companion blog uses broader availability wording. Omitted AI Mode audience numbers and ROI promises.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 89
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-sprinklr-measurement",
+      "title_zh": "Sprinklr調查：536名正式使用AI的受訪者中，27%稱能精確量化結果",
+      "source_story_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+      "published_article_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "publisher": "Sprinklr / Metric Sherpa",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:50+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Research Methodology: 807 qualified U.S. respondents; headline analyses use 536 with regular live AI.; Opening second paragraph: 92% met/exceeded; 27% precise quantification using records or reports.; Research Methodology: September 8–23 online survey and self-reported, not independently audited.",
+          "limitations": "These are self-reports from selected U.S. practitioners, not all businesses. The 27% finding does not establish that other AI deployments failed or prove product efficacy.",
+          "local_source_sha256": "8850e04b1eb8afcdcbb839b87e65bee89b6726f9acb5667139ca7aebde0284f4"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "調查總樣本807名，標題分析採用536名正式運作AI應用的受訪者。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Research Methodology: 807 qualified U.S. respondents; headline analyses use 536 with regular live AI.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        },
+        {
+          "claim_zh": "正式使用子樣本中92%稱達預期、27%稱可精確量化。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Opening second paragraph: 92% met/exceeded; 27% precise quantification using records or reports.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        },
+        {
+          "claim_zh": "研究於9月8日至23日進行，結果自報且未獨立稽核。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Research Methodology: September 8–23 online survey and self-reported, not independently audited.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "調查總樣本807名，標題分析採用536名正式運作AI應用的受訪者。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Research Methodology: 807 qualified U.S. respondents; headline analyses use 536 with regular live AI.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        },
+        {
+          "claim_zh": "正式使用子樣本中92%稱達預期、27%稱可精確量化。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Opening second paragraph: 92% met/exceeded; 27% precise quantification using records or reports.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        },
+        {
+          "claim_zh": "研究於9月8日至23日進行，結果自報且未獨立稽核。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-research-92-of-organizations-claim-ai-delivered-improved-customer-experience-only-27-can-prove-it/",
+          "evidence_locator": "Research Methodology: September 8–23 online survey and self-reported, not independently audited.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數字反映美國特定從業者自報，不代表全部企業；27%不等同其餘AI應用無效，亦不構成產品成效證明。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "8850e04b1eb8afcdcbb839b87e65bee89b6726f9acb5667139ca7aebde0284f4",
+        "finding": "Second read caught denominator risk: 92%/27% refer to 536 live-use respondents, not all 807 or all organizations. Preserved self-report, U.S. scope and non-causal interpretation; report is distinct from agent-beta announcement."
+      },
+      "review_notes": "Second read caught denominator risk: 92%/27% refer to 536 live-use respondents, not all 807 or all organizations. Preserved self-report, U.S. scope and non-causal interpretation; report is distinct from agent-beta announcement.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 20,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-triton-seller",
+      "title_zh": "Triton公布音訊廣告Seller Agent交易案例，事前由人手設定價格與驗證規則",
+      "source_story_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+      "published_article_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "publisher": "Triton Digital / Business Wire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:45+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Release headline/date and opening paragraph: launch and first company-reported transaction.; Opening paragraph: Talpa Media, Draft Digital and Otrium roles.; Execution at Scale, Built-In Governance: terms and pricing/data/privacy/validation rules set before action; every booking checked.",
+          "limitations": "This is a company-reported case. Transaction speed, industry-first status and sales lift were not independently verified; broad availability is not assumed.",
+          "local_source_sha256": "4b6fc7e9f6cb19709ba70494ccc679b746e13fc349a53d1fbdc24b1e3de87172"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Triton於10月28日公布Seller Agent及Otrium交易。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Release headline/date and opening paragraph: launch and first company-reported transaction.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        },
+        {
+          "claim_zh": "公告指Talpa Media為媒體夥伴、Draft Digital為Otrium代理商。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Opening paragraph: Talpa Media, Draft Digital and Otrium roles.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        },
+        {
+          "claim_zh": "代理執行前已設定條款、價格護欄及驗證標準。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Execution at Scale, Built-In Governance: terms and pricing/data/privacy/validation rules set before action; every booking checked.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Triton於10月28日公布Seller Agent及Otrium交易。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Release headline/date and opening paragraph: launch and first company-reported transaction.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        },
+        {
+          "claim_zh": "公告指Talpa Media為媒體夥伴、Draft Digital為Otrium代理商。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Opening paragraph: Talpa Media, Draft Digital and Otrium roles.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        },
+        {
+          "claim_zh": "代理執行前已設定條款、價格護欄及驗證標準。",
+          "support_url": "https://www.businesswire.com/news/home/20261028722514/en/",
+          "evidence_locator": "Execution at Scale, Built-In Governance: terms and pricing/data/privacy/validation rules set before action; every booking checked.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是公司公布的單一案例；本刊未獨立驗證交易速度、行業第一或銷售提升，亦不推定全部市場已開放。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "4b6fc7e9f6cb19709ba70494ccc679b746e13fc349a53d1fbdc24b1e3de87172",
+        "finding": "Reopened issuer release on Business Wire. Removed unverified industry-first, speed comparison and revenue uplift. Preserved prior human guardrails; do not infer that this transaction definitively used AdCP from membership alone."
+      },
+      "review_notes": "Reopened issuer release on Business Wire. Removed unverified industry-first, speed comparison and revenue uplift. Preserved prior human guardrails; do not infer that this transaction definitively used AdCP from membership alone.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 23,
+        "actionability": 17,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-sprinklr-agents",
+      "title_zh": "Sprinklr開放六款行銷AI代理beta，涵蓋創意、執行與合規覆核",
+      "source_story_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+      "published_article_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+      "source_date_display": "10月27日",
+      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-27",
+      "source_documents": [
+        {
+          "url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "publisher": "Sprinklr",
+          "source_class": "A",
+          "source_publication_date": "2026-10-27",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:47+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Dated opening and six named agent bullets.; Sprinklr Creative Agent bullet: approved creative, variations, localization and A/B testing.; Compliance Agent bullet: exceptions for human review; Availability: beta open and account-team contact.",
+          "limitations": "The release provides no general-availability date or independently validated results. A compliance agent does not replace legal or brand judgment.",
+          "local_source_sha256": "91fb05fc781be8369b90d97b5b807d7fc623fb38cf30dcd570bbe6fb835ad12d"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Sprinklr於10月27日開放六款Marketing AI Agents beta。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Dated opening and six named agent bullets.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        },
+        {
+          "claim_zh": "Creative Agent支援已批准素材的變體及本地化。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Sprinklr Creative Agent bullet: approved creative, variations, localization and A/B testing.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        },
+        {
+          "claim_zh": "Compliance Agent標記例外供人手覆核，客戶可經帳戶團隊申請beta。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Compliance Agent bullet: exceptions for human review; Availability: beta open and account-team contact.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Sprinklr於10月27日開放六款Marketing AI Agents beta。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Dated opening and six named agent bullets.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        },
+        {
+          "claim_zh": "Creative Agent支援已批准素材的變體及本地化。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Sprinklr Creative Agent bullet: approved creative, variations, localization and A/B testing.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        },
+        {
+          "claim_zh": "Compliance Agent標記例外供人手覆核，客戶可經帳戶團隊申請beta。",
+          "support_url": "https://www.sprinklr.com/newsroom/sprinklr-launches-marketing-ai-agents-beta-to-help-enterprise-marketers-move-from-insight-to-action/",
+          "evidence_locator": "Compliance Agent bullet: exceptions for human review; Availability: beta open and account-team contact.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供正式全面推出日期或經獨立驗證的成效；合規代理不能取代法律或品牌負責人的判斷。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "91fb05fc781be8369b90d97b5b807d7fc623fb38cf30dcd570bbe6fb835ad12d",
+        "finding": "Reopened official announcement. Retained beta, approved-asset context and human control. Did not use promotional speed/cost multipliers from the separate product page or invent customer results."
+      },
+      "review_notes": "Reopened official announcement. Retained beta, approved-asset context and human control. Did not use promotional speed/cost multipliers from the separate product page or invent customer results.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 88
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-mai-image",
+      "title_zh": "Microsoft推出MAI Image 2.7圖像編輯預覽，先提供改光與場景修改",
+      "source_story_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "published_article_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "source_date_display": "10月27日",
+      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-27",
+      "source_documents": [
+        {
+          "url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "publisher": "Microsoft AI",
+          "source_class": "A",
+          "source_publication_date": "2026-10-27",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:48+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Page date Oct 27 and first paragraph: image editing model launches in preview.; Second paragraph and Advancing across editing use cases: restyle, relight, text/symbol and restoration.; Try it today: Arena, Artificial Analysis, MAI Playground; text-to-image coming soon.",
+          "limitations": "Confirm preview access on each platform. Leaderboard scores were not reproduced, and brand or Chinese-text fidelity is not guaranteed.",
+          "local_source_sha256": "bb9ad175fa82704054af59e44d1f49df93a3055bd41888762849199fca69cbc1"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Microsoft於10月27日公布MAI Image 2.7預覽。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Page date Oct 27 and first paragraph: image editing model launches in preview.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        },
+        {
+          "claim_zh": "公告描述改光、場景風格、文字符號修改及修復。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Second paragraph and Advancing across editing use cases: restyle, relight, text/symbol and restoration.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        },
+        {
+          "claim_zh": "公告列出試用平台，並指文字生成圖像即將推出。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Try it today: Arena, Artificial Analysis, MAI Playground; text-to-image coming soon.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Microsoft於10月27日公布MAI Image 2.7預覽。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Page date Oct 27 and first paragraph: image editing model launches in preview.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        },
+        {
+          "claim_zh": "公告描述改光、場景風格、文字符號修改及修復。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Second paragraph and Advancing across editing use cases: restyle, relight, text/symbol and restoration.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        },
+        {
+          "claim_zh": "公告列出試用平台，並指文字生成圖像即將推出。",
+          "support_url": "https://microsoft.ai/news/mai-image-2-7-debut/",
+          "evidence_locator": "Try it today: Arena, Artificial Analysis, MAI Playground; text-to-image coming soon.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "預覽可用性須按平台確認；本刊未重現官方榜單分數，亦未聲稱能保證品牌或中文字準確。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
+        "second_pass_source_sha256": "bb9ad175fa82704054af59e44d1f49df93a3055bd41888762849199fca69cbc1",
+        "finding": "Second source request confirmed editing-only preview. Dropped rankings and Elo claims because no independent benchmark review was performed. Retained platform names and future-generation qualifier."
+      },
+      "review_notes": "Second source request confirmed editing-only preview. Dropped rankings and Elo claims because no independent benchmark review was performed. Retained platform names and future-generation qualifier.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 20,
+        "actionability": 19,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "High",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-10-29-baidu-ocr",
+      "title_zh": "百度開源Unlimited OCR 2，主打長文件結構化及跨頁表格合併",
+      "source_story_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+      "published_article_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+      "source_date_display": "10月27日",
+      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-27",
+      "source_documents": [
+        {
+          "url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "publisher": "百度AI開放平台",
+          "source_class": "A",
+          "source_publication_date": "2026-10-27",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:48+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.; Section 一、原生版面要素切分识别: elements and structured hierarchy.; Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+          "limitations": "Capabilities are attributed to Baidu. Benchmark scores and unlimited-length accuracy were not reproduced, and model licensing has not been reviewed.",
+          "local_source_sha256": "e6527045daa21fb87589fdfc80e8e468f26c581ee0d6c3ae8bbd2bfa00773874"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "百度於10月27日公布並開源Unlimited OCR 2。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        },
+        {
+          "claim_zh": "公告描述原生版面識別及結構化輸出。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Section 一、原生版面要素切分识别: elements and structured hierarchy.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        },
+        {
+          "claim_zh": "公告描述跨頁表格合併並列出生產級能力公測。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "百度於10月27日公布並開源Unlimited OCR 2。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        },
+        {
+          "claim_zh": "公告描述原生版面識別及結構化輸出。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Section 一、原生版面要素切分识别: elements and structured hierarchy.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        },
+        {
+          "claim_zh": "公告描述跨頁表格合併並列出生產級能力公測。",
+          "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+          "evidence_locator": "Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "a2af478cd8ea7bd1edb7598c103fb93ecaec94227cd38ccec4bbe9b0c9096794",
+        "finding": "Second read confirmed date, layout/table features, repository links and separate public test. Removed SOTA, page-count absolutes and memory/performance guarantees. No claim that license permits every commercial use."
+      },
+      "review_notes": "Second read confirmed date, layout/table features, repository links and separate public test. Removed SOTA, page-count absolutes and memory/performance guarantees. No claim that license permits every commercial use.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 23,
+        "business_impact": 19,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-10-29-clorox",
+      "title_zh": "Clorox分享AI創意工作方式：投放期間按消費者訊號調整素材",
+      "source_story_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+      "published_article_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+      "source_date_display": "10月26日",
+      "event_date": "2026-10-22",
+      "first_published_date": "2026-10-26",
+      "source_documents": [
+        {
+          "url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "publisher": "The Clorox Company",
+          "source_class": "A",
+          "source_publication_date": "2026-10-26",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:48+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Page date Oct 26; opening paragraphs referring to Eric Schwartz at ANA Masters of Marketing.; Use AI to shorten the distance from signal to action: Clorox PURE and no-reshoot paragraph.; Opening ecosystem paragraph and Make social a source of learning / Make continuous learning sections.",
+          "limitations": "This is a brand account. Cost savings and sales causation were not verified, and other brand outcomes are not attributed to AI.",
+          "local_source_sha256": "9f790986b730aa3a7877611b64fe1ae94eb0f20ce855cba1dcf468c8e1df8452"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Clorox於10月26日發表連結ANA演講的工作方法文章。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Page date Oct 26; opening paragraphs referring to Eric Schwartz at ANA Masters of Marketing.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        },
+        {
+          "claim_zh": "公司指PURE團隊用AI訊號理解過敏季節場景並修改素材。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Use AI to shorten the distance from signal to action: Clorox PURE and no-reshoot paragraph.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        },
+        {
+          "claim_zh": "文章主張結合消費者導向人員、社交聆聽、AI與合作夥伴。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Opening ecosystem paragraph and Make social a source of learning / Make continuous learning sections.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Clorox於10月26日發表連結ANA演講的工作方法文章。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Page date Oct 26; opening paragraphs referring to Eric Schwartz at ANA Masters of Marketing.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        },
+        {
+          "claim_zh": "公司指PURE團隊用AI訊號理解過敏季節場景並修改素材。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Use AI to shorten the distance from signal to action: Clorox PURE and no-reshoot paragraph.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        },
+        {
+          "claim_zh": "文章主張結合消費者導向人員、社交聆聽、AI與合作夥伴。",
+          "support_url": "https://www.thecloroxcompany.com/blog/how-clorox-brands-build-continuous-relevance-with-consumers/",
+          "evidence_locator": "Opening ecosystem paragraph and Make social a source of learning / Make continuous learning sections.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "案例為品牌自述；本刊未核實成本節省或銷售因果關係，也不將其他品牌的表現歸功於AI。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "9f790986b730aa3a7877611b64fe1ae94eb0f20ce855cba1dcf468c8e1df8452",
+        "finding": "Reopened original brand account. Framed as a dated case recap, not October 28 breaking news. Omitted sales, engagement and cost numbers and any inference that AI caused other brands’ outcomes."
+      },
+      "review_notes": "Reopened original brand account. Framed as a dated case recap, not October 28 breaking news. Omitted sales, engagement and cost numbers and any inference that AI caused other brands’ outcomes.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 9,
+        "novelty": 7,
+        "total": 85
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-10-29-rime-prism",
+      "title_zh": "Rime發布Prism語音模型，以可檢視文字層支援企業對話控制",
+      "source_story_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+      "published_article_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+      "source_date_display": "10月28日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-28",
+      "source_documents": [
+        {
+          "url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "publisher": "Rime",
+          "source_class": "A",
+          "source_publication_date": "2026-10-28",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-10-29T07:03:50+08:00",
+          "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+          "evidence_locator": "Page date October 28 and opening announcement introducing Prism.; How Prism works: text is a checkpoint; rules read every word before speech.; Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+          "limitations": "Capabilities are vendor-reported and voice evaluations were not reproduced. Differing latency descriptions are excluded, as are claims of universal fine-tuning availability.",
+          "local_source_sha256": "d648c9cb6fd5064fd5d927d7de89eb1fbf1080269707a8194feea4b8b953502b"
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Rime於10月28日宣布Prism。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "Page date October 28 and opening announcement introducing Prism.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        },
+        {
+          "claim_zh": "Prism提供說話前的可檢視文字檢查點。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "How Prism works: text is a checkpoint; rules read every word before speech.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        },
+        {
+          "claim_zh": "自助RL及SFT API仍與beta客戶開發。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Rime於10月28日宣布Prism。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "Page date October 28 and opening announcement introducing Prism.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        },
+        {
+          "claim_zh": "Prism提供說話前的可檢視文字檢查點。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "How Prism works: text is a checkpoint; rules read every word before speech.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        },
+        {
+          "claim_zh": "自助RL及SFT API仍與beta客戶開發。",
+          "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+          "evidence_locator": "Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+      "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+        "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+        "second_pass_source_sha256": "d648c9cb6fd5064fd5d927d7de89eb1fbf1080269707a8194feea4b8b953502b",
+        "finding": "Reopened source. Discarded latency, benchmark dominance and first-ever claims; source intro and benchmark section use different timing measures, while syndicated reports differ. Retained inspectable text and beta-development qualifier only."
+      },
+      "review_notes": "Reopened source. Discarded latency, benchmark dominance and first-ever claims; source intro and benchmark section use different timing measures, while syndicated reports differ. Retained inspectable text and beta-development qualifier only.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 24,
+        "business_impact": 21,
+        "actionability": 16,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 79
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
