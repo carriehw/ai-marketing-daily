@@ -2,12 +2,12 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "0945_publication_preflight_checkpoint",
+  "phase": "0945_fact_check_continuation",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
   "phase_saved_at_hkt": "2026-10-28T09:43:00+08:00",
-  "reference_head_sha": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
-  "reference_branch_head_sha_before_write": "e759d295c373cdd1d17ae4d74f53600be410e071",
+  "reference_head_sha": "2e16605e2d7ff39ab9b2447e7fd57d40aeb5c958",
+  "reference_branch_head_sha_before_write": "8cf8feec309bc399066f66003d1b8e13c3e5c44a",
   "confirmed_repo_previous_edition": "2026-10-27",
   "confirmed_repo_previous_count": 10,
   "last_confirmed_live_edition": null,
@@ -30,7 +30,8 @@
     "2026-10-28 main data.json and archive/manifest.json absent; main head 323ff1dd, daily head e759d295 at checkpoint",
     "Full Smartly research report is not directly exposed by its landing page; sample was 250 US + 250 UK marketers surveyed 2026-07-21 to 2026-07-31; 99% includes professional OR personal use",
     "AnyMind partnership integration Q4 2026 Facebook and early 2027 Instagram is a vendor-specific timeline; do not conflate with broader Meta live ad availability",
-    "Current GitHub Actions list has no 2026-10-28 production deployment; previous successful deploy was 2026-10-27"
+    "Current GitHub Actions list has no 2026-10-28 production deployment; previous successful deploy was 2026-10-27",
+    "2026-10-28 CI failed date guard: main data.json still 2026-10-27 (GitHub Actions run 40617014055); expected and not proof of site build defect"
   ],
   "source_groups_checked": [
     "OpenAI first-party",
@@ -59,6 +60,7 @@
     "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
   ],
   "next_round_recommendations": [
+    "10:45: inspect CI run 40617014055 date guard; only rebuild after fully approved 2026-10-28 data.json and evidence files are ready.",
     "10:45: first refresh main and daily branch SHAs, main data.json, archive manifest, current Pages/CI status; if truly live and verified, mark ALREADY CURRENT and do not repeat work.",
     "Prioritise finishing claim-level independent second-pass and editorial approval for AnyMind/Meta, Smartly/Alter Agents, OpenAI/Oracle, Universal Ads, Bluefish and Brandi; require source-specific caveats and exact launch geography/tier.",
     "AnyMind: first-party English release https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026 and independently reported https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce agree on partnership and partner integration timeline; country/account eligibility and deployment unverified. Distinguish Meta general live ad rollout from AnyMind integration.",
@@ -953,6 +955,167 @@
         "unresolved": "Actual Workspace rollout, account eligibility outside US, independent production use.",
         "status": "source_reopened_not_full_release_ready"
       }
+    ]
+  },
+  "phase_0945_fact_check_continuation": {
+    "checked_date_hkt": "2026-10-28",
+    "main_sha_at_check": "2e16605e2d7ff39ab9b2447e7fd57d40aeb5c958",
+    "daily_branch_sha_at_check": "8cf8feec309bc399066f66003d1b8e13c3e5c44a",
+    "current_repo_edition": "2026-10-27",
+    "current_repo_archive": "2026-10-27",
+    "production_site_direct_fetch": "unavailable; no live publication certification",
+    "action_run": {
+      "id": 40617014055,
+      "created_at_utc": "2026-10-28T01:46:16Z",
+      "conclusion": "failure",
+      "failed_step": "Resolve actual Hong Kong edition date",
+      "log_evidence": "Current HKT date: 2026-10-28, issue date: 2026-10-27; exit code 1",
+      "interpretation": "Expected date guard on old main content; not evidence of a build/render regression; no subsequent release checks executed."
+    },
+    "source_rechecks": [
+      {
+        "slug": "anymind-meta-live-commerce",
+        "original_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+        "independent_reporting_url": "https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "AnyMind press release opening: Facebook Q4 2026, Instagram early 2027",
+          "Marketing-Interactive 27 Oct report: identical launch sequencing and commerce checkout paths"
+        ],
+        "supported": [
+          "Partnership announcement and planned sequencing",
+          "Brand website/app, marketplace and business messaging are proposed checkout options"
+        ],
+        "not_supported": [
+          "Hong Kong eligibility",
+          "Already live for all advertisers",
+          "Independent ROI or conversion uplift"
+        ],
+        "review_level": "original plus separate trade article; trade story repeats vendor information, not independent performance validation",
+        "release_ready": false
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "original_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "Release: Additional findings bullet on 77% human final approval",
+          "Release: methodology paragraph: July 21–31 2026 online survey; 250 US + 250 UK, >=5 years experience",
+          "Release: opening 99% used AI professionally OR personally"
+        ],
+        "supported": [
+          "500 surveyed US/UK marketers",
+          "77% comfortable with AI advertising conditional on final human approval",
+          "99% use AI professionally or personally"
+        ],
+        "not_supported": [
+          "99% of global marketers use AI at work",
+          "Hong Kong representativeness",
+          "Causal proof that disclosure improves trust"
+        ],
+        "remaining": [
+          "Full original report and question wording/weighting inaccessible; avoid extrapolation"
+        ],
+        "review_level": "first-party commissioned research release; methodology limits recorded",
+        "release_ready": false
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "original_url": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "Release paragraph: Paid Media Briefs available today; targeting/creative/landing-page recommendations for Google and ChatGPT",
+          "Release 'Future of Agentic Ads': additional media levers and MCP/API integrations described as expansion/development"
+        ],
+        "supported": [
+          "Paid Media Briefs described as currently available in Optimization Suite",
+          "Recommendations, not verified automated ad buying"
+        ],
+        "not_supported": [
+          "Universal activation of paid media placements",
+          "Independent lift, attribution gains",
+          "$26.4B/$1B promotional numbers without external verification"
+        ],
+        "review_level": "original vendor announcement re-opened; independent product test not performed",
+        "release_ready": false
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "original_url": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html",
+        "company_product_url": "https://mybrandi.ai/geo-content-optimization-platform/",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "Company product page section 'Platform Updates at a Glance' lists Content Compass 2.0, Brand Voice, Analytics, Collections",
+          "Company page 'Availability' section: Optimization Hub and Brand Voice available for enablement in customer workspaces; analytics and Collections ongoing updates"
+        ],
+        "supported": [
+          "Feature announcement and availability qualification",
+          "Brand Voice evaluates alignment with guidelines; not autonomous editorial approval"
+        ],
+        "not_supported": [
+          "All-user universal rollout",
+          "Independently proven citation/ranking improvement"
+        ],
+        "review_level": "vendor press release and separate company-authored product explainer; not independent validation",
+        "release_ready": false
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "original_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+        "counterparty_url": "https://www.oracle.com/asean/news/announcement/ai-world-oracle-reinvents-enterprise-computing-for-the-ai-era-with-openai-2026-10-27/",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "OpenAI 'Working with Oracle in ChatGPT': Oracle is developing Oracle AI Workspace",
+          "OpenAI 'Access OpenAI through Oracle Marketplace': US Oracle customers can purchase via Marketplace",
+          "Oracle press release 'Future Product Disclaimer': release/timing/pricing may change"
+        ],
+        "supported": [
+          "Expanded collaboration announced",
+          "AI Workspace under development, not confirmed generally available",
+          "US Oracle Marketplace procurement described"
+        ],
+        "not_supported": [
+          "Global Workspace launch",
+          "Performance gains independently established",
+          "All enterprise accounts eligible"
+        ],
+        "review_level": "both counterparties inspected, future status preserved; no third-party production validation",
+        "release_ready": false
+      },
+      {
+        "slug": "google-genie-4",
+        "original_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "second_google_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "independent_reporting_url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+        "publication_date": "2026-10-27",
+        "claim_locators": [
+          "DeepMind 'Next steps': research preview for trusted testers, broader access planned",
+          "DeepMind 'Understanding current limitations': scene/object drift, audio accuracy, text limitations"
+        ],
+        "supported": [
+          "Research preview to trusted testers, not generally released",
+          "Native audio and real-time scene steering described by Google"
+        ],
+        "not_supported": [
+          "Generally available creative production service",
+          "Independently verified photorealism/physics quality"
+        ],
+        "review_level": "original and separate tech reporting, no direct product test",
+        "release_ready": false
+      }
+    ],
+    "current_release_ready_story_count": 0,
+    "blocker_by_priority": [
+      "Complete independent factual claim review for 10 selected stories and explicit editorial approvals",
+      "Produce claim-level editorial/evidence/2026-10-28.json and localization_review/2026-10-28.json without invented approvals",
+      "Confirm original methodology for Smartly and availability of vendor tools; qualify or exclude unsupported claims",
+      "Build/verify full site+archive+search+3-language+English EDM from one approved data.json issue",
+      "CI date guard will pass only after data.json genuinely advances to 2026-10-28; verify production live content; direct live fetch unavailable here"
+    ],
+    "next_actions": [
+      "10:45 checkpoint: refresh main and branch heads, data.json, manifest, CI and actual public website before any write",
+      "Continue 4 remaining working drafts and qualified alternates, select 10 genuinely relevant distinct items",
+      "No publish, no Outlook send, no social send while 0 full_release_ready"
     ]
   }
 }
