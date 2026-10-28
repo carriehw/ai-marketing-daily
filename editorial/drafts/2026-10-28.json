@@ -1258,5 +1258,43 @@
       "meta-crawling-terms-delay"
     ],
     "note": "Audit note is not a release approval; existing editorial gates and HELD remain."
+  },
+  "follow_up_label_audit": {
+    "status": "REVIEW_REQUIRED",
+    "checked_against": "main data.json edition 2026-10-27 and archive manifest 2026-10-26, 2026-10-23; live site not accessible",
+    "rules": [
+      "Compare substantive new facts with previously published original story before assigning label",
+      "Material new milestone/new rollout/new policy/new quantified evidence -> FOLLOW_UP with link to previous edition",
+      "New analysis or commentary without new independently verifiable facts -> RELATED_ANALYSIS, not automatic FOLLOW_UP",
+      "No material new information -> DUPLICATE_REJECTED",
+      "Carry label and related-story reference through zh-hant zh-hans en, archive, search and newsletter; verify rendering"
+    ],
+    "review_items": [
+      {
+        "slug": "stagwell-freestar-digiday-followup",
+        "prior_edition": "2026-10-27",
+        "decision": "RELATED_ANALYSIS_PENDING",
+        "reason": "Digiday subsequent transparency analysis; new interpretation not necessarily a new event; check for incremental facts before follow-up label"
+      },
+      {
+        "slug": "coca-cola-wpp-review",
+        "prior_edition": "2026-10-23/26",
+        "decision": "DUPLICATE_UNLESS_NEW_EVENT",
+        "reason": "Original Oct 22 outcome appears same; require material new fact"
+      },
+      {
+        "slug": "klook-meta-muse-travel",
+        "prior_edition": "2026-10-23",
+        "decision": "DUPLICATE_UNLESS_NEW_EVENT",
+        "reason": "No documented new milestone in current draft"
+      },
+      {
+        "slug": "anymind-meta-live-commerce",
+        "prior_edition": null,
+        "decision": "CHECK_META_TOPIC_RELATION",
+        "reason": "New AnyMind partnership distinct from other Meta announcements; do not tag based on company name alone"
+      }
+    ],
+    "publication_status_unchanged": "DRAFT_HELD"
   }
 }
