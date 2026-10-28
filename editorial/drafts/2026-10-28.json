@@ -1693,98 +1693,126 @@
       "status": "HOLD",
       "review": "Digiday 2026-10-27 directly read; Aditude/WebKit bid-rate, eCPM and publisher revenue figures are quoted from provider datasets without original methodology; Apple policy event dates back to 2026-10-19.",
       "source": "https://digiday.com/marketing/in-graphic-detail-what-apples-identity-block-means-for-the-ad-money/",
-      "next_action": "Get Apple WebKit original 2026-10-19 notice and raw Aditude/OpenX/Permutive sample definitions; verify incremental Oct27 facts against prior edition before follow-up."
+      "next_action": "Find Apple WebKit original and Aditude/measurement methodology; confirm non-duplicate.",
+      "latest_check_status": "HOLD_METHOD_AND_FRESHNESS",
+      "latest_check": "Digiday provider figures lack independently inspected underlying samples; underlying Apple policy dated Oct19, so require Oct27 incremental evidence."
     },
     {
       "slug": "anymind-meta-live-commerce",
       "status": "HOLD",
       "review": "AnyMind original 2026-10-27 and Marketing-Interactive 2026-10-27 independently reopened. Both support partnership announcement and planned Facebook Q4 2026 / Instagram early 2027 sequencing, not verified live rollout or outcomes. Trade coverage relies substantially on the announcement.",
       "source": "https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
-      "next_action": "Check independent rollout/account/market eligibility or explicitly limit to announced plans; finish per-claim evidence and editor review."
+      "next_action": "Limit wording to planned rollout; no performance or geographic availability inference.",
+      "latest_check_status": "CLAIM_CHECKED_PARTNER_ANNOUNCEMENT",
+      "latest_check": "Official Oct27 and Marketing-Interactive Oct27 agree on announced partnership and Q4 2026 Facebook / early 2027 Instagram. Trade report appears to rely on vendor announcement, so it does not establish live market availability."
     },
     {
       "slug": "universal-ads-campaign-management",
       "status": "HOLD",
       "review": "Canonical Business Wire URL could not be opened directly; Yahoo syndicated wire is not independent reporting. Partner and API activation claims not independently established.",
       "source": "https://www.businesswire.com/news/home/20261027393868/en/",
-      "next_action": "Access original Comcast/Universal Ads product documentation and independent reporting; confirm 12 partner roles and currently supported buying functions."
+      "next_action": "Keep 12 as announced partners, not active integrations; note developer app approval and unknown region.",
+      "latest_check_status": "CLAIM_CHECKED_VENDOR_DOCS",
+      "latest_check": "Oct27 Business Wire syndicated full text names 12 initial partners. Official Universal Ads developer portal independently confirms API capability and app review, not that all 12 integrations are live."
     },
     {
       "slug": "smartly-alter-agents-study",
       "status": "HOLD",
       "review": "Alter Agents original 2026-10-27 release read: 500 respondents (250 US, 250 UK), July 21-31, >=5 years experience. 99% is professional OR personal AI use; 77% comfort with human final approval; full report/methodology not inspected.",
       "source": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
-      "next_action": "Read full Smartly/Alter Agents report and survey question wording/denominators; independent assessment of sample and non-global generalizability."
+      "next_action": "Attribute percentages to sample, not all marketers; obtain full methods or avoid broad extrapolation.",
+      "latest_check_status": "CLAIM_CHECKED_METHODOLOGY_LIMITED",
+      "latest_check": "Oct27 original survey release states N=500, 250 US +250 UK, July21–31, >=5 years, 77% human-final-approval comfort; Smartly guide landing page exists but full questionnaire/weighting not inspected."
     },
     {
       "slug": "bluefish-paid-media",
       "status": "HOLD",
       "review": "Bluefish original Oct27 release directly read; Paid Media Briefs are described as available now, while MCP/API execution integrations are developing. Dealroom summary explicitly cites the same PR, so it is not independent corroboration.",
       "source": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
-      "next_action": "Find independent product docs or actual access evidence; remove unverified $1bn ChatGPT ad run rate and provider efficacy claims unless independently sourced."
+      "next_action": "Remove unsupported market revenue and efficacy claims; seek actual product docs and independent check.",
+      "latest_check_status": "CLAIM_CHECKED_VENDOR_ONLY",
+      "latest_check": "Oct27 vendor release says Paid Media Briefs available as an Optimization Suite extension; claims of outcome and ChatGPT ad revenue not independently corroborated."
     },
     {
       "slug": "brandi-geo-content-compass",
       "status": "HOLD",
       "review": "Brandi Oct27 PR and company original support Content Compass 2.0, Brand Voice, Collections and analytics announcements. No independent evidence of availability, citation uplift or ROI.",
       "source": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html",
-      "next_action": "Verify feature release notes and independent usage; do not equate optimization recommendations with guaranteed AI citation or business outcomes."
+      "next_action": "Keep vendor-attributed features; do not claim independent ROI or citation uplift.",
+      "latest_check_status": "CLAIM_CHECKED_VENDOR_ONLY",
+      "latest_check": "Oct27 Brandi first-party page and press syndication agree on Content Compass 2.0, Brand Voice, analytics and Collections; Dealroom explicitly sources PR and is not independent."
     },
     {
       "slug": "openai-oracle-apps-chatgpt",
       "status": "HOLD",
       "review": "OpenAI 2026-10-27 original directly inspected; Oracle AI Workspace is in development, not generally released. Technobezz Oct27 reports same with no launch date; Oracle partner PR is second first-party, not independent.",
       "source": "https://openai.com/index/oracle-apps-in-chatgpt/",
-      "next_action": "Check Oracle documentation for actual Marketplace US-only scope, licensing and launch date; keep future-tense and vendor-attributed user metrics."
+      "next_action": "Keep in-development tense and US Marketplace eligibility; seek independent rollout verification only if availability claimed.",
+      "latest_check_status": "CLAIM_CHECKED_TWO_FIRST_PARTIES",
+      "latest_check": "OpenAI and Oracle Oct27 originals support announced partnership and AI Workspace in development; two counterparties are not independent third-party verification."
     },
     {
       "slug": "singapore-switch-ai-enterprise-programmes",
       "status": "HOLD_EDITORIAL",
       "review": "Singapore METI 2026-10-27 speech paragraphs 15-17 confirms first cohort of 24 companies, 25 confirms workshops helped close to 300 firms; The Edge Singapore independent Oct27 reporting says >280 pilot firms and November workshops. Distinguish March programme from October first cohort. Primary plus independently reported claim corroboration achieved, not yet complete editorial or multilingual release gate.",
       "source": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
-      "next_action": "Record atomic evidence and independent review; editorial approval and three-language caveat parity; ensure no HK grant implication."
+      "next_action": "Use exact cohort and pilot qualifiers; finalize evidence and editor/language approval.",
+      "latest_check_status": "INDEPENDENT_CORROBORATION_ACHIEVED_EDITORIAL_PENDING",
+      "latest_check": "Singapore MTI Oct27 speech para16 confirms first cohort 24; The Edge Singapore Oct27 separately reports 24 companies and >280 pilot workshop participants. Speech para25 says close to 300, consistent not identical."
     },
     {
       "slug": "microsoft-kantar-link-ai-case",
       "status": "HOLD",
       "review": "Microsoft 2026-10-27 official blog lines under 'Microsoft IQ' names Kantar LINK AI and claims 20x video scoring speed and 4x lower platform operating costs. These are attributed customer-case figures without independently inspected Kantar methodology.",
       "source": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
-      "next_action": "Read linked Kantar case study, measurement denominator and actual original deployment date; exclude comparative performance figures if unsubstantiated."
+      "next_action": "Exclude unless meaningful Oct27 update independently confirmed; do not present older case as new.",
+      "latest_check_status": "HOLD_STALE_CASE_AND_VENDOR_NUMBERS",
+      "latest_check": "Microsoft Oct27 roundup cites Kantar LINK AI but original customer story is Sep28, not a new Oct27 deployment; 20x/4x figures are vendor-case claims."
     },
     {
       "slug": "meta-us-political-ad-restriction",
       "status": "HOLD",
       "review": "Independent Social Media Today 2026-10 reporting and multiple industry summaries describe US social-issues/elections/politics ad freeze Oct27-Nov3; underlying official Meta policy/developer notice not opened. Previously announced Oct6; Oct27 enforcement is not a new launch.",
       "source": "https://www.socialmediatoday.com/news/meta-outlines-political-ad-restrictions/832444/",
-      "next_action": "Locate Meta original policy with exact PT dates, pre-existing-ad impression and permitted edit rules; assess actual Oct27 incremental news and human legal/political review."
+      "next_action": "Locate Meta original and require human review; no unverified policy claim.",
+      "latest_check_status": "HOLD_PRIMARY_POLICY_AND_HUMAN_REVIEW",
+      "latest_check": "Meta election ad restrictions are consequential and earlier announced; official Meta source and precise date scope not directly inspected in this pass."
     },
     {
       "slug": "mcdonalds-fifa-32-year-end",
       "status": "HOLD",
       "review": "Marketing-Interactive 2026-10-27 uses 'reportedly set to end' rather than confirmed termination; official McDonald's or FIFA contract statement not located.",
       "source": "https://www.marketing-interactive.com/mcdonald-s-ends-32-year-fifa-world-cup-partnership",
-      "next_action": "Find McDonald's/FIFA primary confirmation and contract scope; retain reported status, do not assert final cancellation or outcomes."
+      "next_action": "Hold definitive termination language pending primary confirmation.",
+      "latest_check_status": "HOLD_UNCONFIRMED_TERMINATION",
+      "latest_check": "Trade coverage reportedly ending partnership, no McDonald's or FIFA original statement located."
     },
     {
       "slug": "mastercard-mrbeast-creator-commerce",
       "status": "HOLD",
       "review": "Mastercard original 2026-10-26 confirms collaboration with Beast Industries on planned creator/consumer card programmes and education. The source is Oct26, not Oct27; independent trade coverage does not establish product launch or regional availability.",
       "source": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html",
-      "next_action": "Confirm which card programmes are actually launched and where; lower priority versus direct adtech news."
+      "next_action": "Retain Oct26 date; planned programs, no regional availability; lower priority.",
+      "latest_check_status": "CLAIM_CHECKED_ORIGINAL_AND_TRADE",
+      "latest_check": "Mastercard Oct26 original and PYMNTS Oct26 trade report confirm planned partnership; trade reports announced plans rather than independent evidence of product launch."
     },
     {
       "slug": "google-genie-4",
       "status": "HOLD",
       "review": "Google DeepMind Oct27 original confirms Genie 4 research preview only for trusted testers; Google AI Ultra/Project Genie and developer/API access are coming soon. Creative previsualization uses are early tester reports, not mass-market availability.",
       "source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "next_action": "Find independent hands-on tester corroboration and commercial-use limits; do not present as a public advertising production tool."
+      "next_action": "No production availability claim; assess marketer relevance and approve only preview-qualified copy.",
+      "latest_check_status": "CLAIM_CHECKED_INDEPENDENT_REPORTING",
+      "latest_check": "DeepMind Oct27 original and Ars Technica Oct27 report agree on research-preview Genie 4, native audio and live interaction. Independent hands-on validation of performance is absent."
     },
     {
       "slug": "aleph-india-country-head",
       "status": "HOLD_LOW_PRIORITY",
       "review": "BusinessWire India original press release syndicated by Business Standard, dated Oct27 event / Oct28 India page, confirms announced appointment of Medhavi Singh; Business Standard explicitly labels it sponsored, not independent reporting. Marketing Mind repeats appointment.",
       "source": "https://www.business-standard.com/amp/content/press-releases-ani/aleph-appoints-digital-commerce-leader-medhavi-singh-as-country-head-to-accelerate-india-s-next-phase-of-growth-126102800054_1.html",
-      "next_action": "Find Aleph official people announcement, check independent confirmation; consider dropping as low direct actionable marketing relevance."
+      "next_action": "Seek official Aleph confirmation and editor relevance decision.",
+      "latest_check_status": "CLAIM_CHECKED_PR_AND_TRADE_LOW_PRIORITY",
+      "latest_check": "BusinessWire India Oct27 press release and exchange4media Oct27 report both name Medhavi Singh as Aleph India country head, but no separate original company page and modest direct marketer actionability."
     }
   ],
   "next_actions": [
@@ -2012,5 +2040,184 @@
       "Run all build/CI/live gates only after 10 fully ready"
     ],
     "release_ready_count_unchanged": 0
+  },
+  "phase_1100_automated_verification": {
+    "edition_date_hkt": "2026-10-28",
+    "status": "DRAFT_HELD",
+    "main_data_blob_sha_before_write": "91b473a550f45babcd124a840d3971cd71c445dd",
+    "main_archive_blob_sha_before_write": "9c331723f779705139c948f55269747cf0640155",
+    "daily_draft_blob_sha_before_write": "c40eec3f78f5c9212ecaac136d0f42f18b7067f1",
+    "main_edition_date": "2026-10-27",
+    "archive_latest_date": "2026-10-27",
+    "live_fetch": "UNAVAILABLE_web_internal_error_and_container_dns_failure",
+    "audited_story_count": 14,
+    "extra_candidate_review_count": 1,
+    "source_read_candidate_count": 20,
+    "tracked_candidate_count": 31,
+    "independent_claim_corroborated_packets": 1,
+    "editorial_approved_count": 0,
+    "full_release_ready_count": 0,
+    "publication": "NOT_VERIFIED_NOT_PUBLISHED_FROM_REPO",
+    "deadline_1030": "MISSED",
+    "story_audit": [
+      {
+        "slug": "anymind-meta-live-commerce",
+        "status": "CLAIM_CHECKED_PARTNER_ANNOUNCEMENT",
+        "finding": "Official Oct27 and Marketing-Interactive Oct27 agree on announced partnership and Q4 2026 Facebook / early 2027 Instagram. Trade report appears to rely on vendor announcement, so it does not establish live market availability.",
+        "primary_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+        "secondary_url": "https://production.marketing-interactive.com/meta-partners-anymind-to-connect-social-discovery-with-live-commerce",
+        "next_action": "Limit wording to planned rollout; no performance or geographic availability inference.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "status": "CLAIM_CHECKED_VENDOR_DOCS",
+        "finding": "Oct27 Business Wire syndicated full text names 12 initial partners. Official Universal Ads developer portal independently confirms API capability and app review, not that all 12 integrations are live.",
+        "primary_url": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+        "secondary_url": "https://www.universalads.com/developers",
+        "next_action": "Keep 12 as announced partners, not active integrations; note developer app approval and unknown region.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "status": "CLAIM_CHECKED_METHODOLOGY_LIMITED",
+        "finding": "Oct27 original survey release states N=500, 250 US +250 UK, July21–31, >=5 years, 77% human-final-approval comfort; Smartly guide landing page exists but full questionnaire/weighting not inspected.",
+        "primary_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+        "secondary_url": "https://www.smartly.io/agentic-ai-era-marketers-guide",
+        "next_action": "Attribute percentages to sample, not all marketers; obtain full methods or avoid broad extrapolation.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "status": "CLAIM_CHECKED_VENDOR_ONLY",
+        "finding": "Oct27 vendor release says Paid Media Briefs available as an Optimization Suite extension; claims of outcome and ChatGPT ad revenue not independently corroborated.",
+        "primary_url": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+        "secondary_url": null,
+        "next_action": "Remove unsupported market revenue and efficacy claims; seek actual product docs and independent check.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "status": "CLAIM_CHECKED_VENDOR_ONLY",
+        "finding": "Oct27 Brandi first-party page and press syndication agree on Content Compass 2.0, Brand Voice, analytics and Collections; Dealroom explicitly sources PR and is not independent.",
+        "primary_url": "https://mybrandi.ai/press-release/brandi-ai-expands-its-ai-visibility-and-geo-platform/",
+        "secondary_url": "https://app.dealroom.co/news/feed/brandi-ai-launches-content-compass-2-0-and-brand-voice-to-link-ai-visibility-with-content-and-measurement",
+        "next_action": "Keep vendor-attributed features; do not claim independent ROI or citation uplift.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "apple-identity-ad-money-analysis",
+        "status": "HOLD_METHOD_AND_FRESHNESS",
+        "finding": "Digiday provider figures lack independently inspected underlying samples; underlying Apple policy dated Oct19, so require Oct27 incremental evidence.",
+        "primary_url": "https://digiday.com/marketing/in-graphic-detail-what-apples-identity-block-means-for-the-ad-money/",
+        "secondary_url": null,
+        "next_action": "Find Apple WebKit original and Aditude/measurement methodology; confirm non-duplicate.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "status": "CLAIM_CHECKED_TWO_FIRST_PARTIES",
+        "finding": "OpenAI and Oracle Oct27 originals support announced partnership and AI Workspace in development; two counterparties are not independent third-party verification.",
+        "primary_url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+        "secondary_url": "https://blogs.oracle.com/ai-and-datascience/introducing-oracle-ai-workspace",
+        "next_action": "Keep in-development tense and US Marketplace eligibility; seek independent rollout verification only if availability claimed.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "google-genie-4",
+        "status": "CLAIM_CHECKED_INDEPENDENT_REPORTING",
+        "finding": "DeepMind Oct27 original and Ars Technica Oct27 report agree on research-preview Genie 4, native audio and live interaction. Independent hands-on validation of performance is absent.",
+        "primary_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "secondary_url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+        "next_action": "No production availability claim; assess marketer relevance and approve only preview-qualified copy.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "mastercard-mrbeast-creator-commerce",
+        "status": "CLAIM_CHECKED_ORIGINAL_AND_TRADE",
+        "finding": "Mastercard Oct26 original and PYMNTS Oct26 trade report confirm planned partnership; trade reports announced plans rather than independent evidence of product launch.",
+        "primary_url": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html",
+        "secondary_url": "https://www.pymnts.com/partnerships/2026/mastercard-launches-creator-card-project-with-mrbeast/",
+        "next_action": "Retain Oct26 date; planned programs, no regional availability; lower priority.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "status": "CLAIM_CHECKED_TWO_REPORTS_NO_PRIMARY",
+        "finding": "Marketing-Interactive Oct27 and Bakchormeeboy Oct27 both describe exhibition opened Oct23, scam-category loss framing; neither is a verified first-party Maybank release.",
+        "primary_url": "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks",
+        "secondary_url": "https://bakchormeeboy.com/2026/10/27/maybank-singapore-turns-scam-phrases-into-art-with-new-campaign-the-most-expensive-words/",
+        "next_action": "Seek Maybank original, avoid attributing category losses to specific phrases.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "status": "INDEPENDENT_CORROBORATION_ACHIEVED_EDITORIAL_PENDING",
+        "finding": "Singapore MTI Oct27 speech para16 confirms first cohort 24; The Edge Singapore Oct27 separately reports 24 companies and >280 pilot workshop participants. Speech para25 says close to 300, consistent not identical.",
+        "primary_url": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+        "secondary_url": "https://www.theedgesingapore.com/digitaledge/digital-economy/enterprisesg-expand-agentic-ai-workshops-smes",
+        "next_action": "Use exact cohort and pilot qualifiers; finalize evidence and editor/language approval.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "microsoft-kantar-link-ai-case",
+        "status": "HOLD_STALE_CASE_AND_VENDOR_NUMBERS",
+        "finding": "Microsoft Oct27 roundup cites Kantar LINK AI but original customer story is Sep28, not a new Oct27 deployment; 20x/4x figures are vendor-case claims.",
+        "primary_url": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
+        "secondary_url": "https://www.microsoft.com/en/customers/story/27379-kantar-azure",
+        "next_action": "Exclude unless meaningful Oct27 update independently confirmed; do not present older case as new.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "meta-us-political-ad-restriction",
+        "status": "HOLD_PRIMARY_POLICY_AND_HUMAN_REVIEW",
+        "finding": "Meta election ad restrictions are consequential and earlier announced; official Meta source and precise date scope not directly inspected in this pass.",
+        "primary_url": null,
+        "secondary_url": null,
+        "next_action": "Locate Meta original and require human review; no unverified policy claim.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "mcdonalds-fifa-32-year-end",
+        "status": "HOLD_UNCONFIRMED_TERMINATION",
+        "finding": "Trade coverage reportedly ending partnership, no McDonald's or FIFA original statement located.",
+        "primary_url": null,
+        "secondary_url": null,
+        "next_action": "Hold definitive termination language pending primary confirmation.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      },
+      {
+        "slug": "aleph-india-country-head",
+        "status": "CLAIM_CHECKED_PR_AND_TRADE_LOW_PRIORITY",
+        "finding": "BusinessWire India Oct27 press release and exchange4media Oct27 report both name Medhavi Singh as Aleph India country head, but no separate original company page and modest direct marketer actionability.",
+        "primary_url": "https://www.business-standard.com/amp/content/press-releases-ani/aleph-appoints-digital-commerce-leader-medhavi-singh-as-country-head-to-accelerate-india-s-next-phase-of-growth-126102800054_1.html",
+        "secondary_url": "https://www.exchange4media.com/people-movement-news/medhavi-singh-joins-aleph-as-country-head-for-india-159528.html",
+        "next_action": "Seek official Aleph confirmation and editor relevance decision.",
+        "editorial_approved": false,
+        "full_release_ready": false
+      }
+    ],
+    "technical_gates": "NOT_RUN; 10 full approved stories absent; no production build, evidence, localization or live verification",
+    "newsletter": "UNCHANGED_NOT_SENT",
+    "next_actions": [
+      "Finalize claim-level independent review and editorial approval for Singapore, AnyMind, Genie4, Universal Ads, Oracle, Smartly; do not promote vendor-syndicated articles to independent evidence.",
+      "Resolve 10-item minimum using existing >=60 candidates, not filler. Preserve original 14 audited items and 10 trilingual drafts.",
+      "Create exact per-claim evidence, localization review and final editorial decisions before build; run build.py, build_archive.py, build_search_index.py, build_locales.py and all CI/live gates.",
+      "If no live verification, report held even if GitHub commit succeeds; do not send email or social."
+    ]
   }
 }
