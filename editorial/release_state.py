@@ -79,6 +79,23 @@ def observe(paths, fetcher=fetch):
         return dict(pool.map(one, paths))
 
 
+def observe_until_matching(expected, fetcher=fetch, attempts=3, pause=None):
+    """Retry only unmatched assets; every final digest must still match exactly."""
+    pause = pause or time.sleep
+    observed = observe(expected, fetcher)
+    for attempt in range(1, attempts):
+        pending = {path: digest for path, digest in expected.items()
+                   if observed[path].get("sha256") != digest}
+        if not pending:
+            break
+        for path, digest in pending.items():
+            detail = observed[path].get("error") or ("received sha256=" + str(observed[path].get("sha256")))
+            print(f"Live asset retry {attempt}/{attempts - 1}: {path}; expected sha256={digest}; {detail}", flush=True)
+        pause(5 * attempt)
+        observed.update(observe(pending, fetcher))
+    return observed
+
+
 def receipt_errors(receipt, data, evidence_bytes, workflow_conclusion="success"):
     errors = []
     if receipt.get("status") != "PUBLISHED & VERIFIED" or receipt.get("edition_date_hkt") != data.get("date"):
@@ -110,7 +127,7 @@ def plan(root, today, candidate_only=False, fetcher=fetch):
         receipt = read_json(previous)
         proof_bytes = (root / f"editorial/evidence/{today}.json").read_bytes()
         if not receipt_errors(receipt, packet["data"], proof_bytes):
-            observed = observe(expected, fetcher)
+            observed = observe_until_matching(expected, fetcher)
             if all(observed[p].get("sha256") == digest for p, digest in expected.items()):
                 result.update(action="AUDIT_ALREADY_CURRENT", deployment_required=False)
     return result
@@ -124,7 +141,8 @@ def make_receipt(root, release_plan, observed, source_commit, artifact_commit, w
         raise ValueError("the approved edition changed during acceptance")
     for path, expected in release_plan["expected_asset_sha256"].items():
         if observed.get(path, {}).get("sha256") != expected:
-            raise ValueError("live acceptance failed for " + path)
+            detail = observed.get(path, {}).get("error") or ("received sha256=" + str(observed.get(path, {}).get("sha256")))
+            raise ValueError(f"live acceptance failed for {path}; expected sha256={expected}; {detail}")
     count = len(packet["data"]["items"])
     counts = {locale: observed[f"{locale}/index.html"].get("article_count") for locale in ("en", "zh-hant", "zh-hans")}
     if any(value != count for value in counts.values()):
@@ -171,7 +189,7 @@ def accept(root, release_plan, source_commit, artifact_commit, workflow_run, fet
         time.sleep(20)
     for script in ("verify_discovery_live.py", "verify_locales_live.py"):
         subprocess.run([sys.executable, script], cwd=root, check=True)
-    observed = observe(release_plan["expected_asset_sha256"], fetcher)
+    observed = observe_until_matching(release_plan["expected_asset_sha256"], fetcher)
     receipt = make_receipt(root, release_plan, observed, source_commit, artifact_commit, workflow_run)
     write_json(root / f"editorial/releases/{date}.json", receipt)
     write_json(root / "editorial/releases/latest.json", receipt)

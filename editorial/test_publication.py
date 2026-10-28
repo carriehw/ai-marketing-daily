@@ -5,9 +5,10 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from edition_packet import check_article_packet, check_stored_articles, current_packet, prepare, read_json, resolve_edition, validate, write_json
-from release_state import asset_paths, make_receipt, observe, plan, receipt_errors, sha, StoryCounter
+from release_state import asset_paths, make_receipt, observe, observe_until_matching, plan, receipt_errors, sha, StoryCounter
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -205,8 +206,51 @@ class PublicationControls(unittest.TestCase):
         self.assertEqual(p["action"], "AUDIT_ALREADY_CURRENT")
 
     def test_changed_live_asset_requires_publication_not_false_success(self):
-        p = plan(self.root, self.date, fetcher=lambda path: b"wrong" if path == "index.html" else (self.root / path).read_bytes())
+        with patch("release_state.time.sleep"):
+            p = plan(self.root, self.date, fetcher=lambda path: b"wrong" if path == "index.html" else (self.root / path).read_bytes())
         self.assertTrue(p["deployment_required"])
+
+    def test_transient_asset_error_is_retried_without_refetching_good_assets(self):
+        calls = {}
+        sleeps = []
+        def transient(path):
+            calls[path] = calls.get(path, 0) + 1
+            if path == "archive/fixture.html" and calls[path] == 1:
+                raise OSError("temporary 503 fixture")
+            return path.encode()
+        expected = {path: sha(path.encode()) for path in ("index.html", "archive/fixture.html")}
+        observed = observe_until_matching(expected, transient, pause=sleeps.append)
+        self.assertTrue(all(observed[path]["sha256"] == digest for path, digest in expected.items()))
+        self.assertEqual(calls, {"index.html": 1, "archive/fixture.html": 2})
+        self.assertEqual(sleeps, [5])
+
+    def test_persistent_wrong_asset_still_blocks_receipt_after_bounded_retries(self):
+        p, _ = self.reviewed_observations()
+        calls = []
+        def wrong(path):
+            if path == "index.html":
+                calls.append(path)
+                return b"persistent wrong issue"
+            return (self.root / path).read_bytes()
+        observed = observe_until_matching(p["expected_asset_sha256"], wrong, pause=lambda _: None)
+        self.assertEqual(len(calls), 3)
+        with self.assertRaisesRegex(ValueError, "index.html; expected sha256=.*received sha256="):
+            make_receipt(self.root, p, observed, "a" * 40, "b" * 40,
+                         "https://github.com/carriehw/ai-marketing-daily/actions/runs/1")
+
+    def test_transient_fetch_does_not_force_duplicate_deployment(self):
+        calls = []
+        def transient(path):
+            if path == "index.html":
+                calls.append(path)
+                if len(calls) == 1:
+                    raise OSError("temporary connection failure fixture")
+            return (self.root / path).read_bytes()
+        with patch("release_state.time.sleep"):
+            p = plan(self.root, self.date, fetcher=transient)
+        self.assertEqual(len(calls), 2)
+        self.assertFalse(p["deployment_required"])
+        self.assertEqual(p["action"], "AUDIT_ALREADY_CURRENT")
 
     def test_first_approved_issue_without_receipt_can_reach_deployment(self):
         (self.root / f"editorial/releases/{self.date}.json").unlink()
