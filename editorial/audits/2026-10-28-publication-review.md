@@ -36,3 +36,7 @@ Current publishing assistant reopened original sources and challenged the earlie
 | forrester-aeo-brand-growth | HOLD_PRIMARY_REPORT | Existing candidate retained: proprietary report not inspected; no numerical claims approved from trade paraphrases. |
 
 All local editorial, chronology, archive, trilingual, search, newsletter and 12 browser/viewport cases passed. Production CI, deployment and live verification remain pending. Newsletter sending remains owned by the existing external workflow; no email or social send is performed here.
+
+## Live share-preview repair
+
+The first production image was 1200×630 but its page viewport clipped the footer at y=543. Replaced native Chrome outer-window screenshot sizing with the existing Playwright dependency and an explicit 1200×630 page viewport. The renderer now waits for fonts and rejects an out-of-bounds footer. News facts, approval decisions, layout template and colours are unchanged. Local image geometry, footer bounds and visual inspection passed; production image re-verification remains required.

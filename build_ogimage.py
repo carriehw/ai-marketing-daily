@@ -132,13 +132,44 @@ def build_html(d):
 
 
 def shoot(html_path, out_png):
+    # Native Chrome's --window-size can describe the outer window rather than
+    # the page viewport. The CI image was 1200x630 while page content stopped
+    # at y=543, cutting off the byline and story count. Playwright is already
+    # installed by the publication workflow; set its page viewport explicitly.
+    renderer = r"""
+const { chromium } = require('playwright');
+const { pathToFileURL } = require('node:url');
+(async () => {
+  const [input, output, width, height] = process.argv.slice(1);
+  const w = Number(width), h = Number(height);
+  const browser = await chromium.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-gpu', '--hide-scrollbars']
+  });
+  try {
+    const page = await browser.newPage({
+      viewport: { width: w, height: h }, deviceScaleFactor: 1
+    });
+    await page.goto(pathToFileURL(input).href, { waitUntil: 'load' });
+    await page.evaluate(async () => { await document.fonts.ready; });
+    const bounds = await page.evaluate(() => ({
+      width: innerWidth, height: innerHeight,
+      footerBottom: document.querySelector('.bot').getBoundingClientRect().bottom
+    }));
+    if (bounds.width !== w || bounds.height !== h || bounds.footerBottom > h) {
+      throw new Error('Share card viewport/footer does not fit: ' + JSON.stringify(bounds));
+    }
+    await page.screenshot({ path: output, type: 'png' });
+  } finally {
+    await browser.close();
+  }
+})().catch(error => { console.error(error); process.exitCode = 1; });
+"""
     r = subprocess.run(
-        [CH, "--headless=new", "--disable-gpu", "--no-sandbox", "--hide-scrollbars",
-         f"--window-size={W},{H}", "--force-device-scale-factor=1",
-         "--default-background-color=00000000", "--virtual-time-budget=6000",
-         f"--screenshot={out_png}", "file://" + os.path.abspath(html_path)],
+        ["node", "-e", renderer, os.path.abspath(html_path),
+         os.path.abspath(out_png), str(W), str(H)],
         capture_output=True, text=True, timeout=180)
-    if not os.path.exists(out_png):
+    if r.returncode != 0 or not os.path.exists(out_png):
         raise RuntimeError("screenshot failed: " + r.stderr[-400:])
     return r
 
