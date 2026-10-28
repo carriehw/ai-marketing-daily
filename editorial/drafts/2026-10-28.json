@@ -1,26 +1,24 @@
 {
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
-  "status": "READY_FOR_DEPLOY",
-  "phase": "all_local_release_gates_passed",
+  "status": "PUBLISHED & VERIFIED",
+  "phase": "publication_complete",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
-  "phase_saved_at_hkt": "2026-10-28T12:21:32+08:00",
+  "phase_saved_at_hkt": "2026-10-28T12:35:06+08:00",
   "reference_head_sha": "2e16605e2d7ff39ab9b2447e7fd57d40aeb5c958",
   "reference_branch_head_sha_before_write": "8cf8feec309bc399066f66003d1b8e13c3e5c44a",
   "confirmed_repo_previous_edition": "2026-10-27",
   "confirmed_repo_previous_count": 10,
-  "last_confirmed_live_edition": null,
-  "last_confirmed_live_edition_note": "Live GitHub Pages URLs could not be fetched in this runtime; repository main data.json and archive/manifest.json both show 2026-10-27, and last Pages workflow succeeded 2026-10-27. Do not equate repo with live.",
+  "last_confirmed_live_edition": "2026-10-28",
+  "last_confirmed_live_edition_note": "Independently checked production date, 12 articles per language, archive/search bytes, English newsletter payload and corrected live sharing image.",
   "source_search_scope": "2026-10-23 to 2026-10-28 HKT, prioritizing Oct 26–27 releases; original event dates preserved; 2026-10-23 and older candidates only for exclusion/context unless real new development.",
   "source_read_candidates_count": 20,
   "tracked_candidates_count": 31,
   "release_ready_story_count": 12,
-  "published_story_count_today": 0,
+  "published_story_count_today": 12,
   "hold_reason": null,
-  "blockers": [
-    "Production deployment and live verification pending."
-  ],
+  "blockers": [],
   "source_groups_checked": [
     "OpenAI first-party",
     "Google/DeepMind first-party",
@@ -752,8 +750,8 @@
       "caveat": "3月原有計劃；10月27首批24間企業及工作坊需當日EnterpriseSG正式公告確認，不可重複當新計劃。"
     }
   ],
-  "editorial_decision": "12_APPROVED_2_HELD",
-  "newsletter_payload_status": "BUILT_AND_VALIDATED_NOT_SENT",
+  "editorial_decision": "12_PUBLISHED_2_HELD",
+  "newsletter_payload_status": "PUBLISHED_AND_VALIDATED_DELIVERY_EXTERNAL_NOT_CHECKED",
   "outlook_send_triggered": false,
   "social_publish_triggered": false,
   "notes": [
@@ -1845,10 +1843,7 @@
       "latest_check": "BusinessWire India Oct27 press release and exchange4media Oct27 report both name Medhavi Singh as Aleph India country head, but no separate original company page and modest direct marketer actionability."
     }
   ],
-  "next_actions": [
-    "Run all existing editorial, date, multilingual, archive, search, newsletter and browser gates.",
-    "Deploy only if all gates pass, then verify actual live edition and matching assets."
-  ],
+  "next_actions": [],
   "phase_1045_conditional_recovery": {
     "edition_date_hkt": "2026-10-28",
     "checkpoint": "10:45 HKT",
@@ -2539,8 +2534,9 @@
       }
     ],
     "release_ready": 12,
-    "status": "APPROVED_PENDING_TECHNICAL_GATES",
-    "reviewed_at_hkt": "2026-10-28T12:13:17+08:00"
+    "status": "PUBLISHED & VERIFIED",
+    "reviewed_at_hkt": "2026-10-28T12:13:17+08:00",
+    "published_at_hkt": "2026-10-28T12:35:06+08:00"
   },
   "meta_policy_source_reconciliation": {
     "primary": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
@@ -2641,5 +2637,6 @@
     "review_scope": "Current publishing assistant reopened original sources and challenged the earlier-session drafts; AI source review and editorial approval, not independent human review or product testing."
   },
   "approved_data_path": "data.json",
-  "approved_evidence_path": "editorial/evidence/2026-10-28.json"
+  "approved_evidence_path": "editorial/evidence/2026-10-28.json",
+  "completed_release_record": "editorial/releases/2026-10-28.json"
 }

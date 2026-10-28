@@ -39,4 +39,8 @@ All local editorial, chronology, archive, trilingual, search, newsletter and 12 
 
 ## Live share-preview repair
 
-The first production image was 1200×630 but its page viewport clipped the footer at y=543. Replaced native Chrome outer-window screenshot sizing with the existing Playwright dependency and an explicit 1200×630 page viewport. The renderer now waits for fonts and rejects an out-of-bounds footer. News facts, approval decisions, layout template and colours are unchanged. Local image geometry, footer bounds and visual inspection passed; production image re-verification remains required.
+The first production image was 1200×630 but its page viewport clipped the footer at y=543. Replaced native Chrome outer-window screenshot sizing with the existing Playwright dependency and an explicit 1200×630 page viewport. The renderer now waits for fonts and rejects an out-of-bounds footer. News facts, approval decisions, layout template and colours are unchanged. Local image geometry, footer bounds and visual inspection passed; production image re-verification passed, including direct visual inspection of the complete byline and story count.
+
+## Final release acceptance
+
+PUBLISHED & VERIFIED at 2026-10-28T12:35:06+08:00. All three production languages show 12 stories. The independent live validators passed the root edition, current archive, fonts, analytics, search bytes and all 13 locale/SEO paths. Production run 40632852997 succeeded; deployed artifact commit 984243bdb19c035b04eb72474fedcb2951296b73. The English newsletter payload is dated 2026-10-28 with 12 underlying headlines, six highlights and editorial-approved status. External email delivery was not checked and no email or social send was initiated by this run. Two unsupported candidates remain held. See ../releases/2026-10-28.json.

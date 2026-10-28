@@ -1,7 +1,7 @@
 {
   "edition_date_hkt": "2026-10-28",
   "validated_at_hkt": "2026-10-28T12:21:32+08:00",
-  "status": "LOCAL_GATES_PASSED_PENDING_PRODUCTION",
+  "status": "PUBLISHED & VERIFIED",
   "approved_stories": 12,
   "held_candidates": 2,
   "editorial_evidence_gate": "PASS",
@@ -37,5 +37,19 @@
   "historical_dated_archives_modified": false,
   "newsletter_sent": false,
   "social_posted": false,
-  "nonblocking_build_guidance": "Compact detail texts are below the legacy 420-character advisory, and pass the enforced complete-story checks. No unsupported expansion was added."
+  "nonblocking_build_guidance": "Compact detail texts are below the legacy 420-character advisory, and pass the enforced complete-story checks. No unsupported expansion was added.",
+  "production": {
+    "verified_at_hkt": "2026-10-28T12:35:06+08:00",
+    "artifact_commit": "984243bdb19c035b04eb72474fedcb2951296b73",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40632852997",
+    "result": "success",
+    "independent_root_archive_fonts_analytics": "PASS",
+    "independent_discovery_hashes": "PASS",
+    "independent_locale_paths": 13,
+    "actual_articles_per_language": 12,
+    "newsletter_payload_date": "2026-10-28",
+    "newsletter_payload_status": "editorial_approved",
+    "live_preview_footer_visual": "PASS",
+    "live_preview_sha256": "0f5fbba39936356c4c21b8400c64cfd9ab410d7d0e876ff5cc342763f55196df"
+  }
 }
