@@ -2367,5 +2367,93 @@
     ],
     "formal_editorial_approved_count_unchanged": 0,
     "release_ready_count_unchanged": 0
+  },
+  "fourteen_story_verification_closure_20261028": {
+    "reviewed": 14,
+    "scope": "locked existing 14; no candidate additions",
+    "as_of": "2026-10-28",
+    "method": "Claim-level primary/trade checks plus explicit uncertainty and editorial decisions; factual verification does not imply readiness for release.",
+    "decisions": [
+      {
+        "slug": "anymind-meta-live-commerce",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Announcement verified; Facebook Q4 2026 and Instagram early 2027 planned; no launch or GMV claims"
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "12 announced partners; API access subject to approval; not all live"
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Commissioned US/UK N500 July21–31 survey; 77% under human approval; no global extrapolation"
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Company announced Paid Media Briefs; efficacy not independently verified"
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Vendor announced Content Compass 2.0 features; no validated ROI"
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Partnership confirmed by parties; Oracle workspace in development, not GA"
+      },
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Oct27 official speech plus independent press confirm 24-company first cohort; workshop participants distinct"
+      },
+      {
+        "slug": "google-genie-4",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Oct27 research preview trusted testers only; no public launch"
+      },
+      {
+        "slug": "mastercard-mrbeast-creator-commerce",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Oct26 announced planned programmes; no live card launch"
+      },
+      {
+        "slug": "mcdonalds-fifa-32-year-end",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Oct27 Marketing Dive reports company confirmed ending 32-year FIFA World Cup sponsorship late prior week; 2026 programme distinct from future sponsorship"
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "decision": "PASS_WITH_QUALIFIERS",
+        "verified_scope": "Oct27 Marketing Interactive interviews Maybank country corporate office head and identifies exhibition Oct23–Nov1 at NAFA; bank primary campaign page not inspected; avoid attributing reported scam losses to individual words"
+      },
+      {
+        "slug": "apple-identity-ad-money-analysis",
+        "decision": "HOLD_METHOD",
+        "verified_scope": "Oct19 Apple WebKit underlying policy established; Oct27 provider bid/eCPM figures require underlying sample and methodology"
+      },
+      {
+        "slug": "forrester-aeo-brand-growth",
+        "decision": "HOLD_PRIMARY_REPORT",
+        "verified_scope": "Original Forrester report not inspected; trade paraphrase insufficient for proprietary numerical claims"
+      },
+      {
+        "slug": "meta-us-political-ad-restriction",
+        "decision": "HOLD_OFFICIAL_POLICY",
+        "verified_scope": "Official Meta election-ad policy and precise scope not directly inspected; Oct27 enforcement previously announced"
+      }
+    ],
+    "claim_level_pass_with_qualifiers": 11,
+    "hold": 3,
+    "release_ready": 0,
+    "editorial_approval": "NOT_GRANTED",
+    "sources_new": [
+      "https://www.marketingdive.com/news/what-mcdonalds-dropping-its-fifa-sponsorship-means-for-sports-marketing/872775/",
+      "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks",
+      "https://digiday.com/marketing/apples-growing-ads-business-puts-its-safari-blocklist-under-scrutiny/"
+    ],
+    "next_gate": "Finish independent evidence for held claims, check trilingual copy, approve eligible articles and run build/CI/live."
   }
 }
