@@ -1,119 +1,56 @@
 {
+  "release_schema_version": "2.0",
   "edition_date_hkt": "2026-10-28",
   "status": "PUBLISHED & VERIFIED",
-  "verified_at_hkt": "2026-10-28T12:35:06+08:00",
   "published_story_count": 12,
-  "held_candidate_count": 2,
-  "new_candidates_added": 0,
   "language_article_counts": {
-    "zh-Hant": 12,
-    "zh-Hans": 12,
-    "en": 12
+    "en": 12,
+    "zh-hant": 12,
+    "zh-hans": 12
+  },
+  "verified_at_hkt": "2026-10-28T14:52:17+08:00",
+  "published_at_hkt": "2026-10-28T12:35:06+08:00",
+  "acceptance_action": "AUDIT_ALREADY_CURRENT",
+  "source_commit": "8913e8c0e7d1c5bc959c2af24e83711ec06f40a0",
+  "deployed_artifact_commit": "984243bdb19c035b04eb72474fedcb2951296b73",
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40646363612",
+  "data_sha256": "5719411e8d097fc22397b85d3a2f4b421e90edc51b1eed6f60d9ac09176896a9",
+  "deployed_evidence_sha256": "27d4580faeb03e85853c14455f90ab6cca097b8fa4fd497d5c10fafafeb058a4",
+  "verified_asset_sha256": {
+    "index.html": "1cd8937951c6e3e880fa8441e0b43871e180b7bfbe5209b85ee19e1c90d6e5ea",
+    "data.json": "5719411e8d097fc22397b85d3a2f4b421e90edc51b1eed6f60d9ac09176896a9",
+    "archive/2026-10-28.html": "af7315b41c510696f6c714783068cf87e6baa57df84ca95401d057c79a056b7d",
+    "archive/manifest.json": "1806baeb1a472a09acce88ec528f018d7d9fb50356eecfb59d9fa677aa7ec61b",
+    "archive/search-index.json": "dc2b3d9c5d20433323b44bbb57c762b3a66fd8203bbfad2bc337dbadcd6b2920",
+    "archive/search-index-zh-hans.json": "961ba10eacd1487c4c4ba07d69a326b37eac11d372508b23b62ae334458ab5d0",
+    "discovery.js": "c793fe80f1be45775e9d47581bd1e601f5e8d28f27dfc80580f288711e2f55d7",
+    "discovery-zh-hans.js": "a126d9d281fc6e0673d7abc56d63d2536c4f879ca7aabc2daf597ced86bf8bc2",
+    "sitemap.xml": "4d3b40b6d599e6984f213a6b8a07612f4213eda9133fb5d6953f47e3bba60146",
+    "robots.txt": "40e54f9d4ff2d429e624d4d4a0d1745b40fa77c34ea5cb0e605d404240c1bf98",
+    "og/2026-10-28.jpg": "0f5fbba39936356c4c21b8400c64cfd9ab410d7d0e876ff5cc342763f55196df",
+    "editorial/evidence/2026-10-28.json": "27d4580faeb03e85853c14455f90ab6cca097b8fa4fd497d5c10fafafeb058a4",
+    "edm/team.html": "9b734d76ed7ab0786517d52c2cf1f6fe4cd4350022697a95eabae1f26c772e24",
+    "edm/payload.json": "39c0abe30862c83dde26e01bf1e2f067ed895e7326e96b2ffcfe4dcd89ecfd96",
+    "edm/payload-feed.xml": "67f4c072a4c536bd98004d675e50c6a1f9ee115a640187de13ddff0f4f20cd9a",
+    "edm/feed.xml": "c956a7019d38d411d83a509541893bfaa75ea45b68f916d2cc829ab38d611701",
+    "en/index.html": "25174055cbdadfb310b8605a4938990f41a9da461e81453df92ab05ea5ee6b98",
+    "en/archive/2026-10-28.html": "b6920b69fd4e9235617e3a89b8e4038117332f7416afff20897b753b19040891",
+    "en/archive/index.html": "0d3a17f8533c4207c305acc748df2bc60a7dc4d385b68ab440d68d476264162d",
+    "zh-hant/index.html": "e8e5e560d97cf94ec85016fe5896f44ffb22d0c3354cb33d0b30d53c8ea5ac99",
+    "zh-hant/archive/2026-10-28.html": "e21a258762991b5395584943fd95168fffad8b8727a00fd5a3a4816b49698206",
+    "zh-hant/archive/index.html": "054f83b36f1ae1863dd2185c2795e55e96579d72d949e428176fe62d562c47ab",
+    "zh-hans/index.html": "ecb3a0a66becf2a45544c59c9b4bab7a72f336807597ce59e4fa6bf63d766a98",
+    "zh-hans/archive/2026-10-28.html": "96729458a5cdf7edcde09c1a64fcef29064defa7917e8a4f483868021bf5ea7d",
+    "zh-hans/archive/index.html": "2bad9ddd0aec6a03c0cd817724fbf4e5949d89c42ff2dc16805b0990078570df"
   },
   "live_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/",
   "archive_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-10-28.html",
-  "source_review_commit": "145f148fd66fa60df21b507d8c249679c0b538f8",
-  "preview_fix_commit": "7534c8ed26e343b03d4030323530732a32c744e9",
-  "deployed_artifact_commit": "984243bdb19c035b04eb72474fedcb2951296b73",
-  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40632852997",
-  "data_sha256": "5719411e8d097fc22397b85d3a2f4b421e90edc51b1eed6f60d9ac09176896a9",
-  "deployed_evidence_sha256": "27d4580faeb03e85853c14455f90ab6cca097b8fa4fd497d5c10fafafeb058a4",
-  "evidence_snapshot_note": "The deployed reviewed evidence snapshot is preserved byte-for-byte for newsletter digest consistency; this separate release record records subsequent production acceptance.",
-  "source_review_scope": "Current publishing assistant reopened original sources and challenged the earlier-session drafts; AI source review and editorial approval, not independent human review or product testing.",
-  "checks": {
-    "verified_at_hkt": "2026-10-28T12:35:06+08:00",
-    "artifact_commit": "984243bdb19c035b04eb72474fedcb2951296b73",
-    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40632852997",
-    "result": "success",
-    "independent_root_archive_fonts_analytics": "PASS",
-    "independent_discovery_hashes": "PASS",
-    "independent_locale_paths": 13,
-    "actual_articles_per_language": 12,
-    "newsletter_payload_date": "2026-10-28",
-    "newsletter_payload_status": "editorial_approved",
-    "live_preview_footer_visual": "PASS",
-    "live_preview_sha256": "0f5fbba39936356c4c21b8400c64cfd9ab410d7d0e876ff5cc342763f55196df"
+  "verification": {
+    "live_bytes": true,
+    "actual_language_article_counts": true,
+    "newsletter_snapshot": true
   },
-  "held": [
-    {
-      "slug": "apple-identity-ad-money-analysis",
-      "reason": "Underlying bid/eCPM sample and method not established."
-    },
-    {
-      "slug": "forrester-aeo-brand-growth",
-      "reason": "Original proprietary report not inspected."
-    }
-  ],
-  "newsletter": {
-    "payload_published": true,
-    "edition_date": "2026-10-28",
-    "headline_count": 12,
-    "featured_count": 6,
-    "verification_status": "editorial_approved",
-    "sent_by_this_run": false,
-    "external_delivery": "not_checked"
-  },
+  "newsletter_sent_by_this_run": false,
   "social_posted_by_this_run": false,
-  "stories": [
-    {
-      "slug": "anymind-meta-live-commerce",
-      "title": "AnyMind與Meta公布直播商務合作",
-      "source_url": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026"
-    },
-    {
-      "slug": "universal-ads-campaign-management",
-      "title": "Universal Ads新增Campaign Management合作類別，連接既有平台與電視廣告採購",
-      "source_url": "https://www.businesswire.com/news/home/20261027393868/en/Universal-Ads-Brings-TV-Buying-into-the-Flow-of-Modern-Media-Buying"
-    },
-    {
-      "slug": "smartly-alter-agents-study",
-      "title": "Smartly與Alter Agents公布500名英美行銷人員AI調查，強調人工審批",
-      "source_url": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html"
-    },
-    {
-      "slug": "bluefish-paid-media",
-      "title": "Bluefish推出Paid Media Briefs，連接AI搜尋洞察與付費媒體規劃",
-      "source_url": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html"
-    },
-    {
-      "slug": "brandi-geo-content-compass",
-      "title": "Brandi AI公布Content Compass 2.0與Brand Voice等GEO內容及分析更新",
-      "source_url": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html"
-    },
-    {
-      "slug": "meta-us-political-ad-restriction",
-      "title": "Meta美國政治及社會議題廣告限制期於10月27日開始",
-      "source_url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/"
-    },
-    {
-      "slug": "mcdonalds-fifa-32-year-end",
-      "title": "McDonald’s向B&T確認FIFA世界盃贊助將隨現有協議結束",
-      "source_url": "https://www.bandt.com.au/mcdonalds-ends-fifa-world-cup-sponsorship/"
-    },
-    {
-      "slug": "mastercard-mrbeast-creator-commerce",
-      "title": "Mastercard與MrBeast旗下Beast Industries公布創作者合作計劃",
-      "source_url": "https://www.mastercard.com/us/en/news-and-trends/stories/2026/beast-industries-mastercard-creator-economy.html"
-    },
-    {
-      "slug": "openai-oracle-apps-chatgpt",
-      "title": "OpenAI與Oracle擴大合作，計劃將Oracle企業應用與資料帶入ChatGPT",
-      "source_url": "https://openai.com/index/oracle-apps-in-chatgpt/"
-    },
-    {
-      "slug": "singapore-switch-ai-enterprise-programmes",
-      "title": "新加坡SWITCH公布首批24間Champions of AI企業，另介紹小企AI工作坊進展",
-      "source_url": "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/"
-    },
-    {
-      "slug": "google-genie-4",
-      "title": "Google DeepMind公布Genie 4即時互動世界模型，僅向可信測試者初步推出",
-      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/"
-    },
-    {
-      "slug": "maybank-scam-calligraphy",
-      "title": "Maybank新加坡以書法視覺創意宣傳反詐騙",
-      "source_url": "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks"
-    }
-  ]
+  "review_scope": "Current publishing assistant reopened original sources and challenged the earlier-session drafts; AI source review and editorial approval, not independent human review or product testing."
 }
