@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-10-29",
+  "state": "APPROVED",
+  "article": {
+    "title": "Rime發布Prism語音模型，以可檢視文字層支援企業對話控制",
+    "title_en": "Rime launches Prism with an inspectable text checkpoint for enterprise voice agents",
+    "summary": "Rime於10月28日公布Prism語音對語音模型，描述可在說話前產生供檢查的文字層，並讓工具呼叫與語音並行；自助微調API仍與beta客戶共同開發。",
+    "summary_en": "Rime announced Prism on October 28, describing a speech-to-speech model with an inspectable text layer before speech and tool calls alongside spoken output. Self-service fine-tuning APIs are still being developed with beta customers.",
+    "why": "對使用語音代理承接諮詢與訂單的品牌，文字檢查點值得評估：能否在客戶聽到回覆前套用品牌用語與動作限制，比聲音自然程度更關乎流程控制。",
+    "why_en": "Brands using voice agents for inquiries or orders can evaluate whether a text checkpoint supports wording checks and action limits before a response reaches the customer.",
+    "next_step": "以一個低風險對話檢查人名、產品詞、拒答及執行前確認；向供應商確認語言、部署與微調開放條件。",
+    "next_step_en": "Test names, product terms, refusals and confirmation before action on a low-risk workflow; confirm languages, deployment and fine-tuning access with the supplier.",
+    "highlights": [
+      "Rime把Prism描述為聆聽、寫出將說的內容並在說話時繼續聆聽的系統。",
+      "文字層可供規則檢查及修改；自助RL與SFT API尚在與beta客戶開發。"
+    ],
+    "highlights_en": [
+      "Rime describes a system that listens, writes its intended response and continues hearing the user while speaking.",
+      "The text layer can be checked and rewritten; self-service RL and SFT APIs are being built with beta customers."
+    ],
+    "detail": "Rime於10月28日公布Prism語音對語音模型，描述可在說話前產生供檢查的文字層，並讓工具呼叫與語音並行；自助微調API仍與beta客戶共同開發。\n\nRime把Prism描述為聆聽、寫出將說的內容並在說話時繼續聆聽的系統。\n\n文字層可供規則檢查及修改；自助RL與SFT API尚在與beta客戶開發。\n\n對使用語音代理承接諮詢與訂單的品牌，文字檢查點值得評估：能否在客戶聽到回覆前套用品牌用語與動作限制，比聲音自然程度更關乎流程控制。\n\n以一個低風險對話檢查人名、產品詞、拒答及執行前確認；向供應商確認語言、部署與微調開放條件。\n\n能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。",
+    "detail_en": "Rime announced Prism on October 28, describing a speech-to-speech model with an inspectable text layer before speech and tool calls alongside spoken output. Self-service fine-tuning APIs are still being developed with beta customers.\n\nRime describes a system that listens, writes its intended response and continues hearing the user while speaking.\n\nThe text layer can be checked and rewritten; self-service RL and SFT APIs are being built with beta customers.\n\nBrands using voice agents for inquiries or orders can evaluate whether a text checkpoint supports wording checks and action limits before a response reaches the customer.\n\nTest names, product terms, refusals and confirmation before action on a low-risk workflow; confirm languages, deployment and fine-tuning access with the supplier.\n\nCapabilities are vendor-reported and voice evaluations were not reproduced. Differing latency descriptions are excluded, as are claims of universal fine-tuning availability.",
+    "source": "Rime",
+    "url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+    "time": "10月28日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Worth Watching",
+    "editorial_slug": "rime-prism"
+  },
+  "evidence": {
+    "story_id": "2026-10-29-rime-prism",
+    "title_zh": "Rime發布Prism語音模型，以可檢視文字層支援企業對話控制",
+    "source_story_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+    "published_article_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+    "source_date_display": "10月28日",
+    "event_date": "2026-10-28",
+    "first_published_date": "2026-10-28",
+    "source_documents": [
+      {
+        "url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "publisher": "Rime",
+        "source_class": "A",
+        "source_publication_date": "2026-10-28",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-10-29T07:03:50+08:00",
+        "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+        "evidence_locator": "Page date October 28 and opening announcement introducing Prism.; How Prism works: text is a checkpoint; rules read every word before speech.; Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+        "limitations": "Capabilities are vendor-reported and voice evaluations were not reproduced. Differing latency descriptions are excluded, as are claims of universal fine-tuning availability.",
+        "local_source_sha256": "d648c9cb6fd5064fd5d927d7de89eb1fbf1080269707a8194feea4b8b953502b"
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Rime於10月28日宣布Prism。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "Page date October 28 and opening announcement introducing Prism.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      },
+      {
+        "claim_zh": "Prism提供說話前的可檢視文字檢查點。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "How Prism works: text is a checkpoint; rules read every word before speech.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      },
+      {
+        "claim_zh": "自助RL及SFT API仍與beta客戶開發。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Rime於10月28日宣布Prism。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "Page date October 28 and opening announcement introducing Prism.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      },
+      {
+        "claim_zh": "Prism提供說話前的可檢視文字檢查點。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "How Prism works: text is a checkpoint; rules read every word before speech.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      },
+      {
+        "claim_zh": "自助RL及SFT API仍與beta客戶開發。",
+        "support_url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+        "evidence_locator": "Own your intelligence: building self-serve RL and SFT APIs with beta customers.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+    "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+      "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+      "second_pass_source_sha256": "d648c9cb6fd5064fd5d927d7de89eb1fbf1080269707a8194feea4b8b953502b",
+      "finding": "Reopened source. Discarded latency, benchmark dominance and first-ever claims; source intro and benchmark section use different timing measures, while syndicated reports differ. Retained inspectable text and beta-development qualifier only."
+    },
+    "review_notes": "Reopened source. Discarded latency, benchmark dominance and first-ever claims; source intro and benchmark section use different timing measures, while syndicated reports differ. Retained inspectable text and beta-development qualifier only.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 24,
+      "business_impact": 21,
+      "actionability": 16,
+      "market_relevance": 9,
+      "novelty": 9,
+      "total": 79
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+    "title_zh_hant": "Rime發布Prism語音模型，以可檢視文字層支援企業對話控制",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "能力為供應商自述；本刊未重現語音評測。官方及其他報道的延遲口徑不同，本刊不刊載速度比較或全面微調可用聲稱。 三语统一保留来源日期、推出阶段、适用范围与归因；不把公告写成独立实测，不增加效果承诺。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}

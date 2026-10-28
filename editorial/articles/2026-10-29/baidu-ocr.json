@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-10-29",
+  "state": "APPROVED",
+  "article": {
+    "title": "百度開源Unlimited OCR 2，主打長文件結構化及跨頁表格合併",
+    "title_en": "Baidu releases Unlimited OCR 2 for long-document structure and cross-page tables",
+    "summary": "百度於10月27日宣布開源文心Unlimited OCR 2，描述可輸出結構化文件、識別版面要素及合併跨頁表格；生產級平台能力另列為公開測試。",
+    "summary_en": "Baidu announced open-source Wenxin Unlimited OCR 2 on October 27, describing structured document output, layout recognition and cross-page table merging. Production-oriented platform capabilities are separately offered in public testing.",
+    "why": "處理研究報告、供應商文件及多頁產品資料的行銷團隊，可評估抽取流程。這類工具適合減少整理工作，關鍵數字與表格仍需回看原件。",
+    "why_en": "Marketing teams handling research, supplier documents and product information can evaluate extraction workflows, retaining original-page checks for critical numbers and tables.",
+    "next_step": "先用公開、非敏感文件比較表格欄位、閱讀順序及跨頁合併，再檢查授權及部署要求。",
+    "next_step_en": "Compare table fields, reading order and cross-page merging on public non-sensitive documents, then check licensing and deployment requirements.",
+    "highlights": [
+      "官方描述可識別標題、段落、表格、公式及圖片等版面要素，並輸出結構層級。",
+      "公告提供GitHub與Hugging Face模型入口；平台生產級能力須另行參與公測。"
+    ],
+    "highlights_en": [
+      "Baidu describes recognizing headings, paragraphs, tables, formulas and images with structural hierarchy.",
+      "The announcement links GitHub and Hugging Face; production platform capabilities require separate public-test participation."
+    ],
+    "detail": "百度於10月27日宣布開源文心Unlimited OCR 2，描述可輸出結構化文件、識別版面要素及合併跨頁表格；生產級平台能力另列為公開測試。\n\n官方描述可識別標題、段落、表格、公式及圖片等版面要素，並輸出結構層級。\n\n公告提供GitHub與Hugging Face模型入口；平台生產級能力須另行參與公測。\n\n處理研究報告、供應商文件及多頁產品資料的行銷團隊，可評估抽取流程。這類工具適合減少整理工作，關鍵數字與表格仍需回看原件。\n\n先用公開、非敏感文件比較表格欄位、閱讀順序及跨頁合併，再檢查授權及部署要求。\n\n能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。",
+    "detail_en": "Baidu announced open-source Wenxin Unlimited OCR 2 on October 27, describing structured document output, layout recognition and cross-page table merging. Production-oriented platform capabilities are separately offered in public testing.\n\nBaidu describes recognizing headings, paragraphs, tables, formulas and images with structural hierarchy.\n\nThe announcement links GitHub and Hugging Face; production platform capabilities require separate public-test participation.\n\nMarketing teams handling research, supplier documents and product information can evaluate extraction workflows, retaining original-page checks for critical numbers and tables.\n\nCompare table fields, reading order and cross-page merging on public non-sensitive documents, then check licensing and deployment requirements.\n\nCapabilities are attributed to Baidu. Benchmark scores and unlimited-length accuracy were not reproduced, and model licensing has not been reviewed.",
+    "source": "百度AI開放平台",
+    "url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+    "time": "10月27日",
+    "section": "即學技巧 & 玩法",
+    "region": "中國",
+    "action": "可即用",
+    "action_en": "Ready to Use",
+    "editorial_slug": "baidu-ocr"
+  },
+  "evidence": {
+    "story_id": "2026-10-29-baidu-ocr",
+    "title_zh": "百度開源Unlimited OCR 2，主打長文件結構化及跨頁表格合併",
+    "source_story_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+    "published_article_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+    "source_date_display": "10月27日",
+    "event_date": "2026-10-27",
+    "first_published_date": "2026-10-27",
+    "source_documents": [
+      {
+        "url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "publisher": "百度AI開放平台",
+        "source_class": "A",
+        "source_publication_date": "2026-10-27",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-10-29T07:03:48+08:00",
+        "access_method": "Direct HTTPS full source HTML parsed to readable text; web search was discovery only.",
+        "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.; Section 一、原生版面要素切分识别: elements and structured hierarchy.; Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+        "limitations": "Capabilities are attributed to Baidu. Benchmark scores and unlimited-length accuracy were not reproduced, and model licensing has not been reviewed.",
+        "local_source_sha256": "e6527045daa21fb87589fdfc80e8e468f26c581ee0d6c3ae8bbd2bfa00773874"
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "百度於10月27日公布並開源Unlimited OCR 2。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      },
+      {
+        "claim_zh": "公告描述原生版面識別及結構化輸出。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Section 一、原生版面要素切分识别: elements and structured hierarchy.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      },
+      {
+        "claim_zh": "公告描述跨頁表格合併並列出生產級能力公測。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "百度於10月27日公布並開源Unlimited OCR 2。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Publication timestamp 2026-10-27 09:58 and opening formal release paragraph.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      },
+      {
+        "claim_zh": "公告描述原生版面識別及結構化輸出。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Section 一、原生版面要素切分识别: elements and structured hierarchy.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      },
+      {
+        "claim_zh": "公告描述跨頁表格合併並列出生產級能力公測。",
+        "support_url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+        "evidence_locator": "Section 二、跨页表格识别合并; closing public-test invitation for production platform.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk — actual source reading and same-assistant second pass",
+    "reviewed_at_hkt": "2026-10-29T07:08:45+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
+      "second_pass_accessed_at_hkt": "2026-10-29T07:04:50+08:00",
+      "second_pass_source_sha256": "a2af478cd8ea7bd1edb7598c103fb93ecaec94227cd38ccec4bbe9b0c9096794",
+      "finding": "Second read confirmed date, layout/table features, repository links and separate public test. Removed SOTA, page-count absolutes and memory/performance guarantees. No claim that license permits every commercial use."
+    },
+    "review_notes": "Second read confirmed date, layout/table features, repository links and separate public test. Removed SOTA, page-count absolutes and memory/performance guarantees. No claim that license permits every commercial use.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 23,
+      "business_impact": 19,
+      "actionability": 18,
+      "market_relevance": 15,
+      "novelty": 8,
+      "total": 83
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://ai.baidu.com/support/news?action=detail&id=3290",
+    "title_zh_hant": "百度開源Unlimited OCR 2，主打長文件結構化及跨頁表格合併",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "能力按百度公告歸因；本刊未重現基準分數、未證實任何長度皆可正確處理，亦未完成模型授權審查。 三语统一保留来源日期、推出阶段、适用范围与归因；不把公告写成独立实测，不增加效果承诺。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
