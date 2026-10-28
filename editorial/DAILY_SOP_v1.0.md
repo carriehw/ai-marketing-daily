@@ -46,6 +46,23 @@ Produce a verified **HKT-dated edition of the website** with matching content, a
 6. **Newsletter and downstream social:** Never rename yesterday's edition to today. Generate the current English HTML EDM/payload only from the same `editorial_approved` site edition after actual release. Sending is owned by the separate private Outlook Power Automate workflow; the news task must never send duplicate email, change private account settings, or initiate social posting. Late publication may miss the prior 10:30 dispatch; report it as such, with no fabricated confirmation.
 7. **Progress versus success:** `source_read_candidates_count`, `release_ready_story_count`, `published_story_count` and `last_confirmed_live_edition` are different fields and must not be conflated. A successful scheduled automation run is not the same as a successful **website publication**. The day ends as `PUBLISHED & VERIFIED`, `ALREADY CURRENT — AUDITED`, `DRAFT — HELD`, or `FAILED`. Before declaring publication, verify live site bytes/edition and all mandatory controls; preserve a dated GitHub evidence and release trail.
 
+
+## B1b. Verification-first execution priorities (2026-10-28)
+
+This section refines B1a without changing the editorial floor, release gates, or existing schedule. Each run is independent and must inspect live state, main SHA, shared daily draft and evidence before acting.
+
+**Priority order:** P0 audit today's live edition; P1 finish source verification and independent claim challenge on the strongest existing candidates; P2 complete editorial approval and Traditional Chinese, Simplified Chinese and English parity; P3 prepare evidence, archive, search, newsletter payload, builds and technical/live acceptance; P4 discover additional stories only when fewer than ten can qualify from the existing pool. Candidate counts never substitute for ready counts.
+
+- **08:00:** Research and verification happen concurrently. Aim for a 20–25 item evidence-backed candidate pool only when the news cycle supports it, and aim for five fully checked story packets. Record actual counts, not aspirational numbers.
+- **08:45:** Prioritise converting existing strong candidates to at least ten independently fact-checked, editor-approved, fully localized release-ready stories. Do not restart discovery or expand candidates merely to hit a funnel target. Build and publish immediately if every gate passes.
+- **09:00–09:30:** This is an aspirational completion window, **not an additional scheduled run or a claim of continuous background work**. Complete publication within an active run when possible.
+- **09:45:** First audit live production and its archive. If not current, finish the exact missing editorial or build gates and publish only if all pass; otherwise persist a story-level blocker list and next actions for 10:45. Distinguish editorially ready from technically release-ready.
+- **10:45:** Recheck live edition and branch/main SHAs, then focus on the shortest path to ten genuinely ready stories and complete production acceptance. If still short, record final HELD and actual ready count; do not redate old stories or trigger duplicate EDM/social sends.
+
+**Per-story state machine:** candidate → source_read → claim_checked → independent_reviewed → editorial_approved → localized_reviewed → full_release_ready. A story only counts as full_release_ready when source locators, material-claim review, editorial approval, all three languages and relevant evidence/technical prerequisites are complete. A structural evidence checker alone never constitutes independent factual review.
+
+**Operational controls:** Persist candidate_count, source_read_count, independent_reviewed_count, editorial_approved_count, full_release_ready_count, published_count, last_confirmed_live_edition, blocker_by_story and next_actions in the shared date draft. Prebuild supporting assets as soon as editorial content is stable, but mark the newsletter payload approved only for the matching edition after publication/live acceptance. Re-read main and work-branch heads immediately before and after each write; stop on conflicts rather than overwrite newer work. No independent Outlook sends.
+
 ## B2. Three independent language editions (effective 2026-10-26)
 
 - The verified fact base remains `data.json` with Traditional Chinese and English fields. Do **not** invent a separate set of news claims to fill the Simplified Chinese edition. Maintain source, date, headline qualifiers, accessible product status and brand/legal terms identically in all three versions.
