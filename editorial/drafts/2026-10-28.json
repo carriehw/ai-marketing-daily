@@ -1,0 +1,497 @@
+{
+  "schema_version": "editorial-discovery-draft-v1.2",
+  "edition_date_hkt": "2026-10-28",
+  "status": "DRAFT_HELD",
+  "phase": "0800_first_pass",
+  "phase_0800_completed": true,
+  "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
+  "phase_saved_at_hkt": "2026-10-28T08:09:13.103+08:00",
+  "reference_head_sha": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
+  "reference_branch_head_sha_before_write": "323ff1ddce2b2108ed981e64bd194f7abd2653a5",
+  "confirmed_repo_previous_edition": "2026-10-27",
+  "confirmed_repo_previous_count": 10,
+  "last_confirmed_live_edition": null,
+  "last_confirmed_live_edition_note": "Live GitHub Pages URLs could not be fetched in this runtime; repository main data.json and archive/manifest.json both show 2026-10-27, and last Pages workflow succeeded 2026-10-27. Do not equate repo with live.",
+  "source_search_scope": "2026-10-23 to 2026-10-28 HKT, prioritizing Oct 26–27 releases; original event dates preserved; 2026-10-23 and older candidates only for exclusion/context unless real new development.",
+  "source_read_candidates_count": 19,
+  "tracked_candidates_count": 30,
+  "release_ready_story_count": 0,
+  "published_story_count_today": 0,
+  "hold_reason": "below_editorial_floor: 0 full stories with completed original source evidence, independent second-pass, bilingual/trilingual editorial and build/live QA; stage is first-pass, not final daily outcome.",
+  "blockers": [
+    "below_editorial_floor",
+    "Independent claim-level second pass not yet completed for candidates",
+    "Some original vendor methods, market availability and first-party campaign documents not accessed",
+    "Three-language build, editorial/check_evidence.py and live Pages verification not run",
+    "Direct live site/EDM fetch unavailable in this runtime; no deployment should be attempted"
+  ],
+  "source_groups_checked": [
+    "OpenAI first-party",
+    "Google/DeepMind first-party",
+    "Meta via AnyMind official partnership",
+    "Microsoft first-party",
+    "Global MarTech/advertising vendor releases",
+    "MARKETING-INTERACTIVE APAC",
+    "Digiday adtech/measurement",
+    "TechCrunch enterprise AI",
+    "Comcast/Universal Ads wire release",
+    "China advertising festival release",
+    "APAC agency and creative campaigns"
+  ],
+  "unsearched_source_groups": [
+    "TikTok for Business official product changelog and APAC rollout",
+    "Amazon Ads official updates",
+    "Tencent/Alibaba/ByteDance Chinese-language first-party announcements",
+    "Apple WebKit primary technical change log for 2026-10-19 identity rules",
+    "Independent original data/methodology for Aditude, Forrester, Smartly research",
+    "IAB Tech Lab / IAS / DoubleVerify recent standards and brand safety updates"
+  ],
+  "next_round_recommendations": [
+    "08:45: First check main SHA and today's daily branch, plus live 3-language site and archive; stop if another editor has published.",
+    "Prioritize AnyMind-Meta, Universal Ads, Smartly/Alter Agents, Bluefish and Brandi: reopen original documents, write atomic claim locators and independently challenge rollout and samples.",
+    "Locate Universal Ads official Business Wire, Smartly report methodology, Forrester original report, and Meta official political ads restriction if relevant.",
+    "Expand official TikTok, Amazon Ads, Tencent, Alibaba, Apple WebKit and APAC sources to find more distinct new developments, not duplicate 2026-10-27 stories.",
+    "Complete 10+ full bilingual story records with 1:1 Simplified Chinese caveat review; write editorial/evidence/2026-10-28.json only when factual packets exist.",
+    "Do not publish or mark Newsletter editorial_approved until all scripts, QA, production live cache-bypass and EDM payload/feed gates pass."
+  ],
+  "working_copy_drafts": [
+    {
+      "slug": "anymind-meta-live-commerce",
+      "zh_hant": {
+        "what": "AnyMind Group於10月27日宣布與Meta合作，讓品牌透過直播影片廣告連接直播購物；Facebook支援預計由2026年第四季開始，Instagram預計2027年初跟進。",
+        "why": "對經營東南亞社交電商與跨平台直播嘅品牌，值得檢視由廣告曝光到直播成交嘅旅程。",
+        "action": "先向供應商確認目標市場、帳戶資格、結帳路徑及衡量方式，再設計小規模測試。",
+        "uncertainties": "尚未核實逐市場開放名單、廣告主資格及實際成效。"
+      },
+      "en": {
+        "what": "On October 27, AnyMind Group announced a Meta partnership linking live video ads to livestream commerce. Facebook support is planned from Q4 2026, with Instagram to follow in early 2027.",
+        "why": "Brands running APAC social commerce can assess the journey from paid discovery to livestream purchases.",
+        "action": "Confirm eligible markets, accounts, checkout routes and measurement before a limited test.",
+        "uncertainties": "Market-by-market availability, eligibility and measured performance are not yet established."
+      },
+      "zh_hans": {
+        "what": "AnyMind Group于10月27日宣布与Meta合作，将直播视频广告与直播电商连接。Facebook预计从2026年第四季度开始支持，Instagram预计于2027年初跟进。",
+        "why": "在亚太市场开展社交电商的品牌可评估从广告触达到直播购买的完整链路。",
+        "action": "先确认适用市场、账户资格、结算路径和衡量方式，再进行小规模测试。",
+        "uncertainties": "各市场的实际开放范围、资格及效果尚待核实。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "smartly-alter-agents-study",
+      "zh_hant": {
+        "what": "Smartly與Alter Agents於10月27日公布一項涵蓋500名美英行銷從業員的調查，訪問於7月21日至31日進行；77%受訪者表示，當人類保留最終審批權時，對AI廣告感到安心。",
+        "why": "研究可協助團隊討論AI創意流程中的審批責任與披露政策。",
+        "action": "檢視內部AI素材審批、品牌一致性及披露準則。",
+        "uncertainties": "屬委託調查，樣本只涵蓋美英且受訪者至少有五年經驗，不能推論香港市場。"
+      },
+      "en": {
+        "what": "On October 27, Smartly and Alter Agents announced a survey of 500 US and UK marketers, fielded July 21–31. In the sample, 77% said they were comfortable with AI in advertising when humans retain final approval.",
+        "why": "The findings can inform discussion of AI creative approvals and disclosure governance.",
+        "action": "Review internal approval ownership, brand consistency and AI disclosure policies.",
+        "uncertainties": "This is commissioned survey research of US and UK professionals with at least five years of experience; it does not represent Hong Kong marketers."
+      },
+      "zh_hans": {
+        "what": "Smartly与Alter Agents于10月27日公布一项覆盖500名美国和英国营销从业者的调查，调研时间为7月21日至31日。77%的受访者表示，当人类保留最终审批权时，他们能够接受AI广告。",
+        "why": "结果可用于讨论AI创意流程中的审批责任和披露治理。",
+        "action": "检查内部审批职责、品牌一致性及AI内容披露规则。",
+        "uncertainties": "这是委托调查，样本仅覆盖美国和英国、且受访者至少拥有五年经验，不代表香港市场。"
+      },
+      "draft_only": true
+    },
+    {
+      "slug": "bluefish-paid-media",
+      "zh_hant": {
+        "what": "Bluefish於10月27日宣布將其Agentic Marketing Platform延伸至付費媒體，嘗試連接AI搜尋可見度、廣告及品牌衡量工作。",
+        "why": "GEO與付費廣告可能逐步形成共同規劃流程，值得留意指標能否互通。",
+        "action": "要求供應商提供支援平台、資料權限及歸因方法清單，再評估試用。",
+        "uncertainties": "官方公告未證明全平台普遍可用，亦未提供獨立成效驗證。"
+      },
+      "en": {
+        "what": "Bluefish announced on October 27 that its Agentic Marketing Platform is expanding into paid media, aiming to connect AI search visibility, advertising and brand measurement.",
+        "why": "GEO and paid media planning may converge, making metric compatibility worth evaluating.",
+        "action": "Request supported-platform, data-permission and attribution documentation before testing.",
+        "uncertainties": "The announcement does not establish universal availability or independently validated outcomes."
+      },
+      "zh_hans": {
+        "what": "Bluefish于10月27日宣布将其Agentic Marketing Platform扩展至付费媒体，计划连接AI搜索可见度、广告投放和品牌衡量。",
+        "why": "GEO与付费媒体规划可能逐步融合，值得评估指标能否打通。",
+        "action": "先向供应商索取支持的平台、数据权限和归因方法说明，再考虑测试。",
+        "uncertainties": "公告未证明全面开放或已有独立验证的成效。"
+      },
+      "draft_only": true
+    }
+  ],
+  "candidates": [
+    {
+      "slug": "anymind-meta-live-commerce",
+      "title_zh": "AnyMind與Meta合作連接社交廣告及直播電商，Facebook Q4起、Instagram明年初",
+      "source": "https://anymindgroup.com/news/press-release/anymind-meta-partnership-2026",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Official release Oct 27 / Facebook live video ads from Q4 2026; Instagram early 2027; AnyLive human/AI/hybrid",
+      "caveat": "屬合作與計劃開放時間；各市場、帳戶資格、實際GMV效益未核實。",
+      "relevance_provisional": 91,
+      "review_status": "source_read_first_pass_needs_second_pass"
+    },
+    {
+      "slug": "universal-ads-campaign-management",
+      "title_zh": "Comcast旗下Universal Ads推出Campaign Management合作類別，讓平台內採購電視廣告",
+      "source": "https://finance.yahoo.com/media-advertising/articles/universal-ads-brings-tv-buying-120000912.html",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Business Wire / 08:00 EDT Oct 27 / 12 launch partners / Campaign Management / API-first MCP-enabled",
+      "caveat": "原始Business Wire連結待定位；合作夥伴整合能力及地區、實際可用性不可推定全量。",
+      "relevance_provisional": 87,
+      "review_status": "search_result_read_original_wire_locator_pending"
+    },
+    {
+      "slug": "smartly-alter-agents-study",
+      "title_zh": "Smartly與Alter Agents公布500名英美行銷人員AI調查，強調人工審批",
+      "source": "https://www.prnewswire.com/news-releases/alter-agents-and-smartly-release-new-research-showing-99-of-marketers-use-ai-with-human-creativity-and-oversight-key-to-its-future-302920296.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Original commissioned research / July 21–31 online survey, 250 US + 250 UK, >=5 years experience; 77% final human approval, 81% disclosure trust",
+      "caveat": "99%包含個人或工作用途；樣本非全球或香港；報告封面顯示September 2026，10月27是公告日期。",
+      "relevance_provisional": 85,
+      "review_status": "source_read_first_pass_needs_methods_second_pass"
+    },
+    {
+      "slug": "bluefish-paid-media",
+      "title_zh": "Bluefish宣布將Agentic Marketing Platform延伸至付費媒體及AEO整合",
+      "source": "https://www.prnewswire.com/news-releases/bluefish-expands-agentic-marketing-platform-into-paid-media-to-unite-the-ai-marketing-funnel-302919793.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Bluefish press release 09:00 ET / four pillars AI Monitoring, Optimization, Orchestration, Measurement",
+      "caveat": "廠商宣稱；不能聲稱所有平台已可直接買廣告或已有獨立量化成效。",
+      "relevance_provisional": 83,
+      "review_status": "source_read_first_pass_needs_second_pass"
+    },
+    {
+      "slug": "brandi-geo-content-compass",
+      "title_zh": "Brandi AI公布Content Compass 2.0與Brand Voice等GEO內容及分析更新",
+      "source": "https://www.prnewswire.com/news-releases/brandi-ai-expands-its-ai-visibility-and-geo-platform-to-connect-narrative-intelligence-content-development-and-performance-measurement-302919902.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Brandi AI press release 06:10 ET / Content Compass 2.0 / Brand Voice / Collections / enhanced analytics",
+      "caveat": "GEO visibility metrics與歸因方式待查；不能保證AI回答引用或營收提升。",
+      "relevance_provisional": 80,
+      "review_status": "source_read_first_pass_needs_second_pass"
+    },
+    {
+      "slug": "forrester-aeo-brand-growth",
+      "title_zh": "Forrester AEO品牌成長研究經媒體報道，主張由曝光轉向品牌選擇",
+      "source": "https://production.marketing-interactive.com/your-brand-made-it-into-the-ai-answer-now-what",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE analysis Oct 27 / cites Forrester 'Turn AEO into brand growth'",
+      "caveat": "Forrester原報告日期、研究方法及全文未取得；分析不是全新產品公告。",
+      "relevance_provisional": 79,
+      "review_status": "hold_primary_report_not_read"
+    },
+    {
+      "slug": "apple-identity-ad-money-analysis",
+      "title_zh": "Digiday公布Apple Safari身分識別限制對廣告出價與eCPM影響圖表",
+      "source": "https://digiday.com/marketing/in-graphic-detail-what-apples-identity-block-means-for-the-ad-money/",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-19",
+      "source_locator": "Digiday Oct 27 / cites Aditude bid rates, eCPM, OpenX context; original Apple Oct 19 policy",
+      "caveat": "10月19政策及部分損失先前已報；新數字是樣本觀察非整個市場，須取得Aditude原始方法；法律私隱影響需審慎。",
+      "relevance_provisional": 84,
+      "review_status": "hold_new_metrics_require_original_method_and_duplicate_review"
+    },
+    {
+      "slug": "openai-oracle-apps-chatgpt",
+      "title_zh": "OpenAI與Oracle擴大合作，計劃將Oracle企業應用與資料帶入ChatGPT",
+      "source": "https://openai.com/index/oracle-apps-in-chatgpt/",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "OpenAI official Oct 27 / Working with Oracle in ChatGPT / Oracle AI Workspace developing / Oracle Marketplace US",
+      "caveat": "Oracle AI Workspace正在開發，不等於普遍推出；130k/95k用戶及時間節省屬Oracle報告，須歸因。",
+      "relevance_provisional": 72,
+      "review_status": "source_read_first_pass_needs_second_pass"
+    },
+    {
+      "slug": "google-genie-4",
+      "title_zh": "Google DeepMind公布Genie 4即時互動世界模型，僅向可信測試者初步推出",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Google Blog Oct 27 / limited trusted testers; Project Genie Ultra 'coming soon'",
+      "caveat": "與行銷創意直接應用尚屬推論；未普遍可用、不能當成現成廣告生成工具。",
+      "relevance_provisional": 64,
+      "review_status": "source_read_first_pass_low_marketer_priority"
+    },
+    {
+      "slug": "microsoft-kantar-link-ai-case",
+      "title_zh": "Microsoft分享Kantar LINK AI接入廣告創意評估工作流案例",
+      "source": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Microsoft official blog Oct 27 / Microsoft IQ compounds and protects your intelligence / Kantar LINK AI",
+      "caveat": "20倍速度與4倍成本差異屬個案當事方聲稱；需核對Kantar原始案例與測量基準；可能並非10月27新推出。",
+      "relevance_provisional": 69,
+      "review_status": "hold_original_case_and_event_date_pending"
+    },
+    {
+      "slug": "mcdonalds-fifa-32-year-end",
+      "title_zh": "McDonald’s結束長達32年FIFA世界盃合作，調整體育行銷資源",
+      "source": "https://www.marketing-interactive.com/mcdonald-s-ends-32-year-fifa-world-cup-partnership",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / partnership decision and marketing performance review",
+      "caveat": "需McDonald's或FIFA正式聲明核對合約終止與適用屆別；非AI或MarTech核心。",
+      "relevance_provisional": 67,
+      "review_status": "source_read_first_pass_needs_primary"
+    },
+    {
+      "slug": "mastercard-mrbeast-creator-commerce",
+      "title_zh": "Mastercard與MrBeast推出創作者商業化合作倡議",
+      "source": "https://www.marketing-interactive.com/mastercard-and-mrbeast-want-creators-to-cash-in-on-more-than-views",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / creator brand engagement and entrepreneurship initiatives",
+      "caveat": "需Mastercard官方公告核對具體計劃、開放市場及實施時間。",
+      "relevance_provisional": 73,
+      "review_status": "source_read_first_pass_needs_primary"
+    },
+    {
+      "slug": "aleph-india-country-head",
+      "title_zh": "Aleph委任Medhavi Singh為印度Country Head，擴展廣告與零售媒體合作",
+      "source": "https://www.business-standard.com/amp/content/press-releases-ani/aleph-appoints-digital-commerce-leader-medhavi-singh-as-country-head-to-accelerate-india-s-next-phase-of-growth-126102800054_1.html",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "BusinessWire India release Oct 27 / Medhavi Singh / former Criteo India leader",
+      "caveat": "商業領導人事消息，較低行動價值；須定位Aleph第一手新聞稿。",
+      "relevance_provisional": 60,
+      "review_status": "search_result_only_need_original"
+    },
+    {
+      "slug": "dataxet-new-ceo",
+      "title_zh": "東南亞媒體情報公司Dataxet任命新CEO",
+      "source": "https://www.marketing-interactive.com/dataxet-names-new-ceo",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / media intelligence / AI products",
+      "caveat": "需要公司聲明、姓名職務及具體產品進展，單一人事未足完整新聞價值。",
+      "relevance_provisional": 55,
+      "review_status": "source_read_first_pass_needs_primary"
+    },
+    {
+      "slug": "maybank-scam-calligraphy",
+      "title_zh": "Maybank新加坡以書法視覺創意宣傳反詐騙",
+      "source": "https://www.marketing-interactive.com/maybank-singapore-turns-scam-tactics-into-calligraphy-artworks",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / calligraphy artwork / scam loss amounts",
+      "caveat": "需品牌官方素材及金額出處；適合品牌案例，未證明成效。",
+      "relevance_provisional": 63,
+      "review_status": "source_read_first_pass_needs_campaign_primary"
+    },
+    {
+      "slug": "enterprisesg-sme-campaign",
+      "title_zh": "EnterpriseSG推出咖啡主題中小企活動，推動企業討論未來策略",
+      "source": "https://www.marketing-interactive.com/enterprisesg-brews-up-big-questions-for-singapore-s-smes",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / What's next? campaign / five blends",
+      "caveat": "偏品牌活動案例；須官方品牌/機構公告與日期。",
+      "relevance_provisional": 55,
+      "review_status": "source_read_first_pass_needs_primary"
+    },
+    {
+      "slug": "bcf-campaign-singapore",
+      "title_zh": "新加坡Breast Cancer Foundation以患者生活故事推出品牌倡議",
+      "source": "https://www.marketing-interactive.com/breast-cancer-foundation-captures-the-moments-a-diagnosis-can-t-define",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE Oct 27 / campaign storytelling",
+      "caveat": "須核對基金會官方素材、創意執行及避免將公益宣傳效果當成實測。",
+      "relevance_provisional": 53,
+      "review_status": "source_read_first_pass_needs_primary"
+    },
+    {
+      "slug": "mcdonalds-mcgriddles-tobyato",
+      "title_zh": "新加坡McDonald’s與Tobyato推出McGriddles文化聯名",
+      "source": "https://www.marketing-interactive.com/news",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "MARKETING-INTERACTIVE news listing Oct 27 / 'Love McGriddles enough to wear it?'",
+      "caveat": "僅查閱分類索引，尚未讀文章全文；單一品牌活動較低MarTech相關性。",
+      "relevance_provisional": 50,
+      "review_status": "search_listing_only"
+    },
+    {
+      "slug": "appier-global-marketing-vp",
+      "title_zh": "Appier任命Sanam Lou為全球行銷副總裁",
+      "source": "https://www.prnewswire.com/news-releases/appier-appoints-sanam-lou-as-vp-of-global-marketing-to-drive-next-phase-of-market-leadership-302920514.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Appier press release 05:18 ET / EMEA APAC US / planned London office",
+      "caveat": "人事新聞非平台功能；倫敦辦公室仍為計劃，不能稱已開幕。",
+      "relevance_provisional": 58,
+      "review_status": "source_read_first_pass_low_priority"
+    },
+    {
+      "slug": "acoustic-qks-matrix",
+      "title_zh": "QKS Group公布2026多渠道行銷平台評比，Acoustic列入Leader",
+      "source": "https://www.prnewswire.com/news-releases/acoustic-positioned-as-a-leader-in-the-spark-matrix-multichannel-marketing-hubs-2026-by-qks-group-302920712.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "QKS Group press release 08:25 ET / SPARK Matrix Multichannel Marketing Hubs",
+      "caveat": "研究方法與比較範圍未取得，廠商評級可能有利益關係；不作客觀第一名。",
+      "relevance_provisional": 52,
+      "review_status": "search_result_only_needs_original_method"
+    },
+    {
+      "slug": "gargle-marketing-app",
+      "title_zh": "Gargle推出牙科診所行銷表現儀表板應用程式",
+      "source": "https://www.prnewswire.com/news-releases/gargle-launches-new-client-app-giving-dental-practices-greater-visibility-into-their-marketing-performance-302919008.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Gargle press release 15:43 ET / marketing dashboard",
+      "caveat": "垂直牙科用途、缺乏跨行業適用性；來源只支持廠商發布。",
+      "relevance_provisional": 48,
+      "review_status": "hold_low_relevance"
+    },
+    {
+      "slug": "ndoc-ai-workspace-alpha",
+      "title_zh": "前Meta AI主管推出Ndoc協作工作區alpha，企業試點中",
+      "source": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "TechCrunch exclusive 07:59 PDT Oct 27 / enterprise pilot / limited alpha",
+      "caveat": "不是正式全面上市，仍缺官方產品詳情；行銷團隊直接影響有限。",
+      "relevance_provisional": 54,
+      "review_status": "source_read_first_pass_alpha_only"
+    },
+    {
+      "slug": "cuttable-ai-creative-platform",
+      "title_zh": "澳洲Cuttable更新AI廣告創意平台並公布A$2000萬A輪",
+      "source": "https://www.prnewswire.com/news-releases/cuttable-unveils-next-generation-ai-advertising-platform-as-us-expansion-accelerates-302916612.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-23",
+      "event_date": "2026-10-23",
+      "source_locator": "Cuttable press release Oct 23 / creative testing / A$20m Series A",
+      "caveat": "距今5日且無新進展；40%美國收入佔比屬廠商聲稱，須查財務來源。",
+      "relevance_provisional": 69,
+      "review_status": "hold_stale_no_new_development"
+    },
+    {
+      "slug": "klook-meta-muse-travel",
+      "title_zh": "Klook與Meta Muse旅遊代理整合",
+      "source": "https://production.marketing-interactive.com/klook-and-meta-put-ai-in-the-travel-agent-s-seat",
+      "source_class": "B",
+      "first_published_date": "2026-10-23",
+      "event_date": "2026-10-23",
+      "source_locator": "MARKETING-INTERACTIVE Oct 23 / Muse Japan launch / Klook bookable inventory",
+      "caveat": "seen-urls 2026-10-23已收錄；嚴禁重刊。",
+      "relevance_provisional": 82,
+      "review_status": "rejected_duplicate_seen_2026_10_23"
+    },
+    {
+      "slug": "coca-cola-wpp-review",
+      "title_zh": "可口可樂全球媒體比稿結果：WPP保留多數市場、Omnicom獲北美",
+      "source": "https://production.marketing-interactive.com/coca-cola-global-media-shake-up-leaves-wpp-holding-the-lions-share",
+      "source_class": "B",
+      "first_published_date": "2026-10-23",
+      "event_date": "2026-10-23",
+      "source_locator": "MARKETING-INTERACTIVE Oct 23 / WPP Open X / North America Omnicom / phased Dec 1",
+      "caveat": "seen-urls 2026-10-23及10-26已有同一事件，沒有新進展不可重刊。",
+      "relevance_provisional": 83,
+      "review_status": "rejected_duplicate_seen_2026_10_23_26"
+    },
+    {
+      "slug": "stagwell-freestar-digiday-followup",
+      "title_zh": "Digiday分析Stagwell收購Freestar的買賣雙邊透明度問題",
+      "source": "https://digiday.com/media-buying/ad-tech-briefing-stagwells-freestar-deal-brings-buying-and-selling-under-one-roof/",
+      "source_class": "B",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-26",
+      "source_locator": "Digiday+ Ad Tech Briefing Oct 27 / deal originally Oct 26 / transparency analysis",
+      "caveat": "2026-10-27已正式刊登收購，評論非新交易；會員付費內容不可推測未見段落。",
+      "relevance_provisional": 70,
+      "review_status": "rejected_duplicate_2026_10_27"
+    },
+    {
+      "slug": "china-advertising-festival-2026",
+      "title_zh": "第33屆中國國際廣告節於北京海淀舉行，主題數智與全球合作",
+      "source": "https://www.prnewswire.com/news-releases/empowered-by-digital-intelligence-fueling-global-collaboration--the-33rd-china-international-advertising-festival-convened-in-haidian-beijing-302920784.html",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-23",
+      "source_locator": "Organizer press release Oct 27 / event Oct 23–25 / forums and exhibitions",
+      "caveat": "活動已於23–25日結束，尚未見獨立具體新產品或數據；不以活動數字湊稿。",
+      "relevance_provisional": 56,
+      "review_status": "hold_event_recap_no_material_development"
+    },
+    {
+      "slug": "adzymic-agenx-sg",
+      "title_zh": "Adzymic向AI買家開放新加坡優質媒體廣告庫存",
+      "source": "https://www.marketing-interactive.com/adzymic-opens-singapore-ad-inventory-to-ai-buyers",
+      "source_class": "B",
+      "first_published_date": "2026-10-21",
+      "event_date": "2026-10-21",
+      "source_locator": "MARKETING-INTERACTIVE Oct 21 / AgenX Sales Agent / APX",
+      "caveat": "超過5日且沒有新增公告；先前可能已報，不以舊聞湊數。",
+      "relevance_provisional": 76,
+      "review_status": "rejected_outside_freshness_window"
+    },
+    {
+      "slug": "meta-us-political-ad-restriction",
+      "title_zh": "Meta美國政治及社會議題廣告限制期於10月27日開始",
+      "source": "https://adsuploader.com/blog/meta-ads-updates",
+      "source_class": "C",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Third-party compilation / restriction Oct 27–Nov 3 PT",
+      "caveat": "尚未找到Meta官方開發者公告或政策原文；法律政治廣告高風險，暫不發布。",
+      "relevance_provisional": 71,
+      "review_status": "hold_primary_policy_missing_human_review"
+    },
+    {
+      "slug": "microsoft-frontier-overview",
+      "title_zh": "Microsoft公布企業Copilot與Agent 365客戶案例彙編",
+      "source": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
+      "source_class": "A",
+      "first_published_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "source_locator": "Microsoft official Oct 27 / customer case roundup",
+      "caveat": "多項個案可能先前發布，非單一新產品；不拆成多篇湊數，僅保留Kantar相關核查。",
+      "relevance_provisional": 58,
+      "review_status": "hold_roundup_not_new_product"
+    }
+  ],
+  "editorial_decision": "hold_all_pending_second_pass",
+  "newsletter_payload_status": "HELD",
+  "outlook_send_triggered": false,
+  "social_publish_triggered": false,
+  "notes": [
+    "Candidate count is research funnel, not verified story count.",
+    "Provisional relevance numbers are triage only; Constitution ranking applies after fact checking.",
+    "Existing 2026-10-27 main edition is 10 stories, replacing the stale 2026-10-26 status in the previous run's report.",
+    "No production files, archive, EDM or user/private flows changed."
+  ]
+}
