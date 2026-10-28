@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-10-29",
-  "created_at_hkt": "2026-10-29T07:09:19+08:00",
+  "created_at_hkt": "2026-10-29T07:12:04+08:00",
   "main_read_sha": "919184e08183dd25c94856112fea4153bf6164b6",
   "release_receipt_at_start": "404: no October 29 receipt",
   "published_data_at_start": "2026-10-28",
@@ -19,5 +19,12 @@
     "clorox": "Oct26 dated recap of Oct22 remarks; not recast as today launch; no causal ROI claim.",
     "mai-image": "Editing preview only; rankings omitted, generation forthcoming.",
     "triton-seller": "Vendor case only; prior human guardrails; no industry-first or speed/ROI proof."
+  },
+  "ci_recovery": {
+    "failed_run_id": 40785362229,
+    "failed_job_id": 123157080722,
+    "failure": "Browser QA assertion: supporting source missing from source metadata. All 12 input stories used canonical original sources but no public verification_url.",
+    "fix": "Read and reopened official Google Connected Apps developer overview; added it to Google story evidence and public source metadata. No validator or threshold changed.",
+    "next_action": "Submit corrected packet and repeat unchanged gates."
   }
 }

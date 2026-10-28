@@ -29,7 +29,10 @@
     "region": "國際",
     "action": "影響生意",
     "action_en": "Business Impact",
-    "editorial_slug": "google-apps"
+    "editorial_slug": "google-apps",
+    "verification_url": "https://developers.google.com/connected-apps",
+    "verification_label": "Google開發者文件",
+    "verification_label_en": "Google developer documentation"
   },
   "evidence": {
     "story_id": "2026-10-29-google-apps",
@@ -51,6 +54,18 @@
         "evidence_locator": "Opening announcement paragraph, dated Oct 28: preview of Connected Apps Platform.; Manage Connected Apps with ease, first paragraph: cloud-hosted MCP server / Android MCP / AppFunctions APIs.; Manage Connected Apps with ease: surface selection before review and traffic, latency, error-rate reporting.",
         "limitations": "This is a phased preview. The announcement does not provide a full market list or guarantee traffic or sales.",
         "local_source_sha256": "44079f26123d4385b6be33fa5ea46bf0bbde06a716e4b840e17be311e6d0c129"
+      },
+      {
+        "url": "https://developers.google.com/connected-apps",
+        "publisher": "Google for Developers",
+        "source_class": "A",
+        "source_publication_date": null,
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-10-29T07:11:31+08:00",
+        "access_method": "Direct HTTPS full documentation read, then separate request reopened.",
+        "evidence_locator": "Overview of the Connected Apps Platform; MCP server; Android MCP; Register and manage. Confirms preview application, MCP/AppFunctions paths and Console review/publishing.",
+        "limitations": "Same issuer documentation, not independent performance corroboration; publication date not stated on this overview.",
+        "local_source_sha256": "3d5396f6a41730a9783334c5f895555f8ae7819ffd007e8aa20dd378beb81e15"
       }
     ],
     "claims": [
@@ -111,9 +126,15 @@
       "method": "Same assistant reopened the original URL in a separate HTTPS request and challenged source/date/status/claim scope. No separate human, independent agent, trial or independent performance validation is claimed.",
       "second_pass_accessed_at_hkt": "2026-10-29T07:04:08+08:00",
       "second_pass_source_sha256": "44079f26123d4385b6be33fa5ea46bf0bbde06a716e4b840e17be311e6d0c129",
-      "finding": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current."
+      "finding": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current.",
+      "supplementary_document_review": {
+        "url": "https://developers.google.com/connected-apps",
+        "accessed_at_hkt": "2026-10-29T07:11:35+08:00",
+        "source_sha256": "c6375151a6f08f9605e501644e5a88035da9de57d0cc4def401fe294d9f0899d",
+        "finding": "Reopened and inspected full developer overview. Confirms preview application, remote MCP / Android AppFunctions, authorization and Console registration/review. No new capability claim added."
+      }
     },
-    "review_notes": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current.",
+    "review_notes": "Reopened the full original. Preserved preview and phased access; omitted unsupported worldwide availability and app-selection or revenue guarantees. Search rollout is future, Gemini partner availability is current. Added actual reviewed developer documentation as visible supporting source in metadata after browser QA reported no supporting link in this all-primary-source edition.",
     "editorial_decision": "approved",
     "needs_human_review": false,
     "editorial_relevance_score": {
