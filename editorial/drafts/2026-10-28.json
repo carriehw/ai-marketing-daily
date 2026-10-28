@@ -2,7 +2,7 @@
   "schema_version": "editorial-discovery-draft-v1.2",
   "edition_date_hkt": "2026-10-28",
   "status": "DRAFT_HELD",
-  "phase": "1004_source_evidence_handoff",
+  "phase": "editorial_reranking_provisional_2026_10_28",
   "phase_0800_completed": true,
   "phase_started_at_hkt": "2026-10-28T08:06:08+08:00",
   "phase_saved_at_hkt": "2026-10-28T09:43:00+08:00",
@@ -1296,5 +1296,329 @@
       }
     ],
     "publication_status_unchanged": "DRAFT_HELD"
-  }
+  },
+  "editorial_reranking_2026_10_28": {
+    "status": "PROVISIONAL_RE_RANK_COMPLETED_FINAL_SELECTION_HELD",
+    "reviewed_at": "2026-10-28",
+    "main_edition_seen": "2026-10-27",
+    "source": "GitHub existing 31 candidates + independently inspected Digiday Oct27 Apple article + Forrester official Aug28 report",
+    "method": "Prioritize concrete advertiser impact, new material facts, originality, timeliness, geography and source completeness; rankings are editorial triage, NOT Constitution verified relevance scores",
+    "ranked_existing_candidates": [
+      {
+        "slug": "apple-identity-ad-money-analysis",
+        "title": "Digiday公布Apple Safari身分識別限制對廣告出價與eCPM影響圖表",
+        "provisional_priority": 96,
+        "original_relevance": 84,
+        "decision": "PRIORITY_VERIFY_PRIMARY_METRICS",
+        "verification_status": "hold_new_metrics_require_original_method_and_duplicate_review",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "anymind-meta-live-commerce",
+        "title": "AnyMind與Meta合作連接社交廣告及直播電商，Facebook Q4起、Instagram明年初",
+        "provisional_priority": 92,
+        "original_relevance": 91,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_reopened_claims_challenged_independent_approval_pending",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "title": "Comcast旗下Universal Ads推出Campaign Management合作類別，讓平台內採購電視廣告",
+        "provisional_priority": 88,
+        "original_relevance": 87,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "wire_source_read_original_canonical_direct_inaccessible",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "title": "Smartly與Alter Agents公布500名英美行銷人員AI調查，強調人工審批",
+        "provisional_priority": 86,
+        "original_relevance": 85,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_reopened_claims_challenged_independent_approval_pending",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "title": "Bluefish宣布將Agentic Marketing Platform延伸至付費媒體及AEO整合",
+        "provisional_priority": 84,
+        "original_relevance": 83,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_reopened_claims_challenged_independent_approval_pending",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "coca-cola-wpp-review",
+        "title": "可口可樂全球媒體比稿結果：WPP保留多數市場、Omnicom獲北美",
+        "provisional_priority": 83,
+        "original_relevance": 83,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "rejected_duplicate_seen_2026_10_23_26",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "klook-meta-muse-travel",
+        "title": "Klook與Meta Muse旅遊代理整合",
+        "provisional_priority": 82,
+        "original_relevance": 82,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "rejected_duplicate_seen_2026_10_23",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "title": "Brandi AI公布Content Compass 2.0與Brand Voice等GEO內容及分析更新",
+        "provisional_priority": 81,
+        "original_relevance": 80,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_reopened_claims_challenged_independent_approval_pending",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "title": "OpenAI與Oracle擴大合作，計劃將Oracle企業應用與資料帶入ChatGPT",
+        "provisional_priority": 76,
+        "original_relevance": 72,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "dual_first_party_review_workspace_development_not_launch",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "adzymic-agenx-sg",
+        "title": "Adzymic向AI買家開放新加坡優質媒體廣告庫存",
+        "provisional_priority": 76,
+        "original_relevance": 76,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "rejected_outside_freshness_window",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "title": "新加坡SWITCH 2026公布企業AI推動進展，24家首批企業及中小企工作坊待官方核實",
+        "provisional_priority": 74,
+        "original_relevance": 71,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_original_official_speech_plus_independent_trade_details_not_primary_confirmed",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "forrester-aeo-brand-growth",
+        "title": "Forrester AEO品牌成長研究經媒體報道，主張由曝光轉向品牌選擇",
+        "provisional_priority": 73,
+        "original_relevance": 79,
+        "decision": "HOLD_NEEDS_NEW_OCTOBER_DEVELOPMENT",
+        "verification_status": "hold_primary_report_not_read",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "microsoft-kantar-link-ai-case",
+        "title": "Microsoft分享Kantar LINK AI接入廣告創意評估工作流案例",
+        "provisional_priority": 71,
+        "original_relevance": 69,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "hold_original_case_and_event_date_pending",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "meta-us-political-ad-restriction",
+        "title": "Meta美國政治及社會議題廣告限制期於10月27日開始",
+        "provisional_priority": 71,
+        "original_relevance": 71,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "hold_primary_policy_missing_human_review",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "stagwell-freestar-digiday-followup",
+        "title": "Digiday分析Stagwell收購Freestar的買賣雙邊透明度問題",
+        "provisional_priority": 70,
+        "original_relevance": 70,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "rejected_duplicate_2026_10_27",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "cuttable-ai-creative-platform",
+        "title": "澳洲Cuttable更新AI廣告創意平台並公布A$2000萬A輪",
+        "provisional_priority": 69,
+        "original_relevance": 69,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "hold_stale_no_new_development",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "mcdonalds-fifa-32-year-end",
+        "title": "McDonald’s結束長達32年FIFA世界盃合作，調整體育行銷資源",
+        "provisional_priority": 67,
+        "original_relevance": 67,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_needs_primary",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "mastercard-mrbeast-creator-commerce",
+        "title": "Mastercard與MrBeast推出創作者商業化合作倡議",
+        "provisional_priority": 66,
+        "original_relevance": 73,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_source_read_oct26_followup_low_priority",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "google-genie-4",
+        "title": "Google DeepMind公布Genie 4即時互動世界模型，僅向可信測試者初步推出",
+        "provisional_priority": 62,
+        "original_relevance": 64,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "primary_and_trade_read_research_preview_low_priority",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "aleph-india-country-head",
+        "title": "Aleph委任Medhavi Singh為印度Country Head，擴展廣告與零售媒體合作",
+        "provisional_priority": 60,
+        "original_relevance": 60,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "search_result_only_need_original",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "title": "Maybank新加坡以書法視覺創意宣傳反詐騙",
+        "provisional_priority": 58,
+        "original_relevance": 63,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_needs_campaign_primary",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "appier-global-marketing-vp",
+        "title": "Appier任命Sanam Lou為全球行銷副總裁",
+        "provisional_priority": 58,
+        "original_relevance": 58,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_low_priority",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "microsoft-frontier-overview",
+        "title": "Microsoft公布企業Copilot與Agent 365客戶案例彙編",
+        "provisional_priority": 58,
+        "original_relevance": 58,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "hold_roundup_not_new_product",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "china-advertising-festival-2026",
+        "title": "第33屆中國國際廣告節於北京海淀舉行，主題數智與全球合作",
+        "provisional_priority": 56,
+        "original_relevance": 56,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "hold_event_recap_no_material_development",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "dataxet-new-ceo",
+        "title": "東南亞媒體情報公司Dataxet任命新CEO",
+        "provisional_priority": 55,
+        "original_relevance": 55,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_needs_primary",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "enterprisesg-sme-campaign",
+        "title": "EnterpriseSG推出咖啡主題中小企活動，推動企業討論未來策略",
+        "provisional_priority": 55,
+        "original_relevance": 55,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_needs_primary",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "ndoc-ai-workspace-alpha",
+        "title": "前Meta AI主管推出Ndoc協作工作區alpha，企業試點中",
+        "provisional_priority": 54,
+        "original_relevance": 54,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_alpha_only",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "bcf-campaign-singapore",
+        "title": "新加坡Breast Cancer Foundation以患者生活故事推出品牌倡議",
+        "provisional_priority": 53,
+        "original_relevance": 53,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "source_read_first_pass_needs_primary",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "acoustic-qks-matrix",
+        "title": "QKS Group公布2026多渠道行銷平台評比，Acoustic列入Leader",
+        "provisional_priority": 52,
+        "original_relevance": 52,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "search_result_only_needs_original_method",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "mcdonalds-mcgriddles-tobyato",
+        "title": "新加坡McDonald’s與Tobyato推出McGriddles文化聯名",
+        "provisional_priority": 50,
+        "original_relevance": 50,
+        "decision": "PRIORITY_VERIFY",
+        "verification_status": "search_listing_only",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      },
+      {
+        "slug": "gargle-marketing-app",
+        "title": "Gargle推出牙科診所行銷表現儀表板應用程式",
+        "provisional_priority": 48,
+        "original_relevance": 48,
+        "decision": "HOLD_EXCLUDE_PENDING_NEW_FACT",
+        "verification_status": "hold_low_relevance",
+        "selection_status": "NOT_EDITORIAL_APPROVED"
+      }
+    ],
+    "additional_candidate": {
+      "slug": "meta-commercial-terms-crawling-deadline-extension",
+      "decision": "VERIFY_OFFICIAL_EFFECTIVE_DATE_AND_EXACT_POLICY_CHANGE",
+      "status": "NOT_READY_NOT_COUNTED",
+      "note": "Possible new material change; distinguish previously reported Oct30 terms from newly reported delay"
+    },
+    "priority_shortlist": [
+      "apple-identity-ad-money-analysis",
+      "anymind-meta-live-commerce",
+      "universal-ads-campaign-management",
+      "smartly-alter-agents-study",
+      "bluefish-paid-media",
+      "brandi-geo-content-compass",
+      "openai-oracle-apps-chatgpt",
+      "singapore-switch-ai-enterprise-programmes",
+      "microsoft-kantar-link-ai-case",
+      "meta-us-political-ad-restriction",
+      "mcdonalds-fifa-32-year-end",
+      "mastercard-mrbeast-creator-commerce",
+      "google-genie-4"
+    ],
+    "editorial_notes": [
+      "Apple Oct27 Digiday reports sample-specific iOS bid rate changes, distinguish cited vendors' data from market-wide findings and Oct19 Apple announcement; may qualify as follow-up if earlier edition covered same change.",
+      "Forrester official AEO landscape report is dated Aug28, not itself new on Oct28; hold unless distinct current study/report/new event independently established.",
+      "No final selection or new full_release_ready count until primary claim-level evidence, independent second-pass, editorial approval and translation parity.",
+      "Preserve all 10 existing translated working drafts without treating translation as an editorial selection vote.",
+      "Do not revive duplicate Klook, Coca-Cola or Stagwell stories absent demonstrable material new fact."
+    ]
+  },
+  "next_actions_editorial_rerank": [
+    "Verify Apple original October 19 Safari WebKit policy and Digiday Oct27 underlying bidder datasets/measurement windows; cross-check overlap with previous editions",
+    "Check Meta commercial terms original and any official postponement; only then consider adding to eligible pool",
+    "Verify Universal Ads canonical primary release and marketing availability; complete independent second pass on AnyMind, Smartly, Bluefish, Brandi, Oracle, Singapore SWITCH",
+    "Verify whether Forrester coverage has an actual new Oct26-28 study, otherwise exclude as stale",
+    "Record per-story evidence, independent second-pass review and editorial approval before locking 10+ and finishing trilingual localization",
+    "Build and publish only after full editorial and CI/live gates"
+  ]
 }
