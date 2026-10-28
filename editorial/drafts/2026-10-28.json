@@ -2249,5 +2249,89 @@
       "Resolve methods/availability gaps or remove unsupported claims",
       "Complete formal evidence JSON, tri-language review, editorial approvals, official builds and live gates before publishing"
     ]
+  },
+  "editorial_case_closure_20261028": {
+    "scope": "existing candidates only; no discovery",
+    "reviewed_count": 14,
+    "decisions": [
+      {
+        "slug": "singapore-switch-ai-enterprise-programmes",
+        "status": "FACTS_VERIFIED_EDITORIAL_COPY_REVIEW_PENDING",
+        "note": "Official Oct27 speech §16 says first cohort 24; §25 says close to 300 workshop participants. Independent The Edge report referenced in previous audit; do not merge >280 pilots into cohort."
+      },
+      {
+        "slug": "google-genie-4",
+        "status": "FACTS_VERIFIED_PREVIEW_QUALIFIED_EDITORIAL_COPY_REVIEW_PENDING",
+        "note": "DeepMind Oct27 and Ars Technica Oct27 support research preview for trusted testers, no general access; native audio and interactive world simulation announced; marketing relevance secondary."
+      },
+      {
+        "slug": "anymind-meta-live-commerce",
+        "status": "CLAIMS_VERIFIED_AS_ANNOUNCEMENT_SECONDARY_INDEPENDENCE_LIMITED",
+        "note": "Facebook Q4 2026 and Instagram early 2027 planned; independent rollout not verified."
+      },
+      {
+        "slug": "smartly-alter-agents-study",
+        "status": "ATTRIBUTED_SURVEY_CLAIMS_VERIFIED_METHOD_LIMIT",
+        "note": "N=500 US/UK, July21–31, 77% with human final approval; full methods unavailable."
+      },
+      {
+        "slug": "universal-ads-campaign-management",
+        "status": "ANNOUNCEMENT_ONLY_INDEPENDENCE_LIMITED",
+        "note": "12 named launch partners not 12 active integrations."
+      },
+      {
+        "slug": "bluefish-paid-media",
+        "status": "ANNOUNCEMENT_ONLY_INDEPENDENCE_LIMITED",
+        "note": "Paid Media Briefs announced; vendor-only performance claims excluded."
+      },
+      {
+        "slug": "brandi-geo-content-compass",
+        "status": "ANNOUNCEMENT_ONLY_INDEPENDENCE_LIMITED",
+        "note": "Feature announcements confirmed, ROI unverified."
+      },
+      {
+        "slug": "openai-oracle-apps-chatgpt",
+        "status": "TWO_FIRST_PARTIES_INDEPENDENCE_LIMITED",
+        "note": "AI Workspace in development; no general launch."
+      },
+      {
+        "slug": "mastercard-mrbeast-creator-commerce",
+        "status": "ANNOUNCEMENT_ONLY",
+        "note": "Oct26 planned programmes; no live product."
+      },
+      {
+        "slug": "maybank-scam-calligraphy",
+        "status": "CAMPAIGN_PRIMARY_PENDING",
+        "note": "Need bank/agency original campaign proof."
+      },
+      {
+        "slug": "apple-identity-ad-money-analysis",
+        "status": "HELD_ORIGINAL_METHOD",
+        "note": "Underlying dataset/method and Oct27 newness missing."
+      },
+      {
+        "slug": "forrester-aeo-brand-growth",
+        "status": "HELD_PRIMARY_REPORT",
+        "note": "Original report not inspected."
+      },
+      {
+        "slug": "meta-us-political-ad-restriction",
+        "status": "HELD_OFFICIAL_POLICY",
+        "note": "Primary Meta policy and exact scope missing."
+      },
+      {
+        "slug": "mcdonalds-fifa-32-year-end",
+        "status": "HELD_UNCONFIRMED",
+        "note": "Trade report uses reportedly, no contract-party confirmation."
+      }
+    ],
+    "formal_release_ready_count": 0,
+    "editorial_release_decision": "HELD",
+    "reason": "Independent corroboration and/or primary methods still missing for many; no full evidence/three-language build and CI/live acceptance.",
+    "source_checks": [
+      "https://www.meti.gov.sg/newsroom/delivered-speech-by-deputy-prime-minister-and-minister-for-energy--trade-and-industry--trade--gan-kim-yong-at-switch-2026-opening-ceremony/",
+      "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/"
+    ]
   }
 }
