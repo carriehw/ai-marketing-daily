@@ -51,7 +51,9 @@ def run(data, today_md, strict=True, same_day_verified_urls=None):
     # --- 1. 每則都要有可解析的 time，且不得等於今日（今日發表的新聞當然存在，
     #        只是 2026-10-26 那一輪的「今日」全部是填空的預設值，所以這裡要求
     #        明示：若真有今日新聞，把它的 url 加進 ALLOW_TODAY 並寫明核實來源）
-    # Only evidence with a specifically recorded publication date may allow a true same-day story.\n    # The evidence document must be reviewed; this is structural checking, not a substitute for source inspection.\n    ALLOW_TODAY = set(same_day_verified_urls or [])
+    # Only reviewed evidence with an explicit source publication date permits a
+    # same-day story. This structural check does not replace source inspection.
+    ALLOW_TODAY = set(same_day_verified_urls or [])
     for i, it in enumerate(items, 1):
         checks += 1
         tm = md(str(it.get("time", "")))
@@ -182,7 +184,7 @@ def main():
         print(f"\n{checks - len(fails)} pass / {len(fails)} fail")
         return 1
 
-    print(f"  PASS 全部 {len(data['items'])} 則：time 可解析、不等於今日、"
+    print(f"  PASS 全部 {len(data['items'])} 則：time 可解析、當日日期已有覆核依據、"
           f"內文無超前日期、無失錨的相對時間詞、followup 時序正確、無禁用轉折詞")
     print(f"\n{checks} pass / 0 fail")
     return 0
