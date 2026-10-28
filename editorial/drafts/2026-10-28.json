@@ -1234,5 +1234,29 @@
     "technical_release_gates": "NOT_RUN: minimum ten approved stories absent",
     "edm": "NOT_SENT; do not trigger private Outlook automation",
     "handoff": "Next 10:45 run: review current SHA, then finish story-level claim checks and editorial approval. No auto-publish unless all gates pass."
+  },
+  "editorial_selection_audit_2026_10_28": {
+    "status": "REVIEW_REQUIRED_NOT_APPROVED",
+    "finding": "Ten translated working copies are provisional, not locked final editorial selection. Higher provisional relevance candidates Apple identity/ad-money (84) and Forrester AEO (79) omitted; Meta crawling terms delay reported Oct 27 absent from tracked pool. Re-rank all eligible candidates before further localization.",
+    "new_candidate_to_validate": {
+      "slug": "meta-crawling-terms-delay",
+      "source": "https://www.campaignasia.com/news",
+      "publication_date": "2026-10-27",
+      "status": "DISCOVERY_ONLY_NEEDS_PRIMARY_POLICY_CONFIRMATION"
+    },
+    "selection_requirements": [
+      "Deduplicate and freshness-filter all candidates before selection",
+      "Score newsworthiness, advertiser relevance, market impact, originality and evidence strength with explicit rationale",
+      "Review all candidates including unselected 21 and newly found policy news",
+      "Select at least 10 independently verified editorial-approved stories; only then finalize master copy and translate into zh-hant, zh-hans and English",
+      "Preserve existing working translations as drafts, never treat as final selected or approved",
+      "Log each candidate as selected/alternate/rejected with evidence-backed reason"
+    ],
+    "priority_rechecks": [
+      "apple-identity-ad-money-analysis",
+      "forrester-aeo-brand-growth",
+      "meta-crawling-terms-delay"
+    ],
+    "note": "Audit note is not a release approval; existing editorial gates and HELD remain."
   }
 }
