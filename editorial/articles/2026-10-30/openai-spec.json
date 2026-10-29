@@ -1,0 +1,142 @@
+{
+  "edition_date_hkt": "2026-10-30",
+  "state": "APPROVED",
+  "article": {
+    "title": "OpenAI重整Model Spec，明示人類意圖、透明度與代理行動原則",
+    "title_en": "OpenAI reorganizes its Model Spec around intent, transparency and human agency",
+    "summary": "OpenAI於10月29日更新公開Model Spec，將模型行為指引按五項價值重整，並增加情境、監督及人的自主性相關指引。",
+    "summary_en": "OpenAI updated its public Model Spec on October 29, organizing behavior guidance around five values and adding guidance on context, oversight and human agency.",
+    "why": "使用AI代理的行銷團隊可把透明度、授權範圍及副作用提示轉成實際驗收案例。",
+    "why_en": "Marketing teams using agents can turn transparency, authorization boundaries and side-effect communication into acceptance cases.",
+    "next_step": "選取一次改稿、一次資料不足及一次外部動作情境，檢查模型是否說明限制並遵守授權。",
+    "next_step_en": "Review a revision task, an evidence gap and an external action for clear limitations and adherence to authorization.",
+    "highlights": [
+      "五項價值涵蓋忠於人類意圖、減少傷害、誠實透明、人的自主性及關懷。",
+      "更新擴充副作用控制與溝通，並撤除大部分詳細風格指引；OpenAI明言模型尚未完全符合規範。"
+    ],
+    "highlights_en": [
+      "The values cover faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care.",
+      "The revision expands side-effect guidance and retires much detailed style advice; OpenAI says models do not yet fully reflect the Spec."
+    ],
+    "detail": "OpenAI於10月29日更新公開Model Spec，將模型行為指引按五項價值重整，並增加情境、監督及人的自主性相關指引。\n\n五項價值涵蓋忠於人類意圖、減少傷害、誠實透明、人的自主性及關懷。\n\n更新擴充副作用控制與溝通，並撤除大部分詳細風格指引；OpenAI明言模型尚未完全符合規範。\n\n使用AI代理的行銷團隊可把透明度、授權範圍及副作用提示轉成實際驗收案例。\n\n選取一次改稿、一次資料不足及一次外部動作情境，檢查模型是否說明限制並遵守授權。\n\n這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。",
+    "detail_en": "OpenAI updated its public Model Spec on October 29, organizing behavior guidance around five values and adding guidance on context, oversight and human agency.\n\nThe values cover faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care.\n\nThe revision expands side-effect guidance and retires much detailed style advice; OpenAI says models do not yet fully reflect the Spec.\n\nMarketing teams using agents can turn transparency, authorization boundaries and side-effect communication into acceptance cases.\n\nReview a revision task, an evidence gap and an external action for clear limitations and adherence to authorization.\n\nThis is intended-behavior guidance, not a new model launch or proof that every current response complies.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/updated-model-spec/",
+    "time": "10月29日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "editorial_slug": "openai-spec"
+  },
+  "evidence": {
+    "story_id": "2026-10-30-openai-spec",
+    "title_zh": "OpenAI重整Model Spec，明示人類意圖、透明度與代理行動原則",
+    "source_story_url": "https://openai.com/index/updated-model-spec/",
+    "published_article_url": "https://openai.com/index/updated-model-spec/",
+    "source_date_display": "10月29日",
+    "event_date": "2026-10-29",
+    "first_published_date": "2026-10-29",
+    "source_documents": [
+      {
+        "url": "https://openai.com/index/updated-model-spec/",
+        "publisher": "OpenAI",
+        "source_class": "A",
+        "source_publication_date": "2026-10-29",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-10-30T07:04:43+08:00",
+        "access_method": "Original article opened through web retrieval in separate calls and re-examined at this recorded timestamp; direct Python HTTPS returned 403. Model policy is an aspiration, not demonstrated compliance.",
+        "evidence_locator": "Original announcement date line 13 and introduction lines 34–35.; Organizing the Spec around core values and New and retired sections, lines 34 and 55–62.; What comes next, line 67: models do not yet fully reflect the Spec.",
+        "limitations": "This is intended-behavior guidance, not a new model launch or proof that every current response complies. Publication date retains source page label; event date separately recorded."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "OpenAI於10月29日更新Model Spec。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "Original announcement date line 13 and introduction lines 34–35.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      },
+      {
+        "claim_zh": "更新按五項價值重整並加入情境與監督指引。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "Organizing the Spec around core values and New and retired sections, lines 34 and 55–62.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      },
+      {
+        "claim_zh": "OpenAI明示模型尚未完全反映Model Spec。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "What comes next, line 67: models do not yet fully reflect the Spec.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "OpenAI於10月29日更新Model Spec。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "Original announcement date line 13 and introduction lines 34–35.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      },
+      {
+        "claim_zh": "更新按五項價值重整並加入情境與監督指引。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "Organizing the Spec around core values and New and retired sections, lines 34 and 55–62.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      },
+      {
+        "claim_zh": "OpenAI明示模型尚未完全反映Model Spec。",
+        "support_url": "https://openai.com/index/updated-model-spec/",
+        "evidence_locator": "What comes next, line 67: models do not yet fully reflect the Spec.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "這是預期行為規範更新，並非新模型全面推出，亦不構成所有現有輸出均符合指引的證明。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk — original-source reading and same-assistant second pass; no independent human reviewer",
+    "reviewed_at_hkt": "2026-10-30T07:06:54+08:00",
+    "independent_review": {
+      "method": "Original article opened through web retrieval in separate calls and re-examined at this recorded timestamp; direct Python HTTPS returned 403. Model policy is an aspiration, not demonstrated compliance. Same assistant challenged dates, claim scope, availability, outcomes and translation qualifiers. No separate reviewer or independent performance evaluation claimed.",
+      "second_pass_accessed_at_hkt": "2026-10-30T07:04:43+08:00",
+      "finding": "Reopened original announcement several times. Distinguishes normative goals from empirical model compliance. No claim that policies guarantee safety, alter contractual rights or establish a newly available model."
+    },
+    "review_notes": "Reopened original announcement several times. Distinguishes normative goals from empirical model compliance. No claim that policies guarantee safety, alter contractual rights or establish a newly available model.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 24,
+      "business_impact": 20,
+      "actionability": 17,
+      "market_relevance": 8,
+      "novelty": 9,
+      "total": 78
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://openai.com/index/updated-model-spec/",
+    "title_zh_hant": "OpenAI重整Model Spec，明示人類意圖、透明度與代理行動原則",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "人的自主性指human agency，不译成自动代理权限；明确行为目标与现有模型实际表现不同。 三语统一保留来源日期、推出阶段、范围和归因；未新增效果保证，未声称独立实测或人工批准。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
