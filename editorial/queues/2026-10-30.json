@@ -395,5 +395,12 @@
     }
   ],
   "next_action": "Canonical packet ready for main submission; await actual CI and shared release receipt, not merely a successful commit.",
-  "updated_at_hkt": "2026-10-30T07:07:44+08:00"
+  "updated_at_hkt": "2026-10-30T07:09:10+08:00",
+  "publication_attempt": {
+    "run_id": 40971026266,
+    "conclusion": "failure",
+    "failed_step": "Build site, archive and bilingual email from same data",
+    "diagnosis": "Renderer terminology normalization changed Carbon title without changing evidence. Corrected input terminology/title parity; no validator changes.",
+    "next_action": "Submit corrected canonical packet and inspect its actual CI run."
+  }
 }
