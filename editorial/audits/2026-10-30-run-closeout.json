@@ -1,0 +1,46 @@
+{
+  "edition_date_hkt": "2026-10-30",
+  "closed_at_hkt": "2026-10-30T07:15:21.000+08:00",
+  "newly_closed_approved": 12,
+  "held": 1,
+  "reserves": 9,
+  "discovered": 22,
+  "source_commit": "64b61bd80f5708ab4a6217f230e728243b564a9b",
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40971523394",
+  "status": "PUBLISHED & VERIFIED",
+  "validation": {
+    "canonical_packet": true,
+    "claim_and_date_gates": true,
+    "trilingual_archive_search_and_newsletter": true,
+    "browser_desktop_tablet_mobile": true,
+    "dated_preview_card": true,
+    "workflow_conclusion": "success",
+    "main_data_and_evidence_hashes_match_receipt": true,
+    "independent_public_recheck": {
+      "data": true,
+      "evidence": true,
+      "newsletter_payload": true,
+      "language_homepage_bytes": true,
+      "actual_articles_each": 12
+    }
+  },
+  "resolved_publication_attempts": [
+    {
+      "run_id": 40971026266,
+      "issue": "Renderer terminology normalization changed Carbon title without evidence title; normalized reviewed input and evidence together."
+    },
+    {
+      "run_id": 40971186712,
+      "issue": "English-only newsletter contained Chinese source label; changed displayed source to Sina Technology."
+    },
+    {
+      "run_id": 40971303841,
+      "issue": "Browser required a visible supporting source; attached actually reviewed/reopened Cordial product documentation. Source-kind labels completed."
+    }
+  ],
+  "review_scope": "Actual original-source reads, separate-request same-assistant second pass and reviewed language parity; no independent human reviewer, product trial or independently established vendor ROI claimed.",
+  "held_reason": "SynthID page update date alone does not establish a material new development.",
+  "newsletter_sent": false,
+  "social_posted": false,
+  "quality_gates_changed": false
+}

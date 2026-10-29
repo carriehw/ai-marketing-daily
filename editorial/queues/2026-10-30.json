@@ -394,13 +394,26 @@
       "article_packet_path": "editorial/articles/2026-10-30/google-carbon.json"
     }
   ],
-  "next_action": "Canonical packet ready for main submission; await actual CI and shared release receipt, not merely a successful commit.",
-  "updated_at_hkt": "2026-10-30T07:09:10+08:00",
-  "publication_attempt": {
-    "run_id": 40971026266,
-    "conclusion": "failure",
-    "failed_step": "Build site, archive and bilingual email from same data",
-    "diagnosis": "Renderer terminology normalization changed Carbon title without changing evidence. Corrected input terminology/title parity; no validator changes.",
-    "next_action": "Submit corrected canonical packet and inspect its actual CI run."
+  "next_action": "ALREADY CURRENT: matching successful receipt and independent public-byte recheck. Do not rebuild or republish this edition. Retain one HELD source-change question and nine qualified reserves.",
+  "updated_at_hkt": "2026-10-30T07:15:21.000+08:00",
+  "stage": "PUBLISHED & VERIFIED",
+  "published_story_count": 12,
+  "release_record": "editorial/releases/2026-10-30.json",
+  "verified_at_hkt": "2026-10-30T07:13:41+08:00",
+  "publication": {
+    "status": "PUBLISHED & VERIFIED",
+    "release_receipt_path": "editorial/releases/2026-10-30.json",
+    "workflow_run_id": 40971523394,
+    "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/40971523394",
+    "source_commit": "64b61bd80f5708ab4a6217f230e728243b564a9b",
+    "verified_at_hkt": "2026-10-30T07:13:41+08:00",
+    "data_sha256": "76e988e416cb56f8ce0a1c14b7e2a514bc27d3b637b66ec6857f1a87e513c482",
+    "deployed_evidence_sha256": "71c7b19573f6467e62f7ce19804f94c299e5de15e10c29252a4e39bdc8a9cdb4",
+    "language_article_counts": {
+      "en": 12,
+      "zh-hant": 12,
+      "zh-hans": 12
+    },
+    "independent_public_site_recheck_at_hkt": "2026-10-30T07:15:21.000+08:00"
   }
 }
