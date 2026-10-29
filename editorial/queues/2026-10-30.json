@@ -3,8 +3,8 @@
   "main_sha_at_start": "9c1c88be329086ba58f11fa0ba8e9c0b83ceaaf9",
   "created_at_hkt": "2026-10-30T07:01:27+08:00",
   "discovered_count": 22,
-  "approved_count": 5,
-  "held_count": 0,
+  "approved_count": 12,
+  "held_count": 1,
   "items": [
     {
       "slug": "google-ai-ads",
@@ -108,10 +108,11 @@
         "novelty": 9,
         "total": 89
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/brandlight-ads.json"
     },
     {
       "slug": "tencent-buddy",
@@ -125,10 +126,11 @@
         "novelty": 9,
         "total": 88
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/tencent-buddy.json"
     },
     {
       "slug": "gemini-files",
@@ -142,10 +144,11 @@
         "novelty": 9,
         "total": 86
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/gemini-files.json"
     },
     {
       "slug": "openai-spec",
@@ -159,10 +162,11 @@
         "novelty": 9,
         "total": 78
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/openai-spec.json"
     },
     {
       "slug": "canto-assistant",
@@ -176,10 +180,11 @@
         "novelty": 6,
         "total": 81
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/canto-assistant.json"
     },
     {
       "slug": "adobe-alpine",
@@ -193,10 +198,11 @@
         "novelty": 4,
         "total": 77
       },
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/adobe-alpine.json"
     },
     {
       "slug": "google-synthid",
@@ -210,10 +216,11 @@
         "novelty": 5,
         "total": 79
       },
-      "state": "DISCOVERED",
+      "state": "HELD",
       "reserve": false,
       "selection_reason": "Selected for original-source review; prior published URL/title history searched with no matching event found. Older cases retain original dates.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Compare dated official prior snapshot or obtain an explicit update note; publish only material verified change or a justified dated explainer.",
+      "hold_reason": "Page first dated Oct 7 and updated Oct 29; no reliable change history establishes which capabilities materially changed on Oct 29. Do not repackage old launch as new."
     },
     {
       "slug": "meta-mcp",
@@ -380,12 +387,13 @@
         "novelty": 9,
         "total": 72
       },
-      "state": "DISCOVERED",
-      "reserve": true,
+      "state": "APPROVED",
+      "reserve": false,
       "selection_reason": "Qualified reserve after higher-value closure priorities; original-source/date and archive duplication check required before approval.",
-      "next_action": "Read original, atomize claims, reopen source, decide and finalize matching trilingual packet."
+      "next_action": "Reuse this complete reviewed packet when assembling the edition; CI and live acceptance remain pending.",
+      "article_packet_path": "editorial/articles/2026-10-30/google-carbon.json"
     }
   ],
-  "next_action": "Close highest-value selected stories one at a time; preserve each approved packet immediately.",
-  "updated_at_hkt": "2026-10-30T07:04:02+08:00"
+  "next_action": "Canonical packet ready for main submission; await actual CI and shared release receipt, not merely a successful commit.",
+  "updated_at_hkt": "2026-10-30T07:07:44+08:00"
 }
