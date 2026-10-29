@@ -57,7 +57,8 @@
         "region": "國際",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "google-ai-ads"
+        "editorial_slug": "google-ai-ads",
+        "source_kind": "official"
       },
       {
         "title": "NIQ與Google合作推進代理式購物，連結商品、庫存與行銷量度",
@@ -85,7 +86,8 @@
         "region": "國際",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "niq-google"
+        "editorial_slug": "niq-google",
+        "source_kind": "official"
       },
       {
         "title": "Canva推出Brush設計編輯模型，先供Pro訂戶使用",
@@ -113,7 +115,8 @@
         "region": "國際",
         "action": "可即用",
         "action_en": "Ready to Use",
-        "editorial_slug": "canva-brush"
+        "editorial_slug": "canva-brush",
+        "source_kind": "official"
       },
       {
         "title": "香港Payment Asia推出ARCS行銷工具，邀指定餐飲商戶參與試行",
@@ -141,7 +144,8 @@
         "region": "香港",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "payment-asia"
+        "editorial_slug": "payment-asia",
+        "source_kind": "vendor"
       },
       {
         "title": "Cordial推出Headless CDP，讓行銷團隊在AI助手內查詢客戶資料",
@@ -169,7 +173,11 @@
         "region": "國際",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "cordial-cdp"
+        "editorial_slug": "cordial-cdp",
+        "verification_url": "https://cordial.com/customer-data-platform",
+        "verification_label": "Cordial產品說明",
+        "verification_label_en": "Cordial product documentation",
+        "source_kind": "vendor"
       },
       {
         "title": "Brandlight公布AI Ads，先與指定早期客戶合作",
@@ -197,7 +205,8 @@
         "region": "國際",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "brandlight-ads"
+        "editorial_slug": "brandlight-ads",
+        "source_kind": "vendor"
       },
       {
         "title": "騰訊發布Buddy One，以WorkBuddy串連辦公工具與儲存",
@@ -225,7 +234,8 @@
         "region": "中國",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "tencent-buddy"
+        "editorial_slug": "tencent-buddy",
+        "source_kind": "reported"
       },
       {
         "title": "Gemini加入檔案預覽與直接編輯，PDF支援網頁及手機",
@@ -253,7 +263,8 @@
         "region": "國際",
         "action": "可即用",
         "action_en": "Ready to Use",
-        "editorial_slug": "gemini-files"
+        "editorial_slug": "gemini-files",
+        "source_kind": "official"
       },
       {
         "title": "OpenAI重整Model Spec，明示人類意圖、透明度與代理行動原則",
@@ -281,7 +292,8 @@
         "region": "國際",
         "action": "要留意",
         "action_en": "Watch",
-        "editorial_slug": "openai-spec"
+        "editorial_slug": "openai-spec",
+        "source_kind": "official"
       },
       {
         "title": "Canto推出Global Assistant，把素材準備與分發接入DAM",
@@ -309,7 +321,8 @@
         "region": "國際",
         "action": "影響生意",
         "action_en": "Business Impact",
-        "editorial_slug": "canto-assistant"
+        "editorial_slug": "canto-assistant",
+        "source_kind": "official"
       },
       {
         "title": "案例回看：Adobe與Alpine擬於2027賽季推AI粉絲體驗",
@@ -337,7 +350,8 @@
         "region": "國際",
         "action": "要留意",
         "action_en": "Watch",
-        "editorial_slug": "adobe-alpine"
+        "editorial_slug": "adobe-alpine",
+        "source_kind": "official"
       },
       {
         "title": "Google公布Gemini 4 Carbon，先向部分網路防禦團隊開放",
@@ -365,7 +379,8 @@
         "region": "國際",
         "action": "要留意",
         "action_en": "Watch",
-        "editorial_slug": "google-carbon"
+        "editorial_slug": "google-carbon",
+        "source_kind": "official"
       }
     ]
   },
@@ -784,6 +799,17 @@
             "access_method": "Web retrieval opened full original article and reopened its source reference in a separate tool request; direct Python HTTPS returned 403. No product trial.",
             "evidence_locator": "Company-issued release lines 457 and 466: date and launch.; Opening paragraph line 466: named AI assistant interfaces.; Line 472: June infrastructure predecessor.",
             "limitations": "Capabilities are attributed to Cordial; latency, revenue impact and account-level eligibility were not tested. Publication date retains source page label; event date separately recorded."
+          },
+          {
+            "url": "https://cordial.com/customer-data-platform",
+            "publisher": "Cordial",
+            "source_class": "A",
+            "source_publication_date": null,
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-10-30T07:11:53+08:00",
+            "access_method": "Original product page opened in web retrieval and reopened in a separate request; redirected canonical URL retained.",
+            "evidence_locator": "Data Visualization section lines 64–67 and FAQ lines 74–77 and 108–110: AI-assistant access and natural-language analysis via MCP.",
+            "limitations": "Undated evergreen product documentation supports capability description, not the launch date or independent performance. Revenue, latency and broad access claims were not tested."
           }
         ],
         "claims": [
@@ -843,9 +869,10 @@
         "independent_review": {
           "method": "Web retrieval opened full original article and reopened its source reference in a separate tool request; direct Python HTTPS returned 403. No product trial. Same assistant challenged dates, claim scope, availability, outcomes and translation qualifiers. No separate reviewer or independent performance evaluation claimed.",
           "second_pass_accessed_at_hkt": "2026-10-30T07:01:45+08:00",
-          "finding": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance."
+          "finding": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance.",
+          "supporting_source_reopened_at_hkt": "2026-10-30T07:11:53+08:00"
         },
-        "review_notes": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance.",
+        "review_notes": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance. Reopened Cordial product documentation for AI-assistant data access and linked it as a reader-facing supporting source; undated document does not establish launch date.",
         "editorial_decision": "approved",
         "needs_human_review": false,
         "editorial_relevance_score": {

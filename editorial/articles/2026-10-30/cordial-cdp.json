@@ -27,7 +27,11 @@
     "region": "國際",
     "action": "影響生意",
     "action_en": "Business Impact",
-    "editorial_slug": "cordial-cdp"
+    "editorial_slug": "cordial-cdp",
+    "verification_url": "https://cordial.com/customer-data-platform",
+    "verification_label": "Cordial產品說明",
+    "verification_label_en": "Cordial product documentation",
+    "source_kind": "vendor"
   },
   "evidence": {
     "story_id": "2026-10-30-cordial-cdp",
@@ -48,6 +52,17 @@
         "access_method": "Web retrieval opened full original article and reopened its source reference in a separate tool request; direct Python HTTPS returned 403. No product trial.",
         "evidence_locator": "Company-issued release lines 457 and 466: date and launch.; Opening paragraph line 466: named AI assistant interfaces.; Line 472: June infrastructure predecessor.",
         "limitations": "Capabilities are attributed to Cordial; latency, revenue impact and account-level eligibility were not tested. Publication date retains source page label; event date separately recorded."
+      },
+      {
+        "url": "https://cordial.com/customer-data-platform",
+        "publisher": "Cordial",
+        "source_class": "A",
+        "source_publication_date": null,
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-10-30T07:11:53+08:00",
+        "access_method": "Original product page opened in web retrieval and reopened in a separate request; redirected canonical URL retained.",
+        "evidence_locator": "Data Visualization section lines 64–67 and FAQ lines 74–77 and 108–110: AI-assistant access and natural-language analysis via MCP.",
+        "limitations": "Undated evergreen product documentation supports capability description, not the launch date or independent performance. Revenue, latency and broad access claims were not tested."
       }
     ],
     "claims": [
@@ -107,9 +122,10 @@
     "independent_review": {
       "method": "Web retrieval opened full original article and reopened its source reference in a separate tool request; direct Python HTTPS returned 403. No product trial. Same assistant challenged dates, claim scope, availability, outcomes and translation qualifiers. No separate reviewer or independent performance evaluation claimed.",
       "second_pass_accessed_at_hkt": "2026-10-30T07:01:45+08:00",
-      "finding": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance."
+      "finding": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance.",
+      "supporting_source_reopened_at_hkt": "2026-10-30T07:11:53+08:00"
     },
-    "review_notes": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance.",
+    "review_notes": "Reopened original PR Newswire release and inspected Cordial product page. Preserved vendor attribution; did not infer all connectors are automatically available, unlimited data access, guaranteed ROI or universal real-time performance. Reopened Cordial product documentation for AI-assistant data access and linked it as a reader-facing supporting source; undated document does not establish launch date.",
     "editorial_decision": "approved",
     "needs_human_review": false,
     "editorial_relevance_score": {
