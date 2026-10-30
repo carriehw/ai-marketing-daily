@@ -12,6 +12,7 @@ verify_live.py 問「出版成功了嗎」，verify_email.py 問「EDM 版式對
 exit 0 = 全部通過
 """
 import argparse
+import datetime as dt
 import json
 import re
 import sys
@@ -43,7 +44,37 @@ def md(s):
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 
-def run(data, today_md, strict=True, same_day_verified_urls=None):
+def reviewed_scheduled_dates(proof):
+    """Allow only explicitly recorded plans tied to a checked original-source claim.
+
+    A later date in an announcement is not evidence that an event has occurred.
+    The reader-facing sentence must separately retain its scheduled status.
+    """
+    allowed = {}
+    for story in proof.get("stories", []):
+        if story.get("editorial_decision") != "approved" or story.get("needs_human_review") is not False:
+            continue
+        originals = {d.get("url") for d in story.get("source_documents", [])
+                     if d.get("source_class") in ("A", "B") and d.get("access_state") == "accessible"}
+        for plan in story.get("scheduled_dates", []):
+            if plan.get("status") != "announced_plan":
+                continue
+            try:
+                date = dt.date.fromisoformat(plan.get("date", ""))
+            except (ValueError, TypeError):
+                continue
+            for claim in story.get("material_claims", []):
+                if (claim.get("claim_zh") == plan.get("claim_zh")
+                    and claim.get("status") in ("verified", "attributed")
+                    and claim.get("second_pass_checked") is True
+                    and claim.get("support_url") in originals
+                    and len(claim.get("evidence_locator", "")) >= 10
+                    and (date.month, date.day) in [tuple(map(int, m.groups())) for m in DATE.finditer(claim.get("claim_zh", ""))]):
+                    allowed.setdefault(story.get("source_story_url"), set()).add((date.month, date.day))
+    return allowed
+
+
+def run(data, today_md, strict=True, same_day_verified_urls=None, scheduled_dates=None):
     """回傳 (fails, checks)。fails 是 list of str。"""
     fails, checks = [], 0
     items = data["items"]
@@ -85,6 +116,16 @@ def run(data, today_md, strict=True, same_day_verified_urls=None):
                 d = (int(mo.group(1)), int(mo.group(2)))
                 if d > tm:
                     j = mo.start()
+                    # Keep the original publication label and the announced future
+                    # date. Neither a date whitelist alone nor vague future wording
+                    # without a reviewed source claim can bypass chronology checks.
+                    sentence_start = max(text.rfind(c, 0, j) for c in "。！？\n") + 1
+                    sentence_end = min([p for c in "。！？\n" if (p := text.find(c, mo.end())) >= 0] or [len(text)])
+                    context = text[sentence_start:sentence_end]
+                    if (d in (scheduled_dates or {}).get(it.get("url"), set())
+                        and re.search(r"預告|預定|計劃|將於|日起|生效", context)
+                        and not re.search(r"已於.{0,12}" + re.escape(mo.group(0)), context)):
+                        continue
                     fails.append(
                         f"#{i:02d} [{field}] 內文日期 {d[0]}月{d[1]}日 晚於該則發佈日 "
                         f"{tm[0]}月{tm[1]}日：…{text[max(0,j-50):j+50]}…")
@@ -147,9 +188,11 @@ def main():
 
     data = json.load(open(a.data, encoding="utf-8"))
     same_day_allowed = set()
+    schedules = {}
     proof_path = __import__("pathlib").Path("editorial/evidence") / (a.today + ".json")
     if proof_path.is_file():
         proof = json.load(open(proof_path, encoding="utf-8"))
+        schedules = reviewed_scheduled_dates(proof)
         for story in proof.get("stories", []):
             if story.get("editorial_decision") != "approved" or story.get("needs_human_review") is not False:
                 continue
@@ -161,7 +204,7 @@ def main():
                     and len(doc.get("evidence_locator", "")) >= 12):
                     same_day_allowed.add(story.get("source_story_url"))
                     break
-    fails, checks = run(data, today_md, same_day_verified_urls=same_day_allowed)
+    fails, checks = run(data, today_md, same_day_verified_urls=same_day_allowed, scheduled_dates=schedules)
 
     print(f"=== 日期與時序閘門 {a.today} ===")
 
@@ -192,3 +235,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+

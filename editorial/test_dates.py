@@ -8,7 +8,63 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from verify_dates import run
+from verify_dates import run, reviewed_scheduled_dates
+
+
+class ScheduledDateControls(unittest.TestCase):
+    def setUp(self):
+        self.url = "https://example.com/synthetic-plan"
+        self.claim = {"claim_zh": "產品接入計劃於11月2日推出。", "status": "attributed",
+                      "second_pass_checked": True, "support_url": self.url,
+                      "evidence_locator": "Synthetic original announcement schedule"}
+        self.story = {"source_story_url": self.url, "editorial_decision": "approved",
+                      "needs_human_review": False, "material_claims": [self.claim],
+                      "scheduled_dates": [{"date": "2026-11-02", "status": "announced_plan", "claim_zh": self.claim["claim_zh"]}],
+                      "source_documents": [{"url": self.url, "source_class": "A", "access_state": "accessible"}]}
+        self.data = {"items": [{"time": "10月29日", "url": self.url,
+                                "detail": "產品接入計劃為11月2日。"}]}
+
+    def failures(self):
+        return run(self.data, (10, 31), scheduled_dates=reviewed_scheduled_dates({"stories": [self.story]}))[0]
+
+    def test_checked_announcement_retains_future_rollout_date(self):
+        self.assertEqual(self.failures(), [])
+
+    def test_scheduled_effective_date_is_allowed(self):
+        self.data["items"][0]["detail"] = "官方預告設定由11月2日起生效。"
+        self.assertEqual(self.failures(), [])
+
+    def test_future_wording_without_recorded_claim_fails(self):
+        self.story["scheduled_dates"] = []
+        self.assertTrue(self.failures())
+
+    def test_unchecked_claim_fails(self):
+        self.claim["second_pass_checked"] = False
+        self.assertTrue(self.failures())
+
+    def test_inaccessible_original_fails(self):
+        self.story["source_documents"][0]["access_state"] = "blocked"
+        self.assertTrue(self.failures())
+
+    def test_human_hold_fails(self):
+        self.story["needs_human_review"] = True
+        self.assertTrue(self.failures())
+
+    def test_wrong_date_fails(self):
+        self.story["scheduled_dates"][0]["date"] = "2026-11-03"
+        self.assertTrue(self.failures())
+
+    def test_plan_cannot_claim_future_event_completed(self):
+        self.data["items"][0]["detail"] = "產品已於11月2日完成推出。"
+        self.assertTrue(self.failures())
+
+    def test_completed_event_cannot_borrow_plan_word(self):
+        self.data["items"][0]["detail"] = "計劃已於11月2日完成。"
+        self.assertTrue(self.failures())
+
+    def test_unrelated_future_date_stays_blocked(self):
+        self.data["items"][0]["detail"] += "另外計劃11月3日推出。"
+        self.assertTrue(self.failures())
 
 
 class SameDayDateControls(unittest.TestCase):
@@ -63,3 +119,4 @@ class SameDayDateControls(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
