@@ -3,7 +3,7 @@
   "main_sha_at_start": "6c70afa9e0a2e5988bf6e12ba234721c8d79bda4",
   "created_at_hkt": "2026-10-31T07:02:00+08:00",
   "discovered_count": 22,
-  "approved_count": 0,
+  "approved_count": 5,
   "held_count": 1,
   "items": [
     {
@@ -18,10 +18,11 @@
         "novelty": 10,
         "total": 94
       },
-      "state": "SOURCE_READ",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected after archive title/event deduplication. Original article inspected; second-pass review and localization still to close.",
-      "next_action": "Reopen original source, challenge claims and dates, then finalize matching three-language article packet."
+      "next_action": "Reuse complete reviewed packet for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-10-31/chatgpt-creative.json"
     },
     {
       "slug": "openai-training",
@@ -35,10 +36,11 @@
         "novelty": 9,
         "total": 83
       },
-      "state": "SOURCE_READ",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected after archive title/event deduplication. Original article inspected; second-pass review and localization still to close.",
-      "next_action": "Reopen original source, challenge claims and dates, then finalize matching three-language article packet."
+      "next_action": "Reuse complete reviewed packet for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-10-31/openai-training.json"
     },
     {
       "slug": "tiktok-q4",
@@ -52,10 +54,11 @@
         "novelty": 10,
         "total": 98
       },
-      "state": "SOURCE_READ",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected after archive title/event deduplication. Original article inspected; second-pass review and localization still to close.",
-      "next_action": "Reopen original source, challenge claims and dates, then finalize matching three-language article packet."
+      "next_action": "Reuse complete reviewed packet for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-10-31/tiktok-q4.json"
     },
     {
       "slug": "master-supermetrics",
@@ -69,10 +72,11 @@
         "novelty": 9,
         "total": 95
       },
-      "state": "SOURCE_READ",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected after archive title/event deduplication. Original article inspected; second-pass review and localization still to close.",
-      "next_action": "Reopen original source, challenge claims and dates, then finalize matching three-language article packet."
+      "next_action": "Reuse complete reviewed packet for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-10-31/master-supermetrics.json"
     },
     {
       "slug": "estee-microsoft",
@@ -86,10 +90,11 @@
         "novelty": 9,
         "total": 91
       },
-      "state": "SOURCE_READ",
+      "state": "APPROVED",
       "reserve": false,
       "selection_reason": "Selected after archive title/event deduplication. Original article inspected; second-pass review and localization still to close.",
-      "next_action": "Reopen original source, challenge claims and dates, then finalize matching three-language article packet."
+      "next_action": "Reuse complete reviewed packet for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-10-31/estee-microsoft.json"
     },
     {
       "slug": "teads-tam",
@@ -381,5 +386,6 @@
       "next_action": "Read original announcement and check archive before processing."
     }
   ],
-  "next_action": "Close highest-priority selected items in complete article packets; do not publish until at least ten fully approved."
+  "next_action": "Close highest-priority selected items in complete article packets; do not publish until at least ten fully approved.",
+  "updated_at_hkt": "2026-10-31T07:04:45.000+08:00"
 }
