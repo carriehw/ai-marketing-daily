@@ -1,0 +1,43 @@
+{
+  "edition_date_hkt": "2026-10-31",
+  "closed_at_hkt": "2026-10-31T07:14:20.000+08:00",
+  "main_sha_before_closeout": "a4cf2b1cbbdf3609df7472ffbd3d798c814606bb",
+  "newly_closed_approved": 12,
+  "approved_count": 12,
+  "held_count": 1,
+  "reserves": 9,
+  "discovered_count": 22,
+  "status": "PUBLISHED & VERIFIED",
+  "source_commit": "c1b18732ce83f558618cb792aa728697fd43fa20",
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41142982310",
+  "workflow_conclusion": "success",
+  "validation": {
+    "canonical_packet": true,
+    "main_data_and_evidence_sha256_match": true,
+    "live_bytes": true,
+    "actual_articles_each_language": 12,
+    "newsletter_same_snapshot": true,
+    "browser_locale_viewports": 12,
+    "share_card": "1200x630 JPEG, 78372 bytes"
+  },
+  "resolved_publication_attempts": [
+    {
+      "run_id": 41142508260,
+      "conclusion": "failure",
+      "failed_step": "Validate publication dates and story chronology",
+      "diagnosis": "False positive: dated announcements legitimately contain explicitly sourced future effective/rollout dates. Added evidence-bound scheduled-date handling with negative controls; retained original source dates.",
+      "quality_gates_lowered": false
+    },
+    {
+      "run_id": 41142749863,
+      "conclusion": "failure",
+      "failed_step": "Build and validate today's dated social preview card",
+      "diagnosis": "Lead headline made share-card footer overflow by 9.27px. Shortened headline with matching evidence and localization titles; kept complete original facts and rendering gate."
+    }
+  ],
+  "held_reason": "Tencent Beacon original page timed out and direct reporting was inaccessible; publication/event date and eligibility remain unresolved.",
+  "review_scope": "Original-source article reads and actual separate-request same-assistant second pass completed through web retrieval. No separate human/agent, product trial or independently established vendor outcomes claimed.",
+  "newsletter_sent": false,
+  "social_posted": false,
+  "quality_gates_lowered": false
+}

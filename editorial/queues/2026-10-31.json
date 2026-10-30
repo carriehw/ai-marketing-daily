@@ -393,9 +393,9 @@
       "next_action": "Read original announcement and check archive before processing."
     }
   ],
-  "next_action": "Inspect headline-corrected CI and require actual Pages bytes/counts plus successful receipt.",
-  "updated_at_hkt": "2026-10-31T07:06:44.000+08:00",
-  "stage": "CI_RETRY",
+  "next_action": "ALREADY CURRENT: successful linked workflow, exact main data/evidence digests and actual live byte/count acceptance match the October 31 receipt. Do not republish. Keep one HELD source-access/date question and nine qualified reserves.",
+  "updated_at_hkt": "2026-10-31T07:14:20.000+08:00",
+  "stage": "PUBLISHED & VERIFIED",
   "publication_attempts": [
     {
       "run_id": 41142508260,
@@ -410,5 +410,67 @@
       "failed_step": "Build and validate today's dated social preview card",
       "diagnosis": "Lead headline made share-card footer overflow by 9.27px. Shortened headline with matching evidence and localization titles; kept complete original facts and rendering gate."
     }
-  ]
+  ],
+  "published_story_count": 12,
+  "release_record": "editorial/releases/2026-10-31.json",
+  "verified_at_hkt": "2026-10-31T07:13:23+08:00",
+  "publication": {
+    "release_schema_version": "2.0",
+    "edition_date_hkt": "2026-10-31",
+    "status": "PUBLISHED & VERIFIED",
+    "published_story_count": 12,
+    "language_article_counts": {
+      "en": 12,
+      "zh-hant": 12,
+      "zh-hans": 12
+    },
+    "verified_at_hkt": "2026-10-31T07:13:23+08:00",
+    "published_at_hkt": "2026-10-31T07:13:23+08:00",
+    "acceptance_action": "DEPLOY_VERIFIED_CANDIDATE",
+    "source_commit": "c1b18732ce83f558618cb792aa728697fd43fa20",
+    "deployed_artifact_commit": "6e9e19a2adfb3063133ec4470b9fc11c5d22c4f9",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41142982310",
+    "data_sha256": "8bfc130496d01a6fbde3a449318da9ffda51f289637a1c73eeda3e2e32b35de6",
+    "deployed_evidence_sha256": "db10f8233df7f960f44ba31eee23f9cf71a5e6fa4afe248c0b738423c736d6b9",
+    "verified_asset_sha256": {
+      "index.html": "a6aea9c0cda245f5de3fdd23b172f31edb0c9bddfb361e7299f9eb809223a7ac",
+      "data.json": "8bfc130496d01a6fbde3a449318da9ffda51f289637a1c73eeda3e2e32b35de6",
+      "archive/2026-10-31.html": "4b3e2041e6ded5d1feb9967a1e5e7b3dd5d86fbe7847e4c3448a5a61cf0a58d6",
+      "archive/manifest.json": "058b6ad0a528c095bf4743a46c553e02fcb59f5240aab7c11466e317481b4e2d",
+      "archive/search-index.json": "1e9ea2b0e3acb5161a2d42ec370d0ac4e4d8e8f4fd50928df049692d762cdef2",
+      "archive/search-index-zh-hans.json": "cc65d451ddea838ef027cc71f80e7dc21aded46462cd56dd2638cefd0fa7a41b",
+      "discovery.js": "c793fe80f1be45775e9d47581bd1e601f5e8d28f27dfc80580f288711e2f55d7",
+      "discovery-zh-hans.js": "a126d9d281fc6e0673d7abc56d63d2536c4f879ca7aabc2daf597ced86bf8bc2",
+      "sitemap.xml": "54d48af61126541543c96a6d5db587239384f30366b3ce4d6f4b9a9ecd647972",
+      "robots.txt": "40e54f9d4ff2d429e624d4d4a0d1745b40fa77c34ea5cb0e605d404240c1bf98",
+      "og/2026-10-31.jpg": "32057043e7aa71440a7ba297a5177d321a7395016244e00f095902ff5de57556",
+      "editorial/evidence/2026-10-31.json": "db10f8233df7f960f44ba31eee23f9cf71a5e6fa4afe248c0b738423c736d6b9",
+      "edm/team.html": "1bd25fffc18133c752ec11ebc17f054fb5da500a1edfc9f41dc7267174d7c896",
+      "edm/payload.json": "d9b8a71e10411de94c55b06ca734b9b213cc5fbba937e83429f02cdc6a29bca8",
+      "edm/payload-feed.xml": "1cb433dfbcabcb9b26f7e1e661a6a329d8b71c69e25a282d9dc2b5ef92efea7d",
+      "edm/feed.xml": "513ede057f1335017acf49930033b58a44d28f7d84c5259aee94df043374c7b6",
+      "en/index.html": "454fa5a34bac2894eed068051cdff85b9a01379a4a423051a672a148ee72af46",
+      "en/archive/2026-10-31.html": "252d859be372ca484259b3fe95684cd05cac249346737859a1aa6ee4282ef6d1",
+      "en/archive/index.html": "03ff4e01a8bb246df86529037d3660a96631711b48f98da8b048cc79fdb596de",
+      "zh-hant/index.html": "be844598eed9998fa3ca61e1d3493b6a82aebe5d101e49c7f3d3006888f4cf30",
+      "zh-hant/archive/2026-10-31.html": "6bd4c8a8b15e53fb411a2437ed0c7be5536786a656033182b5e2d8c8c9c5b80c",
+      "zh-hant/archive/index.html": "016b7cedf34092aa21341941b95237c042f13f3dc0e33fe4c083179b895939f2",
+      "zh-hans/index.html": "a3ecb09fa9fde67237484baf426c87327a58112188ac4a85c0ce859de34549d2",
+      "zh-hans/archive/2026-10-31.html": "58f62ca5b35a8acd381e8913ca569531db6e60193e00aa052cbe42811e60c75c",
+      "zh-hans/archive/index.html": "c7e65546122eae36b0d9864c89b3e9975cfd406c45d0eaf4b3d316d5b5e4af6f"
+    },
+    "live_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/",
+    "archive_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-10-31.html",
+    "verification": {
+      "live_bytes": true,
+      "actual_language_article_counts": true,
+      "newsletter_snapshot": true
+    },
+    "newsletter_sent_by_this_run": false,
+    "social_posted_by_this_run": false,
+    "review_scope": "Original-source article reads and actual separate-request same-assistant second pass completed through web retrieval. No separate human/agent, product trial or independently established vendor outcomes claimed.",
+    "workflow_conclusion": "success",
+    "main_data_and_evidence_hashes_match": true,
+    "direct_pages_read": "Web retrieval inaccessible; relied on completed CI exact public-byte and actual per-language article-count verification, not HTTP 200."
+  }
 }
