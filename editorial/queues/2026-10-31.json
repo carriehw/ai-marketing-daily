@@ -393,7 +393,16 @@
       "next_action": "Read original announcement and check archive before processing."
     }
   ],
-  "next_action": "Submit 12-story approved edition to current main using expected SHA; inspect actual deployment workflow and receipt.",
+  "next_action": "Inspect corrected-packet CI; require successful live byte/count acceptance and dated receipt.",
   "updated_at_hkt": "2026-10-31T07:06:44.000+08:00",
-  "stage": "READY_FOR_CI"
+  "stage": "CI_RETRY",
+  "publication_attempts": [
+    {
+      "run_id": 41142508260,
+      "conclusion": "failure",
+      "failed_step": "Validate publication dates and story chronology",
+      "diagnosis": "False positive: dated announcements legitimately contain explicitly sourced future effective/rollout dates. Added evidence-bound scheduled-date handling with negative controls; retained original source dates.",
+      "quality_gates_lowered": false
+    }
+  ]
 }
