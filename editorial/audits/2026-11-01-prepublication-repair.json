@@ -1,0 +1,10 @@
+{
+  "edition_date_hkt": "2026-11-01",
+  "stage": "prepublication",
+  "previous_run_id": 41250859348,
+  "failure_step": "Build site, archive and bilingual email from same data",
+  "failure": "No Chinese text in English issue",
+  "cause": "Shared source labels contained Chinese in Shuyun and HKCNA records.",
+  "resolution": "Use English publisher labels. Edit Agoda why into written Chinese and use digital PR consistently. Facts, evidence, scoring and all gates retained.",
+  "next_action": "New canonical-input build required; not a transient rerun."
+}

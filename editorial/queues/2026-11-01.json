@@ -396,5 +396,11 @@
   ],
   "reserve_count": 8,
   "rejected_count": 2,
-  "status": "editorial_approved_pending_publication"
+  "status": "editorial_approved_pending_publication",
+  "publication": {
+    "status": "corrected_input_submitted",
+    "previous_run_id": 41250859348,
+    "previous_failure": "English team EDM rejected shared source labels containing Chinese. Changed only source display names to English; no gate relaxed.",
+    "next_action": "Inspect corrected build run and verify dated release receipt."
+  }
 }
