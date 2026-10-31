@@ -1,0 +1,143 @@
+{
+  "edition_date_hkt": "2026-11-01",
+  "state": "APPROVED",
+  "article": {
+    "title": "ZoomInfo把MCP及API接入Snowflake，保留既有權限",
+    "title_en": "ZoomInfo brings MCP and API access into Snowflake",
+    "summary": "ZoomInfo於10月30日公布，在Snowflake提供MCP及API接入，讓企業查詢公司、聯絡人及購買訊號。",
+    "summary_en": "ZoomInfo’s October 30 announcement brings MCP and API access to Snowflake for company, contact and buying-signal queries.",
+    "why": "B2B團隊可把外部資料與倉庫內商機資料對照，先界定代理可讀範圍。",
+    "why_en": "B2B teams can compare external intelligence with warehouse opportunities while defining agent access.",
+    "next_step": "以唯讀帳戶研究試行，核對資料授權及稽核紀錄。",
+    "next_step_en": "Pilot read-only account research and check data permissions and audit logs.",
+    "highlights": [
+      "CoWork及Cortex Agents可讀取外部商業資料。",
+      "接入採OAuth 2.0並沿用ZoomInfo角色權限；Cortex開通需Snowflake管理員批准。"
+    ],
+    "highlights_en": [
+      "CoWork and Cortex Agents can use external business intelligence.",
+      "OAuth 2.0 inherits ZoomInfo roles; Cortex exposure requires Snowflake admin approval."
+    ],
+    "detail": "ZoomInfo於10月30日公布，在Snowflake提供MCP及API接入，讓企業查詢公司、聯絡人及購買訊號。\n\nCoWork及Cortex Agents可讀取外部商業資料。\n\n接入採OAuth 2.0並沿用ZoomInfo角色權限；Cortex開通需Snowflake管理員批准。\n\nB2B團隊可把外部資料與倉庫內商機資料對照，先界定代理可讀範圍。\n\n以唯讀帳戶研究試行，核對資料授權及稽核紀錄。\n\n需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。",
+    "detail_en": "ZoomInfo’s October 30 announcement brings MCP and API access to Snowflake for company, contact and buying-signal queries.\n\nCoWork and Cortex Agents can use external business intelligence.\n\nOAuth 2.0 inherits ZoomInfo roles; Cortex exposure requires Snowflake admin approval.\n\nB2B teams can compare external intelligence with warehouse opportunities while defining agent access.\n\nPilot read-only account research and check data permissions and audit logs.\n\nSnowflake access and a ZoomInfo subscription are required. The release proves no accuracy rate, sales lift or automatic campaign activation.",
+    "source": "ZoomInfo",
+    "url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+    "time": "10月30日",
+    "section": "廣告平台 & 行銷科技",
+    "region": "國際",
+    "action": "影響生意",
+    "action_en": "Business Impact",
+    "editorial_slug": "zoominfo-snowflake",
+    "source_kind": "official"
+  },
+  "evidence": {
+    "story_id": "2026-11-01-zoominfo-snowflake",
+    "title_zh": "ZoomInfo把MCP及API接入Snowflake，保留既有權限",
+    "source_story_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+    "published_article_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+    "source_date_display": "10月30日",
+    "event_date": "2026-10-30",
+    "first_published_date": "2026-10-30",
+    "source_documents": [
+      {
+        "url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "publisher": "ZoomInfo",
+        "source_class": "A",
+        "source_publication_date": "2026-10-30",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+        "evidence_locator": "Dated opening, lines 62–68. Governance paragraph, line 86. Availability statement, line 89.",
+        "limitations": "Snowflake access and a ZoomInfo subscription are required. The release proves no accuracy rate, sales lift or automatic campaign activation."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "公告稱MCP及API現可在Snowflake使用。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Dated opening, lines 62–68.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      },
+      {
+        "claim_zh": "Cortex接入沿用ZoomInfo角色權限及需管理員批准。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Governance paragraph, line 86.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      },
+      {
+        "claim_zh": "現有提供範圍為持ZoomInfo訂閱的Snowflake客戶。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Availability statement, line 89.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "公告稱MCP及API現可在Snowflake使用。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Dated opening, lines 62–68.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      },
+      {
+        "claim_zh": "Cortex接入沿用ZoomInfo角色權限及需管理員批准。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Governance paragraph, line 86.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      },
+      {
+        "claim_zh": "現有提供範圍為持ZoomInfo訂閱的Snowflake客戶。",
+        "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+        "evidence_locator": "Availability statement, line 89.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+    "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+      "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "finding": "Reopened original. Kept subscription/admin requirements and distinguished read/research/enrich endpoints from ad activation. Excluded headline-sized database counts and bulk limits as unnecessary; no ROI or accuracy claim."
+    },
+    "review_notes": "Reopened original. Kept subscription/admin requirements and distinguished read/research/enrich endpoints from ad activation. Excluded headline-sized database counts and bulk limits as unnecessary; no ROI or accuracy claim.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 29,
+      "business_impact": 23,
+      "actionability": 18,
+      "market_relevance": 10,
+      "novelty": 9,
+      "total": 89
+    },
+    "impact": "High",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+    "title_zh_hant": "ZoomInfo把MCP及API接入Snowflake，保留既有權限",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "角色权限随用户保留，不译成无限代理访问。线索资料与营销受众激活分开；Snowflake及ZoomInfo双重资格不省略。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
