@@ -1,0 +1,212 @@
+{
+  "edition_date": "2026-11-01",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://www.agoda.com/press/1509063/",
+      "title_zh_hant": "Agoda把AI旅遊助手擴至21個市場，串連規劃與預訂",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "21个市场是扩展范围，不是全球开放；实时库存不等于保证最低价。保留模型分工，取消未经量化的转化率推论。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+      "title_zh_hant": "酒店AI搜尋研究：提及份額分散，3.1%並非預訂市佔",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "提及份额与答案出现率、预订份额分开；3.1%的分母是13,194次公司提及。1,000个问题与3,015个答案不混写，研究地域保留美国。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+      "title_zh_hant": "DemandSense接入LinkedIn公司層級訊號，擴充歸因視野",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "公司级信号不等于个人身份；浏览后归因不是新增销售因果证据。旧LinkedIn beta的百分比不纳入稿件，不写成DemandSense提效实测。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+      "title_zh_hant": "港話通加入YuE2音樂創作，哼唱或相片可作起點",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "港话通为产品名，YuE2不改写；“免费体验”不扩写为可商用或版权安全。保留粤语流行曲定位，不声称生成质量经过本刊验证。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+      "title_zh_hant": "ZoomInfo把MCP及API接入Snowflake，保留既有權限",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "角色权限随用户保留，不译成无限代理访问。线索资料与营销受众激活分开；Snowflake及ZoomInfo双重资格不省略。 三语保留同一日期、数字、来源归因及限制；简体由现有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+      "title_zh_hant": "Presentations.AI把CRM接入銷售簡報，更新仍設審批選項",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "“获批母版”不代表每份自动产出已获批准；更新包含未改动页面，10 credits不译成10美元。PowerPoint可编辑与CRM数据准确性分开。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.shuyun.com/5250.html",
+      "title_zh_hant": "數雲發布Synwin平台，整合消費者資料與行銷代理",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "“将陆续上架”保留计划阶段，不译成所有代理现已可订阅。数据脱敏与合法合规不画等号，不复述未经独立核实的ROI最大化。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+      "title_zh_hant": "美國假日購物調查：AI比價意向高於代購授權",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "46%为计划比价，23%为愿意授权，不是已发生的购物占比。57%是多种意向合计，不译成弃单率；样本、调查期和美国地域完整保留。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+      "title_zh_hant": "Peec AI公布SOC 2 Type II審查，範圍屬安全控制",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "SOC 2 Type II保留审查表述，不称监管认证或量度准确率认证。三个月观察期与10月30日公告日期分开，未读取完整报告的限制保留。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+      "title_zh_hant": "WHI推出Nexus電話下單，AI接入既有Nexpart流程",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "“已在部分分销商部署”不改成全网开通；西班牙语不是葡萄牙语。电话下单不等于无错单，粤语未确认，不作本地即用推荐。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+      "title_zh_hant": "Canva北美新廣告以日常創作故事呈現工具價值",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "北美企划不译成全球上线；美国11月1日晚首播在香港早上仍属计划，不写已播。案例不包装成新AI功能或实证效果。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+      "title_zh_hant": "案例補讀：Coty以Brandlight串連美妝內容與AI搜尋",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "案例补读保留10月27日，不写成11月1日新合作或更进新闻。非品牌问题与品牌词搜索分开，早期试行不译成已证实增长。 三语保留同一日期、数字及归因。简体由既有构建流程生成并验收，不声称人工校对或产品实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}

@@ -1,0 +1,1165 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-01",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-01T07:02:17+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original-source article reads and actual separate-request same-assistant second pass completed through web retrieval. No separate human/agent, product trial or independently established vendor outcomes claimed.",
+  "review_provenance": {
+    "first_pass": "Original sources inspected as full text through HTTPS or web article retrieval; access limitations recorded per source.",
+    "second_pass": "Fresh HTTPS original URLs or reopened original web references; date, rollout, attribution and unsupported outcome challenges recorded individually.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-01-agoda-assistant",
+      "title_zh": "Agoda把AI旅遊助手擴至21個市場，串連規劃與預訂",
+      "source_story_url": "https://www.agoda.com/press/1509063/",
+      "published_article_url": "https://www.agoda.com/press/1509063/",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.agoda.com/press/1509063/",
+          "publisher": "Agoda",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+          "evidence_locator": "Announcement lines 21–23; footer date line 32. From Where to Booked, lines 26–27. Model description, line 29.",
+          "limitations": "The release does not enumerate all eligible markets or accounts or disclose conversion rates; booking gains and universal Hong Kong access are unproven."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "手機助手由9月有限測試擴展至21個市場。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "Announcement lines 21–23; footer date line 32.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        },
+        {
+          "claim_zh": "行程畫布保留偏好、預訂與未完成計劃。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "From Where to Booked, lines 26–27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        },
+        {
+          "claim_zh": "OpenAI供應對話，Gemini及Maps Grounding支援餐廳景點資訊。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "Model description, line 29.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "手機助手由9月有限測試擴展至21個市場。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "Announcement lines 21–23; footer date line 32.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        },
+        {
+          "claim_zh": "行程畫布保留偏好、預訂與未完成計劃。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "From Where to Booked, lines 26–27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        },
+        {
+          "claim_zh": "OpenAI供應對話，Gemini及Maps Grounding支援餐廳景點資訊。",
+          "support_url": "https://www.agoda.com/press/1509063/",
+          "evidence_locator": "Model description, line 29.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部市場與帳戶資格；未披露轉換率，不能推論預訂增長或香港全面開放。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "finding": "Reopened original and checked actual October 30 footer date. Expansion is material versus September test. Removed beta booking uplift; no complete market list or universal Hong Kong eligibility inferred."
+      },
+      "review_notes": "Reopened original and checked actual October 30 footer date. Expansion is material versus September test. Removed beta booking uplift; no complete market list or universal Hong Kong eligibility inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 97
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-hotel-ai-study",
+      "title_zh": "酒店AI搜尋研究：提及份額分散，3.1%並非預訂市佔",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-28",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "publisher": "Zen Media / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+          "evidence_locator": "Methodology, line 64. Methodology, line 64; ChatGPT, Gemini and Grok. Table definition lines 70–73.",
+          "limitations": "This is a visibility vendor’s single-day sample, not an independently reproduced or Hong Kong result; it establishes no booking lift."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "研究用1,000條問題收集3,015個AI答案。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Methodology, line 64.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        },
+        {
+          "claim_zh": "樣本於10月28日涵蓋美國市場三款AI引擎。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Methodology, line 64; ChatGPT, Gemini and Grok.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        },
+        {
+          "claim_zh": "Expedia的3.1%以13,194次公司提及為分母。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Table definition lines 70–73.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "研究用1,000條問題收集3,015個AI答案。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Methodology, line 64.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        },
+        {
+          "claim_zh": "樣本於10月28日涵蓋美國市場三款AI引擎。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Methodology, line 64; ChatGPT, Gemini and Grok.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        },
+        {
+          "claim_zh": "Expedia的3.1%以13,194次公司提及為分母。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392193/0/en/ai-visibility-for-hotels-and-resorts-no-company-holds-more-than-3-1-of-mentions-in-ai-answers.html",
+          "evidence_locator": "Table definition lines 70–73.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是提供AI可見度服務公司的單日樣本，非獨立重現或香港市場結果，亦不能證明內容優化帶來預訂。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "finding": "Reopened methodology and denominator. Corrected discovery digest's misleading suggestion that 52/59 citations were all third-party: some were unnamed resorts. Omitted that statistic entirely. Kept US single-day scope, no ranking or booking causality."
+      },
+      "review_notes": "Reopened methodology and denominator. Corrected discovery digest's misleading suggestion that 52/59 citations were all third-party: some were unnamed resorts. Omitted that statistic entirely. Kept US single-day scope, no ranking or booking causality.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-demandsense-linkedin",
+      "title_zh": "DemandSense接入LinkedIn公司層級訊號，擴充歸因視野",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "publisher": "DemandSense / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+          "evidence_locator": "Announcement, line 59. Integration description, line 60. About the integration, lines 76–78.",
+          "limitations": "More attributed activity is not incremental demand. Historical LinkedIn beta figures are not measured results from this DemandSense rollout."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "公司宣布加入LinkedIn合作計劃及接入Company Intelligence API。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "Announcement, line 59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        },
+        {
+          "claim_zh": "API提供付費及自然互動的公司層級資料。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "Integration description, line 60.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        },
+        {
+          "claim_zh": "公告稱整合已向所有DemandSense客戶提供。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "About the integration, lines 76–78.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "公司宣布加入LinkedIn合作計劃及接入Company Intelligence API。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "Announcement, line 59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        },
+        {
+          "claim_zh": "API提供付費及自然互動的公司層級資料。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "Integration description, line 60.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        },
+        {
+          "claim_zh": "公告稱整合已向所有DemandSense客戶提供。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392461/0/en/demandsense-joins-linkedin-marketing-partner-program-bringing-full-funnel-b2b-attribution-to-linkedin-advertisers.html",
+          "evidence_locator": "About the integration, lines 76–78.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "新增歸因不等於新增需求；公告引用的LinkedIn舊beta成效並非今次DemandSense實測結果。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "finding": "Reopened original; removed all 287%, 75.5%, 96% and 43% performance figures because they are older LinkedIn partner beta data, not incremental outcomes of this launch. Attribution remains measurement, not causal lift."
+      },
+      "review_notes": "Reopened original; removed all 287%, 75.5%, 96% and 43% performance figures because they are older LinkedIn partner beta data, not incremental outcomes of this launch. Attribution remains measurement, not causal lift.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 20,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "High",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-01-hkchat-music",
+      "title_zh": "港話通加入YuE2音樂創作，哼唱或相片可作起點",
+      "source_story_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+      "published_article_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "publisher": "香港新聞網",
+          "source_class": "B",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+          "evidence_locator": "HKCNA dated report, lines 14–18 and 33–35. Two creation modes, lines 24–27. Free access paragraph, lines 37–38.",
+          "limitations": "The reports do not establish commercial licensing or rights guarantees. Free access is not commercial permission; quality and Cantonese accuracy were not tested."
+        },
+        {
+          "url": "https://unwire.hk/2026/10/30/hkchat-ai-music-yue2-cantopop/fun-tech/",
+          "publisher": "unwire.hk",
+          "source_class": "C",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "evidence_locator": "October 30 dated report; creation modes and free access sections.",
+          "limitations": "The reports do not establish commercial licensing or rights guarantees. Free access is not commercial permission; quality and Cantonese accuracy were not tested."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "港話通音樂功能接入HKGAI自研YuE2。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "HKCNA dated report, lines 14–18 and 33–35.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        },
+        {
+          "claim_zh": "功能接受哼唱或圖片作創作輸入。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "Two creation modes, lines 24–27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        },
+        {
+          "claim_zh": "現階段向所有用戶免費開放體驗。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "Free access paragraph, lines 37–38.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "港話通音樂功能接入HKGAI自研YuE2。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "HKCNA dated report, lines 14–18 and 33–35.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        },
+        {
+          "claim_zh": "功能接受哼唱或圖片作創作輸入。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "Two creation modes, lines 24–27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        },
+        {
+          "claim_zh": "現階段向所有用戶免費開放體驗。",
+          "support_url": "https://www.hkcna.hk/h5/cn/content/s6ae48e2fe4b0893034d74cac.html",
+          "evidence_locator": "Free access paragraph, lines 37–38.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "報道未交代商用授權或權利保障；免費體驗不等於可商用，本刊未測試音質或粵語準確度。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "finding": "Reopened HKCNA dated direct report and compared unwire's same-event report after no dated official newsroom original was located. Omitted global-leading/professional-quality promises. Free access is attributed and does not establish advertising/music licensing."
+      },
+      "review_notes": "Reopened HKCNA dated direct report and compared unwire's same-event report after no dated official newsroom original was located. Omitted global-leading/professional-quality promises. Free access is attributed and does not establish advertising/music licensing.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 20,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-zoominfo-snowflake",
+      "title_zh": "ZoomInfo把MCP及API接入Snowflake，保留既有權限",
+      "source_story_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+      "published_article_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "publisher": "ZoomInfo",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+          "access_method": "Web source text inspected; subsequent original URL retrieval challenged claims, dates and scope. Timestamp records completion of review, not product testing.",
+          "evidence_locator": "Dated opening, lines 62–68. Governance paragraph, line 86. Availability statement, line 89.",
+          "limitations": "Snowflake access and a ZoomInfo subscription are required. The release proves no accuracy rate, sales lift or automatic campaign activation."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "公告稱MCP及API現可在Snowflake使用。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Dated opening, lines 62–68.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        },
+        {
+          "claim_zh": "Cortex接入沿用ZoomInfo角色權限及需管理員批准。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Governance paragraph, line 86.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        },
+        {
+          "claim_zh": "現有提供範圍為持ZoomInfo訂閱的Snowflake客戶。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Availability statement, line 89.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "公告稱MCP及API現可在Snowflake使用。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Dated opening, lines 62–68.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        },
+        {
+          "claim_zh": "Cortex接入沿用ZoomInfo角色權限及需管理員批准。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Governance paragraph, line 86.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        },
+        {
+          "claim_zh": "現有提供範圍為持ZoomInfo訂閱的Snowflake客戶。",
+          "support_url": "https://zoominfotechnologiesinc.gcs-web.com/news-releases/news-release-details/zoominfo-launches-new-mcp-connector-and-api-snowflake",
+          "evidence_locator": "Availability statement, line 89.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "需同時具備Snowflake及ZoomInfo訂閱；公告未證明資料準確率、銷售增長或自動投放能力。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:00:33+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original source through a subsequent web request and challenged scope, dates, numbers, attribution and causality. No separate person, subagent, product trial or independently measured result.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:00:33+08:00",
+        "finding": "Reopened original. Kept subscription/admin requirements and distinguished read/research/enrich endpoints from ad activation. Excluded headline-sized database counts and bulk limits as unnecessary; no ROI or accuracy claim."
+      },
+      "review_notes": "Reopened original. Kept subscription/admin requirements and distinguished read/research/enrich endpoints from ad activation. Excluded headline-sized database counts and bulk limits as unnecessary; no ROI or accuracy claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 89
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-presentations-sales",
+      "title_zh": "Presentations.AI把CRM接入銷售簡報，更新仍設審批選項",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+      "source_date_display": "10月31日",
+      "event_date": "2026-10-31",
+      "first_published_date": "2026-10-31",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "publisher": "Presentations.AI / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-31",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Announcement and workflow, lines 58–69. FAQ, lines 160–163. Refresh FAQ, lines 157–158.",
+          "limitations": "Capabilities and billing are company-reported and untested. API and subscription charges differ; credits are not dollars."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "可由獲批母版與CRM資料生成客戶專屬簡報。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "Announcement and workflow, lines 58–69.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        },
+        {
+          "claim_zh": "提供三種審批模式及可編輯PowerPoint。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "FAQ, lines 160–163.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        },
+        {
+          "claim_zh": "每次更新按每頁10 credits計算，包含未改動頁。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "Refresh FAQ, lines 157–158.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "可由獲批母版與CRM資料生成客戶專屬簡報。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "Announcement and workflow, lines 58–69.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        },
+        {
+          "claim_zh": "提供三種審批模式及可編輯PowerPoint。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "FAQ, lines 160–163.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        },
+        {
+          "claim_zh": "每次更新按每頁10 credits計算，包含未改動頁。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/31/3392733/0/en/presentations-ai-launches-ai-sales-enablement-deck-generator-with-salesforce-to-powerpoint-automation-live-presentation-refresh-editable-powerpoint-export-and-a-presentation-api-at.html",
+          "evidence_locator": "Refresh FAQ, lines 157–158.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "功能與計費按公司公告歸因，未作整合實測；API與訂閱收費分開，不能把credits當作美元。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Original GlobeNewswire release read after Yahoo returned 429; original reopened for final check. Kept three approval options and unchanged-slide credit cost, excluded price discounts and compliance guarantees. API billing not conflated with subscription credits."
+      },
+      "review_notes": "Original GlobeNewswire release read after Yahoo returned 429; original reopened for final check. Kept three approval options and unchanged-slide credit cost, excluded price discounts and compliance guarantees. API billing not conflated with subscription credits.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 20,
+        "market_relevance": 10,
+        "novelty": 10,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-01-synwin-platform",
+      "title_zh": "數雲發布Synwin平台，整合消費者資料與行銷代理",
+      "source_story_url": "https://www.shuyun.com/5250.html",
+      "published_article_url": "https://www.shuyun.com/5250.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.shuyun.com/5250.html",
+          "publisher": "數雲 Shuyun",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Dated title lines 94–102; launch description line 128. Multi-model gateway, lines 141–145. Agent tools line 151; Agent Store line 172.",
+          "limitations": "The release provides no universal agent-availability date. Privacy, compliance and ROI claims are not independently validated."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "數雲10月30日介紹Synwin Agent Platform。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Dated title lines 94–102; launch description line 128.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        },
+        {
+          "claim_zh": "模型網關列出DeepSeek、Kimi、千問及多款海外模型。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Multi-model gateway, lines 141–145.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        },
+        {
+          "claim_zh": "工具支援MCP，指定場景代理將陸續上架。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Agent tools line 151; Agent Store line 172.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "數雲10月30日介紹Synwin Agent Platform。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Dated title lines 94–102; launch description line 128.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        },
+        {
+          "claim_zh": "模型網關列出DeepSeek、Kimi、千問及多款海外模型。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Multi-model gateway, lines 141–145.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        },
+        {
+          "claim_zh": "工具支援MCP，指定場景代理將陸續上架。",
+          "support_url": "https://www.shuyun.com/5250.html",
+          "evidence_locator": "Agent tools line 151; Agent Store line 172.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未列出全部代理即時可用日期；所稱私隱、合規及ROI效果未獨立驗證。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Reopened original. Changed all-agents-available implication to progressive Agent Store rollout. Removed 75% statistic, brand counts, ROI maximization and legal-compliance guarantees. Model connections do not establish lawful cross-border deployment."
+      },
+      "review_notes": "Reopened original. Changed all-agents-available implication to progressive Agent Store rollout. Removed 75% statistic, brand counts, ROI maximization and legal-compliance guarantees. Model connections do not establish lawful cross-border deployment.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 94
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-eta-holiday",
+      "title_zh": "美國假日購物調查：AI比價意向高於代購授權",
+      "source_story_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "publisher": "ETA / TSG / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Methods paragraph, line 470; announcement date lines 457,466. AI-assisted shopping bullet, line 478. Payment paragraph, line 470: 24% plus 7% plus 26%.",
+          "limitations": "These are stated intentions, not observed transactions or Hong Kong findings. Survey mode and margin of error are undisclosed."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "調查樣本為1,099名美國消費者，收集於9月8至13日。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "Methods paragraph, line 470; announcement date lines 457,466.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        },
+        {
+          "claim_zh": "46%計劃用AI比價，23%願授權AI完成購買。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "AI-assisted shopping bullet, line 478.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        },
+        {
+          "claim_zh": "57%為付款偏好不獲支援時的多類負面意向合計。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "Payment paragraph, line 470: 24% plus 7% plus 26%.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "調查樣本為1,099名美國消費者，收集於9月8至13日。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "Methods paragraph, line 470; announcement date lines 457,466.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        },
+        {
+          "claim_zh": "46%計劃用AI比價，23%願授權AI完成購買。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "AI-assisted shopping bullet, line 478.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        },
+        {
+          "claim_zh": "57%為付款偏好不獲支援時的多類負面意向合計。",
+          "support_url": "https://www.prnewswire.com/news-releases/holiday-shoppers-face-greater-financial-pressure-making-payment-choice-more-important-302924996.html",
+          "evidence_locator": "Payment paragraph, line 470: 24% plus 7% plus 26%.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "數據屬自報意向，非實際交易或香港市場結果；公告未披露調查方式或誤差範圍。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Reopened original. Preserved September fieldwork versus October publication; 57% is not cart abandonment or lost revenue. Kept intention labels and US geography; omitted causal certainty from issuer wording."
+      },
+      "review_notes": "Reopened original. Preserved September fieldwork versus October publication; 57% is not cart abandonment or lost revenue. Kept intention labels and US geography; omitted causal certainty from issuer wording.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-peec-soc2",
+      "title_zh": "Peec AI公布SOC 2 Type II審查，範圍屬安全控制",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "publisher": "Peec AI / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Examination description, lines 58–59. Observation dates, line 59. Enterprise features, lines 70–73.",
+          "limitations": "Only the company release was inspected, not the full report. It establishes no measurement accuracy, zero-risk or universal legal compliance."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "公司稱Prescient Assurance完成安全控制審查。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Examination description, lines 58–59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        },
+        {
+          "claim_zh": "審查觀察期為3月30日至6月30日。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Observation dates, line 59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        },
+        {
+          "claim_zh": "公告列出SAML、角色權限及API與MCP。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Enterprise features, lines 70–73.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "公司稱Prescient Assurance完成安全控制審查。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Examination description, lines 58–59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        },
+        {
+          "claim_zh": "審查觀察期為3月30日至6月30日。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Observation dates, line 59.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        },
+        {
+          "claim_zh": "公告列出SAML、角色權限及API與MCP。",
+          "support_url": "https://www.globenewswire.com/news-release/2026/10/30/3392635/0/en/peec-ai-completes-soc-2-type-ii-examination-making-its-ai-search-visibility-platform-fully-enterprise-ready.html",
+          "evidence_locator": "Enterprise features, lines 70–73.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "本刊只閱讀公司公告，未取得完整審查報告；這不證明量度準確、零風險或所有法規合規。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Original reopened. Attributed audit completion to company because full report not inspected. SOC 2 scope is controls, not AEO accuracy or legal guarantee. Observation dates distinguished from announcement date; no blanket enterprise-ready endorsement."
+      },
+      "review_notes": "Original reopened. Attributed audit completion to company because full report not inspected. SOC 2 scope is controls, not AEO accuracy or legal guarantee. Observation dates distinguished from announcement date; no blanket enterprise-ready endorsement.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-whi-nexus",
+      "title_zh": "WHI推出Nexus電話下單，AI接入既有Nexpart流程",
+      "source_story_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "publisher": "WHI Solutions / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Launch description, line 466. Workflow description, lines 474–475. Language availability, line 475.",
+          "limitations": "No independently measured accuracy or revenue result is provided. Rollout is not complete for all customers and Cantonese support is unconfirmed."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Nexus首項電話下單功能已在初期分銷商推出。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Launch description, line 466.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        },
+        {
+          "claim_zh": "AI訂單沿用分銷商Nexpart流程。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Workflow description, lines 474–475.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        },
+        {
+          "claim_zh": "英語、西班牙語先行，更多語言仍在開發。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Language availability, line 475.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Nexus首項電話下單功能已在初期分銷商推出。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Launch description, line 466.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        },
+        {
+          "claim_zh": "AI訂單沿用分銷商Nexpart流程。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Workflow description, lines 474–475.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        },
+        {
+          "claim_zh": "英語、西班牙語先行，更多語言仍在開發。",
+          "support_url": "https://www.prnewswire.com/news-releases/whi-solutions-launches-nexus-ai-suite-for-nexpart-starting-with-ai-assisted-phone-ordering-302924965.html",
+          "evidence_locator": "Language availability, line 475.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "公告未提供獨立準確率或收入結果；已上線不等於全部客戶完成部署，亦未確認粵語支援。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Reopened dated original and customer rollout statements. Kept initial deployment and language limits; omitted no-hold/speed/accuracy superlatives and implied all-customer availability. No Cantonese readiness inferred."
+      },
+      "review_notes": "Reopened dated original and customer rollout statements. Kept initial deployment and language limits; omitted no-hold/speed/accuracy superlatives and implied all-customer availability. No Cantonese readiness inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 8,
+        "novelty": 9,
+        "total": 80
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-01-canva-campaign",
+      "title_zh": "Canva北美新廣告以日常創作故事呈現工具價值",
+      "source_story_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+      "published_article_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+      "source_date_display": "10月30日",
+      "event_date": "2026-10-30",
+      "first_published_date": "2026-10-30",
+      "source_documents": [
+        {
+          "url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "publisher": "Canva",
+          "source_class": "A",
+          "source_publication_date": "2026-10-30",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Campaign TLDR, lines 31–35; newsroom listing dated October 30. Channel summary, line 33; agency credit line 79. Agency credit and schedule, line 79.",
+          "limitations": "This is a brand-strategy case, not a new AI feature. No sales or brand-lift result is disclosed; the first broadcast is still scheduled."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "公告定位為北美品牌企劃。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Campaign TLDR, lines 31–35; newsroom listing dated October 30.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        },
+        {
+          "claim_zh": "素材涵蓋電視、戶外、電台及社交。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Channel summary, line 33; agency credit line 79.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        },
+        {
+          "claim_zh": "首支電視廣告預定美國11月1日播出。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Agency credit and schedule, line 79.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "公告定位為北美品牌企劃。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Campaign TLDR, lines 31–35; newsroom listing dated October 30.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        },
+        {
+          "claim_zh": "素材涵蓋電視、戶外、電台及社交。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Channel summary, line 33; agency credit line 79.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        },
+        {
+          "claim_zh": "首支電視廣告預定美國11月1日播出。",
+          "support_url": "https://www.canva.com/newsroom/news/what-will-you-canva-today-campaign/",
+          "evidence_locator": "Agency credit and schedule, line 79.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "這是品牌策略案例，並非新AI功能發布；公告未提供銷售或品牌提升結果，首播仍屬計劃。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Reopened campaign original and dated newsroom list. Preserved North America scope and future US broadcast time; not claimed aired in Hong Kong morning. Separate brand case from previously published Brush model news; no sales lift inferred."
+      },
+      "review_notes": "Reopened campaign original and dated newsroom list. Preserved North America scope and future US broadcast time; not claimed aired in Hong Kong morning. Separate brand case from previously published Brush model news; no sales lift inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 19,
+        "actionability": 18,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "scheduled_dates": [
+        {
+          "date": "2026-11-01",
+          "status": "announced_plan",
+          "claim_zh": "首支電視廣告預定美國11月1日播出。"
+        }
+      ]
+    },
+    {
+      "story_id": "2026-11-01-coty-brandlight",
+      "title_zh": "案例補讀：Coty以Brandlight串連美妝內容與AI搜尋",
+      "source_story_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+      "published_article_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+      "source_date_display": "10月27日",
+      "event_date": "2026-10-27",
+      "first_published_date": "2026-10-27",
+      "source_documents": [
+        {
+          "url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "publisher": "Coty",
+          "source_class": "A",
+          "source_publication_date": "2026-10-27",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+          "access_method": "Original source inspected and reopened in a separate web retrieval; timestamp is review completion. No product test.",
+          "evidence_locator": "Dated original, lines 12,22–23. Pilot description, line 26. Enablement description, line 27.",
+          "limitations": "This reviews an October 27 announcement, not a new deal today. Pilot results are unquantified and establish no ranking or sales guarantee."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Coty與Brandlight於10月27日公布合作。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Dated original, lines 12,22–23.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        },
+        {
+          "claim_zh": "早期試行涉及商品頁、創作者素材及數碼公關。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Pilot description, line 26.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        },
+        {
+          "claim_zh": "合作支援量度、培訓及優化。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Enablement description, line 27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Coty與Brandlight於10月27日公布合作。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Dated original, lines 12,22–23.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        },
+        {
+          "claim_zh": "早期試行涉及商品頁、創作者素材及數碼公關。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Pilot description, line 26.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        },
+        {
+          "claim_zh": "合作支援量度、培訓及優化。",
+          "support_url": "https://www.coty.com/news/coty-and-brandlight-unveil-strategic-partnership",
+          "evidence_locator": "Enablement description, line 27.",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "此為10月27日公告的案例補讀，非今日新合作；試行未披露量化效果，不能保證排名或銷售。"
+        }
+      ],
+      "reviewed_by": "Codex editorial desk; same-assistant original reading and separate-request second pass, no independent human reviewer",
+      "reviewed_at_hkt": "2026-11-01T07:02:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the original through a separate web request and challenged date, numbers, availability, attribution, causality and language parity. No independent person or subagent, human approval, product trial or measured outcome claimed.",
+        "second_pass_accessed_at_hkt": "2026-11-01T07:02:00+08:00",
+        "finding": "Reopened canonical October 27 release, correcting discovery summaries dated October 29. Retained as explicitly older context, not follow-up/new deal. Removed unquantified uplift claim and no vendor-generated result taken as independent."
+      },
+      "review_notes": "Reopened canonical October 27 release, correcting discovery summaries dated October 29. Retained as explicitly older context, not follow-up/new deal. Removed unquantified uplift claim and no vendor-generated result taken as independent.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 12,
+        "novelty": 6,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
