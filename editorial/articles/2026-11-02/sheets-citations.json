@@ -1,0 +1,143 @@
+{
+  "edition_date_hkt": "2026-11-02",
+  "state": "APPROVED",
+  "article": {
+    "title": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "title_en": "Google Sheets adds cell-level AI citations and a 3,000-cell request limit",
+    "summary": "Google於10月28日說明，Sheets的Fill with Gemini加入逐格網頁來源，單次請求上限擴至3,000格。",
+    "summary_en": "Google’s October 28 update adds cell-level web citations to Fill with Gemini in Sheets and expands requests to up to 3,000 cells.",
+    "why": "市場資料整理可保留回查入口，來源標記本身仍不能取代核實。",
+    "why_en": "Market-data tables gain an audit trail, although citations alone do not verify the output.",
+    "next_step": "先試20格市場資料，逐項重開來源核對日期、單位及數值，再擴大批次。",
+    "next_step_en": "Test 20 market-data cells, reopening sources to check dates, units and values before scaling.",
+    "highlights": [
+      "來源顯示於網頁版Sheets的個別儲存格，方便回查。",
+      "10月20日起分階段推出，最長15天；限公告列出的Workspace及Google AI方案。"
+    ],
+    "highlights_en": [
+      "Web sources appear at individual cells in Sheets on the web.",
+      "A rollout of up to 15 days began October 20 for the listed Workspace and Google AI plans."
+    ],
+    "detail": "Google於10月28日說明，Sheets的Fill with Gemini加入逐格網頁來源，單次請求上限擴至3,000格。\n\n來源顯示於網頁版Sheets的個別儲存格，方便回查。\n\n10月20日起分階段推出，最長15天；限公告列出的Workspace及Google AI方案。\n\n市場資料整理可保留回查入口，來源標記本身仍不能取代核實。\n\n先試20格市場資料，逐項重開來源核對日期、單位及數值，再擴大批次。\n\n不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。",
+    "detail_en": "Google’s October 28 update adds cell-level web citations to Fill with Gemini in Sheets and expands requests to up to 3,000 cells.\n\nWeb sources appear at individual cells in Sheets on the web.\n\nA rollout of up to 15 days began October 20 for the listed Workspace and Google AI plans.\n\nMarket-data tables gain an audit trail, although citations alone do not verify the output.\n\nTest 20 market-data cells, reopening sources to check dates, units and values before scaling.\n\nAccess is plan-limited. The 55-times speed claim comes from an internal 95-participant, English 500-cell study, not a universal result.",
+    "source": "Google Workspace",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+    "time": "10月28日",
+    "section": "即學技巧 & 玩法",
+    "region": "國際",
+    "action": "可即用",
+    "editorial_slug": "sheets-citations",
+    "source_kind": "official",
+    "action_en": "Ready to Use"
+  },
+  "evidence": {
+    "story_id": "2026-11-02-sheets-citations",
+    "title_zh": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "source_story_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+    "published_article_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+    "source_date_display": "10月28日",
+    "event_date": "2026-10-20",
+    "first_published_date": "2026-10-28",
+    "source_documents": [
+      {
+        "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "publisher": "Google Workspace",
+        "source_class": "A",
+        "source_publication_date": "2026-10-28",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+        "access_method": "Original text opened through web retrieval, then reopened in a separate request by the same assistant for a claim/date/scope challenge. Timestamp records review completion.",
+        "evidence_locator": "Feature attribution paragraph, line 74. Capacity paragraph, line 75. Rollout and availability sections, lines 82–92.",
+        "limitations": "Access is plan-limited. The 55-times speed claim comes from an internal 95-participant, English 500-cell study, not a universal result."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "網頁版Sheets提供個別儲存格網頁來源。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Feature attribution paragraph, line 74.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      },
+      {
+        "claim_zh": "單次請求上限為3,000格。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Capacity paragraph, line 75.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      },
+      {
+        "claim_zh": "10月20日起最長15天逐步推出，指定方案適用。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Rollout and availability sections, lines 82–92.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "網頁版Sheets提供個別儲存格網頁來源。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Feature attribution paragraph, line 74.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      },
+      {
+        "claim_zh": "單次請求上限為3,000格。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Capacity paragraph, line 75.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      },
+      {
+        "claim_zh": "10月20日起最長15天逐步推出，指定方案適用。",
+        "support_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+        "evidence_locator": "Rollout and availability sections, lines 82–92.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk; same-assistant separate-request second pass, no human or separate subagent reviewer",
+    "reviewed_at_hkt": "2026-11-02T07:10:18+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original URLs in subsequent web requests, checked claim locators, dates, numbers, eligibility, attribution and causality. Not an independent person, product test or human approval.",
+      "second_pass_accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+      "finding": "Reopened canonical official URL after mobile URL hit a temporary Google block. Verified October 28 publication versus October 20 rollout start and plan limitations. Preserved internal-study scope, no accuracy guarantee from citations."
+    },
+    "review_notes": "Reopened canonical official URL after mobile URL hit a temporary Google block. Verified October 28 publication versus October 20 rollout start and plan limitations. Preserved internal-study scope, no accuracy guarantee from citations.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 29,
+      "business_impact": 21,
+      "actionability": 20,
+      "market_relevance": 11,
+      "novelty": 7,
+      "total": 88
+    },
+    "impact": "High",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
+    "title_zh_hant": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "逐格引用不译成数据已验证；3,000格是单次请求上限。10月20日推出起点与28日公告日期分开；55倍仅是指定内部研究结果。 三语保留相同事实、来源、数字、日期与限制；简体由既有OpenCC及术语流程生成并验收，无独立人工校对或产品实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}

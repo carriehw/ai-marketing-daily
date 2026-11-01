@@ -1,0 +1,143 @@
+{
+  "edition_date_hkt": "2026-11-02",
+  "state": "APPROVED",
+  "article": {
+    "title": "Microsoft把Copilot多模型執行框架帶到Foundry",
+    "title_en": "Microsoft brings its multi-model Copilot runtime to Foundry",
+    "summary": "Microsoft於10月28日宣布，將Copilot使用的多模型執行框架透過Foundry提供給開發者及企業，用來組建可使用工具的代理。",
+    "summary_en": "Microsoft’s October 28 announcement makes its multi-model Copilot runtime available through Foundry for developers and enterprises building tool-using agents.",
+    "why": "行銷代理項目的比較應涵蓋執行環境、權限和模型切換，而非只看模型名稱。",
+    "why_en": "Marketing-agent evaluations should cover execution, permissions and model switching as well as model choice.",
+    "next_step": "以一個唯讀市場資料任務比較接入成本、紀錄及失敗恢復。",
+    "next_step_en": "Compare integration effort, logs and failure recovery on one read-only market-data task.",
+    "highlights": [
+      "框架支援MCP、agent skills及插件，負責模型周邊的編排與執行環境。",
+      "企業可下載SDK或使用Foundry託管模式，自行提供指令、工具及模型選擇。"
+    ],
+    "highlights_en": [
+      "It supports MCP, agent skills and plugins, orchestrating the environment around the model.",
+      "Teams can download the SDK or use Foundry hosting, supplying instructions, tools and model choices."
+    ],
+    "detail": "Microsoft於10月28日宣布，將Copilot使用的多模型執行框架透過Foundry提供給開發者及企業，用來組建可使用工具的代理。\n\n框架支援MCP、agent skills及插件，負責模型周邊的編排與執行環境。\n\n企業可下載SDK或使用Foundry託管模式，自行提供指令、工具及模型選擇。\n\n行銷代理項目的比較應涵蓋執行環境、權限和模型切換，而非只看模型名稱。\n\n以一個唯讀市場資料任務比較接入成本、紀錄及失敗恢復。\n\n公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。",
+    "detail_en": "Microsoft’s October 28 announcement makes its multi-model Copilot runtime available through Foundry for developers and enterprises building tool-using agents.\n\nIt supports MCP, agent skills and plugins, orchestrating the environment around the model.\n\nTeams can download the SDK or use Foundry hosting, supplying instructions, tools and model choices.\n\nMarketing-agent evaluations should cover execution, permissions and model switching as well as model choice.\n\nCompare integration effort, logs and failure recovery on one read-only market-data task.\n\nThe release supplies no market-by-market pricing or marketing ROI test; this is infrastructure, not a complete ready-made marketing agent.",
+    "source": "Microsoft",
+    "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+    "time": "10月28日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "editorial_slug": "copilot-harness",
+    "source_kind": "official",
+    "action_en": "Watch"
+  },
+  "evidence": {
+    "story_id": "2026-11-02-copilot-harness",
+    "title_zh": "Microsoft把Copilot多模型執行框架帶到Foundry",
+    "source_story_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+    "published_article_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+    "source_date_display": "10月28日",
+    "event_date": "2026-10-28",
+    "first_published_date": "2026-10-28",
+    "source_documents": [
+      {
+        "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "publisher": "Microsoft",
+        "source_class": "A",
+        "source_publication_date": "2026-10-28",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+        "access_method": "Original text opened through web retrieval, then reopened in a separate request by the same assistant for a claim/date/scope challenge. Timestamp records review completion.",
+        "evidence_locator": "Announcement lines 7–8. Harness definition, line 11. Try it yourself, lines 21–23.",
+        "limitations": "The release supplies no market-by-market pricing or marketing ROI test; this is infrastructure, not a complete ready-made marketing agent."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Copilot框架透過Microsoft Foundry提供。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Announcement lines 7–8.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      },
+      {
+        "claim_zh": "框架支援MCP、skills及插件。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Harness definition, line 11.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      },
+      {
+        "claim_zh": "可下載SDK或使用Foundry託管並自備工具指令。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Try it yourself, lines 21–23.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Copilot框架透過Microsoft Foundry提供。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Announcement lines 7–8.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      },
+      {
+        "claim_zh": "框架支援MCP、skills及插件。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Harness definition, line 11.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      },
+      {
+        "claim_zh": "可下載SDK或使用Foundry託管並自備工具指令。",
+        "support_url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "evidence_locator": "Try it yourself, lines 21–23.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk; same-assistant separate-request second pass, no human or separate subagent reviewer",
+    "reviewed_at_hkt": "2026-11-02T07:10:18+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original URLs in subsequent web requests, checked claim locators, dates, numbers, eligibility, attribution and causality. Not an independent person, product test or human approval.",
+      "second_pass_accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+      "finding": "Reopened original; reported available SDK/hosting without treating runtime as standalone campaign product. Removed industry-leading performance and cost superlatives not independently tested."
+    },
+    "review_notes": "Reopened original; reported available SDK/hosting without treating runtime as standalone campaign product. Removed industry-leading performance and cost superlatives not independently tested.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 25,
+      "business_impact": 22,
+      "actionability": 17,
+      "market_relevance": 10,
+      "novelty": 7,
+      "total": 81
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+    "title_zh_hant": "Microsoft把Copilot多模型執行框架帶到Foundry",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "harness解释为模型周边执行框架，不译成新模型；可下载SDK与托管选项分开。未声称营销ROI、全球统一价格或现成投放代理。 三语保留相同事实、来源、数字、日期与限制；简体由既有OpenCC及术语流程生成并验收，无独立人工校对或产品实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}

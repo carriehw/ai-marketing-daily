@@ -1,0 +1,143 @@
+{
+  "edition_date_hkt": "2026-11-02",
+  "state": "APPROVED",
+  "article": {
+    "title": "Bing公布訓練與答案引用分開控制，2027年2月起生效",
+    "title_en": "Bing separates training and grounding controls, effective February 2027",
+    "summary": "Microsoft於10月30日公布新的網站內容使用偏好，讓AI訓練與生成答案的grounding分開設定，2027年2月1日起隨重新爬取生效。",
+    "summary_en": "Microsoft’s October 30 announcement separates AI training and answer-grounding preferences, effective as pages are crawled from February 1, 2027.",
+    "why": "品牌需要分開決定模型訓練與答案可見度，並交由內容及技術團隊共同管理。",
+    "why_en": "Content and technical teams need separate decisions on model training and answer visibility.",
+    "next_step": "盤點現有標籤，按官方遷移指南測試設定並安排重新爬取。",
+    "next_step_en": "Inventory current tags, test the documented migration and plan for recrawling.",
+    "highlights": [
+      "訓練偏好可設於robots.txt或頁面；grounding偏好設於頁面。",
+      "使用NoArchive或NoCache的網站應於2027年3月1日前完成遷移安排。"
+    ],
+    "highlights_en": [
+      "Training preferences can sit in robots.txt or pages; grounding preferences are page-level.",
+      "Sites using NoArchive or NoCache should complete the transition steps before March 1, 2027."
+    ],
+    "detail": "Microsoft於10月30日公布新的網站內容使用偏好，讓AI訓練與生成答案的grounding分開設定，2027年2月1日起隨重新爬取生效。\n\n訓練偏好可設於robots.txt或頁面；grounding偏好設於頁面。\n\n使用NoArchive或NoCache的網站應於2027年3月1日前完成遷移安排。\n\n品牌需要分開決定模型訓練與答案可見度，並交由內容及技術團隊共同管理。\n\n盤點現有標籤，按官方遷移指南測試設定並安排重新爬取。\n\n偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。",
+    "detail_en": "Microsoft’s October 30 announcement separates AI training and answer-grounding preferences, effective as pages are crawled from February 1, 2027.\n\nTraining preferences can sit in robots.txt or pages; grounding preferences are page-level.\n\nSites using NoArchive or NoCache should complete the transition steps before March 1, 2027.\n\nContent and technical teams need separate decisions on model training and answer visibility.\n\nInventory current tags, test the documented migration and plan for recrawling.\n\nThe preferences do not change traditional Bing eligibility or guarantee citations, traffic or payment; they are not yet effective.",
+    "source": "Microsoft Bing",
+    "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "time": "10月30日",
+    "section": "廣告平台 & 行銷科技",
+    "region": "國際",
+    "action": "影響生意",
+    "editorial_slug": "bing-preferences",
+    "source_kind": "official",
+    "action_en": "Business Impact"
+  },
+  "evidence": {
+    "story_id": "2026-11-02-bing-preferences",
+    "title_zh": "Bing公布訓練與答案引用分開控制，2027年2月起生效",
+    "source_story_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "published_article_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "source_date_display": "10月30日",
+    "event_date": "2026-10-30",
+    "first_published_date": "2026-10-30",
+    "source_documents": [
+      {
+        "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "publisher": "Microsoft Bing",
+        "source_class": "A",
+        "source_publication_date": "2026-10-30",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+        "access_method": "Original text opened through web retrieval, then reopened in a separate request by the same assistant for a claim/date/scope challenge. Timestamp records review completion.",
+        "evidence_locator": "Effective date and recrawl, lines 21 and 28. Separate preference definitions, lines 17–20; guide lines 39–57. Act by March 1 section, lines 26–33.",
+        "limitations": "The preferences do not change traditional Bing eligibility or guarantee citations, traffic or payment; they are not yet effective."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "2027年2月1日起隨爬取生效。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Effective date and recrawl, lines 21 and 28.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      },
+      {
+        "claim_zh": "訓練與grounding可獨立設定。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Separate preference definitions, lines 17–20; guide lines 39–57.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      },
+      {
+        "claim_zh": "NoArchive及NoCache使用者應於3月1日前遷移。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Act by March 1 section, lines 26–33.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "2027年2月1日起隨爬取生效。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Effective date and recrawl, lines 21 and 28.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      },
+      {
+        "claim_zh": "訓練與grounding可獨立設定。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Separate preference definitions, lines 17–20; guide lines 39–57.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      },
+      {
+        "claim_zh": "NoArchive及NoCache使用者應於3月1日前遷移。",
+        "support_url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+        "evidence_locator": "Act by March 1 section, lines 26–33.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。"
+      }
+    ],
+    "reviewed_by": "Codex editorial desk; same-assistant separate-request second pass, no human or separate subagent reviewer",
+    "reviewed_at_hkt": "2026-11-02T07:10:18+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original URLs in subsequent web requests, checked claim locators, dates, numbers, eligibility, attribution and causality. Not an independent person, product test or human approval.",
+      "second_pass_accessed_at_hkt": "2026-11-02T07:10:18+08:00",
+      "finding": "Reopened original and corrected any launch-now implication. Separated February 1 effective date from March 1 migration deadline. No promise of ranking, licensing income or retroactive removal. This is distinct from prior OpenAI training-signal coverage."
+    },
+    "review_notes": "Reopened original and corrected any launch-now implication. Separated February 1 effective date from March 1 migration deadline. No promise of ranking, licensing income or retroactive removal. This is distinct from prior OpenAI training-signal coverage.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 30,
+      "business_impact": 23,
+      "actionability": 20,
+      "market_relevance": 10,
+      "novelty": 9,
+      "total": 92
+    },
+    "impact": "High",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+    "title_zh_hant": "Bing公布訓練與答案引用分開控制，2027年2月起生效",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "grounding指生成答案时引用内容，与模型训练不同；2月1日生效和3月1日迁移节点不混写。保留不保证流量或付款及传统搜索资格。 三语保留相同事实、来源、数字、日期与限制；简体由既有OpenCC及术语流程生成并验收，无独立人工校对或产品实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
