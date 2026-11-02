@@ -2,9 +2,9 @@
   "edition_date_hkt": "2026-11-03",
   "main_sha_at_start": "0c604a247de51337816c476ffb75b89ec6f9be3a",
   "discovered_count": 25,
-  "approved_count": 3,
-  "held_count": 0,
-  "status": "in_progress",
+  "approved_count": 6,
+  "held_count": 12,
+  "status": "below_publication_floor",
   "items": [
     {
       "slug": "morningai-studio",
@@ -12,7 +12,7 @@
       "url": "https://www.morningai.com/blog/november-2-2026-product-updates",
       "provisional_score": 84,
       "state": "APPROVED",
-      "next_action": "Reuse completed reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
       "article_packet_path": "editorial/articles/2026-11-03/morningai-studio.json"
     },
     {
@@ -20,32 +20,36 @@
       "title": "Profound新加坡亞太總部",
       "url": "https://www.globenewswire.com/news-release/2026/11/02/3392809/0/en/profound-establishes-singapore-as-asia-pacific-headquarters-as-ai-becomes-the-new-front-door-for-brands.html",
       "provisional_score": 91,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Official GlobeNewswire original and direct Marketing-Interactive report both returned internal retrieval errors. Need reopen full release; verify headquarters status versus Q4 office plan and hiring.",
+      "reason": "Official GlobeNewswire original and direct Marketing-Interactive report both returned internal retrieval errors. Need reopen full release; verify headquarters status versus Q4 office plan and hiring."
     },
     {
       "slug": "chatgpt-ad-study",
       "title": "ChatGPT廣告研究",
       "url": "https://searchengineland.com/chatgpt-ads-generate-less-revenue-per-visit-than-google-search-study-500160",
       "provisional_score": 93,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Trade article original returned internal error. Need original working paper, sample, dates and revenue-per-visit definitions; do not publish 64% headline from search.",
+      "reason": "Trade article original returned internal error. Need original working paper, sample, dates and revenue-per-visit definitions; do not publish 64% headline from search."
     },
     {
       "slug": "longcat-25",
       "title": "美團LongCat-2.5",
       "url": "https://longcat.ai/blog/longcat-2.5",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Official blog, company-hosted report and Xinhua original unavailable. Resolve blog November 1 versus announcement November 2, model access and benchmark attribution.",
+      "reason": "Official blog, company-hosted report and Xinhua original unavailable. Resolve blog November 1 versus announcement November 2, model access and benchmark attribution."
     },
     {
       "slug": "duda-con",
       "title": "DudaCon更新",
       "url": "https://blog.duda.co/everything-we-announced-at-dudacon26",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Duda original returned internal retrieval error twice. Need feature-by-feature availability and plan limits.",
+      "reason": "Duda original returned internal retrieval error twice. Need feature-by-feature availability and plan limits."
     },
     {
       "slug": "coveo-anglera",
@@ -53,16 +57,17 @@
       "url": "https://ir.coveo.com/en/news-events/press-releases/detail/503/coveo-acquires-anglera-to-make-product-data-a-competitive",
       "provisional_score": 83,
       "state": "APPROVED",
-      "next_action": "Reuse completed reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
       "article_packet_path": "editorial/articles/2026-11-03/coveo-anglera.json"
     },
     {
       "slug": "editagent",
       "title": "EditAgent研究",
       "url": "https://arxiv.org/abs/2610.39664",
-      "provisional_score": 77,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "provisional_score": 73,
+      "state": "APPROVED",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
+      "article_packet_path": "editorial/articles/2026-11-03/editagent.json"
     },
     {
       "slug": "zocdoc-agents",
@@ -70,24 +75,26 @@
       "url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
       "provisional_score": 76,
       "state": "APPROVED",
-      "next_action": "Reuse completed reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
       "article_packet_path": "editorial/articles/2026-11-03/zocdoc-agents.json"
     },
     {
       "slug": "modellix-comfy",
       "title": "Modellix ComfyUI接入",
-      "url": "https://www.modellix.ai/blog/seedance-comfyui",
+      "url": "https://ir.aurora-mobile.com/news-releases/news-release-details/aurora-mobiles-modellixai-brings-unified-ai-model-access-comfyui",
       "provisional_score": 82,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "APPROVED",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
+      "article_packet_path": "editorial/articles/2026-11-03/modellix-comfy.json"
     },
     {
       "slug": "icompass",
       "title": "香港iCOMPASS KY-AI",
       "url": "https://money.udn.com/money/story/12987/9852199",
       "provisional_score": 72,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "UDN syndicated release unavailable. Need canonical issuer release and exact KY-AI governance scope; no compliance guarantee.",
+      "reason": "UDN syndicated release unavailable. Need canonical issuer release and exact KY-AI governance scope; no compliance guarantee."
     },
     {
       "slug": "canva-brand",
@@ -126,32 +133,35 @@
       "title": "WFA AI使用調查",
       "url": "https://ethicalmarketingnews.com/96-of-major-brands-now-use-ai-in-marketing-wfa-research-finds",
       "provisional_score": 82,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "REJECTED",
+      "next_action": "Canonical WFA original dated September 30; November 2 republication is not a fresh event. No material new update established."
     },
     {
       "slug": "cathay-iab",
       "title": "香港國泰IAB分享",
       "url": "https://www.campaignasia.com/news",
       "provisional_score": 75,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Only Campaign Asia listing inspected. Need actual session report/source and event date before quoting.",
+      "reason": "Only Campaign Asia listing inspected. Need actual session report/source and event date before quoting."
     },
     {
       "slug": "chatgpt-expansion",
       "title": "ChatGPT廣告市場與多圖擴展",
       "url": "https://www.seroundtable.com/recap-11-02-2026-42434.html",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Daily roundup unavailable. Need specific OpenAI advertiser update or relevant official help page; verify 26-country and multi-image availability, not roundup alone.",
+      "reason": "Daily roundup unavailable. Need specific OpenAI advertiser update or relevant official help page; verify 26-country and multi-image availability, not roundup alone."
     },
     {
       "slug": "google-strategists",
       "title": "Google廣告顧問AI身份報道",
       "url": "https://www.seroundtable.com/google-ads-strategist-ai-fake-names-photos-42426.html",
       "provisional_score": 70,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Original investigation not opened. Need evidence and Google response to avoid asserting alleged fake identities as established.",
+      "reason": "Original investigation not opened. Need evidence and Google response to avoid asserting alleged fake identities as established."
     },
     {
       "slug": "muaziin",
@@ -174,16 +184,18 @@
       "title": "品牌定格動畫趨勢",
       "url": "https://www.wsj.com/cmo-today/ai-is-stuck-on-fast-forward-the-ad-industry-is-turning-to-stop-motion-33529734",
       "provisional_score": 77,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "WSJ article not opened; search excerpt only. Need same-event direct campaign sources or readable original; no invented production methods.",
+      "reason": "WSJ article not opened; search excerpt only. Need same-event direct campaign sources or readable original; no invented production methods."
     },
     {
       "slug": "search-budgets",
       "title": "搜尋預算與增量量度",
       "url": "https://digiday.com/marketing/google-search-loses-its-free-pass-with-buyers/",
       "provisional_score": 83,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Digiday original not opened. Need direct interviews, dates and scope; do not turn anecdotal budget shifts into market measurement.",
+      "reason": "Digiday original not opened. Need direct interviews, dates and scope; do not turn anecdotal budget shifts into market measurement."
     },
     {
       "slug": "geo-forum",
@@ -198,16 +210,37 @@
       "title": "ChatGPT與Codex共享額度",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
       "provisional_score": 78,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Roundup and secondary ledger inaccessible. Official release notes opened but do not establish December shared allowance. Find actual official usage FAQ and exact plans.",
+      "reason": "Roundup and secondary ledger inaccessible. Official release notes opened but do not establish December shared allowance. Find actual official usage FAQ and exact plans."
     },
     {
       "slug": "google-computer",
       "title": "Gemini Computer Use正式提供",
       "url": "https://radiodore.com/episodes/ep_d20735384ef246a298150ffe12892c6e",
       "provisional_score": 74,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical original; challenge material claims in second pass before localization."
+      "state": "HELD",
+      "next_action": "Google changelog confirms October 30 GA, but detailed tool documentation failed after redirect. Need full execution and safety scope; no complete three-claim packet yet.",
+      "reason": "Google changelog confirms October 30 GA, but detailed tool documentation failed after redirect. Need full execution and safety scope; no complete three-claim packet yet."
+    },
+    {
+      "slug": "gemini-25-migration",
+      "title": "Google公布Gemini 2.5 API遷移安排，12月起自動轉用其他模型",
+      "url": "https://aistudio.google.com/docs/changelog",
+      "provisional_score": 87,
+      "state": "APPROVED",
+      "next_action": "Reuse exact reviewed packet; do not retranslate.",
+      "article_packet_path": "editorial/articles/2026-11-03/gemini-25-migration.json"
     }
-  ]
+  ],
+  "expansion_count": 1,
+  "rejected_count": 8,
+  "updated_at_hkt": "2026-11-03T07:08:04+08:00",
+  "next_action": "Reuse six approved packets. Retry highest-value held originals, close at least four more complete packets; assemble edition only at >=10. No publication input submitted.",
+  "latest_ci": {
+    "run_id": 41542563059,
+    "head_sha": "b433c015ec37027f96532fad8d0878845a36c3e6",
+    "conclusion": "success",
+    "scope": "First three saved article packets; newer checkpoint requires separate CI."
+  }
 }

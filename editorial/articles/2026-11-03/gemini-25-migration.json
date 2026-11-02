@@ -1,0 +1,151 @@
+{
+  "edition_date_hkt": "2026-11-03",
+  "state": "APPROVED",
+  "article": {
+    "title": "Google公布Gemini 2.5 API遷移安排，12月起自動轉用其他模型",
+    "title_en": "Google sets December API routing changes for Gemini 2.5 models",
+    "summary": "Google於11月2日列出Gemini 2.5 Pro及Flash的棄用與遷移安排。",
+    "summary_en": "Google listed deprecation and migration plans for Gemini 2.5 Pro and Flash on November 2.",
+    "highlights": [
+      "12月1日起，Pro請求轉至3.8 Flash，Flash請求轉至3.5 Flash-Lite。",
+      "轉用後按目標模型費率收費。"
+    ],
+    "highlights_en": [
+      "From December 1, Pro routes to 3.8 Flash; Flash routes to 3.5 Flash-Lite.",
+      "Destination-model rates will apply."
+    ],
+    "why": "以API支援文案、報表或客戶流程的團隊，需要重驗輸出與成本。",
+    "why_en": "Teams using the API for copy, reports or customer workflows should reassess output and cost.",
+    "next_step": "列出仍用2.5的流程，在切換前以固定任務比較結果。",
+    "next_step_en": "Inventory 2.5 workflows and compare fixed tasks before switching.",
+    "detail": "這項安排針對API模型識別碼，並非所有Gemini使用者介面同時停用。Google指兩款2.5模型已不能在AI Studio中選取，API自動轉送則由12月1日開始。遷移亦涉及函式呼叫及思考參數等相容性變化。品牌團隊宜要求技術供應商確認實際使用的模型、切換測試及費率，不能直接假設自動轉送後輸出與原本完全相同。",
+    "detail_en": "The change concerns API model identifiers, not a simultaneous shutdown of every Gemini interface. The models are no longer selectable in AI Studio. Migration also changes function-calling and thinking parameters. Ask vendors to verify compatibility rather than assuming identical results.",
+    "source": "Google Gemini API release notes",
+    "url": "https://aistudio.google.com/docs/changelog",
+    "time": "11月2日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "影響生意",
+    "action_en": "Business Impact",
+    "editorial_slug": "gemini-25-migration",
+    "source_kind": "official"
+  },
+  "evidence": {
+    "story_id": "2026-11-03-gemini-25-migration",
+    "title_zh": "Google公布Gemini 2.5 API遷移安排，12月起自動轉用其他模型",
+    "source_story_url": "https://aistudio.google.com/docs/changelog",
+    "published_article_url": "https://aistudio.google.com/docs/changelog",
+    "source_date_display": "11月2日",
+    "event_date": "2026-11-02",
+    "first_published_date": "2026-11-02",
+    "source_documents": [
+      {
+        "url": "https://aistudio.google.com/docs/changelog",
+        "publisher": "Google Gemini API release notes",
+        "source_class": "A",
+        "source_publication_date": "2026-11-02",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-03T07:07:25+08:00",
+        "access_method": "Original full text read via web retrieval; reopened in a subsequent request by the same assistant.",
+        "evidence_locator": "November 2 changelog, lines 8–12 and 21–24. Effective dates and destination IDs, lines 12–16 and 24–28. Target rate links, lines 14–15 and 26–27.",
+        "limitations": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "兩款2.5模型不再供AI Studio選取。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "November 2 changelog, lines 8–12 and 21–24.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      },
+      {
+        "claim_zh": "12月1日Pro轉3.8 Flash，Flash轉3.5 Flash-Lite。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "Effective dates and destination IDs, lines 12–16 and 24–28.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      },
+      {
+        "claim_zh": "自動轉送後按目標模型費率收費。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "Target rate links, lines 14–15 and 26–27.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "兩款2.5模型不再供AI Studio選取。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "November 2 changelog, lines 8–12 and 21–24.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      },
+      {
+        "claim_zh": "12月1日Pro轉3.8 Flash，Flash轉3.5 Flash-Lite。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "Effective dates and destination IDs, lines 12–16 and 24–28.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      },
+      {
+        "claim_zh": "自動轉送後按目標模型費率收費。",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "evidence_locator": "Target rate links, lines 14–15 and 26–27.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。"
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk; no human or separate reviewer claimed",
+    "reviewed_at_hkt": "2026-11-03T07:07:25+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original source in a separate request and challenged dates, attribution, scope and unsupported outcomes; not independent human review or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-03T07:07:25+08:00",
+      "finding": "Reopened final Google redirect destination. Verified exact Pro and Flash destination IDs, future date and rate basis; distinguished AI Studio selection from API routing.",
+      "source_reopen_reference": "turn19view0"
+    },
+    "review_notes": "Reopened final Google redirect destination. Verified exact Pro and Flash destination IDs, future date and rate basis; distinguished AI Studio selection from API routing.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 28,
+      "business_impact": 23,
+      "actionability": 19,
+      "market_relevance": 8,
+      "novelty": 9,
+      "total": 87
+    },
+    "impact": "High",
+    "recommended_response": "Monitor",
+    "scheduled_dates": [
+      {
+        "date": "2026-12-01",
+        "status": "announced_plan",
+        "claim_zh": "API自動轉送生效。"
+      }
+    ]
+  },
+  "localization_review": {
+    "url": "https://aistudio.google.com/docs/changelog",
+    "title_zh_hant": "Google公布Gemini 2.5 API遷移安排，12月起自動轉用其他模型",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "12月1日為未來API轉送生效日；棄用不等同今日API停服，未聲稱成本必定下降。 三语保留同一事实与日期，简体采用既有转换流程；逐项复核资格、归因及用词，无人工校对或实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}

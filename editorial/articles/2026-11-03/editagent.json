@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-11-03",
+  "state": "APPROVED",
+  "article": {
+    "title": "研究補讀：EditAgent以專用工具與驗證紀錄處理圖像修改",
+    "title_en": "Research review: EditAgent routes image edits through specialist tools",
+    "summary": "10月29日提交的EditAgent論文提出，按修改任務選工具，並附上驗證紀錄。",
+    "summary_en": "The October 29 EditAgent preprint proposes task-based tool routing and verification records.",
+    "highlights": [
+      "候選結果並行產生，再集中比較。",
+      "研究涵蓋兩款開放權重編輯器及三個基準。"
+    ],
+    "highlights_en": [
+      "Candidates are generated in parallel and compared together.",
+      "The study covers two open-weight editors and three benchmarks."
+    ],
+    "why": "創意團隊可參考其把生成與檢查分開的設計，而非一直重試同一工具。",
+    "why_en": "Creative teams can distinguish generation from verification when designing workflows.",
+    "next_step": "把品牌字樣、產品細節及局部修改分列為驗收項目。",
+    "next_step_en": "Define separate checks for brand text, product details and local edits.",
+    "detail": "EditAgent研究把圖像編輯視為多步驟任務，按每一步需要選擇通用或專用方法，並為候選結果附上驗證紀錄，供視覺語言模型判斷。這類模型能同時處理圖片與文字。論文屬研究預印本，本報道只整理其方法與評估範圍，並未確認已成為商用產品，也未實測品牌素材或宣稱可節省製作成本。",
+    "detail_en": "The method selects general or specialist editors at each step and gives visual-language judges verification records. This is a research preprint, not an announced commercial editing service. Brand-asset performance and production savings were not tested here.",
+    "source": "arXiv / EditAgent authors",
+    "url": "https://arxiv.org/abs/2610.39664",
+    "time": "10月29日",
+    "section": "創意生產工具",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "editorial_slug": "editagent",
+    "source_kind": "official"
+  },
+  "evidence": {
+    "story_id": "2026-11-03-editagent",
+    "title_zh": "研究補讀：EditAgent以專用工具與驗證紀錄處理圖像修改",
+    "source_story_url": "https://arxiv.org/abs/2610.39664",
+    "published_article_url": "https://arxiv.org/abs/2610.39664",
+    "source_date_display": "10月29日",
+    "event_date": "2026-10-29",
+    "first_published_date": "2026-10-29",
+    "source_documents": [
+      {
+        "url": "https://arxiv.org/abs/2610.39664",
+        "publisher": "arXiv / EditAgent authors",
+        "source_class": "A",
+        "source_publication_date": "2026-10-29",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-03T07:05:20+08:00",
+        "access_method": "Original full text read via web retrieval; reopened in a subsequent request by the same assistant.",
+        "evidence_locator": "Abstract, lines 16–17. Abstract, verification and listwise comparison, line 17. Evaluation scope and submission history, lines 18 and 26.",
+        "limitations": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "方法按步驟選擇通用及專用編輯工具。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Abstract, lines 16–17.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      },
+      {
+        "claim_zh": "候選結果附驗證紀錄並集中比較。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Abstract, verification and listwise comparison, line 17.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      },
+      {
+        "claim_zh": "作者於兩款開放權重編輯器及三個基準評估。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Evaluation scope and submission history, lines 18 and 26.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "方法按步驟選擇通用及專用編輯工具。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Abstract, lines 16–17.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      },
+      {
+        "claim_zh": "候選結果附驗證紀錄並集中比較。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Abstract, verification and listwise comparison, line 17.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      },
+      {
+        "claim_zh": "作者於兩款開放權重編輯器及三個基準評估。",
+        "support_url": "https://arxiv.org/abs/2610.39664",
+        "evidence_locator": "Evaluation scope and submission history, lines 18 and 26.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。"
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk; no human or separate reviewer claimed",
+    "reviewed_at_hkt": "2026-11-03T07:05:20+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original source in a separate request and challenged dates, attribution, scope and unsupported outcomes; not independent human review or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-03T07:05:20+08:00",
+      "finding": "Reopened arXiv abstract and submission history. Kept method-level claims only; excluded benchmark percentages and commercial availability inference.",
+      "source_reopen_reference": "turn10view0"
+    },
+    "review_notes": "Reopened arXiv abstract and submission history. Kept method-level claims only; excluded benchmark percentages and commercial availability inference.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 25,
+      "business_impact": 16,
+      "actionability": 17,
+      "market_relevance": 7,
+      "novelty": 8,
+      "total": 73
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://arxiv.org/abs/2610.39664",
+    "title_zh_hant": "研究補讀：EditAgent以專用工具與驗證紀錄處理圖像修改",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "預印本及作者評估，非商用推出；未沿用未獨立核實的成效比例或節省成本聲稱。 三语保留同一事实与日期，简体采用既有转换流程；逐项复核资格、归因及用词，无人工校对或实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
