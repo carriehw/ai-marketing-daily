@@ -77,7 +77,7 @@
     archiveBox.hidden = true;
     empty.hidden = true;
     if (!active) {
-      setStatus(tr('今日共有 ' + edition.items.length + ' 则新闻。输入关键字或选择分类开始搜寻。',
+      setStatus(tr('今日共有 ' + edition.items.length + ' 则新闻。输入关键字或选择分类开始搜索。',
                    edition.items.length + ' stories today. Enter a keyword or choose a filter.'));
       return;
     }
@@ -143,7 +143,7 @@
       clearList();
       more.hidden = true;
       empty.hidden = false;
-      setStatus(tr('历史搜寻资料暂时未能载入，今日新闻仍可正常查看。',
+      setStatus(tr('历史搜索资料暂时未能载入，今日新闻仍可正常查看。',
                    'Archive search is temporarily unavailable; today’s news still works.'));
       return;
     }
@@ -157,7 +157,7 @@
     empty.hidden = results.length !== 0;
     more.hidden = results.length <= visibleLimit;
     more.textContent = tr('显示更多结果', 'Show more results');
-    setStatus(tr(`搜寻 ${historical.issue_count} 期存档：找到 ${results.length} 则，显示 ${Math.min(results.length,visibleLimit)} 则`,
+    setStatus(tr(`搜索 ${historical.issue_count} 期存档：找到 ${results.length} 则，显示 ${Math.min(results.length,visibleLimit)} 则`,
                  `${results.length} matches across ${historical.issue_count} issues; showing ${Math.min(results.length,visibleLimit)}`));
   }
   function ensureHistory() {
