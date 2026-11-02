@@ -157,3 +157,14 @@ Both CI writes refresh and compare the expected main SHA; no forced push is used
 The immutable evidence and all >=10/source/date/localization gates remain active.
 Tests cover draft/conditional/human holds, missing claims, wrong dates, stale
 receipts, bad live counts, newsletter mismatches, PR isolation and duplicate avoidance.
+
+
+## 文字定稿：每期發布前必做
+
+事實核實完成後，逐篇獨立進行文字審閱，才保存批准稿。
+- 句子需主語、動詞及對象清楚；避免名詞堆疊或內部審核速記。
+- 技術詞首次出現需有簡短解釋；行銷影響與下一步需交代實際對象及動作。
+- 保留日期、數字、資格、公司歸因及重要不確定性，以自然句子解釋限制；禁止新增來源未支持的成效或因果關係。
+- 摘要、重點、行銷影響及行動建議各有用途；補充說明提供額外背景，避免逐字重複。
+- 繁中採香港書面語；簡中逐篇檢查內地用語，英文檢查主語、時態及搭配。OpenCC及詞彙替換只屬輔助，不等於獨立人手審閱。
+- 修訂同步保存逐篇新聞包及整期發布包；另記文字審閱，保留原來源核實時間及覆核紀錄，不將潤稿當成再次事實核實。

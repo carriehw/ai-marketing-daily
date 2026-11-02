@@ -4,21 +4,21 @@
   "article": {
     "title": "Bing公布訓練與答案引用分開控制，2027年2月起生效",
     "title_en": "Bing separates training and grounding controls, effective February 2027",
-    "summary": "Microsoft於10月30日公布新的網站內容使用偏好，讓AI訓練與生成答案的grounding分開設定，2027年2月1日起隨重新爬取生效。",
+    "summary": "Microsoft於10月30日公布新的網站內容使用偏好，讓網站分別設定是否允許內容用於 AI 訓練，以及是否允許 AI 參考內容生成答案（grounding），2027年2月1日起隨重新爬取生效。",
     "summary_en": "Microsoft’s October 30 announcement separates AI training and answer-grounding preferences, effective as pages are crawled from February 1, 2027.",
-    "why": "品牌需要分開決定模型訓練與答案可見度，並交由內容及技術團隊共同管理。",
+    "why": "內容及技術團隊需共同決定：哪些內容可用於模型訓練，哪些可供 AI 參考並生成答案。",
     "why_en": "Content and technical teams need separate decisions on model training and answer visibility.",
     "next_step": "盤點現有標籤，按官方遷移指南測試設定並安排重新爬取。",
     "next_step_en": "Inventory current tags, test the documented migration and plan for recrawling.",
     "highlights": [
-      "訓練偏好可設於robots.txt或頁面；grounding偏好設於頁面。",
+      "網站可透過 robots.txt 或頁面標籤設定訓練偏好；供 AI 生成答案時參考內容的偏好，則需在頁面設定。",
       "使用NoArchive或NoCache的網站應於2027年3月1日之前完成遷移安排。"
     ],
     "highlights_en": [
       "Training preferences can sit in robots.txt or pages; grounding preferences are page-level.",
       "Sites using NoArchive or NoCache should complete the transition steps before March 1, 2027."
     ],
-    "detail": "Microsoft於10月30日公布新的網站內容使用偏好，讓AI訓練與生成答案的grounding分開設定，2027年2月1日起隨重新爬取生效。\n\n訓練偏好可設於robots.txt或頁面；grounding偏好設於頁面。\n\n使用NoArchive或NoCache的網站應於2027年3月1日之前完成遷移安排。\n\n品牌需要分開決定模型訓練與答案可見度，並交由內容及技術團隊共同管理。\n\n盤點現有標籤，按官方遷移指南測試設定並安排重新爬取。\n\n偏好不改變傳統Bing搜尋資格，亦不保證引用、流量或付款；新規尚未生效。",
+    "detail": "Microsoft於10月30日公布新的網站內容使用偏好，讓網站分別設定是否允許內容用於 AI 訓練，以及是否允許 AI 參考內容生成答案（grounding），2027年2月1日起隨重新爬取生效。\n\n網站可透過 robots.txt 或頁面標籤設定訓練偏好；供 AI 生成答案時參考內容的偏好，則需在頁面設定。\n\n使用NoArchive或NoCache的網站應於2027年3月1日之前完成遷移安排。\n\n內容及技術團隊需共同決定：哪些內容可用於模型訓練，哪些可供 AI 參考並生成答案。\n\n盤點現有標籤，按官方遷移指南測試設定並安排重新爬取。\n\n新設定尚未生效，亦不影響網站在傳統 Bing 搜尋中的收錄資格。允許 AI 使用內容，並不保證網站會獲得引用、流量或報酬。",
     "detail_en": "Microsoft’s October 30 announcement separates AI training and answer-grounding preferences, effective as pages are crawled from February 1, 2027.\n\nTraining preferences can sit in robots.txt or pages; grounding preferences are page-level.\n\nSites using NoArchive or NoCache should complete the transition steps before March 1, 2027.\n\nContent and technical teams need separate decisions on model training and answer visibility.\n\nInventory current tags, test the documented migration and plan for recrawling.\n\nThe preferences do not change traditional Bing eligibility or guarantee citations, traffic or payment; they are not yet effective.",
     "source": "Microsoft Bing",
     "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",

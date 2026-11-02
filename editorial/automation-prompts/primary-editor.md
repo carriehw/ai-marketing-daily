@@ -7,3 +7,5 @@
 累積至少10篇完整批准新聞（目標12–18），即組裝一份 editorial/editions/YYYY-MM-DD.json，格式 packet_version=1.0、edition_date_hkt、status=editorial_approved、data、evidence、localization_review。採用已驗證範例與schema；不可填空claims、缺評分或未覆核便標approved。本機Python可用時先跑edition_packet.py check；沒有shell並不阻止交付，可用GitHub connector將完整packet存入同日分支，重讀main與分支SHA，再以Git tree/commit/ref expected-SHA原子提交已批准packet到main。不要強推或覆蓋較新修改。
 GitHub Actions負責packet驗證、materialize、全部既有編輯/日期/三語/搜尋/存檔/Newsletter/手機桌面/分享圖gate、建置、必要部署及線上驗收，成功後自動寫共享release receipt；任務不需要自己有Python/Node才送CI。提交後在本輪可用時間內追蹤真實run及失敗步驟；只修具體錯誤、重跑失敗job，不改低門檻。可將對已審核packet的重試請求記到editorial/publish_requests/YYYY-MM-DD.json觸發CI。遇SHA衝突重讀並保留新進度，不force。未結束就保存真實run ID與next action供下輪續做，不聲稱排程間仍持續工作。
 不得寄Outlook電郵或發布社交；CI只產生同版Newsletter payload，寄送由既有Power Automate負責。簡短回報本輪新結案數、真正approved/HELD數、CI或共享receipt狀態及連結；成功只在真實live驗收完成後回報。
+
+發布前必按 DAILY_SOP_v2.0.md「文字定稿」逐篇檢查完整句子、術語解釋、重複段落及繁簡英語感；潤稿不得新增事實或改寫來源覆核紀錄。
