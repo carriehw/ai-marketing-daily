@@ -6,9 +6,9 @@
     "title_en": "Microsoft brings its multi-model Copilot runtime to Foundry",
     "summary": "Microsoft於10月28日宣布，將Copilot使用的多模型執行框架透過Foundry提供給開發者及企業，用來組建可使用工具的代理。",
     "summary_en": "Microsoft’s October 28 announcement makes its multi-model Copilot runtime available through Foundry for developers and enterprises building tool-using agents.",
-    "why": "行銷代理項目的比較應涵蓋執行環境、權限和模型切換，而非只看模型名稱。",
+    "why": "評估行銷 AI 代理時，除了模型選擇，亦需比較系統如何執行任務、管理權限及切換模型。",
     "why_en": "Marketing-agent evaluations should cover execution, permissions and model switching as well as model choice.",
-    "next_step": "以一個唯讀市場資料任務比較接入成本、紀錄及失敗恢復。",
+    "next_step": "建議先以只讀取市場資料的任務測試，比較接入成本、執行紀錄，以及任務失敗後的恢復方式。",
     "next_step_en": "Compare integration effort, logs and failure recovery on one read-only market-data task.",
     "highlights": [
       "框架支援MCP、agent skills及插件，負責模型周邊的編排與執行環境。",
@@ -18,7 +18,7 @@
       "It supports MCP, agent skills and plugins, orchestrating the environment around the model.",
       "Teams can download the SDK or use Foundry hosting, supplying instructions, tools and model choices."
     ],
-    "detail": "Microsoft於10月28日宣布，將Copilot使用的多模型執行框架透過Foundry提供給開發者及企業，用來組建可使用工具的代理。\n\n框架支援MCP、agent skills及插件，負責模型周邊的編排與執行環境。\n\n企業可下載SDK或使用Foundry託管模式，自行提供指令、工具及模型選擇。\n\n行銷代理項目的比較應涵蓋執行環境、權限和模型切換，而非只看模型名稱。\n\n以一個唯讀市場資料任務比較接入成本、紀錄及失敗恢復。\n\n公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。",
+    "detail": "Microsoft於10月28日宣布，將Copilot使用的多模型執行框架透過Foundry提供給開發者及企業，用來組建可使用工具的代理。\n\n框架支援MCP、agent skills及插件，負責模型周邊的編排與執行環境。\n\n企業可下載SDK或使用Foundry託管模式，自行提供指令、工具及模型選擇。\n\n評估行銷 AI 代理時，除了模型選擇，亦需比較系統如何執行任務、管理權限及切換模型。\n\n建議先以只讀取市場資料的任務測試，比較接入成本、執行紀錄，以及任務失敗後的恢復方式。\n\n公告未提供適用每個市場的價格或行銷ROI實測；這是開發基建，並非即裝即用的完整行銷代理。",
     "detail_en": "Microsoft’s October 28 announcement makes its multi-model Copilot runtime available through Foundry for developers and enterprises building tool-using agents.\n\nIt supports MCP, agent skills and plugins, orchestrating the environment around the model.\n\nTeams can download the SDK or use Foundry hosting, supplying instructions, tools and model choices.\n\nMarketing-agent evaluations should cover execution, permissions and model switching as well as model choice.\n\nCompare integration effort, logs and failure recovery on one read-only market-data task.\n\nThe release supplies no market-by-market pricing or marketing ROI test; this is infrastructure, not a complete ready-made marketing agent.",
     "source": "Microsoft",
     "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",

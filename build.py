@@ -1108,8 +1108,8 @@ for s in data["sections"]:
                     f'<p>{bi(it.get("summary",""), it.get("summary_en"))}</p></div>')
 
         # 行業洞察 — the marketer's angle
-        take = (f'<div class="take"><b class="k">{bi("行業洞察", "Industry Insight")}</b>'
-                f'<p>{bi(it.get("why",""), it.get("why_en"))}</p></div>')
+        take = (f'<div class="take"><b class="k">{bi("建議下一步", "Suggested next step")}</b>'
+                f'<p>{bi(it.get("next_step") or it.get("why",""), it.get("next_step_en") or it.get("why_en"))}</p></div>')
 
         # 趨勢觀察 — follow-up on an already-published story (replaces duplicate cards)
         pat = ""
@@ -1132,18 +1132,24 @@ for s in data["sections"]:
         paywalled = _is_paywalled(it)
         if paywalled:
             _paywall_n += 1
-        det_rows = _para_rows(it.get("detail"), it.get("detail_en"))
+        # Keep each paragraph once in the visible reading flow.
+        def extra_paragraphs(suffix):
+            shown = {it.get(k + suffix, "") for k in ("summary", "why", "next_step")}
+            shown.update(it.get("highlights" + suffix) or [])
+            return [p for p in _split_paras(it.get("detail" + suffix)) if p not in shown]
+        extra_zh, extra_en = extra_paragraphs(""), extra_paragraphs("_en")
+        det_rows = _para_rows(extra_zh, extra_en)
         # Count 漢字, not len(): the text carries Latin brand names and figures, so
         # len() reads ~50% high and the "約 N 字" on the button would overpromise.
-        _det_n = len(re.findall(r"[一-鿿]", " ".join(_split_paras(it.get("detail")))))
+        _det_n = len(re.findall(r"[一-鿿]", " ".join(extra_zh)))
         if det_rows and _det_n < _DETAIL_MIN_CHARS:
             _detail_thin.append((n, it.get("source", ""), _det_n))
         if not det_rows:
             _detail_gap.append((n, it.get("source", ""), paywalled))
         detail = ""
         if det_rows:
-            _label = (bi(f"看詳細內容（本站整理，約 {_det_n} 字）", "Read our full write-up")
-                      if paywalled else bi(f"看詳細內容（約 {_det_n} 字）", "Read our full write-up"))
+            _label = (bi(f"補充說明（本站整理，約 {_det_n} 字）", "Additional context")
+                      if paywalled else bi(f"補充說明（約 {_det_n} 字）", "Additional context"))
             _note = (f'<p class="why-src">{bi("原文需訂閱，以上為本站整理；來源：" + str(it.get("source","")), "Source is subscriber-only; the above is our own write-up. Source: " + str(it.get("source","")))}</p>'
                      if paywalled else
                      f'<p class="why-src">{bi("整理自：" + str(it.get("source","")), "Compiled from: " + str(it.get("source","")))}</p>')

@@ -2,13 +2,13 @@
   "edition_date_hkt": "2026-11-02",
   "state": "APPROVED",
   "article": {
-    "title": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "title": "Google Sheets新增AI填值來源標示，單次最多處理3,000個儲存格",
     "title_en": "Google Sheets adds cell-level AI citations and a 3,000-cell request limit",
-    "summary": "Google於10月28日說明，Sheets的Fill with Gemini加入逐格網頁來源，單次請求上限擴至3,000格。",
+    "summary": "Google於10月28日說明，Sheets 的 Fill with Gemini 功能新增個別儲存格的網頁來源標示，單次請求上限擴至3,000格。",
     "summary_en": "Google’s October 28 update adds cell-level web citations to Fill with Gemini in Sheets and expands requests to up to 3,000 cells.",
-    "why": "市場資料整理可保留回查入口，來源標記本身仍不能取代核實。",
+    "why": "整理市場資料時，團隊可透過儲存格附上的來源回查原文，仍需逐項核對內容是否準確。",
     "why_en": "Market-data tables gain an audit trail, although citations alone do not verify the output.",
-    "next_step": "先試20格市場資料，逐項重開來源核對日期、單位及數值，再擴大批次。",
+    "next_step": "建議先以20個儲存格測試市場資料整理，逐項開啟來源核對日期、單位及數值，再增加處理量。",
     "next_step_en": "Test 20 market-data cells, reopening sources to check dates, units and values before scaling.",
     "highlights": [
       "來源顯示於網頁版Sheets的個別儲存格，方便回查。",
@@ -18,7 +18,7 @@
       "Web sources appear at individual cells in Sheets on the web.",
       "A rollout of up to 15 days began October 20 for the listed Workspace and Google AI plans."
     ],
-    "detail": "Google於10月28日說明，Sheets的Fill with Gemini加入逐格網頁來源，單次請求上限擴至3,000格。\n\n來源顯示於網頁版Sheets的個別儲存格，方便回查。\n\n10月20日起分階段推出，最長15天；限公告列出的Workspace及Google AI方案。\n\n市場資料整理可保留回查入口，來源標記本身仍不能取代核實。\n\n先試20格市場資料，逐項重開來源核對日期、單位及數值，再擴大批次。\n\n不是所有免費帳戶即時可用；公告的55倍速度來自95名參加者、英語500格任務內部研究，未當作普遍成效。",
+    "detail": "Google於10月28日說明，Sheets 的 Fill with Gemini 功能新增個別儲存格的網頁來源標示，單次請求上限擴至3,000格。\n\n來源顯示於網頁版Sheets的個別儲存格，方便回查。\n\n10月20日起分階段推出，最長15天；限公告列出的Workspace及Google AI方案。\n\n整理市場資料時，團隊可透過儲存格附上的來源回查原文，仍需逐項核對內容是否準確。\n\n建議先以20個儲存格測試市場資料整理，逐項開啟來源核對日期、單位及數值，再增加處理量。\n\n不是所有免費帳戶即時可用；公告所稱的55倍速度提升，來自一項有95名參加者、以英語完成500個儲存格任務的內部研究，未必適用於所有使用情境。",
     "detail_en": "Google’s October 28 update adds cell-level web citations to Fill with Gemini in Sheets and expands requests to up to 3,000 cells.\n\nWeb sources appear at individual cells in Sheets on the web.\n\nA rollout of up to 15 days began October 20 for the listed Workspace and Google AI plans.\n\nMarket-data tables gain an audit trail, although citations alone do not verify the output.\n\nTest 20 market-data cells, reopening sources to check dates, units and values before scaling.\n\nAccess is plan-limited. The 55-times speed claim comes from an internal 95-participant, English 500-cell study, not a universal result.",
     "source": "Google Workspace",
     "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
@@ -32,7 +32,7 @@
   },
   "evidence": {
     "story_id": "2026-11-02-sheets-citations",
-    "title_zh": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "title_zh": "Google Sheets新增AI填值來源標示，單次最多處理3,000個儲存格",
     "source_story_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
     "published_article_url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
     "source_date_display": "10月28日",
@@ -126,7 +126,7 @@
   },
   "localization_review": {
     "url": "https://workspaceupdates.googleblog.com/2026/10/fill-with-gemini-now-provides-cell-level-citations-for-web-sources-and-supports-larger-requests.html",
-    "title_zh_hant": "Google Sheets為AI填值加入逐格來源，單次最多3,000格",
+    "title_zh_hant": "Google Sheets新增AI填值來源標示，單次最多處理3,000個儲存格",
     "review_scope": [
       "title",
       "summary",
