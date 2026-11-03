@@ -1,7 +1,7 @@
 {
   "edition_date_hkt": "2026-11-04",
   "main_sha_at_start": "5a3c93323a93de37cdc4e95a331f32cfb6b8cbd7",
-  "status": "editorial_approved_pending_ci",
+  "status": "PUBLISHED & VERIFIED",
   "approved_count": 10,
   "held_count": 0,
   "discovery_count": 22,
@@ -228,9 +228,36 @@
       "next_action": "Qualified reserve; verify original and deduplicate event before drafting."
     }
   ],
-  "next_action": "Submit complete edition to current main atomically, track live acceptance.",
-  "stage": "PUBLISHED & VERIFIED",
+  "next_action": "None: matching main receipt and source/evidence SHA-256 digests verified; linked run completed successfully. Do not reopen today's discovery funnel.",
+  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41737778268",
+  "workflow_run_id": 41737778268,
+  "publication_commit": "dbff5088565a8801abdcc283d55d3ab9a03f9593",
+  "previous_failed_run": 41737141322,
+  "previous_failed_runs": [
+    {
+      "id": 41737141322,
+      "step": "Chronology",
+      "resolution": "Added supported November 13 announced_plan binding and explicit planned tense."
+    },
+    {
+      "id": 41737303923,
+      "step": "Reader browser metadata",
+      "resolution": "Exposed existing reviewed Friendbuy launch statement as verification_url."
+    },
+    {
+      "id": 41737493438,
+      "step": "GitHub Pages deployment API",
+      "resolution": "All gates passed, deployment HTTP 500. Current-main publish request retries unchanged approved packet; original rerun would be based before generated-artifact commit."
+    }
+  ],
   "published_story_count": 10,
-  "release_record": "editorial/releases/2026-11-04.json",
-  "verified_at_hkt": "2026-11-04T07:17:37+08:00"
+  "language_article_counts": {
+    "en": 10,
+    "zh-hant": 10,
+    "zh-hans": 10
+  },
+  "published_at_hkt": "2026-11-04T07:17:37+08:00",
+  "release_receipt_path": "editorial/releases/2026-11-04.json",
+  "release_receipt_url": "https://github.com/carriehw/ai-marketing-daily/blob/main/editorial/releases/2026-11-04.json",
+  "receipt_main_sha": "1d05ff6bfc627464f908c42079bd835620ea594e"
 }
