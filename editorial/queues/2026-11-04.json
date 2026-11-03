@@ -228,10 +228,10 @@
       "next_action": "Qualified reserve; verify original and deduplicate event before drafting."
     }
   ],
-  "next_action": "Track run 41737493438; verify successful workflow and matching live release receipt before completion.",
-  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41737493438",
-  "workflow_run_id": 41737493438,
-  "publication_commit": "5869d05ec083f8582c65b5d2d96d06bc64ae9e4a",
+  "next_action": "Track retry run 41737778268. Verify current main receipt, exact data/evidence digests, >=10 live stories in each language and successful linked workflow.",
+  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41737778268",
+  "workflow_run_id": 41737778268,
+  "publication_commit": "dbff5088565a8801abdcc283d55d3ab9a03f9593",
   "previous_failed_run": 41737141322,
   "previous_failed_runs": [
     {
@@ -243,6 +243,11 @@
       "id": 41737303923,
       "step": "Reader browser metadata",
       "resolution": "Exposed existing reviewed Friendbuy launch statement as verification_url."
+    },
+    {
+      "id": 41737493438,
+      "step": "GitHub Pages deployment API",
+      "resolution": "All gates passed, deployment HTTP 500. Current-main publish request retries unchanged approved packet; original rerun would be based before generated-artifact commit."
     }
   ]
 }
