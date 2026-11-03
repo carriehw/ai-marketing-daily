@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-11-03",
+  "state": "APPROVED",
+  "article": {
+    "title": "案例補讀：Zocdoc向AI代理開放美國醫療預約接入",
+    "title_en": "Case review: Zocdoc welcomes AI agents for US appointment bookings",
+    "summary": "Zocdoc於10月28日宣布向AI代理開放預約基建，並與Instinct合作。",
+    "summary_en": "Zocdoc announced agent access and an Instinct partnership on October 28.",
+    "highlights": [
+      "代理可查詢醫生、保險及可預約時段。",
+      "預約前須取得病人明確同意。"
+    ],
+    "highlights_en": [
+      "Agents can check providers, insurance and availability.",
+      "Explicit patient consent is required before booking."
+    ],
+    "why": "服務品牌可參考其把資料查詢與可確認交易分開處理的方式。",
+    "why_en": "Service brands can study the separation of discovery from confirmed transactions.",
+    "next_step": "盤點預約資料與授權步驟，先評估代理可讀及可執行的界線。",
+    "next_step_en": "Map booking data and consent before defining agent permissions.",
+    "detail": "這項美國案例提供了從AI查詢走向預約的具體接入方式。Zocdoc列出MCP伺服器、REST API及深層連結，供代理連接服務；MCP是讓AI與外部工具交換資料的協定。合作方Instinct將透過MCP接入。公告要求代理登記身份、保護資料及取得預約同意。服務只涵蓋美國，不能據此推斷香港可用或醫療結果有所改善。",
+    "detail_en": "Zocdoc lists an MCP server, REST API and deep links. MCP connects AI to external tools; Instinct will use it. Agents must identify themselves and protect data. Coverage is US-only; no Hong Kong access or clinical improvement is established.",
+    "source": "Zocdoc",
+    "url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+    "time": "10月28日",
+    "section": "行業影響 & 品牌案例",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "editorial_slug": "zocdoc-agents",
+    "source_kind": "official"
+  },
+  "evidence": {
+    "story_id": "2026-11-03-zocdoc-agents",
+    "title_zh": "案例補讀：Zocdoc向AI代理開放美國醫療預約接入",
+    "source_story_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+    "published_article_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+    "source_date_display": "10月28日",
+    "event_date": "2026-10-28",
+    "first_published_date": "2026-10-28",
+    "source_documents": [
+      {
+        "url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "publisher": "Zocdoc",
+        "source_class": "A",
+        "source_publication_date": "2026-10-28",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-03T07:04:02+08:00",
+        "access_method": "Original full text read via web retrieval; reopened in a subsequent request by the same assistant.",
+        "evidence_locator": "New partnership, lines 22–24. Two-way promise, lines 33–38 and 117–121. Coverage, lines 58–62.",
+        "limitations": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Zocdoc宣布與Instinct合作接入MCP。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "New partnership, lines 22–24.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      },
+      {
+        "claim_zh": "代理預約前須取得病人明確同意。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "Two-way promise, lines 33–38 and 117–121.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      },
+      {
+        "claim_zh": "醫生及預約覆蓋只限美國。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "Coverage, lines 58–62.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Zocdoc宣布與Instinct合作接入MCP。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "New partnership, lines 22–24.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      },
+      {
+        "claim_zh": "代理預約前須取得病人明確同意。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "Two-way promise, lines 33–38 and 117–121.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      },
+      {
+        "claim_zh": "醫生及預約覆蓋只限美國。",
+        "support_url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+        "evidence_locator": "Coverage, lines 58–62.",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。"
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk; no human or separate reviewer claimed",
+    "reviewed_at_hkt": "2026-11-03T07:04:02+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original source in a separate request and challenged dates, attribution, scope and unsupported outcomes; not independent human review or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-03T07:04:02+08:00",
+      "finding": "Reopened official release; retained US-only and explicit consent, removed uncorroborated growth and wait-time comparisons.",
+      "source_reopen_reference": "turn8view0"
+    },
+    "review_notes": "Reopened official release; retained US-only and explicit consent, removed uncorroborated growth and wait-time comparisons.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 26,
+      "business_impact": 19,
+      "actionability": 17,
+      "market_relevance": 7,
+      "novelty": 7,
+      "total": 76
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://www.zocdoc.com/about/news/as-others-put-up-walls-zocdoc-opens-its-doors-and-welcomes-ai-agents-to-reliably-connect-patients-to-care/",
+    "title_zh_hant": "案例補讀：Zocdoc向AI代理開放美國醫療預約接入",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "案例屬美國醫療接入公告，非醫療建議；未驗證臨床成效或香港覆蓋。 三语保留同一事实与日期，简体采用既有转换流程；逐项复核资格、归因及用词，无人工校对或实测。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
