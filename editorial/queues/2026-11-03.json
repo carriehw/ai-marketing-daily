@@ -2,9 +2,9 @@
   "edition_date_hkt": "2026-11-03",
   "main_sha_at_start": "0c604a247de51337816c476ffb75b89ec6f9be3a",
   "discovered_count": 25,
-  "approved_count": 6,
-  "held_count": 12,
-  "status": "below_publication_floor",
+  "approved_count": 10,
+  "held_count": 8,
+  "status": "editorial_approved",
   "items": [
     {
       "slug": "morningai-studio",
@@ -17,21 +17,21 @@
     },
     {
       "slug": "profound-singapore",
-      "title": "Profound新加坡亞太總部",
-      "url": "https://www.globenewswire.com/news-release/2026/11/02/3392809/0/en/profound-establishes-singapore-as-asia-pacific-headquarters-as-ai-becomes-the-new-front-door-for-brands.html",
-      "provisional_score": 91,
-      "state": "HELD",
-      "next_action": "Official GlobeNewswire original and direct Marketing-Interactive report both returned internal retrieval errors. Need reopen full release; verify headquarters status versus Q4 office plan and hiring.",
-      "reason": "Official GlobeNewswire original and direct Marketing-Interactive report both returned internal retrieval errors. Need reopen full release; verify headquarters status versus Q4 office plan and hiring."
+      "title": "Profound宣布設新加坡亞太總部，辦公室計劃第四季啟用",
+      "url": "https://technode.global/2026/11/02/ai-marketing-platform-profound-establishes-singapore-as-asia-pacific-headquarters/",
+      "provisional_score": 90,
+      "state": "APPROVED",
+      "next_action": "Reuse saved reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-03/profound-singapore.json"
     },
     {
       "slug": "chatgpt-ad-study",
-      "title": "ChatGPT廣告研究",
+      "title": "研究觀察：美國樣本中，ChatGPT廣告每次造訪收入低於Google搜尋廣告",
       "url": "https://searchengineland.com/chatgpt-ads-generate-less-revenue-per-visit-than-google-search-study-500160",
-      "provisional_score": 93,
-      "state": "HELD",
-      "next_action": "Trade article original returned internal error. Need original working paper, sample, dates and revenue-per-visit definitions; do not publish 64% headline from search.",
-      "reason": "Trade article original returned internal error. Need original working paper, sample, dates and revenue-per-visit definitions; do not publish 64% headline from search."
+      "provisional_score": 89,
+      "state": "APPROVED",
+      "next_action": "Reuse saved reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-03/chatgpt-ad-study.json"
     },
     {
       "slug": "longcat-25",
@@ -44,12 +44,12 @@
     },
     {
       "slug": "duda-con",
-      "title": "DudaCon更新",
+      "title": "Duda整合電郵、短訊及自動化行銷，部分AI接入仍分階段推出",
       "url": "https://blog.duda.co/everything-we-announced-at-dudacon26",
       "provisional_score": 87,
-      "state": "HELD",
-      "next_action": "Duda original returned internal retrieval error twice. Need feature-by-feature availability and plan limits.",
-      "reason": "Duda original returned internal retrieval error twice. Need feature-by-feature availability and plan limits."
+      "state": "APPROVED",
+      "next_action": "Reuse saved reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-03/duda-con.json"
     },
     {
       "slug": "coveo-anglera",
@@ -216,12 +216,12 @@
     },
     {
       "slug": "google-computer",
-      "title": "Gemini Computer Use正式提供",
-      "url": "https://radiodore.com/episodes/ep_d20735384ef246a298150ffe12892c6e",
+      "title": "工具補讀：Google將Computer Use列為正式提供，執行環境仍由開發者搭建",
+      "url": "https://aistudio.google.com/docs/computer-use",
       "provisional_score": 74,
-      "state": "HELD",
-      "next_action": "Google changelog confirms October 30 GA, but detailed tool documentation failed after redirect. Need full execution and safety scope; no complete three-claim packet yet.",
-      "reason": "Google changelog confirms October 30 GA, but detailed tool documentation failed after redirect. Need full execution and safety scope; no complete three-claim packet yet."
+      "state": "APPROVED",
+      "next_action": "Reuse saved reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-03/google-computer.json"
     },
     {
       "slug": "gemini-25-migration",
@@ -235,8 +235,8 @@
   ],
   "expansion_count": 1,
   "rejected_count": 8,
-  "updated_at_hkt": "2026-11-03T07:08:04+08:00",
-  "next_action": "Reuse six approved packets. Retry highest-value held originals, close at least four more complete packets; assemble edition only at >=10. No publication input submitted.",
+  "updated_at_hkt": "2026-11-03T09:03:24+08:00",
+  "next_action": "Ten complete reviewed packets; edition packet ready for production CI submission. Live acceptance not yet completed.",
   "latest_ci": {
     "run_id": 41543020599,
     "head_sha": "b31a77b9b7c3cf3adb8220c251ee8147eec471c2",
@@ -255,5 +255,6 @@
     "receipt_path": "editorial/releases/2026-11-02.json",
     "verified_at_hkt": "2026-11-02T22:46:01+08:00"
   },
-  "checkpoint_summary": "Six complete packets passed local check-stories; GitHub QA has checked the saved packets. Twelve precise source holds remain. Current edition has no release receipt and no production publication run."
+  "checkpoint_summary": "Six complete packets passed local check-stories; GitHub QA has checked the saved packets. Twelve precise source holds remain. Current edition has no release receipt and no production publication run.",
+  "recovery_note": "Primary run saved six approvals; checkpoint was found disabled (updated 2026-10-29T00:42:33Z). Re-enabled existing checkpoint without changing schedule or quality gates. No known actor/reason for prior disable."
 }

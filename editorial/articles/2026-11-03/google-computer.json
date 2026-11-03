@@ -1,0 +1,159 @@
+{
+  "edition_date_hkt": "2026-11-03",
+  "state": "APPROVED",
+  "article": {
+    "title": "工具補讀：Google將Computer Use列為正式提供，執行環境仍由開發者搭建",
+    "title_en": "Tool review: Google makes Computer Use generally available",
+    "summary": "Google在10月30日更新中，將Computer Use列為兩款API的正式功能。",
+    "summary_en": "Google’s October 30 release notes mark Computer Use generally available across two APIs.",
+    "highlights": [
+      "模型讀取螢幕截圖，再提出點擊及鍵盤操作。",
+      "應用程式需自行執行動作及處理安全確認。"
+    ],
+    "highlights_en": [
+      "The model reads screenshots and proposes interface actions.",
+      "Applications must execute actions and handle safety decisions."
+    ],
+    "why": "希望自動處理網站工作的團隊，需要把動作執行與審批一併納入設計。",
+    "why_en": "Teams automating web tasks must design execution and approval together.",
+    "next_step": "先以測試環境評估表格輸入，記錄錯誤與需要確認的操作。",
+    "next_step_en": "Evaluate form entry in a test environment and log errors and confirmations.",
+    "detail": "Computer Use讓模型根據螢幕截圖提出介面操作，開發者仍須建立接收動作、執行操作及回傳新截圖的循環。Google把它列為Interactions及GenerateContent API的正式功能。官方文件亦提醒功能可能出錯，應用程式需處理安全確認或封鎖決定。正式提供不等於可以無人監督執行所有工作，亦不代表所有模型支援相同能力。",
+    "detail_en": "Developers provide the execution loop: receive proposed actions, perform them and return screenshots. Google lists availability across the Interactions and GenerateContent APIs. Its documentation warns of errors and requires applications to handle confirmation or blocked actions. Supported capabilities vary by model.",
+    "source": "Google Gemini API documentation",
+    "url": "https://aistudio.google.com/docs/computer-use",
+    "time": "10月30日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "source_kind": "official",
+    "editorial_slug": "google-computer"
+  },
+  "evidence": {
+    "story_id": "2026-11-03-google-computer",
+    "title_zh": "工具補讀：Google將Computer Use列為正式提供，執行環境仍由開發者搭建",
+    "source_story_url": "https://aistudio.google.com/docs/computer-use",
+    "published_article_url": "https://aistudio.google.com/docs/computer-use",
+    "source_date_display": "10月30日",
+    "event_date": "2026-10-30",
+    "first_published_date": "2026-10-30",
+    "source_documents": [
+      {
+        "url": "https://aistudio.google.com/docs/changelog",
+        "publisher": "Google",
+        "source_class": "A",
+        "source_publication_date": "2026-10-30",
+        "evidence_locator": "October 30 Computer Use GA entry, lines 34–38.",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-03T09:03:24+08:00",
+        "access_method": "Full article text read through web retrieval; separate-request second pass recorded below.",
+        "limitations": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      },
+      {
+        "url": "https://aistudio.google.com/docs/computer-use",
+        "publisher": "Google",
+        "source_class": "A",
+        "source_publication_date": "2026-10-30",
+        "evidence_locator": "Overview and How Computer Use works, lines 6–18 and 130–168.",
+        "limitations": "Documentation is rolling; source_publication_date refers to cited GA event, not a separately established documentation update date.",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-03T09:03:24+08:00",
+        "access_method": "Full article text read through web retrieval; separate-request second pass recorded below."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Computer Use於10月30日列為兩款API正式功能。",
+        "evidence_locator": "Release notes, October 30 entry, lines 34–38.",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      },
+      {
+        "claim_zh": "應用需自行執行模型提出的UI動作。",
+        "evidence_locator": "Computer Use overview lines 6–11; execution loop lines 140–168.",
+        "support_url": "https://aistudio.google.com/docs/computer-use",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      },
+      {
+        "claim_zh": "應用須處理確認及封鎖決定。",
+        "evidence_locator": "Execution loop lines 149–161; warnings lines 130–138.",
+        "support_url": "https://aistudio.google.com/docs/computer-use",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Computer Use於10月30日列為兩款API正式功能。",
+        "evidence_locator": "Release notes, October 30 entry, lines 34–38.",
+        "support_url": "https://aistudio.google.com/docs/changelog",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      },
+      {
+        "claim_zh": "應用需自行執行模型提出的UI動作。",
+        "evidence_locator": "Computer Use overview lines 6–11; execution loop lines 140–168.",
+        "support_url": "https://aistudio.google.com/docs/computer-use",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      },
+      {
+        "claim_zh": "應用須處理確認及封鎖決定。",
+        "evidence_locator": "Execution loop lines 149–161; warnings lines 130–138.",
+        "support_url": "https://aistudio.google.com/docs/computer-use",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "以10月30日正式提供為工具補讀；開發者執行環境及模型限制保留，未宣稱完全自主或無風險。"
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk; no human or separate reviewer claimed",
+    "reviewed_at_hkt": "2026-11-03T09:03:24+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened sources in separate tool requests and challenged pivotal claims; not separate human review or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-03T09:03:24+08:00",
+      "finding": "Read release notes in turn1view1 and documentation in turn2view2; reopened documentation in turn5view1. Confirmed client execution and safety decision requirements. Excluded unsupported universal model compatibility and unattended execution.",
+      "source_reopen_reference": "turn1view1; turn2view2; turn5view1"
+    },
+    "review_notes": "Read release notes in turn1view1 and documentation in turn2view2; reopened documentation in turn5view1. Confirmed client execution and safety decision requirements. Excluded unsupported universal model compatibility and unattended execution.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 25,
+      "business_impact": 19,
+      "actionability": 17,
+      "market_relevance": 7,
+      "novelty": 6,
+      "total": 74
+    },
+    "impact": "High",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://aistudio.google.com/docs/computer-use",
+    "title_zh_hant": "工具補讀：Google將Computer Use列為正式提供，執行環境仍由開發者搭建",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "简体采用“屏幕截图、开发者、应用程序、键盘、确认操作”，保留模型差异及执行环境由开发者搭建。正式提供对应10月30日事件，标题标为工具补读，不充作今日新发布。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "copy_edit_review": {
+    "reviewed_at_hkt": "2026-11-03T09:03:24+08:00",
+    "method": "Same-assistant independent copy-edit stage after factual review; complete sentences, explanatory terms, distinct implications/actions and caveat parity checked. Simplified glossary rendering remains AI-assisted."
+  }
+}
