@@ -1,8 +1,8 @@
 {
   "edition_date_hkt": "2026-11-04",
   "main_sha_at_start": "5a3c93323a93de37cdc4e95a331f32cfb6b8cbd7",
-  "status": "in_progress",
-  "approved_count": 5,
+  "status": "editorial_approved_pending_ci",
+  "approved_count": 10,
   "held_count": 0,
   "discovery_count": 22,
   "deduplication": {
@@ -24,9 +24,10 @@
       "title": "Supermetrics：Claude由分析接入批准後廣告操作",
       "source_url": "https://www.prnewswire.com/news-releases/supermetrics-advances-marketing-ai-from-analysis-to-approved-campaign-action-through-claude-302927039.html",
       "provisional_score": 94,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete original-source reading, second pass and article packet."
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
+      "article_packet_path": "editorial/articles/2026-11-04/supermetrics-claude.json"
     },
     {
       "slug": "smartly-intelligence",
@@ -35,7 +36,7 @@
       "provisional_score": 92,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete packet verified; reuse exact reviewed objects.",
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
       "article_packet_path": "editorial/articles/2026-11-04/smartly-intelligence.json"
     },
     {
@@ -43,9 +44,10 @@
       "title": "6sense公布代理式GTM及不同測試階段",
       "source_url": "https://6sense.com/news/6sense-repositions-as-partner-for-agentic-gtm-unveils-new-brand-and-major-product-innovations-at-breakthrough-2026",
       "provisional_score": 90,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete original-source reading, second pass and article packet."
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
+      "article_packet_path": "editorial/articles/2026-11-04/6sense-agentic.json"
     },
     {
       "slug": "sunrate-card",
@@ -54,7 +56,7 @@
       "provisional_score": 88,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete packet verified; reuse exact reviewed objects.",
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
       "article_packet_path": "editorial/articles/2026-11-04/sunrate-card.json"
     },
     {
@@ -64,7 +66,7 @@
       "provisional_score": 85,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete packet verified; reuse exact reviewed objects.",
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
       "article_packet_path": "editorial/articles/2026-11-04/tripo-canvas.json"
     },
     {
@@ -72,27 +74,30 @@
       "title": "Hightouch Match Booster擴至五個歐洲市場",
       "source_url": "https://finance.yahoo.com/media-advertising/articles/hightouch-launches-match-booster-europe-080200425.html",
       "provisional_score": 84,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete original-source reading, second pass and article packet."
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
+      "article_packet_path": "editorial/articles/2026-11-04/hightouch-europe.json"
     },
     {
       "slug": "friendbuy-influencer",
       "title": "Friendbuy整合創作者與推薦會員資料",
       "source_url": "https://www.friendbuy.com/products/influencer-marketing-software",
       "provisional_score": 82,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete original-source reading, second pass and article packet."
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
+      "article_packet_path": "editorial/articles/2026-11-04/friendbuy-influencer.json"
     },
     {
       "slug": "optimizely-drama",
       "title": "Optimizely以短劇做B2B品牌內容",
       "source_url": "https://www.prnewswire.com/news-releases/optimizely-unveils-first-ever-b2b-marketing-comedy-in-the-form-of-a-murder-mystery-302926013.html",
       "provisional_score": 78,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete original-source reading, second pass and article packet."
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
+      "article_packet_path": "editorial/articles/2026-11-04/optimizely-drama.json"
     },
     {
       "slug": "sky-arc",
@@ -101,7 +106,7 @@
       "provisional_score": 77,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete packet verified; reuse exact reviewed objects.",
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
       "article_packet_path": "editorial/articles/2026-11-04/sky-arc.json"
     },
     {
@@ -111,7 +116,7 @@
       "provisional_score": 76,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Complete packet verified; reuse exact reviewed objects.",
+      "next_action": "Reuse complete reviewed packet; publication validation pending.",
       "article_packet_path": "editorial/articles/2026-11-04/finalytics-travis.json"
     },
     {
@@ -222,5 +227,6 @@
       "processing": "reserve",
       "next_action": "Qualified reserve; verify original and deduplicate event before drafting."
     }
-  ]
+  ],
+  "next_action": "Submit complete edition to current main atomically, track live acceptance."
 }
