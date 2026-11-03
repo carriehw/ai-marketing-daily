@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-04",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/supermetrics-advances-marketing-ai-from-analysis-to-approved-campaign-action-through-claude-302927039.html",
+      "title_zh_hant": "Supermetrics擴展Claude廣告操作，新活動預設暫停待審批",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“广告活动、暂停、账户、审批、命名规则”。三语保留平台范围尚未逐项列明及未实测限制；创建与编辑的权限分开，不把暂停草稿写成已投放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.smartly.io/press/smartly-launches-intelligence-pro-to-connect-campaign-planning-performance-and-incrementality",
+      "title_zh_hant": "Smartly推出Intelligence Pro，把媒體規劃與增量訊號放進同一平台",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“触达、频次、预算、增量贡献、账户资格”；英文与繁体保留模型估算及资格限制。检查摘要与背景不重复；未把供应商案例当成普遍成效。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://6sense.com/news/6sense-repositions-as-partner-for-agentic-gtm-unveils-new-brand-and-major-product-innovations-at-breakthrough-2026",
+      "title_zh_hant": "6sense公布代理式GTM更新，BDR與AI可見度功能分階段測試",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“上市与获客、业务开发、可解释性、测试资格”。三语保留11月及12月测试安排，MCP正式提供不扩大成全部产品正式开放；未增加销售成效数据。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.sunrate.com/newsroom/sunrate-launches-agentic-card-ai-driven-business-payments/",
+      "title_zh_hant": "Sunrate在香港推出代理付款卡，企業預先設定支出權限",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“授权、虚拟商业卡、营销支出、对账”。三语均把用途写成公司介绍，保留资格与费用待确认；未声称无条件可用、监管保证或实测节省。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/tripo-ai-unveils-agentic-canvas-to-make-ai-3d-more-accessible-and-scalable-302926715.html",
+      "title_zh_hant": "Tripo推出Agentic Canvas，以可編輯節點串連3D製作",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“纹理、网格、导出、批量处理”；繁体用贴图与汇出。英文保留工具能力与商用适用性的区别；未新增性能比例或生成质量保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://finance.yahoo.com/media-advertising/articles/hightouch-launches-match-booster-europe-080200425.html",
+      "title_zh_hant": "Hightouch把Match Booster帶到歐洲五國，補充第一方資料識別資訊",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“第一方数据、标识信息、受众匹配、同意与退出”。三语保留五国范围及供应商归因；不把匹配率当转化提升，也不作合规或法律保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.friendbuy.com/products/influencer-marketing-software",
+      "title_zh_hant": "Friendbuy推出創作者管理工具，串連推薦、會員與後續購買資料",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“创作者、联盟营销、佣金、归因窗口、复购”。三语区分工具与交易市场，Referral旧成效不挪用作Influencer新成效；正式提供按11月3日原声明归因。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/optimizely-unveils-first-ever-b2b-marketing-comedy-in-the-form-of-a-murder-mystery-302926013.html",
+      "title_zh_hant": "品牌案例：Optimizely用懸疑短劇接觸B2B行銷人",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“竖屏微短剧、首播、长片、品牌内容”。三语保留10月30日、11月2日与11月13日不同用途；不声称AI制作、已验证商业效果或行业首创。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://skygroup.sky/en-gb/article/sky-news-expands-arc-xp-partnership-for-a-next-generation-app-and-website",
+      "title_zh_hant": "Sky News擴大Arc XP合作，新網站與App目標2027年底推出",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“个性化、移动应用、直接用户关系”；三语区分既有搜索与未来平台。保留2027年底目标，没有把商业目标写成收入结果，也未声称已经体验产品。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://business.theeveningleader.com/theeveningleader/article/bizwire-2026-11-2-finalyticsai-launches-a-personalized-digital-experience-for-travis-credit-union",
+      "title_zh_hant": "案例：Travis以Finalytics調整網站內容，按訪客意圖呈現下一步",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“账户、汽车贷款、优惠、转化率”；三语保留供应商归因及没有对照或提升数据。案例涉及金融网站体验，不构成金融建议或已验证收益。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
