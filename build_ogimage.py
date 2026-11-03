@@ -59,7 +59,8 @@ HTML = """<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><style
     display:flex;flex-direction:column;justify-content:space-between;
     padding:52px 60px 46px;
   }}
-  .top{{display:flex;align-items:center;justify-content:space-between}}
+  .top{{display:flex;align-items:center;justify-content:space-between;flex-shrink:0}}
+  .content{{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;padding:20px 0}}
   .brand{{display:flex;align-items:baseline;gap:13px}}
   /* Serif for the wordmark and headlines, sans for furniture, mono for numbers —
      the same three-layer hierarchy as the page. If any two collapse into one
@@ -73,15 +74,15 @@ HTML = """<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><style
   /* Lime is the status light, never a fill. 品牌規範 R3 caps it at 2% of area;
      one 13px dot on a 1200×630 card is 0.02%. */
   .dot{{width:13px;height:13px;border-radius:50%;background:{LIME};flex:none}}
-  h1{{font-family:"Noto Serif CJK TC","Noto Serif TC",serif;
+  h1{{flex-shrink:0;font-family:"Noto Serif CJK TC","Noto Serif TC",serif;
     font-size:60px;line-height:1.24;font-weight:700;letter-spacing:-.015em;
     text-wrap:balance;max-width:19ch}}
-  .leads{{margin-top:26px;display:flex;flex-direction:column;gap:11px;max-width:1010px}}
+  .leads{{flex-shrink:0;margin-top:26px;display:flex;flex-direction:column;gap:11px;max-width:1010px}}
   .leads div{{font-size:22px;line-height:1.42;opacity:.9;
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
   .leads i{{font-family:"IBM Plex Mono",ui-monospace,monospace;
     font-style:normal;color:{LIME};opacity:.95;margin-right:11px;font-size:19px}}
-  .bot{{display:flex;align-items:flex-end;justify-content:space-between;
+  .bot{{display:flex;align-items:flex-end;justify-content:space-between;flex-shrink:0;
     border-top:1px solid rgba(247,245,239,.26);padding-top:19px}}
   .by{{font-size:20px;opacity:.9}}
   .count{{font-family:"IBM Plex Mono",ui-monospace,monospace;text-align:right}}
@@ -93,7 +94,7 @@ HTML = """<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><style
     <div class="brand"><b>{title}</b><span>AI Marketing Daily</span></div>
     <div class="live"><i class="dot"></i>{iso}</div>
   </div>
-  <div>
+  <div class="content">
     <h1>{headline}</h1>
     <div class="leads">{leads}</div>
   </div>
@@ -152,11 +153,29 @@ const { pathToFileURL } = require('node:url');
     });
     await page.goto(pathToFileURL(input).href, { waitUntil: 'load' });
     await page.evaluate(async () => { await document.fonts.ready; });
+    // Fit the complete headline inside the space between fixed header/footer.
+    // Keep a readable lower bound and fail if even that cannot fit.
+    await page.evaluate(() => {
+      const content = document.querySelector('.content');
+      const headline = content.querySelector('h1');
+      const leads = content.querySelector('.leads');
+      const style = getComputedStyle(content);
+      const available = content.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
+      for (let size = 60; size >= 40; size -= 2) {
+        headline.style.fontSize = size + 'px';
+        const needed = headline.getBoundingClientRect().height +
+          leads.getBoundingClientRect().height + parseFloat(getComputedStyle(leads).marginTop);
+        if (needed <= available + 0.5) return;
+      }
+      throw new Error('Share headline cannot fit at the minimum readable size');
+    });
     const bounds = await page.evaluate(() => ({
       width: innerWidth, height: innerHeight,
-      footerBottom: document.querySelector('.bot').getBoundingClientRect().bottom
+      footerBottom: document.querySelector('.bot').getBoundingClientRect().bottom,
+      contentBottom: document.querySelector('.leads').getBoundingClientRect().bottom,
+      footerTop: document.querySelector('.bot').getBoundingClientRect().top
     }));
-    if (bounds.width !== w || bounds.height !== h || bounds.footerBottom > h) {
+    if (bounds.width !== w || bounds.height !== h || bounds.footerBottom > h || bounds.contentBottom > bounds.footerTop) {
       throw new Error('Share card viewport/footer does not fit: ' + JSON.stringify(bounds));
     }
     await page.screenshot({ path: output, type: 'png' });
