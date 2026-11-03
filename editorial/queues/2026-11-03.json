@@ -236,14 +236,14 @@
   "expansion_count": 1,
   "rejected_count": 8,
   "updated_at_hkt": "2026-11-03T09:03:24+08:00",
-  "next_action": "Ten complete reviewed packets; edition packet ready for production CI submission. Live acceptance not yet completed.",
+  "next_action": "Track production run 41557649000; only conclude after main dated release receipt and successful workflow. Prior failures were scheduled-date linkage and missing supporting-source UI link; both corrected without validator changes.",
   "latest_ci": {
-    "run_id": 41543020599,
-    "head_sha": "b31a77b9b7c3cf3adb8220c251ee8147eec471c2",
-    "conclusion": "success",
-    "status": "completed",
-    "url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41543020599",
-    "scope": "Six article packets; editorial QA only, not publication or live acceptance."
+    "run_id": 41557649000,
+    "head_sha": "1a3036e6a77d58389ddfd63ed43c7acec0eefbec",
+    "status": "in_progress",
+    "conclusion": null,
+    "url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41557649000",
+    "scope": "Production build/deploy/live acceptance; not yet certified."
   },
   "previous_ci": {
     "run_id": 41542563059,
