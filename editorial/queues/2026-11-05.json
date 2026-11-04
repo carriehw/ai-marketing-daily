@@ -3,7 +3,7 @@
   "main_sha_at_start": "4a0b239632f356b4749e9432361d7332d284e3fb",
   "discovery_count": 22,
   "status": "in_progress",
-  "approved_count": 0,
+  "approved_count": 5,
   "held_count": 0,
   "deduplication": {
     "scope": "Canonical editions 2026-10-30 through 2026-11-04, not old draft chats.",
@@ -28,45 +28,50 @@
       "title": "Adobe跨AI平台接入CX Enterprise Coworker",
       "source_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
       "provisional_score": 94,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact complete reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-05/adobe-cx-connectors.json"
     },
     {
       "slug": "klook-kai",
       "title": "Klook K.ai商戶代理分階段推出",
       "source_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
       "provisional_score": 94,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact complete reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-05/klook-kai.json"
     },
     {
       "slug": "ellie-media",
       "title": "AI Digital Ellie媒體規劃與審批",
       "source_url": "https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm",
       "provisional_score": 91,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact complete reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-05/ellie-media.json"
     },
     {
       "slug": "teads-adelaide",
       "title": "Teads引入Adelaide注意力量度",
       "source_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
       "provisional_score": 89,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact complete reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-05/teads-adelaide.json"
     },
     {
       "slug": "tencent-hy4",
       "title": "騰訊Hy4新增視覺與電腦操作",
       "source_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
       "provisional_score": 88,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact complete reviewed packet.",
+      "article_packet_path": "editorial/articles/2026-11-05/tencent-hy4.json"
     },
     {
       "slug": "lorikeet-dreamweaver",
@@ -152,7 +157,7 @@
     {
       "slug": "redis-iris",
       "title": "Redis Iris代理記憶與訊息",
-      "source_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+      "source_url": "https://en.prnasia.com/releases/apac/redis-expands-redis-iris-to-give-ai-agents-the-memory-context-and-messaging-they-need-to-get-to-production-554735.shtml",
       "provisional_score": 61,
       "state": "DISCOVERED",
       "processing": "reserve",
