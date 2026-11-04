@@ -2,7 +2,7 @@
   "edition_date_hkt": "2026-11-05",
   "main_sha_at_start": "4a0b239632f356b4749e9432361d7332d284e3fb",
   "discovery_count": 22,
-  "status": "editorial_approved_pending_ci",
+  "status": "publication_ci_in_progress",
   "approved_count": 10,
   "held_count": 0,
   "deduplication": {
@@ -232,5 +232,8 @@
       "next_action": "Qualified reserve; locate canonical original and resolve actual dates before drafting."
     }
   ],
-  "next_action": "Submit approved edition to latest main; track CI and actual live acceptance."
+  "next_action": "Track actual production run 41931071690; fix concrete failures only. Accept only successful linked workflow plus matching live-byte and >=10-per-language receipt.",
+  "workflow_run_id": 41931071690,
+  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41931071690",
+  "publication_commit": "f1160433246b0e8ba132a92ac9ee4206ba0bb8c2"
 }
