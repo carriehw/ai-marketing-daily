@@ -2,7 +2,7 @@
   "edition_date_hkt": "2026-11-05",
   "main_sha_at_start": "4a0b239632f356b4749e9432361d7332d284e3fb",
   "discovery_count": 22,
-  "status": "editorial_approved_pending_ci",
+  "status": "PUBLISHED & VERIFIED",
   "approved_count": 10,
   "held_count": 0,
   "deduplication": {
@@ -232,9 +232,18 @@
       "next_action": "Qualified reserve; locate canonical original and resolve actual dates before drafting."
     }
   ],
-  "next_action": "Submit approved edition to latest main; track CI and actual live acceptance.",
-  "stage": "PUBLISHED & VERIFIED",
+  "next_action": "None. Main receipt and exact data/evidence SHA-256 digests match; linked workflow succeeded with ten actual live stories per language. Do not restart today's funnel.",
+  "workflow_run_id": 41931071690,
+  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/41931071690",
+  "publication_commit": "f1160433246b0e8ba132a92ac9ee4206ba0bb8c2",
   "published_story_count": 10,
-  "release_record": "editorial/releases/2026-11-05.json",
-  "verified_at_hkt": "2026-11-05T07:08:00+08:00"
+  "language_article_counts": {
+    "en": 10,
+    "zh-hant": 10,
+    "zh-hans": 10
+  },
+  "published_at_hkt": "2026-11-05T07:08:00+08:00",
+  "release_receipt_path": "editorial/releases/2026-11-05.json",
+  "release_receipt_url": "https://github.com/carriehw/ai-marketing-daily/blob/main/editorial/releases/2026-11-05.json",
+  "receipt_main_sha": "66370a105c8589bfaddf70c597392a3af062dac2"
 }
