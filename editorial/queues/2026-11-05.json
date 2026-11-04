@@ -2,8 +2,8 @@
   "edition_date_hkt": "2026-11-05",
   "main_sha_at_start": "4a0b239632f356b4749e9432361d7332d284e3fb",
   "discovery_count": 22,
-  "status": "in_progress",
-  "approved_count": 5,
+  "status": "editorial_approved_pending_ci",
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": {
     "scope": "Canonical editions 2026-10-30 through 2026-11-04, not old draft chats.",
@@ -30,7 +30,7 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse exact complete reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
       "article_packet_path": "editorial/articles/2026-11-05/adobe-cx-connectors.json"
     },
     {
@@ -40,7 +40,7 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse exact complete reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
       "article_packet_path": "editorial/articles/2026-11-05/klook-kai.json"
     },
     {
@@ -50,7 +50,7 @@
       "provisional_score": 91,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse exact complete reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
       "article_packet_path": "editorial/articles/2026-11-05/ellie-media.json"
     },
     {
@@ -60,7 +60,7 @@
       "provisional_score": 89,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse exact complete reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
       "article_packet_path": "editorial/articles/2026-11-05/teads-adelaide.json"
     },
     {
@@ -70,7 +70,7 @@
       "provisional_score": 88,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse exact complete reviewed packet.",
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
       "article_packet_path": "editorial/articles/2026-11-05/tencent-hy4.json"
     },
     {
@@ -78,45 +78,50 @@
       "title": "Lorikeet以客戶目標驅動主動聯繫",
       "source_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
       "provisional_score": 87,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
+      "article_packet_path": "editorial/articles/2026-11-05/lorikeet-dreamweaver.json"
     },
     {
       "slug": "optimizegeo-demand",
       "title": "OptimizeGEO整合AI廣告購物與執行",
       "source_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
       "provisional_score": 86,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
+      "article_packet_path": "editorial/articles/2026-11-05/optimizegeo-demand.json"
     },
     {
       "slug": "affinity-ipad",
       "title": "Affinity iPad核心工具及付費AI分開",
       "source_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
       "provisional_score": 85,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
+      "article_packet_path": "editorial/articles/2026-11-05/affinity-ipad.json"
     },
     {
       "slug": "dialpad-ada",
       "title": "Dialpad與Ada宣布合併方向",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
       "provisional_score": 80,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
+      "article_packet_path": "editorial/articles/2026-11-05/dialpad-ada.json"
     },
     {
       "slug": "soundhound-lg",
       "title": "SoundHound與LG籌建美國電視商務",
       "source_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
       "provisional_score": 78,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read original, check atomic claims and dates, perform actual second pass, then finalize packet."
+      "next_action": "Reuse exact reviewed packet; pending edition CI acceptance.",
+      "article_packet_path": "editorial/articles/2026-11-05/soundhound-lg.json"
     },
     {
       "slug": "chord-zenlytic",
@@ -226,5 +231,6 @@
       "processing": "reserve",
       "next_action": "Qualified reserve; locate canonical original and resolve actual dates before drafting."
     }
-  ]
+  ],
+  "next_action": "Submit approved edition to latest main; track CI and actual live acceptance."
 }
