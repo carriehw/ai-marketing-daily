@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-05",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+      "title_zh_hant": "Adobe把CX Enterprise Coworker接入多個AI平台，部分接入仍待推出",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“客户体验、连接器、账户资格、权限”；英文与繁体保留已接入与计划接入区别。没有扩大为所有用户可用，也未把供应商描述写成实测转化提升。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+      "title_zh_hant": "Klook分階段推出K.ai，讓商戶以指令更新價格與庫存",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“商家后台、库存、价格、产品上架、预订”。三语保留分阶段开放和商户审核；没有把预订量比较写成AI导致增长，也未声称所有商户已获权限。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.aidigital.com/ellie",
+      "title_zh_hant": "AI Digital推出Ellie協助媒體規劃，投放仍由團隊審批及執行",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“广告活动、媒介规划、已接入数据、审批”。三语明确工具提供建议，真人团队投放；预测不等于保证结果，没有把合作客户权限写成公开免费使用。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+      "title_zh_hant": "更進新聞：Teads把Adelaide注意力指標接入Ad Manager",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“注意力指标、版位、可视率、联网电视”；三语把AU保留为模型信号，不写成实际观看时长或销售提升。保留10月31日前文与11月3日新整合的先后关系。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+      "title_zh_hant": "騰訊發布Hy4，加入視覺與電腦操作；權重仍待釋出",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“视觉理解、命令行、图形界面、模型权重、系统卡”。三语保留计划开源与当前模型功能的区别，不把API接入当作权重已下载，也未沿用内部评测优胜声称。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+      "title_zh_hant": "Lorikeet推出Dreamweaver，按客戶目標安排主動跟進",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“客户激活、留存、短信、联系频次”。三语保留公司归因及未独立验证效果。日期记录区分电讯稿11月4日页面时间与悉尼11月5日内文日期，没有改写为今天全面开放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+      "title_zh_hant": "OptimizeGEO整合AI廣告、商品推薦情報與待批准的執行建議",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“生成式引擎优化、商品、自然可见度、审批”。三语保留SKU层级与人手批准，不扩大为全部AI回答覆盖，也不把研究比例或商业增长当作已证明事实。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/",
+      "title_zh_hant": "工具補讀：Affinity登陸iPad，核心設計工具免費、AI另需付費方案",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“草图、矢量、图层、导出、免费账户”。三语按11月2日明确报道日期作工具补读，避免把11月3日官网索引当首发；保留个人核心免费与AI付费区别，未声称实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+      "title_zh_hant": "Dialpad與Ada宣布合併，擬串連通訊、客戶情報與AI代理",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“合并计划、客户沟通、合同、支持、产品路线”。三语保留交易尚待完成，既有安排继续，不推断所有功能已合并或财务效果；没有把公告当作要求客户立即迁移。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+      "title_zh_hant": "SoundHound與LG籌建美國電視商務渠道，先聚焦餐飲商戶",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体采用“智能电视、餐饮商家、店内硬件、收银系统”。三语保持美国范围及筹建状态，没有把现有客户自动写成合作参与者，也未引用二手报道的12月时间或推算销售。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}

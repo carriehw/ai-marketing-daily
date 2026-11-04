@@ -1,0 +1,992 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-05",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-05T07:06:51+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original statements/documentation and dated direct reporting read, followed by real separate-request same-assistant source review. Full indexed original text used for several blocked direct opens, with exact access limitations and provenance per story. No separate reviewer, human approval, product trial or independently validated vendor performance claimed.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-05-adobe-cx-connectors",
+      "title_zh": "Adobe把CX Enterprise Coworker接入多個AI平台，部分接入仍待推出",
+      "source_story_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+      "published_article_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "publisher": "Adobe",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Nov 4 release, opening SAN JOSE paragraph. Opening paragraph, expected soon clause. Paragraph beginning As an agentic software leader; standards and human oversight.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Direct page opens failed. Full original Adobe release text was returned in source-specific search retrieval and re-read in a separate source-specific retrieval, not headline-only snippets.",
+          "limitations": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "CX Enterprise Coworker接入ChatGPT、Claude、Databricks Genie、Gemini for business及Microsoft Copilot。",
+          "evidence_locator": "Nov 4 release, opening SAN JOSE paragraph.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        },
+        {
+          "claim_zh": "Amazon Quick、IBM及Snowflake仍屬稍後提供。",
+          "evidence_locator": "Opening paragraph, expected soon clause.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        },
+        {
+          "claim_zh": "系統採用MCP與A2A標準，執行仍有人員監督。",
+          "evidence_locator": "Paragraph beginning As an agentic software leader; standards and human oversight.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "CX Enterprise Coworker接入ChatGPT、Claude、Databricks Genie、Gemini for business及Microsoft Copilot。",
+          "evidence_locator": "Nov 4 release, opening SAN JOSE paragraph.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        },
+        {
+          "claim_zh": "Amazon Quick、IBM及Snowflake仍屬稍後提供。",
+          "evidence_locator": "Opening paragraph, expected soon clause.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        },
+        {
+          "claim_zh": "系統採用MCP與A2A標準，執行仍有人員監督。",
+          "evidence_locator": "Paragraph beginning As an agentic software leader; standards and human oversight.",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:01:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+        "finding": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice.",
+        "source_reopen_reference": "turn25search0; turn29search2"
+      },
+      "review_notes": "Retained five current platforms versus three planned integrations and human oversight. Excluded outcome, brand-count and universal-eligibility inferences. Direct-open limitation retained; original release body actually read twice.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 94
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-klook-kai",
+      "title_zh": "Klook分階段推出K.ai，讓商戶以指令更新價格與庫存",
+      "source_story_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+      "source_date_display": "11月3日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-03",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "publisher": "Klook / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-03",
+          "evidence_locator": "Original release lines 126–129. Rollout statement, line 130. Product listings, line 150.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "K.ai可查預訂及供應情況並更新庫存與價格。",
+          "evidence_locator": "Original release lines 126–129.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        },
+        {
+          "claim_zh": "全球商戶推出採分階段安排。",
+          "evidence_locator": "Rollout statement, line 130.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        },
+        {
+          "claim_zh": "一鍵上架會預填產品欄位供商戶審閱修改。",
+          "evidence_locator": "Product listings, line 150.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "K.ai可查預訂及供應情況並更新庫存與價格。",
+          "evidence_locator": "Original release lines 126–129.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        },
+        {
+          "claim_zh": "全球商戶推出採分階段安排。",
+          "evidence_locator": "Rollout statement, line 130.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        },
+        {
+          "claim_zh": "一鍵上架會預填產品欄位供商戶審閱修改。",
+          "evidence_locator": "Product listings, line 150.",
+          "support_url": "https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:01:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+        "finding": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed.",
+        "source_reopen_reference": "turn22view1; turn30view0"
+      },
+      "review_notes": "Reopened original release. Distinguished merchant portal from traveler agent, retained phased rollout and reviewable listings. Removed 95%, 97% and 3.4x vendor outcomes and sector-size claims; no trial claimed.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 94
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-ellie-media",
+      "title_zh": "AI Digital推出Ellie協助媒體規劃，投放仍由團隊審批及執行",
+      "source_story_url": "https://www.aidigital.com/ellie",
+      "published_article_url": "https://www.aidigital.com/ellie",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://www.aidigital.com/ellie",
+          "publisher": "AI Digital",
+          "source_class": "A",
+          "source_publication_date": null,
+          "evidence_locator": "Introduction line 58; FAQ lines 285–317.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        },
+        {
+          "url": "https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm",
+          "publisher": "AI Digital",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Nov 4 dateline; launch, human-review and client-access paragraphs.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Full original Business Wire statement read through source-specific indexed syndication; direct open failed.",
+          "limitations": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Ellie串連研究、受眾、規劃與分析代理。",
+          "evidence_locator": "Official product page, introduction, line 58.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        },
+        {
+          "claim_zh": "未接入Elevate報告的活動不在分析範圍。",
+          "evidence_locator": "Official FAQ data and campaign coverage, lines 285 and 301.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        },
+        {
+          "claim_zh": "Ellie不修改已投放活動，由策略人員批准及代營運團隊投放。",
+          "evidence_locator": "Official FAQ Does Ellie launch campaigns?, line 290.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Ellie串連研究、受眾、規劃與分析代理。",
+          "evidence_locator": "Official product page, introduction, line 58.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        },
+        {
+          "claim_zh": "未接入Elevate報告的活動不在分析範圍。",
+          "evidence_locator": "Official FAQ data and campaign coverage, lines 285 and 301.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        },
+        {
+          "claim_zh": "Ellie不修改已投放活動，由策略人員批准及代營運團隊投放。",
+          "evidence_locator": "Official FAQ Does Ellie launch campaigns?, line 290.",
+          "support_url": "https://www.aidigital.com/ellie",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:01:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+        "finding": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers.",
+        "source_reopen_reference": "turn25search1; turn29search0; turn31view0; turn32view2"
+      },
+      "review_notes": "Read official product and original syndicated launch release, then re-read FAQ in separate request. FAQ rules out live-account changes; kept connected-data boundary and partnership access, omitted vendor speed/comparison numbers.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 19,
+        "market_relevance": 9,
+        "novelty": 10,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-teads-adelaide",
+      "title_zh": "更進新聞：Teads把Adelaide注意力指標接入Ad Manager",
+      "source_story_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+      "published_article_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+      "source_date_display": "11月3日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-03",
+      "source_documents": [
+        {
+          "url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "publisher": "Teads",
+          "source_class": "A",
+          "source_publication_date": "2026-11-03",
+          "evidence_locator": "Official release lines 35–37. Reporting and Attention Threshold, line 37. Availability, lines 44–46.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AU報告涵蓋網頁及CTV InStream。",
+          "evidence_locator": "Official release lines 35–37.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        },
+        {
+          "claim_zh": "報告按格式、裝置與版位分拆，可設定AU下限。",
+          "evidence_locator": "Reporting and Attention Threshold, line 37.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        },
+        {
+          "claim_zh": "Adelaide AU量度在TAM全球提供。",
+          "evidence_locator": "Availability, lines 44–46.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AU報告涵蓋網頁及CTV InStream。",
+          "evidence_locator": "Official release lines 35–37.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        },
+        {
+          "claim_zh": "報告按格式、裝置與版位分拆，可設定AU下限。",
+          "evidence_locator": "Reporting and Attention Threshold, line 37.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        },
+        {
+          "claim_zh": "Adelaide AU量度在TAM全球提供。",
+          "evidence_locator": "Availability, lines 44–46.",
+          "support_url": "https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:01:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+        "finding": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up.",
+        "source_reopen_reference": "turn25search2; turn27view0; turn28view0"
+      },
+      "review_notes": "Read original Teads blog after investor-domain failure; re-opened blog in separate request. Preserved modeled placement-level metric, exact web/CTV scope and measurement availability, excluded sales/efficiency guarantees. Genuine increment beyond Oct 31 TAM article marked follow-up.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 89
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-tencent-hy4",
+      "title_zh": "騰訊發布Hy4，加入視覺與電腦操作；權重仍待釋出",
+      "source_story_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "publisher": "Tencent / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Original release lines 132–134. Computer-use paragraph, line 135. Opening dateline paragraph, line 131.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Hy4新增視覺理解，支援圖像及圖表任務。",
+          "evidence_locator": "Original release lines 132–134.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        },
+        {
+          "claim_zh": "Hy4可與命令列及圖形介面互動。",
+          "evidence_locator": "Computer-use paragraph, line 135.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        },
+        {
+          "claim_zh": "權重及系統卡仍計劃稍後發布。",
+          "evidence_locator": "Opening dateline paragraph, line 131.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Hy4新增視覺理解，支援圖像及圖表任務。",
+          "evidence_locator": "Original release lines 132–134.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        },
+        {
+          "claim_zh": "Hy4可與命令列及圖形介面互動。",
+          "evidence_locator": "Computer-use paragraph, line 135.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        },
+        {
+          "claim_zh": "權重及系統卡仍計劃稍後發布。",
+          "evidence_locator": "Opening dateline paragraph, line 131.",
+          "support_url": "https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:01:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:01:24+08:00",
+        "finding": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims.",
+        "source_reopen_reference": "turn28view1; turn32view0"
+      },
+      "review_notes": "Original release opened via official wire link. Direct reopen failed; source reference separately retrieved with find and cited sections re-read. Retained weights as future plan despite open-source headline; excluded internal performance/safety/pricing claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 88
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-lorikeet-dreamweaver",
+      "title_zh": "Lorikeet推出Dreamweaver，按客戶目標安排主動跟進",
+      "source_story_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-05",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "publisher": "Lorikeet / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Release subtitle, line 126. Goal-driven behavior, line 131. Message controls, line 134.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Dreamweaver以語音、短訊及電郵支援客戶目標。",
+          "evidence_locator": "Release subtitle, line 126.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        },
+        {
+          "claim_zh": "可按排程或變化跟進、建立任務，或不採取動作。",
+          "evidence_locator": "Goal-driven behavior, line 131.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        },
+        {
+          "claim_zh": "每則訊息按聯絡時間、限制及同意檢查。",
+          "evidence_locator": "Message controls, line 134.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Dreamweaver以語音、短訊及電郵支援客戶目標。",
+          "evidence_locator": "Release subtitle, line 126.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        },
+        {
+          "claim_zh": "可按排程或變化跟進、建立任務，或不採取動作。",
+          "evidence_locator": "Goal-driven behavior, line 131.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        },
+        {
+          "claim_zh": "每則訊息按聯絡時間、限制及同意檢查。",
+          "evidence_locator": "Message controls, line 134.",
+          "support_url": "https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:04:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+        "finding": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims.",
+        "source_reopen_reference": "turn27view4; turn32view1"
+      },
+      "review_notes": "Re-read original wire reference after direct reopen failed. Wire header is Nov 4 22:00; Sydney dateline is Nov 5, retained separately as source-publication and event dates. Kept goal and contact controls; excluded PayJoy 30%, promotional credits and independently proven LTV claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 87
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-optimizegeo-demand",
+      "title_zh": "OptimizeGEO整合AI廣告、商品推薦情報與待批准的執行建議",
+      "source_story_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+      "published_article_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+      "source_date_display": "11月3日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-03",
+      "source_documents": [
+        {
+          "url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "publisher": "OptimizeGEO",
+          "source_class": "A",
+          "source_publication_date": "2026-11-03",
+          "evidence_locator": "AI Ads Insights, lines 33–35. AI Shopping Intelligence, line 39. Execution Agents, lines 41–42.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AI Ads Insights觀察ChatGPT廣告品牌、提示與素材。",
+          "evidence_locator": "AI Ads Insights, lines 33–35.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        },
+        {
+          "claim_zh": "AI Shopping Intelligence提供SKU級商品與零售商比較。",
+          "evidence_locator": "AI Shopping Intelligence, line 39.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        },
+        {
+          "claim_zh": "Execution Agents生成網站程式碼及內容，流程設人手批准。",
+          "evidence_locator": "Execution Agents, lines 41–42.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AI Ads Insights觀察ChatGPT廣告品牌、提示與素材。",
+          "evidence_locator": "AI Ads Insights, lines 33–35.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        },
+        {
+          "claim_zh": "AI Shopping Intelligence提供SKU級商品與零售商比較。",
+          "evidence_locator": "AI Shopping Intelligence, line 39.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        },
+        {
+          "claim_zh": "Execution Agents生成網站程式碼及內容，流程設人手批准。",
+          "evidence_locator": "Execution Agents, lines 41–42.",
+          "support_url": "https://www.optimizegeo.ai/product-updates/integrated-demand-engine",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:04:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+        "finding": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established.",
+        "source_reopen_reference": "turn24view1; turn33view1"
+      },
+      "review_notes": "Reopened company original. Used Nov 3 original dateline, not Nov 4 syndication. Kept three product scopes and human approval; removed sample percentages, causal error explanations and market forecasts not independently established.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 8,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-affinity-ipad",
+      "title_zh": "工具補讀：Affinity登陸iPad，核心設計工具免費、AI另需付費方案",
+      "source_story_url": "https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/",
+      "published_article_url": "https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/",
+      "source_date_display": "11月2日",
+      "event_date": "2026-11-02",
+      "first_published_date": "2026-11-02",
+      "source_documents": [
+        {
+          "url": "https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/",
+          "publisher": "Canva / MacRumors",
+          "source_class": "B",
+          "source_publication_date": "2026-11-02",
+          "evidence_locator": "Byline/date and direct launch reporting, lines 90–102.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        },
+        {
+          "url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "publisher": "Canva / MacRumors",
+          "source_class": "A",
+          "source_publication_date": null,
+          "evidence_locator": "Official TL;DR lines 31–32; AI features and account requirements, lines 55–59.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "核心工具供個人免費使用，App需免費Canva帳戶。",
+          "evidence_locator": "Official TL;DR line 32 and account requirement line 59.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        },
+        {
+          "claim_zh": "Canva AI Studio需premium帳戶。",
+          "evidence_locator": "Official AI account requirement, line 59.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        },
+        {
+          "claim_zh": "草圖、向量、修圖與排版可在同一.af檔案完成。",
+          "evidence_locator": "Official one-file workflow, lines 31 and 39.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "核心工具供個人免費使用，App需免費Canva帳戶。",
+          "evidence_locator": "Official TL;DR line 32 and account requirement line 59.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        },
+        {
+          "claim_zh": "Canva AI Studio需premium帳戶。",
+          "evidence_locator": "Official AI account requirement, line 59.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        },
+        {
+          "claim_zh": "草圖、向量、修圖與排版可在同一.af檔案完成。",
+          "evidence_locator": "Official one-file workflow, lines 31 and 39.",
+          "support_url": "https://www.canva.com/newsroom/news/affinity-for-ipad/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:04:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+        "finding": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries.",
+        "source_reopen_reference": "turn22view3; turn30view1; turn35view2; turn36view0"
+      },
+      "review_notes": "Read and separately reopened official feature text and dated direct reporting. Official newsroom index says Nov 3 while direct contemporaneous reports are Nov 2; anchored this tool review to explicit Nov 2 byline and did not claim Nov 3 launch. Preserved free-individual versus premium AI boundaries.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 20,
+        "actionability": 19,
+        "market_relevance": 9,
+        "novelty": 6,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-dialpad-ada",
+      "title_zh": "Dialpad與Ada宣布合併，擬串連通訊、客戶情報與AI代理",
+      "source_story_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+      "published_article_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "publisher": "Dialpad & Ada / Business Wire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Original statement dateline and final transaction-status paragraph. Connecting the conversation to the work; combined-platform paragraph. Paragraph beginning Current Dialpad and Ada customers.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Direct company and syndication opens failed; complete original Business Wire statement was read from Yahoo source-specific indexed retrieval, then re-retrieved separately. Ada's official FAQ also corroborated continuity. Not a headline-only read.",
+          "limitations": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "兩公司11月4日宣布結合，交易仍預計稍後完成。",
+          "evidence_locator": "Original statement dateline and final transaction-status paragraph.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        },
+        {
+          "claim_zh": "擬結合通訊、客戶情報及AI執行。",
+          "evidence_locator": "Connecting the conversation to the work; combined-platform paragraph.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        },
+        {
+          "claim_zh": "現有合約、價格、支援及整合維持。",
+          "evidence_locator": "Paragraph beginning Current Dialpad and Ada customers.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "兩公司11月4日宣布結合，交易仍預計稍後完成。",
+          "evidence_locator": "Original statement dateline and final transaction-status paragraph.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        },
+        {
+          "claim_zh": "擬結合通訊、客戶情報及AI執行。",
+          "evidence_locator": "Connecting the conversation to the work; combined-platform paragraph.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        },
+        {
+          "claim_zh": "現有合約、價格、支援及整合維持。",
+          "evidence_locator": "Paragraph beginning Current Dialpad and Ada customers.",
+          "support_url": "https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:04:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+        "finding": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim.",
+        "source_reopen_reference": "turn34search1; turn36search0; turn36search2"
+      },
+      "review_notes": "Separated announcement from pending close and future integration. Re-read original contract/price/support paragraph and Ada FAQ. Excluded transaction valuation, revenue, usage scale and future dates from reader copy; no completed-merger or tested-efficiency claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 20,
+        "actionability": 15,
+        "market_relevance": 8,
+        "novelty": 9,
+        "total": 80
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-05-soundhound-lg",
+      "title_zh": "SoundHound與LG籌建美國電視商務渠道，先聚焦餐飲商戶",
+      "source_story_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+      "published_article_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+      "source_date_display": "11月3日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-03",
+      "source_documents": [
+        {
+          "url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "publisher": "SoundHound AI",
+          "source_class": "A",
+          "source_publication_date": "2026-11-03",
+          "evidence_locator": "Original release lines 64–65. Category rollout scope, line 65. Partner integration benefits, lines 78–79.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+          "access_method": "Original full text opened; separately retrieved source sections re-read by same assistant.",
+          "limitations": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "合作針對美國LG智能電視商務。",
+          "evidence_locator": "Original release lines 64–65.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        },
+        {
+          "claim_zh": "先聚焦餐飲，其他商戶類別屬未來計劃。",
+          "evidence_locator": "Category rollout scope, line 65.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        },
+        {
+          "claim_zh": "公司稱毋須新增店內硬件，接入既有POS與廚房系統。",
+          "evidence_locator": "Partner integration benefits, lines 78–79.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "合作針對美國LG智能電視商務。",
+          "evidence_locator": "Original release lines 64–65.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        },
+        {
+          "claim_zh": "先聚焦餐飲，其他商戶類別屬未來計劃。",
+          "evidence_locator": "Category rollout scope, line 65.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        },
+        {
+          "claim_zh": "公司稱毋須新增店內硬件，接入既有POS與廚房系統。",
+          "evidence_locator": "Partner integration benefits, lines 78–79.",
+          "support_url": "https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-05T07:04:24+08:00",
+      "independent_review": {
+        "method": "Same assistant re-retrieved original text in a separate request and challenged dates, attribution, scope, availability and unsupported outcomes; not an independent human or separate agent.",
+        "second_pass_accessed_at_hkt": "2026-11-05T07:04:24+08:00",
+        "finding": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference.",
+        "source_reopen_reference": "turn24view0; turn33view0"
+      },
+      "review_notes": "Reopened full original statement. Kept US-only, restaurant-first and partnership/planned status. Official statement gives no launch date; did not import December timing from secondary coverage. Excluded device footprint and existing-client-as-participant inference.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 20,
+        "actionability": 15,
+        "market_relevance": 9,
+        "novelty": 8,
+        "total": 78
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
