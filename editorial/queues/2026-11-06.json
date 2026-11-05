@@ -2,7 +2,7 @@
   "edition_date_hkt": "2026-11-06",
   "main_sha_at_start": "7038bcdafb97af3489d4f5b3c80e3f276945d94b",
   "discovery_count": 22,
-  "status": "EDITORIAL_APPROVED_PENDING_CI",
+  "status": "CI_IN_PROGRESS",
   "approved_count": 10,
   "held_count": 1,
   "deduplication": {
@@ -222,7 +222,7 @@
       "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
     }
   ],
-  "next_action": "Track workflow 42127037164; repair only actual failing step, then verify dated receipt, data/evidence hashes and live article counts.",
+  "next_action": "Inspect GitHub Actions run 42127319547, job 127594699301 (Browser QA step still running as of 07:15 HKT). All prior editorial/date/build checks passed; initial missing-source-link failure fixed. Do not rebuild approved articles or start discovery. If failed, inspect actual error and repair/rerun failed job; if successful, verify main dated receipt and exact data/evidence digests plus live article counts.",
   "workflow_run_id": 42127319547,
   "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42127319547",
   "publication_commit": "6af3bf628b81656f621387436bd08613a8ab4a17",
