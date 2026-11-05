@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-06",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "title_zh_hant": "OpenAI發布Images 2.6，加入GIF及API標註編輯",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“图像、标注编辑、复杂度、循环动图”；GIF与SVG不互换。三语区分API与聊天产品，不将品牌细节保留能力写成保证，也没有套用供应商速度比例。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+      "title_zh_hant": "Clarity串連代理流量與商品發現，Ask Clarity仍限封閉測試",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“会话记录、任务模拟、商品发现、封闭测试”。保留合资格商户和支持的CRM限制，Ask Clarity未全面开放，产品可出现不等于保证获推荐或成交。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+      "title_zh_hant": "SeenThis早期開放Studio MCP，把AI簡報接入可編輯影片廣告",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“简报、可编辑视频、素材版本、批准后投放”。MCP首次解释为连接AI与外部软件的协议，保留早期有限开放与账户登入，不写成自动无审批发布。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+      "title_zh_hant": "KPMG與GS1香港報告：信任AI與願意分享資料仍有落差",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“个人数据、银发消费者、大湾区其他城市”。三语保留研究机构归因，未把信任AI等同同意提供数据；因未读取完整抽样方法，不引用百分比或作总体推算。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.atpress.ne.jp/news/7052684",
+      "title_zh_hant": "JAPAN AI以兩支B2B廣告訴求落地支援，「三個月成果」另設明確定義",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“上线运营、效果测量、陪伴式实施支持”。三语必须保留三个月的条件与定义，不把“成果”翻成收入增长、利润保证，也不声称亲自看过广告或验证获客结果。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+      "title_zh_hant": "Attain把購物受眾原生接入Amazon Ads DVA+，由量度延伸至投放",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“受众激活、购买行为、线下门店、经授权数据”。三语保留美国数据背景和公司归因，日更不写成逐笔实时覆盖，不将原生接入等同增量销售。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+      "title_zh_hant": "Conductor公布AEO產品組合，以推薦份額連接內容優化工作",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“答案引擎优化、推荐份额、第三方引用”。推荐份额是供应商定义的指标，三语均不写成销售份额或行业认证；未将公告当作全部账户已开放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+      "title_zh_hant": "Prompted Brand在美國推出，把AI可見度工作與廣告審批放進同一平台",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“品牌事实、引用来源、广告主账户、审批”。三语保留美国发布背景与功能方案限制，不暗示免费或入门方案含全部引擎，不把广告投放当作自然推荐保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+      "title_zh_hant": "Pangram發布Image 1.0，加入局部熱圖及影片逐格偵測",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“检测、热力图、逐帧分析、置信度提示”。三语均将检测结果表述为风险线索，不把供应商准确率当作独立验证，不推断版权或违法事实。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+      "title_zh_hant": "MMA公布新加坡TMI 2026，11月24至25日聚焦AI行銷實作",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“实操工作坊、体验区、组织流程”。三语均写为未来计划，11月5日是公告日期、24至25日是活动日期，未将主办方承诺当作已验证的学习成效或免费活动。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}

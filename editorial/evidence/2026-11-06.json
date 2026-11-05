@@ -1,0 +1,981 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-06",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-06T07:03:47+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original source text and issuer releases read; separate-request same-assistant re-examination completed and recorded per story. Some direct opens failed; full indexed original/syndicated issuer text was read instead, with limitations. Survey percentages, vendor ROI and accuracy claims omitted. No separate reviewer, human approval, product trial or independent performance verification claimed.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-06-images-26",
+      "title_zh": "OpenAI發布Images 2.6，加入GIF及API標註編輯",
+      "source_story_url": "https://openai.com/index/introducing-images-2-6/",
+      "published_article_url": "https://openai.com/index/introducing-images-2-6/",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://openai.com/index/introducing-images-2-6/",
+          "publisher": "OpenAI",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Original announcement introduction and Animate your ideas with GIFs, lines 35, 40–42.; Faster iteration, lines 38–39; availability, line 74.; More ways to create and edit in the API, lines 58–65.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+          "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+          "limitations": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        },
+        {
+          "url": "https://developers.openai.com/api/docs/changelog",
+          "publisher": "OpenAI API documentation",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "November 2026 > Nov 4, lines 976–987: Sunburst, Flare, complexity, SVG, GIF and markup edits.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:07:58+08:00",
+          "access_method": "Official changelog directly opened and relevant dated entry separately located (turn25view0; turn25view1).",
+          "limitations": "Technical release corroboration from the same issuer, not independent performance testing."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "OpenAI公布Images 2.6，可製作GIF動畫。",
+          "evidence_locator": "Original announcement introduction and Animate your ideas with GIFs, lines 35, 40–42.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        },
+        {
+          "claim_zh": "API提供Flare及Sunburst兩款型號。",
+          "evidence_locator": "Faster iteration, lines 38–39; availability, line 74.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        },
+        {
+          "claim_zh": "API新增標註編輯、SVG輸出及complexity控制。",
+          "evidence_locator": "More ways to create and edit in the API, lines 58–65.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "OpenAI公布Images 2.6，可製作GIF動畫。",
+          "evidence_locator": "Original announcement introduction and Animate your ideas with GIFs, lines 35, 40–42.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        },
+        {
+          "claim_zh": "API提供Flare及Sunburst兩款型號。",
+          "evidence_locator": "Faster iteration, lines 38–39; availability, line 74.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        },
+        {
+          "claim_zh": "API新增標註編輯、SVG輸出及complexity控制。",
+          "evidence_locator": "More ways to create and edit in the API, lines 58–65.",
+          "support_url": "https://openai.com/index/introducing-images-2-6/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "finding": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity.",
+        "source_reopen_reference": "turn8view0; turn13view2; official API changelog turn25view0/turn25view1"
+      },
+      "review_notes": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity. Supplementary official API changelog link added after initial browser QA identified missing visible supporting-source metadata; no factual copy changed.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 95
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-clarity-journeys",
+      "title_zh": "Clarity串連代理流量與商品發現，Ask Clarity仍限封閉測試",
+      "source_story_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+      "published_article_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "publisher": "Microsoft Clarity",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Agentic web section, lines 42–45.; Expand product discovery, lines 49–51.; Human web section, lines 64–75, especially line 75.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+          "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+          "limitations": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Clarity公布代理活動儀表板及任務模擬。",
+          "evidence_locator": "Agentic web section, lines 42–45.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        },
+        {
+          "claim_zh": "合資格WooCommerce及Shopify商戶產品可出現於Microsoft AI體驗。",
+          "evidence_locator": "Expand product discovery, lines 49–51.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        },
+        {
+          "claim_zh": "Ask Clarity仍為零售商封閉beta。",
+          "evidence_locator": "Human web section, lines 64–75, especially line 75.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Clarity公布代理活動儀表板及任務模擬。",
+          "evidence_locator": "Agentic web section, lines 42–45.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        },
+        {
+          "claim_zh": "合資格WooCommerce及Shopify商戶產品可出現於Microsoft AI體驗。",
+          "evidence_locator": "Expand product discovery, lines 49–51.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        },
+        {
+          "claim_zh": "Ask Clarity仍為零售商封閉beta。",
+          "evidence_locator": "Human web section, lines 64–75, especially line 75.",
+          "support_url": "https://clarity.microsoft.com/blog/clarity-connects-agents-llms-people/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "finding": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion.",
+        "source_reopen_reference": "turn8view2; turn9view0"
+      },
+      "review_notes": "Second retrieval exposed rollout footnote: Ask Clarity closed beta for retailers despite broad global opening language. Restricted product discovery to eligible WooCommerce/Shopify and booking to eligible WordPress with supported CRM; no guaranteed recommendations or autonomous purchase completion.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 94
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-seenthis-mcp",
+      "title_zh": "SeenThis早期開放Studio MCP，把AI簡報接入可編輯影片廣告",
+      "source_story_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+      "published_article_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+      "source_date_display": "11月5日",
+      "event_date": "2026-11-05",
+      "first_published_date": "2026-11-05",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "publisher": "SeenThis / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-05",
+          "evidence_locator": "Original release: Availability paragraph.; Original release: opening and paragraph beginning The AI tool builds and animates.; Original release: paragraph beginning The MCP signs in.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+          "access_method": "Full indexed original GlobeNewswire release retrieved through search twice; direct open failed. Same-event syndicated text also inspected; no headline-only inference.",
+          "limitations": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "SeenThis Studio MCP只向部分代理商及品牌早期開放。",
+          "evidence_locator": "Original release: Availability paragraph.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        },
+        {
+          "claim_zh": "可依簡報製作可編輯的影片廣告及市場語言版本。",
+          "evidence_locator": "Original release: opening and paragraph beginning The AI tool builds and animates.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        },
+        {
+          "claim_zh": "以用戶Studio帳戶登入，批准素材可由Studio送往DV360及社交平台。",
+          "evidence_locator": "Original release: paragraph beginning The MCP signs in.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "SeenThis Studio MCP只向部分代理商及品牌早期開放。",
+          "evidence_locator": "Original release: Availability paragraph.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        },
+        {
+          "claim_zh": "可依簡報製作可編輯的影片廣告及市場語言版本。",
+          "evidence_locator": "Original release: opening and paragraph beginning The AI tool builds and animates.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        },
+        {
+          "claim_zh": "以用戶Studio帳戶登入，批准素材可由Studio送往DV360及社交平台。",
+          "evidence_locator": "Original release: paragraph beginning The MCP signs in.",
+          "support_url": "https://www.globenewswire.com/de/news-release/2026/11/05/3396111/0/en/seenthis-studio-mcp-takes-video-ads-from-prompt-to-live-with-everyday-ai-tools.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "finding": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch.",
+        "source_reopen_reference": "turn10search0; turn17search0"
+      },
+      "review_notes": "Second source retrieval confirms early access limited group, per-user Studio login, and approved ads pushed from Studio. Removed 90% production-saving claim and any suggestion of universal access or unattended launch.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-kpmg-hk-trust",
+      "title_zh": "KPMG與GS1香港報告：信任AI與願意分享資料仍有落差",
+      "source_story_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+      "published_article_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "publisher": "KPMG / Media OutReach",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Issuer release opening and report-title paragraph, dated Nov 4.; Section AI trust is rising but a transparency gap persists.; Section The silver economy is not a single consumer market.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+          "access_method": "Full original Media OutReach issuer release retrieved twice through indexed search. Direct opens failed; same-event syndicated text compared. Underlying full survey dataset/methods not inspected.",
+          "limitations": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "KPMG與GS1香港公布Growth Reimagined報告。",
+          "evidence_locator": "Issuer release opening and report-title paragraph, dated Nov 4.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        },
+        {
+          "claim_zh": "報告指出對AI的信任與分享個人資料的意願有落差。",
+          "evidence_locator": "Section AI trust is rising but a transparency gap persists.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        },
+        {
+          "claim_zh": "報告指香港與大灣區其他城市銀髮族的購物取向不同。",
+          "evidence_locator": "Section The silver economy is not a single consumer market.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "KPMG與GS1香港公布Growth Reimagined報告。",
+          "evidence_locator": "Issuer release opening and report-title paragraph, dated Nov 4.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        },
+        {
+          "claim_zh": "報告指出對AI的信任與分享個人資料的意願有落差。",
+          "evidence_locator": "Section AI trust is rising but a transparency gap persists.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        },
+        {
+          "claim_zh": "報告指香港與大灣區其他城市銀髮族的購物取向不同。",
+          "evidence_locator": "Section The silver economy is not a single consumer market.",
+          "support_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:03:47+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+        "finding": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts.",
+        "source_reopen_reference": "turn12search0; turn19search5; same-event release turn19search2"
+      },
+      "review_notes": "Second pass distinguished trust from willingness to share personal data and Hong Kong from other GBA cities. Removed all percentages because full sample, fieldwork and methodology not inspected. Report conclusions explicitly attributed, not independently established consumer facts.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 7,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-japan-ai-campaign",
+      "title_zh": "JAPAN AI以兩支B2B廣告訴求落地支援，「三個月成果」另設明確定義",
+      "source_story_url": "https://www.atpress.ne.jp/news/7052684",
+      "published_article_url": "https://www.atpress.ne.jp/news/7052684",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://www.atpress.ne.jp/news/7052684",
+          "publisher": "JAPAN AI / @Press",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Original Japanese release dateline and opening, lines 17–20; distribution lines 44 and 50.; Creative descriptions lines 31–37 and WebCM overview lines 43–50.; Critical original Japanese footnote, line 40.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+          "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+          "limitations": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "JAPAN AI於11月4日公告，11月起逐步推出網上及交通廣告。",
+          "evidence_locator": "Original Japanese release dateline and opening, lines 17–20; distribution lines 44 and 50.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        },
+        {
+          "claim_zh": "兩支廣告各30秒，分別呈現專家落地支援及員工知識代理化。",
+          "evidence_locator": "Creative descriptions lines 31–37 and WebCM overview lines 43–50.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        },
+        {
+          "claim_zh": "三個月成果指營運及量度啟動，非保證收入或利潤。",
+          "evidence_locator": "Critical original Japanese footnote, line 40.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "JAPAN AI於11月4日公告，11月起逐步推出網上及交通廣告。",
+          "evidence_locator": "Original Japanese release dateline and opening, lines 17–20; distribution lines 44 and 50.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        },
+        {
+          "claim_zh": "兩支廣告各30秒，分別呈現專家落地支援及員工知識代理化。",
+          "evidence_locator": "Creative descriptions lines 31–37 and WebCM overview lines 43–50.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        },
+        {
+          "claim_zh": "三個月成果指營運及量度啟動，非保證收入或利潤。",
+          "evidence_locator": "Critical original Japanese footnote, line 40.",
+          "support_url": "https://www.atpress.ne.jp/news/7052684",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:03:47+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+        "finding": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk.",
+        "source_reopen_reference": "turn21search1; turn23view0"
+      },
+      "review_notes": "Reopened Japanese original rather than relying on Nov 5 trade headline. Critical footnote defines three-month results as operational launch and start of measurement, conditional by project; no guarantee of sales/profit. Ads announced Nov4 for phased distribution in November; two 30-second spots, not viewed/tested by this desk.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 16,
+        "market_relevance": 14,
+        "novelty": 8,
+        "total": 87
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-attain-amazon",
+      "title_zh": "Attain把購物受眾原生接入Amazon Ads DVA+，由量度延伸至投放",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "publisher": "Attain / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "Original release opening and final integration-is-live paragraph.; Paragraph beginning Attain’s newly expanded omni-retailer taxonomy.; Same taxonomy paragraph and About Attain US data description.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+          "access_method": "Full original indexed GlobeNewswire release read; direct open failed. Second request retrieved exact issuer release syndicated by TMCnet, Today in Business and Yahoo; Yahoo direct open later returned 429.",
+          "limitations": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Attain於11月4日公布購物受眾原生接入Amazon Ads DVA+。",
+          "evidence_locator": "Original release opening and final integration-is-live paragraph.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        },
+        {
+          "claim_zh": "受眾可按零售商、購物類別及線上或店內渠道劃分。",
+          "evidence_locator": "Paragraph beginning Attain’s newly expanded omni-retailer taxonomy.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        },
+        {
+          "claim_zh": "公司稱訊號來自經授權的消費資料並每日更新。",
+          "evidence_locator": "Same taxonomy paragraph and About Attain US data description.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Attain於11月4日公布購物受眾原生接入Amazon Ads DVA+。",
+          "evidence_locator": "Original release opening and final integration-is-live paragraph.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        },
+        {
+          "claim_zh": "受眾可按零售商、購物類別及線上或店內渠道劃分。",
+          "evidence_locator": "Paragraph beginning Attain’s newly expanded omni-retailer taxonomy.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        },
+        {
+          "claim_zh": "公司稱訊號來自經授權的消費資料並每日更新。",
+          "evidence_locator": "Same taxonomy paragraph and About Attain US data description.",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:03:47+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+        "finding": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability.",
+        "source_reopen_reference": "turn9search0; turn18search6; turn19search0; turn19search3"
+      },
+      "review_notes": "Confirmed native audience activation is new, compared with 2025 measurement relationship. Retained US purchase-data context and daily refresh as vendor attribution. No claimed sales uplift, global shopper coverage or automatic Hong Kong applicability.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 7,
+        "novelty": 8,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-conductor-aeo",
+      "title_zh": "Conductor公布AEO產品組合，以推薦份額連接內容優化工作",
+      "source_story_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+      "published_article_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+      "source_date_display": "11月3日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-03",
+      "source_documents": [
+        {
+          "url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "publisher": "Conductor / Business Wire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-03",
+          "evidence_locator": "Release dateline and introduction, lines 43–50.; Key announcements: Recommendation Share, line 58.; Key announcements: Conductor Actions, line 60.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+          "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+          "limitations": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Conductor在11月3日發布AEO產品組合公告。",
+          "evidence_locator": "Release dateline and introduction, lines 43–50.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        },
+        {
+          "claim_zh": "Recommendation Share量度AI對品牌的推薦強度。",
+          "evidence_locator": "Key announcements: Recommendation Share, line 58.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        },
+        {
+          "claim_zh": "Conductor Actions整理內容、技術及第三方引用相關機會。",
+          "evidence_locator": "Key announcements: Conductor Actions, line 60.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Conductor在11月3日發布AEO產品組合公告。",
+          "evidence_locator": "Release dateline and introduction, lines 43–50.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        },
+        {
+          "claim_zh": "Recommendation Share量度AI對品牌的推薦強度。",
+          "evidence_locator": "Key announcements: Recommendation Share, line 58.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        },
+        {
+          "claim_zh": "Conductor Actions整理內容、技術及第三方引用相關機會。",
+          "evidence_locator": "Key announcements: Conductor Actions, line 60.",
+          "support_url": "https://markets.chroniclejournal.com/thepilotnews/article/bizwire-2026-11-3-conductor-launches-new-aeo-product-suite-empowering-brands-to-win-ai-recommendations",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "finding": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established.",
+        "source_reopen_reference": "turn7view3; turn13view3"
+      },
+      "review_notes": "Reopened three named product descriptions. Recommendation Share is a vendor-defined KPI, not industry-certified standard or sales share. Removed first/only and guaranteed ROI claims. Exact launch availability and pricing not established.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 9,
+        "novelty": 8,
+        "total": 85
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-prompted-brand",
+      "title_zh": "Prompted Brand在美國推出，把AI可見度工作與廣告審批放進同一平台",
+      "source_story_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+      "published_article_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+      "source_date_display": "11月5日",
+      "event_date": "2026-11-05",
+      "first_published_date": "2026-11-05",
+      "source_documents": [
+        {
+          "url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "publisher": "Prompted Brand / Business Wire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-05",
+          "evidence_locator": "Business Wire release opening, dated November 05.; Release section From score to action, four bullet points.; Release Ads in ChatGPT section; official facts Products and features, lines 45–47.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+          "access_method": "Full indexed Business Wire release on TMCnet read and separately re-retrieved; direct open failed. Official facts page directly opened to challenge plan/market limits.",
+          "limitations": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Prompted Brand於11月5日宣布在美國推出。",
+          "evidence_locator": "Business Wire release opening, dated November 05.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        },
+        {
+          "claim_zh": "平台將AI答案整理為內容、引用、事實修正及技術工作。",
+          "evidence_locator": "Release section From score to action, four bullet points.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        },
+        {
+          "claim_zh": "廣告以品牌自己的ChatGPT廣告帳戶推出，設預算及審批控制。",
+          "evidence_locator": "Release Ads in ChatGPT section; official facts Products and features, lines 45–47.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Prompted Brand於11月5日宣布在美國推出。",
+          "evidence_locator": "Business Wire release opening, dated November 05.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        },
+        {
+          "claim_zh": "平台將AI答案整理為內容、引用、事實修正及技術工作。",
+          "evidence_locator": "Release section From score to action, four bullet points.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        },
+        {
+          "claim_zh": "廣告以品牌自己的ChatGPT廣告帳戶推出，設預算及審批控制。",
+          "evidence_locator": "Release Ads in ChatGPT section; official facts Products and features, lines 45–47.",
+          "support_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:03:47+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+        "finding": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability.",
+        "source_reopen_reference": "turn9search1; turn19search1; turn22view0"
+      },
+      "review_notes": "Nov 5 is US launch announcement, not claim that features first existed that day; official facts already dated Oct 29. AI Ads uses own advertiser account and approvals; tracked engines/features depend on plan. Omitted F1 ranking and prices; no sponsored placement guarantee or Hong Kong language availability.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 8,
+        "novelty": 8,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-pangram-image",
+      "title_zh": "Pangram發布Image 1.0，加入局部熱圖及影片逐格偵測",
+      "source_story_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+      "published_article_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+      "source_date_display": "11月4日",
+      "event_date": "2026-11-04",
+      "first_published_date": "2026-11-04",
+      "source_documents": [
+        {
+          "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "publisher": "Pangram",
+          "source_class": "A",
+          "source_publication_date": "2026-11-04",
+          "evidence_locator": "What’s new, lines 65–74.; Low Resolution Detection, lines 96–98.; Native Video Support and API, lines 121–131.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+          "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+          "limitations": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Pangram Image 1.0提供AI圖像偵測及局部熱圖。",
+          "evidence_locator": "What’s new, lines 65–74.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        },
+        {
+          "claim_zh": "最低圖像尺寸降至256×256，低於512附信心提示。",
+          "evidence_locator": "Low Resolution Detection, lines 96–98.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        },
+        {
+          "claim_zh": "Image Flash 1.0支援影片逐格分析，API支援圖像及影片。",
+          "evidence_locator": "Native Video Support and API, lines 121–131.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Pangram Image 1.0提供AI圖像偵測及局部熱圖。",
+          "evidence_locator": "What’s new, lines 65–74.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        },
+        {
+          "claim_zh": "最低圖像尺寸降至256×256，低於512附信心提示。",
+          "evidence_locator": "Low Resolution Detection, lines 96–98.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        },
+        {
+          "claim_zh": "Image Flash 1.0支援影片逐格分析，API支援圖像及影片。",
+          "evidence_locator": "Native Video Support and API, lines 121–131.",
+          "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "finding": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation.",
+        "source_reopen_reference": "turn9view1; turn16view1"
+      },
+      "review_notes": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 20,
+        "actionability": 16,
+        "market_relevance": 9,
+        "novelty": 9,
+        "total": 80
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-06-mma-tmi",
+      "title_zh": "MMA公布新加坡TMI 2026，11月24至25日聚焦AI行銷實作",
+      "source_story_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+      "source_date_display": "11月5日",
+      "event_date": "2026-11-05",
+      "first_published_date": "2026-11-05",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "publisher": "MMA / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-05",
+          "evidence_locator": "Issuer release dateline and opening.; Issuer Event Details; MMA official event page lines 190–192.; Issuer section Three dedicated Experience Zones, numbered list.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+          "access_method": "Full issuer PR Newswire release retrieved via syndicated indexed text; canonical PR Newswire details retrieved. Reopened official MMA event page and event-date section to verify future dates/location, not infer event completion.",
+          "limitations": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MMA於11月5日公布TMI 2026活動。",
+          "evidence_locator": "Issuer release dateline and opening.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        },
+        {
+          "claim_zh": "活動預定11月24至25日於新加坡Gardens by the Bay舉行。",
+          "evidence_locator": "Issuer Event Details; MMA official event page lines 190–192.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        },
+        {
+          "claim_zh": "規劃三個體驗區，涵蓋資料、創意與商務量度。",
+          "evidence_locator": "Issuer section Three dedicated Experience Zones, numbered list.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MMA於11月5日公布TMI 2026活動。",
+          "evidence_locator": "Issuer release dateline and opening.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        },
+        {
+          "claim_zh": "活動預定11月24至25日於新加坡Gardens by the Bay舉行。",
+          "evidence_locator": "Issuer Event Details; MMA official event page lines 190–192.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        },
+        {
+          "claim_zh": "規劃三個體驗區，涵蓋資料、創意與商務量度。",
+          "evidence_locator": "Issuer section Three dedicated Experience Zones, numbered list.",
+          "support_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+      "reviewed_at_hkt": "2026-11-06T07:03:47+08:00",
+      "independent_review": {
+        "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+        "second_pass_accessed_at_hkt": "2026-11-06T07:03:47+08:00",
+        "finding": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda.",
+        "source_reopen_reference": "turn17search2; turn18view0; turn20view1"
+      },
+      "review_notes": "Confirmed Nov5 announcement is for future Nov24–25 Singapore event. Formats and experience zones are organizer plans, not delivered outcomes. Removed definitive/largest and promised ROI claims. No assumed free admission or participation by named speakers beyond published agenda.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 17,
+        "actionability": 13,
+        "market_relevance": 14,
+        "novelty": 7,
+        "total": 76
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
