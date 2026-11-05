@@ -223,7 +223,12 @@
     }
   ],
   "next_action": "Track workflow 42127037164; repair only actual failing step, then verify dated receipt, data/evidence hashes and live article counts.",
-  "workflow_run_id": 42127037164,
-  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42127037164",
-  "publication_commit": "301e08f1108d62f75c655872658e4d441eb343c7"
+  "workflow_run_id": 42127319547,
+  "workflow_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42127319547",
+  "publication_commit": "6af3bf628b81656f621387436bd08613a8ab4a17",
+  "previous_failed_run": {
+    "id": 42127037164,
+    "reason": "Browser QA: supporting source missing from source metadata",
+    "repair": "Added directly read official OpenAI API changelog as visible verification_url and source document; article facts and all validators preserved."
+  }
 }
