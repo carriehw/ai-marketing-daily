@@ -2,11 +2,11 @@
   "edition_date_hkt": "2026-11-06",
   "main_sha_at_start": "7038bcdafb97af3489d4f5b3c80e3f276945d94b",
   "discovery_count": 22,
-  "status": "IN_PROGRESS",
-  "approved_count": 5,
-  "held_count": 0,
+  "status": "EDITORIAL_APPROVED_PENDING_CI",
+  "approved_count": 10,
+  "held_count": 1,
   "deduplication": {
-    "scope": "Canonical editions Oct 30–Nov 5 inspected; earlier archive canonical URLs to check before approval.",
+    "scope": "Canonical editions Oct 28–Nov 5 inspected. Selected dated developments are Nov 3–5; older related developments distinguished in body.",
     "exclusions": [
       "Adobe CX, Klook, Tencent Hy4, Teads, Affinity, OptimizeGEO already published Nov 5.",
       "Master Concept/Supermetrics already Oct 31; NIQ/Google, Cordial and Brandlight Oct 30."
@@ -20,7 +20,7 @@
       "provisional_score": 95,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse completed source-reviewed multilingual packet; pending edition assembly.",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
       "article_packet_path": "editorial/articles/2026-11-06/images-26.json"
     },
     {
@@ -30,7 +30,7 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse completed source-reviewed multilingual packet; pending edition assembly.",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
       "article_packet_path": "editorial/articles/2026-11-06/clarity-journeys.json"
     },
     {
@@ -40,35 +40,37 @@
       "provisional_score": 91,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse completed source-reviewed multilingual packet; pending edition assembly.",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
       "article_packet_path": "editorial/articles/2026-11-06/seenthis-mcp.json"
     },
     {
       "slug": "kpmg-hk-trust",
-      "title": "香港及大灣區AI消費信任調查",
-      "source_url": "https://asianews.network/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
+      "title": "KPMG與GS1香港報告：信任AI與願意分享資料仍有落差",
+      "source_url": "https://businesspost.ng/media-outreach/ai-trust-gap-reveals-distinct-retail-priorities-divergent-paths-to-consumer-growth-in-hong-kong-and-the-gba/",
       "provisional_score": 90,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
+      "article_packet_path": "editorial/articles/2026-11-06/kpmg-hk-trust.json"
     },
     {
       "slug": "fresh-step",
       "title": "Fresh Step AI廣告案例",
       "source_url": "https://www.marketingdive.com/news/how-fresh-step-used-ai-to-go-from-brief-to-ads-at-one-tenth-the-cost/873688/",
       "provisional_score": 87,
-      "state": "DISCOVERED",
+      "state": "HELD",
       "processing": "selected",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "next_action": "Original Marketing Dive full text could not be reopened; inspect same-event direct report or original campaign statement and check overlap with Oct 28 Clorox story before approval."
     },
     {
       "slug": "attain-amazon",
-      "title": "Attain接入Amazon Ads DVA+",
-      "source_url": "https://advertisingtoday.com/press-releases",
+      "title": "Attain把購物受眾原生接入Amazon Ads DVA+，由量度延伸至投放",
+      "source_url": "https://www.globenewswire.com/news-release/2026/11/04/3395457/0/en/attain-enhances-the-power-of-purchase-data-across-amazon-ads-dva-with-direct-audience-integration.html",
       "provisional_score": 86,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
+      "article_packet_path": "editorial/articles/2026-11-06/attain-amazon.json"
     },
     {
       "slug": "conductor-aeo",
@@ -77,17 +79,18 @@
       "provisional_score": 85,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse completed source-reviewed multilingual packet; pending edition assembly.",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
       "article_packet_path": "editorial/articles/2026-11-06/conductor-aeo.json"
     },
     {
       "slug": "prompted-brand",
-      "title": "Prompted Brand美國推出",
-      "source_url": "https://www.businesswire.com/news/home/20261105970610/en/Prompted-Brand-Launches-to-Show-Companies-What-AI-Engines-Say-About-Them-and-What-to-Do-to-Win-Those-Answers",
+      "title": "Prompted Brand在美國推出，把AI可見度工作與廣告審批放進同一平台",
+      "source_url": "https://www.tmcnet.com/usubmit/-prompted-brand-launches-show-companies-what-ai-engines-/2026/11/05/10476576.htm",
       "provisional_score": 83,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
+      "article_packet_path": "editorial/articles/2026-11-06/prompted-brand.json"
     },
     {
       "slug": "pangram-image",
@@ -96,26 +99,28 @@
       "provisional_score": 80,
       "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Reuse completed source-reviewed multilingual packet; pending edition assembly.",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
       "article_packet_path": "editorial/articles/2026-11-06/pangram-image.json"
     },
     {
       "slug": "mma-tmi",
-      "title": "MMA新加坡AI行銷峰會",
-      "source_url": "https://www.prnewswire.com/apac/news-releases/marketing--media-alliance-launches-think-marketing-intelligence-tmi-2026-apacs-definitive-platform-for-ai-adoption-in-marketing-302928985.html",
+      "title": "MMA公布新加坡TMI 2026，11月24至25日聚焦AI行銷實作",
+      "source_url": "https://en.prnasia.com/releases/apac/marketing-media-alliance-launches-think-marketing-intelligence-tmi-2026-apac-s-definitive-platform-for-ai-adoption-in-marketing-554789.shtml",
       "provisional_score": 76,
-      "state": "DISCOVERED",
+      "state": "APPROVED",
       "processing": "selected",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
+      "article_packet_path": "editorial/articles/2026-11-06/mma-tmi.json"
     },
     {
       "slug": "japan-ai-campaign",
-      "title": "JAPAN AI多渠道獲客案例",
-      "source_url": "https://marketech-apac.com/japan-ai-leverages-multi-channel-campaign-to-scale-enterprise-client-acquisition/",
-      "provisional_score": 79,
-      "state": "DISCOVERED",
-      "processing": "reserve",
-      "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
+      "title": "JAPAN AI以兩支B2B廣告訴求落地支援，「三個月成果」另設明確定義",
+      "source_url": "https://www.atpress.ne.jp/news/7052684",
+      "provisional_score": 87,
+      "state": "APPROVED",
+      "processing": "selected",
+      "next_action": "Reuse exact approved packet; awaiting publication workflow and live receipt.",
+      "article_packet_path": "editorial/articles/2026-11-06/japan-ai-campaign.json"
     },
     {
       "slug": "find-seek",
@@ -216,5 +221,6 @@
       "processing": "reserve",
       "next_action": "Read canonical original; resolve dates and scope, then separate second-pass challenge before multilingual approval."
     }
-  ]
+  ],
+  "next_action": "Submit approved edition to main with expected-SHA protection and follow actual workflow to receipt."
 }
