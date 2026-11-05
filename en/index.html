@@ -466,7 +466,6 @@ section[id]{scroll-margin-top:86px;margin:34px 0 0}
 /* Subscription flag: readers were clicking through and hitting a paywall with no
    warning. Flagging it on the card itself sets the expectation before the click. */
 .paywall{display:inline-flex;align-items:center;gap:4px;font-weight:750;font-size:11.5px;padding:4px 9px;border-radius:999px;background:#fdf3e2;color:var(--amber);border:1px solid #edd9ab;white-space:nowrap}
-.story .no{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .story h3{font-size:clamp(18px,2.05vw,21.5px);line-height:1.28;letter-spacing:-.022em;margin:2px 0 10px;text-wrap:balance}
 .story h3 a{text-decoration:none}
 .story h3 a:hover{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}
@@ -728,34 +727,14 @@ footer b{color:var(--ink)}
 .edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{margin:0 16px 14px}
 .edition-notes .thesis{margin-top:8px}
 .edition-notes .more-brief{margin-bottom:16px}
-/* Quick Scan is the default even without JS. Every article retains the full
-   body in a semantic <details> control, including subscriber-only reporting. */
-.scan-brief{display:grid;gap:10px;margin:3px 0 14px}
-.scan-brief p{margin:0;line-height:1.6}
-.scan-brief b{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}
-.scan-summary{font-size:15px;color:var(--body)}
-.scan-impact{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}
-.scan-impact b{color:var(--accent-d)}
-.story-expanded{border-top:1px solid var(--line);margin:0 0 12px}
-.story-expanded>summary{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}
-.story-expanded>summary::-webkit-details-marker{display:none}
-.story-expanded>summary::after{content:"⌄";margin-left:9px;font-size:16px}
-.story-expanded[open]>summary::after{content:"⌃"}
-.story-expanded>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Full reporting is visible without JavaScript; supplemental context stays optional. */
 .story-expanded-body{padding:4px 0 8px}
-.story:has(> .story-expanded[open]) .scan-brief{display:none}
-.story:has(> .story-expanded[open]) .story-expanded{margin-top:6px}
+.source-date{display:flex;align-items:center;flex-wrap:wrap;gap:6px 9px;min-width:0;max-width:100%}
+.story-meta .src{white-space:normal;overflow-wrap:anywhere;min-width:0}
+.story-taxonomy .source-kind{font-size:11px;padding:4px 8px}
 .story .story-foot{gap:8px}
 .story-actions>summary{display:inline-flex;align-items:center;min-height:44px}
 .readsrc{display:inline-flex;align-items:center;min-height:44px}
-.reading-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}
-.reading-toolbar-label{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}
-.reading-switch{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}
-.reading-switch button{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}
-.reading-switch button[aria-pressed="true"]{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}
-.reading-switch button:focus-visible{outline:2px solid var(--accent-d);outline-offset:2px}
-.reading-toolbar-hint{font-size:12px;color:var(--muted)}
-body.view-archive-search .reading-toolbar{display:none!important}
 body.is-filtering-news .hero-feature-grid{grid-template-columns:1fr}
 body.is-filtering-news .hero-feature-grid .hero-intro{max-width:740px}
 @media(max-width:900px){
@@ -778,13 +757,9 @@ body.is-filtering-news .hero-feature-grid .hero-intro{max-width:740px}
   .hero-feature-grid .lead-row{padding:12px;gap:10px}
   .hero-feature-grid .lead-info strong{font-size:14px}
   .post-hero-notes{margin-top:12px}
-  .scan-summary{font-size:15px}
-  .scan-impact{font-size:14px}
-  .reading-toolbar-hint{width:100%}
   .discovery{margin-top:12px}
 }
 @media print{
-  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{display:none!important}
   .story-expanded-body{display:block!important}
 }
 /* ---------- Phase 3: search after reading, editorial-first card actions ---------- */
@@ -836,11 +811,10 @@ body.is-filtering-news .more-brief{display:initial}
   .today-search-results,.archive-search-results,.discovery{display:none!important}
 }
 /* Fine-grained touch/reading improvements, without changing the brand system. */
-.story-expanded>summary,.edition-notes>summary,
-#view-quick,#view-deep,.discovery-reset,.discovery-scope button,
+.edition-notes>summary,.discovery-reset,.discovery-scope button,
 #archive-more,.mobile-cat-list a{min-height:44px}
 .story h3{overflow-wrap:anywhere;hyphens:auto}
-.scan-brief p,.story-expanded-body p{overflow-wrap:break-word}
+.story-expanded-body p{overflow-wrap:break-word}
 .story-actions-menu button{font-size:13px;min-height:44px}
 @media(max-width:560px){
   .story{padding:19px 16px}
@@ -849,7 +823,6 @@ body.is-filtering-news .more-brief{display:initial}
   .story-meta .src,.story-meta .source-kind,.story-meta .date,
   .story-meta .evidence-link{font-size:12px}
   .story-taxonomy{gap:6px;margin-bottom:12px}
-  .scan-brief p{line-height:1.66}
   .story-foot{gap:8px;padding-top:13px}
   .story-foot .readsrc,.story-foot .story-actions>summary{min-height:44px;font-size:13px;padding:9px 13px}
   main#main > .discovery{margin-top:30px}
@@ -948,113 +921,85 @@ body.is-filtering-news .more-brief{display:initial}
 </details>
 </div>
 <main class="wrap" id="main">
-<div class="reading-toolbar" id="news-reading-mode">
-<span class="reading-toolbar-label">READING MODE</span>
-<div aria-label="新聞閱讀模式 / News reading mode" class="reading-switch" role="group">
-<button aria-pressed="true" id="view-quick" type="button">Quick Scan</button>
-<button aria-pressed="false" id="view-deep" type="button">Deep Read</button>
-</div>
-<span class="reading-toolbar-hint">Expand any story individually</span>
-</div>
 <section id="sec0">
 <div class="cat-head c1"><span class="cat-emoji">🧠</span><div class="cat-txt"><h2>AI Models &amp; Market Moves</h2><p class="cat-desc">The biggest moves in AI this morning.</p></div><em>2 items</em></div>
 <div class="stories"><article class="story c1" data-no="1" id="tencent-releases-hy4-vision-computer-26ef30"><span aria-hidden="true" class="idalias" id="s1"></span>
-<div class="story-meta"><span class="src">Tencent / PR Newswire</span><span class="source-kind">Official</span><span class="date">Nov 4</span><span class="no">01</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Tencent / PR Newswire</span><span class="date">Nov 4</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" rel="noopener noreferrer" target="_blank">Tencent releases Hy4 with vision and computer use; model weights are still planned</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-cn">China</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Tencent announced Hy4 on November 4 with image understanding and software-interaction capabilities.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Teams using mainland AI tools can evaluate visual and software tasks while separating hosted access from weight-based deployment.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Tencent describes chart analysis and command-line/graphical interface interaction.</li><li>Weights and system cards are planned, rather than already fully released.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Check the account’s model version and permissions, then test one reversible workflow with fixed assets.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Tencent describes visual tasks and interface interaction, mentioning Blender and CAD training. These are vendor claims, not tests by this publication. Hosted product/API access differs from the planned weights and system cards. Internal rankings, error rates and promotional pricing are omitted.</p><p class="why-src">Compiled from: Tencent / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-cn">China</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Tencent describes chart analysis and command-line/graphical interface interaction.</li><li>Weights and system cards are planned, rather than already fully released.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Teams using mainland AI tools can evaluate visual and software tasks while separating hosted access from weight-based deployment.</p></div><div class="take"><b class="k">Suggested next step</b><p>Check the account’s model version and permissions, then test one reversible workflow with fixed assets.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Tencent describes visual tasks and interface interaction, mentioning Blender and CAD training. These are vendor claims, not tests by this publication. Hosted product/API access differs from the planned weights and system cards. Internal rankings, error rates and promotional pricing are omitted.</p><p class="why-src">Compiled from: Tencent / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="tencent-releases-hy4-vision-computer-26ef30" data-title-en="Tencent releases Hy4 with vision and computer use; model weights are still planned" data-title-zh="騰訊發布Hy4，加入視覺與電腦操作；權重仍待釋出"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c1" data-no="2" id="dialpad-ada-announce-combination-connect-a7cc02"><span aria-hidden="true" class="idalias" id="s2"></span>
-<div class="story-meta"><span class="src">Dialpad &amp; Ada / Business Wire</span><span class="source-kind">Official</span><span class="date">Nov 4</span><span class="no">02</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Dialpad &amp; Ada / Business Wire</span><span class="date">Nov 4</span></span></div>
 <h3><a href="https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html" rel="noopener noreferrer" target="_blank">Dialpad and Ada announce combination to connect communications, customer intelligence and AI</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>The November 4 announcement describes a pending transaction, with existing contracts, pricing and support continuing.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Customer-communication teams can ask about integration roadmaps and data responsibilities before renewal.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>The planned platform combines communications, customer intelligence and AI execution.</li><li>Existing integrations continue as configured; customers need no immediate change because of the announcement.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Document existing services and permissions, then ask account teams about roadmap and contract effects.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The companies aim to connect communications with agents that complete customer work, starting with service. The announcement is not a completed transaction or full product integration. Current pricing and support continue, with more roadmap details to follow. No financial or performance projections are used.</p><p class="why-src">Compiled from: Dialpad &amp; Ada / Business Wire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>The planned platform combines communications, customer intelligence and AI execution.</li><li>Existing integrations continue as configured; customers need no immediate change because of the announcement.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Customer-communication teams can ask about integration roadmaps and data responsibilities before renewal.</p></div><div class="take"><b class="k">Suggested next step</b><p>Document existing services and permissions, then ask account teams about roadmap and contract effects.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The companies aim to connect communications with agents that complete customer work, starting with service. The announcement is not a completed transaction or full product integration. Current pricing and support continue, with more roadmap details to follow. No financial or performance projections are used.</p><p class="why-src">Compiled from: Dialpad &amp; Ada / Business Wire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="dialpad-ada-announce-combination-connect-a7cc02" data-title-en="Dialpad and Ada announce combination to connect communications, customer intelligence and AI" data-title-zh="Dialpad與Ada宣布合併，擬串連通訊、客戶情報與AI代理"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article></div>
 </section>
 <section id="sec1">
 <div class="cat-head c2"><span class="cat-emoji">📣</span><div class="cat-txt"><h2>Ad Platforms &amp; MarTech</h2><p class="cat-desc">Platform rules, ad products and martech shifts.</p></div><em>5 items</em></div>
 <div class="stories"><article class="story c2" data-no="3" id="adobe-brings-cx-enterprise-coworker-dfb9c6"><span aria-hidden="true" class="idalias" id="s3"></span>
-<div class="story-meta"><span class="src">Adobe</span><span class="source-kind">Official</span><span class="date">Nov 4</span><span class="no">03</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Adobe</span><span class="date">Nov 4</span></span></div>
 <h3><a href="https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms" rel="noopener noreferrer" target="_blank">Adobe brings CX Enterprise Coworker to AI platforms, with more integrations planned</a></h3>
-<div class="story-taxonomy"><span class="signal impact">Business impact</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Adobe’s November 4 announcement brings customer-experience workflows into platforms including ChatGPT and Claude.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Teams using different AI assistants can assess whether customer context and campaign workflows can stay connected.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Databricks Genie, Gemini for business and Microsoft Copilot are also listed as available.</li><li>Amazon Quick, IBM and Snowflake availability is still planned.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Check eligibility, data permissions and action scope before testing one low-risk workflow.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The system coordinates experience planning, analysis and workflows with human oversight. New connectors use MCP, a protocol for connecting AI tools with external systems. This expands integration routes; account eligibility, permissions and charges still need checking. No conversion gains are established.</p><p class="why-src">Compiled from: Adobe</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal impact">Business impact</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Databricks Genie, Gemini for business and Microsoft Copilot are also listed as available.</li><li>Amazon Quick, IBM and Snowflake availability is still planned.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Teams using different AI assistants can assess whether customer context and campaign workflows can stay connected.</p></div><div class="take"><b class="k">Suggested next step</b><p>Check eligibility, data permissions and action scope before testing one low-risk workflow.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The system coordinates experience planning, analysis and workflows with human oversight. New connectors use MCP, a protocol for connecting AI tools with external systems. This expands integration routes; account eligibility, permissions and charges still need checking. No conversion gains are established.</p><p class="why-src">Compiled from: Adobe</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="adobe-brings-cx-enterprise-coworker-dfb9c6" data-title-en="Adobe brings CX Enterprise Coworker to AI platforms, with more integrations planned" data-title-zh="Adobe把CX Enterprise Coworker接入多個AI平台，部分接入仍待推出"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c2" data-no="4" id="digital-launches-ellie-media-planning-1e405d"><span aria-hidden="true" class="idalias" id="s4"></span>
-<div class="story-meta"><span class="src">AI Digital</span><a class="evidence-link" href="https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm" rel="noopener noreferrer" target="_blank">Supporting source ↗</a><span class="source-kind">Official</span><span class="date">Nov 4</span><span class="no">04</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">AI Digital</span><span class="date">Nov 4</span></span><a class="evidence-link" href="https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm" rel="noopener noreferrer" target="_blank">Supporting source ↗</a></div>
 <h3><a href="https://www.aidigital.com/ellie" rel="noopener noreferrer" target="_blank">AI Digital launches Ellie for media planning, with teams approving and launching campaigns</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Ellie’s November 4 launch connects research, audiences, media planning and analysis in one conversation.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Agencies can assess whether shared research and planning context reduces lost client requirements.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Ellie coordinates specialist agents using campaign data connected to Elevate.</li><li>The FAQ says Ellie does not change live campaigns; teams approve and activate them.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Compare recommendations on a completed brief and check data coverage and sign-off responsibility.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Ellie works inside Elevate and cannot see campaigns outside connected reporting. Forecasts use history and available inventory, without guaranteed results. Access is tied to qualifying client partnerships. Strategists approve outputs and AI Digital’s managed-service team activates campaigns.</p><p class="why-src">Compiled from: AI Digital</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Ellie coordinates specialist agents using campaign data connected to Elevate.</li><li>The FAQ says Ellie does not change live campaigns; teams approve and activate them.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Agencies can assess whether shared research and planning context reduces lost client requirements.</p></div><div class="take"><b class="k">Suggested next step</b><p>Compare recommendations on a completed brief and check data coverage and sign-off responsibility.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Ellie works inside Elevate and cannot see campaigns outside connected reporting. Forecasts use history and available inventory, without guaranteed results. Access is tied to qualifying client partnerships. Strategists approve outputs and AI Digital’s managed-service team activates campaigns.</p><p class="why-src">Compiled from: AI Digital</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.aidigital.com/ellie" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="digital-launches-ellie-media-planning-1e405d" data-title-en="AI Digital launches Ellie for media planning, with teams approving and launching campaigns" data-title-zh="AI Digital推出Ellie協助媒體規劃，投放仍由團隊審批及執行"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c2" data-no="5" id="follow-up-teads-embeds-adelaide-34da55"><span aria-hidden="true" class="idalias" id="s5"></span>
-<div class="story-meta"><span class="src">Teads</span><span class="source-kind">Official</span><span class="date">Nov 3</span><span class="no">05</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Teads</span><span class="date">Nov 3</span></span></div>
 <h3><a href="https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/" rel="noopener noreferrer" target="_blank">Follow-up: Teads embeds Adelaide attention metrics in Ad Manager</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Teads’ November 3 integration adds native AU reporting and attention thresholds in its ad platform.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Media teams can compare attention-quality signals with delivery metrics before adjusting placements.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="followup"><b class="k">Since Yesterday</b><p>Following our October 31 Ad Manager coverage, the November 3 announcement adds native Adelaide AU reporting and threshold optimization.</p></div><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Reporting covers web and CTV InStream, with format, device and placement breakdowns.</li><li>Attention Threshold can apply an AU floor to filter inventory.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Review the AU model and threshold effects, then compare reach, cost and conversions on a limited test.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>AU predicts placement-level attention and outcome potential; it is not each viewer’s measured viewing time. Teads says measurement is globally available in TAM alongside viewability, views and CTR. Higher AU does not establish higher sales, and thresholds can affect available supply.</p><p class="why-src">Compiled from: Teads</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="followup"><b class="k">Since Yesterday</b><p>Following our October 31 Ad Manager coverage, the November 3 announcement adds native Adelaide AU reporting and threshold optimization.</p></div><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Reporting covers web and CTV InStream, with format, device and placement breakdowns.</li><li>Attention Threshold can apply an AU floor to filter inventory.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Media teams can compare attention-quality signals with delivery metrics before adjusting placements.</p></div><div class="take"><b class="k">Suggested next step</b><p>Review the AU model and threshold effects, then compare reach, cost and conversions on a limited test.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>AU predicts placement-level attention and outcome potential; it is not each viewer’s measured viewing time. Teads says measurement is globally available in TAM alongside viewability, views and CTR. Higher AU does not establish higher sales, and thresholds can affect available supply.</p><p class="why-src">Compiled from: Teads</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="follow-up-teads-embeds-adelaide-34da55" data-title-en="Follow-up: Teads embeds Adelaide attention metrics in Ad Manager" data-title-zh="更進新聞：Teads把Adelaide注意力指標接入Ad Manager"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c2" data-no="6" id="lorikeet-launches-dreamweaver-goal-based-66178b"><span aria-hidden="true" class="idalias" id="s6"></span>
-<div class="story-meta"><span class="src">Lorikeet / PR Newswire</span><span class="source-kind">Official</span><span class="date">Nov 4</span><span class="no">06</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Lorikeet / PR Newswire</span><span class="date">Nov 4</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml" rel="noopener noreferrer" target="_blank">Lorikeet launches Dreamweaver for goal-based proactive customer follow-up</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Lorikeet announced Dreamweaver for voice, SMS and email outreach around goals such as activation and retention.</p><p class="scan-impact"><b>WHY IT MATTERS</b>CRM teams can connect follow-up cadence to customer goals and build contact rules into automation.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>It can respond to schedules or usage changes, create a team task, or take no action.</li><li>The company says messages are checked against contact hours, limits and consent.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Define one activation goal, consent, frequency and stop-contact rules before evaluating a test.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Dreamweaver builds on Concierge agents and uses customer history, response preferences and staff notes. The vendor says access is available through sign-up, not automatically enabled in every account. Its early results are not independently validated here; no lifetime-value uplift is asserted.</p><p class="why-src">Compiled from: Lorikeet / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>It can respond to schedules or usage changes, create a team task, or take no action.</li><li>The company says messages are checked against contact hours, limits and consent.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>CRM teams can connect follow-up cadence to customer goals and build contact rules into automation.</p></div><div class="take"><b class="k">Suggested next step</b><p>Define one activation goal, consent, frequency and stop-contact rules before evaluating a test.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Dreamweaver builds on Concierge agents and uses customer history, response preferences and staff notes. The vendor says access is available through sign-up, not automatically enabled in every account. Its early results are not independently validated here; no lifetime-value uplift is asserted.</p><p class="why-src">Compiled from: Lorikeet / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="lorikeet-launches-dreamweaver-goal-based-66178b" data-title-en="Lorikeet launches Dreamweaver for goal-based proactive customer follow-up" data-title-zh="Lorikeet推出Dreamweaver，按客戶目標安排主動跟進"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c2" data-no="7" id="optimizegeo-combines-ad-insights-shopping-5512bd"><span aria-hidden="true" class="idalias" id="s7"></span>
-<div class="story-meta"><span class="src">OptimizeGEO</span><span class="source-kind">Official</span><span class="date">Nov 3</span><span class="no">07</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">OptimizeGEO</span><span class="date">Nov 3</span></span></div>
 <h3><a href="https://www.optimizegeo.ai/product-updates/integrated-demand-engine" rel="noopener noreferrer" target="_blank">OptimizeGEO combines AI ad insights, shopping intelligence and approval-based execution</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>The November 3 announcement introduces Integrated Demand Engine with three capabilities.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Brands can compare product descriptions, retail destinations and paid visibility to prioritize data fixes.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>AI Ads Insights brings together paid ChatGPT ad and organic visibility information.</li><li>Shopping intelligence works at SKU level; execution workflows retain human approval.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Audit priority products and ask the vendor to demonstrate sources, sampling and approval controls.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>GEO concerns how brands appear in generative search. The vendor describes ad observation, product-level comparisons and agents generating site code or content. This does not establish exhaustive AI-answer coverage. Research percentages and market forecasts are omitted; proposed changes still need approval.</p><p class="why-src">Compiled from: OptimizeGEO</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>AI Ads Insights brings together paid ChatGPT ad and organic visibility information.</li><li>Shopping intelligence works at SKU level; execution workflows retain human approval.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Brands can compare product descriptions, retail destinations and paid visibility to prioritize data fixes.</p></div><div class="take"><b class="k">Suggested next step</b><p>Audit priority products and ask the vendor to demonstrate sources, sampling and approval controls.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>GEO concerns how brands appear in generative search. The vendor describes ad observation, product-level comparisons and agents generating site code or content. This does not establish exhaustive AI-answer coverage. Research percentages and market forecasts are omitted; proposed changes still need approval.</p><p class="why-src">Compiled from: OptimizeGEO</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.optimizegeo.ai/product-updates/integrated-demand-engine" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="optimizegeo-combines-ad-insights-shopping-5512bd" data-title-en="OptimizeGEO combines AI ad insights, shopping intelligence and approval-based execution" data-title-zh="OptimizeGEO整合AI廣告、商品推薦情報與待批准的執行建議"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article></div>
 </section>
 <section id="sec2">
 <div class="cat-head c3"><span class="cat-emoji">🎬</span><div class="cat-txt"><h2>Creative Production Tools</h2><p class="cat-desc">New tools and features for creative output.</p></div><em>1 items</em></div>
 <div class="stories"><article class="story c3" data-no="8" id="tool-review-affinity-reaches-ipad-8cac11"><span aria-hidden="true" class="idalias" id="s8"></span>
-<div class="story-meta"><span class="src">Canva / MacRumors</span><a class="evidence-link" href="https://www.canva.com/newsroom/news/affinity-for-ipad/" rel="noopener noreferrer" target="_blank">Supporting source ↗</a><span class="source-kind">Reported</span><span class="date">Nov 2</span><span class="no">08</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Canva / MacRumors</span><span class="date">Nov 2</span></span><a class="evidence-link" href="https://www.canva.com/newsroom/news/affinity-for-ipad/" rel="noopener noreferrer" target="_blank">Supporting source ↗</a></div>
 <h3><a href="https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/" rel="noopener noreferrer" target="_blank">Tool review: Affinity reaches iPad with free core tools and premium AI</a></h3>
-<div class="story-taxonomy"><span class="signal act">Ready to use</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>November 2 reporting describes Affinity for iPad bringing sketching, vectors, photo editing and layout into one file.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Mobile creative teams can evaluate a shared-file workflow for fewer handoffs between apps.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Core tools are free for individuals; a free Canva account is still required.</li><li>Canva AI Studio needs a premium account, with expansion and layer decomposition among its tools.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Test brand files, fonts, layers and export before deciding whether premium AI is needed.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Canva confirms a shared .af file and an interface built for touch and Apple Pencil. AI expansion and layer decomposition require separate premium eligibility. Free core tools do not mean every feature is free or identical to desktop. Production files and print output still need checking.</p><p class="why-src">Compiled from: Canva / MacRumors</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Reported</span><span class="signal act">Ready to use</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>Core tools are free for individuals; a free Canva account is still required.</li><li>Canva AI Studio needs a premium account, with expansion and layer decomposition among its tools.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Mobile creative teams can evaluate a shared-file workflow for fewer handoffs between apps.</p></div><div class="take"><b class="k">Suggested next step</b><p>Test brand files, fonts, layers and export before deciding whether premium AI is needed.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>Canva confirms a shared .af file and an interface built for touch and Apple Pencil. AI expansion and layer decomposition require separate premium eligibility. Free core tools do not mean every feature is free or identical to desktop. Production files and print output still need checking.</p><p class="why-src">Compiled from: Canva / MacRumors</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="tool-review-affinity-reaches-ipad-8cac11" data-title-en="Tool review: Affinity reaches iPad with free core tools and premium AI" data-title-zh="工具補讀：Affinity登陸iPad，核心設計工具免費、AI另需付費方案"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article></div>
 </section>
 <section id="sec3">
 <div class="cat-head c4"><span class="cat-emoji">📈</span><div class="cat-txt"><h2>Industry Impact &amp; Brand Cases</h2><p class="cat-desc">Agency landscape, client moves and brand cases.</p></div><em>2 items</em></div>
 <div class="stories"><article class="story c4" data-no="9" id="klook-rolls-out-k-phases-4a0938"><span aria-hidden="true" class="idalias" id="s9"></span>
-<div class="story-meta"><span class="src">Klook / PR Newswire</span><span class="source-kind">Official</span><span class="date">Nov 3</span><span class="no">09</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Klook / PR Newswire</span><span class="date">Nov 3</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml" rel="noopener noreferrer" target="_blank">Klook rolls out K.ai in phases for merchant pricing and inventory tasks</a></h3>
-<div class="story-taxonomy"><span class="signal impact">Business impact</span><span class="chip region r-hk">HK</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>Klook’s November 3 announcement describes a merchant-portal agent that retrieves booking data and acts on instructions.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Experience merchants can connect product content with operational updates to reduce mismatches with availability.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>K.ai can check bookings and availability and update inventory and pricing.</li><li>Rollout is phased; product-listing fields can be prefilled for merchant review.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Confirm account access, then test one reversible inventory update and check the change record.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>This serves merchant operations, not traveler booking. It can draft structured listings for review and surface review/performance insights. Vendor efficiency and booking comparisons do not establish causation, so their ratios are omitted. Phased access and consequential price changes require checking.</p><p class="why-src">Compiled from: Klook / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal impact">Business impact</span><span class="chip region r-hk">HK</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>K.ai can check bookings and availability and update inventory and pricing.</li><li>Rollout is phased; product-listing fields can be prefilled for merchant review.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Experience merchants can connect product content with operational updates to reduce mismatches with availability.</p></div><div class="take"><b class="k">Suggested next step</b><p>Confirm account access, then test one reversible inventory update and check the change record.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>This serves merchant operations, not traveler booking. It can draft structured listings for review and surface review/performance insights. Vendor efficiency and booking comparisons do not establish causation, so their ratios are omitted. Phased access and consequential price changes require checking.</p><p class="why-src">Compiled from: Klook / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="klook-rolls-out-k-phases-4a0938" data-title-en="Klook rolls out K.ai in phases for merchant pricing and inventory tasks" data-title-zh="Klook分階段推出K.ai，讓商戶以指令更新價格與庫存"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article>
 <article class="story c4" data-no="10" id="soundhound-lg-plan-us-tv-1e0dea"><span aria-hidden="true" class="idalias" id="s10"></span>
-<div class="story-meta"><span class="src">SoundHound AI</span><span class="source-kind">Official</span><span class="date">Nov 3</span><span class="no">10</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">SoundHound AI</span><span class="date">Nov 3</span></span></div>
 <h3><a href="https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs" rel="noopener noreferrer" target="_blank">SoundHound and LG plan a US TV commerce channel, starting with restaurants</a></h3>
-<div class="story-taxonomy"><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>WHAT HAPPENED</b>The November 3 partnership sets up merchant commerce on LG Smart TVs without specifying a launch date.</p><p class="scan-impact"><b>WHY IT MATTERS</b>Restaurant brands assessing a new channel should check how menus, payments and existing order systems connect.</p></div>
-<details class="story-expanded"><summary>Deep read: key points and analysis</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>The US initiative starts with restaurants, with other retail categories planned later.</li><li>The vendor describes existing POS/kitchen integrations without new in-store hardware.</li></ul></div><div class="take"><b class="k">Suggested next step</b><p>Ask about eligibility, timing and fees before assessing store-system compatibility.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The announcement establishes a partnership and merchant-recruitment direction, not universal live ordering. SoundHound describes transaction routing and checkout through its network. Existing restaurant clients are not confirmed LG-channel participants. Launch timing, terms and availability need checking.</p><p class="why-src">Compiled from: SoundHound AI</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">Official</span><span class="signal watch">Worth watching</span><span class="chip region r-intl">Global</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">Key Highlights</b><ul class="kh"><li>The US initiative starts with restaurants, with other retail categories planned later.</li><li>The vendor describes existing POS/kitchen integrations without new in-store hardware.</li></ul></div><div class="take"><b class="k">Why it matters</b><p>Restaurant brands assessing a new channel should check how menus, payments and existing order systems connect.</p></div><div class="take"><b class="k">Suggested next step</b><p>Ask about eligibility, timing and fees before assessing store-system compatibility.</p></div><details class="detail"><summary>Additional context</summary><div class="detail-body"><p>The announcement establishes a partnership and merchant-recruitment direction, not universal live ordering. SoundHound describes transaction routing and checkout through its network. Existing restaurant clients are not confirmed LG-channel participants. Launch timing, terms and availability need checking.</p><p class="why-src">Compiled from: SoundHound AI</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs" rel="noopener noreferrer" target="_blank">Read original ↗</a><details class="story-actions" data-story="soundhound-lg-plan-us-tv-1e0dea" data-title-en="SoundHound and LG plan a US TV commerce channel, starting with restaurants" data-title-zh="SoundHound與LG籌建美國電視商務渠道，先聚焦餐飲商戶"><summary>Share</summary><div class="story-actions-menu"><button data-action="copy" type="button">Copy team brief</button><button data-action="share" type="button">Share story link</button></div></details></div>
 </article></div>
 </section>
@@ -1153,43 +1098,21 @@ if(mobileCategories){
   document.addEventListener('click',e=>{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;});
 }
 setLang(curLang()); // sync button highlight with the pre-paint language
-/* Reading preference is session-scoped: Quick Scan is the accessible default,
-   Deep Read opens published analysis, each card can still expand individually. */
+/* Single full reading view; supplemental context remains optional. */
 (function(){
-  const quick=document.getElementById('view-quick');
-  const deep=document.getElementById('view-deep');
-  const cards=[...document.querySelectorAll('details.story-expanded')];
-  if(!quick||!deep||!cards.length)return;
-  function apply(mode,save){
-    const expanded=mode==='deep';
-    cards.forEach(d=>{d.open=expanded});
-    quick.setAttribute('aria-pressed',expanded?'false':'true');
-    deep.setAttribute('aria-pressed',expanded?'true':'false');
-    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
-    if(save){try{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}catch(e){}}
-  }
-  quick.addEventListener('click',()=>apply('quick',true));
-  deep.addEventListener('click',()=>apply('deep',true));
-  let saved='quick';
-  try{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}catch(e){}
-  apply(saved==='deep'?'deep':'quick',false);
   const search=document.querySelector('.top-search');
   if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{
     try{document.getElementById('news-query').focus({preventScroll:true})}catch(e){}
   }));
-  let printState=null;
+  let noteState=null;
   addEventListener('beforeprint',()=>{
     const note=document.querySelector('.edition-notes');
-    printState={cards:cards.map(d=>d.open),notes:note?note.open:null};
-    cards.forEach(d=>{d.open=true});
-    if(note)note.open=true;
+    if(note){noteState=note.open;note.open=true;}
   });
   addEventListener('afterprint',()=>{
-    if(!printState)return;
-    cards.forEach((d,i)=>{d.open=!!printState.cards[i]});
     const note=document.querySelector('.edition-notes');
-    if(note&&printState.notes!==null)note.open=printState.notes;
-    printState=null;
+    if(note&&noteState!==null)note.open=noteState;
+    noteState=null;
   });
 })();
 function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}

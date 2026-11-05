@@ -466,7 +466,6 @@ section[id]{scroll-margin-top:86px;margin:34px 0 0}
 /* Subscription flag: readers were clicking through and hitting a paywall with no
    warning. Flagging it on the card itself sets the expectation before the click. */
 .paywall{display:inline-flex;align-items:center;gap:4px;font-weight:750;font-size:11.5px;padding:4px 9px;border-radius:999px;background:#fdf3e2;color:var(--amber);border:1px solid #edd9ab;white-space:nowrap}
-.story .no{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .story h3{font-size:clamp(18px,2.05vw,21.5px);line-height:1.28;letter-spacing:-.022em;margin:2px 0 10px;text-wrap:balance}
 .story h3 a{text-decoration:none}
 .story h3 a:hover{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}
@@ -728,34 +727,14 @@ footer b{color:var(--ink)}
 .edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{margin:0 16px 14px}
 .edition-notes .thesis{margin-top:8px}
 .edition-notes .more-brief{margin-bottom:16px}
-/* Quick Scan is the default even without JS. Every article retains the full
-   body in a semantic <details> control, including subscriber-only reporting. */
-.scan-brief{display:grid;gap:10px;margin:3px 0 14px}
-.scan-brief p{margin:0;line-height:1.6}
-.scan-brief b{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}
-.scan-summary{font-size:15px;color:var(--body)}
-.scan-impact{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}
-.scan-impact b{color:var(--accent-d)}
-.story-expanded{border-top:1px solid var(--line);margin:0 0 12px}
-.story-expanded>summary{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}
-.story-expanded>summary::-webkit-details-marker{display:none}
-.story-expanded>summary::after{content:"⌄";margin-left:9px;font-size:16px}
-.story-expanded[open]>summary::after{content:"⌃"}
-.story-expanded>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Full reporting is visible without JavaScript; supplemental context stays optional. */
 .story-expanded-body{padding:4px 0 8px}
-.story:has(> .story-expanded[open]) .scan-brief{display:none}
-.story:has(> .story-expanded[open]) .story-expanded{margin-top:6px}
+.source-date{display:flex;align-items:center;flex-wrap:wrap;gap:6px 9px;min-width:0;max-width:100%}
+.story-meta .src{white-space:normal;overflow-wrap:anywhere;min-width:0}
+.story-taxonomy .source-kind{font-size:11px;padding:4px 8px}
 .story .story-foot{gap:8px}
 .story-actions>summary{display:inline-flex;align-items:center;min-height:44px}
 .readsrc{display:inline-flex;align-items:center;min-height:44px}
-.reading-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}
-.reading-toolbar-label{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}
-.reading-switch{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}
-.reading-switch button{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}
-.reading-switch button[aria-pressed="true"]{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}
-.reading-switch button:focus-visible{outline:2px solid var(--accent-d);outline-offset:2px}
-.reading-toolbar-hint{font-size:12px;color:var(--muted)}
-body.view-archive-search .reading-toolbar{display:none!important}
 body.is-filtering-news .hero-feature-grid{grid-template-columns:1fr}
 body.is-filtering-news .hero-feature-grid .hero-intro{max-width:740px}
 @media(max-width:900px){
@@ -778,13 +757,9 @@ body.is-filtering-news .hero-feature-grid .hero-intro{max-width:740px}
   .hero-feature-grid .lead-row{padding:12px;gap:10px}
   .hero-feature-grid .lead-info strong{font-size:14px}
   .post-hero-notes{margin-top:12px}
-  .scan-summary{font-size:15px}
-  .scan-impact{font-size:14px}
-  .reading-toolbar-hint{width:100%}
   .discovery{margin-top:12px}
 }
 @media print{
-  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{display:none!important}
   .story-expanded-body{display:block!important}
 }
 /* ---------- Phase 3: search after reading, editorial-first card actions ---------- */
@@ -836,11 +811,10 @@ body.is-filtering-news .more-brief{display:initial}
   .today-search-results,.archive-search-results,.discovery{display:none!important}
 }
 /* Fine-grained touch/reading improvements, without changing the brand system. */
-.story-expanded>summary,.edition-notes>summary,
-#view-quick,#view-deep,.discovery-reset,.discovery-scope button,
+.edition-notes>summary,.discovery-reset,.discovery-scope button,
 #archive-more,.mobile-cat-list a{min-height:44px}
 .story h3{overflow-wrap:anywhere;hyphens:auto}
-.scan-brief p,.story-expanded-body p{overflow-wrap:break-word}
+.story-expanded-body p{overflow-wrap:break-word}
 .story-actions-menu button{font-size:13px;min-height:44px}
 @media(max-width:560px){
   .story{padding:19px 16px}
@@ -849,7 +823,6 @@ body.is-filtering-news .more-brief{display:initial}
   .story-meta .src,.story-meta .source-kind,.story-meta .date,
   .story-meta .evidence-link{font-size:12px}
   .story-taxonomy{gap:6px;margin-bottom:12px}
-  .scan-brief p{line-height:1.66}
   .story-foot{gap:8px;padding-top:13px}
   .story-foot .readsrc,.story-foot .story-actions>summary{min-height:44px;font-size:13px;padding:9px 13px}
   main#main > .discovery{margin-top:30px}
@@ -948,113 +921,85 @@ body.is-filtering-news .more-brief{display:initial}
 </details>
 </div>
 <main class="wrap" id="main">
-<div class="reading-toolbar" id="news-reading-mode">
-<span class="reading-toolbar-label">阅读模式</span>
-<div aria-label="新闻阅读模式 / News reading mode" class="reading-switch" role="group">
-<button aria-pressed="true" id="view-quick" type="button">快速扫描</button>
-<button aria-pressed="false" id="view-deep" type="button">深入阅读</button>
-</div>
-<span class="reading-toolbar-hint">每则可独立展开完整内容</span>
-</div>
 <section id="sec0">
 <div class="cat-head c1"><span class="cat-emoji">🧠</span><div class="cat-txt"><h2>AI 大模型 &amp; 市场动态</h2><p class="cat-desc">今日 AI 产业最大的动作。</p></div><em>2 则</em></div>
 <div class="stories"><article class="story c1" data-no="1" id="tencent-releases-hy4-vision-computer-26ef30"><span aria-hidden="true" class="idalias" id="s1"></span>
-<div class="story-meta"><span class="src">Tencent / PR Newswire</span><span class="source-kind">官方公告</span><span class="date">11月4日</span><span class="no">01</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Tencent / PR Newswire</span><span class="date">11月4日</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" rel="noopener noreferrer" target="_blank">腾讯发布Hy4，加入视觉与电脑操作；权重仍待释出</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-cn">中国</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>腾讯于11月4日公布Hy4，将模型扩至图像理解及软体操作任务。</p><p class="scan-impact"><b>Marketing 影响</b>使用内地AI工具的营销团队，可评估图像与跨软体任务，亦要分清托管接入和权重部署。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>公司列出图表分析，以及命令列与图形介面操作。</li><li>公告称模型权重及系统卡将稍后提供，不能视为已全部开源。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先核对实际账户的模型版本与权限，以固定素材测试一个可复原流程。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>按腾讯原公告，Hy4可处理视觉资讯，并通过命令列或图形介面执行任务；公司提及Blender及CAD等软件训练。这些是供应商描述，本报未实测。公告把权重与系统卡列为稍后发布安排，与模型在产品或API中的接入属不同事情。文章不沿用内部评测排名、幻觉率或价格优惠，也不推断所有腾讯产品同时具备相同能力。</p><p class="why-src">整理自：Tencent / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-cn">中国</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>公司列出图表分析，以及命令列与图形介面操作。</li><li>公告称模型权重及系统卡将稍后提供，不能视为已全部开源。</li></ul></div><div class="take"><b class="k">营销影响</b><p>使用内地AI工具的营销团队，可评估图像与跨软体任务，亦要分清托管接入和权重部署。</p></div><div class="take"><b class="k">建议下一步</b><p>先核对实际账户的模型版本与权限，以固定素材测试一个可复原流程。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>按腾讯原公告，Hy4可处理视觉资讯，并通过命令列或图形介面执行任务；公司提及Blender及CAD等软件训练。这些是供应商描述，本报未实测。公告把权重与系统卡列为稍后发布安排，与模型在产品或API中的接入属不同事情。文章不沿用内部评测排名、幻觉率或价格优惠，也不推断所有腾讯产品同时具备相同能力。</p><p class="why-src">整理自：Tencent / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/tencent-launches-hy4-joining-the-ranks-of-the-world-s-leading-open-source-ai-models-554689.shtml" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="tencent-releases-hy4-vision-computer-26ef30" data-title-en="Tencent releases Hy4 with vision and computer use; model weights are still planned" data-title-zh="腾讯发布Hy4，加入视觉与电脑操作；权重仍待释出"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c1" data-no="2" id="dialpad-ada-announce-combination-connect-a7cc02"><span aria-hidden="true" class="idalias" id="s2"></span>
-<div class="story-meta"><span class="src">Dialpad &amp; Ada / Business Wire</span><span class="source-kind">官方公告</span><span class="date">11月4日</span><span class="no">02</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Dialpad &amp; Ada / Business Wire</span><span class="date">11月4日</span></span></div>
 <h3><a href="https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html" rel="noopener noreferrer" target="_blank">Dialpad与Ada宣布合并，拟串连通讯、客户情报与AI代理</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>11月4日公告称交易尚待完成，现有客户的合约、价格及支持安排继续。</p><p class="scan-impact"><b>Marketing 影响</b>使用客服或客户沟通工具的团队，可提早询问产品整合与资料责任，安排续约评估。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>结合方向是通讯、客户资料理解及代理执行，产品路线仍会补充。</li><li>公司称现有整合维持原设定，客户无须因公告立即更改。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>保存现行服务及权限清单，向客户团队确认后续路线与合约影响。</p></div><details class="detail"><summary>补充说明（约 134 字）</summary><div class="detail-body"><p>两家公司希望把通话与客户情报接到能完成工作的AI代理，先由客服场景开始，日后再扩展其他客户关系流程。这是已宣布的结合计划，并非交易已完成或所有功能已整合。原声明说现有价格、客户团队及支持继续，更多路线将稍后公布。本报未引用交易估值、营收或部署量，也未把公司对未来服务体验的愿景写成已量度的结果。</p><p class="why-src">整理自：Dialpad &amp; Ada / Business Wire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>结合方向是通讯、客户资料理解及代理执行，产品路线仍会补充。</li><li>公司称现有整合维持原设定，客户无须因公告立即更改。</li></ul></div><div class="take"><b class="k">营销影响</b><p>使用客服或客户沟通工具的团队，可提早询问产品整合与资料责任，安排续约评估。</p></div><div class="take"><b class="k">建议下一步</b><p>保存现行服务及权限清单，向客户团队确认后续路线与合约影响。</p></div><details class="detail"><summary>补充说明（约 134 字）</summary><div class="detail-body"><p>两家公司希望把通话与客户情报接到能完成工作的AI代理，先由客服场景开始，日后再扩展其他客户关系流程。这是已宣布的结合计划，并非交易已完成或所有功能已整合。原声明说现有价格、客户团队及支持继续，更多路线将稍后公布。本报未引用交易估值、营收或部署量，也未把公司对未来服务体验的愿景写成已量度的结果。</p><p class="why-src">整理自：Dialpad &amp; Ada / Business Wire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://finance.yahoo.com/technology/ai/articles/dialpad-ada-combining-build-agentic-150500967.html" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="dialpad-ada-announce-combination-connect-a7cc02" data-title-en="Dialpad and Ada announce combination to connect communications, customer intelligence and AI" data-title-zh="Dialpad与Ada宣布合并，拟串连通讯、客户情报与AI代理"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article></div>
 </section>
 <section id="sec1">
 <div class="cat-head c2"><span class="cat-emoji">📣</span><div class="cat-txt"><h2>广告平台 &amp; 营销科技</h2><p class="cat-desc">平台规则、广告产品与营销科技的变动。</p></div><em>5 则</em></div>
 <div class="stories"><article class="story c2" data-no="3" id="adobe-brings-cx-enterprise-coworker-dfb9c6"><span aria-hidden="true" class="idalias" id="s3"></span>
-<div class="story-meta"><span class="src">Adobe</span><span class="source-kind">官方公告</span><span class="date">11月4日</span><span class="no">03</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Adobe</span><span class="date">11月4日</span></span></div>
 <h3><a href="https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms" rel="noopener noreferrer" target="_blank">Adobe把CX Enterprise Coworker接入多个AI平台，部分接入仍待推出</a></h3>
-<div class="story-taxonomy"><span class="signal impact">影响生意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>Adobe于11月4日宣布，企业可在ChatGPT、Claude等平台使用其客户体验协作能力。</p><p class="scan-impact"><b>Marketing 影响</b>使用不同AI助手的营销团队，可评估能否沿用同一套客户资料与活动流程。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>已列为可用的接入包括Databricks Genie、Gemini for business及Microsoft Copilot。</li><li>Amazon Quick、IBM及Snowflake接入仍属后续安排。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先核对账户资格、资料权限及可执行动作，再选一条低风险流程试行。</p></div><details class="detail"><summary>补充说明（约 120 字）</summary><div class="detail-body"><p>CX Enterprise Coworker处理客户体验的规划、分析及流程协调，公告强调执行仍有人员监督。新连接器采用MCP，即让AI工具接入外部系统的通用协定，涵盖广告及企业资料工具。这是接入范围扩展，并非所有账户自动取得全部功能；不同平台的资格、操作及费用需个别核对。公告没有证明接入后必然提升转换，本报亦未实测。</p><p class="why-src">整理自：Adobe</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal impact">影响生意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>已列为可用的接入包括Databricks Genie、Gemini for business及Microsoft Copilot。</li><li>Amazon Quick、IBM及Snowflake接入仍属后续安排。</li></ul></div><div class="take"><b class="k">营销影响</b><p>使用不同AI助手的营销团队，可评估能否沿用同一套客户资料与活动流程。</p></div><div class="take"><b class="k">建议下一步</b><p>先核对账户资格、资料权限及可执行动作，再选一条低风险流程试行。</p></div><details class="detail"><summary>补充说明（约 120 字）</summary><div class="detail-body"><p>CX Enterprise Coworker处理客户体验的规划、分析及流程协调，公告强调执行仍有人员监督。新连接器采用MCP，即让AI工具接入外部系统的通用协定，涵盖广告及企业资料工具。这是接入范围扩展，并非所有账户自动取得全部功能；不同平台的资格、操作及费用需个别核对。公告没有证明接入后必然提升转换，本报亦未实测。</p><p class="why-src">整理自：Adobe</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://news.adobe.com/news/2026/11/adobe-integrates-agentic-cx-enterprise-coworker-into-ai-platforms" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="adobe-brings-cx-enterprise-coworker-dfb9c6" data-title-en="Adobe brings CX Enterprise Coworker to AI platforms, with more integrations planned" data-title-zh="Adobe把CX Enterprise Coworker接入多个AI平台，部分接入仍待推出"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c2" data-no="4" id="digital-launches-ellie-media-planning-1e405d"><span aria-hidden="true" class="idalias" id="s4"></span>
-<div class="story-meta"><span class="src">AI Digital</span><a class="evidence-link" href="https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm" rel="noopener noreferrer" target="_blank">补充来源 ↗</a><span class="source-kind">官方公告</span><span class="date">11月4日</span><span class="no">04</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">AI Digital</span><span class="date">11月4日</span></span><a class="evidence-link" href="https://www.tmcnet.com/usubmit/-ai-digital-introduces-ellie-an-ai-superagent-media-/2026/11/04/10475305.htm" rel="noopener noreferrer" target="_blank">补充来源 ↗</a></div>
 <h3><a href="https://www.aidigital.com/ellie" rel="noopener noreferrer" target="_blank">AI Digital推出Ellie协助媒体规划，投放仍由团队审批及执行</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>11月4日发布的Ellie把研究、受众、媒体规划及活动分析放在同一对话流程。</p><p class="scan-impact"><b>Marketing 影响</b>代理商可评估连续保留研究与规划背景，能否减少交接时遗漏客户要求。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>Ellie协调专用代理，使用已接入Elevate的活动资料。</li><li>官方FAQ明示：Ellie不修改已投放活动，团队负责批准与执行。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>用一份已完成的brief比较建议，并核对资料覆盖及批准责任。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>Ellie位于Elevate平台内，针对媒体工作串连受众、规划、预测及分析。官方指出，未接入Elevate报告的活动不在可见范围；预测亦只是按历史与可用库存推算，没有成效保证。新闻稿称合资格合作客户可使用，并非任何人免费取得的独立工具。Ellie的产出交由策略人员批准，再由AI Digital代营运团队投放，不能写成自主操作广告账户。</p><p class="why-src">整理自：AI Digital</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>Ellie协调专用代理，使用已接入Elevate的活动资料。</li><li>官方FAQ明示：Ellie不修改已投放活动，团队负责批准与执行。</li></ul></div><div class="take"><b class="k">营销影响</b><p>代理商可评估连续保留研究与规划背景，能否减少交接时遗漏客户要求。</p></div><div class="take"><b class="k">建议下一步</b><p>用一份已完成的brief比较建议，并核对资料覆盖及批准责任。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>Ellie位于Elevate平台内，针对媒体工作串连受众、规划、预测及分析。官方指出，未接入Elevate报告的活动不在可见范围；预测亦只是按历史与可用库存推算，没有成效保证。新闻稿称合资格合作客户可使用，并非任何人免费取得的独立工具。Ellie的产出交由策略人员批准，再由AI Digital代营运团队投放，不能写成自主操作广告账户。</p><p class="why-src">整理自：AI Digital</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.aidigital.com/ellie" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="digital-launches-ellie-media-planning-1e405d" data-title-en="AI Digital launches Ellie for media planning, with teams approving and launching campaigns" data-title-zh="AI Digital推出Ellie协助媒体规划，投放仍由团队审批及执行"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c2" data-no="5" id="follow-up-teads-embeds-adelaide-34da55"><span aria-hidden="true" class="idalias" id="s5"></span>
-<div class="story-meta"><span class="src">Teads</span><span class="source-kind">官方公告</span><span class="date">11月3日</span><span class="no">05</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Teads</span><span class="date">11月3日</span></span></div>
 <h3><a href="https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/" rel="noopener noreferrer" target="_blank">更进新闻：Teads把Adelaide注意力指标接入Ad Manager</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>Teads于11月3日公布新整合，让广告主在平台内查看AU报告并设定注意力门槛。</p><p class="scan-impact"><b>Marketing 影响</b>媒体团队可把注意力品质讯号与CTR等指标一与查看，再决定如何调整版位。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="followup"><b class="k">昨日续篇</b><p>延续10月31日本报介绍Ad Manager更新；11月3日新增Adelaide原生AU报告及门槛优化。</p></div><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>报告涵盖网页及CTV InStream，可按格式、装置与版位查看。</li><li>Attention Threshold可设定AU下限，过滤低于门槛的库存。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先了解AU模型及门槛影响，再以小范围比较触及、成本与转换。</p></div><details class="detail"><summary>补充说明（约 119 字）</summary><div class="detail-body"><p>AU是Adelaide预测版位吸引注意力及带来结果可能性的指标，不能直接当成每名观众真正观看的时间。Teads表示量度在Ad Manager全球提供，可与可视率、视频观看及点击率并列。这次是在既有Ad Manager上的量度与优化扩展，并非重新发布整个平台。门槛会影响可买库存，较高AU亦不等于已证实较高销售；实际效果需按活动核对。</p><p class="why-src">整理自：Teads</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="followup"><b class="k">昨日续篇</b><p>延续10月31日本报介绍Ad Manager更新；11月3日新增Adelaide原生AU报告及门槛优化。</p></div><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>报告涵盖网页及CTV InStream，可按格式、装置与版位查看。</li><li>Attention Threshold可设定AU下限，过滤低于门槛的库存。</li></ul></div><div class="take"><b class="k">营销影响</b><p>媒体团队可把注意力品质讯号与CTR等指标一与查看，再决定如何调整版位。</p></div><div class="take"><b class="k">建议下一步</b><p>先了解AU模型及门槛影响，再以小范围比较触及、成本与转换。</p></div><details class="detail"><summary>补充说明（约 119 字）</summary><div class="detail-body"><p>AU是Adelaide预测版位吸引注意力及带来结果可能性的指标，不能直接当成每名观众真正观看的时间。Teads表示量度在Ad Manager全球提供，可与可视率、视频观看及点击率并列。这次是在既有Ad Manager上的量度与优化扩展，并非重新发布整个平台。门槛会影响可买库存，较高AU亦不等于已证实较高销售；实际效果需按活动核对。</p><p class="why-src">整理自：Teads</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.teads.com/blog/teads-and-adelaide-bring-attention-based-media-quality-measurement-and-real-time-optimization-to-teads-ad-manager/13054/" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="follow-up-teads-embeds-adelaide-34da55" data-title-en="Follow-up: Teads embeds Adelaide attention metrics in Ad Manager" data-title-zh="更进新闻：Teads把Adelaide注意力指标接入Ad Manager"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c2" data-no="6" id="lorikeet-launches-dreamweaver-goal-based-66178b"><span aria-hidden="true" class="idalias" id="s6"></span>
-<div class="story-meta"><span class="src">Lorikeet / PR Newswire</span><span class="source-kind">官方公告</span><span class="date">11月4日</span><span class="no">06</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Lorikeet / PR Newswire</span><span class="date">11月4日</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml" rel="noopener noreferrer" target="_blank">Lorikeet推出Dreamweaver，按客户目标安排主动跟进</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>Lorikeet公布Dreamweaver，以启用、留存等目标安排语音、短讯及电邮联系。</p><p class="scan-impact"><b>Marketing 影响</b>CRM团队可把跟进节奏与客户目标连起来，并把联络规则纳入自动化。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>可按排程或使用情况变化跟进，也可建立团队任务或不采取动作。</li><li>公司称每则消息均检查联络时间、限制及同意设定。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先选一个启用目标，订明同意、频次及停止联络规则，再评估测试。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>Dreamweaver建于Lorikeet的Concierge代理之上，会使用客户历史、回复习惯及团队注记决定跟进方式。官方称功能已提供，企业可申请使用；这不代表任何现有账户都自动启用。公告亦描述对照组量度及早期客户成果，本报未核验完整研究方法或产品表现，因此不沿用增长比例，亦不把主动联系写成已证实提高客户终身价值。</p><p class="why-src">整理自：Lorikeet / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>可按排程或使用情况变化跟进，也可建立团队任务或不采取动作。</li><li>公司称每则消息均检查联络时间、限制及同意设定。</li></ul></div><div class="take"><b class="k">营销影响</b><p>CRM团队可把跟进节奏与客户目标连起来，并把联络规则纳入自动化。</p></div><div class="take"><b class="k">建议下一步</b><p>先选一个启用目标，订明同意、频次及停止联络规则，再评估测试。</p></div><details class="detail"><summary>补充说明（约 121 字）</summary><div class="detail-body"><p>Dreamweaver建于Lorikeet的Concierge代理之上，会使用客户历史、回复习惯及团队注记决定跟进方式。官方称功能已提供，企业可申请使用；这不代表任何现有账户都自动启用。公告亦描述对照组量度及早期客户成果，本报未核验完整研究方法或产品表现，因此不沿用增长比例，亦不把主动联系写成已证实提高客户终身价值。</p><p class="why-src">整理自：Lorikeet / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/lorikeet-dreamweaver-enables-businesses-to-give-every-customer-an-ai-account-manager-554717.shtml" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="lorikeet-launches-dreamweaver-goal-based-66178b" data-title-en="Lorikeet launches Dreamweaver for goal-based proactive customer follow-up" data-title-zh="Lorikeet推出Dreamweaver，按客户目标安排主动跟进"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c2" data-no="7" id="optimizegeo-combines-ad-insights-shopping-5512bd"><span aria-hidden="true" class="idalias" id="s7"></span>
-<div class="story-meta"><span class="src">OptimizeGEO</span><span class="source-kind">官方公告</span><span class="date">11月3日</span><span class="no">07</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">OptimizeGEO</span><span class="date">11月3日</span></span></div>
 <h3><a href="https://www.optimizegeo.ai/product-updates/integrated-demand-engine" rel="noopener noreferrer" target="_blank">OptimizeGEO整合AI广告、商品推荐情报与待批准的执行建议</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>11月3日公告推出Integrated Demand Engine，涵盖AI Ads Insights等三项能力。</p><p class="scan-impact"><b>Marketing 影响</b>品牌可比较商品在AI推荐中的描述、零售商去向及付费曝光，决定先修正哪些资料。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>AI Ads Insights整合ChatGPT付费广告与自然可见度资讯。</li><li>商品情报细至SKU；Execution Agents的流程保留人手批准。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先抽查一组重要商品，要求供应商展示来源、抽样方式与批准流程。</p></div><details class="detail"><summary>补充说明（约 118 字）</summary><div class="detail-body"><p>GEO是协助品牌改善在生成式AI搜索中呈现方式的工作。按公司介绍，AI Ads Insights观察广告品牌、相关提示及素材；AI Shopping Intelligence比较个别商品、竞品及零售商；Execution Agents可检查网站并生成程式码或内容。这些属供应商功能描述，公告未证明可完整覆盖所有AI答案。本报不沿用其研究比例或市场预测，也不将执行建议视为已批准上线。</p><p class="why-src">整理自：OptimizeGEO</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>AI Ads Insights整合ChatGPT付费广告与自然可见度资讯。</li><li>商品情报细至SKU；Execution Agents的流程保留人手批准。</li></ul></div><div class="take"><b class="k">营销影响</b><p>品牌可比较商品在AI推荐中的描述、零售商去向及付费曝光，决定先修正哪些资料。</p></div><div class="take"><b class="k">建议下一步</b><p>先抽查一组重要商品，要求供应商展示来源、抽样方式与批准流程。</p></div><details class="detail"><summary>补充说明（约 118 字）</summary><div class="detail-body"><p>GEO是协助品牌改善在生成式AI搜索中呈现方式的工作。按公司介绍，AI Ads Insights观察广告品牌、相关提示及素材；AI Shopping Intelligence比较个别商品、竞品及零售商；Execution Agents可检查网站并生成程式码或内容。这些属供应商功能描述，公告未证明可完整覆盖所有AI答案。本报不沿用其研究比例或市场预测，也不将执行建议视为已批准上线。</p><p class="why-src">整理自：OptimizeGEO</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.optimizegeo.ai/product-updates/integrated-demand-engine" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="optimizegeo-combines-ad-insights-shopping-5512bd" data-title-en="OptimizeGEO combines AI ad insights, shopping intelligence and approval-based execution" data-title-zh="OptimizeGEO整合AI广告、商品推荐情报与待批准的执行建议"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article></div>
 </section>
 <section id="sec2">
 <div class="cat-head c3"><span class="cat-emoji">🎬</span><div class="cat-txt"><h2>创意生产工具</h2><p class="cat-desc">出稿、剪辑、生图的新工具与功能。</p></div><em>1 则</em></div>
 <div class="stories"><article class="story c3" data-no="8" id="tool-review-affinity-reaches-ipad-8cac11"><span aria-hidden="true" class="idalias" id="s8"></span>
-<div class="story-meta"><span class="src">Canva / MacRumors</span><a class="evidence-link" href="https://www.canva.com/newsroom/news/affinity-for-ipad/" rel="noopener noreferrer" target="_blank">补充来源 ↗</a><span class="source-kind">媒体报道</span><span class="date">11月2日</span><span class="no">08</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Canva / MacRumors</span><span class="date">11月2日</span></span><a class="evidence-link" href="https://www.canva.com/newsroom/news/affinity-for-ipad/" rel="noopener noreferrer" target="_blank">补充来源 ↗</a></div>
 <h3><a href="https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/" rel="noopener noreferrer" target="_blank">工具补读：Affinity登陆iPad，核心设计工具免费、AI另需付费方案</a></h3>
-<div class="story-taxonomy"><span class="signal act">可即用</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>11月2日报道介绍Affinity for iPad，把草图、向量、修图与排版放进同一档案。</p><p class="scan-impact"><b>Marketing 影响</b>外出工作的设计团队可评估单一档案流程，减少多个App之间的素材交接。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>个人核心工具免费，使用App仍需免费Canva账户。</li><li>Canva AI Studio需premium账户，包含扩图及拆分图层等功能。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先用现有品牌档测试字体、图层及汇出，再决定是否需要AI方案。</p></div><details class="detail"><summary>补充说明（约 116 字）</summary><div class="detail-body"><p>官方确认草图、向量、像素编辑及多页排版可在同一个.af档案工作，并为触控及Apple Pencil设计介面。AI功能属另一项资格：Generative Expand可延伸画面，Decompose Layer可把平面图像分成可编辑图层。免费核心工具不等于全部功能免付费，也不代表iPad与桌面每项功能完全相同。本报未测试输出品质，正式制作仍需核对原档与印刷规格。</p><p class="why-src">整理自：Canva / MacRumors</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">媒体报道</span><span class="signal act">可即用</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>个人核心工具免费，使用App仍需免费Canva账户。</li><li>Canva AI Studio需premium账户，包含扩图及拆分图层等功能。</li></ul></div><div class="take"><b class="k">营销影响</b><p>外出工作的设计团队可评估单一档案流程，减少多个App之间的素材交接。</p></div><div class="take"><b class="k">建议下一步</b><p>先用现有品牌档测试字体、图层及汇出，再决定是否需要AI方案。</p></div><details class="detail"><summary>补充说明（约 116 字）</summary><div class="detail-body"><p>官方确认草图、向量、像素编辑及多页排版可在同一个.af档案工作，并为触控及Apple Pencil设计介面。AI功能属另一项资格：Generative Expand可延伸画面，Decompose Layer可把平面图像分成可编辑图层。免费核心工具不等于全部功能免付费，也不代表iPad与桌面每项功能完全相同。本报未测试输出品质，正式制作仍需核对原档与印刷规格。</p><p class="why-src">整理自：Canva / MacRumors</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.macrumors.com/2026/11/02/canva-free-affinity-app-ipad/" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="tool-review-affinity-reaches-ipad-8cac11" data-title-en="Tool review: Affinity reaches iPad with free core tools and premium AI" data-title-zh="工具补读：Affinity登陆iPad，核心设计工具免费、AI另需付费方案"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article></div>
 </section>
 <section id="sec3">
 <div class="cat-head c4"><span class="cat-emoji">📈</span><div class="cat-txt"><h2>行业影响 &amp; 品牌案例</h2><p class="cat-desc">代理商生态、客户动向与品牌实例。</p></div><em>2 则</em></div>
 <div class="stories"><article class="story c4" data-no="9" id="klook-rolls-out-k-phases-4a0938"><span aria-hidden="true" class="idalias" id="s9"></span>
-<div class="story-meta"><span class="src">Klook / PR Newswire</span><span class="source-kind">官方公告</span><span class="date">11月3日</span><span class="no">09</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">Klook / PR Newswire</span><span class="date">11月3日</span></span></div>
 <h3><a href="https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml" rel="noopener noreferrer" target="_blank">Klook分阶段推出K.ai，让商户以指令更新价格与库存</a></h3>
-<div class="story-taxonomy"><span class="signal impact">影响生意</span><span class="chip region r-hk">香港</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>Klook于11月3日公布商户后台代理，可查预订资料并按指令执行更新。</p><p class="scan-impact"><b>Marketing 影响</b>旅游体验商户可把产品资料与营运更新连起来，减少促销内容与实际供应不一致。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>K.ai可查预订与供应情况，并更新库存及价格。</li><li>全球推出采分阶段安排，产品上架资料可先预填再由商户审阅。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先确认账户是否开放，再测试一项可复原的库存更新，核对变更纪录。</p></div><details class="detail"><summary>补充说明（约 136 字）</summary><div class="detail-body"><p>这是面向Klook商户后台的工具，并非旅客用来代订行程的代理。按公告，它可由既有材料生成结构化产品上架资料，预填栏位供商户修改，亦可整理评论及表现资料。公司公布部分早期效率与预订量比较，未提供足以判断因果的完整方法；本报不沿用成效比例。分阶段推出亦代表各商户取得功能的时间可能不同，重要价格变更仍宜覆核。</p><p class="why-src">整理自：Klook / PR Newswire</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal impact">影响生意</span><span class="chip region r-hk">香港</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>K.ai可查预订与供应情况，并更新库存及价格。</li><li>全球推出采分阶段安排，产品上架资料可先预填再由商户审阅。</li></ul></div><div class="take"><b class="k">营销影响</b><p>旅游体验商户可把产品资料与营运更新连起来，减少促销内容与实际供应不一致。</p></div><div class="take"><b class="k">建议下一步</b><p>先确认账户是否开放，再测试一项可复原的库存更新，核对变更纪录。</p></div><details class="detail"><summary>补充说明（约 136 字）</summary><div class="detail-body"><p>这是面向Klook商户后台的工具，并非旅客用来代订行程的代理。按公告，它可由既有材料生成结构化产品上架资料，预填栏位供商户修改，亦可整理评论及表现资料。公司公布部分早期效率与预订量比较，未提供足以判断因果的完整方法；本报不沿用成效比例。分阶段推出亦代表各商户取得功能的时间可能不同，重要价格变更仍宜覆核。</p><p class="why-src">整理自：Klook / PR Newswire</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://en.prnasia.com/releases/apac/klook-launches-k-ai-an-ai-agent-that-manages-merchants-back-office-operations-554401.shtml" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="klook-rolls-out-k-phases-4a0938" data-title-en="Klook rolls out K.ai in phases for merchant pricing and inventory tasks" data-title-zh="Klook分阶段推出K.ai，让商户以指令更新价格与库存"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article>
 <article class="story c4" data-no="10" id="soundhound-lg-plan-us-tv-1e0dea"><span aria-hidden="true" class="idalias" id="s10"></span>
-<div class="story-meta"><span class="src">SoundHound AI</span><span class="source-kind">官方公告</span><span class="date">11月3日</span><span class="no">10</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">SoundHound AI</span><span class="date">11月3日</span></span></div>
 <h3><a href="https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs" rel="noopener noreferrer" target="_blank">SoundHound与LG筹建美国电视商务渠道，先聚焦餐饮商户</a></h3>
-<div class="story-taxonomy"><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
-<div class="scan-brief"><p class="scan-summary"><b>发生什么</b>11月3日合作公告为商户在LG智能电视接触顾客铺路，未列明正式上线日期。</p><p class="scan-impact"><b>Marketing 影响</b>餐饮品牌评估新交易入口时，要先确认菜单、付款与既有订单系统如何衔接。</p></div>
-<details class="story-expanded"><summary>深入阅读：重点及分析</summary>
-<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>合作范围是美国，餐饮先行，零售等类别属后续计划。</li><li>公司称可接入既有POS及厨房系统，参与餐厅无须新增店内硬体。</li></ul></div><div class="take"><b class="k">建议下一步</b><p>先向供应商查参与资格、上线时间与收费，再评估门店系统兼容性。</p></div><details class="detail"><summary>补充说明（约 120 字）</summary><div class="detail-body"><p>这份声明公布的是合作与商户招募方向，不能写成所有美国LG电视已可下单。SoundHound介绍由其商户网络处理交易路由及结账，并称可串连餐厅现有系统。公告提及的既有餐饮客户，也不代表已加入LG渠道。本报未引用装置覆盖数或推算销售，亦未实测流程；品牌仍需核对参与商户、商业条件及实际可用性。</p><p class="why-src">整理自：SoundHound AI</p></div></details></div></details>
+<div class="story-taxonomy"><span class="source-kind">官方公告</span><span class="signal watch">要留意</span><span class="chip region r-intl">国际</span></div>
+<div class="story-expanded-body"><div class="block"><b class="k">重点摘要</b><ul class="kh"><li>合作范围是美国，餐饮先行，零售等类别属后续计划。</li><li>公司称可接入既有POS及厨房系统，参与餐厅无须新增店内硬体。</li></ul></div><div class="take"><b class="k">营销影响</b><p>餐饮品牌评估新交易入口时，要先确认菜单、付款与既有订单系统如何衔接。</p></div><div class="take"><b class="k">建议下一步</b><p>先向供应商查参与资格、上线时间与收费，再评估门店系统兼容性。</p></div><details class="detail"><summary>补充说明（约 120 字）</summary><div class="detail-body"><p>这份声明公布的是合作与商户招募方向，不能写成所有美国LG电视已可下单。SoundHound介绍由其商户网络处理交易路由及结账，并称可串连餐厅现有系统。公告提及的既有餐饮客户，也不代表已加入LG渠道。本报未引用装置覆盖数或推算销售，亦未实测流程；品牌仍需核对参与商户、商业条件及实际可用性。</p><p class="why-src">整理自：SoundHound AI</p></div></details></div>
 <div class="story-foot"><a class="readsrc" href="https://www.soundhound.com/newsroom/soundhound-ai-and-lg-partner-to-expand-commerce-opportunities-for-merchants-on-lg-smart-tvs" rel="noopener noreferrer" target="_blank">阅读原文 ↗</a><details class="story-actions" data-story="soundhound-lg-plan-us-tv-1e0dea" data-title-en="SoundHound and LG plan a US TV commerce channel, starting with restaurants" data-title-zh="SoundHound与LG筹建美国电视商务渠道，先聚焦餐饮商户"><summary>分享</summary><div class="story-actions-menu"><button data-action="copy" type="button">复制 Team Brief</button><button data-action="share" type="button">分享新闻链接</button></div></details></div>
 </article></div>
 </section>
@@ -1153,43 +1098,21 @@ if(mobileCategories){
   document.addEventListener('click',e=>{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;});
 }
 setLang(curLang()); // sync button highlight with the pre-paint language
-/* Reading preference is session-scoped: Quick Scan is the accessible default,
-   Deep Read opens published analysis, each card can still expand individually. */
+/* Single full reading view; supplemental context remains optional. */
 (function(){
-  const quick=document.getElementById('view-quick');
-  const deep=document.getElementById('view-deep');
-  const cards=[...document.querySelectorAll('details.story-expanded')];
-  if(!quick||!deep||!cards.length)return;
-  function apply(mode,save){
-    const expanded=mode==='deep';
-    cards.forEach(d=>{d.open=expanded});
-    quick.setAttribute('aria-pressed',expanded?'false':'true');
-    deep.setAttribute('aria-pressed',expanded?'true':'false');
-    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
-    if(save){try{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}catch(e){}}
-  }
-  quick.addEventListener('click',()=>apply('quick',true));
-  deep.addEventListener('click',()=>apply('deep',true));
-  let saved='quick';
-  try{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}catch(e){}
-  apply(saved==='deep'?'deep':'quick',false);
   const search=document.querySelector('.top-search');
   if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{
     try{document.getElementById('news-query').focus({preventScroll:true})}catch(e){}
   }));
-  let printState=null;
+  let noteState=null;
   addEventListener('beforeprint',()=>{
     const note=document.querySelector('.edition-notes');
-    printState={cards:cards.map(d=>d.open),notes:note?note.open:null};
-    cards.forEach(d=>{d.open=true});
-    if(note)note.open=true;
+    if(note){noteState=note.open;note.open=true;}
   });
   addEventListener('afterprint',()=>{
-    if(!printState)return;
-    cards.forEach((d,i)=>{d.open=!!printState.cards[i]});
     const note=document.querySelector('.edition-notes');
-    if(note&&printState.notes!==null)note.open=printState.notes;
-    printState=null;
+    if(note&&noteState!==null)note.open=noteState;
+    noteState=null;
   });
 })();
 function toast(m){const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}
