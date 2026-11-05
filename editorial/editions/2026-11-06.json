@@ -58,7 +58,8 @@
         "action": "可即用",
         "action_en": "Ready to Use",
         "source_kind": "official",
-        "editorial_slug": "images-26"
+        "editorial_slug": "images-26",
+        "verification_url": "https://developers.openai.com/api/docs/changelog"
       },
       {
         "title": "Clarity串連代理流量與商品發現，Ask Clarity仍限封閉測試",
@@ -360,6 +361,17 @@
             "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
             "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
             "limitations": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity."
+          },
+          {
+            "url": "https://developers.openai.com/api/docs/changelog",
+            "publisher": "OpenAI API documentation",
+            "source_class": "A",
+            "source_publication_date": "2026-11-04",
+            "evidence_locator": "November 2026 > Nov 4, lines 976–987: Sunburst, Flare, complexity, SVG, GIF and markup edits.",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-06T07:07:58+08:00",
+            "access_method": "Official changelog directly opened and relevant dated entry separately located (turn25view0; turn25view1).",
+            "limitations": "Technical release corroboration from the same issuer, not independent performance testing."
           }
         ],
         "claims": [
@@ -420,9 +432,9 @@
           "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
           "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
           "finding": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity.",
-          "source_reopen_reference": "turn8view0; turn13view2"
+          "source_reopen_reference": "turn8view0; turn13view2; official API changelog turn25view0/turn25view1"
         },
-        "review_notes": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity.",
+        "review_notes": "Reopened API and availability sections. Retained distinct Flare/Sunburst and API controls; omitted vendor speed and usage statistics. Availability attributed to OpenAI and subject to normal regional/account access; no product trial or guaranteed brand fidelity. Supplementary official API changelog link added after initial browser QA identified missing visible supporting-source metadata; no factual copy changed.",
         "editorial_decision": "approved",
         "needs_human_review": false,
         "editorial_relevance_score": {
