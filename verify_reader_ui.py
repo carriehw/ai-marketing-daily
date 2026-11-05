@@ -39,8 +39,8 @@ for language in ("en","zh-hant","zh-hans"):
         notes=soup.select_one(".edition-notes")
         if not notes or notes.has_attr("open"):
             issues.append(f"{label}: editorial context not hidden behind optional disclosure")
-        if not soup.select_one("#news-explorer") or not soup.select_one("#news-reading-mode"):
-            issues.append(f"{label}: discovery or reading controls not found")
+        if not soup.select_one("#news-explorer"):
+            issues.append(f"{label}: discovery not found")
         main=soup.select_one("main#main")
         direct=[child for child in main.children if getattr(child,"name",None)]
         news=[child for child in direct if child.name=="section" and (child.get("id","").startswith("sec"))]
@@ -51,26 +51,24 @@ for language in ("en","zh-hant","zh-hans"):
             issues.append(f"{label}: no in-place today's search results")
         if not soup.select_one("#archive-search-results #archive-result-list"):
             issues.append(f"{label}: archive search results missing")
-        if not soup.select_one('#view-quick[aria-pressed="true"]'):
-            issues.append(f"{label}: Quick Scan should be active by default")
-        if not soup.select_one('#view-deep[aria-pressed="false"]'):
-            issues.append(f"{label}: Deep Read missing")
+        if soup.select('#view-quick, #view-deep, #news-reading-mode, details.story-expanded'):
+            issues.append(f"{label}: obsolete reading controls remain")
         articles=soup.select("main#main article.story")
         if len(articles)!=n:
             issues.append(f"{label}: story count {len(articles)} != {n}")
         for i,article in enumerate(articles):
             if not article.get("id"):issues.append(f"{label}: missing permanent story id at {i}")
-            summary=article.select_one(":scope > .scan-brief .scan-summary")
-            impact=article.select_one(":scope > .scan-brief .scan-impact")
-            if not summary or not summary.get_text(" ",strip=True):
-                issues.append(f"{label}: no Quick Scan summary at story {i}")
-            if not impact or not impact.get_text(" ",strip=True):
-                issues.append(f"{label}: no marketer impact in Quick Scan story {i}")
-            expander=article.select_one(":scope > details.story-expanded")
-            if not expander or expander.has_attr("open"):
-                issues.append(f"{label}: per-story Deep Read not collapsed initially {i}")
-            elif not expander.select_one(".block") or not expander.select_one(".take"):
-                issues.append(f"{label}: published key points/insight not preserved {i}")
+            content=article.select_one(":scope > .story-expanded-body")
+            if not content or not content.select_one(".block") or not content.select_one(".take"):
+                issues.append(f"{label}: published key points/insight not visible {i}")
+            if article.select('.story-meta .no'):
+                issues.append(f"{label}: redundant story number {i}")
+            if not article.select_one('.source-date .src') or not article.select_one('.source-date .date'):
+                issues.append(f"{label}: publisher/date grouping missing {i}")
+            if not article.select_one('.story-taxonomy .source-kind'):
+                issues.append(f"{label}: reporting type missing {i}")
+            for detail in article.select('details.detail'):
+                if detail.has_attr('open'):issues.append(f"{label}: supplemental context must start collapsed {i}")
             if len(article.select(".story-foot details.story-actions"))!=1:
                 issues.append(f"{label}: share/copy controls lost {i}")
             if len(article.select(".story-foot .readsrc[href^='https://']"))!=1:
@@ -84,17 +82,13 @@ for language in ("en","zh-hant","zh-hans"):
             if article.select_one(".evidence-link") and not article.select_one(".story-meta .evidence-link"):
                 issues.append(f"{label}: supporting-source link not adjacent to publisher {i}")
         css="\n".join(x.get_text() for x in soup.select("style"))
-        needed=(".hero-feature-grid{display:grid", ".scan-brief{display:grid",
-                ".story-expanded>summary{", ".reading-toolbar{display:flex",
+        needed=(".hero-feature-grid{display:grid", ".source-date{display:flex",
+                ".story-expanded-body{",
                 ".top-search{display:inline-flex", "@media(max-width:560px)",
                 ".navlinks{display:none!important")
         for x in needed:
             if x not in css: issues.append(f"{label}: reader CSS rule absent: {x}")
-        if "sessionStorage.setItem('amd-reader-mode'" not in html:
-            issues.append(f"{label}: Quick/Deep preference not wired")
-        if "details.story-expanded" not in html:
-            issues.append(f"{label}: JS does not handle expanded stories")
 if issues:
     for p in issues[:35]:print("FAIL",p,file=sys.stderr)
     raise SystemExit(1)
-print(f"PASS Reader-first UI QA: {n} complete articles, ranked Top 3, compact menu/search, optional editorial context, Quick/Deep modes across 3 language homepages and dated archives")
+print(f"PASS Reader-first UI QA: {n} complete articles, ranked Top 3, compact menu/search, optional editorial context, single full reading view with optional supplemental context across 3 language homepages and dated archives")
