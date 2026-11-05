@@ -1076,7 +1076,9 @@ for s in data["sections"]:
         act_cls = ACT.get(act, "watch")
         reg = it.get("region", "")
         reg_cls = REG.get(reg, "r-other")
-        src = html.escape(str(it.get("source", "")))
+        source_name = str(it.get("source", ""))
+        source_label = "TNGlobal" if source_name.startswith("TNGlobal") else source_name
+        src = html.escape(source_label)
         _kinds = {
             "official": ("官方公告", "Official"),
             "reported": ("媒體報道", "Reported"),
@@ -1176,22 +1178,11 @@ for s in data["sections"]:
         # 首行 1 張, alias area 2,030,127px² at 1400px). That is exactly the
         # 「格仔唔整齊」 Carrie asked me to fix, so the anchor goes inside where it
         # is ordinary inline content and holds no grid track.
-        # Reader-first summary stays fully visible in Quick Scan, while the
-        # previously published highlights, insight and long-form reporting remain
-        # available under a semantic native-details disclosure. No facts are cut.
-        scan = (f'<div class="scan-brief">'
-                f'<p class="scan-summary"><b>{bi("發生什麼", "WHAT HAPPENED")}</b>'
-                f'{bi(it.get("summary",""),it.get("summary_en"))}</p>'
-                f'<p class="scan-impact"><b>{bi("Marketing 影響", "WHY IT MATTERS")}</b>'
-                f'{bi(it.get("why",""),it.get("why_en"))}</p></div>')
-
         out.append(f'''<article class="story {sec_cls}" id="{sid}" data-no="{n}"><span class="idalias" id="s{n}" aria-hidden="true"></span>
-<div class="story-meta"><span class="src">{src}</span>{primary_link}{source_kind_badge}<span class="date">{bi(tm, _time_en(tm))}</span>{pw_badge}<span class="no">{n:02d}</span></div>
+<div class="story-meta"><span class="source-date"><span class="src">{src}</span><span class="date">{bi(tm, _time_en(tm))}</span></span>{primary_link}{pw_badge}</div>
 <h3><a href="{url}" target="_blank" rel="noopener noreferrer">{bi(it.get("title",""), it.get("title_en"))}</a></h3>
-<div class="story-taxonomy"><span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></div>
-{scan}
-<details class="story-expanded"><summary>{bi("深入閱讀：重點及分析", "Deep read: key points and analysis")}</summary>
-<div class="story-expanded-body">{fu}{body}{take}{pat}{detail}</div></details>
+<div class="story-taxonomy">{source_kind_badge}<span class="signal {act_cls}">{bi(act, ACT_EN.get(act, act))}</span><span class="chip region {reg_cls}">{bi(reg, REG_EN.get(reg, reg))}</span></div>
+<div class="story-expanded-body">{fu}{body}<div class="take"><b class="k">{bi("行銷影響", "Why it matters")}</b><p>{bi(it.get("why",""), it.get("why_en"))}</p></div>{take if it.get("next_step") or it.get("next_step_en") else ""}{pat}{detail}</div>
 <div class="story-foot"><a class="readsrc" href="{url}" target="_blank" rel="noopener noreferrer">{bi("閱讀原文 ↗", "Read original ↗")}</a><details class="story-actions" data-story="{sid}" data-title-zh="{html.escape(str(it.get('title','')),quote=True)}" data-title-en="{html.escape(str(it.get('title_en','')),quote=True)}"><summary>{bi("分享", "Share")}</summary><div class="story-actions-menu"><button type="button" data-action="copy">{bi("複製 Team Brief", "Copy team brief")}</button><button type="button" data-action="share">{bi("分享新聞連結", "Share story link")}</button></div></details></div>
 </article>''')
     cards[s] = "\n".join(out)
@@ -1968,7 +1959,6 @@ section[id]{{scroll-margin-top:86px;margin:34px 0 0}}
 /* Subscription flag: readers were clicking through and hitting a paywall with no
    warning. Flagging it on the card itself sets the expectation before the click. */
 .paywall{{display:inline-flex;align-items:center;gap:4px;font-weight:750;font-size:11.5px;padding:4px 9px;border-radius:999px;background:#fdf3e2;color:var(--amber);border:1px solid #edd9ab;white-space:nowrap}}
-.story .no{{margin-left:auto;color:var(--line);font-weight:800;font-size:14px;font-family:PlexMonoLat,ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-.02em}}
 .story h3{{font-size:clamp(18px,2.05vw,21.5px);line-height:1.28;letter-spacing:-.022em;margin:2px 0 10px;text-wrap:balance}}
 .story h3 a{{text-decoration:none}}
 .story h3 a:hover{{text-decoration:underline;text-underline-offset:4px;color:var(--accent-d)}}
@@ -2230,34 +2220,14 @@ footer b{{color:var(--ink)}}
 .edition-notes>.section,.edition-notes>.thesis,.edition-notes>.more-brief{{margin:0 16px 14px}}
 .edition-notes .thesis{{margin-top:8px}}
 .edition-notes .more-brief{{margin-bottom:16px}}
-/* Quick Scan is the default even without JS. Every article retains the full
-   body in a semantic <details> control, including subscriber-only reporting. */
-.scan-brief{{display:grid;gap:10px;margin:3px 0 14px}}
-.scan-brief p{{margin:0;line-height:1.6}}
-.scan-brief b{{display:block;font-size:11px;letter-spacing:.07em;margin-bottom:3px;font-weight:800;color:var(--muted)}}
-.scan-summary{{font-size:15px;color:var(--body)}}
-.scan-impact{{font-size:14.5px;background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px;color:var(--ink);border-radius:0 10px 10px 0}}
-.scan-impact b{{color:var(--accent-d)}}
-.story-expanded{{border-top:1px solid var(--line);margin:0 0 12px}}
-.story-expanded>summary{{list-style:none;display:flex;align-items:center;cursor:pointer;min-height:44px;padding:10px 2px;color:var(--accent-d);font-size:13px;font-weight:750}}
-.story-expanded>summary::-webkit-details-marker{{display:none}}
-.story-expanded>summary::after{{content:"⌄";margin-left:9px;font-size:16px}}
-.story-expanded[open]>summary::after{{content:"⌃"}}
-.story-expanded>summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px}}
+/* Full reporting is visible without JavaScript; supplemental context stays optional. */
 .story-expanded-body{{padding:4px 0 8px}}
-.story:has(> .story-expanded[open]) .scan-brief{{display:none}}
-.story:has(> .story-expanded[open]) .story-expanded{{margin-top:6px}}
+.source-date{{display:flex;align-items:center;flex-wrap:wrap;gap:6px 9px;min-width:0;max-width:100%}}
+.story-meta .src{{white-space:normal;overflow-wrap:anywhere;min-width:0}}
+.story-taxonomy .source-kind{{font-size:11px;padding:4px 8px}}
 .story .story-foot{{gap:8px}}
 .story-actions>summary{{display:inline-flex;align-items:center;min-height:44px}}
 .readsrc{{display:inline-flex;align-items:center;min-height:44px}}
-.reading-toolbar{{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;padding:14px 2px 5px;margin-top:12px}}
-.reading-toolbar-label{{font-size:11px;font-weight:850;letter-spacing:.1em;color:var(--muted)}}
-.reading-switch{{display:inline-flex;padding:3px;background:#ebe8ff;border-radius:999px;gap:2px}}
-.reading-switch button{{font:inherit;font-size:13px;font-weight:750;color:var(--accent-d);background:transparent;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;min-height:40px;white-space:nowrap}}
-.reading-switch button[aria-pressed="true"]{{color:#fff;background:var(--accent-d);box-shadow:0 2px 8px rgba(70,50,212,.2)}}
-.reading-switch button:focus-visible{{outline:2px solid var(--accent-d);outline-offset:2px}}
-.reading-toolbar-hint{{font-size:12px;color:var(--muted)}}
-body.view-archive-search .reading-toolbar{{display:none!important}}
 body.is-filtering-news .hero-feature-grid{{grid-template-columns:1fr}}
 body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
 @media(max-width:900px){{
@@ -2280,13 +2250,9 @@ body.is-filtering-news .hero-feature-grid .hero-intro{{max-width:740px}}
   .hero-feature-grid .lead-row{{padding:12px;gap:10px}}
   .hero-feature-grid .lead-info strong{{font-size:14px}}
   .post-hero-notes{{margin-top:12px}}
-  .scan-summary{{font-size:15px}}
-  .scan-impact{{font-size:14px}}
-  .reading-toolbar-hint{{width:100%}}
   .discovery{{margin-top:12px}}
 }}
 @media print{{
-  .reading-toolbar,.scan-brief,.story-expanded>summary,.edition-notes>summary{{display:none!important}}
   .story-expanded-body{{display:block!important}}
 }}
 /* ---------- Phase 3: search after reading, editorial-first card actions ---------- */
@@ -2338,11 +2304,10 @@ body.is-filtering-news .more-brief{{display:initial}}
   .today-search-results,.archive-search-results,.discovery{{display:none!important}}
 }}
 /* Fine-grained touch/reading improvements, without changing the brand system. */
-.story-expanded>summary,.edition-notes>summary,
-#view-quick,#view-deep,.discovery-reset,.discovery-scope button,
+.edition-notes>summary,.discovery-reset,.discovery-scope button,
 #archive-more,.mobile-cat-list a{{min-height:44px}}
 .story h3{{overflow-wrap:anywhere;hyphens:auto}}
-.scan-brief p,.story-expanded-body p{{overflow-wrap:break-word}}
+.story-expanded-body p{{overflow-wrap:break-word}}
 .story-actions-menu button{{font-size:13px;min-height:44px}}
 @media(max-width:560px){{
   .story{{padding:19px 16px}}
@@ -2351,7 +2316,6 @@ body.is-filtering-news .more-brief{{display:initial}}
   .story-meta .src,.story-meta .source-kind,.story-meta .date,
   .story-meta .evidence-link{{font-size:12px}}
   .story-taxonomy{{gap:6px;margin-bottom:12px}}
-  .scan-brief p{{line-height:1.66}}
   .story-foot{{gap:8px;padding-top:13px}}
   .story-foot .readsrc,.story-foot .story-actions>summary{{min-height:44px;font-size:13px;padding:9px 13px}}
   main#main > .discovery{{margin-top:30px}}
@@ -2440,14 +2404,6 @@ body.is-filtering-news .more-brief{{display:initial}}
 </div>
 
 <main class="wrap" id="main">
-  <div class="reading-toolbar" id="news-reading-mode">
-    <span class="reading-toolbar-label">{bi("閱讀模式", "READING MODE")}</span>
-    <div class="reading-switch" role="group" aria-label="{html.escape(bi_attr('新聞閱讀模式','News reading mode'))}">
-      <button type="button" id="view-quick" aria-pressed="true">{bi("快速掃描", "Quick Scan")}</button>
-      <button type="button" id="view-deep" aria-pressed="false">{bi("深入閱讀", "Deep Read")}</button>
-    </div>
-    <span class="reading-toolbar-hint">{bi("每則可獨立展開完整內容", "Expand any story individually")}</span>
-  </div>
 {sections_html}
   <!-- Search is secondary to today's news: use the sticky search icon any time.
        Its matching results render directly underneath this bottom tool, never
@@ -2520,43 +2476,21 @@ if(mobileCategories){{
   document.addEventListener('click',e=>{{if(mobileCategories.open&&!mobileCategories.contains(e.target))mobileCategories.open=false;}});
 }}
 setLang(curLang()); // sync button highlight with the pre-paint language
-/* Reading preference is session-scoped: Quick Scan is the accessible default,
-   Deep Read opens published analysis, each card can still expand individually. */
+/* Single full reading view; supplemental context remains optional. */
 (function(){{
-  const quick=document.getElementById('view-quick');
-  const deep=document.getElementById('view-deep');
-  const cards=[...document.querySelectorAll('details.story-expanded')];
-  if(!quick||!deep||!cards.length)return;
-  function apply(mode,save){{
-    const expanded=mode==='deep';
-    cards.forEach(d=>{{d.open=expanded}});
-    quick.setAttribute('aria-pressed',expanded?'false':'true');
-    deep.setAttribute('aria-pressed',expanded?'true':'false');
-    document.body.setAttribute('data-reading-mode',expanded?'deep':'quick');
-    if(save){{try{{sessionStorage.setItem('amd-reader-mode',expanded?'deep':'quick')}}catch(e){{}}}}
-  }}
-  quick.addEventListener('click',()=>apply('quick',true));
-  deep.addEventListener('click',()=>apply('deep',true));
-  let saved='quick';
-  try{{saved=sessionStorage.getItem('amd-reader-mode')||'quick'}}catch(e){{}}
-  apply(saved==='deep'?'deep':'quick',false);
   const search=document.querySelector('.top-search');
   if(search)search.addEventListener('click',()=>requestAnimationFrame(()=>{{
     try{{document.getElementById('news-query').focus({{preventScroll:true}})}}catch(e){{}}
   }}));
-  let printState=null;
+  let noteState=null;
   addEventListener('beforeprint',()=>{{
     const note=document.querySelector('.edition-notes');
-    printState={{cards:cards.map(d=>d.open),notes:note?note.open:null}};
-    cards.forEach(d=>{{d.open=true}});
-    if(note)note.open=true;
+    if(note){{noteState=note.open;note.open=true;}}
   }});
   addEventListener('afterprint',()=>{{
-    if(!printState)return;
-    cards.forEach((d,i)=>{{d.open=!!printState.cards[i]}});
     const note=document.querySelector('.edition-notes');
-    if(note&&printState.notes!==null)note.open=printState.notes;
-    printState=null;
+    if(note&&noteState!==null)note.open=noteState;
+    noteState=null;
   }});
 }})();
 function toast(m){{const el=document.getElementById('toast');el.textContent=m;el.classList.add('on');setTimeout(()=>el.classList.remove('on'),2200)}}

@@ -38,7 +38,7 @@ const assert = require('node:assert/strict');
         const errors=[];
         page.on('pageerror',e=>errors.push(e.message));
         await page.goto(base+locale+'/',{waitUntil:'domcontentloaded',timeout:30000});
-        await page.waitForSelector('#view-deep',{state:'attached'});
+        await page.waitForSelector('article.story .story-expanded-body',{state:'attached'});
         const layout=await page.evaluate(()=>{
           const box=s=>document.querySelector(s)?.getBoundingClientRect();
           const home=document.querySelector('.top-stories');
@@ -96,14 +96,16 @@ const assert = require('node:assert/strict');
         // evidence hierarchy, source buttons and screenshot rendering.
         if (width===390) {
           console.log('BEGIN interactive search and reading: '+locale);
-        assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick default not collapsed');
-        await page.locator('#view-deep').click();
-        assert.equal(await page.locator('details.story-expanded[open]').count(),expectedStoryCount,locale+' Deep Read did not open every card');
-        assert.equal(await page.locator('#view-deep').getAttribute('aria-pressed'),'true');
-        await page.locator('#view-quick').click();
-        assert.equal(await page.locator('details.story-expanded[open]').count(),0,locale+' Quick Scan did not close');
-        await page.locator('details.story-expanded > summary').first().click();
-        assert.equal(await page.locator('details.story-expanded[open]').count(),1,locale+' individual Deep Read failed');
+        assert.equal(await page.locator('#view-quick, #view-deep, details.story-expanded, .story-meta .no').count(),0,locale+' obsolete reading controls or number');
+        assert.equal(await page.locator('article.story > .story-expanded-body:visible').count(),expectedStoryCount,locale+' full text hidden');
+        const contextNote=page.locator('article.story details.detail').first();
+        if(await contextNote.count()) {
+          assert.equal(await contextNote.getAttribute('open'),null,locale+' context should start collapsed');
+          await contextNote.locator('summary').click();
+          assert.equal(await contextNote.evaluate(el=>el.open),true,locale+' context cannot open');
+          await contextNote.locator('summary').click();
+          assert.equal(await contextNote.evaluate(el=>el.open),false,locale+' context cannot close');
+        }
         await page.locator('.top-search').click();
         await page.waitForFunction(()=>document.activeElement?.id==='news-query',{timeout:4000});
         await page.locator('#news-query').fill(uniqueTerm);
