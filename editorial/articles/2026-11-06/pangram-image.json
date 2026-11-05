@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-11-06",
+  "state": "APPROVED",
+  "article": {
+    "title": "Pangram發布Image 1.0，加入局部熱圖及影片逐格偵測",
+    "title_en": "Pangram releases Image 1.0 with heatmaps and frame-level video detection",
+    "summary": "11月4日更新涵蓋圖像、影片及API，較低解像度輸入會附信心提示。",
+    "summary_en": "The November 4 update covers images, video and API access, with confidence caveats for lower-resolution inputs.",
+    "highlights": [
+      "圖像最低尺寸降至256×256；低於512的結果附提示。",
+      "Image Flash 1.0可逐格分析上載影片。"
+    ],
+    "highlights_en": [
+      "Minimum image input falls to 256×256, with a caveat below 512.",
+      "Image Flash 1.0 can analyze uploaded video frame by frame."
+    ],
+    "why": "品牌審閱外來素材時，可多一項篩查線索，配合原檔、授權及供應商製作紀錄核對。",
+    "why_en": "Brands gain another screening signal for incoming assets, alongside originals, licenses and production records.",
+    "next_step": "先以已知來源的真實及合成素材測試誤判；有爭議時由人手查原檔，不單靠分數拒稿。",
+    "next_step_en": "Test false positives on known real and synthetic assets; inspect originals manually before rejecting disputed material.",
+    "detail": "Pangram稱新模型可標示圖像中疑似AI區域，並透過瀏覽器擴充及API提供相關功能。公司同時公布自有及學術測試結果；本報沒有重做測試，因此不沿用其準確率作獨立結論。壓縮、修改及低解像度會影響審閱情境，偵測標記應視為進一步查證的起點。它不能單獨證明素材作者、授權是否有效，亦不能作為侵權或欺詐判定。",
+    "detail_en": "Pangram describes localization of suspected AI regions and browser/API access. Its benchmark accuracy is not independently reproduced here. Detection should trigger further checking, especially on compressed or edited assets; it cannot establish authorship, license validity, infringement or fraud.",
+    "source": "Pangram",
+    "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+    "time": "11月4日",
+    "section": "創意生產工具",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "source_kind": "official",
+    "editorial_slug": "pangram-image"
+  },
+  "evidence": {
+    "story_id": "2026-11-06-pangram-image",
+    "title_zh": "Pangram發布Image 1.0，加入局部熱圖及影片逐格偵測",
+    "source_story_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+    "published_article_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+    "source_date_display": "11月4日",
+    "event_date": "2026-11-04",
+    "first_published_date": "2026-11-04",
+    "source_documents": [
+      {
+        "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "publisher": "Pangram",
+        "source_class": "A",
+        "source_publication_date": "2026-11-04",
+        "evidence_locator": "What’s new, lines 65–74.; Low Resolution Detection, lines 96–98.; Native Video Support and API, lines 121–131.",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+        "access_method": "Original full source text opened and separately retrieved again for second-pass challenge.",
+        "limitations": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Pangram Image 1.0提供AI圖像偵測及局部熱圖。",
+        "evidence_locator": "What’s new, lines 65–74.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      },
+      {
+        "claim_zh": "最低圖像尺寸降至256×256，低於512附信心提示。",
+        "evidence_locator": "Low Resolution Detection, lines 96–98.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      },
+      {
+        "claim_zh": "Image Flash 1.0支援影片逐格分析，API支援圖像及影片。",
+        "evidence_locator": "Native Video Support and API, lines 121–131.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Pangram Image 1.0提供AI圖像偵測及局部熱圖。",
+        "evidence_locator": "What’s new, lines 65–74.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      },
+      {
+        "claim_zh": "最低圖像尺寸降至256×256，低於512附信心提示。",
+        "evidence_locator": "Low Resolution Detection, lines 96–98.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      },
+      {
+        "claim_zh": "Image Flash 1.0支援影片逐格分析，API支援圖像及影片。",
+        "evidence_locator": "Native Video Support and API, lines 121–131.",
+        "support_url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk; no separate reviewer, human approval or product testing claimed",
+    "reviewed_at_hkt": "2026-11-06T07:01:07+08:00",
+    "independent_review": {
+      "method": "Same assistant separately re-retrieved original text and challenged pivotal claims, dates, scope and unsupported outcomes. This is not independent human or separate-agent review.",
+      "second_pass_accessed_at_hkt": "2026-11-06T07:01:07+08:00",
+      "finding": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation.",
+      "source_reopen_reference": "turn9view1; turn16view1"
+    },
+    "review_notes": "Reopened minimum-resolution and video/API sections. Report feature announcements only; omit vendor benchmark accuracy and superiority. Detection is a risk signal, never proof of provenance, authorship or legal violation.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 26,
+      "business_impact": 20,
+      "actionability": 16,
+      "market_relevance": 9,
+      "novelty": 9,
+      "total": 80
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
+    "title_zh_hant": "Pangram發布Image 1.0，加入局部熱圖及影片逐格偵測",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "简体用“检测、热力图、逐帧分析、置信度提示”。三语均将检测结果表述为风险线索，不把供应商准确率当作独立验证，不推断版权或违法事实。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
