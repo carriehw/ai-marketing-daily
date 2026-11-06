@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-07",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "title_zh_hant": "Google推出Gemini Omni 1.2 Flash，原生影片延長至15秒",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“原生视频、多轮对话编辑、参考素材、宽高比”。三语不把API开放写成所有应用账户都可用；一致性是公司能力描述，不保证包装文字或人物外貌完全正确。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/understanding-your-new-analytics-linkedin-sam-corrao-clanon-szake/",
+      "title_zh_hant": "LinkedIn逐步推出貼文表現總表，可跨帖比較並匯出資料",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“帖子表现表、展示次数、触达人数、保存、站内发送”。三语区分汇总表新增与既有指标，不把站内发送当作站外转发或获客；保留桌面逐步推出和移动端稍后。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+      "title_zh_hant": "Perplexity公布Teammates持續任務代理，先向Max網頁用戶推出",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“持续任务、项目权限、审批请求、单独运行环境”。三语采用原始公告的Max网页先行和iOS稍后，未将场景示例当作真实客户业绩，也不写成无需监督。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://redditinc.com/news/we-are-testing-ad-placements-in-reddit-search-pages?hsLang=en",
+      "title_zh_hant": "Reddit測試搜尋結果廣告，先向部分合資格廣告主開放",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“搜索结果页、情境相关、合资格广告主”。三语保留测试阶段，不把示例写成关键词竞价规则，也不宣称香港账户已获开放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.send2press.com/wire/koozee-launches-freeform-canvas-and-mcp-to-make-ai-apparel-visual-production-repeatable/",
+      "title_zh_hant": "Koozee加入節點畫布與MCP，把服裝素材流程保存重用",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“节点式画布、服装系列、批量生成、授权连接”。三语不把生成服装图视为实物准确保证；MCP是外部工具连接，不等于自动发布，未添加未公布的价格或方案。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.netinfluencer.com/instagram-launches-edits-video-editor-on-mac-desktop/",
+      "title_zh_hant": "Instagram Edits推出Mac版，跨手機專案編輯仍待完成",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“多轨时间线、关键帧、自定义字体、跨设备项目”。保留macOS限制及跨端项目编辑仍在开发；音乐库不等于所有音乐均获商业授权。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/gs1-hong-kong-summit-2026-data-ai-transparency-and-assurance-driving-future-growth-555164.shtml",
+      "title_zh_hant": "更進新聞：GS1香港峰會落幕，聚焦產品數位身分與跨境對接",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“产品数字身份、跨境电商、买家对接、追溯资料”。注明这是峰会落幕跟进，不重复昨天调查数字；既有Digital Link标准并非当天新推出。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://investors.pubmatic.com/news-releases/news-release-details/strategus-partners-pubmatic-unlock-smarter-ctv-performance",
+      "title_zh_hant": "Strategus擴大PubMatic體育CTV合作，地域定向仍受庫存限制",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“联网电视、赛事时段、库存许可、地域定向”。保留美国DMA及ZIP语境；个案没有回报数字，不把世界杯投放写成已证实带来增长。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.sensetime.com/cn/news/sensenova-6-8-flash-release-20261103-1421",
+      "title_zh_hant": "工具補讀：商湯SenseNova 6.8 Flash擴展設計格式，主動辦公示範仍屬研發版",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体沿用官方“长期记忆、主动交互、动态PPT、内部研发版”。三语严格区分正式模型与内部演示，保留本地Blender环境条件；原稿11月2日，未把11月5日英文稿当成新发布。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/priority-software-expands-its-business-management-portfolio-with-the-acquisition-of-fireberry-accelerating-its-ai-first-vision-for-the-future-of-business-management-302931129.html",
+      "title_zh_hant": "Priority宣布收購Fireberry，擬把CRM與雲端ERP串連",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“客户关系管理、营销自动化、独立方案、拟整合”。三语区别已宣布收购与未来整合能力，不写成所有客户已经完成迁移。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
