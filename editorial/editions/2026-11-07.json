@@ -207,7 +207,7 @@
         "editorial_slug": "edits-mac"
       },
       {
-        "title": "更進新聞：GS1香港峰會落幕，聚焦產品數碼身分與跨境對接",
+        "title": "更進新聞：GS1香港峰會落幕，聚焦產品數位身分與跨境對接",
         "title_en": "Follow-up: GS1 Hong Kong summit concludes with product identity and buyer connections",
         "summary": "11月6日活動新增落幕及買家對接消息，產品資料可信度成品牌實務重點。",
         "summary_en": "The November 6 event adds summit and buyer-connection developments, with trusted product data as a practical brand priority.",
@@ -340,7 +340,12 @@
       "separate_human_review": false,
       "separate_subagent_review": false
     },
-    "corrections": [],
+    "corrections": [
+      {
+        "reason": "Renderer normalizes 數碼 to 數位; unify article/evidence/localization titles before build. Facts unchanged.",
+        "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42309457359"
+      }
+    ],
     "stories": [
       {
         "story_id": "2026-11-07-gemini-omni12",
@@ -925,7 +930,7 @@
       },
       {
         "story_id": "2026-11-07-gs1-summit",
-        "title_zh": "更進新聞：GS1香港峰會落幕，聚焦產品數碼身分與跨境對接",
+        "title_zh": "更進新聞：GS1香港峰會落幕，聚焦產品數位身分與跨境對接",
         "source_story_url": "https://en.prnasia.com/releases/apac/gs1-hong-kong-summit-2026-data-ai-transparency-and-assurance-driving-future-growth-555164.shtml",
         "published_article_url": "https://en.prnasia.com/releases/apac/gs1-hong-kong-summit-2026-data-ai-transparency-and-assurance-driving-future-growth-555164.shtml",
         "source_date_display": "11月6日",
@@ -1421,7 +1426,7 @@
       },
       {
         "url": "https://en.prnasia.com/releases/apac/gs1-hong-kong-summit-2026-data-ai-transparency-and-assurance-driving-future-growth-555164.shtml",
-        "title_zh_hant": "更進新聞：GS1香港峰會落幕，聚焦產品數碼身分與跨境對接",
+        "title_zh_hant": "更進新聞：GS1香港峰會落幕，聚焦產品數位身分與跨境對接",
         "review_scope": [
           "title",
           "summary",
