@@ -1,7 +1,7 @@
 {
   "edition_date_hkt": "2026-11-08",
   "main_sha_at_start": "5c52349df4401056f9b4eee845e3577344faa622",
-  "status": "IN_PROGRESS",
+  "status": "EDITORIAL_APPROVED",
   "discovery_count": 22,
   "approved_count": 10,
   "held_count": 0,
@@ -102,7 +102,7 @@
       "source_url": "https://static.cdsb.com/micropub/Articles/202611/173171c0709d84a995b39da8e8c5c1e7.html",
       "provisional_score": 82,
       "state": "DISCOVERED",
-      "processing": "selected",
+      "processing": "reserve",
       "next_action": "Verify original event and date, reopen to challenge scope, then close the article packet."
     },
     {
@@ -219,5 +219,7 @@
     "exclusions": [
       "Hy4 already published Nov5; Edits Mac, GS1 summit and Gemini Omni already published Nov7; Conductor and Attain Amazon already published Nov6."
     ]
-  }
+  },
+  "reserve_count": 12,
+  "next_action": "Submit the approved edition and verify its exact GitHub Actions run and live receipt."
 }
