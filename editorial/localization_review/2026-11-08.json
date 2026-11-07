@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-08",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/",
+      "title_zh_hant": "TikTok Shop獨立App登陸東南亞四個市場",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“独立购物应用、直播和短视频、结账”。四地以直接报道为据，具体首发日和后续市场未知。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://futureplc.com/news/future-and-infosum-partner-to-scale-privacy-first-predictive-audience-targeting/",
+      "title_zh_hant": "Future與InfoSum合作，擬把媒體受眾訊號接入WPP規劃工具",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“受众信号、第一方数据、媒体规划”。保留WPP界面为公告安排，不推断普遍开放或合规资格。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/retail/amazon-shop-direct-merchant-workspace",
+      "title_zh_hant": "Amazon推出Shop Direct商戶入口，合資格店舖可提交商品目錄",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“商家工作台、商品目录、资格、站外结账”。保留商品可能展示以及代购只适用于合资格商品。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://finance.yahoo.com/media-advertising/articles/stensul-debuts-self-improving-email-220100965.html",
+      "title_zh_hant": "Stensul開放電郵成效回饋功能搶先體驗，審批仍由人員負責",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“电子邮件、抢先体验、内容版本、审批”。区分成效反馈与Salesforce整合的开放阶段，保留人为审批及相关性限定。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.influ2.com/blog/influ2-contact-level-intent-account-discovery",
+      "title_zh_hant": "Influ2讓B2B團隊按聯絡人意向訊號發掘新企業客戶",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“目标企业、联系人意向信号、购买小组”。信号只供筛选，不写成明确采购意向或实际转化。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/apac/news-releases/tencent-cloud-enterprise-unveils-full-stack-intelligent-private-cloud-for-sovereign-agentic-ai-302932009.html",
+      "title_zh_hant": "騰訊雲公布私有部署方案，企業可分層接入AI代理",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“私有化部署、模型服务、智能体运行、沙箱”。保留配置是供应商公布的起步方案，不等同普遍可用或合规认证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.tmcnet.com/tmcnet/mobile-world-congress/news/2026/11/04/10474945.htm",
+      "title_zh_hant": "Orange逐步部署帳單客服代理，按代理設定回答及成本上限",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“账单支持、客服智能体、回答范围、成本上限”。部分市场已运行，保留计划推广与搜索部署的区别。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.info.gov.hk/gia/general/202611/04/P2026110400754.htm",
+      "title_zh_hant": "香港精品生活展結合亞博展場與水上展示",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“亚洲国际博览馆、展前活动、滨水展示”。保留11月4日开幕与4日至6日展期，不推断客流、买家成交或经济收益。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.b360nepal.com/detail/30612/tiktok-ntb-launch-visitnepal-campaign-to-promote-tourism",
+      "title_zh_hant": "尼泊爾旅遊局與TikTok以創作者和直播推廣旅遊",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“旅游局、创作者、话题标签、景点直播”。区分6月工作坊与11月活动推进，不把计划期写成已完成或游客增长。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.wtatennis.com/news/4603176/wta-and-hello-kitty-team-up-for-first-official-merchandise-collaboration",
+      "title_zh_hant": "WTA與Hello Kitty首度聯推官方商品，總決賽設現場銷售",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“官方联名商品、球迷村、毛绒玩偶”。保留现场销售日期与网店计划，不能推定已开售或配送覆盖所有地区。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
