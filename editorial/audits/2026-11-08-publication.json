@@ -1,7 +1,16 @@
-{
-  "edition_date_hkt": "2026-11-08",
-  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42423760517",
-  "failed_gate": "Validate publication dates and story chronology",
-  "reason": "WTA announced the November 8–15 sale on November 3. The reviewed future-date field was omitted.",
-  "fix": "Add the documented November 8 announced plan and bind it to the existing source claim, preserving the announcement date and planned wording."
-}
+[
+  {
+    "edition_date_hkt": "2026-11-08",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42423760517",
+    "failed_gate": "Validate publication dates and story chronology",
+    "reason": "WTA announced the November 8–15 sale on November 3. The reviewed future-date field was omitted.",
+    "fix": "Add the documented November 8 announced plan and bind it to the existing source claim, preserving the announcement date and planned wording."
+  },
+  {
+    "edition_date_hkt": "2026-11-08",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42423838141",
+    "failed_gate": "English team EDM QA",
+    "reason": "The renderer uses the shared source label verbatim. Two labels used Chinese characters.",
+    "fix": "Use the publishers’ English names in the shared labels and supporting metadata."
+  }
+]
