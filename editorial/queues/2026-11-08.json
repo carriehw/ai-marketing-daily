@@ -1,7 +1,7 @@
 {
   "edition_date_hkt": "2026-11-08",
   "main_sha_at_start": "5c52349df4401056f9b4eee845e3577344faa622",
-  "status": "EDITORIAL_APPROVED",
+  "status": "CI_IN_PROGRESS",
   "discovery_count": 22,
   "approved_count": 10,
   "held_count": 0,
@@ -221,5 +221,8 @@
     ]
   },
   "reserve_count": 12,
-  "next_action": "Submit the approved edition and verify its exact GitHub Actions run and live receipt."
+  "next_action": "Track this exact run and resolve any failed gate. Confirm live article counts, hashes, and successful linked workflow before closing.",
+  "ci_run_id": 42423760517,
+  "ci_run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/42423760517",
+  "publication_commit": "6be6067a0c41268d7ca7c3e0d36ba1825c49e3f6"
 }
