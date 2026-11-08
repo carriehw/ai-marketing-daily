@@ -1,0 +1,1544 @@
+{
+  "packet_version": "1.0",
+  "edition_date_hkt": "2026-11-09",
+  "status": "editorial_approved",
+  "data": {
+    "site_title": "AI・行銷情報",
+    "site_title_en": "AI Marketing Daily",
+    "site_tagline": "AI Marketing Intelligence · HK / CN",
+    "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+    "date": "2026-11-09",
+    "date_display": "2026年11月9日 · 星期一",
+    "date_display_en": "November 9, 2026 · Monday",
+    "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
+    "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
+    "thesis": "廣告、商品與量度工具更新，先核對預設及開放範圍",
+    "thesis_en": "Check defaults and access as ad, commerce and measurement tools change",
+    "thesis_note": "10篇已覆核新聞，涵蓋廣告本地化、成效量度、社交電商及香港品牌展會。",
+    "thesis_note_en": "10 reviewed stories covering ad localization, measurement, social commerce and Hong Kong brand events.",
+    "sections": [
+      "AI 大模型 & 市場動態",
+      "廣告平台 & 行銷科技",
+      "創意生產工具",
+      "行業影響 & 品牌案例",
+      "即學技巧 & 玩法"
+    ],
+    "sections_en": [
+      "AI Models & Market Moves",
+      "Ad Platforms & MarTech",
+      "Creative Production Tools",
+      "Industry Impact & Brand Cases",
+      "Tips, Tactics & Tools"
+    ],
+    "items": [
+      {
+        "title": "ElevenLabs為廣告本地化加入人工覆核",
+        "title_en": "ElevenLabs adds human review to ad localization",
+        "summary": "Ads Engine可安排語言及創意專家審閱譯文、配音與品牌規範。",
+        "summary_en": "Ads Engine can route translations, dubbing and brand checks to language and creative specialists.",
+        "highlights": [
+          "語言專家可檢查譯文語氣和品牌名稱發音。",
+          "完成的素材可交回團隊審批。"
+        ],
+        "highlights_en": [
+          "Language reviewers can check tone and brand-name pronunciation.",
+          "Finished assets can return to the team for approval."
+        ],
+        "why": "跨市場團隊可預先指定哪些廣告需要當地語言審閱，並把品牌把關與投放批准分開。",
+        "why_en": "Cross-market teams can define which ads need local-language review and separate brand checks from launch approval.",
+        "next_step": "先選一支影片，提供品牌名稱讀音、禁用措辭及最終審批人。",
+        "next_step_en": "Start with one video and supply brand pronunciations, restricted wording and a named approver.",
+        "detail": "公告把生成素材、專家審閱與發佈列為不同步驟。廣告主可用品牌規範及既有素材作審閱參考，並指定誰負責最終決定。公司提供聯絡入口，未在公告列出收費、服務時間或各市場資格。安排大批量製作前，宜先用一組素材核對譯文、發音與回稿流程，並記錄需要修改的地方。",
+        "detail_en": "The announcement separates asset generation, specialist review and publishing. Teams can supply brand guidelines and existing assets. The release provides a contact form without listing fees, turnaround or market eligibility. Use one set of assets to check translation, pronunciation and the review handoff before expanding.",
+        "source": "ElevenLabs",
+        "url": "https://elevenlabs.io/blog/ads-engine-human-review",
+        "time": "11月6日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "eleven-review"
+      },
+      {
+        "title": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+        "title_en": "Google Analytics adds a Data Manager beta for data connections",
+        "summary": "管理介面新增入口，讓團隊管理資料串流、產品連結及第一方資料。",
+        "summary_en": "The admin hub manages streams, product links and first-party data.",
+        "highlights": [
+          "可從同一入口查看診斷提示與連線狀況。",
+          "Google說明列明子資源及匯總資源目前不支援該首頁。"
+        ],
+        "highlights_en": [
+          "The hub surfaces diagnostics and connection health.",
+          "Google says its landing page currently excludes subproperties and roll-up properties."
+        ],
+        "why": "量度團隊可較容易查找資料由何處進入，交接時也能更清楚說明連線由誰負責。",
+        "why_en": "Measurement teams can trace data sources and clarify ownership during handoffs.",
+        "next_step": "先選一個可用的資源，整理連線清單與負責人，再逐項核對診斷。",
+        "next_step_en": "Choose an eligible property and compare diagnostics with an inventory of connections and owners.",
+        "detail": "這次更新針對資料連線管理。Google把新入口放在管理介面，團隊可據此檢查資料串流及產品連結，並了解哪些項目需要跟進。測試版的使用範圍須以帳戶權限及資源類型確認。若報表出現異常，宜先比對現有設定與事件記錄，再決定是否改動資料來源或廣告匯入方式。",
+        "detail_en": "The update is for managing data connections. Teams can review streams and product links and identify issues needing follow-up. Confirm property type and access before using the beta. For reporting anomalies, check existing setup and event records before changing data sources or ad imports.",
+        "source": "Google Analytics Help",
+        "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "time": "11月6日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Ready to Use",
+        "source_kind": "official",
+        "editorial_slug": "ga-data",
+        "verification_url": "https://support.google.com/analytics/answer/18107176?hl=en"
+      },
+      {
+        "title": "小紅書為線上「小紅卡」招募雙11合作商戶",
+        "title_en": "Xiaohongshu recruits Singles’ Day merchants for its online Little Red Card",
+        "summary": "據億邦動力，線上會員年費為人民幣66元，商戶可按商品報名提供會員專享價。",
+        "summary_en": "EBRUN reports an annual membership fee of RMB 66 and a programme for merchants to offer member pricing on selected items.",
+        "highlights": [
+          "今次招商面向站內電商，與早前本地生活會員安排有別。",
+          "報名商品可按活動安排提供會員價。"
+        ],
+        "highlights_en": [
+          "The recruitment concerns online commerce and is distinct from the earlier local-services membership.",
+          "Enrolled products can offer member pricing under the campaign terms."
+        ],
+        "why": "品牌可把會員折扣當作獨立促銷方案，按商品毛利評估能否長期維持。",
+        "why_en": "Brands can evaluate member discounts as a separate promotion against product margins.",
+        "next_step": "先挑一款商品，計算會員價與其他優惠疊加後的毛利及退貨成本。",
+        "next_step_en": "Start with one product and estimate margin and returns after combining eligible discounts.",
+        "detail": "報道把本次安排描述為雙11商戶招商。參與商戶可依活動規則選擇商品，讓會員以專享價購買。品牌需要先確認價格折扣由誰承擔、哪些優惠可以疊加，以及售後成本如何入帳。會員開卡費用與品牌促銷成本宜分開計算，再以實際訂單和回購觀察成效。分析時宜記下各次活動的折扣條件。",
+        "detail_en": "The report describes merchant recruitment for Singles’ Day. Participants can choose items and offer members a dedicated price under programme terms. Confirm who funds discounts, which offers can stack and how returns are handled. Separate membership fees from promotion costs, then assess orders and repeat purchases. Record the discount terms for each campaign.",
+        "source": "EBRUN",
+        "url": "https://www.ebrun.com/20261105/718322.shtml",
+        "time": "11月5日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "中國",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "media",
+        "editorial_slug": "xiaohong-card"
+      },
+      {
+        "title": "Meta廣告API v27調整商品展示及裝置擴展預設",
+        "title_en": "Meta ad API v27 changes product showcase and device expansion defaults",
+        "summary": "據直接報道，新版本可為符合條件的廣告加入目錄商品，部分新銷售廣告組合亦會預設擴大裝置範圍。",
+        "summary_en": "Direct reporting says eligible ads may gain catalogue products, and certain new Sales ad sets default to broader device reach.",
+        "highlights": [
+          "商品展示視乎目錄商品與廣告是否匹配，並有退出設定。",
+          "Graph API亦容許程式更新貼文的AI自我申報。"
+        ],
+        "highlights_en": [
+          "Product showcase depends on a catalogue match and can be opted out.",
+          "Graph API also allows apps to update AI self-disclosures on posts."
+        ],
+        "why": "透過代理商工具或自家程式建廣告的團隊，應核對省略設定時實際套用的預設。",
+        "why_en": "Teams creating ads via agency or in-house tools should check what omitted settings actually do.",
+        "next_step": "用一個測試廣告組合比對送出的設定及讀回結果，記下裝置範圍和商品展示狀態。",
+        "next_step_en": "Compare submitted and returned settings for one test ad set. Record device scope and product showcase status.",
+        "detail": "PPC Land報道，Meta會在有把握找到匹配商品時，才可能為未設定商品展示的新廣告加入商品。裝置擴展則涉及指定裝置或作業系統的新銷售廣告組合。這些描述針對API，無法由此推定廣告管理介面的預設。貼文自我申報亦屬另一項設定，團隊仍應按自身的內容披露政策處理。",
+        "detail_en": "PPC Land reports that Meta may add matched products to a new ad with no showcase setting. Device expansion concerns new Sales ad sets targeting particular devices or operating systems. The reporting covers the API and does not establish Ads Manager defaults. Handle the separate self-disclosure setting under the team’s disclosure policy.",
+        "source": "PPC Land",
+        "url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+        "time": "11月4日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "media",
+        "editorial_slug": "meta-v27",
+        "verification_url": "https://www.socialmediatoday.com/news/meta-adds-new-capabilities-to-graph-and-marketing-api/873951/"
+      },
+      {
+        "title": "Alexa購物助手加入短訊入口，先向部分美國顧客開放",
+        "title_en": "Alexa for Shopping adds texting for invited US customers",
+        "summary": "Amazon先以邀請方式開放短訊購物，可經文字比較商品、查訂單及提出購買要求。",
+        "summary_en": "Amazon is starting with invitations. Text requests can cover product comparisons, order status and purchases.",
+        "highlights": [
+          "顧客可在短訊中查詢商品和訂單進度。",
+          "Amazon正逐步推出在短訊、網站及App延續同一對話的功能。"
+        ],
+        "highlights_en": [
+          "Shoppers can ask about items and deliveries by text.",
+          "Amazon is rolling out conversation continuity across text, app and web."
+        ],
+        "why": "當購物從對話開始，清楚的規格、價格與商品選項有助顧客比較。",
+        "why_en": "Clear specifications, prices and variants help shoppers compare products in a conversation.",
+        "next_step": "抽查一組常見商品問題，核對商品頁能否提供準確的規格及款式資料。",
+        "next_step_en": "Check common shopper questions against your product specifications and variant data.",
+        "detail": "這次變動是顧客可透過短訊使用購物助手，首階段限於部分獲邀的美國顧客。平台亦描述跨裝置延續購物對話的安排，開放程度仍須按帳戶確認。品牌可先從自身資料入手，檢查尺寸、容量、款式和售後條件是否容易比較，並把對話帶來的查詢與實際訂單分開觀察。兩類數字可分開設定報告欄位。",
+        "detail_en": "Texting is the new entry point. Initial access is for invited US customers. Amazon also describes cross-device continuity as a rollout, so check access by account. Brands can audit sizes, capacities, variants and service terms and separate conversational enquiries from orders. Give the two measures separate reporting fields.",
+        "source": "Amazon",
+        "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+        "time": "11月6日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "alexa-sms"
+      },
+      {
+        "title": "MerchantFloor把商品圖與文案生成接入Shopify上架流程",
+        "title_en": "MerchantFloor connects product image and copy generation to Shopify listings",
+        "summary": "商戶可上載商品照片和資料，先審閱生成結果，再送往Shopify管理介面。",
+        "summary_en": "Merchants upload a photo and notes, review the results and send them to Shopify admin.",
+        "highlights": [
+          "工具可生成商品圖片、描述及搜尋欄位。",
+          "公司說明列明免費方案圖片附有浮水印。"
+        ],
+        "highlights_en": [
+          "The tool generates product images, descriptions and search metadata.",
+          "The company says free-tier images carry a watermark."
+        ],
+        "why": "小型電商可集中處理圖片與文案，仍可在匯入前核對商品細節。",
+        "why_en": "Small stores can prepare images and copy together and check product facts before handoff.",
+        "next_step": "先挑一款外觀容易核對的商品，檢查圖片、尺寸、材質及替代文字。",
+        "next_step_en": "Start with one item and check images, dimensions, materials and alt text.",
+        "detail": "MerchantFloor把商品素材生成與上架交接連在一起。公告列出的輸出包括白底圖、生活場景圖、商品描述和圖片替代文字。商戶先確認和修改內容，再送到管理介面。對珠寶或具特定顏色的產品，可逐項比對原圖，尤其留意部件、材質及顏色有沒有被生成工具改動。",
+        "detail_en": "MerchantFloor links asset generation to the listing handoff. Outputs include white-background and lifestyle images, descriptions and alt text. Merchants review and edit before sending them to Shopify. Check components, materials and colours against original photos, particularly for jewellery or colour-sensitive products.",
+        "source": "MerchantFloor / GlobeNewswire",
+        "url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+        "time": "11月5日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Ready to Use",
+        "source_kind": "official",
+        "editorial_slug": "merchantfloor"
+      },
+      {
+        "title": "進博會香港食品館首設名牌專區，集中展示品牌故事",
+        "title_en": "CIIE’s Hong Kong food pavilion debuts a dedicated brand zone",
+        "summary": "香港貿發局設食品及服務業兩個展館，食品館首次劃出香港名牌專區。",
+        "summary_en": "The HKTDC mounted food and services pavilions. The food pavilion introduced a dedicated Hong Kong brand zone.",
+        "highlights": [
+          "據中新社，食品館有37家企業，展示食品及飲品。",
+          "服務業展館集合34家參展商，涵蓋企業服務及物流等領域。"
+        ],
+        "highlights_en": [
+          "China News Service reports 37 food and beverage exhibitors in the food pavilion.",
+          "The services pavilion gathered 34 exhibitors, including business services and logistics."
+        ],
+        "why": "香港品牌可把產品特色和品牌來源放在同一陳列，方便買家了解定位，再接續渠道洽談。",
+        "why_en": "Hong Kong brands can show product features alongside their origins, then continue the conversation with channel buyers.",
+        "next_step": "為參展商品整理規格、供貨及渠道條件，按買家類型安排展後跟進。",
+        "next_step_en": "Prepare specifications, supply and channel terms and organise follow-up by buyer type.",
+        "detail": "中新社的現場報道舉出傳統餅家、醬園，以及把鹹檸七元素放入拉格啤酒的品牌，展示名牌專區如何同時容納歷史與新產品。食品館與服務業展館的參展數按企業計算，與整個進博會的港企總數口徑不同。展商可按零售、分銷或服務合作分類跟進，並保留買家對供貨與定價的實際問題。",
+        "detail_en": "China News Service describes traditional bakeries, sauce makers and a lager inspired by salted lemon soda. Pavilion exhibitor counts differ from the total number of Hong Kong companies at CIIE. Classify retail, distribution and service leads separately and capture actual buyer questions on supply and pricing.",
+        "source": "China News Service",
+        "url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+        "time": "11月5日",
+        "section": "行業影響 & 品牌案例",
+        "region": "香港",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "media",
+        "editorial_slug": "hk-ciie"
+      },
+      {
+        "title": "Unbounce公布AI混合編輯器，可由提示詞、範本或空白頁起稿",
+        "title_en": "Unbounce announces a hybrid AI builder with prompts, templates or blank pages",
+        "summary": "新工具把落地頁生成、手動編輯及測試放在同一流程，新自助帳戶會使用該編輯器。",
+        "summary_en": "The builder combines generation, manual editing and testing. New self-serve accounts use it.",
+        "highlights": [
+          "團隊可修改生成初稿，也可直接使用範本或拖放元件。",
+          "官方說明指既有帳戶的頁面與編輯器暫時維持原狀。"
+        ],
+        "highlights_en": [
+          "Teams can edit AI drafts or start from templates or drag-and-drop components.",
+          "Official documentation says existing accounts retain their pages and builder for now."
+        ],
+        "why": "團隊可按任務選擇起稿方式，並保留對優惠文案、表單及量度設定的控制。",
+        "why_en": "Teams can choose how to start while retaining control over offers, forms and measurement.",
+        "next_step": "先用一個有清楚轉化目標的活動，比對版面、表單及事件是否按預期運作。",
+        "next_step_en": "Test one campaign with a defined conversion goal and verify layout, form and event behaviour.",
+        "detail": "公告所說的混合方式，是讓行銷人員在生成與手動編輯之間選擇。官方文件另說明新自助帳戶與現有帳戶的安排，所以準備測試前宜先查自己的編輯器版本。若同一活動要比較兩個落地頁，應固定主要受眾與優惠，再單獨比較一項改動，並先確認表單和轉化事件有記錄。測試前宜先定義合格名單的條件。",
+        "detail_en": "Hybrid means marketers can choose between generation and manual editing. The docs distinguish new self-serve from existing accounts, so confirm builder access first. For a page test, keep audience and offer fixed, isolate one change and verify form submissions and conversion events. Define what counts as a qualified lead before testing.",
+        "source": "Unbounce / MarTech Cube",
+        "url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+        "time": "11月6日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "unbounce-ai",
+        "verification_url": "https://documentation.unbounce.com/hc/en-us/articles/54145212437012-Getting-started-with-the-AI-Hybrid-Builder"
+      },
+      {
+        "title": "香港美酒展閉幕，業界買家與公眾試飲分設入口",
+        "title_en": "Hong Kong wine fair closes after separate trade and public experiences",
+        "summary": "香港貿發局稱，展會吸引來自66個國家及地區的逾8,200名業界買家。",
+        "summary_en": "The HKTDC reports more than 8,200 trade buyers from 66 countries and regions.",
+        "highlights": [
+          "主展期於11月7日結束。",
+          "最後一日設公眾專區，安排試飲及活動。"
+        ],
+        "highlights_en": [
+          "The fair ended November 7.",
+          "The final day offered a public zone with tastings and activities."
+        ],
+        "why": "酒類品牌可把分銷商洽談與消費者體驗分開設計，為兩種對象準備不同素材。",
+        "why_en": "Wine brands can plan separate distributor meetings and consumer experiences, with different materials for each audience.",
+        "next_step": "分開整理買家跟進名單及試飲反饋，逐項確認有興趣的產品及渠道。",
+        "next_step_en": "Separate buyer follow-ups from tasting feedback and record which products and channels drew interest.",
+        "detail": "貿發局在閉幕後公布買家人數，另列公眾日到場情況。兩組人數對應不同參與目的，品牌可按場景設計工作流程。買家會面可記錄分銷地區、供貨條件及樣品要求，公眾活動則可整理試飲偏好與常見查詢。下一步應以後續洽談或訂單衡量成果，保留原本的參與人數作背景。",
+        "detail_en": "The organiser reported trade buyers separately from public attendance. Those groups have different purposes. Capture distribution markets, supply terms and sample requests in trade meetings, and log preferences and common questions during tastings. Use follow-up or orders to measure outcomes, with attendance as context.",
+        "source": "HKTDC / ACN Newswire",
+        "url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+        "time": "11月8日",
+        "section": "行業影響 & 品牌案例",
+        "region": "香港",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "hk-wine"
+      },
+      {
+        "title": "工具補讀：Meigen AI提示詞庫加入17個影片範例",
+        "title_en": "Creative reference: Meigen AI adds 17 video prompt examples",
+        "summary": "更新日誌列出20個新增項目，當中17個是影片提示詞，另有3個圖片提示詞。",
+        "summary_en": "The changelog lists 20 new entries, including 17 video prompts and three image prompts.",
+        "highlights": [
+          "新增範例涵蓋時裝分鏡、微型食物與光線變化。",
+          "平台表示保留來源貼文的創作者標註。"
+        ],
+        "highlights_en": [
+          "Examples cover fashion panels, miniature food and lighting changes.",
+          "Meigen says it retains original creator attribution."
+        ],
+        "why": "創意團隊可用範例比較不同鏡頭指令如何寫入簡報，並建立自己的指令結構。",
+        "why_en": "Creative teams can compare how shot instructions are written and build their own brief structure.",
+        "next_step": "挑一個構圖例子，保留鏡頭和光線描述，換成品牌有權使用的參考素材。",
+        "next_step_en": "Pick one composition and apply its camera and lighting structure to brand-authorised references.",
+        "detail": "這次是提示詞庫新增內容。團隊可拆開觀察主體、鏡頭、光線與動作如何描述，再用自家素材重寫其中一段。公開貼文與作者標註可協助追溯來源，商用前仍應確認素材與示例輸出的使用條件。即使採用相同的指令結構，也宜保存生成版本及修改紀錄，方便與同事比較結果。",
+        "detail_en": "The update adds library entries. Study subject, camera, lighting and movement separately, then rewrite a prompt for your own material. Public attribution helps trace the source. Check usage terms before commercial use and retain generation and revision records for team comparison.",
+        "source": "Meigen AI",
+        "url": "https://meigenai.app/changelog",
+        "time": "11月8日",
+        "section": "即學技巧 & 玩法",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Ready to Use",
+        "source_kind": "official",
+        "editorial_slug": "meigen-prompts"
+      }
+    ]
+  },
+  "evidence": {
+    "schema_version": "1.0",
+    "edition_date_hkt": "2026-11-09",
+    "coverage_floor": 10,
+    "coverage_target": 18,
+    "verified_at_hkt": "2026-11-09T07:09:46+08:00",
+    "status": "approved",
+    "editorial_owner": "Carrie Hui",
+    "release_status": "pending_live_validation",
+    "audit_status": "Original texts, dated documentation, direct reporting and issuer syndications reviewed, then separately reopened or retrieved. Meta developer post returned 429, so same-event direct reporting was used. HKTDC issuer text was read in full through indexed syndications. No separate reviewer, human approval, product trial or independent performance confirmation.",
+    "review_provenance": {
+      "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+      "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+      "separate_human_review": false,
+      "separate_subagent_review": false
+    },
+    "corrections": [],
+    "stories": [
+      {
+        "story_id": "2026-11-09-eleven-review",
+        "title_zh": "ElevenLabs為廣告本地化加入人工覆核",
+        "source_story_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+        "published_article_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+        "source_date_display": "11月6日",
+        "event_date": "2026-11-06",
+        "first_published_date": "2026-11-06",
+        "source_documents": [
+          {
+            "url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "publisher": "ElevenLabs",
+            "source_class": "A",
+            "source_publication_date": "2026-11-06",
+            "evidence_locator": "Workflow and reviewer roles, lines50–62 / Localized copy and audio, lines65–70 / Workflow paragraph, line61",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Ads Engine可安排語言與創意專家審閱廣告。",
+            "evidence_locator": "Workflow and reviewer roles, lines50–62",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          },
+          {
+            "claim_zh": "審閱可涵蓋譯文及影片配音的發音。",
+            "evidence_locator": "Localized copy and audio, lines65–70",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          },
+          {
+            "claim_zh": "完成素材可返回團隊審批。",
+            "evidence_locator": "Workflow paragraph, line61",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Ads Engine可安排語言與創意專家審閱廣告。",
+            "evidence_locator": "Workflow and reviewer roles, lines50–62",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          },
+          {
+            "claim_zh": "審閱可涵蓋譯文及影片配音的發音。",
+            "evidence_locator": "Localized copy and audio, lines65–70",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          },
+          {
+            "claim_zh": "完成素材可返回團隊審批。",
+            "evidence_locator": "Workflow paragraph, line61",
+            "support_url": "https://elevenlabs.io/blog/ads-engine-human-review",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+          "source_reopen_reference": "turn75view0; turn82view0",
+          "finding": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee."
+        },
+        "review_notes": "Company announcement offers optional expert review. Contact team for onboarding; no universal access, price, turnaround or quality guarantee.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 19,
+          "market_relevance": 14,
+          "novelty": 9,
+          "total": 95
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-ga-data",
+        "title_zh": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+        "source_story_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "published_article_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "source_date_display": "11月6日",
+        "event_date": "2026-11-06",
+        "first_published_date": "2026-11-06",
+        "source_documents": [
+          {
+            "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "publisher": "Google Analytics Help",
+            "source_class": "A",
+            "source_publication_date": "2026-11-06",
+            "evidence_locator": "November 6 release section, lines42–47 / Dated release, line45 / Dated release, line45",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "url": "https://support.google.com/analytics/answer/18107176?hl=en",
+            "publisher": "Google Analytics Help",
+            "evidence_locator": "About Data Manager and exclusions for subproperties and roll-up properties.",
+            "source_class": "A",
+            "source_publication_date": "2026-11-06",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Supporting source separately retrieved and read.",
+            "limitations": "Supporting document for the same event; date label relates to the cited release when document is undated."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Google Analytics在管理介面加入Data Manager測試版。",
+            "evidence_locator": "November 6 release section, lines42–47",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "工具整合資料串流、產品連結及第一方資料。",
+            "evidence_locator": "Dated release, line45",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "可查看診斷提示及連線狀況。",
+            "evidence_locator": "Dated release, line45",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "子資源及匯總資源目前不支援該首頁。",
+            "evidence_locator": "About Data Manager, note on unsupported property types",
+            "support_url": "https://support.google.com/analytics/answer/18107176?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Google Analytics在管理介面加入Data Manager測試版。",
+            "evidence_locator": "November 6 release section, lines42–47",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "工具整合資料串流、產品連結及第一方資料。",
+            "evidence_locator": "Dated release, line45",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "可查看診斷提示及連線狀況。",
+            "evidence_locator": "Dated release, line45",
+            "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          },
+          {
+            "claim_zh": "子資源及匯總資源目前不支援該首頁。",
+            "evidence_locator": "About Data Manager, note on unsupported property types",
+            "support_url": "https://support.google.com/analytics/answer/18107176?hl=en",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+          "source_reopen_reference": "turn78view2; turn82view1; turn83view0",
+          "finding": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+        },
+        "review_notes": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 19,
+          "market_relevance": 13,
+          "novelty": 9,
+          "total": 94
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-09-xiaohong-card",
+        "title_zh": "小紅書為線上「小紅卡」招募雙11合作商戶",
+        "source_story_url": "https://www.ebrun.com/20261105/718322.shtml",
+        "published_article_url": "https://www.ebrun.com/20261105/718322.shtml",
+        "source_date_display": "11月5日",
+        "event_date": "2026-11-05",
+        "first_published_date": "2026-11-05",
+        "source_documents": [
+          {
+            "url": "https://www.ebrun.com/20261105/718322.shtml",
+            "publisher": "EBRUN",
+            "source_class": "B",
+            "source_publication_date": "2026-11-05",
+            "evidence_locator": "Original article under November 5 dateline and opening / Membership overview, lines50–52 and original body / Merchant programme details, lines54–56 and original body",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Read and reopened named EBRUN reporting on merchant recruitment. No public original terms verified.",
+            "limitations": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "據億邦動力，小紅書為線上電商會員計劃招募雙11商戶。",
+            "evidence_locator": "Original article under November 5 dateline and opening",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          },
+          {
+            "claim_zh": "報道稱線上會員年費為人民幣66元。",
+            "evidence_locator": "Membership overview, lines50–52 and original body",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          },
+          {
+            "claim_zh": "商戶可按商品報名提供會員專享價。",
+            "evidence_locator": "Merchant programme details, lines54–56 and original body",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "據億邦動力，小紅書為線上電商會員計劃招募雙11商戶。",
+            "evidence_locator": "Original article under November 5 dateline and opening",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          },
+          {
+            "claim_zh": "報道稱線上會員年費為人民幣66元。",
+            "evidence_locator": "Membership overview, lines50–52 and original body",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          },
+          {
+            "claim_zh": "商戶可按商品報名提供會員專享價。",
+            "evidence_locator": "Merchant programme details, lines54–56 and original body",
+            "support_url": "https://www.ebrun.com/20261105/718322.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+          "source_reopen_reference": "turn77view2; turn82view4",
+          "finding": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim."
+        },
+        "review_notes": "Dated named direct reporting about merchant recruitment. Preserved the online membership offer and distinction from earlier local-life card. Omitted platform spending multiples and any uplift claim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 22,
+          "actionability": 18,
+          "market_relevance": 15,
+          "novelty": 8,
+          "total": 92
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-meta-v27",
+        "title_zh": "Meta廣告API v27調整商品展示及裝置擴展預設",
+        "source_story_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+        "published_article_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+        "source_date_display": "11月4日",
+        "event_date": "2026-11-04",
+        "first_published_date": "2026-11-04",
+        "source_documents": [
+          {
+            "url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "publisher": "PPC Land",
+            "source_class": "B",
+            "source_publication_date": "2026-11-04",
+            "evidence_locator": "Product showcase becomes a default, lines68–79 / Device section, lines84–89 / Summary table, line65; AI disclosure section",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Official blog index accessible, original article returned 429. Full direct report and a second report read and reopened.",
+            "limitations": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          },
+          {
+            "url": "https://www.socialmediatoday.com/news/meta-adds-new-capabilities-to-graph-and-marketing-api/873951/",
+            "publisher": "Social Media Today",
+            "evidence_locator": "API change bullets, lines54–57.",
+            "source_class": "B",
+            "source_publication_date": "2026-11-05",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Supporting source separately retrieved and read.",
+            "limitations": "Supporting document for the same event; date label relates to the cited release when document is undated."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Meta v27可在符合條件的新API廣告加入商品展示。",
+            "evidence_locator": "Product showcase becomes a default, lines68–79",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          },
+          {
+            "claim_zh": "合資格的新銷售廣告組合如省略裝置設定，預設可擴大至其他裝置。",
+            "evidence_locator": "Device section, lines84–89",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          },
+          {
+            "claim_zh": "Graph API v27支援更新貼文的AI自我申報。",
+            "evidence_locator": "Summary table, line65; AI disclosure section",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Meta v27可在符合條件的新API廣告加入商品展示。",
+            "evidence_locator": "Product showcase becomes a default, lines68–79",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          },
+          {
+            "claim_zh": "合資格的新銷售廣告組合如省略裝置設定，預設可擴大至其他裝置。",
+            "evidence_locator": "Device section, lines84–89",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          },
+          {
+            "claim_zh": "Graph API v27支援更新貼文的AI自我申報。",
+            "evidence_locator": "Summary table, line65; AI disclosure section",
+            "support_url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:09:46+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+          "source_reopen_reference": "turn83view2 official index; turn86view0 429; turn89view1 and turn90view0 direct reporting; turn89view0 and turn90view1",
+          "finding": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels."
+        },
+        "review_notes": "Meta original blog returned 429. Read two direct reports of the same release and reopened them. Product showcase conditional; device default scoped to eligible new API ad sets. No assertion about Ads Manager or platform-applied labels.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 18,
+          "market_relevance": 12,
+          "novelty": 9,
+          "total": 92
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-alexa-sms",
+        "title_zh": "Alexa購物助手加入短訊入口，先向部分美國顧客開放",
+        "source_story_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+        "published_article_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+        "source_date_display": "11月6日",
+        "event_date": "2026-11-06",
+        "first_published_date": "2026-11-06",
+        "source_documents": [
+          {
+            "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "publisher": "Amazon",
+            "source_class": "A",
+            "source_publication_date": "2026-11-06",
+            "evidence_locator": "Key takeaways and invite setup, lines13–23 / Example list, lines31–43 / One conversation, everywhere, lines45–48",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Amazon先向部分美國顧客發出短訊購物邀請。",
+            "evidence_locator": "Key takeaways and invite setup, lines13–23",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          },
+          {
+            "claim_zh": "獲邀顧客可經短訊比較商品及處理訂單。",
+            "evidence_locator": "Example list, lines31–43",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          },
+          {
+            "claim_zh": "Amazon正逐步加入跨短訊、App及網站延續對話的能力。",
+            "evidence_locator": "One conversation, everywhere, lines45–48",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Amazon先向部分美國顧客發出短訊購物邀請。",
+            "evidence_locator": "Key takeaways and invite setup, lines13–23",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          },
+          {
+            "claim_zh": "獲邀顧客可經短訊比較商品及處理訂單。",
+            "evidence_locator": "Example list, lines31–43",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          },
+          {
+            "claim_zh": "Amazon正逐步加入跨短訊、App及網站延續對話的能力。",
+            "evidence_locator": "One conversation, everywhere, lines45–48",
+            "support_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+          "source_reopen_reference": "turn71view3; turn82view2; issuer date index turn80search2",
+          "finding": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims."
+        },
+        "review_notes": "Distinct from prior Merchant Workspace coverage. US invitation phase only; cross-channel continuity rolling out. Omitted reach metrics and unsupported ad placement claims.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 23,
+          "actionability": 17,
+          "market_relevance": 11,
+          "novelty": 9,
+          "total": 88
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-merchantfloor",
+        "title_zh": "MerchantFloor把商品圖與文案生成接入Shopify上架流程",
+        "source_story_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+        "published_article_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+        "source_date_display": "11月5日",
+        "event_date": "2026-11-05",
+        "first_published_date": "2026-11-05",
+        "source_documents": [
+          {
+            "url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "publisher": "MerchantFloor / GlobeNewswire",
+            "source_class": "A",
+            "source_publication_date": "2026-11-05",
+            "evidence_locator": "How it works, lines15–17 / Workflow list, lines18–19 / Workflow list, line20 / Pricing and availability, lines24–25",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "商品圖片與簡短資料可作為生成輸入。",
+            "evidence_locator": "How it works, lines15–17",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "代理生成商品圖片、描述、搜尋欄位及替代文字。",
+            "evidence_locator": "Workflow list, lines18–19",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "商戶審閱後可把結果送到Shopify管理介面。",
+            "evidence_locator": "Workflow list, line20",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "免費方案圖片帶浮水印。",
+            "evidence_locator": "Pricing and availability, lines24–25",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "商品圖片與簡短資料可作為生成輸入。",
+            "evidence_locator": "How it works, lines15–17",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "代理生成商品圖片、描述、搜尋欄位及替代文字。",
+            "evidence_locator": "Workflow list, lines18–19",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "商戶審閱後可把結果送到Shopify管理介面。",
+            "evidence_locator": "Workflow list, line20",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          },
+          {
+            "claim_zh": "免費方案圖片帶浮水印。",
+            "evidence_locator": "Pricing and availability, lines24–25",
+            "support_url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+          "source_reopen_reference": "turn77view1; turn82view3",
+          "finding": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims."
+        },
+        "review_notes": "Issuer describes listing workflow. Merchant review precedes handoff; free images watermarked. Omitted five-minute and search ranking claims.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 21,
+          "actionability": 19,
+          "market_relevance": 11,
+          "novelty": 8,
+          "total": 87
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-09-hk-ciie",
+        "title_zh": "進博會香港食品館首設名牌專區，集中展示品牌故事",
+        "source_story_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+        "published_article_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+        "source_date_display": "11月5日",
+        "event_date": "2026-11-05",
+        "first_published_date": "2026-11-05",
+        "source_documents": [
+          {
+            "url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "publisher": "China News Service",
+            "source_class": "B",
+            "source_publication_date": "2026-11-05",
+            "evidence_locator": "Pavilion sections, lines130–132 / Food pavilion paragraph, line132 / Services pavilion paragraph, line130",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "貿發局設香港食品館及香港服務業展館。",
+            "evidence_locator": "Pavilion sections, lines130–132",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          },
+          {
+            "claim_zh": "食品館匯聚37家企業，首設香港名牌專區。",
+            "evidence_locator": "Food pavilion paragraph, line132",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          },
+          {
+            "claim_zh": "服務業展館集合34家參展商，涵蓋企業服務、物流等。",
+            "evidence_locator": "Services pavilion paragraph, line130",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "貿發局設香港食品館及香港服務業展館。",
+            "evidence_locator": "Pavilion sections, lines130–132",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          },
+          {
+            "claim_zh": "食品館匯聚37家企業，首設香港名牌專區。",
+            "evidence_locator": "Food pavilion paragraph, line132",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          },
+          {
+            "claim_zh": "服務業展館集合34家參展商，涵蓋企業服務、物流等。",
+            "evidence_locator": "Services pavilion paragraph, line130",
+            "support_url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:09:46+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+          "source_reopen_reference": "turn81view0; turn83view4; turn85view0; RTHK turn78view1",
+          "finding": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred."
+        },
+        "review_notes": "On-site China News Service report and RTHK organiser interview. Separated HKTDC pavilions from overall Hong Kong exhibitor count. No orders or sales results inferred.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 26,
+          "business_impact": 21,
+          "actionability": 17,
+          "market_relevance": 15,
+          "novelty": 8,
+          "total": 87
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-unbounce-ai",
+        "title_zh": "Unbounce公布AI混合編輯器，可由提示詞、範本或空白頁起稿",
+        "source_story_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+        "published_article_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+        "source_date_display": "11月6日",
+        "event_date": "2026-11-06",
+        "first_published_date": "2026-11-06",
+        "source_documents": [
+          {
+            "url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+            "publisher": "Unbounce / MarTech Cube",
+            "source_class": "A",
+            "source_publication_date": "2026-11-06",
+            "evidence_locator": "Announcement launch and workflow, lines261,266–267 / Beyond creation paragraph, line269",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          },
+          {
+            "url": "https://documentation.unbounce.com/hc/en-us/articles/54145212437012-Getting-started-with-the-AI-Hybrid-Builder",
+            "publisher": "Unbounce Documentation",
+            "evidence_locator": "Who can use the AI Hybrid Builder, lines16–20; last updated October 22.",
+            "source_class": "A",
+            "source_publication_date": "2026-10-22",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Supporting source separately retrieved and read.",
+            "limitations": "Supporting document for the same event; date label relates to the cited release when document is undated."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "編輯器可從提示詞、範本或空白頁開始。",
+            "evidence_locator": "Announcement launch and workflow, lines261,266–267",
+            "support_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          },
+          {
+            "claim_zh": "可加入表單並建立A/B測試。",
+            "evidence_locator": "Beyond creation paragraph, line269",
+            "support_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          },
+          {
+            "claim_zh": "新自助帳戶使用新編輯器，既有帳戶現階段保留原有頁面和工具。",
+            "evidence_locator": "Official help: Who can use the AI Hybrid Builder, lines16–20",
+            "support_url": "https://documentation.unbounce.com/hc/en-us/articles/54145212437012-Getting-started-with-the-AI-Hybrid-Builder",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "編輯器可從提示詞、範本或空白頁開始。",
+            "evidence_locator": "Announcement launch and workflow, lines261,266–267",
+            "support_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          },
+          {
+            "claim_zh": "可加入表單並建立A/B測試。",
+            "evidence_locator": "Beyond creation paragraph, line269",
+            "support_url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          },
+          {
+            "claim_zh": "新自助帳戶使用新編輯器，既有帳戶現階段保留原有頁面和工具。",
+            "evidence_locator": "Official help: Who can use the AI Hybrid Builder, lines16–20",
+            "support_url": "https://documentation.unbounce.com/hc/en-us/articles/54145212437012-Getting-started-with-the-AI-Hybrid-Builder",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:09:46+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+          "source_reopen_reference": "turn83view3; turn85view2; official docs turn81view3 and turn85view3",
+          "finding": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions."
+        },
+        "review_notes": "Nov6 announcement as carried in trade publication, not first access date. Official help says new self-serve users get builder; existing pages/builder unchanged for now. Omitted vendor conversion dataset and uplift assertions.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 21,
+          "actionability": 19,
+          "market_relevance": 11,
+          "novelty": 8,
+          "total": 87
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-hk-wine",
+        "title_zh": "香港美酒展閉幕，業界買家與公眾試飲分設入口",
+        "source_story_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+        "published_article_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+        "source_date_display": "11月8日",
+        "event_date": "2026-11-07",
+        "first_published_date": "2026-11-08",
+        "source_documents": [
+          {
+            "url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "publisher": "HKTDC / ACN Newswire",
+            "source_class": "A",
+            "source_publication_date": "2026-11-08",
+            "evidence_locator": "Nov 8 issuer dateline and opening paragraph, fair dates Nov 5–7 / Issuer opening paragraph, trade buyer count / Issuer opening paragraph and public day section",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Full indexed HKTDC issuer release read and separately retrieved again after direct-open failure. Same-event direct report also read.",
+            "limitations": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "香港國際美酒展於11月7日閉幕。",
+            "evidence_locator": "Nov 8 issuer dateline and opening paragraph, fair dates Nov 5–7",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          },
+          {
+            "claim_zh": "主辦方稱錄得逾8,200名業界買家，來自66個國家和地區。",
+            "evidence_locator": "Issuer opening paragraph, trade buyer count",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          },
+          {
+            "claim_zh": "最後一日設面向公眾的Saturday Fiesta專區。",
+            "evidence_locator": "Issuer opening paragraph and public day section",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "香港國際美酒展於11月7日閉幕。",
+            "evidence_locator": "Nov 8 issuer dateline and opening paragraph, fair dates Nov 5–7",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          },
+          {
+            "claim_zh": "主辦方稱錄得逾8,200名業界買家，來自66個國家和地區。",
+            "evidence_locator": "Issuer opening paragraph, trade buyer count",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          },
+          {
+            "claim_zh": "最後一日設面向公眾的Saturday Fiesta專區。",
+            "evidence_locator": "Issuer opening paragraph and public day section",
+            "support_url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:09:46+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+          "source_reopen_reference": "turn76search0 full issuer copy; turn84search1 and turn84search4 separate retrieval; turn85view1 direct report",
+          "finding": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred."
+        },
+        "review_notes": "Issuer counts attributed. Direct wire URL opened unsuccessfully; full indexed issuer text retrieved twice. Trade buyers and public visitors are separate figures. No sales or contract outcomes inferred.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 25,
+          "business_impact": 21,
+          "actionability": 16,
+          "market_relevance": 15,
+          "novelty": 8,
+          "total": 85
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-09-meigen-prompts",
+        "title_zh": "工具補讀：Meigen AI提示詞庫加入17個影片範例",
+        "source_story_url": "https://meigenai.app/changelog",
+        "published_article_url": "https://meigenai.app/changelog",
+        "source_date_display": "11月8日",
+        "event_date": "2026-11-08",
+        "first_published_date": "2026-11-08",
+        "source_documents": [
+          {
+            "url": "https://meigenai.app/changelog",
+            "publisher": "Meigen AI",
+            "source_class": "A",
+            "source_publication_date": "2026-11-08",
+            "evidence_locator": "Dated changelog entry, lines7–9 / Dated entry, line9 / Dated entry, lines10–13",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+            "access_method": "Opened original text and separately reopened it to challenge material claims.",
+            "limitations": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "11月8日更新新增20個公開提示詞項目。",
+            "evidence_locator": "Dated changelog entry, lines7–9",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          },
+          {
+            "claim_zh": "新增項目包括3個圖片及17個影片提示詞。",
+            "evidence_locator": "Dated entry, line9",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          },
+          {
+            "claim_zh": "平台稱保留原作者標註和來源中的提示詞文字。",
+            "evidence_locator": "Dated entry, lines10–13",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "11月8日更新新增20個公開提示詞項目。",
+            "evidence_locator": "Dated changelog entry, lines7–9",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          },
+          {
+            "claim_zh": "新增項目包括3個圖片及17個影片提示詞。",
+            "evidence_locator": "Dated entry, line9",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          },
+          {
+            "claim_zh": "平台稱保留原作者標註和來源中的提示詞文字。",
+            "evidence_locator": "Dated entry, lines10–13",
+            "support_url": "https://meigenai.app/changelog",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-09T07:09:46+08:00",
+        "independent_review": {
+          "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-09T07:09:46+08:00",
+          "source_reopen_reference": "turn71view1; turn77view3; turn82view5",
+          "finding": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility."
+        },
+        "review_notes": "Routine dated prompt library update, not new model. Counts attributed to changelog. Public examples do not establish commercial reuse rights or reproducibility.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 23,
+          "business_impact": 15,
+          "actionability": 18,
+          "market_relevance": 9,
+          "novelty": 6,
+          "total": 71
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      }
+    ]
+  },
+  "localization_review": {
+    "edition_date": "2026-11-09",
+    "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+    "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+    "quality_policy": {
+      "mandatory_languages": [
+        "en",
+        "zh-Hant",
+        "zh-Hans"
+      ],
+      "no_added_factual_claims": true,
+      "keep_original_links_and_dates": true,
+      "do_not_erase_uncertainty": true,
+      "do_not_silently_translate_urls_or_identifiers": true,
+      "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+      "human_editorial_review": "No human approval claimed"
+    },
+    "items": [
+      {
+        "url": "https://elevenlabs.io/blog/ads-engine-human-review",
+        "title_zh_hant": "ElevenLabs為廣告本地化加入人工覆核",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体使用“本地化广告、人工审阅、配音、品牌规范”。保留可选审阅和团队审批，不将服务写成默认配置或质量保证。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "title_zh_hant": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体使用“数据管理器、数据流、第一方数据、子媒体资源、汇总媒体资源”。保留测试版和资源限制，不将诊断写成自动修复。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.ebrun.com/20261105/718322.shtml",
+        "title_zh_hant": "小紅書為線上「小紅卡」招募雙11合作商戶",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“小红卡、会员专享价、商家报名”。保留线上电商、人民币年费与商户报名条件，省略无完整方法的消费倍数。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+        "title_zh_hant": "Meta廣告API v27調整商品展示及裝置擴展預設",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“商品展示、销售广告组、设备扩展、自行披露”。保留新建广告和资格条件，不把自行披露与平台自动标记混为一谈。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+        "title_zh_hant": "Alexa購物助手加入短訊入口，先向部分美國顧客開放",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体使用“短信购物、受邀客户、购物助手”。保留美国邀请阶段及跨渠道对话逐步推出，不写成所有账户可用。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+        "title_zh_hant": "MerchantFloor把商品圖與文案生成接入Shopify上架流程",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体使用“商品详情、商品图、替代文本、水印”。保留商家先审阅及免费图有水印，不承诺制作时长或搜索排名。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+        "title_zh_hant": "進博會香港食品館首設名牌專區，集中展示品牌故事",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“香港食品馆、香港名牌专区、服务业展馆”。馆内参展数不等于所有港企参展数，保留现场报道归因，不推断成交。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+        "title_zh_hant": "Unbounce公布AI混合編輯器，可由提示詞、範本或空白頁起稿",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“落地页、提示词、模板、对照测试”。保留新自助账户与现有账户的区别，不写成全面迁移或转化提升。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+        "title_zh_hant": "香港美酒展閉幕，業界買家與公眾試飲分設入口",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“行业买家、公众日、试饮、渠道洽谈”。区分采购买家与公众到场，人数归因贸发局，不等同成交。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://meigenai.app/changelog",
+        "title_zh_hant": "工具補讀：Meigen AI提示詞庫加入17個影片範例",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“提示词库、作者署名、镜头、分镜”。20项为平台记录，公开可读不代表取得商用授权。",
+        "decision": "approved_for_ai_assisted_localization"
+      }
+    ]
+  }
+}
