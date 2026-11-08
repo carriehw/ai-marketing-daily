@@ -1,0 +1,172 @@
+{
+  "edition_date_hkt": "2026-11-09",
+  "state": "APPROVED",
+  "article": {
+    "title": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+    "title_en": "Google Analytics adds a Data Manager beta for data connections",
+    "summary": "管理介面新增入口，讓團隊管理資料串流、產品連結及第一方資料。",
+    "summary_en": "The admin hub manages streams, product links and first-party data.",
+    "highlights": [
+      "可從同一入口查看診斷提示與連線狀況。",
+      "Google說明列明子資源及匯總資源目前不支援該首頁。"
+    ],
+    "highlights_en": [
+      "The hub surfaces diagnostics and connection health.",
+      "Google says its landing page currently excludes subproperties and roll-up properties."
+    ],
+    "why": "量度團隊可較容易查找資料由何處進入，交接時也能更清楚說明連線由誰負責。",
+    "why_en": "Measurement teams can trace data sources and clarify ownership during handoffs.",
+    "next_step": "先選一個可用的資源，整理連線清單與負責人，再逐項核對診斷。",
+    "next_step_en": "Choose an eligible property and compare diagnostics with an inventory of connections and owners.",
+    "detail": "這次更新針對資料連線管理。Google把新入口放在管理介面，團隊可據此檢查資料串流及產品連結，並了解哪些項目需要跟進。測試版的使用範圍須以帳戶權限及資源類型確認。若報表出現異常，宜先比對現有設定與事件記錄，再決定是否改動資料來源或廣告匯入方式。",
+    "detail_en": "The update is for managing data connections. Teams can review streams and product links and identify issues needing follow-up. Confirm property type and access before using the beta. For reporting anomalies, check existing setup and event records before changing data sources or ad imports.",
+    "source": "Google Analytics Help",
+    "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+    "time": "11月6日",
+    "section": "廣告平台 & 行銷科技",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Ready to Use",
+    "source_kind": "official",
+    "editorial_slug": "ga-data",
+    "verification_url": "https://support.google.com/analytics/answer/18107176?hl=en"
+  },
+  "evidence": {
+    "story_id": "2026-11-09-ga-data",
+    "title_zh": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+    "source_story_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+    "published_article_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+    "source_date_display": "11月6日",
+    "event_date": "2026-11-06",
+    "first_published_date": "2026-11-06",
+    "source_documents": [
+      {
+        "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "publisher": "Google Analytics Help",
+        "source_class": "A",
+        "source_publication_date": "2026-11-06",
+        "evidence_locator": "November 6 release section, lines42–47 / Dated release, line45 / Dated release, line45",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "access_method": "Opened original text and separately reopened it to challenge material claims.",
+        "limitations": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "url": "https://support.google.com/analytics/answer/18107176?hl=en",
+        "publisher": "Google Analytics Help",
+        "evidence_locator": "About Data Manager and exclusions for subproperties and roll-up properties.",
+        "source_class": "A",
+        "source_publication_date": "2026-11-06",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+        "access_method": "Supporting source separately retrieved and read.",
+        "limitations": "Supporting document for the same event; date label relates to the cited release when document is undated."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Google Analytics在管理介面加入Data Manager測試版。",
+        "evidence_locator": "November 6 release section, lines42–47",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "工具整合資料串流、產品連結及第一方資料。",
+        "evidence_locator": "Dated release, line45",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "可查看診斷提示及連線狀況。",
+        "evidence_locator": "Dated release, line45",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "子資源及匯總資源目前不支援該首頁。",
+        "evidence_locator": "About Data Manager, note on unsupported property types",
+        "support_url": "https://support.google.com/analytics/answer/18107176?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Google Analytics在管理介面加入Data Manager測試版。",
+        "evidence_locator": "November 6 release section, lines42–47",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "工具整合資料串流、產品連結及第一方資料。",
+        "evidence_locator": "Dated release, line45",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "可查看診斷提示及連線狀況。",
+        "evidence_locator": "Dated release, line45",
+        "support_url": "https://support.google.com/analytics/answer/9164320?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      },
+      {
+        "claim_zh": "子資源及匯總資源目前不支援該首頁。",
+        "evidence_locator": "About Data Manager, note on unsupported property types",
+        "support_url": "https://support.google.com/analytics/answer/18107176?hl=en",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-09T07:07:28+08:00",
+    "independent_review": {
+      "method": "Same assistant separately retrieved the source and checked material claims, date and availability. No separate reviewer, human sign-off or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-09T07:07:28+08:00",
+      "source_reopen_reference": "turn78view2; turn82view1; turn83view0",
+      "finding": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim."
+    },
+    "review_notes": "Google labels the feature beta. Subproperties and roll-up properties currently unsupported. No broad access or attribution improvement claim.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 30,
+      "business_impact": 23,
+      "actionability": 19,
+      "market_relevance": 13,
+      "novelty": 9,
+      "total": 94
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+    "title_zh_hant": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "简体使用“数据管理器、数据流、第一方数据、子媒体资源、汇总媒体资源”。保留测试版和资源限制，不将诊断写成自动修复。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
