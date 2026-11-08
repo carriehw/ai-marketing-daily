@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-09",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://elevenlabs.io/blog/ads-engine-human-review",
+      "title_zh_hant": "ElevenLabs為廣告本地化加入人工覆核",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“本地化广告、人工审阅、配音、品牌规范”。保留可选审阅和团队审批，不将服务写成默认配置或质量保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://support.google.com/analytics/answer/9164320?hl=en",
+      "title_zh_hant": "Google Analytics加入Data Manager測試版，集中檢視資料連線",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“数据管理器、数据流、第一方数据、子媒体资源、汇总媒体资源”。保留测试版和资源限制，不将诊断写成自动修复。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.ebrun.com/20261105/718322.shtml",
+      "title_zh_hant": "小紅書為線上「小紅卡」招募雙11合作商戶",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“小红卡、会员专享价、商家报名”。保留线上电商、人民币年费与商户报名条件，省略无完整方法的消费倍数。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://ppc.land/metas-api-v27-may-add-catalog-products-to-new-ads-by-default/",
+      "title_zh_hant": "Meta廣告API v27調整商品展示及裝置擴展預設",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“商品展示、销售广告组、设备扩展、自行披露”。保留新建广告和资格条件，不把自行披露与平台自动标记混为一谈。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop",
+      "title_zh_hant": "Alexa購物助手加入短訊入口，先向部分美國顧客開放",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“短信购物、受邀客户、购物助手”。保留美国邀请阶段及跨渠道对话逐步推出，不写成所有账户可用。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://rss.globenewswire.com/news-release/2026/11/05/3396739/0/en/the-5-minute-product-listing-merchantfloor-launches-ai-agent-for-small-shopify-stores.html",
+      "title_zh_hant": "MerchantFloor把商品圖與文案生成接入Shopify上架流程",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体使用“商品详情、商品图、替代文本、水印”。保留商家先审阅及免费图有水印，不承诺制作时长或搜索排名。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.chinanews.com/dwq/2026/11-05/10726925.shtml",
+      "title_zh_hant": "進博會香港食品館首設名牌專區，集中展示品牌故事",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“香港食品馆、香港名牌专区、服务业展馆”。馆内参展数不等于所有港企参展数，保留现场报道归因，不推断成交。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.martechcube.com/unbounce-launches-ai-powered-landing-page-builder-built-on-2-5-bn-conversions/",
+      "title_zh_hant": "Unbounce公布AI混合編輯器，可由提示詞、範本或空白頁起稿",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“落地页、提示词、模板、对照测试”。保留新自助账户与现有账户的区别，不写成全面迁移或转化提升。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://business.am-news.com/am-news/article/acnnewswire-2026-11-8-hong-kong-international-wine-and-spirits-fair-attracts-over-8200-buyers-with-enthusiastic-participation-on-public-day",
+      "title_zh_hant": "香港美酒展閉幕，業界買家與公眾試飲分設入口",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“行业买家、公众日、试饮、渠道洽谈”。区分采购买家与公众到场，人数归因贸发局，不等同成交。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://meigenai.app/changelog",
+      "title_zh_hant": "工具補讀：Meigen AI提示詞庫加入17個影片範例",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“提示词库、作者署名、镜头、分镜”。20项为平台记录，公开可读不代表取得商用授权。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
