@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-12",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+      "title_zh_hant": "Adobe擴展Creative Agent，預覽第三方代理編輯原生專案",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“创意智能体、本地接入、原生项目文件”。保留预览阶段及不同产品的开放安排，不写成四款软件全面可用。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+      "title_zh_hant": "更進新聞：Supermetrics廣告操作加入ChatGPT Ads",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“广告活动管理、可配置审批、预算限制”。保留七渠道和本次新增关系，不假定每个渠道操作相同或默认审批。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+      "title_zh_hant": "MATRADE與HKTVmall推馬來西亞商品專區，指定商品滿額減50元",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“马来西亚商品专区、满额减免、指定商品”。保留港币门槛和限定范围，部分商品有清真认证，不外推至全专区。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+      "title_zh_hant": "Sitecore推出MarketingIQ，讓品牌跟進AI搜尋中的資料錯誤",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“品牌核准资料、暂存、人工审批”。保留公司示例和待推出事项，不承诺外部模型更新速度或成交效果。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+      "title_zh_hant": "內地雙11以AI輔助商品比較、試穿與找優惠",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“双11、虚拟试穿、购物助手、商品规格”。保留路透报道与京东归因，不把使用情境写成整体销售增量。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+      "title_zh_hant": "Kochava推出AIM Essentials，利用歷史資料分析媒體組合",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“营销组合模型、增量测试、响应曲线”。全球开放是公司说明，模型估计不写成已验证因果或保证回报。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+      "title_zh_hant": "Gopuff接入Grok Bot，讓顧客在對話內確認雜貨訂單",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“对话内结账、库存、订单确认”。保留账户连接与确认步骤，不承诺配送时效、覆盖地区或准确率。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+      "title_zh_hant": "首爾旅遊把K-pop宣傳片帶到海外七城戶外版位",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“首尔旅游、户外广告、城市排期”。保留七城范围和分批排期，活动本身较早启动，不推断实际访客增长。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+      "title_zh_hant": "Fireflies公布新版Fred，把會議記錄延伸至跟進工作",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“会议纪要、跟进事项、智能助手、逐步开放”。保留分阶段推出，不暗示所有账户即时取得全部功能。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+      "title_zh_hant": "Google提醒網站切換CDN時先預熱大促頁面",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“内容分发网络、缓存预热、源站、搜索爬虫”。保留网站迁移情境，不写成搜索排名更新或流量保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}

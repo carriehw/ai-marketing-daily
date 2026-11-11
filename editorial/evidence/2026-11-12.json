@@ -1,0 +1,998 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-12",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-12T07:08:21+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original texts and direct reporting read and separately reopened. Supermetrics checked against corrected issuer release. Gopuff canonical Business Wire direct access failed; full indexed issuer text and direct reporting were used. No independent human review or product testing.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-12-adobe",
+      "title_zh": "Adobe擴展Creative Agent，預覽第三方代理編輯原生專案",
+      "source_story_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+      "published_article_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+      "source_date_display": "11月10日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-10",
+      "source_documents": [
+        {
+          "url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "publisher": "Adobe",
+          "source_class": "A",
+          "source_publication_date": "2026-11-10",
+          "evidence_locator": "Opening announcement, lines8–12 / Local integration paragraph, line13 / Enterprise paragraph, line14",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Adobe宣布擴展Creative Agent至Creative Cloud及Firefly。",
+          "evidence_locator": "Opening announcement, lines8–12",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        },
+        {
+          "claim_zh": "Adobe預覽Photoshop、Illustrator、Premiere及After Effects的本機MCP接入。",
+          "evidence_locator": "Local integration paragraph, line13",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        },
+        {
+          "claim_zh": "Adobe宣布把CX Enterprise Coworker帶入GenStudio。",
+          "evidence_locator": "Enterprise paragraph, line14",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Adobe宣布擴展Creative Agent至Creative Cloud及Firefly。",
+          "evidence_locator": "Opening announcement, lines8–12",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        },
+        {
+          "claim_zh": "Adobe預覽Photoshop、Illustrator、Premiere及After Effects的本機MCP接入。",
+          "evidence_locator": "Local integration paragraph, line13",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        },
+        {
+          "claim_zh": "Adobe宣布把CX Enterprise Coworker帶入GenStudio。",
+          "evidence_locator": "Enterprise paragraph, line14",
+          "support_url": "https://news.adobe.com/news/2026/11/adobe-powers-new-era-of-creativity",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:05:54+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+        "source_reopen_reference": "turn97view0, turn101view0 and turn104view4",
+        "finding": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained."
+      },
+      "review_notes": "Adobe MAX announcement. Local MCP integrations are previews. Expansion plans are not treated as universally shipped, and no speed claims retained.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 19,
+        "market_relevance": 13,
+        "novelty": 10,
+        "total": 96
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-supermetrics",
+      "title_zh": "更進新聞：Supermetrics廣告操作加入ChatGPT Ads",
+      "source_story_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+      "source_date_display": "11月10日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-10",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "publisher": "Supermetrics / PR Newswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-10",
+          "evidence_locator": "Corrected release dateline and headline, lines466–470 / Corrected release channel list, line495 / Governance and logging bullets, lines486–487",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        },
+        {
+          "url": "https://ppc.land/supermetrics-ai-campaign-tool-gains-chatgpt-ads-its-7th-ad-platform/",
+          "publisher": "PPC Land",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Earlier six channels and new seventh, lines60–66. Scope limits, lines97–98.",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Retrieved and read full supporting source.",
+          "limitations": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "公司於11月10日推出Campaign Management。",
+          "evidence_locator": "Corrected release dateline and headline, lines466–470",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        },
+        {
+          "claim_zh": "支援名單加入ChatGPT Ads，合共七個廣告平台。",
+          "evidence_locator": "Corrected release channel list, line495",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        },
+        {
+          "claim_zh": "工具提供可配置審批、權限與預算限制，並保留改動記錄。",
+          "evidence_locator": "Governance and logging bullets, lines486–487",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "公司於11月10日推出Campaign Management。",
+          "evidence_locator": "Corrected release dateline and headline, lines466–470",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        },
+        {
+          "claim_zh": "支援名單加入ChatGPT Ads，合共七個廣告平台。",
+          "evidence_locator": "Corrected release channel list, line495",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        },
+        {
+          "claim_zh": "工具提供可配置審批、權限與預算限制，並保留改動記錄。",
+          "evidence_locator": "Governance and logging bullets, lines486–487",
+          "support_url": "https://www.prnewswire.com/news-releases/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together-302934714.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "source_reopen_reference": "turn110search0, corrected turn111view1, company turn111view0 and direct reporting turn101view6",
+        "finding": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated."
+      },
+      "review_notes": "Used the corrected release. ChatGPT Ads was absent from the six-channel earlier announcement. Exact action coverage, access, and approval defaults vary or remain unstated.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 19,
+        "market_relevance": 13,
+        "novelty": 10,
+        "total": 96
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-04.html"
+    },
+    {
+      "story_id": "2026-11-12-hktvmall",
+      "title_zh": "MATRADE與HKTVmall推馬來西亞商品專區，指定商品滿額減50元",
+      "source_story_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "publisher": "MATRADE / PR Newswire APAC",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Nov 11 dateline and launch paragraph, line133 / Launch and assortment, lines133 and 139 / Promotion paragraph, line134",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MATRADE與HKTVmall推出Discover Malaysia活動。",
+          "evidence_locator": "Nov 11 dateline and launch paragraph, line133",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        },
+        {
+          "claim_zh": "專區集中展示馬來西亞食品、保健及生活用品。",
+          "evidence_locator": "Launch and assortment, lines133 and 139",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        },
+        {
+          "claim_zh": "指定商品滿港幣350元可按活動條款減50元。",
+          "evidence_locator": "Promotion paragraph, line134",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MATRADE與HKTVmall推出Discover Malaysia活動。",
+          "evidence_locator": "Nov 11 dateline and launch paragraph, line133",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        },
+        {
+          "claim_zh": "專區集中展示馬來西亞食品、保健及生活用品。",
+          "evidence_locator": "Launch and assortment, lines133 and 139",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        },
+        {
+          "claim_zh": "指定商品滿港幣350元可按活動條款減50元。",
+          "evidence_locator": "Promotion paragraph, line134",
+          "support_url": "https://en.prnasia.com/releases/apac/matrade-partners-with-hktvmall-to-launch-discover-malaysia-hktvmall-campaign-555862.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:05:54+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+        "source_reopen_reference": "turn97view3, turn101view3 and turn104view2",
+        "finding": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief."
+      },
+      "review_notes": "Issuer campaign announcement. Offer applies to selected pavilion products. No revenue, reach or performance claim. Future end date not needed for this brief.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-sitecore",
+      "title_zh": "Sitecore推出MarketingIQ，讓品牌跟進AI搜尋中的資料錯誤",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "publisher": "Sitecore / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Context and AI search paragraphs, lines64–66 / Outdated pricing example, lines69–70 / Human review and staging, lines66 and 71",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MarketingIQ連接AI搜尋觀察與品牌核准資料。",
+          "evidence_locator": "Context and AI search paragraphs, lines64–66",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        },
+        {
+          "claim_zh": "Scrunch發現錯誤資料後，MarketingIQ可擬議修正內容。",
+          "evidence_locator": "Outdated pricing example, lines69–70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        },
+        {
+          "claim_zh": "行銷人員保留審閱、編輯和批准權。",
+          "evidence_locator": "Human review and staging, lines66 and 71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MarketingIQ連接AI搜尋觀察與品牌核准資料。",
+          "evidence_locator": "Context and AI search paragraphs, lines64–66",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        },
+        {
+          "claim_zh": "Scrunch發現錯誤資料後，MarketingIQ可擬議修正內容。",
+          "evidence_locator": "Outdated pricing example, lines69–70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        },
+        {
+          "claim_zh": "行銷人員保留審閱、編輯和批准權。",
+          "evidence_locator": "Human review and staging, lines66 and 71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400749/0/en/sitecore-introduces-marketingiq-to-turn-brand-intelligence-into-business-growth.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:05:54+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+        "source_reopen_reference": "turn98view0, turn101view1 and turn104view0",
+        "finding": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims."
+      },
+      "review_notes": "Sitecore describes a proposed response and approval workflow. General access timing not specified. Website agent actions are planned. Omitted customer outcome claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-singles-ai",
+      "title_zh": "內地雙11以AI輔助商品比較、試穿與找優惠",
+      "source_story_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+      "published_article_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "publisher": "Reuters",
+          "source_class": "B",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Platform examples, line177 / JD statement, line198 / Beijing shopper interview, lines205–207",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "路透社報道淘寶及天貓提供AI商品研究、試穿及尋優惠工具。",
+          "evidence_locator": "Platform examples, line177",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        },
+        {
+          "claim_zh": "京東稱購物助手Dongdong有雙11顧客查詢。",
+          "evidence_locator": "JD statement, line198",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        },
+        {
+          "claim_zh": "路透社訪問一名使用淘寶虛擬試穿的消費者。",
+          "evidence_locator": "Beijing shopper interview, lines205–207",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "路透社報道淘寶及天貓提供AI商品研究、試穿及尋優惠工具。",
+          "evidence_locator": "Platform examples, line177",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        },
+        {
+          "claim_zh": "京東稱購物助手Dongdong有雙11顧客查詢。",
+          "evidence_locator": "JD statement, line198",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        },
+        {
+          "claim_zh": "路透社訪問一名使用淘寶虛擬試穿的消費者。",
+          "evidence_locator": "Beijing shopper interview, lines205–207",
+          "support_url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-shopping-festival-puts-ai-selling-power-test-2026-11-11/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "source_reopen_reference": "turn98view6 and turn109view0",
+        "finding": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims."
+      },
+      "review_notes": "Reuters original reporting with shopper interview. Kept feature and use observations. Omitted company usage multiples, third-party purchase shares and causal claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-kochava",
+      "title_zh": "Kochava推出AIM Essentials，利用歷史資料分析媒體組合",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "publisher": "Kochava / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Launch paragraph, lines55–59 / Hierarchical Bayesian model paragraph, line68 / Model outputs, line68 / Availability paragraph, line71",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Kochava宣布推出AIM Essentials。",
+          "evidence_locator": "Launch paragraph, lines55–59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "模型分析一至兩年逐日事件及媒體支出。",
+          "evidence_locator": "Hierarchical Bayesian model paragraph, line68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "輸出包括支出反應曲線和投資建議摘要。",
+          "evidence_locator": "Model outputs, line68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "公司稱Essentials已全球開放。",
+          "evidence_locator": "Availability paragraph, line71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Kochava宣布推出AIM Essentials。",
+          "evidence_locator": "Launch paragraph, lines55–59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "模型分析一至兩年逐日事件及媒體支出。",
+          "evidence_locator": "Hierarchical Bayesian model paragraph, line68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "輸出包括支出反應曲線和投資建議摘要。",
+          "evidence_locator": "Model outputs, line68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        },
+        {
+          "claim_zh": "公司稱Essentials已全球開放。",
+          "evidence_locator": "Availability paragraph, line71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/11/3400980/0/en/kochava-launches-aim-essentials-to-deliver-turnkey-marketing-mix-modeling-in-weeks.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:05:54+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+        "source_reopen_reference": "turn97view2, turn101view2 and turn104view1",
+        "finding": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims."
+      },
+      "review_notes": "Company launch announcement. Kept declared input data and model outputs. Removed vendor speed, causal certainty and performance claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-12-gopuff",
+      "title_zh": "Gopuff接入Grok Bot，讓顧客在對話內確認雜貨訂單",
+      "source_story_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+      "published_article_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "publisher": "Gopuff / Business Wire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Issuer release dateline and opening paragraph / How to connect, step 2 / How to connect, step 3 and next paragraph",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Canonical Business Wire page unavailable. Full original issuer release read via indexed Yahoo and NEWSnet syndications and cross-checked with reopened direct reporting.",
+          "limitations": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Gopuff推出Grok Bot購物接入。",
+          "evidence_locator": "Issuer release dateline and opening paragraph",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        },
+        {
+          "claim_zh": "使用者須登入或建立Gopuff帳戶。",
+          "evidence_locator": "How to connect, step 2",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        },
+        {
+          "claim_zh": "可在對話中檢查購物車、選付款方式並確認訂單。",
+          "evidence_locator": "How to connect, step 3 and next paragraph",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Gopuff推出Grok Bot購物接入。",
+          "evidence_locator": "Issuer release dateline and opening paragraph",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        },
+        {
+          "claim_zh": "使用者須登入或建立Gopuff帳戶。",
+          "evidence_locator": "How to connect, step 2",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        },
+        {
+          "claim_zh": "可在對話中檢查購物車、選付款方式並確認訂單。",
+          "evidence_locator": "How to connect, step 3 and next paragraph",
+          "support_url": "https://finance.yahoo.com/technology/articles/gopuff-launches-first-fully-integrated-140000650.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "source_reopen_reference": "turn107search0, turn112search0, turn112search1 and direct report turn100view2 / turn103view1",
+        "finding": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography."
+      },
+      "review_notes": "Business Wire direct URL unavailable. Read full issuer copy via indexed syndications and separately reopened direct reporting. Omitted exclusivity, delivery speed, accuracy and assumed geography.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 23,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 10,
+        "total": 88
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-seoul",
+      "title_zh": "首爾旅遊把K-pop宣傳片帶到海外七城戶外版位",
+      "source_story_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+      "published_article_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+      "source_date_display": "11月10日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-10",
+      "source_documents": [
+        {
+          "url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "publisher": "Seoul Tourism Organization",
+          "source_class": "A",
+          "source_publication_date": "2026-11-10",
+          "evidence_locator": "Official release, lines138,146–154 / Market list, lines146–150 / Official release, lines151–153",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "首爾市與首爾觀光財團把Absolutely in Seoul擴展至海外戶外廣告。",
+          "evidence_locator": "Official release, lines138,146–154",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        },
+        {
+          "claim_zh": "活動安排覆蓋紐約、東京、北京、上海、台北、曼谷和雅加達。",
+          "evidence_locator": "Market list, lines146–150",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        },
+        {
+          "claim_zh": "素材由aespa成員Karina、Winter及RIIZE參與。",
+          "evidence_locator": "Official release, lines151–153",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "首爾市與首爾觀光財團把Absolutely in Seoul擴展至海外戶外廣告。",
+          "evidence_locator": "Official release, lines138,146–154",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        },
+        {
+          "claim_zh": "活動安排覆蓋紐約、東京、北京、上海、台北、曼谷和雅加達。",
+          "evidence_locator": "Market list, lines146–150",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        },
+        {
+          "claim_zh": "素材由aespa成員Karina、Winter及RIIZE參與。",
+          "evidence_locator": "Official release, lines151–153",
+          "support_url": "https://www.sto.or.kr/press/%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A7%88%EC%BC%80%ED%8C%85%ED%8C%80-%EC%84%9C%EC%9A%B8%EA%B4%80%EA%B4%91-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EC%BA%A0%ED%8E%98%EC%9D%B8-%EB%89%B4%EC%9A%95-%ED%83%80%EC%9E%84%EC%8A%A4%ED%80%98%EC%96%B4-%EC%83%81%EB%A5%99%E2%80%A6%EC%84%B8%EA%B3%84-7%EA%B0%9C-%EB%8F%84%EC%8B%9C%EC%84%9C-%EC%84%9C%EC%9A%B8-%EC%8B%A0%EB%93%9C%EB%A1%AC-%ED%99%95%EC%82%B0_/16815",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "source_reopen_reference": "turn100view0, turn103view0 and turn100view1",
+        "finding": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in."
+      },
+      "review_notes": "New development is outdoor extension disclosed Nov10, not the original September campaign launch. The NYC and Tokyo placements were already running. Other cities phase in.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-fireflies",
+      "title_zh": "Fireflies公布新版Fred，把會議記錄延伸至跟進工作",
+      "source_story_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+      "published_article_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "publisher": "Fireflies.ai / GlobeNewswire",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Issuer dateline and opening, lines55–58 / FredBots and AI Skills bullet, line81 / Pricing and Availability, lines104–107",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Fireflies公布新版Fred。",
+          "evidence_locator": "Issuer dateline and opening, lines55–58",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        },
+        {
+          "claim_zh": "FredBots可承接定期工作，例如整理客戶回饋。",
+          "evidence_locator": "FredBots and AI Skills bullet, line81",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        },
+        {
+          "claim_zh": "部分功能分階段推出，Scheduler及Clips稍後逐步開放。",
+          "evidence_locator": "Pricing and Availability, lines104–107",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Fireflies公布新版Fred。",
+          "evidence_locator": "Issuer dateline and opening, lines55–58",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        },
+        {
+          "claim_zh": "FredBots可承接定期工作，例如整理客戶回饋。",
+          "evidence_locator": "FredBots and AI Skills bullet, line81",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        },
+        {
+          "claim_zh": "部分功能分階段推出，Scheduler及Clips稍後逐步開放。",
+          "evidence_locator": "Pricing and Availability, lines104–107",
+          "support_url": "https://rss.globenewswire.com/news-release/2026/11/11/3400748/0/en/fireflies-ai-evolves-from-ai-notetaker-to-ai-teammate-in-its-most-significant-expansion-to-date.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:05:54+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:05:54+08:00",
+        "source_reopen_reference": "turn98view1, turn101view4 and turn104view3",
+        "finding": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics."
+      },
+      "review_notes": "Announcement separates launch of experience from progressive rollout. Hardware is a preview; excluded from brief. No productivity or usage metrics.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-12-cdn",
+      "title_zh": "Google提醒網站切換CDN時先預熱大促頁面",
+      "source_story_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+      "published_article_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "publisher": "Google Search Central",
+          "source_class": "A",
+          "source_publication_date": "2026-11-11",
+          "evidence_locator": "Crawl capacity discussion, lines974–979 / Cache miss explanation, lines980–983 / Migration plan, line1003",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+          "access_method": "Full text opened and separately reopened to challenge material claims.",
+          "limitations": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Google指出更快的回應可讓搜尋爬蟲提高抓取速度。",
+          "evidence_locator": "Crawl capacity discussion, lines974–979",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        },
+        {
+          "claim_zh": "切換初期未快取的網址仍會請求原站。",
+          "evidence_locator": "Cache miss explanation, lines980–983",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        },
+        {
+          "claim_zh": "Google建議先預熱高流量及常被抓取的頁面。",
+          "evidence_locator": "Migration plan, line1003",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Google指出更快的回應可讓搜尋爬蟲提高抓取速度。",
+          "evidence_locator": "Crawl capacity discussion, lines974–979",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        },
+        {
+          "claim_zh": "切換初期未快取的網址仍會請求原站。",
+          "evidence_locator": "Cache miss explanation, lines980–983",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        },
+        {
+          "claim_zh": "Google建議先預熱高流量及常被抓取的頁面。",
+          "evidence_locator": "Migration plan, line1003",
+          "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "independent_review": {
+        "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "source_reopen_reference": "turn98view5, turn100view4, turn103view2 and turn105view1",
+        "finding": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      },
+      "review_notes": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 19,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    }
+  ]
+}
