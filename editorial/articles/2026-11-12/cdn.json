@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-11-12",
+  "state": "APPROVED",
+  "article": {
+    "title": "Google提醒網站切換CDN時先預熱大促頁面",
+    "title_en": "Google advises warming key promotion pages before a CDN migration",
+    "summary": "Google指出，新CDN的快取未建立時，抓取量增加仍可能讓原站承受額外流量。",
+    "summary_en": "Google says rising crawler traffic can still hit the origin while a new CDN cache is empty.",
+    "highlights": [
+      "更快的邊緣回應可提高搜尋爬蟲的抓取速度。",
+      "Google建議先為高流量及常被抓取的頁面建立快取。"
+    ],
+    "highlights_en": [
+      "Faster edge responses can increase crawl rate.",
+      "Google recommends warming frequently visited and crawled pages first."
+    ],
+    "why": "大促期間改動網站基礎設施，可能同時影響顧客進站和搜尋引擎抓取商品頁。",
+    "why_en": "A migration during a promotion can affect both customer visits and search crawling of product pages.",
+    "next_step": "與技術團隊列出重點商品和活動網址，切換前受控預熱，切換後查看原站與爬蟲記錄。",
+    "next_step_en": "List priority product and campaign URLs with engineering. Warm them at a controlled pace and review origin and crawler logs.",
+    "detail": "內容傳遞網路會把可快取內容放到靠近訪客的節點。新節點首次收到未快取的網址時，仍要回到原站取資料。Google建議先處理高流量及常被抓取的頁面，並提醒通用機械人挑戰有機會擋住已驗證的搜尋爬蟲。品牌可把重點頁面、原站負載及抓取狀態列入大促切換清單。",
+    "detail_en": "A content delivery network serves cached material near users. When a new edge receives an uncached URL, it must fetch from the origin. Google recommends warming busy pages and warns that blanket bot challenges can block verified search crawlers. Include key pages, origin load and crawl status in promotion cutover checks.",
+    "source": "Google Search Central",
+    "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+    "time": "11月11日",
+    "section": "即學技巧 & 玩法",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Ready to Use",
+    "source_kind": "official",
+    "editorial_slug": "cdn"
+  },
+  "evidence": {
+    "story_id": "2026-11-12-cdn",
+    "title_zh": "Google提醒網站切換CDN時先預熱大促頁面",
+    "source_story_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+    "published_article_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+    "source_date_display": "11月11日",
+    "event_date": "2026-11-11",
+    "first_published_date": "2026-11-11",
+    "source_documents": [
+      {
+        "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "publisher": "Google Search Central",
+        "source_class": "A",
+        "source_publication_date": "2026-11-11",
+        "evidence_locator": "Crawl capacity discussion, lines974–979 / Cache miss explanation, lines980–983 / Migration plan, line1003",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+        "access_method": "Full text opened and separately reopened to challenge material claims.",
+        "limitations": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Google指出更快的回應可讓搜尋爬蟲提高抓取速度。",
+        "evidence_locator": "Crawl capacity discussion, lines974–979",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      },
+      {
+        "claim_zh": "切換初期未快取的網址仍會請求原站。",
+        "evidence_locator": "Cache miss explanation, lines980–983",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      },
+      {
+        "claim_zh": "Google建議先預熱高流量及常被抓取的頁面。",
+        "evidence_locator": "Migration plan, line1003",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Google指出更快的回應可讓搜尋爬蟲提高抓取速度。",
+        "evidence_locator": "Crawl capacity discussion, lines974–979",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      },
+      {
+        "claim_zh": "切換初期未快取的網址仍會請求原站。",
+        "evidence_locator": "Cache miss explanation, lines980–983",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      },
+      {
+        "claim_zh": "Google建議先預熱高流量及常被抓取的頁面。",
+        "evidence_locator": "Migration plan, line1003",
+        "support_url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-12T07:08:21+08:00",
+    "independent_review": {
+      "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-12T07:08:21+08:00",
+      "source_reopen_reference": "turn98view5, turn100view4, turn103view2 and turn105view1",
+      "finding": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure."
+    },
+    "review_notes": "Official migration guidance for a CDN, not a ranking change or guarantee. Specific operational advice scoped to sites' own infrastructure.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 20,
+      "actionability": 19,
+      "market_relevance": 10,
+      "novelty": 8,
+      "total": 84
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://developers.google.com/search/blog/2026/11/crawling-cdn",
+    "title_zh_hant": "Google提醒網站切換CDN時先預熱大促頁面",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "简体用“内容分发网络、缓存预热、源站、搜索爬虫”。保留网站迁移情境，不写成搜索排名更新或流量保证。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
