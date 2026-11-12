@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-13",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://openai.com/index/introducing-businesses-chatgpt/?type=AI",
+      "title_zh_hant": "OpenAI試推ChatGPT商家中心，美國合資格商戶可設品牌代理",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“商家中心、认领资料、品牌智能体”。保留测试阶段及美国电商和在线服务企业的资格范围，并区分数据门槛和地区资格。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/11/3400455/0/en/hktb-spreads-seasonal-joy-with-biggest-ever-hong-kong-winterfest.html",
+      "title_zh_hant": "香港冬日節聯動三區活動與逾百項商戶優惠",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“香港旅游发展局、商圈、二维码”。保留计划日期和分区启动安排，优惠限指定商户、支付条件和供应，避免写成全部商户通用。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "title_zh_hant": "Google推Gemini Decisions API，可批次分類廣告素材",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“多模态输入、分类题、选项分数”。保留同一输入及独立问题限制，免费范围只指原型试用，分类分数须经团队验证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3401689/0/en/scrunch-launches-citation-optimization-to-help-brands-influence-the-sources-behind-ai-recommendations.html",
+      "title_zh_hant": "更進新聞：Scrunch列出AI引用來源，協助擬定媒體聯絡內容",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“第三方引用页、联络文案、优先级”。保留品牌数据供MarketingIQ参考的关系，联络功能和引用结果分开表述。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.reuters.com/business/retail-consumer/chinas-singles-day-sales-rise-48-178-trillion-ai-takes-larger-role-2026-11-12/",
+      "title_zh_hant": "中國雙11收官，Syntun估主要平台銷售增4.8%",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“促销期、商品交易总额、按年增长”。保留星图估算的来源和时间口径，不引用标题中币种有误的绝对金额，不归因于AI。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks",
+      "title_zh_hant": "更進新聞：Adobe展示跨鏡頭剪輯原型，兩項影像工具可試",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“跨镜头修改、研发原型、试用”。Scene Sweep保留展示阶段，明确两项可体验的影像功能，并与上一期的创意智能体区分。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3402004/0/en/agent-inbox-for-meta-ads-the-ads-uploader-mcp-can-now-analyze-edit-and-launch-with-approval-wherever-you-want-it.html",
+      "title_zh_hant": "Ads Uploader為Meta廣告代理加入可配置審批",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“广告账户、代理审批、部分批准”。保留发布和修改可独立设置，只有启用审批的操作才需人工确认，并指明第三方工具。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/from-ai-native-advertising-to-marketing-system-delivery-bluemedia-launches-partnership-with-chatgpt-ads-302937611.html",
+      "title_zh_hant": "BlueMedia公布面向中國出海品牌的ChatGPT Ads服務",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“出海、落地页、投放监测”。所有服务与首批投放归因于BlueMedia，不推断投放地区、平台全面开放或未经核实的广告效果。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/12/3401300/0/en/zepic-launches-neura-an-agentic-conversational-storefront-for-consumer-brands.html",
+      "title_zh_hant": "ZEPIC公布Neura，把廣告入口接到購物對話",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“对话式购物、商家资料、人工客服”。保留入口与系统接入限制，将库存查询和转接写为公司描述的使用情境。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.nsk.com/jp-ja/company/news/2026/wednesday-campanella-20261109/",
+      "title_zh_hant": "日本精工以音樂及機械動作重塑工業品牌形象",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“日本精工、轴承、解决方案伙伴”。保留艺人名诗羽和原广告英文主题，原文页面日期为11月10日，品牌定位按企业意图表达。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
