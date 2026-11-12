@@ -1,0 +1,144 @@
+{
+  "edition_date_hkt": "2026-11-13",
+  "state": "APPROVED",
+  "article": {
+    "title": "Google推Gemini Decisions API，可批次分類廣告素材",
+    "summary": "Google的新端點可對同一份多模態素材回答多道預設問題，並回傳選項分數。",
+    "highlights": [
+      "每次請求最多處理1,000道獨立問題。",
+      "可經Google AI Studio免費試做原型。"
+    ],
+    "why": "創意和媒體團隊可用一致問題標記素材，並把模糊結果送交人工審閱。",
+    "next_step": "選一批已標記的廣告素材，先比較自動分類與人工分類的差異。",
+    "detail": "Google表示Gemini Decisions API會在一次處理內對同一份多模態輸入回答多道分類問題，並對選項給分。團隊可用固定的素材標籤試做分類，例如檢查品牌標誌是否出現或素材屬於哪個創意主題。分數是否適合做發布門檻，應先用已有人手標記的素材驗證，並為不確定個案保留人工覆核。",
+    "title_en": "Google launches Gemini Decisions API for batch creative classification",
+    "summary_en": "Google's new endpoint can ask multiple predefined questions about the same multimodal input and return scores for the choices.",
+    "highlights_en": [
+      "A request can contain up to 1,000 independent questions.",
+      "Teams can prototype at no cost in Google AI Studio."
+    ],
+    "why_en": "Creative and media teams can use consistent labels and route ambiguous assets to reviewers.",
+    "next_step_en": "Start with labeled ads and compare automated classification with human labels.",
+    "detail_en": "Google says Gemini Decisions API evaluates multiple classification questions about one multimodal input in a single pass and scores the choices. Teams can try fixed creative tags such as logo presence or campaign theme. Validate scores against human-labeled assets before setting a publishing threshold and keep manual review for ambiguous cases.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "time": "11月11日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Use Now",
+    "source_kind": "official",
+    "editorial_slug": "gemini"
+  },
+  "evidence": {
+    "story_id": "2026-11-13-gemini",
+    "title_zh": "Google推Gemini Decisions API，可批次分類廣告素材",
+    "source_story_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "published_article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "source_date_display": "11月11日",
+    "event_date": "2026-11-11",
+    "first_published_date": "2026-11-11",
+    "source_documents": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "publisher": "Google",
+        "source_class": "A",
+        "source_publication_date": "2026-11-11",
+        "evidence_locator": "Introducing Gemini Decisions API, lines 249–254 / Single-pass classification description, lines 250–254 / Try Gemini Decisions API, lines 320–325",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-13T07:10:23+08:00",
+        "access_method": "Read source and separately reopened it to challenge material claims.",
+        "limitations": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "同一份多模態輸入可在一次處理中回答多項分類題。",
+        "evidence_locator": "Introducing Gemini Decisions API, lines 249–254",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      },
+      {
+        "claim_zh": "每次請求最多可有1,000道獨立問題。",
+        "evidence_locator": "Single-pass classification description, lines 250–254",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      },
+      {
+        "claim_zh": "Google提供Google AI Studio的免費原型試用。",
+        "evidence_locator": "Try Gemini Decisions API, lines 320–325",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "同一份多模態輸入可在一次處理中回答多項分類題。",
+        "evidence_locator": "Introducing Gemini Decisions API, lines 249–254",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      },
+      {
+        "claim_zh": "每次請求最多可有1,000道獨立問題。",
+        "evidence_locator": "Single-pass classification description, lines 250–254",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      },
+      {
+        "claim_zh": "Google提供Google AI Studio的免費原型試用。",
+        "evidence_locator": "Try Gemini Decisions API, lines 320–325",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-13T07:10:23+08:00",
+    "independent_review": {
+      "method": "Same assistant separately retrieved source and checked dates, material claims and rollout scope. No separate reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-13T07:10:23+08:00",
+      "source_reopen_reference": "turn120view1; reopened turn121view3 and turn125view1",
+      "finding": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data."
+    },
+    "review_notes": "Classification endpoint and no-cost prototyping are announced by Google. No cost or latency benchmark used. Scores require validation on the team's own data.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 22,
+      "actionability": 19,
+      "market_relevance": 13,
+      "novelty": 10,
+      "total": 91
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "title_zh_hant": "Google推Gemini Decisions API，可批次分類廣告素材",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers"
+    ],
+    "simplified_editorial_note": "简体用“多模态输入、分类题、选项分数”。保留同一输入及独立问题限制，免费范围只指原型试用，分类分数须经团队验证。",
+    "decision": "approved_for_ai_assisted_localization"
+  }
+}
