@@ -1,10 +1,10 @@
 {
   "edition_date_hkt": "2026-11-13",
   "main_sha_at_start": "aa6ddc7f890f234f45b282fbd638d6c6ede59193",
-  "status": "IN_PROGRESS",
+  "status": "editorial_approved",
   "discovery_count": 22,
   "approved_count": 10,
-  "held_count": 0,
+  "held_count": 2,
   "items": [
     {
       "slug": "chatgpt",
@@ -74,9 +74,8 @@
       "title": "New Engen Introduces Bakery, an AI-Powered Platform to Scale Performance Creative",
       "source_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/New-Engen-Introduces-Bakery-an-AI-Powered-Platform-to-Scale-Performance-Creative.html",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "processing": "selected",
-      "next_action": "Verify original date, claims and scope. Reopen and complete editorial review."
+      "state": "HELD",
+      "next_action": "Wire full text failed on reopen. Find a full issuer copy or direct report confirming substantive features and access scope."
     },
     {
       "slug": "nsk",
@@ -92,9 +91,8 @@
       "title": "Motom Sets a New Standard for Brand-and-Retailer-Owned Creator Commerce Programs with Launch of Opportunities",
       "source_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "processing": "selected",
-      "next_action": "Verify original date, claims and scope. Reopen and complete editorial review."
+      "state": "HELD",
+      "next_action": "Primary page and issuer mirrors could not be opened. Find a full issuer copy or direct report for the same launch."
     },
     {
       "slug": "china-close",
@@ -209,5 +207,7 @@
     "exclusions": [
       "HKTVmall MATRADE and Sitecore MarketingIQ already published Nov 12. Adobe Sneaks and Scrunch Citation Optimization are distinct follow-ups, subject to verification."
     ]
-  }
+  },
+  "next_action": "Submit the approved edition to main and verify the resulting GitHub Actions run.",
+  "edition_packet_path": "editorial/editions/2026-11-13.json"
 }
