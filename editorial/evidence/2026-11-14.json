@@ -1,0 +1,994 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-14",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-14T07:08:20+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Issuer announcements and dated direct reports read and separately reopened. Scope and eligibility retained. No separate human review or product testing.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-14-wallet",
+      "title_zh": "更進新聞：OpenAI試推ChatGPT Wallet，代理付款須逐筆確認",
+      "source_story_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "published_article_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "source_date_display": "11月13日",
+      "event_date": "2026-11-13",
+      "first_published_date": "2026-11-13",
+      "source_documents": [
+        {
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "publisher": "OpenAI",
+          "evidence_locator": "Availability, line 74 / How a purchase works, lines 39–43 / Payment and fulfilment, lines 44–45",
+          "source_publication_date": "2026-11-13",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "ChatGPT Wallet先在dots分階段開放予持有合資格美國發卡卡片的成年美國Pro用戶。",
+          "evidence_locator": "Availability, line 74",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        },
+        {
+          "claim_zh": "每次付款前須查看商品、金額和卡片，並通過安全確認。",
+          "evidence_locator": "How a purchase works, lines 39–43",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        },
+        {
+          "claim_zh": "付款網絡以代碼替代實際卡資料，商戶保留履約和退貨責任。",
+          "evidence_locator": "Payment and fulfilment, lines 44–45",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "ChatGPT Wallet先在dots分階段開放予持有合資格美國發卡卡片的成年美國Pro用戶。",
+          "evidence_locator": "Availability, line 74",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        },
+        {
+          "claim_zh": "每次付款前須查看商品、金額和卡片，並通過安全確認。",
+          "evidence_locator": "How a purchase works, lines 39–43",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        },
+        {
+          "claim_zh": "付款網絡以代碼替代實際卡資料，商戶保留履約和退貨責任。",
+          "evidence_locator": "Payment and fulfilment, lines 44–45",
+          "support_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:08:20+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+        "source_reopen_reference": "turn142view4; reopened turn147view0 and turn148view0; Reuters turn141view2",
+        "finding": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted."
+      },
+      "review_notes": "Starts in dots for eligible US Pro subscribers aged 18+ with eligible US-issued cards; each purchase needs approval. Future full delegation omitted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 94
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-13.html"
+    },
+    {
+      "story_id": "2026-11-14-tiger-ooh",
+      "title_zh": "Tiger Brokers新加坡戶外廣告試用三個AI代理，人員保留審批",
+      "source_story_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+      "published_article_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-03",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "publisher": "Adzymic",
+          "evidence_locator": "Pilot footprint, lines 69–74 / From Campaign Brief to Live Screens, lines 86–92 / Human oversight, lines 92–94",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "合作方公布在新加坡逾260塊數碼屏幕投放試點。",
+          "evidence_locator": "Pilot footprint, lines 69–74",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        },
+        {
+          "claim_zh": "三個代理分別協助媒體規劃、審視版位及調整素材。",
+          "evidence_locator": "From Campaign Brief to Live Screens, lines 86–92",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        },
+        {
+          "claim_zh": "品牌及媒體方人員保留媒體計劃、素材及上線檢查。",
+          "evidence_locator": "Human oversight, lines 92–94",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "合作方公布在新加坡逾260塊數碼屏幕投放試點。",
+          "evidence_locator": "Pilot footprint, lines 69–74",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        },
+        {
+          "claim_zh": "三個代理分別協助媒體規劃、審視版位及調整素材。",
+          "evidence_locator": "From Campaign Brief to Live Screens, lines 86–92",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        },
+        {
+          "claim_zh": "品牌及媒體方人員保留媒體計劃、素材及上線檢查。",
+          "evidence_locator": "Human oversight, lines 92–94",
+          "support_url": "https://www.adzymic.co/blog/asia-first-agentic-ooh-campaign-tiger-brokers-stellar-ace-adzymic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+        "source_reopen_reference": "turn138view0; reopened turn142view2",
+        "finding": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims."
+      },
+      "review_notes": "Singapore completed pilot was disclosed November 12. Participants retained approvals. Exclude regional first and performance claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-fliggy",
+      "title_zh": "更進新聞：飛豬雙11旅遊促銷，已履約商品成交額按年增60%",
+      "source_story_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+      "published_article_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "publisher": "Xinhua Finance",
+          "evidence_locator": "Xinhua Finance dateline and Fliggy disclosure, line 53 / Fliggy disclosure, lines 53, 61 / Promotion scope, line 53",
+          "source_publication_date": "2026-11-12",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "飛豬稱雙11活動商品履約成交總額按年增60%。",
+          "evidence_locator": "Xinhua Finance dateline and Fliggy disclosure, line 53",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        },
+        {
+          "claim_zh": "平台公布交易用戶數按年增41%。",
+          "evidence_locator": "Fliggy disclosure, lines 53, 61",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        },
+        {
+          "claim_zh": "活動以預購後預約的旅遊套票為主。",
+          "evidence_locator": "Promotion scope, line 53",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "飛豬稱雙11活動商品履約成交總額按年增60%。",
+          "evidence_locator": "Xinhua Finance dateline and Fliggy disclosure, line 53",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        },
+        {
+          "claim_zh": "平台公布交易用戶數按年增41%。",
+          "evidence_locator": "Fliggy disclosure, lines 53, 61",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        },
+        {
+          "claim_zh": "活動以預購後預約的旅遊套票為主。",
+          "evidence_locator": "Promotion scope, line 53",
+          "support_url": "https://finance.eastmoney.com/a/202611123929654886.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:08:20+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+        "source_reopen_reference": "turn143view1; reopened turn146view1; direct same-event turn138view2",
+        "finding": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition."
+      },
+      "review_notes": "Company-reported platform promotion data via Xinhua Finance, not marketwide, revenue or AI attribution. Follow-up release preceded prior edition.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-13.html"
+    },
+    {
+      "story_id": "2026-11-14-cosmos",
+      "title_zh": "TME live把BIGBANG香港演唱會延伸至山頂及市區",
+      "source_story_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+      "published_article_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "publisher": "Tencent Music Entertainment",
+          "evidence_locator": "Programme overview, lines 404–406 / Memorial Space and photo spots, lines 405–407 / Media exhibition schedule, line 409",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "TME及合作方把COSMOS演唱會主題延伸至香港不同場地。",
+          "evidence_locator": "Programme overview, lines 404–406",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        },
+        {
+          "claim_zh": "山頂廣場設周年紀念空間，市內指定地標設打卡點。",
+          "evidence_locator": "Memorial Space and photo spots, lines 405–407",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        },
+        {
+          "claim_zh": "主辦方另安排沉浸式展覽，內容包括媒體藝術及互動體驗。",
+          "evidence_locator": "Media exhibition schedule, line 409",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "TME及合作方把COSMOS演唱會主題延伸至香港不同場地。",
+          "evidence_locator": "Programme overview, lines 404–406",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        },
+        {
+          "claim_zh": "山頂廣場設周年紀念空間，市內指定地標設打卡點。",
+          "evidence_locator": "Memorial Space and photo spots, lines 405–407",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        },
+        {
+          "claim_zh": "主辦方另安排沉浸式展覽，內容包括媒體藝術及互動體驗。",
+          "evidence_locator": "Media exhibition schedule, line 409",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/the-countdown-is-on-tme-live-teams-up-with-bigbang-to-bring-the-cosmos-universe-to-life-across-hong-kong-302937679.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:08:20+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+        "source_reopen_reference": "turn140view3; reopened turn146view0 and turn149view2",
+        "finding": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects."
+      },
+      "review_notes": "Issuer citywide activity schedule. Keep planned exhibition separate from existing locations; no attendance or sales effects.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 88
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-iterable",
+      "title_zh": "Iterable公布託管連接器，讓行銷團隊在AI工具籌備活動",
+      "source_story_url": "https://iterable.com/blog/winter-2026-product-launch/",
+      "published_article_url": "https://iterable.com/blog/winter-2026-product-launch/",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://iterable.com/blog/winter-2026-product-launch/",
+          "publisher": "Iterable",
+          "evidence_locator": "Hosted MCP, lines 684–688 / Hosted MCP authentication, lines 688, 753–755 / Trial FAQ, lines 228–246",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        },
+        {
+          "url": "https://community.iterable.com/p/winter2026productrelease",
+          "publisher": "Iterable Community",
+          "evidence_locator": "Trial and access FAQ, lines 228–246",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "託管連接器支援Claude、ChatGPT及Cursor。",
+          "evidence_locator": "Hosted MCP, lines 684–688",
+          "support_url": "https://iterable.com/blog/winter-2026-product-launch/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        },
+        {
+          "claim_zh": "接入沿用個人登入和既有角色權限。",
+          "evidence_locator": "Hosted MCP authentication, lines 688, 753–755",
+          "support_url": "https://iterable.com/blog/winter-2026-product-launch/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        },
+        {
+          "claim_zh": "託管連接器現階段可向客戶經理查詢試用。",
+          "evidence_locator": "Trial FAQ, lines 228–246",
+          "support_url": "https://community.iterable.com/p/winter2026productrelease",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "託管連接器支援Claude、ChatGPT及Cursor。",
+          "evidence_locator": "Hosted MCP, lines 684–688",
+          "support_url": "https://iterable.com/blog/winter-2026-product-launch/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        },
+        {
+          "claim_zh": "接入沿用個人登入和既有角色權限。",
+          "evidence_locator": "Hosted MCP authentication, lines 688, 753–755",
+          "support_url": "https://iterable.com/blog/winter-2026-product-launch/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        },
+        {
+          "claim_zh": "託管連接器現階段可向客戶經理查詢試用。",
+          "evidence_locator": "Trial FAQ, lines 228–246",
+          "support_url": "https://community.iterable.com/p/winter2026productrelease",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+        "source_reopen_reference": "turn140view1 and turn140view5; reopened turn142view1 and turn147view4",
+        "finding": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout."
+      },
+      "review_notes": "Hosted connector is in trial via account representative. Individual permissions remain. Do not conflate with wider Winter rollout.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-basis",
+      "title_zh": "Basis擴展Compass，把媒體研究和投放紀錄帶進規劃",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "publisher": "Basis",
+          "evidence_locator": "Historical Performance Intelligence, line 67 / Third-Party Research, line 66 / MCP Server, line 70",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Compass可將過往跨渠道投放表現納入策略建議。",
+          "evidence_locator": "Historical Performance Intelligence, line 67",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        },
+        {
+          "claim_zh": "客戶可接入指定第三方研究，首批包括Morning Consult。",
+          "evidence_locator": "Third-Party Research, line 66",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        },
+        {
+          "claim_zh": "MCP可供客戶在外部代理讀寫部分策劃及投放功能。",
+          "evidence_locator": "MCP Server, line 70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Compass可將過往跨渠道投放表現納入策略建議。",
+          "evidence_locator": "Historical Performance Intelligence, line 67",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        },
+        {
+          "claim_zh": "客戶可接入指定第三方研究，首批包括Morning Consult。",
+          "evidence_locator": "Third-Party Research, line 66",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        },
+        {
+          "claim_zh": "MCP可供客戶在外部代理讀寫部分策劃及投放功能。",
+          "evidence_locator": "MCP Server, line 70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401639/0/en/basis-expands-ai-capabilities-to-power-intelligence-automation-and-governance-across-advertising.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+        "source_reopen_reference": "turn142view6; reopened turn147view2",
+        "finding": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted."
+      },
+      "review_notes": "Existing customers and supported capabilities only. Morning Consult requires customer credentials. Performance improvement omitted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-inko",
+      "title_zh": "DomoAI推出InkoAI Agent，影片可逐步審稿",
+      "source_story_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+      "source_date_display": "11月13日",
+      "event_date": "2026-11-13",
+      "first_published_date": "2026-11-13",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "publisher": "DomoAI",
+          "evidence_locator": "Issuer dateline and overview, lines 124–128 / Workflow and approval bullets, lines 130–135 / Availability and roadmap, line 143",
+          "source_publication_date": "2026-11-13",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "DomoAI公布在同一對話管理影像和影片工作流程。",
+          "evidence_locator": "Issuer dateline and overview, lines 124–128",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        },
+        {
+          "claim_zh": "短劇及動畫等流程可分階段審閱劇本、角色和鏡頭。",
+          "evidence_locator": "Workflow and approval bullets, lines 130–135",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        },
+        {
+          "claim_zh": "由商品連結或相片製作影片廣告仍屬計劃。",
+          "evidence_locator": "Availability and roadmap, line 143",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "DomoAI公布在同一對話管理影像和影片工作流程。",
+          "evidence_locator": "Issuer dateline and overview, lines 124–128",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        },
+        {
+          "claim_zh": "短劇及動畫等流程可分階段審閱劇本、角色和鏡頭。",
+          "evidence_locator": "Workflow and approval bullets, lines 130–135",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        },
+        {
+          "claim_zh": "由商品連結或相片製作影片廣告仍屬計劃。",
+          "evidence_locator": "Availability and roadmap, line 143",
+          "support_url": "https://en.prnasia.com/releases/apac/domoai-launches-inkoai-agent-one-sentence-to-ready-to-post-video-556217.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+        "source_reopen_reference": "turn140view4; reopened turn142view3",
+        "finding": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license."
+      },
+      "review_notes": "Issuer availability announcement. Product-link ad skills are planned. No claim of quality, unrestricted usage or license.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 19,
+        "market_relevance": 14,
+        "novelty": 9,
+        "total": 89
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-14-bakery",
+      "title_zh": "New Engen公布內部AI工具Bakery，把投放數據接入創意簡報",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "publisher": "New Engen",
+          "evidence_locator": "Dateline and rollout, lines 55–60 / Performance-informed ideation, lines 65–69 / Feature list and roadmap, lines 69–74",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Bakery由Donut Studios開發，已用於New Engen的創意製作。",
+          "evidence_locator": "Dateline and rollout, lines 55–60",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        },
+        {
+          "claim_zh": "團隊可搜尋過往表現較佳的創意概念。",
+          "evidence_locator": "Performance-informed ideation, lines 65–69",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        },
+        {
+          "claim_zh": "平台協助整理簡報和編寫腳本，選角接入屬計劃。",
+          "evidence_locator": "Feature list and roadmap, lines 69–74",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Bakery由Donut Studios開發，已用於New Engen的創意製作。",
+          "evidence_locator": "Dateline and rollout, lines 55–60",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        },
+        {
+          "claim_zh": "團隊可搜尋過往表現較佳的創意概念。",
+          "evidence_locator": "Performance-informed ideation, lines 65–69",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        },
+        {
+          "claim_zh": "平台協助整理簡報和編寫腳本，選角接入屬計劃。",
+          "evidence_locator": "Feature list and roadmap, lines 69–74",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/12/3401664/0/en/new-engen-introduces-bakery-an-ai-powered-platform-to-scale-performance-creative.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:06:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:06:25+08:00",
+        "source_reopen_reference": "turn141view3; reopened turn142view0",
+        "finding": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics."
+      },
+      "review_notes": "Issuer release accessible today. Internal agency deployment; external access and pricing unstated. Omit vendor output and performance metrics.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-cision",
+      "title_zh": "Cision開放Brandwatch消費研究的AI接入",
+      "source_story_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "publisher": "Cision",
+          "evidence_locator": "Initial access, line 478 / First release capability list, lines 487–494 / Planned expansion, lines 478, 484",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Cision Intelligence首階段透過Cision MCP接入Brandwatch Consumer Research。",
+          "evidence_locator": "Initial access, line 478",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        },
+        {
+          "claim_zh": "首版提供查詢管理、快速搜尋、摘要和提示。",
+          "evidence_locator": "First release capability list, lines 487–494",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        },
+        {
+          "claim_zh": "搜尋情報及其他產品的整合仍屬計劃。",
+          "evidence_locator": "Planned expansion, lines 478, 484",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Cision Intelligence首階段透過Cision MCP接入Brandwatch Consumer Research。",
+          "evidence_locator": "Initial access, line 478",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        },
+        {
+          "claim_zh": "首版提供查詢管理、快速搜尋、摘要和提示。",
+          "evidence_locator": "First release capability list, lines 487–494",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        },
+        {
+          "claim_zh": "搜尋情報及其他產品的整合仍屬計劃。",
+          "evidence_locator": "Planned expansion, lines 478, 484",
+          "support_url": "https://www.prnewswire.com/news-releases/cision-introduces-ai-powered-cision-intelligence-to-help-brands-see-more-and-act-with-confidence-302936811.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:08:20+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+        "source_reopen_reference": "turn142view5; reopened turn147view1",
+        "finding": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only."
+      },
+      "review_notes": "First release covers Brandwatch Consumer Research agents. Other Cision portfolio integrations are planned. Access through supported tools only.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 85
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-14-ghibli",
+      "title_zh": "新加坡UNIQLO聯乘吉卜力，串連展覽集印與門店換領",
+      "source_story_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+      "published_article_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+      "source_date_display": "11月13日",
+      "event_date": "2026-11-13",
+      "first_published_date": "2026-11-13",
+      "source_documents": [
+        {
+          "url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+          "publisher": "Marketing-Interactive",
+          "evidence_locator": "Official collection introduction, line 7 / Singapore activation, lines 149–156 / Stamp rally, line 157",
+          "source_publication_date": "2026-11-13",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        },
+        {
+          "url": "https://www.uniqlo.com/sg/en/spl/ut/26fw-studio-ghibli",
+          "publisher": "UNIQLO Singapore",
+          "evidence_locator": "Collection theme and visual sources, line 7",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+          "access_method": "Read the full source for its stated claim(s).",
+          "limitations": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability. The official collection page is undated; the dated report establishes the story date."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "新加坡UNIQLO與吉卜力工作室推出新UT系列，主題為LIVE FOR TODAY, MY DEAR。",
+          "evidence_locator": "Official collection introduction, line 7",
+          "support_url": "https://www.uniqlo.com/sg/en/spl/ut/26fw-studio-ghibli",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        },
+        {
+          "claim_zh": "新加坡旗艦店計劃舉辦優先發售活動。",
+          "evidence_locator": "Singapore activation, lines 149–156",
+          "support_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        },
+        {
+          "claim_zh": "品牌計劃與Gardens by the Bay的展覽合作，安排集印後到指定分店換領徽章。",
+          "evidence_locator": "Stamp rally, line 157",
+          "support_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "新加坡UNIQLO與吉卜力工作室推出新UT系列，主題為LIVE FOR TODAY, MY DEAR。",
+          "evidence_locator": "Official collection introduction, line 7",
+          "support_url": "https://www.uniqlo.com/sg/en/spl/ut/26fw-studio-ghibli",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        },
+        {
+          "claim_zh": "新加坡旗艦店計劃舉辦優先發售活動。",
+          "evidence_locator": "Singapore activation, lines 149–156",
+          "support_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        },
+        {
+          "claim_zh": "品牌計劃與Gardens by the Bay的展覽合作，安排集印後到指定分店換領徽章。",
+          "evidence_locator": "Stamp rally, line 157",
+          "support_url": "https://www.marketing-interactive.com/uniqlo-sg-and-studio-ghibli-stitch-together-a-little-magic",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-14T07:08:20+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-14T07:08:20+08:00",
+        "source_reopen_reference": "turn138view1 and official turn143view4; reopened turn149view1 and turn149view0",
+        "finding": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability."
+      },
+      "review_notes": "Singapore plans as reported; official collection confirms theme and visual sources. No inference about Hong Kong, global activations or ticket availability.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 18,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
