@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-15",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://api-docs.deepseek.com/news/news261113/",
+      "title_zh_hant": "DeepSeek向API開放搜尋、檔案和讀取連結功能",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“链接读取、文件输入、按量收费”。保留模型和接口范围，区分模型用量与工具费用，不写成应用本身开源。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+      "title_zh_hant": "更進新聞：Brandlight推出ChatGPT商品型錄匯出與代理指示工具",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“商品目录、品牌智能体、商品数据源”。保留现有客户和OpenAI开放资格约束，区分格式转换与推荐表现。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+      "title_zh_hant": "更進新聞：京東披露雙11眼鏡虛擬試戴及美妝虛擬主播直播",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“虚拟试戴、数字人、售后”。眼镜是试戴扩展类别，兰蔻直播归因于京东披露，不把平台案例写成行业销售结果。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+      "title_zh_hant": "YouArt推出桌面影片代理，把客戶意見連到指定鏡頭",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“桌面端、反馈、镜头、版本”。保留用户授权和人工审稿；读取本地项目不代表数据处理或生成全部在本地。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+      "title_zh_hant": "MCM香港把Monchhichi聯乘延伸至海港城活動",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“海港城、联名、门店预订”。区分香港活动与港澳发售，艺人安排按报道归因，不推断实际出席、到店人数或销售。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+      "title_zh_hant": "Motom公布Opportunities，把創作者活動接到品牌自營店面",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“创作者店铺、赠品合作、归因窗口”。现有客户按计划开放，区分付费与自然销售，不复述供应商披露的转化增幅。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+      "title_zh_hant": "Constant Contact公布Catalyst，小企可審批AI擬定的活動",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“小微企业、早期体验、内容审批”。明确发布前由人批准，产品仍处早期使用阶段，避免承诺增长。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+      "title_zh_hant": "Spangle將商品資料工具獨立開放予企業品牌",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“商品属性、商品数据源、人工审批”。保留企业客户与独立接入范围，不采用第三方导流或销售表现数据。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+      "title_zh_hant": "Fiserv為美國Clover商戶加入AI建站與庫存同步",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“网店、库存同步、商品曝光设置”。保留美国Clover商户范围，功能不推断搜索排名或销售提升。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+      "title_zh_hant": "FocusFuel公布ZAYN合作，以巡演幕後概念設計聯乘套裝",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“联名套装、幕后内容、粉丝体验”。保留投资者兼合作伙伴身份和计划语气，舍弃产品功效及个人使用成效说法。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
