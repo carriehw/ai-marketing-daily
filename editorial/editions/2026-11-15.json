@@ -1,0 +1,1518 @@
+{
+  "packet_version": "1.0",
+  "edition_date_hkt": "2026-11-15",
+  "status": "editorial_approved",
+  "data": {
+    "site_title": "AI・行銷情報",
+    "site_title_en": "AI Marketing Daily",
+    "site_tagline": "AI Marketing Intelligence · HK / CN",
+    "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+    "date": "2026-11-15",
+    "date_display": "2026年11月15日 · 星期日",
+    "date_display_en": "November 15, 2026 · Sunday",
+    "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
+    "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
+    "thesis": "品牌商品資料進入AI問答，先核對來源、規格和審批權",
+    "thesis_en": "As product data moves into AI answers, check sources, specifications and approvals",
+    "thesis_note": "由DeepSeek搜尋到ChatGPT商品型錄，把顧客會問的資料逐項核對，再決定對外開放範圍。",
+    "thesis_note_en": "From DeepSeek search to ChatGPT product feeds, check the details shoppers ask about before deciding what to publish.",
+    "sections": [
+      "AI 大模型 & 市場動態",
+      "廣告平台 & 行銷科技",
+      "創意生產工具",
+      "行業影響 & 品牌案例",
+      "即學技巧 & 玩法"
+    ],
+    "sections_en": [
+      "AI Models & Market Moves",
+      "Ad Platforms & MarTech",
+      "Creative Production Tools",
+      "Industry Impact & Brand Cases",
+      "Tips, Tactics & Tools"
+    ],
+    "items": [
+      {
+        "title": "DeepSeek向API開放搜尋、檔案和讀取連結功能",
+        "summary": "DeepSeek公布，開發者可在V4.1-Flash的支援端點使用應用程式原有的搜尋、檔案及讀取連結功能。",
+        "highlights": [
+          "搜尋可回傳來源，檔案功能支援PDF及其他指定格式。",
+          "延伸工具按用量另外收費。"
+        ],
+        "why": "品牌團隊可把公開產品資料接入問答流程，並評估來源可追溯性和每次查詢成本。",
+        "next_step": "用公開型錄和產品頁試做一組問題，逐題核對引用、回答和工具費用。",
+        "detail": "DeepSeek表示，開發者可從支援端點啟用網頁搜尋、檔案輸入及連結讀取，讓模型以外部資料回答。搜尋等延伸工具用量費在模型用量之外計算。品牌試做產品問答時，可先採用一小批已公開資料，核對引述的內容是否符合原頁，以及每條問題觸發多少工具操作。",
+        "title_en": "DeepSeek brings search, files and link reading to its API",
+        "summary_en": "DeepSeek says developers can use search, file input and link reading from its app through supported V4.1-Flash endpoints.",
+        "highlights_en": [
+          "Search can return citations, and file input supports PDFs and other specified formats.",
+          "Extended tools incur separate usage fees."
+        ],
+        "why_en": "Brand teams can test public product information in a Q&A workflow and assess citations and costs per query.",
+        "next_step_en": "Use a public catalogue and product pages to compare answers, citations and tool costs.",
+        "detail_en": "DeepSeek says developers can enable web search, file input and link reading on supported endpoints so the model can answer with external material. Extended tools incur usage fees in addition to model fees. For product Q&A, start with a small public dataset and check cited material against the original pages and how many tool calls each question triggers.",
+        "source": "DeepSeek",
+        "url": "https://api-docs.deepseek.com/news/news261113/",
+        "time": "11月13日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "中國",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "deepseek",
+        "verification_url": "https://api-docs.deepseek.com/updates/?release=deepseek-coder"
+      },
+      {
+        "title": "更進新聞：Brandlight推出ChatGPT商品型錄匯出與代理指示工具",
+        "summary": "Brandlight公布兩項配置工具，協助企業準備ChatGPT品牌代理指示及商品資料。",
+        "highlights": [
+          "可從現有Brandlight Commerce型錄匯出ChatGPT商品資料格式。",
+          "指示由Brandlight資料輔助生成，企業仍需確認OpenAI的商家及代理資格。"
+        ],
+        "why": "電商和客服團隊可把商品資料的準確性與品牌代理回答規則分開驗收。",
+        "next_step": "抽查一批商品的庫存和售價，再讓客服主管審閱退貨和轉介指示。",
+        "detail": "Brandlight表示，新工具可根據其平台資料生成ChatGPT品牌代理指示，並把客戶現有Brandlight Commerce型錄轉為ChatGPT商品資料格式。企業可先按地區確認商家和代理開放資格，再核對匯出欄位及客服回答規則。Brandlight指出，認領商家頁面也無法保證得到更多獨立推薦。",
+        "title_en": "Update: Brandlight adds ChatGPT catalogue export and agent instruction tools",
+        "summary_en": "Brandlight announced tools to prepare instructions for ChatGPT Business Agents and format product data.",
+        "highlights_en": [
+          "Existing Brandlight Commerce catalogues can be exported in ChatGPT's product feed format.",
+          "Instructions draw on Brandlight data. Companies still need to check OpenAI's eligibility rules."
+        ],
+        "why_en": "Commerce and service teams can validate product data and the agent's response rules separately.",
+        "next_step_en": "Check a sample of product stock and prices, then have support leads review return and escalation instructions.",
+        "detail_en": "Brandlight says the tools draft ChatGPT Business Agent instructions from its platform data and convert existing Brandlight Commerce catalogues into ChatGPT's feed format. Confirm market and agent eligibility before validating feed fields and support responses. Brandlight says claiming a profile does not guarantee higher visibility in independent recommendations.",
+        "source": "Brandlight",
+        "url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+        "time": "11月13日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "brandlight",
+        "followup": "11月13日版報道OpenAI商家中心。本次是第三方Brandlight新增型錄及指示工具。",
+        "followup_en": "The November 13 edition covered OpenAI's Business Hub. This update covers Brandlight's third-party preparation tools."
+      },
+      {
+        "title": "更進新聞：京東披露雙11眼鏡虛擬試戴及美妝數碼人直播",
+        "summary": "京東稱，今年雙11把虛擬試用擴至眼鏡，並升級App內的東東購物助手。",
+        "highlights": [
+          "東東可協助比較價格、查詢優惠及尋找售後服務。",
+          "京東列出蘭蔻中國電商負責人的數碼人主持促銷直播的案例。"
+        ],
+        "why": "零售團隊可按品類選工具，分別檢查試戴、問答和直播能否回答顧客的問題。",
+        "next_step": "先用一組眼鏡或美妝商品測試，記錄產品資料錯誤、未解問題及需要轉接人員的環節。",
+        "detail": "京東在雙11回顧中列出三種顧客接觸方式，包括為眼鏡加入虛擬試戴、在購物App升級東東助手，以及讓代表蘭蔻中國電商負責人的數碼人主持一節促銷直播。品牌可分開評估試戴、購物問答和直播的用途，並核對商品規格、優惠及售後資訊能否在各入口保持一致。該回顧聚焦京東平台內的做法。",
+        "title_en": "Update: JD.com details eyewear try-ons and a beauty avatar livestream",
+        "summary_en": "JD.com says it extended virtual try-ons to eyewear during Singles' Day and upgraded Dongdong, its in-app shopping assistant.",
+        "highlights_en": [
+          "Dongdong helps compare prices, navigate promotions and find after-sales service.",
+          "JD.com describes a promotional livestream hosted by an avatar representing Lancôme China's ecommerce president."
+        ],
+        "why_en": "Retailers can choose tools by category and check whether try-ons, Q&A and livestreams answer shoppers' questions.",
+        "next_step_en": "Test one eyewear or beauty assortment and log incorrect product information, unanswered questions and requests for staff.",
+        "detail_en": "JD.com's Singles' Day recap described virtual eyewear try-ons, the updated Dongdong assistant and a promotional livestream hosted by an avatar representing Lancôme China's ecommerce president. Brands can review the purpose of each format and check whether product specs, offers and after-sales details stay consistent across entry points. The recap covers practices on JD.com's platform.",
+        "source": "JD.com",
+        "url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+        "time": "11月12日",
+        "section": "行業影響 & 品牌案例",
+        "region": "中國",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "jd",
+        "followup": "11月13日版報道雙11大市估算。京東回顧早於該期公布，今次補充平台的試戴、購物問答及直播案例。",
+        "followup_en": "The November 13 edition covered the market estimate. JD.com's earlier recap adds platform examples of try-ons, shopping Q&A and livestreaming."
+      },
+      {
+        "title": "YouArt推出桌面影片代理，把客戶意見連到指定鏡頭",
+        "summary": "YouArt公布Mac及PC桌面工具，可讀取本機專案資料，並把客戶意見放到相關畫面。",
+        "highlights": [
+          "創作人可審閱修訂並決定保留哪些版本。",
+          "經使用者授權，代理可操作After Effects及Premiere等指定工具。"
+        ],
+        "why": "製作團隊可減少在回饋訊息和專案時間軸之間來回查找，並保留審稿責任。",
+        "next_step": "用複製專案測試一項客戶修訂，記錄檔案權限、改動位置及回復版本所需的步驟。",
+        "detail": "YouArt表示，桌面代理可把Slack或Gmail來的意見連到相關鏡頭、畫格或創意元素。獲使用者授權後，可在指定剪輯工具中執行部分操作，創作人仍可檢查並決定保留哪些修改。團隊試用時可先選擇容易回復的修改，並把原始專案、修訂檔和審稿紀錄分開保存。",
+        "title_en": "YouArt launches desktop video agent that attaches feedback to shots",
+        "summary_en": "YouArt announced a Mac and PC tool that can work with local project files and attach client feedback to relevant shots.",
+        "highlights_en": [
+          "Creators review revisions and decide which changes to keep.",
+          "With permission, the agent can operate supported applications such as After Effects and Premiere Pro."
+        ],
+        "why_en": "Production teams can link feedback to timelines while keeping creative reviews with people.",
+        "next_step_en": "Test one revision on a copy, tracking file permissions, edits and how to restore the previous version.",
+        "detail_en": "YouArt says its desktop agent can attach feedback from Slack or Gmail to a shot, frame or creative element. With user permission it can perform tasks in supported editing applications. Creators review and choose what to keep. Start with a reversible change and keep the original project, revised file and approval record separately.",
+        "source": "YouArt",
+        "url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+        "time": "11月13日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "youart"
+      },
+      {
+        "title": "MCM香港把Monchhichi聯乘延伸至海港城活動",
+        "summary": "MAD Thailand報道，MCM安排泰國藝人Freen Sarocha出席香港海港城的Monchhichi聯乘活動。",
+        "highlights": [
+          "聯乘把日本Monchhichi角色帶到MCM四款經典袋型。",
+          "POPBEE報道，香港和澳門先接受專門店WhatsApp預訂，再公開發售。"
+        ],
+        "why": "區內零售團隊可把聯乘商品的預訂、公開發售和門店活動設為不同接觸點。",
+        "next_step": "分開記錄訊息預訂、發售後到店及活動登記，對照各環節的參與情況。",
+        "detail": "MCM以Monchhichi角色改造四款經典袋型。POPBEE報道，香港和澳門先以專門店WhatsApp接受預訂，再公開發售。MAD Thailand另報道，品牌安排Freen Sarocha到海港城參與聯乘活動。零售團隊可參考這種安排，按預訂和門店活動分開記錄參與情況。",
+        "title_en": "MCM extends its Monchhichi collaboration to a Hong Kong Harbour City event",
+        "summary_en": "MAD Thailand reported that MCM scheduled Thai artist Freen Sarocha to appear at its Harbour City Monchhichi collaboration event.",
+        "highlights_en": [
+          "The collection puts the Japanese Monchhichi character on four MCM signature bag styles.",
+          "POPBEE reported that Hong Kong and Macau store WhatsApp reservations preceded public sales."
+        ],
+        "why_en": "Regional retailers can treat reservations, public sales and store events as distinct customer touchpoints.",
+        "next_step_en": "Measure message reservations, post-launch visits and event registrations separately.",
+        "detail_en": "MCM put the Monchhichi character on four signature bag styles. POPBEE reported WhatsApp reservations through stores in Hong Kong and Macau ahead of public sales. MAD Thailand separately reported a scheduled Harbour City appearance by Freen Sarocha. Retail teams can track reservation and event participation separately when evaluating a similar rollout.",
+        "source": "MAD Thailand",
+        "url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+        "time": "11月13日",
+        "section": "行業影響 & 品牌案例",
+        "region": "香港",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "media",
+        "editorial_slug": "mcm",
+        "verification_url": "https://popbee.com/accessories/handbags/mcm-monchhichi-collaboration-bags-hk"
+      },
+      {
+        "title": "Motom公布Opportunities，把創作者活動接到品牌自營店面",
+        "summary": "Motom公布創作者活動模組，讓品牌在自有計劃管理付費及送贈品合作。",
+        "highlights": [
+          "可參考創作者內容、過往銷售及計劃參與度選人。",
+          "公司指首階段計劃面向現有客戶。"
+        ],
+        "why": "零售商可把創作者合作的邀約、到店及成交數據串起來，並分開檢視付費與自然銷售。",
+        "next_step": "為同一商品設定清楚的創作者連結與歸因窗口，比對自營店面記錄和訂單。",
+        "detail": "Motom表示，品牌和零售商可在管理平台向創作者提出合作，並將活動流量帶到其網站上的創作者店面。模組涵蓋付費與贈品合作，可比較相關付費及自然銷售。公告列出先向現有客戶開放的安排。試行時可統一訂單歸因及退款口徑，再比較不同創作者。報表亦可按合作類型分開檢視。",
+        "title_en": "Motom announces Opportunities to link creator campaigns with owned storefronts",
+        "summary_en": "Motom announced a module that lets brands manage paid and gifting collaborations inside their own creator programmes.",
+        "highlights_en": [
+          "Teams can select creators using content, sales history and programme activity.",
+          "The company plans to open initial access to existing customers."
+        ],
+        "why_en": "Retailers can connect outreach, storefront visits and orders while tracking paid and organic sales separately.",
+        "next_step_en": "Assign creator links and attribution windows for one product, then reconcile storefront records with orders.",
+        "detail_en": "Motom says brands and retailers can offer collaborations in the admin portal and send campaign traffic to creator storefronts on their own sites. The module covers paid and gifting campaigns and supports comparing paid and organic sales. Existing clients are listed for initial access. Align attribution and refunds before comparing creators. Reports can also be reviewed by collaboration type.",
+        "source": "Motom",
+        "url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+        "time": "11月12日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "motom"
+      },
+      {
+        "title": "Constant Contact公布Catalyst，小企可審批AI擬定的活動",
+        "summary": "Constant Contact公布面向小企的Catalyst，工具可按企業的線上內容擬定計劃，並交由負責人審稿。",
+        "highlights": [
+          "公司列出電郵、社交平台及短訊等支援方向。",
+          "現階段可登記早期使用計劃。"
+        ],
+        "why": "小企可先檢查AI是否能維持跨渠道語氣，再決定哪些執行步驟適合交給工具。",
+        "next_step": "挑一個促銷主題，逐項核對電郵和社交文案的日期、優惠及發送對象。",
+        "detail": "按Constant Contact公告，Catalyst會參考企業的線上內容，草擬分項計劃及跨渠道文案。企業負責人審批內容後，工具才執行相關工作。現階段提供早期使用計劃；安排試點時，可先為活動設定一名批准人，並逐一核對優惠條件、品牌語氣及發送名單。",
+        "title_en": "Constant Contact announces Catalyst with small-business approval for AI campaigns",
+        "summary_en": "Constant Contact announced Catalyst for small businesses. It can draft a plan from a business's online presence and send content for review.",
+        "highlights_en": [
+          "The company describes channels including email, social and SMS.",
+          "Businesses can register for early access."
+        ],
+        "why_en": "Small teams can check tone across channels before deciding which execution steps to delegate.",
+        "next_step_en": "Choose one promotion and check the dates, offer and audience in draft email and social copy.",
+        "detail_en": "Constant Contact says Catalyst reviews a business's online presence and drafts a plan and copy across channels. A person approves content before the tool executes related work. Access is through an early programme. For a pilot, assign an approver and check offer terms, brand tone and the recipient list.",
+        "source": "Constant Contact",
+        "url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+        "time": "11月12日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "catalyst"
+      },
+      {
+        "title": "Spangle將商品資料工具獨立開放予企業品牌",
+        "summary": "Spangle宣布Product Intelligence 360可獨立接入，讓企業品牌把商品資料用於自有電商及AI工具。",
+        "highlights": [
+          "可經API或商品資料接入。",
+          "商品記錄可結合商品屬性、銷售情況及顧客查詢，由品牌審批上線。"
+        ],
+        "why": "商品管理團隊可先把規格和顧客選購用語對齊，再決定哪些內容適合對外發放。",
+        "next_step": "挑一個品類，抽查商品屬性、常見問題和人工批准紀錄，再測試匯出。",
+        "detail": "Spangle表示，Product Intelligence 360以個別商品為單位，整理規格、成交情況及顧客查詢等資料。公司公布企業品牌可以透過API或商品資料獨立接入，品牌團隊仍負責審批上線內容。測試時可先集中在單一品類，確認資料可追溯到原有來源，也可按需要回復。",
+        "title_en": "Spangle makes its product intelligence tool available separately to enterprise brands",
+        "summary_en": "Spangle announced standalone access to Product Intelligence 360 for enterprise brands to use product data in commerce and AI tools.",
+        "highlights_en": [
+          "Teams can connect through APIs or product feeds.",
+          "Product records can combine attributes, sales and shopper queries, subject to brand approval before publishing."
+        ],
+        "why_en": "Merchandising teams can align specs with shopper language before releasing product information.",
+        "next_step_en": "Pick one category and check attributes, common questions and the human approval record before export.",
+        "detail_en": "Spangle says Product Intelligence 360 organizes specifications, sales and shopper questions at product level. Enterprise brands can connect it independently through APIs or product feeds, while brand teams approve public changes. Start with one category and check that each item can be traced back to its original source and reverted when needed.",
+        "source": "Spangle AI",
+        "url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+        "time": "11月12日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "spangle",
+        "verification_url": "https://www.spangle.ai/product-intelligence-360"
+      },
+      {
+        "title": "Fiserv為美國Clover商戶加入AI建站與庫存同步",
+        "summary": "Fiserv公布，美國Clover商戶可從基本商戶資料建立網店，並連接現有門店商品和庫存。",
+        "highlights": [
+          "公司列出搜尋及AI購物曝光設定。",
+          "商品、庫存、顧客、訂單和付款可與Clover同步。"
+        ],
+        "why": "有門市的小企可先檢查網店與門店是否讀取同一份庫存，避免促銷期間顯示已售罄商品。",
+        "next_step": "挑幾款暢銷商品，核對庫存更新、訂單狀態及搜尋可見的商品資料。",
+        "detail": "Fiserv稱，Clover的美國商戶可輸入基本資料及創意偏好來建立網店。新功能包括搜尋及AI購物曝光設定，亦可把商品、庫存和訂單與門店Clover系統同步。零售團隊可先測試購買後的庫存更新，並核對搜尋頁看到的商品資料是否與網店一致。亦可核對退款後的庫存變動。",
+        "title_en": "Fiserv adds AI site creation and inventory sync for US Clover merchants",
+        "summary_en": "Fiserv says US Clover merchants can create a store using basic business details and connect their existing products and inventory.",
+        "highlights_en": [
+          "The company describes discovery settings for search and AI shopping.",
+          "Products, stock, customers, orders and payments can sync with Clover."
+        ],
+        "why_en": "Store operators can check whether online and in-store stock come from the same source to avoid promoting sold-out items.",
+        "next_step_en": "Check stock updates, order status and search-visible product data for a few popular items.",
+        "detail_en": "Fiserv says US Clover merchants can create an online store using basic details and creative preferences. New capabilities include discovery settings for search and AI shopping and sync products, inventory and orders with Clover. Test inventory changes after a purchase and check that the information shown in search matches the store. Check stock changes after a refund as well.",
+        "source": "Fiserv",
+        "url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+        "time": "11月10日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "clover"
+      },
+      {
+        "title": "FocusFuel公布ZAYN合作，以巡演幕後概念設計聯乘套裝",
+        "summary": "FocusFuel公布歌手ZAYN為投資者及合作夥伴，首個聯乘以巡演幕後為概念推出特別套裝。",
+        "highlights": [
+          "套裝包含士多啤梨檸檬及西瓜兩款口味。",
+          "品牌計劃加入幕後內容及紐約粉絲體驗。"
+        ],
+        "why": "品牌可把藝人合作的故事轉為包裝和體驗設計，為不同接觸點設定可量度目標。",
+        "next_step": "為聯乘套裝、幕後內容和現場活動分別設定連結及追蹤指標。",
+        "detail": "FocusFuel表示，與ZAYN的首個聯乘把巡演幕後靈感用於特別套裝，並安排幕後內容及紐約粉絲體驗。活動報道聚焦合作身分、套裝概念及推廣安排。品牌可參考這種做法，先定出粉絲從哪個渠道認識聯乘，再檢查內容互動、商品頁到訪及活動登記等不同環節。",
+        "title_en": "FocusFuel announces ZAYN partnership with a backstage-inspired kit",
+        "summary_en": "FocusFuel announced singer ZAYN as an investor and partner. Their first collaboration draws on backstage touring for a special kit.",
+        "highlights_en": [
+          "The kit includes strawberry lemonade and watermelon flavours.",
+          "The brand plans behind-the-scenes content and a New York fan experience."
+        ],
+        "why_en": "Brands can translate a partner story into packaging and experiences with measurable goals for each touchpoint.",
+        "next_step_en": "Set distinct links and tracking measures for the kit, backstage content and live experience.",
+        "detail_en": "FocusFuel says its first collaboration with ZAYN carries a touring backstage theme into a special kit. It also announced behind-the-scenes content and a planned New York fan experience. The case centers on the partnership, packaging and promotion. Teams can map where fans first encounter a collaboration and check content engagement, product-page visits and event registrations separately.",
+        "source": "FocusFuel",
+        "url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+        "time": "11月13日",
+        "section": "行業影響 & 品牌案例",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "focusfuel"
+      }
+    ]
+  },
+  "evidence": {
+    "schema_version": "1.0",
+    "edition_date_hkt": "2026-11-15",
+    "coverage_floor": 10,
+    "coverage_target": 18,
+    "verified_at_hkt": "2026-11-15T07:05:03+08:00",
+    "status": "approved",
+    "editorial_owner": "Carrie Hui",
+    "release_status": "pending_live_validation",
+    "audit_status": "Primary announcements and direct reporting read and reopened. Spangle Yahoo copy unavailable; issuer syndication and product page used. MCM event attendance not independently confirmed. No separate human review or product testing.",
+    "review_provenance": {
+      "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+      "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+      "separate_human_review": false,
+      "separate_subagent_review": false
+    },
+    "corrections": [],
+    "stories": [
+      {
+        "story_id": "2026-11-15-deepseek",
+        "title_zh": "DeepSeek向API開放搜尋、檔案和讀取連結功能",
+        "source_story_url": "https://api-docs.deepseek.com/news/news261113/",
+        "published_article_url": "https://api-docs.deepseek.com/news/news261113/",
+        "source_date_display": "11月13日",
+        "event_date": "2026-11-13",
+        "first_published_date": "2026-11-13",
+        "source_documents": [
+          {
+            "url": "https://api-docs.deepseek.com/news/news261113/",
+            "publisher": "DeepSeek",
+            "evidence_locator": "Built-in tools, lines 38–45 / File Input and URL Reading, lines 46–47 / API pricing, lines 55–57",
+            "source_publication_date": "2026-11-13",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          },
+          {
+            "url": "https://api-docs.deepseek.com/updates/?release=deepseek-coder",
+            "publisher": "DeepSeek API Docs",
+            "evidence_locator": "November 13 entry, supported built-in and standalone tools",
+            "source_publication_date": "2026-11-13",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "V4.1-Flash的支援端點可使用內置網頁搜尋。",
+            "evidence_locator": "Built-in tools, lines 38–45",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          },
+          {
+            "claim_zh": "可把檔案和連結內容加入對話。",
+            "evidence_locator": "File Input and URL Reading, lines 46–47",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          },
+          {
+            "claim_zh": "延伸工具按用量另收費。",
+            "evidence_locator": "API pricing, lines 55–57",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "V4.1-Flash的支援端點可使用內置網頁搜尋。",
+            "evidence_locator": "Built-in tools, lines 38–45",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          },
+          {
+            "claim_zh": "可把檔案和連結內容加入對話。",
+            "evidence_locator": "File Input and URL Reading, lines 46–47",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          },
+          {
+            "claim_zh": "延伸工具按用量另收費。",
+            "evidence_locator": "API pricing, lines 55–57",
+            "support_url": "https://api-docs.deepseek.com/news/news261113/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:02:44+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+          "source_reopen_reference": "turn163view0 and dated changelog turn163view1; reopened turn164view0",
+          "finding": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim."
+        },
+        "review_notes": "Built-in tools scoped to V4.1-Flash and supported endpoints. Additional usage fees apply; no code or performance claim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 22,
+          "actionability": 19,
+          "market_relevance": 15,
+          "novelty": 10,
+          "total": 94
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-15-brandlight",
+        "title_zh": "更進新聞：Brandlight推出ChatGPT商品型錄匯出與代理指示工具",
+        "source_story_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+        "published_article_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+        "source_date_display": "11月13日",
+        "event_date": "2026-11-13",
+        "first_published_date": "2026-11-13",
+        "source_documents": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "publisher": "Brandlight",
+            "evidence_locator": "Agent Instructions, line 62 / Catalog Export, line 63 / OpenAI beta context, line 59",
+            "source_publication_date": "2026-11-13",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Agent Instructions協助為品牌代理產生指示。",
+            "evidence_locator": "Agent Instructions, line 62",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          },
+          {
+            "claim_zh": "Catalog Export將現有Brandlight Commerce型錄轉成ChatGPT商品資料格式。",
+            "evidence_locator": "Catalog Export, line 63",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          },
+          {
+            "claim_zh": "商家認領頁面不保證提高獨立推薦曝光。",
+            "evidence_locator": "OpenAI beta context, line 59",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Agent Instructions協助為品牌代理產生指示。",
+            "evidence_locator": "Agent Instructions, line 62",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          },
+          {
+            "claim_zh": "Catalog Export將現有Brandlight Commerce型錄轉成ChatGPT商品資料格式。",
+            "evidence_locator": "Catalog Export, line 63",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          },
+          {
+            "claim_zh": "商家認領頁面不保證提高獨立推薦曝光。",
+            "evidence_locator": "OpenAI beta context, line 59",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:02:44+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+          "source_reopen_reference": "turn154view0; reopened turn157view0 and turn161view5",
+          "finding": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement."
+        },
+        "review_notes": "Third-party preparation tools for existing Brandlight customers. Separate OpenAI beta and eligibility, no ranking gain or endorsement.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 21,
+          "actionability": 19,
+          "market_relevance": 12,
+          "novelty": 10,
+          "total": 91
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor",
+        "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-13.html"
+      },
+      {
+        "story_id": "2026-11-15-jd",
+        "title_zh": "更進新聞：京東披露雙11眼鏡虛擬試戴及美妝數碼人直播",
+        "source_story_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+        "published_article_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+        "source_date_display": "11月12日",
+        "event_date": "2026-11-11",
+        "first_published_date": "2026-11-12",
+        "source_documents": [
+          {
+            "url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "publisher": "JD.com",
+            "evidence_locator": "Interactive shopping, lines 52–56 / Dongdong, line 61 / Merchant livestreaming example, line 70",
+            "source_publication_date": "2026-11-12",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "京東在雙11把虛擬試用擴至眼鏡。",
+            "evidence_locator": "Interactive shopping, lines 52–56",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          },
+          {
+            "claim_zh": "京東升級App內的東東購物助手，可比價及查詢優惠。",
+            "evidence_locator": "Dongdong, line 61",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          },
+          {
+            "claim_zh": "代表蘭蔻中國電商負責人的數碼人曾主持促銷直播。",
+            "evidence_locator": "Merchant livestreaming example, line 70",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "京東在雙11把虛擬試用擴至眼鏡。",
+            "evidence_locator": "Interactive shopping, lines 52–56",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          },
+          {
+            "claim_zh": "京東升級App內的東東購物助手，可比價及查詢優惠。",
+            "evidence_locator": "Dongdong, line 61",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          },
+          {
+            "claim_zh": "代表蘭蔻中國電商負責人的數碼人曾主持促銷直播。",
+            "evidence_locator": "Merchant livestreaming example, line 70",
+            "support_url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:05:03+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+          "source_reopen_reference": "turn160view0; reopened turn166view0 and turn166view1",
+          "finding": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate."
+        },
+        "review_notes": "Platform's own feature examples. Exclude platform-reported performance and causal sales claims. This case differs from prior aggregate market estimate.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 22,
+          "actionability": 18,
+          "market_relevance": 15,
+          "novelty": 9,
+          "total": 92
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor",
+        "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-13.html"
+      },
+      {
+        "story_id": "2026-11-15-youart",
+        "title_zh": "YouArt推出桌面影片代理，把客戶意見連到指定鏡頭",
+        "source_story_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+        "published_article_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+        "source_date_display": "11月13日",
+        "event_date": "2026-11-13",
+        "first_published_date": "2026-11-13",
+        "source_documents": [
+          {
+            "url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "publisher": "YouArt",
+            "evidence_locator": "Desktop announcement, lines 54–59 / Feedback workflow, lines 61–64 / Creative applications, lines 68–72",
+            "source_publication_date": "2026-11-13",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "YouArt公布支援Mac及PC的桌面影片代理，可讀取本機專案資料。",
+            "evidence_locator": "Desktop announcement, lines 54–59",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          },
+          {
+            "claim_zh": "客戶回饋可釘選到相關鏡頭或元素，由創作人審閱。",
+            "evidence_locator": "Feedback workflow, lines 61–64",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          },
+          {
+            "claim_zh": "獲授權後代理可操作指定剪輯工具。",
+            "evidence_locator": "Creative applications, lines 68–72",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "YouArt公布支援Mac及PC的桌面影片代理，可讀取本機專案資料。",
+            "evidence_locator": "Desktop announcement, lines 54–59",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          },
+          {
+            "claim_zh": "客戶回饋可釘選到相關鏡頭或元素，由創作人審閱。",
+            "evidence_locator": "Feedback workflow, lines 61–64",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          },
+          {
+            "claim_zh": "獲授權後代理可操作指定剪輯工具。",
+            "evidence_locator": "Creative applications, lines 68–72",
+            "support_url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:02:44+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+          "source_reopen_reference": "turn154view1; reopened turn157view1 and turn161view4",
+          "finding": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability."
+        },
+        "review_notes": "Company launch on Mac and PC. Editing actions require permission. No claims of fully local processing, lower cost or reliability.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 21,
+          "actionability": 18,
+          "market_relevance": 12,
+          "novelty": 9,
+          "total": 87
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-15-mcm",
+        "title_zh": "MCM香港把Monchhichi聯乘延伸至海港城活動",
+        "source_story_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+        "published_article_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+        "source_date_display": "11月13日",
+        "event_date": "2026-11-13",
+        "first_published_date": "2026-11-13",
+        "source_documents": [
+          {
+            "url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+            "publisher": "MAD Thailand",
+            "evidence_locator": "Hong Kong programme, lines 31–35 / Collection, line 35 / POPBEE launch logistics, lines 88, 108",
+            "source_publication_date": "2026-11-13",
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          },
+          {
+            "url": "https://popbee.com/accessories/handbags/mcm-monchhichi-collaboration-bags-hk",
+            "publisher": "POPBEE",
+            "evidence_locator": "Hong Kong and Macau retail timetable, lines 88–110",
+            "source_publication_date": null,
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "MAD Thailand報道Freen原定出席海港城聯乘活動。",
+            "evidence_locator": "Hong Kong programme, lines 31–35",
+            "support_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          },
+          {
+            "claim_zh": "聯乘把Monchhichi融入MCM四款經典袋型。",
+            "evidence_locator": "Collection, line 35",
+            "support_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          },
+          {
+            "claim_zh": "香港與澳門系列先開放WhatsApp預訂，及後公開發售。",
+            "evidence_locator": "POPBEE launch logistics, lines 88, 108",
+            "support_url": "https://popbee.com/accessories/handbags/mcm-monchhichi-collaboration-bags-hk",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "MAD Thailand報道Freen原定出席海港城聯乘活動。",
+            "evidence_locator": "Hong Kong programme, lines 31–35",
+            "support_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          },
+          {
+            "claim_zh": "聯乘把Monchhichi融入MCM四款經典袋型。",
+            "evidence_locator": "Collection, line 35",
+            "support_url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          },
+          {
+            "claim_zh": "香港與澳門系列先開放WhatsApp預訂，及後公開發售。",
+            "evidence_locator": "POPBEE launch logistics, lines 88, 108",
+            "support_url": "https://popbee.com/accessories/handbags/mcm-monchhichi-collaboration-bags-hk",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:05:03+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+          "source_reopen_reference": "turn158search6 and turn160view3; reopened turn170view0 and turn170view1",
+          "finding": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale."
+        },
+        "review_notes": "Dated trade coverage of scheduled Harbour City appearance and earlier direct retail reporting. Does not state attendance was verified; launch event is distinct from retail on-sale.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 26,
+          "business_impact": 18,
+          "actionability": 16,
+          "market_relevance": 15,
+          "novelty": 8,
+          "total": 83
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-15-motom",
+        "title_zh": "Motom公布Opportunities，把創作者活動接到品牌自營店面",
+        "source_story_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+        "published_article_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+        "source_date_display": "11月12日",
+        "event_date": "2026-11-12",
+        "first_published_date": "2026-11-12",
+        "source_documents": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "publisher": "Motom",
+            "evidence_locator": "Launch announcement, lines 466–467 / Key facts and Admin Portal, lines 475–478, 487 / Storefront and measurement, lines 467, 477",
+            "source_publication_date": "2026-11-12",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Opportunities支援付費及贈品創作者活動，由邀約到付款。",
+            "evidence_locator": "Launch announcement, lines 466–467",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          },
+          {
+            "claim_zh": "品牌可按內容、過往銷售及參與度選創作者。",
+            "evidence_locator": "Key facts and Admin Portal, lines 475–478, 487",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          },
+          {
+            "claim_zh": "可導向品牌或零售商網站的創作者店面，比較付費及自然銷售。",
+            "evidence_locator": "Storefront and measurement, lines 467, 477",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Opportunities支援付費及贈品創作者活動，由邀約到付款。",
+            "evidence_locator": "Launch announcement, lines 466–467",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          },
+          {
+            "claim_zh": "品牌可按內容、過往銷售及參與度選創作者。",
+            "evidence_locator": "Key facts and Admin Portal, lines 475–478, 487",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          },
+          {
+            "claim_zh": "可導向品牌或零售商網站的創作者店面，比較付費及自然銷售。",
+            "evidence_locator": "Storefront and measurement, lines 467, 477",
+            "support_url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:02:44+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+          "source_reopen_reference": "turn146view3 and turn158view2; reopened turn161view2",
+          "finding": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used."
+        },
+        "review_notes": "Full issuer release retrieved and reopened. Initial access is for existing clients as announced, with a later cohort planned. No conversion uplift used.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 22,
+          "actionability": 18,
+          "market_relevance": 11,
+          "novelty": 9,
+          "total": 88
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-15-catalyst",
+        "title_zh": "Constant Contact公布Catalyst，小企可審批AI擬定的活動",
+        "source_story_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+        "published_article_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+        "source_date_display": "11月12日",
+        "event_date": "2026-11-12",
+        "first_published_date": "2026-11-12",
+        "source_documents": [
+          {
+            "url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "publisher": "Constant Contact",
+            "evidence_locator": "Product workflow, lines 7–11 / Handles the Marketing Work, line 12 / Early access, line 21",
+            "source_publication_date": "2026-11-12",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Catalyst可分析企業線上內容並擬定分項計劃。",
+            "evidence_locator": "Product workflow, lines 7–11",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          },
+          {
+            "claim_zh": "公司列出電郵、社交和短訊等渠道，內容須經人員審批。",
+            "evidence_locator": "Handles the Marketing Work, line 12",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          },
+          {
+            "claim_zh": "目前提供早期使用計劃。",
+            "evidence_locator": "Early access, line 21",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Catalyst可分析企業線上內容並擬定分項計劃。",
+            "evidence_locator": "Product workflow, lines 7–11",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          },
+          {
+            "claim_zh": "公司列出電郵、社交和短訊等渠道，內容須經人員審批。",
+            "evidence_locator": "Handles the Marketing Work, line 12",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          },
+          {
+            "claim_zh": "目前提供早期使用計劃。",
+            "evidence_locator": "Early access, line 21",
+            "support_url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:02:44+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:02:44+08:00",
+          "source_reopen_reference": "turn158view0; reopened turn161view0",
+          "finding": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim."
+        },
+        "review_notes": "Issuer early-access program. Channels described by vendor, marketing output needs approval. No performance or generally available access claim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 21,
+          "actionability": 19,
+          "market_relevance": 11,
+          "novelty": 9,
+          "total": 88
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-15-spangle",
+        "title_zh": "Spangle將商品資料工具獨立開放予企業品牌",
+        "source_story_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+        "published_article_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+        "source_date_display": "11月12日",
+        "event_date": "2026-11-12",
+        "first_published_date": "2026-11-12",
+        "source_documents": [
+          {
+            "url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "publisher": "Spangle AI",
+            "evidence_locator": "Issuer copy, lines 261–262 and 270–271 / Availability, lines 278–280 / Brand approval, line 280",
+            "source_publication_date": "2026-11-12",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          },
+          {
+            "url": "https://www.spangle.ai/product-intelligence-360",
+            "publisher": "Spangle AI",
+            "evidence_locator": "Product workflow and approval before export",
+            "source_publication_date": null,
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Product Intelligence 360可整合商品屬性、銷售情況及顧客查詢。",
+            "evidence_locator": "Issuer copy, lines 261–262 and 270–271",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          },
+          {
+            "claim_zh": "Spangle公布企業品牌可經API或商品資料接入。",
+            "evidence_locator": "Availability, lines 278–280",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          },
+          {
+            "claim_zh": "品牌團隊可批准要上線的商品資料。",
+            "evidence_locator": "Brand approval, line 280",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Product Intelligence 360可整合商品屬性、銷售情況及顧客查詢。",
+            "evidence_locator": "Issuer copy, lines 261–262 and 270–271",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          },
+          {
+            "claim_zh": "Spangle公布企業品牌可經API或商品資料接入。",
+            "evidence_locator": "Availability, lines 278–280",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          },
+          {
+            "claim_zh": "品牌團隊可批准要上線的商品資料。",
+            "evidence_locator": "Brand approval, line 280",
+            "support_url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:05:03+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+          "source_reopen_reference": "Business Wire issuer copy turn160view4; reopened turn167view0; company product page turn167view1; Yahoo copy turn170view2 inaccessible",
+          "finding": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted."
+        },
+        "review_notes": "Same issuer release via Business Wire syndication and official product page. Enterprise availability via API or feeds. Comparative traffic and sales claims omitted.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 21,
+          "actionability": 18,
+          "market_relevance": 12,
+          "novelty": 8,
+          "total": 86
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-15-clover",
+        "title_zh": "Fiserv為美國Clover商戶加入AI建站與庫存同步",
+        "source_story_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+        "published_article_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+        "source_date_display": "11月10日",
+        "event_date": "2026-11-10",
+        "first_published_date": "2026-11-10",
+        "source_documents": [
+          {
+            "url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "publisher": "Fiserv",
+            "evidence_locator": "Website creation, line 37 / Connected commerce, line 40 / Search and availability, lines 38, 42",
+            "source_publication_date": "2026-11-10",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Clover新增AI工具按商戶資料產生網店。",
+            "evidence_locator": "Website creation, line 37",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          },
+          {
+            "claim_zh": "商品、庫存、訂單及付款可與Clover同步。",
+            "evidence_locator": "Connected commerce, line 40",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          },
+          {
+            "claim_zh": "初期供美國Clover商戶使用，工具包括搜尋曝光設定。",
+            "evidence_locator": "Search and availability, lines 38, 42",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Clover新增AI工具按商戶資料產生網店。",
+            "evidence_locator": "Website creation, line 37",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          },
+          {
+            "claim_zh": "商品、庫存、訂單及付款可與Clover同步。",
+            "evidence_locator": "Connected commerce, line 40",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          },
+          {
+            "claim_zh": "初期供美國Clover商戶使用，工具包括搜尋曝光設定。",
+            "evidence_locator": "Search and availability, lines 38, 42",
+            "support_url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:05:03+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+          "source_reopen_reference": "turn160view5; reopened turn169view0",
+          "finding": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts."
+        },
+        "review_notes": "Company announcement applies to US Clover merchants. Search and answer-engine tools do not establish ranking or sales lifts.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 26,
+          "business_impact": 20,
+          "actionability": 18,
+          "market_relevance": 10,
+          "novelty": 7,
+          "total": 81
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-15-focusfuel",
+        "title_zh": "FocusFuel公布ZAYN合作，以巡演幕後概念設計聯乘套裝",
+        "source_story_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+        "published_article_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+        "source_date_display": "11月13日",
+        "event_date": "2026-11-13",
+        "first_published_date": "2026-11-13",
+        "source_documents": [
+          {
+            "url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "publisher": "FocusFuel",
+            "evidence_locator": "Issuer dateline, line 466 / First release, line 474 / Campaign plan, line 475",
+            "source_publication_date": "2026-11-13",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+            "access_method": "Read retrieved source text for its stated claim(s).",
+            "limitations": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "FocusFuel公布ZAYN成為投資者和合作夥伴。",
+            "evidence_locator": "Issuer dateline, line 466",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          },
+          {
+            "claim_zh": "首個聯乘安排推出兩款口味的特別套裝。",
+            "evidence_locator": "First release, line 474",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          },
+          {
+            "claim_zh": "品牌計劃以幕後內容及紐約粉絲體驗配合。",
+            "evidence_locator": "Campaign plan, line 475",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "FocusFuel公布ZAYN成為投資者和合作夥伴。",
+            "evidence_locator": "Issuer dateline, line 466",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          },
+          {
+            "claim_zh": "首個聯乘安排推出兩款口味的特別套裝。",
+            "evidence_locator": "First release, line 474",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          },
+          {
+            "claim_zh": "品牌計劃以幕後內容及紐約粉絲體驗配合。",
+            "evidence_locator": "Campaign plan, line 475",
+            "support_url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-15T07:05:03+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-15T07:05:03+08:00",
+          "source_reopen_reference": "turn154view2; reopened turn157view2 and turn169view1",
+          "finding": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted."
+        },
+        "review_notes": "Scope is marketing partnership and first announced campaign release. No medical, consumption, effectiveness or investment terms asserted.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 24,
+          "business_impact": 18,
+          "actionability": 16,
+          "market_relevance": 9,
+          "novelty": 8,
+          "total": 75
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      }
+    ]
+  },
+  "localization_review": {
+    "edition_date": "2026-11-15",
+    "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+    "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+    "quality_policy": {
+      "mandatory_languages": [
+        "en",
+        "zh-Hant",
+        "zh-Hans"
+      ],
+      "no_added_factual_claims": true,
+      "keep_original_links_and_dates": true,
+      "do_not_erase_uncertainty": true,
+      "do_not_silently_translate_urls_or_identifiers": true,
+      "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+      "human_editorial_review": "No human approval claimed"
+    },
+    "items": [
+      {
+        "url": "https://api-docs.deepseek.com/news/news261113/",
+        "title_zh_hant": "DeepSeek向API開放搜尋、檔案和讀取連結功能",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“链接读取、文件输入、按量收费”。保留模型和接口范围，区分模型用量与工具费用，不写成应用本身开源。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/11/13/3402760/0/en/brandlight-launches-new-tools-to-help-enterprises-prepare-for-openai-s-businesses-in-chatgpt.html",
+        "title_zh_hant": "更進新聞：Brandlight推出ChatGPT商品型錄匯出與代理指示工具",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“商品目录、品牌智能体、商品数据源”。保留现有客户和OpenAI开放资格约束，区分格式转换与推荐表现。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://jdcorporateblog.com/from-tokens-to-ai-powered-shopping-how-jd-com-brings-ai-into-singles-day-2026/",
+        "title_zh_hant": "更進新聞：京東披露雙11眼鏡虛擬試戴及美妝數碼人直播",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“虚拟试戴、数字人、售后”。眼镜是试戴扩展类别，兰蔻直播归因于京东披露，不把平台案例写成行业销售结果。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/11/13/3402903/0/en/youart-launches-youart-desktop-app-ai-creative-teammate-on-the-computer.html",
+        "title_zh_hant": "YouArt推出桌面影片代理，把客戶意見連到指定鏡頭",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“桌面端、反馈、镜头、版本”。保留用户授权和人工审稿；读取本地项目不代表数据处理或生成全部在本地。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://mad.tv/thailand/khao/friin-sorchaa-binladfaaaiph-ngkng-rwmepidtaw-mcm-x-monchhichi-wannii/",
+        "title_zh_hant": "MCM香港把Monchhichi聯乘延伸至海港城活動",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“海港城、联名、门店预订”。区分香港活动与港澳发售，艺人安排按报道归因，不推断实际出席、到店人数或销售。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/motom-sets-a-new-standard-for-brand-and-retailer-owned-creator-commerce-programs-with-launch-of-opportunities-302937284.html",
+        "title_zh_hant": "Motom公布Opportunities，把創作者活動接到品牌自營店面",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“创作者店铺、赠品合作、归因窗口”。现有客户按计划开放，区分付费与自然销售，不复述供应商披露的转化增幅。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://news.constantcontact.com/2026-11-12-Constant-Contact-Introduces-Catalyst%2C-a-Leading-Edge-AI-Marketing-Solution-That-Does-the-Work-While-You-Stay-in-Control",
+        "title_zh_hant": "Constant Contact公布Catalyst，小企可審批AI擬定的活動",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“小微企业、早期体验、内容审批”。明确发布前由人批准，产品仍处早期使用阶段，避免承诺增长。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.martechcube.com/spangle-ai-launches-product-intelligence-360/",
+        "title_zh_hant": "Spangle將商品資料工具獨立開放予企業品牌",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“商品属性、商品数据源、人工审批”。保留企业客户与独立接入范围，不采用第三方导流或销售表现数据。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://fiserv.gcs-web.com/news-releases/news-release-details/clover-helps-small-businesses-get-discovered-and-sell-anywhere",
+        "title_zh_hant": "Fiserv為美國Clover商戶加入AI建站與庫存同步",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“网店、库存同步、商品曝光设置”。保留美国Clover商户范围，功能不推断搜索排名或销售提升。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/zayn-joins-focusfuel-as-investor-and-partner-302937852.html",
+        "title_zh_hant": "FocusFuel公布ZAYN合作，以巡演幕後概念設計聯乘套裝",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“联名套装、幕后内容、粉丝体验”。保留投资者兼合作伙伴身份和计划语气，舍弃产品功效及个人使用成效说法。",
+        "decision": "approved_for_ai_assisted_localization"
+      }
+    ]
+  }
+}
