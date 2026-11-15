@@ -1,0 +1,1042 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-16",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-16T07:08:40+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original issuer announcements and direct reporting read and separately reopened. Separate source publication from event dates, preserve limited access and remove unsupported performance claims. No separate human review or product testing.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-16-gemini",
+      "title_zh": "Google推出Gemini 4 Hydrogen，免費App按問題自動選用",
+      "source_story_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+      "published_article_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "publisher": "Google",
+          "evidence_locator": "Launch and positioning, lines 216, 258–260 / Availability, lines 325–326 / App availability footnote, line 346",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        },
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/",
+          "publisher": "Google DeepMind",
+          "evidence_locator": "Distribution and intended usage sections",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Google推出面向日常代理工作流程的Gemini 4 Hydrogen。",
+          "evidence_locator": "Launch and positioning, lines 216, 258–260",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        },
+        {
+          "claim_zh": "Google列出Gemini API及AI Studio等開發入口。",
+          "evidence_locator": "Availability, lines 325–326",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        },
+        {
+          "claim_zh": "Gemini免費用戶在適合時由App自動選用該模型。",
+          "evidence_locator": "App availability footnote, line 346",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Google推出面向日常代理工作流程的Gemini 4 Hydrogen。",
+          "evidence_locator": "Launch and positioning, lines 216, 258–260",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        },
+        {
+          "claim_zh": "Google列出Gemini API及AI Studio等開發入口。",
+          "evidence_locator": "Availability, lines 325–326",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        },
+        {
+          "claim_zh": "Gemini免費用戶在適合時由App自動選用該模型。",
+          "evidence_locator": "App availability footnote, line 346",
+          "support_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-Hydrogen/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:07:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+        "source_reopen_reference": "turn183view0 and model card turn183view1; reopened turn192view2",
+        "finding": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons."
+      },
+      "review_notes": "Google announced rollout on November 12. Free app access uses automatic model selection when appropriate; Sheets has eligible plans. Omit benchmark and speed comparisons.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 92
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-yuanbao",
+      "title_zh": "騰訊推出獨立元寶搜尋，涵蓋網頁及微信內容",
+      "source_story_url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyixxw5252798.shtml",
+      "published_article_url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyixxw5252798.shtml",
+      "source_date_display": "11月11日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyixxw5252798.shtml",
+          "publisher": "Sina Tech",
+          "evidence_locator": "Sina Tech announcement, November 11 dateline / Tencent Cloud access, lines 45–55 / Tencent Cloud search coverage, line 57",
+          "source_publication_date": "2026-11-11",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        },
+        {
+          "url": "https://developer.cloud.tencent.com.cn/article/2781917",
+          "publisher": "Tencent Cloud developer community",
+          "evidence_locator": "Access and source coverage, lines 45–57",
+          "source_publication_date": "2026-11-11",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "騰訊推出獨立搜尋產品元寶搜尋。",
+          "evidence_locator": "Sina Tech announcement, November 11 dateline",
+          "support_url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyixxw5252798.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        },
+        {
+          "claim_zh": "可用瀏覽器開啟搜尋網站，或在最新版QQ瀏覽器切換搜尋引擎。",
+          "evidence_locator": "Tencent Cloud access, lines 45–55",
+          "support_url": "https://developer.cloud.tencent.com.cn/article/2781917",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        },
+        {
+          "claim_zh": "騰訊稱索引涵蓋網頁、公眾號、視頻號及學術文獻。",
+          "evidence_locator": "Tencent Cloud search coverage, line 57",
+          "support_url": "https://developer.cloud.tencent.com.cn/article/2781917",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "騰訊推出獨立搜尋產品元寶搜尋。",
+          "evidence_locator": "Sina Tech announcement, November 11 dateline",
+          "support_url": "https://finance.sina.com.cn/roll/2026-11-11/doc-iniyixxw5252798.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        },
+        {
+          "claim_zh": "可用瀏覽器開啟搜尋網站，或在最新版QQ瀏覽器切換搜尋引擎。",
+          "evidence_locator": "Tencent Cloud access, lines 45–55",
+          "support_url": "https://developer.cloud.tencent.com.cn/article/2781917",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        },
+        {
+          "claim_zh": "騰訊稱索引涵蓋網頁、公眾號、視頻號及學術文獻。",
+          "evidence_locator": "Tencent Cloud search coverage, line 57",
+          "support_url": "https://developer.cloud.tencent.com.cn/article/2781917",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:07:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+        "source_reopen_reference": "turn179view1 and Tencent Cloud turn181view1; reopened turn183view2 and turn186view5",
+        "finding": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred."
+      },
+      "review_notes": "China launch. Scope stated by Tencent. Ads, quotas, ranking and traffic not inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 93
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-miniso",
+      "title_zh": "名創優品曼谷新店用角色分區及打卡活動串連購物",
+      "source_story_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+      "source_date_display": "11月13日",
+      "event_date": "2026-11-06",
+      "first_published_date": "2026-11-13",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "publisher": "MINISO",
+          "evidence_locator": "Dateline and opening, line 131 / Floor plan descriptions, line 135 / Character and in-store activities, lines 141–148",
+          "source_publication_date": "2026-11-13",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "名創優品在曼谷CentralWorld開設MINISO LAND。",
+          "evidence_locator": "Dateline and opening, line 131",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        },
+        {
+          "claim_zh": "門店按主題設角色商品、毛絨玩具及一般商品區。",
+          "evidence_locator": "Floor plan descriptions, line 135",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        },
+        {
+          "claim_zh": "自家角色CHOUCHOU在東南亞首次亮相，門店設地圖打卡及換領。",
+          "evidence_locator": "Character and in-store activities, lines 141–148",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "名創優品在曼谷CentralWorld開設MINISO LAND。",
+          "evidence_locator": "Dateline and opening, line 131",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        },
+        {
+          "claim_zh": "門店按主題設角色商品、毛絨玩具及一般商品區。",
+          "evidence_locator": "Floor plan descriptions, line 135",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        },
+        {
+          "claim_zh": "自家角色CHOUCHOU在東南亞首次亮相，門店設地圖打卡及換領。",
+          "evidence_locator": "Character and in-store activities, lines 141–148",
+          "support_url": "https://en.prnasia.com/releases/apac/miniso-brings-its-signature-miniso-land-experience-to-bangkok-with-the-latest-centralworld-store-556241.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:07:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+        "source_reopen_reference": "turn194view0; reopened turn195view0; issuer syndication turn192view0",
+        "finding": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim."
+      },
+      "review_notes": "November 13 disclosure about November 6 Bangkok opening. Southeast Asia character debut per issuer. No traffic or conversion claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 88
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-marathon",
+      "title_zh": "中銀香港冠名港珠澳大橋賽事，新設十公里挑戰組",
+      "source_story_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+      "published_article_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+      "source_date_display": "11月15日",
+      "event_date": "2026-11-15",
+      "first_published_date": "2026-11-15",
+      "source_documents": [
+        {
+          "url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+          "publisher": "RTHK",
+          "evidence_locator": "Race report, line 58 / Race report, lines 55–58 / BOCHK event overview / Charity quota description, lines 79–82",
+          "source_publication_date": "2026-11-15",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "url": "https://hzmb-halfmarathon.com/en/event-information",
+          "publisher": "HKAAA",
+          "evidence_locator": "Event information and race categories",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "url": "https://www.bochk.com/en/more/hzmbhm2026.html",
+          "publisher": "BOCHK",
+          "evidence_locator": "Event and title sponsorship overview",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "url": "https://www.commchest.org/en/event/hzmbhm2026",
+          "publisher": "Community Chest",
+          "evidence_locator": "Charity quota description, lines 79–82",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "港珠澳大橋香港段賽事增設十公里挑戰組。",
+          "evidence_locator": "Race report, line 58",
+          "support_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "賽事為世界田徑聯會認可的白金級道路賽。",
+          "evidence_locator": "Race report, lines 55–58",
+          "support_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "中國銀行（香港）為冠名贊助商。",
+          "evidence_locator": "BOCHK event overview",
+          "support_url": "https://www.bochk.com/en/more/hzmbhm2026.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "香港公益金獲分配慈善名額。",
+          "evidence_locator": "Charity quota description, lines 79–82",
+          "support_url": "https://www.commchest.org/en/event/hzmbhm2026",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "港珠澳大橋香港段賽事增設十公里挑戰組。",
+          "evidence_locator": "Race report, line 58",
+          "support_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "賽事為世界田徑聯會認可的白金級道路賽。",
+          "evidence_locator": "Race report, lines 55–58",
+          "support_url": "https://news.rthk.hk/rthk/ch/component/k2/1877889-20261115.htm?archive_date=2026-11-15",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "中國銀行（香港）為冠名贊助商。",
+          "evidence_locator": "BOCHK event overview",
+          "support_url": "https://www.bochk.com/en/more/hzmbhm2026.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        },
+        {
+          "claim_zh": "香港公益金獲分配慈善名額。",
+          "evidence_locator": "Charity quota description, lines 79–82",
+          "support_url": "https://www.commchest.org/en/event/hzmbhm2026",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:07:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+        "source_reopen_reference": "turn191view0 and issuer turn185view1; reopened turn192view1 and turn188view0",
+        "finding": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated."
+      },
+      "review_notes": "RTHK confirms actual event. BOCHK and Community Chest describe the sponsorship and charity mechanics; charity total not stated.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 24,
+        "business_impact": 18,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 82
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-shortdrama",
+      "title_zh": "淘寶與天貓以AI品牌短劇接商品頁，京東另試短劇入口",
+      "source_story_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+      "published_article_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+      "source_date_display": "11月14日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-14",
+      "source_documents": [
+        {
+          "url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "publisher": "Blue Whale Tech",
+          "evidence_locator": "Taobao and Tmall examples, lines 59–60 / Brand integration example, line 60 / Taobao buying pathways and JD field check, lines 55, 62",
+          "source_publication_date": "2026-11-14",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "淘寶短劇與天貓在雙11推出一批AI品牌短劇。",
+          "evidence_locator": "Taobao and Tmall examples, lines 59–60",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        },
+        {
+          "claim_zh": "報道舉例有家居品牌把衣櫃寫成推動情節的道具。",
+          "evidence_locator": "Brand integration example, line 60",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        },
+        {
+          "claim_zh": "報道指淘寶短劇可接商品連結、達人測評或品牌直播間；京東內測產品則未被記者找到購物跳轉。",
+          "evidence_locator": "Taobao buying pathways and JD field check, lines 55, 62",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "淘寶短劇與天貓在雙11推出一批AI品牌短劇。",
+          "evidence_locator": "Taobao and Tmall examples, lines 59–60",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        },
+        {
+          "claim_zh": "報道舉例有家居品牌把衣櫃寫成推動情節的道具。",
+          "evidence_locator": "Brand integration example, line 60",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        },
+        {
+          "claim_zh": "報道指淘寶短劇可接商品連結、達人測評或品牌直播間；京東內測產品則未被記者找到購物跳轉。",
+          "evidence_locator": "Taobao buying pathways and JD field check, lines 55, 62",
+          "support_url": "https://finance.eastmoney.com/a/202611143931298896.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:08:40+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+        "source_reopen_reference": "turn179view3; reopened turn192view3; original JD hands-on syndicated at turn179view2 and turn181view5",
+        "finding": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test."
+      },
+      "review_notes": "Original Blue Whale Tech reporting and interviews. Taobao case distinct from previously published JD Singles' Day avatar story. JD shopping transitions were advertised in description but missing from reporter's test.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 90
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-amazon",
+      "title_zh": "更進新聞：Amazon Ads將DVA+擴至六個市場，包括新加坡",
+      "source_story_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+      "published_article_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+      "source_date_display": "11月10日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-10",
+      "source_documents": [
+        {
+          "url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "publisher": "Amazon Ads",
+          "evidence_locator": "What launched, lines 182–185 / Media formats, line 185 / Reporting, line 191",
+          "source_publication_date": "2026-11-10",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "DVA+擴至六個市場，包括新加坡、比利時、波蘭、愛爾蘭、埃及及南非。",
+          "evidence_locator": "What launched, lines 182–185",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        },
+        {
+          "claim_zh": "可程式化購買展示、影片及音訊廣告。",
+          "evidence_locator": "Media formats, line 185",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        },
+        {
+          "claim_zh": "Amazon描述統一報表和Amazon Marketing Cloud接入。",
+          "evidence_locator": "Reporting, line 191",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "DVA+擴至六個市場，包括新加坡、比利時、波蘭、愛爾蘭、埃及及南非。",
+          "evidence_locator": "What launched, lines 182–185",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        },
+        {
+          "claim_zh": "可程式化購買展示、影片及音訊廣告。",
+          "evidence_locator": "Media formats, line 185",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        },
+        {
+          "claim_zh": "Amazon描述統一報表和Amazon Marketing Cloud接入。",
+          "evidence_locator": "Reporting, line 191",
+          "support_url": "https://advertising.amazon.com/resources/whats-new/amazon-dva-plus-six-new-locales",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:07:00+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:07:00+08:00",
+        "source_reopen_reference": "turn179view0; reopened turn181view6; fresh trade coverage turn177view2",
+        "finding": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness."
+      },
+      "review_notes": "Issuer date November 10, regional coverage refreshed November 15. Expansion to six locales; distinguish from prior Attain integration. No claim of campaign effectiveness.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 14,
+        "novelty": 8,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Test",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-06.html"
+    },
+    {
+      "story_id": "2026-11-16-smallrig",
+      "title_zh": "SmallRig在深圳把創作者交流延伸至總部藝術裝置",
+      "source_story_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+      "source_date_display": "11月14日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-14",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "publisher": "SmallRig",
+          "evidence_locator": "Issuer dateline and forum, line 467 / Artist example, line 475 / Ode to the Orchid, line 479",
+          "source_publication_date": "2026-11-14",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "SmallRig與深圳國際藝術博物館合辦交流。",
+          "evidence_locator": "Issuer dateline and forum, line 467",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        },
+        {
+          "claim_zh": "藝術家Zadok Ben-David分享用AI探索裝置的鳥形後再篩選。",
+          "evidence_locator": "Artist example, line 475",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        },
+        {
+          "claim_zh": "論壇後SmallRig在總部揭幕與Feng Yu共同創作的裝置。",
+          "evidence_locator": "Ode to the Orchid, line 479",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "SmallRig與深圳國際藝術博物館合辦交流。",
+          "evidence_locator": "Issuer dateline and forum, line 467",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        },
+        {
+          "claim_zh": "藝術家Zadok Ben-David分享用AI探索裝置的鳥形後再篩選。",
+          "evidence_locator": "Artist example, line 475",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        },
+        {
+          "claim_zh": "論壇後SmallRig在總部揭幕與Feng Yu共同創作的裝置。",
+          "evidence_locator": "Ode to the Orchid, line 479",
+          "support_url": "https://www.prnewswire.com/news-releases/smallrig-joins-art-world-figures-to-discuss-creativity-and-authenticity-in-the-ai-eraand-how-art-and-technology-can-drive-innovation-302938911.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:08:40+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+        "source_reopen_reference": "turn183view4; reopened turn186view1",
+        "finding": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim."
+      },
+      "review_notes": "Issuer report November 14 about November 11 Shenzhen event. Named creative practice and installation only; no results or general AI performance claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 24,
+        "business_impact": 18,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 82
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-cloudfront",
+      "title_zh": "Cloudinary計劃把商品圖片及影片優化接入CloudFront",
+      "source_story_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+      "published_article_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-12",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "publisher": "Cloudinary",
+          "evidence_locator": "Lead and availability disclosure, line 27 / Integration flow, lines 33, 36–37 / Optimization bullet, line 38",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Cloudinary計劃在AWS CloudFront控制台接入影像及影片工具。",
+          "evidence_locator": "Lead and availability disclosure, line 27",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        },
+        {
+          "claim_zh": "適用情境包括媒體存於Amazon S3及已有CloudFront分發設定。",
+          "evidence_locator": "Integration flow, lines 33, 36–37",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        },
+        {
+          "claim_zh": "計劃按裝置、瀏覽器、網路及螢幕調整送出的素材。",
+          "evidence_locator": "Optimization bullet, line 38",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Cloudinary計劃在AWS CloudFront控制台接入影像及影片工具。",
+          "evidence_locator": "Lead and availability disclosure, line 27",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        },
+        {
+          "claim_zh": "適用情境包括媒體存於Amazon S3及已有CloudFront分發設定。",
+          "evidence_locator": "Integration flow, lines 33, 36–37",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        },
+        {
+          "claim_zh": "計劃按裝置、瀏覽器、網路及螢幕調整送出的素材。",
+          "evidence_locator": "Optimization bullet, line 38",
+          "support_url": "https://www.businesswire.com/news/home/20261112446624/en/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:08:40+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+        "source_reopen_reference": "turn174view5; reopened turn182view3 and turn192view4",
+        "finding": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused."
+      },
+      "review_notes": "Planned console integration. Exact general availability not yet announced. Scope describes Amazon S3 media and an existing CloudFront distribution. No published performance claim reused.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 20,
+        "actionability": 17,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-weava",
+      "title_zh": "RWS推出Weava，把不同市場讀者的模擬評估加入翻譯流程",
+      "source_story_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+      "source_date_display": "11月10日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-10",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "publisher": "RWS",
+          "evidence_locator": "Weava platform, lines 469–470 / Persona checks, line 473 / Quality and human review, line 474",
+          "source_publication_date": "2026-11-10",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Weava結合Language Weaver Pro及Audience Check。",
+          "evidence_locator": "Weava platform, lines 469–470",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        },
+        {
+          "claim_zh": "Audience Check按指定讀者特徵提出疑點和修改建議。",
+          "evidence_locator": "Persona checks, line 473",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        },
+        {
+          "claim_zh": "可設定品質門檻，必要時交由人員審閱。",
+          "evidence_locator": "Quality and human review, line 474",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Weava結合Language Weaver Pro及Audience Check。",
+          "evidence_locator": "Weava platform, lines 469–470",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        },
+        {
+          "claim_zh": "Audience Check按指定讀者特徵提出疑點和修改建議。",
+          "evidence_locator": "Persona checks, line 473",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        },
+        {
+          "claim_zh": "可設定品質門檻，必要時交由人員審閱。",
+          "evidence_locator": "Quality and human review, line 474",
+          "support_url": "https://www.prnewswire.com/news-releases/rws-launches-weava-a-culturally-intelligent-content-transformation-platform-built-for-global-growth-302933710.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:08:40+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+        "source_reopen_reference": "turn174view0; reopened turn182view0",
+        "finding": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority."
+      },
+      "review_notes": "Issuer launch November 10. Available according to RWS. Persona checks are simulated; no claim of audience validation, compliance advice or superiority.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 19,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 83
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-16-later",
+      "title_zh": "Later公布Creator Live，邀品牌和創作者討論長期合作",
+      "source_story_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+      "source_date_display": "11月13日",
+      "event_date": "2026-11-13",
+      "first_published_date": "2026-11-13",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "publisher": "Later",
+          "evidence_locator": "Dateline and event, line 466 / Programme, line 476 / Programme and attendance, lines 474, 481",
+          "source_publication_date": "2026-11-13",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+          "access_method": "Read retrieved source text for its stated claim(s).",
+          "limitations": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Later公布推出紐約Creator Live活動。",
+          "evidence_locator": "Dateline and event, line 466",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        },
+        {
+          "claim_zh": "議程包括Cassey Ho及YouTube、SharkNinja代表討論創作者經營。",
+          "evidence_locator": "Programme, line 476",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        },
+        {
+          "claim_zh": "Wayfair代表與創作者討論由單次合作發展長期關係，出席須申請。",
+          "evidence_locator": "Programme and attendance, lines 474, 481",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Later公布推出紐約Creator Live活動。",
+          "evidence_locator": "Dateline and event, line 466",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        },
+        {
+          "claim_zh": "議程包括Cassey Ho及YouTube、SharkNinja代表討論創作者經營。",
+          "evidence_locator": "Programme, line 476",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        },
+        {
+          "claim_zh": "Wayfair代表與創作者討論由單次合作發展長期關係，出席須申請。",
+          "evidence_locator": "Programme and attendance, lines 474, 481",
+          "support_url": "https://www.prnewswire.com/news-releases/later-debuts-creator-live-in-nyc-bringing-the-business-of-social-commerce-to-life-302939175.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-16T07:08:40+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-16T07:08:40+08:00",
+        "source_reopen_reference": "turn174view1; reopened turn182view1 and turn161view1",
+        "finding": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted."
+      },
+      "review_notes": "Company event announcement. NYC event remains planned; capacity subject to approval. No reach, earnings or partner outcomes asserted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 18,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 79
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
