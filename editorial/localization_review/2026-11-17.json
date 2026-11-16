@@ -1,0 +1,180 @@
+{
+  "edition_date": "2026-11-17",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+      "title_zh_hant": "BigCommerce為合資格商戶推出店內購物助手",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“店内购物助手、加入购物车、结账引导”。两项功能开放范围分别保留，避免将引导结账写成自动支付或全面开放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+      "title_zh_hant": "博報堂推Shopify商品資料方案，把規格連到使用情境",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“商品主档、自定义字段、使用场景”。区分现有字段接入与未来外部AI内购买条件，并剔除发现率和转化承诺。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+      "title_zh_hant": "Schweppes香港以流動試飲吧配合太古坊分享活動",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“流动试饮吧、太古坊、调饮示范”。站点及体验按报道归因，区分派发计划、实际触达及零售兑换。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+      "title_zh_hant": "Taboola完成收購Dianomi，擴充金融媒體廣告版位",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“完成收购、媒体网络、广告版位”。交割事实与未来平台整合分开，不推断版位已开放、成交条款或投放成效。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+      "title_zh_hant": "杭州OrdoAI測試跨市場創作者工具，邀約與價格由團隊把關",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“邀请制测试、创作者邀约、报价提取”。保留团队发送与审批责任，美东发布日期对应香港翌日，不将测试写成全面开放。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+      "title_zh_hant": "MCI USA推Jade，將活動報名、住宿與展商跟進串連",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“活动报名、住宿预订、展商线索”。保留由MCI USA服务提供的开放范围，不将移动应用写成已经推出。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+      "title_zh_hant": "Vigloo徵集AI短劇試播片，選中作品有機會製成系列",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“试播片、短剧征集、制作点数”。入选考虑与正式签约分开，保留三分钟上限及首五集大纲要求。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+      "title_zh_hant": "香港亞洲美容展以AI配對合資格買家與展商",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“亚洲国际博览馆、买家配对、一对一洽谈”。配对限入选买家与展商，转发日期晚于展期，不采用预计到场数字。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+      "title_zh_hant": "MUJI新加坡以成對畫面展示旅行用品的日常用法",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“无印良品、挂式收纳包、成对画面”。地区限新加坡，渠道为发布计划，办公和旅行均为画面示例，不推断销售。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+      "title_zh_hant": "Certis以巡查案例說明人員、機械人及AI的分工",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers"
+      ],
+      "simplified_editorial_note": "简体用“榜鹅数码园区、巡查、营运协调”。区分案例与试点，不扩大部署范围，不声称节省成本、提升安全或代替人员。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}

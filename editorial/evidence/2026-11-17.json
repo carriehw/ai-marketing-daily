@@ -1,0 +1,981 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-17",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-17T07:04:26+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Original issuer announcements and direct reporting read and reopened. Preserved limited availability, distinct original and wire dates, and approval responsibility. No separate human review or product testing.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-17-commerce",
+      "title_zh": "BigCommerce為合資格商戶推出店內購物助手",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "publisher": "Commerce.com",
+          "evidence_locator": "Launch and eligibility, lines 58–59, 79 / Storefront functions, lines 67–72 / Paid search availability, line 73",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Shopping Agent逐步開放予合資格商戶。",
+          "evidence_locator": "Launch and eligibility, lines 58–59, 79",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        },
+        {
+          "claim_zh": "助手可比較產品、延續追問及協助加入購物車。",
+          "evidence_locator": "Storefront functions, lines 67–72",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        },
+        {
+          "claim_zh": "對話式店內搜尋是另一功能，涵蓋所有付費方案。",
+          "evidence_locator": "Paid search availability, line 73",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Shopping Agent逐步開放予合資格商戶。",
+          "evidence_locator": "Launch and eligibility, lines 58–59, 79",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        },
+        {
+          "claim_zh": "助手可比較產品、延續追問及協助加入購物車。",
+          "evidence_locator": "Storefront functions, lines 67–72",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        },
+        {
+          "claim_zh": "對話式店內搜尋是另一功能，涵蓋所有付費方案。",
+          "evidence_locator": "Paid search availability, line 73",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403466/0/en/commerce-introduces-shopping-agent-to-enable-conversational-shopping-for-bigcommerce-merchants.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:02:18+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+        "source_reopen_reference": "turn203view1; reopened turn205view0",
+        "finding": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim."
+      },
+      "review_notes": "Shopping Agent rolling out to eligible B2C merchants; conversational search separately available on paid plans. Product landing page could not be opened. No efficacy claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-hakuhodo",
+      "title_zh": "博報堂推Shopify商品資料方案，把規格連到使用情境",
+      "source_story_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+      "published_article_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "publisher": "Hakuhodo",
+          "evidence_locator": "Solution opening, line 28 / Logic Bridge explanation, lines 32–34 / Shopify linkage, lines 43–46",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "博報堂與Hakuhodo DY ONE推出Shopify商品資料方案。",
+          "evidence_locator": "Solution opening, line 28",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        },
+        {
+          "claim_zh": "方案把商品規格與使用情境建立結構化關聯。",
+          "evidence_locator": "Logic Bridge explanation, lines 32–34",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        },
+        {
+          "claim_zh": "擴充資料可同步至Shopify商品主檔、描述和自訂欄位。",
+          "evidence_locator": "Shopify linkage, lines 43–46",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "博報堂與Hakuhodo DY ONE推出Shopify商品資料方案。",
+          "evidence_locator": "Solution opening, line 28",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        },
+        {
+          "claim_zh": "方案把商品規格與使用情境建立結構化關聯。",
+          "evidence_locator": "Logic Bridge explanation, lines 32–34",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        },
+        {
+          "claim_zh": "擴充資料可同步至Shopify商品主檔、描述和自訂欄位。",
+          "evidence_locator": "Shopify linkage, lines 43–46",
+          "support_url": "https://www.hakuhodo.co.jp/news/newsrelease/267451/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:04:26+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+        "source_reopen_reference": "turn207view0; reopened turn208view0",
+        "finding": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims."
+      },
+      "review_notes": "Japanese issuer announcement. Shopify fields and links are described. External in-agent checkout depends on future support. No ranking or sales claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 14,
+        "novelty": 9,
+        "total": 93
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-schweppes",
+      "title_zh": "Schweppes香港以流動試飲吧配合太古坊分享活動",
+      "source_story_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+      "published_article_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "publisher": "Marketing-Interactive",
+          "evidence_locator": "Campaign rollout, lines 149–151 / Mobile Taste Bar, line 150 / Talk partnership, lines 157–158",
+          "source_publication_date": "2026-11-16",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "品牌在香港以流動試飲吧派發兩款新飲品。",
+          "evidence_locator": "Campaign rollout, lines 149–151",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        },
+        {
+          "claim_zh": "指定站點有現場調飲示範。",
+          "evidence_locator": "Mobile Taste Bar, line 150",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        },
+        {
+          "claim_zh": "與太古坊合作舉行Taste Talk Thursday系列。",
+          "evidence_locator": "Talk partnership, lines 157–158",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "品牌在香港以流動試飲吧派發兩款新飲品。",
+          "evidence_locator": "Campaign rollout, lines 149–151",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        },
+        {
+          "claim_zh": "指定站點有現場調飲示範。",
+          "evidence_locator": "Mobile Taste Bar, line 150",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        },
+        {
+          "claim_zh": "與太古坊合作舉行Taste Talk Thursday系列。",
+          "evidence_locator": "Talk partnership, lines 157–158",
+          "support_url": "https://www.marketing-interactive.com/schweppes-pairs-mass-sampling-with-thought-leadership-in-hk-push",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:02:18+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+        "source_reopen_reference": "turn204view4; reopened turn208view3",
+        "finding": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout."
+      },
+      "review_notes": "Direct report quoting brand representative. Sampling quantity is planned distribution, not realised reach. Named stops and formats subject to rollout.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-taboola",
+      "title_zh": "Taboola完成收購Dianomi，擴充金融媒體廣告版位",
+      "source_story_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+      "published_article_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "publisher": "Taboola",
+          "evidence_locator": "Closing release, line 6 / Network scope, lines 6–8 / Realize commentary and forward-looking scope, lines 11, 17–18",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Taboola宣布已完成收購Dianomi。",
+          "evidence_locator": "Closing release, line 6",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        },
+        {
+          "claim_zh": "Dianomi的廣告服務主要面向商業、金融與生活版位。",
+          "evidence_locator": "Network scope, lines 6–8",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        },
+        {
+          "claim_zh": "Taboola表示計劃把Realize與Dianomi媒體網絡結合。",
+          "evidence_locator": "Realize commentary and forward-looking scope, lines 11, 17–18",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Taboola宣布已完成收購Dianomi。",
+          "evidence_locator": "Closing release, line 6",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        },
+        {
+          "claim_zh": "Dianomi的廣告服務主要面向商業、金融與生活版位。",
+          "evidence_locator": "Network scope, lines 6–8",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        },
+        {
+          "claim_zh": "Taboola表示計劃把Realize與Dianomi媒體網絡結合。",
+          "evidence_locator": "Realize commentary and forward-looking scope, lines 11, 17–18",
+          "support_url": "https://investors.taboola.com/news-releases/news-release-details/taboola-finalizes-acquisition-dianomi",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:02:18+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+        "source_reopen_reference": "turn204view0; reopened turn206view3; scheme-effective filing mirror turn209view1",
+        "finding": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim."
+      },
+      "review_notes": "Transaction completion independently supported by Dianomi regulatory disclosure. No price, growth or automatic inventory access claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 24,
+        "actionability": 17,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 89
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-ordo",
+      "title_zh": "杭州OrdoAI測試跨市場創作者工具，邀約與價格由團隊把關",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+      "source_date_display": "11月15日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-15",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "publisher": "OrdoAI",
+          "evidence_locator": "Release subheading and beta, lines 53, 81–83 / Discovery, line 65 / Outreach and tracking, lines 74–79",
+          "source_publication_date": "2026-11-15",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Ordo Brand屬邀請制封閉測試。",
+          "evidence_locator": "Release subheading and beta, lines 53, 81–83",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        },
+        {
+          "claim_zh": "可按活動要求搜尋及評估創作者。",
+          "evidence_locator": "Discovery, line 65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        },
+        {
+          "claim_zh": "協助起草翻譯邀約、擷取報價及跟進合作，使用者保留審批。",
+          "evidence_locator": "Outreach and tracking, lines 74–79",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Ordo Brand屬邀請制封閉測試。",
+          "evidence_locator": "Release subheading and beta, lines 53, 81–83",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        },
+        {
+          "claim_zh": "可按活動要求搜尋及評估創作者。",
+          "evidence_locator": "Discovery, line 65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        },
+        {
+          "claim_zh": "協助起草翻譯邀約、擷取報價及跟進合作，使用者保留審批。",
+          "evidence_locator": "Outreach and tracking, lines 74–79",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403145/0/en/ordoai-expands-into-ai-products-drawing-on-its-global-marketing-experience.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:04:26+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+        "source_reopen_reference": "turn207view2; reopened turn208view1",
+        "finding": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted."
+      },
+      "review_notes": "Wire dateline November 15 ET (November 16 HKT). Invite-only beta; the brand controls sending, payment, approval and terms. Database and client scale omitted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 92
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-jade",
+      "title_zh": "MCI USA推Jade，將活動報名、住宿與展商跟進串連",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "publisher": "MCI USA",
+          "evidence_locator": "Availability, line 82 / Housing, line 70 / Lead retrieval, line 71",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Jade與MCI USA的報名及住宿服務一起提供。",
+          "evidence_locator": "Availability, line 82",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        },
+        {
+          "claim_zh": "Jade連接活動報名與酒店房間資料。",
+          "evidence_locator": "Housing, line 70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        },
+        {
+          "claim_zh": "參展商可掃描名牌並記錄及評估商機。",
+          "evidence_locator": "Lead retrieval, line 71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Jade與MCI USA的報名及住宿服務一起提供。",
+          "evidence_locator": "Availability, line 82",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        },
+        {
+          "claim_zh": "Jade連接活動報名與酒店房間資料。",
+          "evidence_locator": "Housing, line 70",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        },
+        {
+          "claim_zh": "參展商可掃描名牌並記錄及評估商機。",
+          "evidence_locator": "Lead retrieval, line 71",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3403575/0/en/mci-usa-launches-jade-an-agentic-ai-platform-redefining-event-registration-and-housing-services.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:02:18+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+        "source_reopen_reference": "turn200view0; reopened turn205view1",
+        "finding": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim."
+      },
+      "review_notes": "Available through MCI USA managed services. Dedicated app planned. No vendor first or outcome claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 87
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-vigloo",
+      "title_zh": "Vigloo徵集AI短劇試播片，選中作品有機會製成系列",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "publisher": "Vigloo",
+          "evidence_locator": "Call for entries, line 59 / Submission requirements, line 59 / Production deal mechanics, line 61",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Vigloo向全球創作者徵集短劇。",
+          "evidence_locator": "Call for entries, line 59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        },
+        {
+          "claim_zh": "參加者需交不超過三分鐘的影片及首五集大綱。",
+          "evidence_locator": "Submission requirements, line 59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        },
+        {
+          "claim_zh": "簽約者可獲製作點數，平台發行成片並分成。",
+          "evidence_locator": "Production deal mechanics, line 61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Vigloo向全球創作者徵集短劇。",
+          "evidence_locator": "Call for entries, line 59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        },
+        {
+          "claim_zh": "參加者需交不超過三分鐘的影片及首五集大綱。",
+          "evidence_locator": "Submission requirements, line 59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        },
+        {
+          "claim_zh": "簽約者可獲製作點數，平台發行成片並分成。",
+          "evidence_locator": "Production deal mechanics, line 61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/16/3404053/0/en/vigloo-launches-global-search-for-its-next-microdrama-series-with-short-drama-festival-2.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:02:18+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:02:18+08:00",
+        "source_reopen_reference": "turn200view1; reopened turn205view2",
+        "finding": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants."
+      },
+      "review_notes": "Issuer contest announcement. Consideration is not a production contract. Terms and rights must be checked by entrants.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 19,
+        "actionability": 17,
+        "market_relevance": 14,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-cosmoprof",
+      "title_zh": "香港亞洲美容展以AI配對合資格買家與展商",
+      "source_story_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+      "published_article_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-11",
+      "first_published_date": "2026-11-11",
+      "source_documents": [
+        {
+          "url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "publisher": "Cosmoprof Asia",
+          "evidence_locator": "Two-venue show structure, lines 140–141 / Buyer Programme, line 150 / AI Match&Meet, line 150",
+          "source_publication_date": "2026-11-16",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        },
+        {
+          "url": "https://bolognafiere.it/en/exhibition-news/cosmoprof-asia-2026-asia-pacifics-premier-beauty-event-opens-in-hong-kong/",
+          "publisher": "BolognaFiere",
+          "evidence_locator": "Original dated announcement and Buyer Programme, lines 71–88",
+          "source_publication_date": "2026-11-11",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "供應鏈展與品牌成品展在香港分設兩個場地。",
+          "evidence_locator": "Two-venue show structure, lines 140–141",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        },
+        {
+          "claim_zh": "買家計劃安排度身設計的行程。",
+          "evidence_locator": "Buyer Programme, line 150",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        },
+        {
+          "claim_zh": "AI平台Match&Meet為獲選買家及展商安排一對一洽談。",
+          "evidence_locator": "AI Match&Meet, line 150",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "供應鏈展與品牌成品展在香港分設兩個場地。",
+          "evidence_locator": "Two-venue show structure, lines 140–141",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        },
+        {
+          "claim_zh": "買家計劃安排度身設計的行程。",
+          "evidence_locator": "Buyer Programme, line 150",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        },
+        {
+          "claim_zh": "AI平台Match&Meet為獲選買家及展商安排一對一洽談。",
+          "evidence_locator": "AI Match&Meet, line 150",
+          "support_url": "https://en.prnasia.com/releases/apac/cosmoprof-asia-2026-asia-pacific-s-premier-beauty-event-opens-in-hong-kong-556487.shtml",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:04:26+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+        "source_reopen_reference": "turn203view4; reopened turn206view1 and turn211view3; organiser original turn211view0",
+        "finding": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome."
+      },
+      "review_notes": "November 16 wire copy revisits November 10–13 shows; original organiser news dated November 11. AI matching scoped to selected qualified buyers and exhibitors. No attendance outcome.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 88
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-muji",
+      "title_zh": "MUJI新加坡以成對畫面展示旅行用品的日常用法",
+      "source_story_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+      "published_article_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+      "source_date_display": "11月16日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-16",
+      "source_documents": [
+        {
+          "url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "publisher": "Campaign Brief Asia",
+          "evidence_locator": "Campaign concept, lines 41–42 / Paired visuals, lines 44–48 / Channel plan, line 56",
+          "source_publication_date": "2026-11-16",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MUJI新加坡與ANAK合作推出Travel, Every Day。",
+          "evidence_locator": "Campaign concept, lines 41–42",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        },
+        {
+          "claim_zh": "同款商品以日常和旅行畫面配對呈現。",
+          "evidence_locator": "Paired visuals, lines 44–48",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        },
+        {
+          "claim_zh": "計劃在本地戶外、門店、社交及電商等渠道傳播。",
+          "evidence_locator": "Channel plan, line 56",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MUJI新加坡與ANAK合作推出Travel, Every Day。",
+          "evidence_locator": "Campaign concept, lines 41–42",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        },
+        {
+          "claim_zh": "同款商品以日常和旅行畫面配對呈現。",
+          "evidence_locator": "Paired visuals, lines 44–48",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        },
+        {
+          "claim_zh": "計劃在本地戶外、門店、社交及電商等渠道傳播。",
+          "evidence_locator": "Channel plan, line 56",
+          "support_url": "https://campaignbriefasia.com/2026/11/16/muji-singapore-and-anak-showcase-muji-to-go-in-travel-every-day-campaign/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:04:26+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+        "source_reopen_reference": "turn204view3; reopened turn208view4 and turn211view4",
+        "finding": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference."
+      },
+      "review_notes": "Dated direct campaign coverage. Activity scoped to Singapore, channel deployment as described; no reach or sales inference.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 18,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 84
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-17-certis",
+      "title_zh": "Certis以巡查案例說明人員、機械人及AI的分工",
+      "source_story_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+      "published_article_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+      "source_date_display": "11月12日",
+      "event_date": "2026-11-10",
+      "first_published_date": "2026-11-12",
+      "source_documents": [
+        {
+          "url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "publisher": "Certis",
+          "evidence_locator": "Company campaign overview, lines 68–78 / Robots and Mozart descriptions, lines 82–89 / Punggol Digital District example, lines 94–95",
+          "source_publication_date": "2026-11-12",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+          "access_method": "Read retrieved source text for its stated claims.",
+          "limitations": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Certis發起Built for What's Next品牌活動。",
+          "evidence_locator": "Company campaign overview, lines 68–78",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        },
+        {
+          "claim_zh": "活動用Wallace巡查與Mozart協調操作說明技術角色。",
+          "evidence_locator": "Robots and Mozart descriptions, lines 82–89",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        },
+        {
+          "claim_zh": "公司列出新加坡榜鵝數碼園區的試點部署。",
+          "evidence_locator": "Punggol Digital District example, lines 94–95",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Certis發起Built for What's Next品牌活動。",
+          "evidence_locator": "Company campaign overview, lines 68–78",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        },
+        {
+          "claim_zh": "活動用Wallace巡查與Mozart協調操作說明技術角色。",
+          "evidence_locator": "Robots and Mozart descriptions, lines 82–89",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        },
+        {
+          "claim_zh": "公司列出新加坡榜鵝數碼園區的試點部署。",
+          "evidence_locator": "Punggol Digital District example, lines 94–95",
+          "support_url": "https://www.certisgroup.com/certis-launches-built-for-whats-next/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-17T07:04:26+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened source to challenge date, claims and availability. No separate reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-17T07:04:26+08:00",
+        "source_reopen_reference": "turn207view1; reopened turn208view2 and turn211view1; November 16 issuer syndication turn211view2",
+        "finding": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome."
+      },
+      "review_notes": "Company campaign page posted November 12 with November 10 dateline. November 16 syndication. Described deployments limited to named examples, no measured outcome.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 25,
+        "business_impact": 18,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 8,
+        "total": 82
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
