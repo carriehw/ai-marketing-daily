@@ -3,8 +3,8 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "02cfc1dc16bf552698a89e4e4c4bcd2364d66c2d",
   "discovery_count": 22,
-  "approved_count": 5,
-  "held_count": 0,
+  "approved_count": 10,
+  "held_count": 1,
   "deduplication": "Compared topics against archive titles and recent editions. Grouped equivalent sources by underlying event.",
   "items": [
     {
@@ -12,8 +12,8 @@
       "title": "ChatGPT Ads increases its market presence in 44 countries | OpenAI",
       "source_url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence/",
       "provisional_score": 96,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "REVIEWED",
+      "next_action": "Reserve: primary release dated Nov 12. Nov 17 trade commentary adds interpretation, without a confirmed new launch. Hong Kong advertisers can buy ads in supported external markets only."
     },
     {
       "slug": "illumin",
@@ -38,8 +38,9 @@
       "title": "MAI Image 2.7: Frontier quality at a fraction of the cost | Microsoft AI",
       "source_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
       "provisional_score": 92,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-18/mai-image.json"
     },
     {
       "slug": "gemini-tasks",
@@ -64,8 +65,9 @@
       "title": "How CHAGEE is making one brand feel at home everywhere | Marketing-Interactive",
       "source_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-18/chagee.json"
     },
     {
       "slug": "soriana-kevel",
@@ -81,32 +83,34 @@
       "title": "Prudential HK draws crowds with Nick Cheung photocard giveaway | Marketing-Interactive",
       "source_url": "https://www.marketing-interactive.com/prudential-hk-draws-crowds-with-nick-cheung-photocard-giveaway",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "HELD",
+      "next_action": "Direct trade story failed from both domains. Find an accessible Prudential/event organiser source verifying giveaway mechanics and timing; tournament calendar alone is insufficient."
     },
     {
       "slug": "dreamdata",
       "title": "See Which ChatGPT Ads Drive Revenue With Dreamdata's New Integration — Dreamdata",
       "source_url": "https://dreamdata.io/blog/openai-ads-integration",
       "provisional_score": 84,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "SOURCE_READ",
+      "next_action": "Vendor documentation opened. Reserve pending accessible dated launch confirmation and exact supported data flow; vendor blog returned an access error."
     },
     {
       "slug": "daydream",
       "title": "Daydream’s New AI Agent Can Shop for You While You Sleep | Vogue",
-      "source_url": "https://www.vogue.com/article/daydreams-new-ai-agent-can-shop-for-you-while-you-sleep",
+      "source_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
       "provisional_score": 83,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-18/daydream.json"
     },
     {
       "slug": "turms",
       "title": "AdTonos drops its name after 10 years to chase in-car ads as Turms",
       "source_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
       "provisional_score": 82,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-18/turms.json"
     },
     {
       "slug": "10fold",
@@ -121,8 +125,9 @@
       "title": "Madarth launches ‘Find Your Shine’ campaign for Sunny Diamonds’ first Chennai showroom",
       "source_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
       "provisional_score": 78,
-      "state": "DISCOVERED",
-      "next_action": "Check material claims and stated rollout; reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-18/sunny-diamonds.json"
     },
     {
       "slug": "faidr",
