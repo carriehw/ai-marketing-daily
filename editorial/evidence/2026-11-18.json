@@ -1,0 +1,989 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-18",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-18T07:10:53+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Issuer announcements, product release notes and direct trade reporting were read and opened again. Availability, market limits, reported events and dates were checked. AI-assisted language review preserved these qualifiers. No human sign-off or product tests.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [
+    {
+      "corrected_at_hkt": "2026-11-18T07:16:08+08:00",
+      "story_id": "2026-11-18-gemini-tasks",
+      "change": "Added previously reviewed, distinct official product announcement to source metadata after browser QA flagged a duplicate supporting link. No story claim changed."
+    }
+  ],
+  "stories": [
+    {
+      "story_id": "2026-11-18-illumin",
+      "title_zh": "illumin推出Ask Lu廣告助理，建案功能開放測試",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "publisher": "illumin",
+          "evidence_locator": "Issuer release L59–61 / Issuer release L62, L65 / Issuer release L64–65",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Ask Lu Reporting可回答客戶對廣告表現的提問並整理報表。",
+          "evidence_locator": "Issuer release L59–61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        },
+        {
+          "claim_zh": "Campaign Creation以公開測試推出。",
+          "evidence_locator": "Issuer release L62, L65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        },
+        {
+          "claim_zh": "報表功能及競價優化更新開始在全球推出。",
+          "evidence_locator": "Issuer release L64–65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Ask Lu Reporting可回答客戶對廣告表現的提問並整理報表。",
+          "evidence_locator": "Issuer release L59–61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        },
+        {
+          "claim_zh": "Campaign Creation以公開測試推出。",
+          "evidence_locator": "Issuer release L62, L65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        },
+        {
+          "claim_zh": "報表功能及競價優化更新開始在全球推出。",
+          "evidence_locator": "Issuer release L64–65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404442/0/en/illumin-redefines-ai-powered-advertising-from-insight-to-action-with-ask-lu.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:07:22+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn858680895view0; reopened turn161814023view0",
+        "finding": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release."
+      },
+      "review_notes": "Issuer release; worldwide rollout began for Reporting and optimisation, and Campaign Creation is open beta. No performance result. The company-site copy did not open; GlobeNewswire carries the issuer's release.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 93
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-visa-disney",
+      "title_zh": "迪士尼與Visa在亞太合作，香港樂園擬推持卡人禮遇",
+      "source_story_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+      "published_article_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "publisher": "Disney and Visa",
+          "evidence_locator": "Newswire announcement L28–31 / Newswire announcement L31 / Newswire announcement L32, L38",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "迪士尼與Visa建立亞太多年企業聯盟涵蓋聯名卡及聯合行銷。",
+          "evidence_locator": "Newswire announcement L28–31",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        },
+        {
+          "claim_zh": "Visa為亞太重點市場的迪士尼Visa聯名卡提供獨家支付網路。",
+          "evidence_locator": "Newswire announcement L31",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        },
+        {
+          "claim_zh": "香港迪士尼擬向合資格持卡人提供提早入園及指定娛樂優先權。",
+          "evidence_locator": "Newswire announcement L32, L38",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "迪士尼與Visa建立亞太多年企業聯盟涵蓋聯名卡及聯合行銷。",
+          "evidence_locator": "Newswire announcement L28–31",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        },
+        {
+          "claim_zh": "Visa為亞太重點市場的迪士尼Visa聯名卡提供獨家支付網路。",
+          "evidence_locator": "Newswire announcement L31",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        },
+        {
+          "claim_zh": "香港迪士尼擬向合資格持卡人提供提早入園及指定娛樂優先權。",
+          "evidence_locator": "Newswire announcement L32, L38",
+          "support_url": "https://thesun.my/business/corporate-news/disney-and-visa-announce-multi-year-strategic-alliance-across-asia-pacific/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:07:22+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn858680895view3; reopened turn828260141view5",
+        "finding": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending."
+      },
+      "review_notes": "Issuer statement reproduced by The Sun Malaysia after a Zawya copy failed to open. Select APAC markets; Hong Kong benefits are planned. Eligibility and dates pending.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 23,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-gemini-tasks",
+      "title_zh": "Google將Gemini Tasks免費開放至六個市場",
+      "source_story_url": "https://gemini.google/gl/release-notes/?hl=en",
+      "published_article_url": "https://gemini.google/gl/release-notes/?hl=en",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://gemini.google/gl/release-notes/?hl=en",
+          "publisher": "Google",
+          "evidence_locator": "Gemini release notes Nov 17, L26–28 / Gemini release notes Nov 17, L27–28 / Gemini release notes Nov 17, L30–33",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+          "publisher": "Google",
+          "source_class": "A",
+          "source_publication_date": "2026-11-17",
+          "evidence_locator": "Google product announcement L216; example purchase and supported cards L275–277; approval L283–285",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved company product announcement and reopened it in a separate read.",
+          "limitations": "Company examples. For the exact free market and checkout eligibility lists, use the dated release notes."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Gemini Tasks在美國、印度、加拿大、澳洲、日本及南韓逐步免費開放。",
+          "evidence_locator": "Gemini release notes Nov 17, L26–28",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        },
+        {
+          "claim_zh": "Tasks可在背景處理多步驟及定期任務。",
+          "evidence_locator": "Gemini release notes Nov 17, L27–28",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        },
+        {
+          "claim_zh": "Google Pay結帳限美國合資格成人個人帳戶，以英文逐步推出並要求確認。",
+          "evidence_locator": "Gemini release notes Nov 17, L30–33",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Gemini Tasks在美國、印度、加拿大、澳洲、日本及南韓逐步免費開放。",
+          "evidence_locator": "Gemini release notes Nov 17, L26–28",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        },
+        {
+          "claim_zh": "Tasks可在背景處理多步驟及定期任務。",
+          "evidence_locator": "Gemini release notes Nov 17, L27–28",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        },
+        {
+          "claim_zh": "Google Pay結帳限美國合資格成人個人帳戶，以英文逐步推出並要求確認。",
+          "evidence_locator": "Gemini release notes Nov 17, L30–33",
+          "support_url": "https://gemini.google/gl/release-notes/?hl=en",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:07:22+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn277967568view3; reopened turn828260141view3; complementary Google product announcement turn988430180view0 reopened as turn161814023view4",
+        "finding": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval."
+      },
+      "review_notes": "Dated release note. Free Tasks rolling out in six markets; Google Pay checkout separately rolling out in English to eligible US personal accounts with explicit approval.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 24,
+        "actionability": 17,
+        "market_relevance": 13,
+        "novelty": 9,
+        "total": 91
+      },
+      "impact": "High",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-mai-image",
+      "title_zh": "更進新聞：Microsoft在Foundry公開預覽MAI Image 2.7與Flash",
+      "source_story_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+      "published_article_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "publisher": "Microsoft AI",
+          "evidence_locator": "Microsoft AI L62–64 / Microsoft AI L65–69 / Microsoft AI L70–80",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MAI Image 2.7及Flash在Microsoft Foundry公開預覽，可生成及編輯圖片。",
+          "evidence_locator": "Microsoft AI L62–64",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        },
+        {
+          "claim_zh": "兩款模型均支援透明背景。",
+          "evidence_locator": "Microsoft AI L65–69",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        },
+        {
+          "claim_zh": "MAI Labs推出由Flash支援的Canvas工作空間。",
+          "evidence_locator": "Microsoft AI L70–80",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MAI Image 2.7及Flash在Microsoft Foundry公開預覽，可生成及編輯圖片。",
+          "evidence_locator": "Microsoft AI L62–64",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        },
+        {
+          "claim_zh": "兩款模型均支援透明背景。",
+          "evidence_locator": "Microsoft AI L65–69",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        },
+        {
+          "claim_zh": "MAI Labs推出由Flash支援的Canvas工作空間。",
+          "evidence_locator": "Microsoft AI L70–80",
+          "support_url": "https://microsoft.ai/news/introducing-mai-image-2-7/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:10:17+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn753895336view0; reopened turn210329461view2",
+        "finding": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings."
+      },
+      "review_notes": "New generation, Flash and Canvas announcement after the October editing preview. Foundry public preview; omit relative costs and model rankings.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 91
+      },
+      "impact": "Medium",
+      "recommended_response": "Test",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-10-29.html"
+    },
+    {
+      "story_id": "2026-11-18-chagee",
+      "title_zh": "霸王茶姬九周年為七個海外市場設計在地版Teadore",
+      "source_story_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+      "published_article_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "publisher": "Marketing-Interactive",
+          "evidence_locator": "Brand interview L149–154, L163–171 / Brand interview L149–151 / Brand interview L158–169",
+          "source_publication_date": "2026-11-17",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "霸王茶姬在九周年讓品牌大象角色首次走進海外市場。",
+          "evidence_locator": "Brand interview L149–154, L163–171",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        },
+        {
+          "claim_zh": "七個國際市場各有在地設計，新加坡採魚尾獅元素。",
+          "evidence_locator": "Brand interview L149–151",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        },
+        {
+          "claim_zh": "角色源於雲南及茶馬古道的品牌敘事，保留綠色大象等識別。",
+          "evidence_locator": "Brand interview L158–169",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "霸王茶姬在九周年讓品牌大象角色首次走進海外市場。",
+          "evidence_locator": "Brand interview L149–154, L163–171",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        },
+        {
+          "claim_zh": "七個國際市場各有在地設計，新加坡採魚尾獅元素。",
+          "evidence_locator": "Brand interview L149–151",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        },
+        {
+          "claim_zh": "角色源於雲南及茶馬古道的品牌敘事，保留綠色大象等識別。",
+          "evidence_locator": "Brand interview L158–169",
+          "support_url": "https://www.marketing-interactive.com/how-chagee-is-making-one-brand-feel-at-home-everywhere",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:10:17+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn600737802view2; reopened turn161814023view6",
+        "finding": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed."
+      },
+      "review_notes": "Direct reporting with APAC CMO interview. Seven international markets in source plus China origin. No results or future performance claimed.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 19,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 87
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-daydream",
+      "title_zh": "更進新聞：Daydream推出穿搭助理，參與商戶支援一鍵結帳",
+      "source_story_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "publisher": "Daydream",
+          "evidence_locator": "Company announcement L473–478 / Company announcement L482–484 / Company announcement L481–484",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:07:48+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Daydream推出可因應需求組合配搭的購物助理。",
+          "evidence_locator": "Company announcement L473–478",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        },
+        {
+          "claim_zh": "助理可追蹤降價、指定商品及品牌新品等用戶要求。",
+          "evidence_locator": "Company announcement L482–484",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        },
+        {
+          "claim_zh": "顧客批准後可向參與商戶一鍵結帳。",
+          "evidence_locator": "Company announcement L481–484",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Daydream推出可因應需求組合配搭的購物助理。",
+          "evidence_locator": "Company announcement L473–478",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        },
+        {
+          "claim_zh": "助理可追蹤降價、指定商品及品牌新品等用戶要求。",
+          "evidence_locator": "Company announcement L482–484",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        },
+        {
+          "claim_zh": "顧客批准後可向參與商戶一鍵結帳。",
+          "evidence_locator": "Company announcement L481–484",
+          "support_url": "https://www.prnewswire.com/news-releases/daydream-launches-first-ever-autonomous-agent-for-fashion-shopping-styling-and-checkout-302941544.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:10:17+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:08:09+08:00",
+        "source_reopen_reference": "turn780656378view0; reopened turn210329461view0",
+        "finding": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed."
+      },
+      "review_notes": "Issuer announcement in PR Newswire. Checkout takes shopper approval and applies to participating partners. iOS and text access as stated, no worldwide availability or commercial results claimed.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 87
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-09-16.html"
+    },
+    {
+      "story_id": "2026-11-18-bench-aura",
+      "title_zh": "澳洲Bench Media在Bench Connect加入廣告分析助理Aura",
+      "source_story_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+      "published_article_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "publisher": "Mediaweek",
+          "evidence_locator": "Mediaweek L148–154 / Mediaweek L155–157 / Mediaweek L157–158, L176",
+          "source_publication_date": "2026-11-17",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "澳洲Bench Media把Aura加到Bench Connect。",
+          "evidence_locator": "Mediaweek L148–154",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        },
+        {
+          "claim_zh": "用戶可用英文提問並比較各個平台的表現。",
+          "evidence_locator": "Mediaweek L155–157",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        },
+        {
+          "claim_zh": "創意團隊可檢查素材疲勞跡象，表現團隊可查獲客成本。",
+          "evidence_locator": "Mediaweek L157–158, L176",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "澳洲Bench Media把Aura加到Bench Connect。",
+          "evidence_locator": "Mediaweek L148–154",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        },
+        {
+          "claim_zh": "用戶可用英文提問並比較各個平台的表現。",
+          "evidence_locator": "Mediaweek L155–157",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        },
+        {
+          "claim_zh": "創意團隊可檢查素材疲勞跡象，表現團隊可查獲客成本。",
+          "evidence_locator": "Mediaweek L157–158, L176",
+          "support_url": "https://www.mediaweek.com.au/bench-media-introduces-aura-to-help-marketers-turn-campaign-data-into-informed-decisions",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:07:22+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:04:59+08:00",
+        "source_reopen_reference": "turn858680895view2; reopened turn828260141view0",
+        "finding": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes."
+      },
+      "review_notes": "Direct Australian trade reporting with Bench Media staff quotes. Other trade page failed to open. Feature is within Bench Connect; investigation prompts do not prove causes.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 19,
+        "actionability": 17,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 86
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-18-soriana-kevel",
+      "title_zh": "墨西哥Soriana Media採用Kevel，首批廣告版位已上線",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "publisher": "Kevel",
+          "evidence_locator": "Release L55–59 / Release L59–62 / Release L66–69",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "墨西哥Soriana Media採用Kevel作為零售媒體廣告基礎設施。",
+          "evidence_locator": "Release L55–59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        },
+        {
+          "claim_zh": "公告列出商品贊助、品牌贊助及展示廣告。",
+          "evidence_locator": "Release L59–62",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        },
+        {
+          "claim_zh": "首批使用Kevel的版位已上線，其他格式屬後續計劃。",
+          "evidence_locator": "Release L66–69",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "墨西哥Soriana Media採用Kevel作為零售媒體廣告基礎設施。",
+          "evidence_locator": "Release L55–59",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        },
+        {
+          "claim_zh": "公告列出商品贊助、品牌贊助及展示廣告。",
+          "evidence_locator": "Release L59–62",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        },
+        {
+          "claim_zh": "首批使用Kevel的版位已上線，其他格式屬後續計劃。",
+          "evidence_locator": "Release L66–69",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/17/3404987/0/en/soriana-media-chooses-kevel-to-power-its-retail-media-network-bringing-award-winning-ad-technology-to-mexican-retail.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:07:22+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn858680895view1; reopened turn161814023view1",
+        "finding": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured."
+      },
+      "review_notes": "Kevel-issued announcement quotes Soriana. Initial placements live in Mexico; inventory and outcomes for individual advertisers are not independently measured.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 85
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-turms",
+      "title_zh": "AdTonos更名為Turms，把車內廣告列為早期重點",
+      "source_story_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+      "published_article_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-16",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "publisher": "PPC Land",
+          "evidence_locator": "PPC Land L48–58 / PPC Land L49, L62–71 / PPC Land L49, L55–57",
+          "source_publication_date": "2026-11-17",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AdTonos更名為Turms，以Movement Media為新發展方向。",
+          "evidence_locator": "PPC Land L48–58",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        },
+        {
+          "claim_zh": "聯網車輛為早期重點，公司也把戶外、零售及聯網電視納入構想。",
+          "evidence_locator": "PPC Land L49, L62–71",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        },
+        {
+          "claim_zh": "Movement Media AI仍在開發，原有音訊廣告業務繼續。",
+          "evidence_locator": "PPC Land L49, L55–57",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AdTonos更名為Turms，以Movement Media為新發展方向。",
+          "evidence_locator": "PPC Land L48–58",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        },
+        {
+          "claim_zh": "聯網車輛為早期重點，公司也把戶外、零售及聯網電視納入構想。",
+          "evidence_locator": "PPC Land L49, L62–71",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        },
+        {
+          "claim_zh": "Movement Media AI仍在開發，原有音訊廣告業務繼續。",
+          "evidence_locator": "PPC Land L49, L55–57",
+          "support_url": "https://ppc.land/adtonos-drops-its-name-after-10-years-to-chase-in-car-ads-as-turms/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:10:17+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn600737802view3; reopened turn161814023view7",
+        "finding": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted."
+      },
+      "review_notes": "Direct source reports on release plus rebrand website. Website post dated November 16 before November 17 press release. Movement Media AI is in development. No live cross-channel inventory, drivers' personal data use, or efficacy asserted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 16,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 82
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-18-sunny-diamonds",
+      "title_zh": "Sunny Diamonds以女性成就為主題推廣金奈首店",
+      "source_story_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+      "published_article_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+      "source_date_display": "11月17日",
+      "event_date": "2026-10-31",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "publisher": "MediaNews4U",
+          "evidence_locator": "MediaNews4U L50–55, L66–69 / MediaNews4U L68–70 / MediaNews4U L73–75, L80",
+          "source_publication_date": "2026-11-17",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-18T07:03:52+08:00",
+          "access_method": "Retrieved and read source text with web access.",
+          "limitations": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Madarth以Find Your Shine支援Sunny Diamonds金奈首間門市。",
+          "evidence_locator": "MediaNews4U L50–55, L66–69",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        },
+        {
+          "claim_zh": "活動以紅毯攝影手法呈現女性個人成就，並延伸至戶外、平面及數位媒體。",
+          "evidence_locator": "MediaNews4U L68–70",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        },
+        {
+          "claim_zh": "Women Achievers長訪談搭配較短的社群片段，首集已拍攝。",
+          "evidence_locator": "MediaNews4U L73–75, L80",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Madarth以Find Your Shine支援Sunny Diamonds金奈首間門市。",
+          "evidence_locator": "MediaNews4U L50–55, L66–69",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        },
+        {
+          "claim_zh": "活動以紅毯攝影手法呈現女性個人成就，並延伸至戶外、平面及數位媒體。",
+          "evidence_locator": "MediaNews4U L68–70",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        },
+        {
+          "claim_zh": "Women Achievers長訪談搭配較短的社群片段，首集已拍攝。",
+          "evidence_locator": "MediaNews4U L73–75, L80",
+          "support_url": "https://www.medianews4u.com/madarth-launches-find-your-shine-campaign-for-sunny-diamonds-first-chennai-showroom/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-18T07:10:17+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened the cited source and challenged claims, date and availability. No second reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-18T07:03:53+08:00",
+        "source_reopen_reference": "turn600737802view4; reopened turn161814023view9",
+        "finding": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned."
+      },
+      "review_notes": "Direct campaign trade reporting, dated Nov 17, with ongoing media and content. Showroom opened October 31. Early footfall claims omitted, and further content remains planned.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 16,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 8,
+        "total": 77
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
