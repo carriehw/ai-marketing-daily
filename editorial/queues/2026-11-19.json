@@ -2,8 +2,8 @@
   "edition_date_hkt": "2026-11-19",
   "status": "IN PROGRESS",
   "main_sha_at_start": "81ae90aabe94f8c93610913f01c399abf69428cb",
-  "discovery_count": 22,
-  "approved_count": 5,
+  "discovery_count": 23,
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": "Compared underlying events with 1747 archive entries. Search snippets require date and original-source checks before selection. Related coverage is not an incremental update.",
   "items": [
@@ -53,11 +53,12 @@
     },
     {
       "slug": "cathay",
-      "title": "Cathay launches Cathay Lifestyle to inspire Everyday Extraordinary",
-      "source_url": "https://news.cathaypacific.com/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-fzjl39",
+      "title": "國泰推出Cathay Lifestyle，整合日常生活及旅遊服務",
+      "source_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Verify original dates, material claims and available scope, then reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-19/cathay.json"
     },
     {
       "slug": "kaitoi",
@@ -73,32 +74,35 @@
       "title": "ZoomInfo Launches ChatGPT Sales Extensions | Business News This Week",
       "source_url": "https://businessnewsthisweek.com/business/zoominfo-launches-chatgpt-sales-extensions/",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Verify original dates, material claims and available scope, then reopen source."
+      "state": "REVIEWED",
+      "next_action": "Reserve: original issuer date is Nov 17, while Nov 18 rewrite changes dateline. Integration is a distinct product but overlaps selected ChatGPT for Sales story; retain original source if a later update qualifies."
     },
     {
       "slug": "sino",
-      "title": "From spectators to co-creators: How Sino Group reinvents a 40-year Christmas tradition | Marketing-Interactive",
+      "title": "信和聖誕燈飾徵集照片，入選故事可化為AI動畫",
       "source_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
       "provisional_score": 86,
-      "state": "DISCOVERED",
-      "next_action": "Verify original dates, material claims and available scope, then reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-19/sino.json"
     },
     {
       "slug": "duolingo",
-      "title": "Duolingo and Pokémon GO team up for a language adventure | Marketing-Interactive",
+      "title": "Duolingo與Pokémon GO以學習任務交換遊戲獎勵",
       "source_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Verify original dates, material claims and available scope, then reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-19/duolingo.json"
     },
     {
       "slug": "vivo",
-      "title": "vivo gets starry-eyed with ENHYPEN trio for V80 campaign | Marketing-Interactive",
+      "title": "vivo以ENHYPEN三位成員推廣V80，合作覆蓋九個市場",
       "source_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
       "provisional_score": 83,
-      "state": "DISCOVERED",
-      "next_action": "Verify original dates, material claims and available scope, then reopen source."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-19/vivo.json"
     },
     {
       "slug": "sanrio",
@@ -187,6 +191,15 @@
       "provisional_score": 58,
       "state": "REJECTED",
       "next_action": "Below threshold: commentary without a clear new development."
+    },
+    {
+      "slug": "chatgpt-sales",
+      "title": "OpenAI推出ChatGPT for Sales，串連客戶資料與銷售工作",
+      "source_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+      "provisional_score": 93,
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-19/chatgpt-sales.json"
     }
   ]
 }
