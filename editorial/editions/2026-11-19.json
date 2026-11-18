@@ -1,0 +1,1512 @@
+{
+  "packet_version": "1.0",
+  "edition_date_hkt": "2026-11-19",
+  "status": "editorial_approved",
+  "data": {
+    "site_title": "AI・行銷情報",
+    "site_title_en": "AI Marketing Daily",
+    "site_tagline": "AI Marketing Intelligence · HK / CN",
+    "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+    "date": "2026-11-19",
+    "date_display": "2026年11月19日 · 星期四",
+    "date_display_en": "November 19, 2026 · Thursday",
+    "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
+    "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
+    "thesis": "廣告與銷售工具串連流程，品牌先核對資料及授權",
+    "thesis_en": "Ad and sales tools connect workflows as brands check data and permissions",
+    "thesis_note": "由競價訊號到會員體驗，先確認工具能讀取哪些資料、執行哪些動作，再安排小規模測試。",
+    "thesis_note_en": "From bidding signals to member experiences, establish what data each tool can read and which actions it can take before a small pilot.",
+    "sections": [
+      "AI 大模型 & 市場動態",
+      "廣告平台 & 行銷科技",
+      "創意生產工具",
+      "行業影響 & 品牌案例",
+      "即學技巧 & 玩法"
+    ],
+    "sections_en": [
+      "AI Models & Market Moves",
+      "Ad Platforms & MarTech",
+      "Creative Production Tools",
+      "Industry Impact & Brand Cases",
+      "Tips, Tactics & Tools"
+    ],
+    "items": [
+      {
+        "title": "InMobi推出Accelerate，以七個AI代理協作處理廣告活動",
+        "summary": "InMobi推出自助廣告平台Accelerate，讓中小企業及代理商在同一介面規劃、建立和衡量跨平台廣告。",
+        "highlights": [
+          "七個AI代理分工處理業務分析、受眾策略、媒體規劃、文案、設計、推出及優化。",
+          "活動計劃、素材及預算須先經批准，持續優化可由廣告主設定授權範圍。"
+        ],
+        "why": "代理商可評估是否能把重複的建案工序交給工具，並保留客戶對預算和素材的審批。",
+        "next_step": "以一個低預算活動檢查平台連接、素材規格及審批記錄，再決定授權哪些調整。",
+        "detail": "InMobi表示，Accelerate可由企業網站和活動目標開始，整理受眾、媒體計劃、素材與預算。公司列出的推出時可連接平台包括Google Ads、Meta、Microsoft Advertising、TikTok及ChatGPT Ads。團隊試用時可先核對帳戶資格和各渠道的實際權限，並把所有預算變動納入同一份審批記錄。",
+        "title_en": "InMobi launches Accelerate with seven agents for campaign work",
+        "summary_en": "InMobi launched self-service ad platform Accelerate for small businesses and agencies to plan, build and measure campaigns across platforms.",
+        "highlights_en": [
+          "Seven AI agents cover business analysis, audience strategy, media planning, copy, design, launch and optimization.",
+          "Plans, assets and budgets require approval. Advertisers can authorize ongoing optimization within limits."
+        ],
+        "why_en": "Agencies can assess repetitive campaign setup tasks while retaining client review of budgets and creative.",
+        "next_step_en": "Use one small-budget campaign to check platform connections, asset specifications and approval records before authorizing changes.",
+        "detail_en": "InMobi says Accelerate starts with a website and campaign goal to assemble audiences, a media plan, assets and budgets. The launch lists Google Ads, Meta, Microsoft Advertising, TikTok and ChatGPT Ads among its connections. Teams can verify their account eligibility and channel permissions and record every budget change in one approval log.",
+        "source": "InMobi",
+        "url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+        "time": "11月18日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "inmobi"
+      },
+      {
+        "title": "Microsoft Advertising更新自動競價，建議先核對轉換訊號",
+        "summary": "Microsoft Advertising開始推出自動競價模型更新，並建議廣告主先檢查轉換追蹤和交易價值。",
+        "highlights": [
+          "平台表示，新模型可更快回應CPA或ROAS目標的調整。",
+          "轉換訊號可由UET網站追蹤、Conversions API或離線匯入提供。"
+        ],
+        "why": "成效團隊可先確認追蹤能否把實際銷售價值傳回平台，再評估以轉換數或價值作競價目標。",
+        "next_step": "檢查主要轉換的重複計算、幣別及交易金額，再按活動目標選擇競價策略。",
+        "detail": "Microsoft在公告中解釋，自動競價須先有可用的轉換訊號。平台建議，若以交易價值為目標，應提供實際購買金額。公司亦介紹讓應用程式、客戶管理系統和門市等資料透過Conversions API傳回平台的方法。廣告團隊可以抽查一批訂單，逐筆核對後台銷售與平台記錄，找出漏報或重複計算。",
+        "title_en": "Microsoft Advertising updates automated bidding and points to conversion signals",
+        "summary_en": "Microsoft Advertising began rolling out updated bidding models and urged advertisers to check conversion tracking and transaction values.",
+        "highlights_en": [
+          "The platform says the models can respond faster to changes in CPA or ROAS targets.",
+          "Conversion signals can come from UET website tracking, Conversions API or offline imports."
+        ],
+        "why_en": "Performance teams can check whether actual sales values reach the platform before choosing to optimize for conversion count or value.",
+        "next_step_en": "Audit duplicates, currencies and transaction amounts in primary conversions before selecting a bidding strategy.",
+        "detail_en": "Microsoft explains that automated bidding needs usable conversion signals and recommends actual purchase amounts for value-based campaigns. Its Conversions API can bring in signals from apps, customer systems and stores. Teams can reconcile a sample of orders against their sales records to identify missing or duplicate events.",
+        "source": "Microsoft Advertising",
+        "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+        "time": "11月18日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "microsoft-bidding"
+      },
+      {
+        "title": "Copilotforce連接Salesforce與Microsoft，功能分階段開放",
+        "summary": "Microsoft與Salesforce公布Copilotforce合作，把客戶資料和銷售工作流程接入Copilot、Teams與Fabric。",
+        "highlights": [
+          "Salesforce in Copilot已進入公開預覽，Sales Cloud in Teams仍處於企業試點。",
+          "OneLake至Data 360的資料聯邦查詢正式可用，反向分享仍為公開預覽。"
+        ],
+        "why": "使用兩套系統的行銷與業務團隊，可先確認哪些資料可查詢，哪些客戶記錄可由使用者確認後更新。",
+        "next_step": "選一個由行銷轉交業務的流程，核對查詢權限、欄位及更新前的確認步驟。",
+        "detail": "雙方表示，Copilot可取得經驗證授權的Salesforce資料，並依原有權限執行支援的動作。公告把會後跟進草稿、商機檢視和資料查詢列為使用情境。寫回客戶管理系統須獲使用者明確確認，並符合原有驗證規則。不同整合的推出階段各異，團隊可按現時已取得的功能安排試點。",
+        "title_en": "Copilotforce connects Salesforce and Microsoft through staged releases",
+        "summary_en": "Microsoft and Salesforce announced Copilotforce to connect customer context and sales workflows with Copilot, Teams and Fabric.",
+        "highlights_en": [
+          "Salesforce in Copilot is in public preview. Sales Cloud in Teams remains in an enterprise pilot.",
+          "OneLake-to-Data 360 federation is generally available, while sharing in the other direction is in public preview."
+        ],
+        "why_en": "Marketing and sales teams can identify what they may query and which customer records they can update after user confirmation.",
+        "next_step_en": "Map one marketing-to-sales handoff and check query permissions, fields and confirmation before updates.",
+        "detail_en": "The companies say authenticated Salesforce access preserves existing permissions. Examples include follow-up drafts, opportunity reviews and data queries. Supported CRM writebacks require explicit user confirmation and existing validation rules. Teams can design a pilot around the components they can access at their current release stage.",
+        "source": "Microsoft and Salesforce",
+        "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+        "time": "11月17日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "copilotforce",
+        "verification_url": "https://www.salesforce.com/news/stories/copilotforce-announcement/"
+      },
+      {
+        "title": "國泰推出Cathay Lifestyle，整合日常生活及旅遊服務",
+        "summary": "國泰公布Cathay Lifestyle品牌，將旅遊生活業務的產品、服務及體驗放在同一品牌之下。",
+        "highlights": [
+          "組合涵蓋購物、支付、保險、假期及亞洲萬里通里數的賺取與兌換。",
+          "國泰表示，品牌希望增加會員在旅程以外接觸國泰的機會。"
+        ],
+        "why": "旅遊及零售品牌可重新檢視會員日常接觸點，找出哪些服務適合由同一會員關係連結。",
+        "next_step": "列出會員出行前、旅途中及日常生活的接觸點，逐項核對合作商戶與里數規則。",
+        "detail": "國泰的新聞稿把Cathay Lifestyle定位為高端旅遊生活業務品牌，並以更清晰的品牌架構統合已持續擴展的生活服務。公告提及品牌商品及餐飲合作等既有發展。行銷團隊可以由品牌識別和服務導覽開始檢視，確認會員能否理解每項服務、合作方及里數的適用條款。",
+        "title_en": "Cathay launches Cathay Lifestyle to unite travel and everyday services",
+        "summary_en": "Cathay announced Cathay Lifestyle as a brand bringing its premium travel lifestyle products, services and experiences together.",
+        "highlights_en": [
+          "The portfolio spans shopping, payment, insurance, holidays and Asia Miles earning and redemption.",
+          "Cathay says the brand aims to add member touchpoints beyond journeys."
+        ],
+        "why_en": "Travel and retail brands can review everyday member touchpoints and identify services that fit one membership relationship.",
+        "next_step_en": "Map touchpoints before, during and outside trips, then check partner and mileage rules for each.",
+        "detail_en": "Cathay's release positions Cathay Lifestyle as a clearer brand structure for its expanding lifestyle business and refers to existing merchandise and dining partnerships. Marketing teams can review brand identity and service navigation to see whether members understand each offering, its partner and the applicable mileage terms.",
+        "source": "Cathay / Plentisoft",
+        "url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+        "time": "11月18日",
+        "section": "行業影響 & 品牌案例",
+        "region": "香港",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "cathay"
+      },
+      {
+        "title": "OpenAI推出ChatGPT for Sales，串連客戶資料與銷售工作",
+        "summary": "OpenAI推出ChatGPT for Sales，包含Sales插件，以及逾30款新增或更新的合作夥伴插件。",
+        "highlights": [
+          "功能涵蓋客戶研究、會前準備、提案及跟進草稿。",
+          "合作插件的可用範圍受方案、地區和工作區設定影響，仍需各服務的授權。"
+        ],
+        "why": "行銷與業務團隊可評估把客戶背景帶進同一段工作對話，減少整理提案時重複尋找資料。",
+        "next_step": "先選一個客戶工具連接，核對帳戶權限，再測試附有原始記錄連結的會議簡報。",
+        "detail": "OpenAI的設定指引建議由一個客戶管理工具開始，完成所需連接及權限檢查。安裝Sales插件不會完成所有合作服務的帳戶授權，所需的付費訂閱仍由各服務處理。使用者可在同一對話草擬跟進和提出記錄更新，團隊可逐項對照來源資料並審閱支援的動作，再決定是否執行。",
+        "title_en": "OpenAI launches ChatGPT for Sales to connect customer context and workflows",
+        "summary_en": "OpenAI launched ChatGPT for Sales with its Sales plugin and more than 30 new or updated partner plugins.",
+        "highlights_en": [
+          "Workflows include account research, meeting preparation, proposals and follow-up drafts.",
+          "Partner availability depends on plan, region and workspace settings and requires relevant service authorization."
+        ],
+        "why_en": "Marketing and sales teams can assess bringing customer context into one conversation to reduce repeated searches during proposal work.",
+        "next_step_en": "Connect one customer tool, check permissions and test a meeting brief with links to original records.",
+        "detail_en": "OpenAI's guide suggests starting with one CRM and completing its connections and permission checks. Installing Sales does not authorize every partner account or provide required paid subscriptions. Users can draft follow-ups and propose record updates, then reconcile the sources and review supported actions before execution.",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+        "time": "11月17日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "chatgpt-sales",
+        "verification_url": "https://help.openai.com/en/articles/20001707-getting-started-with-chatgpt-for-sales"
+      },
+      {
+        "title": "Kantar與Quilt.AI公布LaunchSignals，追蹤新品早期市場訊號",
+        "summary": "Kantar與Quilt.AI公布LaunchSignals，利用公開數位資料協助品牌觀察新品上市後的反應。",
+        "highlights": [
+          "工具整合評論、搜尋、社群對話、AI能見度及競品活動等訊號。",
+          "公布的19個市場包括新加坡、日本、澳洲及印度。"
+        ],
+        "why": "新品團隊可把搜尋和消費者評論放回同一個上市週期，找出需要調整的訊息或顧客預期。",
+        "next_step": "選一項新產品，先按市場及週次整理搜尋、評論和銷售資料，再核對工具能覆蓋哪些訊號。",
+        "detail": "Kantar表示，LaunchSignals可比較新品與競爭產品或過往推出的差異，並就訊息、促銷及價格溝通提供建議。工具以公開數位證據提供早期觀察，另有問卷及實際使用者研究工具可供配合。行銷團隊可以先列出每個訊號的觀察期間及資料來源，再檢查建議是否適用於自己的產品和市場。",
+        "title_en": "Kantar and Quilt.AI introduce LaunchSignals for early product feedback",
+        "summary_en": "Kantar and Quilt.AI announced LaunchSignals to help brands examine early product-launch reactions using public digital evidence.",
+        "highlights_en": [
+          "It combines reviews, search, social conversation, AI visibility and competitor activity.",
+          "Its stated 19-market coverage includes Singapore, Japan, Australia and India."
+        ],
+        "why_en": "Launch teams can examine search and reviews within the same launch window to identify messages or expectations to address.",
+        "next_step_en": "Organize search, reviews and sales by market and week for one new product, then check which signals the tool covers.",
+        "detail_en": "Kantar says LaunchSignals compares products with competitors or past launches and suggests responses in messaging, promotion and price communication. It provides early digital evidence alongside separate survey and user research tools. Teams can document the observation period and source for each signal before judging whether a recommendation fits their product and market.",
+        "source": "Kantar",
+        "url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+        "time": "11月18日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "kantar"
+      },
+      {
+        "title": "信和聖誕燈飾徵集照片，入選故事可化為AI動畫",
+        "summary": "信和集團在尖沙咀中心及帝國中心推出Party with DJ Santa，並邀請公眾提交照片及故事。",
+        "highlights": [
+          "入選作品可製成AI動畫，融入海旁外牆燈光展示。",
+          "場地把麼地里及外牆燈飾串連為拍照路線；案例報道來自信和贊助內容。"
+        ],
+        "why": "商場活動可把參與者的內容與實體場景連結，並在徵集時清楚說明如何選用和展示照片。",
+        "next_step": "規劃同類活動時，先列照片授權、入選通知、製作修改及展示期間的處理步驟。",
+        "detail": "場地方的官方頁面列出燈光匯演、麼地里星光走廊及帝國中心外牆三個拍照點，並說明公眾可提交照片及背後的故事。Marketing-Interactive的信和贊助文章介紹了把入選照片轉為動畫的構想。此例可供團隊檢查徵集、製作和現場觀賞之間的流程，以及每個環節應如何向參與者交代。",
+        "title_en": "Sino invites photo submissions for AI animations in its Christmas lights",
+        "summary_en": "Sino Group launched Party with DJ Santa at Tsim Sha Tsui Centre and Empire Centre and invited the public to submit photos and stories.",
+        "highlights_en": [
+          "Selected entries may become AI animations in the harbourfront display.",
+          "The venue links Mody Lane and façade displays into a photo route. The case article is Sino-sponsored content."
+        ],
+        "why_en": "Mall teams can connect visitor contributions with a physical setting and explain how photos will be selected and displayed.",
+        "next_step_en": "Define photo permissions, selection notices, revision handling and display-period procedures for a similar campaign.",
+        "detail_en": "The venue's official page lists the light show, Mody Lane corridor and Empire Centre façade as three photo spots and invites photos with their stories. Sino's sponsored Marketing-Interactive article describes turning selected submissions into animations. Teams can examine how submission, production and the visit connect and what participants need to know at each stage.",
+        "source": "Sino Group",
+        "url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+        "time": "11月18日",
+        "section": "行業影響 & 品牌案例",
+        "region": "香港",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "sino",
+        "verification_url": "https://www.tsimshatsuicentre.com.hk/en/promotions/"
+      },
+      {
+        "title": "Kaitoi推出Motion Studio，以對話建立及修改動態圖像",
+        "summary": "據Campaign Brief報道，Kaitoi推出Motion Studio，讓使用者以文字描述建立標誌動畫、產品宣傳及社群短片。",
+        "highlights": [
+          "使用者可從22個範本開始，或匯入自己的圖片、聲音、字型等素材。",
+          "對話修改以外，畫布和時間軸可供手動微調，免費帳戶可開啟試用。"
+        ],
+        "why": "創意團隊可先測試短版動畫的修改流程，評估同一品牌素材在對話和手動編輯之間能否保持一致。",
+        "next_step": "以一個現有標誌製作短動畫，逐項核對字型授權、邊緣、節奏及輸出規格。",
+        "detail": "報道指出，Motion Studio可匯入影片、文字、SVG及Lottie等素材。Lottie是一種可縮放的動畫格式，可供網頁或應用程式使用。團隊可以對話要求更改標題大小或圖片進場方向，再在時間軸微調。測試時可保留每次修改前後的版本，檢查品牌字型和標誌是否出現非預期變化。",
+        "title_en": "Kaitoi introduces Motion Studio for conversational motion graphics",
+        "summary_en": "Campaign Brief reports that Kaitoi launched Motion Studio for creating animated logos, product promos and social clips through text.",
+        "highlights_en": [
+          "Users can begin with 22 templates or import images, audio, fonts and other assets.",
+          "A canvas and timeline allow manual adjustments. The report says free accounts can open it to try."
+        ],
+        "why_en": "Creative teams can assess revision workflows and whether branded assets stay consistent across chat and manual editing.",
+        "next_step_en": "Animate an existing logo and check font rights, edges, timing and export specifications.",
+        "detail_en": "The report lists support for video, text, SVG and Lottie assets. Lottie is a scalable animation format used in websites and apps. Users can ask for a larger title or a different image entrance, then refine it in the timeline. Preserve versions during a test to check for unexpected changes to fonts and logos.",
+        "source": "Campaign Brief",
+        "url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+        "time": "11月18日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "media",
+        "editorial_slug": "kaitoi"
+      },
+      {
+        "title": "vivo以ENHYPEN三位成員推廣V80，合作覆蓋九個市場",
+        "summary": "vivo委任ENHYPEN成員JUNGWON、JAKE及SUNGHOON為V80的vivo Friends，合作涵蓋九個市場。",
+        "highlights": [
+          "名單包括新加坡、馬來西亞、泰國、印尼、菲律賓、越南、柬埔寨、緬甸及台灣。",
+          "推廣內容結合時尚、個人風格與人像攝影；V80在東南亞按市場推出。"
+        ],
+        "why": "區域品牌可把代言合作與一項具體使用情境連結，並按各市場的產品推出時間安排內容。",
+        "next_step": "核對市場名單、代言素材授權及產品開售時間，再為各地安排相應落地頁。",
+        "detail": "據Marketing-Interactive報道，三位成員以V80拍攝人像，讓個人風格成為活動創意的一部分。vivo把人像攝影與年輕消費者的自我表達連結。區域合作名單及產品推出進度各有範圍，行銷團隊可先核對每個市場實際可用的商品頁和素材，再決定是否共用同一組廣告及行動呼籲。",
+        "title_en": "vivo taps three ENHYPEN members for V80 across nine markets",
+        "summary_en": "vivo appointed ENHYPEN's JUNGWON, JAKE and SUNGHOON as vivo Friends for the V80 across nine markets.",
+        "highlights_en": [
+          "The list covers Singapore, Malaysia, Thailand, Indonesia, the Philippines, Vietnam, Cambodia, Myanmar and Taiwan.",
+          "Content combines fashion, personal style and portraits. V80 will roll out market by market in Southeast Asia."
+        ],
+        "why_en": "Regional brands can tie ambassadors to a specific use case and align content with local product releases.",
+        "next_step_en": "Check market coverage, asset rights and sales dates before preparing localized landing pages.",
+        "detail_en": "Marketing-Interactive reports that the members shot portraits with the V80 and contributed their individual styles to the creative. vivo links portrait photography with younger consumers' self-expression. Teams can reconcile ambassador coverage with local product and asset availability before sharing ads or calls to action across markets.",
+        "source": "Marketing-Interactive",
+        "url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+        "time": "11月18日",
+        "section": "行業影響 & 品牌案例",
+        "region": "中國",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "media",
+        "editorial_slug": "vivo"
+      },
+      {
+        "title": "Duolingo與Pokémon GO以學習任務交換遊戲獎勵",
+        "summary": "Duolingo與Pokémon GO展開跨平台合作，將語言課程與遊戲活動連結。",
+        "highlights": [
+          "Duolingo的限時任務讓完成每日課程的參與者解鎖Pokémon主題造型。",
+          "在七個不同日子完成課程，可取得代碼並參與Pokémon GO的限時調查。"
+        ],
+        "why": "跨品牌合作可把回訪行為與對方平台的獎勵連結，設計可追蹤的參與及兌換步驟。",
+        "next_step": "為同類合作分別定義課程完成、代碼領取及兌換成功，並檢查資格和到期提示。",
+        "detail": "據Marketing-Interactive報道，合作於11月17日開始。Pokémon GO玩家可選擇一種語言，讓限時調查任務以該語言呈現，再透過遊戲活動練習。合作亦加入展示不同語言寶可夢名稱的Language Tag。團隊可以觀察從日常任務到另一平台體驗的設計，逐步核對每一個獎勵取得條件。",
+        "title_en": "Duolingo and Pokémon GO connect learning tasks with game rewards",
+        "summary_en": "Duolingo and Pokémon GO launched a cross-platform collaboration connecting language lessons with game activities.",
+        "highlights_en": [
+          "A limited-time Duolingo quest unlocks Pokémon-themed outfits for participants completing daily lessons.",
+          "Lessons on seven different days can unlock an offer code for Pokémon GO Timed Research."
+        ],
+        "why_en": "Brand partnerships can tie repeat visits to rewards on a partner platform through measurable participation and redemption steps.",
+        "next_step_en": "Define lesson completion, code collection and redemption separately and check eligibility and expiry prompts.",
+        "detail_en": "Marketing-Interactive reports that the collaboration began on November 17. Pokémon GO players can choose a language for Timed Research tasks and practise it through gameplay. A Language Tag also shows Pokémon names in different languages. Teams can examine the path from a daily task to a partner experience and verify each reward condition.",
+        "source": "Marketing-Interactive",
+        "url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+        "time": "11月18日",
+        "section": "行業影響 & 品牌案例",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "media",
+        "editorial_slug": "duolingo"
+      }
+    ]
+  },
+  "evidence": {
+    "schema_version": "1.0",
+    "edition_date_hkt": "2026-11-19",
+    "coverage_floor": 10,
+    "coverage_target": 18,
+    "verified_at_hkt": "2026-11-19T07:14:30+08:00",
+    "status": "approved",
+    "editorial_owner": "Carrie Hui",
+    "release_status": "pending_live_validation",
+    "audit_status": "Issuer announcements, official documentation, direct trade reporting and disclosed sponsored brand content read and reopened. Different source and event dates, permissions and phased availability preserved. No independent human approval, product tests or performance validation.",
+    "review_provenance": {
+      "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+      "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+      "separate_human_review": false,
+      "separate_subagent_review": false
+    },
+    "corrections": [],
+    "stories": [
+      {
+        "story_id": "2026-11-19-inmobi",
+        "title_zh": "InMobi推出Accelerate，以七個AI代理協作處理廣告活動",
+        "source_story_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+        "published_article_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "publisher": "InMobi",
+            "evidence_locator": "InMobi release L26–31 / InMobi release L30–31 / InMobi release L40–42",
+            "source_publication_date": "2026-11-18",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "InMobi推出供中小企業及代理商使用的Accelerate。",
+            "evidence_locator": "InMobi release L26–31",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          },
+          {
+            "claim_zh": "七個AI代理分工處理分析、受眾、計劃、文案、設計、推出及優化。",
+            "evidence_locator": "InMobi release L30–31",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          },
+          {
+            "claim_zh": "計劃、素材及預算需先批准，持續優化可按指定範圍授權。",
+            "evidence_locator": "InMobi release L40–42",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "InMobi推出供中小企業及代理商使用的Accelerate。",
+            "evidence_locator": "InMobi release L26–31",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          },
+          {
+            "claim_zh": "七個AI代理分工處理分析、受眾、計劃、文案、設計、推出及優化。",
+            "evidence_locator": "InMobi release L30–31",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          },
+          {
+            "claim_zh": "計劃、素材及預算需先批准，持續優化可按指定範圍授權。",
+            "evidence_locator": "InMobi release L40–42",
+            "support_url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:11:25+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn714962434view0; reopened turn231841053view1",
+          "finding": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion."
+        },
+        "review_notes": "Issuer Business Wire release, Nov 18. Platform launched; website, budget and approvals stated. Yahoo and StreetInsider copies failed, replaced with original wire. No independent cross-platform attribution or ROI assertion.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 19,
+          "market_relevance": 12,
+          "novelty": 10,
+          "total": 94
+        },
+        "impact": "High",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-microsoft-bidding",
+        "title_zh": "Microsoft Advertising更新自動競價，建議先核對轉換訊號",
+        "source_story_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+        "published_article_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "publisher": "Microsoft Advertising",
+            "evidence_locator": "Microsoft blog L10–18 / Microsoft blog L23–25 / Microsoft blog L18–19, L26–32",
+            "source_publication_date": "2026-11-18",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Microsoft Advertising開始推出更新的自動競價模型。",
+            "evidence_locator": "Microsoft blog L10–18",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          },
+          {
+            "claim_zh": "Microsoft建議建立UET、Conversions API或離線匯入等轉換追蹤。",
+            "evidence_locator": "Microsoft blog L23–25",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          },
+          {
+            "claim_zh": "以實際交易價值作訊號是價值型競價的建議做法。",
+            "evidence_locator": "Microsoft blog L18–19, L26–32",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Microsoft Advertising開始推出更新的自動競價模型。",
+            "evidence_locator": "Microsoft blog L10–18",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          },
+          {
+            "claim_zh": "Microsoft建議建立UET、Conversions API或離線匯入等轉換追蹤。",
+            "evidence_locator": "Microsoft blog L23–25",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          },
+          {
+            "claim_zh": "以實際交易價值作訊號是價值型競價的建議做法。",
+            "evidence_locator": "Microsoft blog L18–19, L26–32",
+            "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:11:25+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn845487326view2; reopened turn231841053view0",
+          "finding": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts."
+        },
+        "review_notes": "Company product announcement. Rolling out, not guaranteed account results. Relative outcome statistics omitted because they depend on company test cohorts.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 24,
+          "actionability": 19,
+          "market_relevance": 11,
+          "novelty": 9,
+          "total": 93
+        },
+        "impact": "High",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-copilotforce",
+        "title_zh": "Copilotforce連接Salesforce與Microsoft，功能分階段開放",
+        "source_story_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+        "published_article_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+        "source_date_display": "11月17日",
+        "event_date": "2026-11-17",
+        "first_published_date": "2026-11-17",
+        "source_documents": [
+          {
+            "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "publisher": "Microsoft and Salesforce",
+            "evidence_locator": "Joint announcement L21–25, L47 / Joint announcement L37–39, L47 / Joint announcement L35–36",
+            "source_publication_date": "2026-11-17",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          },
+          {
+            "url": "https://www.salesforce.com/news/stories/copilotforce-announcement/",
+            "publisher": "Salesforce",
+            "evidence_locator": "Joint release availability and permission sections",
+            "source_publication_date": "2026-11-17",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Salesforce in Copilot已進入公開預覽。",
+            "evidence_locator": "Joint announcement L21–25, L47",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          },
+          {
+            "claim_zh": "OneLake至Data 360資料聯邦查詢正式可用，反向資料分享仍為預覽。",
+            "evidence_locator": "Joint announcement L37–39, L47",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          },
+          {
+            "claim_zh": "支援的CRM寫回需使用者明確確認及符合既有驗證規則。",
+            "evidence_locator": "Joint announcement L35–36",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Salesforce in Copilot已進入公開預覽。",
+            "evidence_locator": "Joint announcement L21–25, L47",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          },
+          {
+            "claim_zh": "OneLake至Data 360資料聯邦查詢正式可用，反向資料分享仍為預覽。",
+            "evidence_locator": "Joint announcement L37–39, L47",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          },
+          {
+            "claim_zh": "支援的CRM寫回需使用者明確確認及符合既有驗證規則。",
+            "evidence_locator": "Joint announcement L35–36",
+            "support_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:11:25+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:09:28+08:00",
+          "source_reopen_reference": "turn825477184view0 and turn825477184view1; reopened as turn380360922view0 and turn380360922view1",
+          "finding": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2."
+        },
+        "review_notes": "Joint Nov 17 announcement. Copilot public preview, OneLake-to-Data360 federation GA, reverse sharing preview, Teams pilot. Existing permissions and user-confirmed writeback. Microsoft copy reopened in re2.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 23,
+          "actionability": 18,
+          "market_relevance": 12,
+          "novelty": 10,
+          "total": 92
+        },
+        "impact": "High",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-cathay",
+        "title_zh": "國泰推出Cathay Lifestyle，整合日常生活及旅遊服務",
+        "source_story_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+        "published_article_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "publisher": "Cathay / Plentisoft",
+            "evidence_locator": "Press release L139–145 / Press release L143–148 / Press release L148–149, L153",
+            "source_publication_date": "2026-11-18",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:09:28+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "國泰推出Cathay Lifestyle作為旅遊生活業務品牌。",
+            "evidence_locator": "Press release L139–145",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          },
+          {
+            "claim_zh": "品牌整合購物、支付、保險、假期及亞洲萬里通里數活動。",
+            "evidence_locator": "Press release L143–148",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          },
+          {
+            "claim_zh": "新品牌要延伸會員在出行以外的接觸點。",
+            "evidence_locator": "Press release L148–149, L153",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "國泰推出Cathay Lifestyle作為旅遊生活業務品牌。",
+            "evidence_locator": "Press release L139–145",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          },
+          {
+            "claim_zh": "品牌整合購物、支付、保險、假期及亞洲萬里通里數活動。",
+            "evidence_locator": "Press release L143–148",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          },
+          {
+            "claim_zh": "新品牌要延伸會員在出行以外的接觸點。",
+            "evidence_locator": "Press release L148–149, L153",
+            "support_url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:13:43+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:11:57+08:00",
+          "source_reopen_reference": "turn988167693view0; reopened turn465207199view0",
+          "finding": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes."
+        },
+        "review_notes": "Cathay newsroom failed to open. Same-event issuer press-release reproduction on Markets Insider was read and reopened; it explicitly disclaims editorial involvement. This is a brand launch, with no new claims about insurance, benefits or financial outcomes.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 22,
+          "actionability": 16,
+          "market_relevance": 15,
+          "novelty": 9,
+          "total": 90
+        },
+        "impact": "High",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-chatgpt-sales",
+        "title_zh": "OpenAI推出ChatGPT for Sales，串連客戶資料與銷售工作",
+        "source_story_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+        "published_article_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+        "source_date_display": "11月17日",
+        "event_date": "2026-11-17",
+        "first_published_date": "2026-11-17",
+        "source_documents": [
+          {
+            "url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+            "publisher": "OpenAI",
+            "evidence_locator": "Launch announcement L13–18, L59–70 / Launch announcement L65–73, L80–86 / Launch announcement L132–134; setup guide L15–32",
+            "source_publication_date": "2026-11-17",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:09:28+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          },
+          {
+            "url": "https://help.openai.com/en/articles/20001707-getting-started-with-chatgpt-for-sales",
+            "publisher": "OpenAI Help Center",
+            "evidence_locator": "Setup guide L15–32, source checks L38–40",
+            "source_publication_date": "2026-11-19",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:09:28+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "OpenAI推出Sales插件及逾30款新增或更新的合作夥伴插件。",
+            "evidence_locator": "Launch announcement L13–18, L59–70",
+            "support_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          },
+          {
+            "claim_zh": "可連接客戶工具作會前準備、跟進草稿和提案。",
+            "evidence_locator": "Launch announcement L65–73, L80–86",
+            "support_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          },
+          {
+            "claim_zh": "合作插件受方案、地區、工作區及帳戶授權影響。",
+            "evidence_locator": "Launch announcement L132–134; setup guide L15–32",
+            "support_url": "https://help.openai.com/en/articles/20001707-getting-started-with-chatgpt-for-sales",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "OpenAI推出Sales插件及逾30款新增或更新的合作夥伴插件。",
+            "evidence_locator": "Launch announcement L13–18, L59–70",
+            "support_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          },
+          {
+            "claim_zh": "可連接客戶工具作會前準備、跟進草稿和提案。",
+            "evidence_locator": "Launch announcement L65–73, L80–86",
+            "support_url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          },
+          {
+            "claim_zh": "合作插件受方案、地區、工作區及帳戶授權影響。",
+            "evidence_locator": "Launch announcement L132–134; setup guide L15–32",
+            "support_url": "https://help.openai.com/en/articles/20001707-getting-started-with-chatgpt-for-sales",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:13:43+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:11:57+08:00",
+          "source_reopen_reference": "turn988167693view1; reopened turn465207199view1; reopened turn988167693view2; reopened turn465207199view2",
+          "finding": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI."
+        },
+        "review_notes": "Official Nov 17 launch plus setup guide retrieved Nov 19. Plugin availability depends on plan, region and workspace. Partner authorization and paid subscriptions are separate. No assumed Hong Kong access or ROI.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 22,
+          "actionability": 18,
+          "market_relevance": 12,
+          "novelty": 9,
+          "total": 90
+        },
+        "impact": "High",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-19-kantar",
+        "title_zh": "Kantar與Quilt.AI公布LaunchSignals，追蹤新品早期市場訊號",
+        "source_story_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+        "published_article_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "publisher": "Kantar",
+            "evidence_locator": "Kantar release L387–389, L408 / Kantar release L388–394 / Kantar release L410",
+            "source_publication_date": "2026-11-18",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Kantar與Quilt.AI公布LaunchSignals，以公開數位資料觀察新品推出。",
+            "evidence_locator": "Kantar release L387–389, L408",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          },
+          {
+            "claim_zh": "工具整合評論、搜尋、社群對話和AI能見度等訊號。",
+            "evidence_locator": "Kantar release L388–394",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          },
+          {
+            "claim_zh": "公告列出的19個市場包括新加坡、日本、澳洲及印度。",
+            "evidence_locator": "Kantar release L410",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Kantar與Quilt.AI公布LaunchSignals，以公開數位資料觀察新品推出。",
+            "evidence_locator": "Kantar release L387–389, L408",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          },
+          {
+            "claim_zh": "工具整合評論、搜尋、社群對話和AI能見度等訊號。",
+            "evidence_locator": "Kantar release L388–394",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          },
+          {
+            "claim_zh": "公告列出的19個市場包括新加坡、日本、澳洲及印度。",
+            "evidence_locator": "Kantar release L410",
+            "support_url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:11:25+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn845487326view1; reopened turn231841053view2",
+          "finding": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods."
+        },
+        "review_notes": "Issuer PR Newswire release dated Nov 18. Existing Kantar page has no visible original date, so do not infer launch day from crawl date. Digital signals, 19-market coverage as company statements. Blind-test accuracy omitted without disclosed methods.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 21,
+          "actionability": 17,
+          "market_relevance": 13,
+          "novelty": 9,
+          "total": 89
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-sino",
+        "title_zh": "信和聖誕燈飾徵集照片，入選故事可化為AI動畫",
+        "source_story_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+        "published_article_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-17",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+            "publisher": "Sino Group",
+            "evidence_locator": "Sponsored article L149–154; venue official page L87–98 / Sponsored article L155–156; venue official page L126–128 / Venue official page L99–121",
+            "source_publication_date": "2026-11-18",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          },
+          {
+            "url": "https://www.tsimshatsuicentre.com.hk/en/promotions/",
+            "publisher": "Tsim Sha Tsui Centre and Empire Centre",
+            "evidence_locator": "Party with DJ Santa and submission instructions L87–128",
+            "source_publication_date": null,
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed. No publication date shown on the official event page; display start date is Nov 17."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "信和在尖沙咀中心及帝國中心呈現Party with DJ Santa燈光匯演。",
+            "evidence_locator": "Sponsored article L149–154; venue official page L87–98",
+            "support_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          },
+          {
+            "claim_zh": "公眾可提交照片與故事，入選作品可製成AI動畫登上外牆。",
+            "evidence_locator": "Sponsored article L155–156; venue official page L126–128",
+            "support_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          },
+          {
+            "claim_zh": "麼地里燈飾與海旁外牆構成可步行的拍照路線。",
+            "evidence_locator": "Venue official page L99–121",
+            "support_url": "https://www.tsimshatsuicentre.com.hk/en/promotions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "信和在尖沙咀中心及帝國中心呈現Party with DJ Santa燈光匯演。",
+            "evidence_locator": "Sponsored article L149–154; venue official page L87–98",
+            "support_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          },
+          {
+            "claim_zh": "公眾可提交照片與故事，入選作品可製成AI動畫登上外牆。",
+            "evidence_locator": "Sponsored article L155–156; venue official page L126–128",
+            "support_url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          },
+          {
+            "claim_zh": "麼地里燈飾與海旁外牆構成可步行的拍照路線。",
+            "evidence_locator": "Venue official page L99–121",
+            "support_url": "https://www.tsimshatsuicentre.com.hk/en/promotions/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:13:43+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:09:28+08:00",
+          "source_reopen_reference": "turn825477184view4; reopened turn380360922view4; reopened turn825477184view3; reopened turn380360922view3",
+          "finding": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed."
+        },
+        "review_notes": "Sino-sponsored Partner Insights article, clearly disclosed to readers, corroborated with venue's official page. Participation is selection-based. Publication Nov 18, display began Nov 17. No participation or footfall uplift claimed.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 20,
+          "actionability": 17,
+          "market_relevance": 15,
+          "novelty": 9,
+          "total": 88
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-kaitoi",
+        "title_zh": "Kaitoi推出Motion Studio，以對話建立及修改動態圖像",
+        "source_story_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+        "published_article_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "publisher": "Campaign Brief",
+            "evidence_locator": "Campaign Brief L37–43 / Campaign Brief L42 / Campaign Brief L43–47",
+            "source_publication_date": "2026-11-18",
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Kaitoi推出可透過文字對話建立動態圖像的Motion Studio。",
+            "evidence_locator": "Campaign Brief L37–43",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          },
+          {
+            "claim_zh": "可由22個範本開始或匯入圖像、聲音、字型和Lottie動畫。",
+            "evidence_locator": "Campaign Brief L42",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          },
+          {
+            "claim_zh": "使用者可透過畫布和時間軸手動微調，免費帳戶可開啟試用。",
+            "evidence_locator": "Campaign Brief L43–47",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Kaitoi推出可透過文字對話建立動態圖像的Motion Studio。",
+            "evidence_locator": "Campaign Brief L37–43",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          },
+          {
+            "claim_zh": "可由22個範本開始或匯入圖像、聲音、字型和Lottie動畫。",
+            "evidence_locator": "Campaign Brief L42",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          },
+          {
+            "claim_zh": "使用者可透過畫布和時間軸手動微調，免費帳戶可開啟試用。",
+            "evidence_locator": "Campaign Brief L43–47",
+            "support_url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:11:25+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn845487326view4; reopened turn231841053view4",
+          "finding": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report."
+        },
+        "review_notes": "Campaign Brief reports the launch with product descriptions and an executive quotation. Official home page failed. No claim that AI autonomously wrote its own software; no output quality or labor-saving proof. Free account access described by report.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 19,
+          "actionability": 18,
+          "market_relevance": 11,
+          "novelty": 9,
+          "total": 85
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-19-vivo",
+        "title_zh": "vivo以ENHYPEN三位成員推廣V80，合作覆蓋九個市場",
+        "source_story_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+        "published_article_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-18",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "publisher": "Marketing-Interactive",
+            "evidence_locator": "Marketing-Interactive L149–150 / Marketing-Interactive L150 / Marketing-Interactive L150, L156–162",
+            "source_publication_date": "2026-11-18",
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "vivo委任ENHYPEN三位成員作V80區域品牌大使。",
+            "evidence_locator": "Marketing-Interactive L149–150",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          },
+          {
+            "claim_zh": "JUNGWON、JAKE、SUNGHOON在九個市場以vivo Friends身份合作。",
+            "evidence_locator": "Marketing-Interactive L150",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          },
+          {
+            "claim_zh": "內容結合時尚、個人風格及人像攝影，V80按市場推出。",
+            "evidence_locator": "Marketing-Interactive L150, L156–162",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "vivo委任ENHYPEN三位成員作V80區域品牌大使。",
+            "evidence_locator": "Marketing-Interactive L149–150",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          },
+          {
+            "claim_zh": "JUNGWON、JAKE、SUNGHOON在九個市場以vivo Friends身份合作。",
+            "evidence_locator": "Marketing-Interactive L150",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          },
+          {
+            "claim_zh": "內容結合時尚、個人風格及人像攝影，V80按市場推出。",
+            "evidence_locator": "Marketing-Interactive L150, L156–162",
+            "support_url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:13:43+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn714962434view2; reopened turn231841053view5",
+          "finding": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted."
+        },
+        "review_notes": "Direct campaign reporting and attributed vivo claims. Nine named ambassador markets include Taiwan, not mainland China or Hong Kong. Device rollout market-by-market in Southeast Asia. Camera performance claims omitted.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 19,
+          "actionability": 16,
+          "market_relevance": 15,
+          "novelty": 8,
+          "total": 85
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-19-duolingo",
+        "title_zh": "Duolingo與Pokémon GO以學習任務交換遊戲獎勵",
+        "source_story_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+        "published_article_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+        "source_date_display": "11月18日",
+        "event_date": "2026-11-17",
+        "first_published_date": "2026-11-18",
+        "source_documents": [
+          {
+            "url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "publisher": "Marketing-Interactive",
+            "evidence_locator": "Marketing-Interactive L149–150 / Marketing-Interactive L151 / Marketing-Interactive L154–156",
+            "source_publication_date": "2026-11-18",
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-19T07:08:29+08:00",
+            "access_method": "Retrieved and read complete relevant source passages.",
+            "limitations": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Duolingo與Pokémon GO於11月17日開始跨平台合作。",
+            "evidence_locator": "Marketing-Interactive L149–150",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          },
+          {
+            "claim_zh": "Duolingo任務讓每日完成至少一課的參與者解鎖主題造型。",
+            "evidence_locator": "Marketing-Interactive L151",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          },
+          {
+            "claim_zh": "在七個不同日子完成課程可取得代碼，換取遊戲限時調查。",
+            "evidence_locator": "Marketing-Interactive L154–156",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Duolingo與Pokémon GO於11月17日開始跨平台合作。",
+            "evidence_locator": "Marketing-Interactive L149–150",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          },
+          {
+            "claim_zh": "Duolingo任務讓每日完成至少一課的參與者解鎖主題造型。",
+            "evidence_locator": "Marketing-Interactive L151",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          },
+          {
+            "claim_zh": "在七個不同日子完成課程可取得代碼，換取遊戲限時調查。",
+            "evidence_locator": "Marketing-Interactive L154–156",
+            "support_url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-19T07:13:43+08:00",
+        "independent_review": {
+          "method": "Same assistant reopened source to challenge claims, dates and availability. No separate reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-19T07:08:51+08:00",
+          "source_reopen_reference": "turn714962434view1; reopened turn231841053view6",
+          "finding": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted."
+        },
+        "review_notes": "Direct reporting dated Nov 18 of collaboration started Nov 17. One daily lesson and seven distinct learning days are different requirements. No outcomes or universally redeemable offer asserted.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 18,
+          "actionability": 17,
+          "market_relevance": 12,
+          "novelty": 9,
+          "total": 83
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      }
+    ]
+  },
+  "localization_review": {
+    "edition_date": "2026-11-19",
+    "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+    "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+    "quality_policy": {
+      "mandatory_languages": [
+        "en",
+        "zh-Hant",
+        "zh-Hans"
+      ],
+      "no_added_factual_claims": true,
+      "keep_original_links_and_dates": true,
+      "do_not_erase_uncertainty": true,
+      "do_not_silently_translate_urls_or_identifiers": true,
+      "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+      "human_editorial_review": "No human approval claimed"
+    },
+    "items": [
+      {
+        "url": "https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies",
+        "title_zh_hant": "InMobi推出Accelerate，以七個AI代理協作處理廣告活動",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“自助广告平台、广告活动、素材、审批、优化”。七类代理按厂商公告，不把跨平台报表写成独立验证的真实归因。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/building-the-next-generation-of-automated-bidding-at-microsoft-advertising",
+        "title_zh_hant": "Microsoft Advertising更新自動競價，建議先核對轉換訊號",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“自动出价、转化跟踪、实际交易金额”。平台优化速度按厂商说法归因，省去带条件的成效百分比，保留逐步推出。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+        "title_zh_hant": "Copilotforce連接Salesforce與Microsoft，功能分階段開放",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“客户管理系统、商机、公开预览、试点、资料联邦查询”。分清两向数据整合的不同开放阶段和写回须用户确认。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://markets.businessinsider.com/news/stocks/cathay-launches-cathay-lifestyle-to-inspire-everyday-extraordinary-1036778505",
+        "title_zh_hant": "國泰推出Cathay Lifestyle，整合日常生活及旅遊服務",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“国泰、旅游生活方式、亚洲万里通里数、会员触点”。本篇报道品牌整合，不添加保险利益、里数价值或新会员制度细节。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales/",
+        "title_zh_hant": "OpenAI推出ChatGPT for Sales，串連客戶資料與銷售工作",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“客户研究、会前准备、插件、工作区、账号授权”。伙伴付费订阅及逐项连接要求完整保留，避免声称香港或所有计划全面可用。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.prnewswire.com/apac/news-releases/kantar-and-quiltai-unveil-launchsignals-302943315.html",
+        "title_zh_hant": "Kantar與Quilt.AI公布LaunchSignals，追蹤新品早期市場訊號",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“新品上市、公开数字信息、搜索、消费者评论、AI可见度”。19个市场是厂商覆盖范围，省去未公开方法的准确率说法。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.marketing-interactive.com/from-spectators-to-co-creators-how-sino-group-reinvents-a-40-year-christmas-tradition",
+        "title_zh_hant": "信和聖誕燈飾徵集照片，入選故事可化為AI動畫",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“信和集团、尖沙咀中心、帝国中心、照片征集、入选作品”。明确案例文章由信和赞助；提交不等于入选，不增加到访增长数据。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://campaignbrief.com/ai-ad-platform-kaitoi-from-ex-ilm-apple-and-ibm-engineers-builds-its-own-motion-graphics-studio/",
+        "title_zh_hant": "Kaitoi推出Motion Studio，以對話建立及修改動態圖像",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“动态视觉、模板、画布、时间轴、社交短片”。Lottie首次解释用途，不把工具由AI开发的厂商叙述写为已核实结论。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.marketing-interactive.com/vivo-gets-starry-eyed-with-enhypen-trio-for-v80-campaign",
+        "title_zh_hant": "vivo以ENHYPEN三位成員推廣V80，合作覆蓋九個市場",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“品牌大使、人像摄影、落地页、逐个市场推出”。九个市场逐一保留，含台湾，本次名单无香港或中国内地。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.marketing-interactive.com/duolingo-and-pokemon-go-team-up-for-a-language-adventure",
+        "title_zh_hant": "Duolingo與Pokémon GO以學習任務交換遊戲獎勵",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers"
+        ],
+        "simplified_editorial_note": "简体用“宝可梦、语言课程、限时调查、兑换代码”。保留七个不同日期的要求，不误写成七节课或所有用户自动获得奖励。",
+        "decision": "approved_for_ai_assisted_localization"
+      }
+    ]
+  }
+}
