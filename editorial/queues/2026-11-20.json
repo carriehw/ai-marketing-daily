@@ -3,33 +3,75 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "4827a539f5c8f5a89a65cc398a80b64d2bb1deff",
   "discovery_count": 22,
-  "approved_count": 0,
+  "approved_count": 5,
   "held_count": 0,
   "deduplication": "Compared against 1757 published archive records, grouping same-event rewrites. Prior product posts require incremental verified change. Applied 2026-11-19 AI relevance amendment.",
   "items": [
     {
       "slug": "clinch",
-      "title": "Clinch Expands Generative AI Capabilities with Higgsfield and ByteDance Integrations",
+      "title": "Clinch把Higgsfield及字節模型接入廣告製作流程",
       "source_url": "https://www.prnewswire.com/news-releases/clinch-expands-generative-ai-capabilities-with-higgsfield-and-bytedance-integrations-302944811.html",
       "provisional_score": 95,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/clinch.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI生成模型直接接入廣告組裝及投放。",
+        "source_locator": "Release L466–479, L483–486",
+        "source_url": "https://www.prnewswire.com/news-releases/clinch-expands-generative-ai-capabilities-with-higgsfield-and-bytedance-integrations-302944811.html",
+        "event_change": "新增三組模型整合",
+        "affected_workflow": "跨尺寸廣告素材製作與組裝",
+        "specific_decision": "決定哪些規格變體在同一平台完成",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動直接測試新增模型與動態框架的相容性。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:02:23+08:00"
+      }
     },
     {
       "slug": "circana",
-      "title": "Circana + The Trade Desk: Purchase Data for Open Measurement",
+      "title": "Circana擬把購買數據接入The Trade Desk受眾及衡量",
       "source_url": "https://www.circana.com/post/circana-and-the-trade-desk-expand-partnership-to-connect-audience-activation-and-open-measurement-to",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/circana.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "購買數據連接受眾啟動、優化與銷售衡量。",
+        "source_locator": "Circana L565–578",
+        "source_url": "https://www.circana.com/post/circana-and-the-trade-desk-expand-partnership-to-connect-audience-activation-and-open-measurement-to",
+        "event_change": "計劃接通兩套購買資料能力",
+        "affected_workflow": "媒體受眾選擇與銷售提升研究",
+        "specific_decision": "先確認通路覆蓋及比較基準是否足夠",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "建議針對購買覆蓋和Sales Lift設計，不能套到一般品牌合作。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:02:23+08:00"
+      }
     },
     {
       "slug": "xnurta",
-      "title": "Xnurta Expands MCP Capabilities to both Read and Write, Enabling AI Agents to Execute Advertising Campaigns Through Natural Language",
+      "title": "Xnurta MCP加入廣告寫入，預算與出價變動須先確認",
       "source_url": "https://www.businesswire.com/news/home/20261119142970/en/Xnurta-Expands-MCP-Capabilities-to-both-Read-and-Write-Enabling-AI-Agents-to-Execute-Advertising-Campaigns-Through-Natural-Language",
       "provisional_score": 93,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/xnurta.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI助理從報表讀取擴展至廣告帳戶寫入。",
+        "source_locator": "Issuer release L29–40",
+        "source_url": "https://www.businesswire.com/news/home/20261119142970/en/Xnurta-Expands-MCP-Capabilities-to-both-Read-and-Write-Enabling-AI-Agents-to-Execute-Advertising-Campaigns-Through-Natural-Language",
+        "event_change": "新增批次操作和建立活動",
+        "affected_workflow": "Amazon零售媒體帳戶管理",
+        "specific_decision": "界定需預覽及人員確認的批次寫入",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動核對促銷後預算還原，直接對應公告例子。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:02:23+08:00"
+      }
     },
     {
       "slug": "msq",
@@ -41,19 +83,47 @@
     },
     {
       "slug": "genie",
-      "title": "Project Genie update featuring Genie 4",
+      "title": "更進新聞：Genie 4向合資格Ultra訂戶推出互動世界生成",
       "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/genie.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "互動生成模型新增可即時修改場景及聲音的使用入口。",
+        "source_locator": "Google update L253–256, L288–294",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+        "event_change": "研究預覽擴至合資格Ultra訂戶",
+        "affected_workflow": "品牌互動概念原型",
+        "specific_decision": "是否能保留品牌物件和視角再投入製作",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "建議測試場景持續性，對應Google明列的世界模型限制。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:02:23+08:00"
+      }
     },
     {
       "slug": "pubmatic",
-      "title": "PubMatic Named Primary International Partner for Nippon TV's Sugree Platform, Opening Japan's Premium Broadcast Market to Global Buyers",
+      "title": "PubMatic統籌Sugree國際採購，連接日本地面電視廣告",
       "source_url": "https://www.prnewswire.com/news-releases/pubmatic-named-primary-international-partner-for-nippon-tvs-sugree-platform-opening-japans-premium-broadcast-market-to-global-buyers-302945256.html",
       "provisional_score": 89,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/pubmatic.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "屬廣告技術範圍，實質變化是程式化地面電視的跨國接入與結算流程。",
+        "source_locator": "PubMatic L466–482",
+        "source_url": "https://www.prnewswire.com/news-releases/pubmatic-named-primary-international-partner-for-nippon-tvs-sugree-platform-opening-japans-premium-broadcast-market-to-global-buyers-302945256.html",
+        "event_change": "國際採購集中到主要合作方",
+        "affected_workflow": "日本地面電視按曝光採購",
+        "specific_decision": "比較曝光定義與報表能否納入既有採購",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定Sugree節目、曝光計價與地面電視，具事件特異性。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:02:23+08:00"
+      }
     },
     {
       "slug": "captify",
@@ -108,8 +178,12 @@
       "title": "Cision MCP Brings Consumer Intelligence into Everyday Workflows",
       "source_url": "https://www.prnewswire.co.uk/news-releases/cision-mcp-brings-consumer-intelligence-into-everyday-workflows-302945658.html",
       "provisional_score": 79,
-      "state": "DISCOVERED",
-      "next_action": "Reserve: validate novelty, primary evidence and marketing mechanism."
+      "state": "REJECTED",
+      "next_action": "Duplicate coverage excluded. Reconsider only an additional product agent or new supported capability.",
+      "relevance_review": {
+        "decision": "REJECTED",
+        "reason": "Underlying Brandwatch Consumer Research MCP first-release mechanism already covered Nov 14. Nov 19 wire adds no verified new capability."
+      }
     },
     {
       "slug": "ai-shopping",
