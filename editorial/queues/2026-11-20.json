@@ -2,9 +2,9 @@
   "edition_date_hkt": "2026-11-20",
   "status": "IN PROGRESS",
   "main_sha_at_start": "4827a539f5c8f5a89a65cc398a80b64d2bb1deff",
-  "discovery_count": 22,
-  "approved_count": 5,
-  "held_count": 0,
+  "discovery_count": 23,
+  "approved_count": 10,
+  "held_count": 1,
   "deduplication": "Compared against 1757 published archive records, grouping same-event rewrites. Prior product posts require incremental verified change. Applied 2026-11-19 AI relevance amendment.",
   "items": [
     {
@@ -75,11 +75,25 @@
     },
     {
       "slug": "msq",
-      "title": "MSQ Asia Launches MSQ Signal: ‘Asia is not Waiting for the Agentic Future’ | Branding in Asia",
+      "title": "MSQ在亞洲推出Signal，以AI答案訊號連接內容製作",
       "source_url": "https://www.brandinginasia.com/msq-asia-launches-msq-signal-asia-is-not-waiting-for-the-agentic-future/",
       "provisional_score": 92,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/msq.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI推薦答案被納入內容製作與投放的觀察循環。",
+        "source_locator": "Event report L47–58, L83–86",
+        "source_url": "https://www.brandinginasia.com/msq-asia-launches-msq-signal-asia-is-not-waiting-for-the-agentic-future/",
+        "event_change": "新增亞洲專用訊號與內容流程",
+        "affected_workflow": "區域社群電商內容迭代",
+        "specific_decision": "固定哪些購物問題才值得長期追蹤",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定重複提示詞、同市場語言及內容更新對照，對應演示機制。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:07:33+08:00"
+      }
     },
     {
       "slug": "genie",
@@ -130,40 +144,72 @@
       "title": "Captify launches Schema audiences | Advanced Television",
       "source_url": "https://www.advanced-television.com/2026/11/19/captify-launches-schema-audiences/",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "HELD",
+      "next_action": "Find same-event official Captify/Verve announcement or accessible direct report verifying inputs, availability and activation mechanics.",
+      "relevance_review": {
+        "decision": "HELD",
+        "reason": "Schema audience mechanism is relevant, but the original release remained inaccessible across canonical and alternate domains."
+      }
     },
     {
       "slug": "kuaishou",
-      "title": "Kuaishou Technology Announces Third Quarter 2026 Unaudited Financial Results",
-      "source_url": "https://www.tradingview.com/news/prnewswire%3A7157160ab85e4%3A0-kuaishou-technology-announces-third-quarter-2026-unaudited-financial-results/",
+      "title": "快手第三季擴展UAX多代理協作，素材生成加入興趣訊號",
+      "source_url": "https://www.prnewswire.com/news-releases/kuaishou-technology-announces-third-quarter-2026-unaudited-financial-results-302945173.html",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/kuaishou.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "多AI代理帳戶診斷與興趣驅動素材補充的季度更新。",
+        "source_locator": "Issuer Q3 release L534–537",
+        "source_url": "https://www.prnewswire.com/news-releases/kuaishou-technology-announces-third-quarter-2026-unaudited-financial-results-302945173.html",
+        "event_change": "UAX框架及AIGC素材機制更新",
+        "affected_workflow": "快手電商投放的診斷及素材供給",
+        "specific_decision": "分辨素材興趣缺口與競價設定問題",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以UAX診斷及淨成交ROI退款訊號為具體檢查對象。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:07:33+08:00"
+      }
     },
     {
       "slug": "topview",
       "title": "Topview Launches Film Studio Hybrid AI Production Platform | Animation World Network",
       "source_url": "https://www.awn.com/news/topview-launches-film-studio-hybrid-ai-production-platform",
       "provisional_score": 86,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "REVIEWED",
+      "next_action": "Reserve: compare Oct coverage and Nov tutorials to isolate any newly launched Film Studio capability; do not treat Nov 19 coverage as launch evidence alone."
     },
     {
       "slug": "coca-cola",
-      "title": "Coca-Cola pivots from divisive AI-generated ads for holiday campaign | Marketing Dive",
+      "title": "可口可樂Enjoy Joy節日新片採實拍，重看AI製作選擇",
       "source_url": "https://www.marketingdive.com/news/coca-cola-pivots-from-divisive-ai-generated-ads-for-holiday-campaign/875215/",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/coca-cola.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "報道直接對照品牌AI節日廣告與本次實拍製作，屬AI發展下的具體創意技術選擇。",
+        "source_locator": "Current direct report L44–48; March 10 2025 interview L67–80 for dated 2024 context",
+        "source_url": "https://www.marketingdive.com/news/coca-cola-pivots-from-divisive-ai-generated-ads-for-holiday-campaign/875215/",
+        "event_change": "Enjoy Joy採用導演主導的實拍製作",
+        "affected_workflow": "節日廣告製作方法及鏡頭分工",
+        "specific_decision": "按人物表演和版本需求分配實拍或AI段落",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "建議逐鏡分析節日表演需求，對應這個品牌的製作方式轉向，避免一般品牌宣傳建議。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:07:33+08:00"
+      }
     },
     {
       "slug": "cape",
       "title": "Australia’s ‘creative burden’ is real: the true cost of advertising creative demands on brands – Cape.io’s inaugural Creative Burden Index 2026 – Campaign Brief",
       "source_url": "https://campaignbrief.com/australias-creative-burden-is-real-the-true-cost-of-advertising-creative-demands-on-brands-cape-io-launches-inaugural-creative-burden-index-2026/",
       "provisional_score": 83,
-      "state": "DISCOVERED",
-      "next_action": "Verify source, date, mechanism and availability; record relevance decision and reopen."
+      "state": "REVIEWED",
+      "next_action": "Reserve: original Cape page predates Nov 19 coverage. Confirm original publication date and reconcile overall-output versus per-campaign growth definitions before selection."
     },
     {
       "slug": "supermetrics",
@@ -195,11 +241,25 @@
     },
     {
       "slug": "search-workforce",
-      "title": "IAB Australia survey: 8 of 12 search recruiters expect fewer junior roles",
-      "source_url": "https://ppc.land/iab-australia-survey-8-of-12-search-recruiters-expect-fewer-junior-roles/",
+      "title": "IAB Australia發布搜尋技能框架，把AI與整體能見度納入培訓",
+      "source_url": "https://www.iabaustralia.com.au/resource/future-search-skills/",
       "provisional_score": 76,
-      "state": "DISCOVERED",
-      "next_action": "Reserve: validate novelty, primary evidence and marketing mechanism."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/search-workforce.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "搜尋自動化改變出價、建案、報表及初級人才學習工序。",
+        "source_locator": "Official research page L98–115",
+        "source_url": "https://www.iabaustralia.com.au/resource/future-search-skills/",
+        "event_change": "發布AI搜尋技能與培訓框架",
+        "affected_workflow": "搜尋行銷團隊的培訓和任務分配",
+        "specific_decision": "哪些人工覆查技能需透過活動個案保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "建議逐項對照被自動化的搜尋工序和技能清單，具對應關係。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:07:33+08:00"
+      }
     },
     {
       "slug": "phai",
@@ -256,6 +316,28 @@
       "provisional_score": 48,
       "state": "REJECTED",
       "next_action": "Excluded: weak direct marketing process relevance."
+    },
+    {
+      "slug": "smartclip",
+      "title": "smartclip在smartx加入AI素材審核建議，初期保留人員把關",
+      "source_url": "https://smartclip.tv/newsroom/press-release/smartx-ai-creative-approval-agent/",
+      "provisional_score": 94,
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-20/smartclip.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI根據語境提出廣告批准及限制建議。",
+        "source_locator": "Official release L8–14",
+        "source_url": "https://smartclip.tv/newsroom/press-release/smartx-ai-creative-approval-agent/",
+        "event_change": "廣告伺服器新增情境審閱代理",
+        "affected_workflow": "電視台及媒體素材審核",
+        "specific_decision": "哪些投放限制需審核人員確認",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以酒瓶與醋瓶的近似畫面測試情境，直接來自公告的審核例子。",
+        "inference_label": "Reader-facing why and next_step are editorial implications based on the documented mechanism.",
+        "reviewed_at_hkt": "2026-11-20T07:07:33+08:00"
+      }
     }
   ]
 }
