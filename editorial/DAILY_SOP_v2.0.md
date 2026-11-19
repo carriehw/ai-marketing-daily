@@ -168,3 +168,14 @@ receipts, bad live counts, newsletter mismatches, PR isolation and duplicate avo
 - 摘要、重點、行銷影響及行動建議各有用途；補充說明提供額外背景，避免逐字重複。
 - 繁中採香港書面語；簡中逐篇檢查內地用語，英文檢查主語、時態及搭配。OpenCC及詞彙替換只屬輔助，不等於獨立人手審閱。
 - 修訂同步保存逐篇新聞包及整期發布包；另記文字審閱，保留原來源核實時間及覆核紀錄，不將潤稿當成再次事實核實。
+
+
+## 2026-11-19 — Mandatory relevance review
+
+Apply the Constitution's 2026-11-19 AI relevance amendment during triage, article closure and final edition review.
+1. For each brand case, record the concrete AI connection, exact supporting source locator and PASS/HELD/REJECTED reason in its editorial review/queue record. No source-supported AI connection means exclusion, regardless of score.
+2. Write impact as event change → affected marketing process → specific decision, identifying editorial inference. Run the substitution test; rewrite advice that could fit any unrelated story.
+3. Check whether the case is an actual reported deployment, an announced proposal, a sponsored description or a dated comparison. Preserve that status and never invent performance.
+4. Recheck the final Traditional Chinese, Simplified Chinese, English and newsletter wording. An empty brand-case category is allowed; discover more qualifying stories or hold below the existing ten-story floor.
+5. Review example: the 2026-11-19 descriptions of Cathay Lifestyle, vivo × ENHYPEN and Duolingo × Pokémon GO do not establish AI relevance and would fail this new brand-case gate. Sino's photo-to-AI-animation mechanism can qualify if original evidence supports it; no outcome claim is approved by that fact alone. These are calibration examples, not permanent brand bans.
+This is a policy update; it does not retrospectively certify, rewrite or resend the already published edition.
