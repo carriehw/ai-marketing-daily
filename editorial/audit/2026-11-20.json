@@ -211,5 +211,32 @@
     }
   ],
   "local_checks": "PASS edition packet: 2026-11-20, 10 reviewed stories; semantic review is required before submission\nPASS edition packet: 2026-11-20, 10 reviewed stories; semantic review is required before submission\n=== 日期與時序閘門 2026-11-20 ===\n  PASS 全部 10 則：time 可解析、當日日期已有覆核依據、內文無超前日期、無失錨的相對時間詞、followup 時序正確、無禁用轉折詞\n\n24 pass / 0 fail\n",
-  "next_action": "Confirm compiled Simplified Chinese and same-snapshot newsletter parity, then record actual live acceptance."
+  "next_action": "Confirm compiled Simplified Chinese and same-snapshot newsletter parity, then record actual live acceptance.",
+  "compiled_semantic_review": {
+    "reviewed_at_hkt": "2026-11-20T07:11:43+08:00",
+    "reviewed_by": "Codex same assistant",
+    "reference_main_sha": "6b1a4d580a7dc94021468de2c5de3f51eaf3f2b2",
+    "simplified_article_count": 10,
+    "newsletter_featured_count": 6,
+    "newsletter_total_count": 10,
+    "decision": "PASS",
+    "findings": "Read all generated Simplified Chinese story text and the English newsletter. Preserved Xnurta preview/confirmation, smartclip human review, Circana plans, eligible Ultra rollout, Q3 attribution and product usage ratio, MSQ observational recommendations and dated Coca-Cola production comparison. Newsletter repeats approved facts and event-specific implications; no added outcome claim."
+  },
+  "live_acceptance": {
+    "verified_at_hkt": "2026-11-20T07:10:49+08:00",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/44635108939",
+    "checks": {
+      "date": true,
+      "receipt": true,
+      "count": true,
+      "workflow": true,
+      "dataHash": true,
+      "evidenceHash": true,
+      "languageCounts": true,
+      "liveBytes": true,
+      "liveCounts": true,
+      "newsletterSnapshot": true
+    },
+    "main_sha": "6b1a4d580a7dc94021468de2c5de3f51eaf3f2b2"
+  }
 }
