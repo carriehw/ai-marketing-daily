@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-21",
-  "status": "EDITORIAL APPROVED",
+  "status": "CI IN PROGRESS",
   "main_sha_at_start": "6b1a4d580a7dc94021468de2c5de3f51eaf3f2b2",
   "discovery_count": 20,
   "approved_count": 10,
@@ -308,5 +308,8 @@
       "next_action": "General acquisition without verified technical/workflow change."
     }
   ],
-  "next_action": "Submit approved edition to main and track CI/live verification."
+  "next_action": "Track actual CI job results; fix only concrete failures, then verify release receipt hashes and live language counts.",
+  "workflow_run_id": 44835473741,
+  "workflow_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/44835473741",
+  "submission_sha": "7eb0a5fc7004b3fe104657ce0d14fda9b3a477d6"
 }
