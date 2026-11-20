@@ -222,5 +222,30 @@
       }
     }
   ],
-  "reserve_policy": "Remaining 60+ candidates retained in current queue with next action, not counted as approval. Brand section empty; no qualifying brand case added."
+  "reserve_policy": "Remaining 60+ candidates retained in current queue with next action, not counted as approval. Brand section empty; no qualifying brand case added.",
+  "release_status": "PUBLISHED & VERIFIED",
+  "workflow_run_id": 44835473741,
+  "workflow_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/44835473741",
+  "source_commit": "7eb0a5fc7004b3fe104657ce0d14fda9b3a477d6",
+  "main_sha_at_acceptance": "13a8c7691fbbb117bf9e51603d617e57949f8b88",
+  "verified_at_hkt": "2026-11-21T07:17:03+08:00",
+  "post_deploy_checked_at_hkt": "2026-11-21T07:19:10+08:00",
+  "receipt_url": "https://github.com/carriehw/ai-marketing-daily/blob/main/editorial/releases/2026-11-21.json",
+  "acceptance": {
+    "data_sha256": "f6f7c5475c144803cc7900b256926a1f104a946995003bdf6f041b4aa555f164",
+    "evidence_sha256": "0dc3d832e21de944be9baf0809161a611164252b1db92235c75c10c256c5551f",
+    "language_article_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    },
+    "live_checks": {
+      "live_bytes": true,
+      "actual_language_article_counts": true,
+      "newsletter_snapshot": true
+    },
+    "direct_pages_access": "Direct Pages fetch failed. Used successful CI public-page byte comparisons and actual article counts. Matched main data, evidence, Simplified page and Newsletter hashes to receipt.",
+    "semantic_review": "Read all ten generated Simplified stories, English packet text and rendered six-feature Newsletter. Preserved dates, access tiers, planned weights, format limits, research-only status and earlier Genie API follow-up chronology. No added ROI or blanket availability.",
+    "newsletter": "Same-date payload, ten headlines and six features; shared hashes match. No email or social sent."
+  }
 }
