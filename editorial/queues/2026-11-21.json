@@ -2,50 +2,120 @@
   "edition_date_hkt": "2026-11-21",
   "status": "IN PROGRESS",
   "main_sha_at_start": "6b1a4d580a7dc94021468de2c5de3f51eaf3f2b2",
-  "discovery_count": 22,
-  "approved_count": 0,
+  "discovery_count": 20,
+  "approved_count": 5,
   "held_count": 0,
   "deduplication": "Compared against 1767 published archive records and grouped underlying events. BlueMedia repeats Nov 13 coverage, and the separate Phancy model angle will be grouped into its single launch packet.",
   "items": [
     {
       "slug": "picsart",
-      "title": "Picsart Opens the AI Behind Its Platform to Developers & Businesses",
+      "title": "Picsart開放創意AI平台，統一接入生成與編輯模型",
       "source_url": "https://www.businesswire.com/news/home/20261120520968/en/Picsart-Opens-the-AI-Behind-Its-Platform-to-Developers-Businesses",
       "provisional_score": 95,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/picsart.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "創意AI生成與編輯功能提供統一程式接入。",
+        "source_locator": "Issuer release L31–38",
+        "source_url": "https://www.businesswire.com/news/home/20261120520968/en/Picsart-Opens-the-AI-Behind-Its-Platform-to-Developers-Businesses",
+        "event_change": "新增多供應商創意模型接入層",
+        "affected_workflow": "商品圖生成與後處理自動化",
+        "specific_decision": "是否把分散串接改為同一生成編輯流程",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動比較同一商品圖在切換模型後的串接設定。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      }
     },
     {
       "slug": "microsoft-labels",
-      "title": "Microsoft Ads introduces ‘Made with AI’ labels to AI-generated ad images",
-      "source_url": "https://searchengineland.com/microsoft-ads-adds-made-with-ai-labels-to-ai-generated-ad-images-502652",
+      "title": "Microsoft開放AI素材標示控制，可批次管理聲明",
+      "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/microsoft-labels.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI生成素材的披露欄位加入廣告素材管理流程。",
+        "source_locator": "Official roundup L57–69",
+        "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+        "event_change": "透明度控制正式可用",
+        "affected_workflow": "素材來源記錄、聲明與版位呈現",
+        "specific_decision": "哪些資產及版本須更新AI聲明",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動對照素材庫、商品資料源和版位水印，直接針對新控制。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      }
     },
     {
       "slug": "partner-studio",
-      "title": "Helping our partners market smarter, together, with Gemini",
+      "title": "Google Cloud在合作夥伴行銷平台加入Gemini代理工具",
       "source_url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/",
       "provisional_score": 93,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/partner-studio.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Gemini代理接入合作行銷素材與聯名規範工序。",
+        "source_locator": "Official Cloud blog L78–102",
+        "source_url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/",
+        "event_change": "合作夥伴平台新增代理能力",
+        "affected_workflow": "Google Cloud聯合素材製作及渠道改寫",
+        "specific_decision": "哪些聯名版本可沿同一流程審閱",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動直接核對Google Cloud合作角色、品牌規範及社群改寫。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      }
     },
     {
       "slug": "profound",
-      "title": "Profound brings your AI Marketer into Microsoft Teams and Microsoft 365",
+      "title": "Profound接入Teams，把AI搜尋分析帶進團隊對話",
       "source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406573/0/en/profound-brings-your-ai-marketer-into-microsoft-teams-and-microsoft-365.html",
       "provisional_score": 92,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/profound.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI搜尋分析、專案啟動和企業文件接入同一協作介面。",
+        "source_locator": "Issuer release L58–66",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406573/0/en/profound-brings-your-ai-marketer-into-microsoft-teams-and-microsoft-365.html",
+        "event_change": "Teams及Microsoft 365整合推出",
+        "affected_workflow": "AI搜尋異常討論至內容專案交接",
+        "specific_decision": "哪些引用變動值得建立分析專案",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動以引用份額異常及Profound Project為實際對象。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      }
     },
     {
       "slug": "gemini-neon",
-      "title": "Introducing Gemini 4 Neon",
+      "title": "Google推出Gemini 4 Neon，以長上下文處理跨格式工作",
       "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
       "provisional_score": 91,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/gemini-neon.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "多模態長上下文模型供跨格式知識工作使用。",
+        "source_locator": "Official release L244–248, L263–265",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "event_change": "Gemini模型新增Neon選項",
+        "affected_workflow": "活動PDF與成效表整合簡報",
+        "specific_decision": "哪些跨檔案分析適合放入同一上下文",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定PDF和試算表的跨檔來源引用，對應新增長上下文能力。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      }
     },
     {
       "slug": "hero",
@@ -152,14 +222,6 @@
       "next_action": "Reserve: verify original source, novelty and event-specific marketing relevance."
     },
     {
-      "slug": "phancy-language",
-      "title": "Phancy Launches Phai-A1 Language Model and Phai-M1 Video Generation Model | Malay Mail",
-      "source_url": "https://www.malaymail.com/news/money/mediaoutreach/2026/11/18/phancy-launches-phai-a1-language-model-and-phai-m1-video-generation-model/502315",
-      "provisional_score": 73,
-      "state": "REJECTED",
-      "next_action": "Same launch as Phancy video model; consolidate into one event packet."
-    },
-    {
       "slug": "live-dictation",
       "title": "AI Releases: New AI Models and Features by Date (2026) - Vi.ki",
       "source_url": "https://ai.vi.ki/releases",
@@ -174,14 +236,6 @@
       "provisional_score": 57,
       "state": "REJECTED",
       "next_action": "General acquisition without verified technical/workflow change."
-    },
-    {
-      "slug": "bluemedia",
-      "title": "From AI Native Advertising to Marketing System Delivery: BlueMedia launches partnership with ChatGPT Ads - ANTARA News",
-      "source_url": "https://en.antaranews.com/amp/news/444103/from-ai-native-advertising-to-marketing-system-delivery-bluemedia-launches-partnership-with-chatgpt-ads",
-      "provisional_score": 70,
-      "state": "REJECTED",
-      "next_action": "Duplicate of Nov 13 service announcement; no verified increment."
     }
   ]
 }
