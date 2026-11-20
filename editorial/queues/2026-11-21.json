@@ -3,7 +3,7 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "6b1a4d580a7dc94021468de2c5de3f51eaf3f2b2",
   "discovery_count": 20,
-  "approved_count": 5,
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": "Compared against 1767 published archive records and grouped underlying events. BlueMedia repeats Nov 13 coverage, and the separate Phancy model angle will be grouped into its single launch packet.",
   "items": [
@@ -122,40 +122,96 @@
       "title": "Hero by Lemonlight — AI video pre-production platform",
       "source_url": "https://herovideo.ai/",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "REVIEWED",
+      "next_action": "Reserve: canonical release notes date Agent/MCP capabilities to Nov 9, while Nov 17–20 articles call it a launch. Establish a distinct new increment before publication."
     },
     {
       "slug": "phancy",
-      "title": "Phancy Launches Phai-A1 Language Model and Phai-M1 Video Generation Model | Malay Mail",
+      "title": "Phancy公布Phai-M1影音模型，模型權重仍待開放",
       "source_url": "https://www.malaymail.com/news/money/mediaoutreach/2026/11/18/phancy-launches-phai-a1-language-model-and-phai-m1-video-generation-model/502315",
       "provisional_score": 89,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/phancy.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "自研影音模型支援真人風格影片與同步音訊。",
+        "source_locator": "Issuer wire L109–124",
+        "source_url": "https://www.malaymail.com/news/money/mediaoutreach/2026/11/18/phancy-launches-phai-a1-language-model-and-phai-m1-video-generation-model/502315",
+        "event_change": "公布Phai-M1並列出試用入口",
+        "affected_workflow": "短片人物動作及對白生成評估",
+        "specific_decision": "先評估網頁輸出，另等權重與部署條件",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動聚焦固定對白與動作、音畫同步及兩種接入方式。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      }
     },
     {
       "slug": "youcam-muse",
-      "title": "Perfect Corp. introduces a brand-new AI Song & Music Video Platform, YouCam Muse, and kicks off the AI Music Video Challenge with Cash Prizes",
+      "title": "YouCam Muse推出歌曲與音樂影片製作，支援逐場修改分鏡",
       "source_url": "https://www.businesswire.com/news/home/20261117242071/en/Perfect-Corp.-introduces-a-brand-new-AI-Song-Music-Video-Platform-YouCam-Muse-and-kicks-off-the-AI-Music-Video-Challenge-with-Cash-Prizes",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/youcam-muse.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI歌曲生成接到可逐場修改的音樂影片製作。",
+        "source_locator": "Issuer release L31–46",
+        "source_url": "https://www.businesswire.com/news/home/20261117242071/en/Perfect-Corp.-introduces-a-brand-new-AI-Song-Music-Video-Platform-YouCam-Muse-and-kicks-off-the-AI-Music-Video-Challenge-with-Cash-Prizes",
+        "event_change": "新平台提供歌曲至分鏡再至影片的流程",
+        "affected_workflow": "音樂短片前期構圖和版本比較",
+        "specific_decision": "哪些歌詞段落需重做場景或鏡頭",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定同一副歌、兩種視覺模式與逐鏡重生。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      }
     },
     {
       "slug": "genie-api",
-      "title": "Genie 4 now available through the Gemini API",
+      "title": "更進新聞：Genie 4開放開發者API，支援即時控制互動場景",
       "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/genie-api.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "世界模型新增程式接入及自建互動介面。",
+        "source_locator": "Official developer announcement L216–220",
+        "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "event_change": "新增Interactions API與AI Studio入口",
+        "affected_workflow": "品牌互動概念的原型開發",
+        "specific_decision": "哪些場景控制可接自建介面",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動對照鍵盤、文字指令與場景改變，針對API控制機制。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      }
     },
     {
       "slug": "pika-enact",
-      "title": "Research Preview: Pika Enact — Pika Blog",
+      "title": "Pika預覽Enact，以拖曳角色及鏡頭控制引導影片生成",
       "source_url": "https://pika.art/blog/pika-enact",
       "provisional_score": 86,
-      "state": "DISCOVERED",
-      "next_action": "Read canonical source, verify dates and mechanism, reopen and record semantic decision."
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/pika-enact.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "串流AI影片研究引入角色走位、語音表演指導及鏡頭控制。",
+        "source_locator": "Research post L182–205, L266–271",
+        "source_url": "https://pika.art/blog/pika-enact",
+        "event_change": "公布Enact研究預覽",
+        "affected_workflow": "生成影片的導演及鏡頭規劃",
+        "specific_decision": "哪些走位和鏡頭控制值得追蹤研究試用",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動列出角色位置與攝影機路徑，對應三種互動機制且保留研究狀態。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      }
     },
     {
       "slug": "synthesia-claude",
@@ -170,8 +226,8 @@
       "title": "New Research: 73% of B2C Marketers Using AI Agents Don’t Measure Them on Sales | Invoca Press Release",
       "source_url": "https://www.invoca.com/press-release/new-research-73-of-b2c-marketers-using-ai-agents-dont-measure-them-on-sales",
       "provisional_score": 82,
-      "state": "DISCOVERED",
-      "next_action": "Reserve: verify original source, novelty and event-specific marketing relevance."
+      "state": "REVIEWED",
+      "next_action": "Reserve: verified Nov 10 study of 451 US B2C marketing leaders, Sep 14–Oct 5. Prioritize fresher verified developments; preserve sample and denominator if used."
     },
     {
       "slug": "rezolve-elverys",
@@ -199,11 +255,25 @@
     },
     {
       "slug": "ideogram",
-      "title": "TheMagnifier.ai — Generative AI News for Creatives | Image, Video & Audio",
-      "source_url": "https://themagnifier.ai/",
-      "provisional_score": 78,
-      "state": "DISCOVERED",
-      "next_action": "Reserve: verify original source, novelty and event-specific marketing relevance."
+      "title": "Ideogram 4.6加入精確編輯API，可用遮罩限定修改範圍",
+      "source_url": "https://ideogram.ai/models/4.6/",
+      "provisional_score": 91,
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-21/ideogram.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI圖片編輯新增遮罩API和連續編輯選項。",
+        "source_locator": "Official model page L343–379",
+        "source_url": "https://ideogram.ai/models/4.6/",
+        "event_change": "推出4.6及Precise Edit",
+        "affected_workflow": "商品圖局部修改和批次製作",
+        "specific_decision": "哪些品質設定可保留商品細節",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動比較固定商品、背景遮罩、品質模式及連續修改細節。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      }
     },
     {
       "slug": "comfyui-kling",

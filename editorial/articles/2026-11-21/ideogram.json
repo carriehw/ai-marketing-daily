@@ -1,0 +1,177 @@
+{
+  "edition_date_hkt": "2026-11-21",
+  "state": "APPROVED",
+  "article": {
+    "title": "Ideogram 4.6加入精確編輯API，可用遮罩限定修改範圍",
+    "summary": "Ideogram推出4.6模型，提供Generate及Precise Edit API，用於生成及連續修改圖片。",
+    "highlights": [
+      "Precise Edit可加入遮罩指定修改位置，並保留來源圖片尺寸。",
+      "模型支援最高4K輸出，Very low品質模式上限為2K。"
+    ],
+    "why": "商品圖需要局部改背景或顏色時，團隊可評估遮罩編輯能否保留包裝文字和其他未指定區域。",
+    "next_step": "固定一張商品圖及一塊背景遮罩，比較不同品質設定的文字、邊緣和檔案尺寸，再決定哪種設定可進入素材流程。",
+    "detail": "Ideogram列出Very low、Low、Medium及High四種API品質設定，生成與編輯的計費亦按設定及尺寸而異。使用者可把上次編輯結果作為下一次輸入。團隊可以逐次保存原圖、遮罩和輸出，比較連續修改後哪些商品細節改變，再決定是否把這條流程接入既有批次製作。",
+    "title_en": "Ideogram 4.6 adds precise-edit APIs with optional masks",
+    "summary_en": "Ideogram released 4.6 with Generate and Precise Edit APIs for generation and successive edits.",
+    "highlights_en": [
+      "Precise Edit can use a mask to limit edits and preserves source dimensions.",
+      "Output reaches 4K, while Very low quality is limited to 2K."
+    ],
+    "why_en": "Product-image teams can assess whether masked edits preserve packaging text and unselected areas.",
+    "next_step_en": "Use one product image and background mask to compare text, edges and dimensions across quality settings.",
+    "detail_en": "The API lists four quality levels, with pricing depending on settings, size and operation. An edit can become the next input. Keep source, mask and output versions to assess detail changes before connecting the workflow to batch production.",
+    "source": "Ideogram",
+    "url": "https://ideogram.ai/models/4.6/",
+    "time": "11月19日",
+    "section": "創意生產工具",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Use Now",
+    "source_kind": "official",
+    "editorial_slug": "ideogram"
+  },
+  "evidence": {
+    "story_id": "2026-11-21-ideogram",
+    "title_zh": "Ideogram 4.6加入精確編輯API，可用遮罩限定修改範圍",
+    "source_story_url": "https://ideogram.ai/models/4.6/",
+    "published_article_url": "https://ideogram.ai/models/4.6/",
+    "source_date_display": "11月19日",
+    "event_date": "2026-11-19",
+    "first_published_date": "2026-11-19",
+    "source_documents": [
+      {
+        "url": "https://ideogram.ai/models/4.6/",
+        "publisher": "Ideogram",
+        "evidence_locator": "Official model page L343–349 / Official model page L360–365 / Official model page L355, L362, L374–379",
+        "source_publication_date": "2026-11-19",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-21T07:10:42+08:00",
+        "access_method": "Read relevant retrieved source text, not search snippets alone.",
+        "limitations": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Ideogram 4.6於11月19日推出Generate及Precise Edit端點。",
+        "evidence_locator": "Official model page L343–349",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      },
+      {
+        "claim_zh": "支援最高4K輸出，Very low品質限最高2K。",
+        "evidence_locator": "Official model page L360–365",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      },
+      {
+        "claim_zh": "Precise Edit可用遮罩限制編輯範圍，並保留來源圖片尺寸。",
+        "evidence_locator": "Official model page L355, L362, L374–379",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Ideogram 4.6於11月19日推出Generate及Precise Edit端點。",
+        "evidence_locator": "Official model page L343–349",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      },
+      {
+        "claim_zh": "支援最高4K輸出，Very low品質限最高2K。",
+        "evidence_locator": "Official model page L360–365",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      },
+      {
+        "claim_zh": "Precise Edit可用遮罩限制編輯範圍，並保留來源圖片尺寸。",
+        "evidence_locator": "Official model page L355, L362, L374–379",
+        "support_url": "https://ideogram.ai/models/4.6/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened source to challenge pivotal claims, dates and scope. No separate reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-21T07:10:42+08:00",
+      "source_reopen_reference": "turn264420527view1; reopened turn362897131view1; reopened turn618168284view0",
+      "finding": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim."
+    },
+    "review_notes": "Official model page confirms Nov 19 release. Generate and Precise Edit endpoints, masks and resolution limits. Vendor leaderboard and comparative drift claims omitted. No tested fidelity or rights-clearance claim.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 29,
+      "business_impact": 21,
+      "actionability": 19,
+      "market_relevance": 11,
+      "novelty": 10,
+      "total": 90
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "AI圖片編輯新增遮罩API和連續編輯選項。",
+      "source_locator": "Official model page L343–379",
+      "source_url": "https://ideogram.ai/models/4.6/",
+      "event_change": "推出4.6及Precise Edit",
+      "affected_workflow": "商品圖局部修改和批次製作",
+      "specific_decision": "哪些品質設定可保留商品細節",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "行動比較固定商品、背景遮罩、品質模式及連續修改細節。",
+      "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+      "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://ideogram.ai/models/4.6/",
+    "title_zh_hant": "Ideogram 4.6加入精確編輯API，可用遮罩限定修改範圍",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体用“精确编辑、遮罩、连续修改、品质设置”。4K与Very low最高2K的范围分别保留，不把厂商像素漂移排名写为实测结果。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "AI圖片編輯新增遮罩API和連續編輯選項。",
+    "source_locator": "Official model page L343–379",
+    "source_url": "https://ideogram.ai/models/4.6/",
+    "event_change": "推出4.6及Precise Edit",
+    "affected_workflow": "商品圖局部修改和批次製作",
+    "specific_decision": "哪些品質設定可保留商品細節",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "行動比較固定商品、背景遮罩、品質模式及連續修改細節。",
+    "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+    "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+    "decision": "complete"
+  }
+}

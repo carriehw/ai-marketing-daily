@@ -1,0 +1,192 @@
+{
+  "edition_date_hkt": "2026-11-21",
+  "state": "APPROVED",
+  "article": {
+    "title": "更進新聞：Genie 4開放開發者API，支援即時控制互動場景",
+    "summary": "Google公布Genie 4可經Gemini API的Interactions API及Google AI Studio接入，讓開發者建立互動世界原型。",
+    "highlights": [
+      "輸入可用文字、參考圖或兩者，生成720p、24fps畫面及同步音訊。",
+      "鍵盤與即時文字提示可控制環境，生成內容含SynthID浮水印。"
+    ],
+    "why": "開發者入口讓互動概念由網頁探索走向自建原型，品牌體驗團隊可決定哪些控制需要接到自己的介面。",
+    "next_step": "先畫出一條使用者控制路徑，列出鍵盤操作與文字指令要改變的場景元素，再估算原型所需的接入及生成成本。",
+    "detail": "Google把開發者接入用於互動體驗、空間設計等原型探索，並提供AI Studio的互動畫布及起步範例。團隊可以先把一個展示概念拆成移動、觀察及改變物件的操作，判斷模型提供的即時控制是否足夠，再按文件中的定價及限制規劃開發。這項公布是開發者接入更新。",
+    "title_en": "Update: Genie 4 opens developer APIs for interactive scene control",
+    "summary_en": "Google announced Genie 4 access through the Gemini Interactions API and AI Studio for interactive-world prototypes.",
+    "highlights_en": [
+      "Text, a reference image or both can generate 720p worlds at 24fps with synchronized audio.",
+      "Keyboard controls and live text prompts steer scenes. Outputs carry SynthID watermarks."
+    ],
+    "why_en": "Developer access lets experience teams assess which controls to connect to a custom prototype interface.",
+    "next_step_en": "Map one user-control path and its scene changes before estimating integration and generation costs.",
+    "detail_en": "Google provides an interactive canvas and starter apps for prototype exploration. Break a concept into movement, observation and object changes, then judge whether live controls fit. Review documented pricing and limits before development. This is the developer-access update.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+    "time": "11月19日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "source_kind": "official",
+    "editorial_slug": "genie-api",
+    "followup": "11月20日版報道Ultra訂戶入口。這份API公告發布於11月19日，早於該期，補充開發者接入方式。",
+    "followup_en": "Our November 20 issue covered Ultra subscriber access. This API announcement was published on November 19, before that issue, and adds the developer-access route.",
+    "verification_url": "https://deepmind.google/models/model-cards/genie-4/"
+  },
+  "evidence": {
+    "story_id": "2026-11-21-genie-api",
+    "title_zh": "更進新聞：Genie 4開放開發者API，支援即時控制互動場景",
+    "source_story_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+    "published_article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+    "source_date_display": "11月19日",
+    "event_date": "2026-11-19",
+    "first_published_date": "2026-11-19",
+    "source_documents": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "publisher": "Google",
+        "evidence_locator": "Official developer announcement L210–216 / Official developer announcement L217 / Official developer announcement L217–220",
+        "source_publication_date": "2026-11-19",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-21T07:10:42+08:00",
+        "access_method": "Read relevant retrieved source text, not search snippets alone.",
+        "limitations": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      },
+      {
+        "url": "https://deepmind.google/models/model-cards/genie-4/",
+        "publisher": "Google DeepMind",
+        "evidence_locator": "Genie 4 model card identification, publication and limitations sections",
+        "source_publication_date": "2026-11-18",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-21T07:10:42+08:00",
+        "access_method": "Read relevant retrieved source text, not search snippets alone.",
+        "limitations": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Genie 4開放Gemini API的Interactions API及AI Studio開發者接入。",
+        "evidence_locator": "Official developer announcement L210–216",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      },
+      {
+        "claim_zh": "可由文字、參考圖或兩者生成720p、24fps互動世界及同步音訊。",
+        "evidence_locator": "Official developer announcement L217",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      },
+      {
+        "claim_zh": "開發者可用鍵盤及即時文字提示改變環境，輸出帶SynthID浮水印。",
+        "evidence_locator": "Official developer announcement L217–220",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Genie 4開放Gemini API的Interactions API及AI Studio開發者接入。",
+        "evidence_locator": "Official developer announcement L210–216",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      },
+      {
+        "claim_zh": "可由文字、參考圖或兩者生成720p、24fps互動世界及同步音訊。",
+        "evidence_locator": "Official developer announcement L217",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      },
+      {
+        "claim_zh": "開發者可用鍵盤及即時文字提示改變環境，輸出帶SynthID浮水印。",
+        "evidence_locator": "Official developer announcement L217–220",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened source to challenge pivotal claims, dates and scope. No separate reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-21T07:10:42+08:00",
+      "source_reopen_reference": "turn170246310view0; reopened turn362897131view4; reopened turn618168284view1",
+      "finding": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context."
+    },
+    "review_notes": "Official Nov 19 developer announcement; earlier than the Nov 20 issue's consumer-access coverage, explicitly disclosed. No blanket free/public-region or commercial-readiness claim. Research limitations remain; model card read as additional context.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 20,
+      "actionability": 17,
+      "market_relevance": 12,
+      "novelty": 9,
+      "total": 85
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "世界模型新增程式接入及自建互動介面。",
+      "source_locator": "Official developer announcement L216–220",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+      "event_change": "新增Interactions API與AI Studio入口",
+      "affected_workflow": "品牌互動概念的原型開發",
+      "specific_decision": "哪些場景控制可接自建介面",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "行動對照鍵盤、文字指令與場景改變，針對API控制機制。",
+      "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+      "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor",
+    "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-11-20.html"
+  },
+  "localization_review": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+    "title_zh_hant": "更進新聞：Genie 4開放開發者API，支援即時控制互動場景",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体用“开发者接入、互动场景、起步示例、水印”。720p及24fps一致；明确11月19日公告早于上一期，不补写全面免费或商用成熟。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "世界模型新增程式接入及自建互動介面。",
+    "source_locator": "Official developer announcement L216–220",
+    "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+    "event_change": "新增Interactions API與AI Studio入口",
+    "affected_workflow": "品牌互動概念的原型開發",
+    "specific_decision": "哪些場景控制可接自建介面",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "行動對照鍵盤、文字指令與場景改變，針對API控制機制。",
+    "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+    "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+    "decision": "complete"
+  }
+}
