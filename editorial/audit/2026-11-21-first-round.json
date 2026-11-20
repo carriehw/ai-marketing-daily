@@ -1,0 +1,226 @@
+{
+  "edition_date_hkt": "2026-11-21",
+  "reviewed_at_hkt": "2026-11-21T07:15:34+08:00",
+  "candidate_count": 20,
+  "approved_count": 10,
+  "held_count": 0,
+  "method": "Same-assistant original-source reading and separate source reopening, per-story claims and relevance decisions; no human approval or product testing claimed.",
+  "local_checks": [
+    "edition_packet check passed 10",
+    "date/time gate passed 10",
+    "normalization 24 pass 0 fail"
+  ],
+  "semantic_findings": [
+    {
+      "slug": "picsart",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "創意AI生成與編輯功能提供統一程式接入。",
+        "source_locator": "Issuer release L31–38",
+        "source_url": "https://www.businesswire.com/news/home/20261120520968/en/Picsart-Opens-the-AI-Behind-Its-Platform-to-Developers-Businesses",
+        "event_change": "新增多供應商創意模型接入層",
+        "affected_workflow": "商品圖生成與後處理自動化",
+        "specific_decision": "是否把分散串接改為同一生成編輯流程",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動比較同一商品圖在切換模型後的串接設定。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "microsoft-labels",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "AI生成素材的披露欄位加入廣告素材管理流程。",
+        "source_locator": "Official roundup L57–69",
+        "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+        "event_change": "透明度控制正式可用",
+        "affected_workflow": "素材來源記錄、聲明與版位呈現",
+        "specific_decision": "哪些資產及版本須更新AI聲明",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動對照素材庫、商品資料源和版位水印，直接針對新控制。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "partner-studio",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "Gemini代理接入合作行銷素材與聯名規範工序。",
+        "source_locator": "Official Cloud blog L78–102",
+        "source_url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/",
+        "event_change": "合作夥伴平台新增代理能力",
+        "affected_workflow": "Google Cloud聯合素材製作及渠道改寫",
+        "specific_decision": "哪些聯名版本可沿同一流程審閱",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動直接核對Google Cloud合作角色、品牌規範及社群改寫。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "profound",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "AI搜尋分析、專案啟動和企業文件接入同一協作介面。",
+        "source_locator": "Issuer release L58–66",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406573/0/en/profound-brings-your-ai-marketer-into-microsoft-teams-and-microsoft-365.html",
+        "event_change": "Teams及Microsoft 365整合推出",
+        "affected_workflow": "AI搜尋異常討論至內容專案交接",
+        "specific_decision": "哪些引用變動值得建立分析專案",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動以引用份額異常及Profound Project為實際對象。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "gemini-neon",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "多模態長上下文模型供跨格式知識工作使用。",
+        "source_locator": "Official release L244–248, L263–265",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "event_change": "Gemini模型新增Neon選項",
+        "affected_workflow": "活動PDF與成效表整合簡報",
+        "specific_decision": "哪些跨檔案分析適合放入同一上下文",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定PDF和試算表的跨檔來源引用，對應新增長上下文能力。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:09:47+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "phancy",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "自研影音模型支援真人風格影片與同步音訊。",
+        "source_locator": "Issuer wire L109–124",
+        "source_url": "https://www.malaymail.com/news/money/mediaoutreach/2026/11/18/phancy-launches-phai-a1-language-model-and-phai-m1-video-generation-model/502315",
+        "event_change": "公布Phai-M1並列出試用入口",
+        "affected_workflow": "短片人物動作及對白生成評估",
+        "specific_decision": "先評估網頁輸出，另等權重與部署條件",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動聚焦固定對白與動作、音畫同步及兩種接入方式。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "youcam-muse",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "AI歌曲生成接到可逐場修改的音樂影片製作。",
+        "source_locator": "Issuer release L31–46",
+        "source_url": "https://www.businesswire.com/news/home/20261117242071/en/Perfect-Corp.-introduces-a-brand-new-AI-Song-Music-Video-Platform-YouCam-Muse-and-kicks-off-the-AI-Music-Video-Challenge-with-Cash-Prizes",
+        "event_change": "新平台提供歌曲至分鏡再至影片的流程",
+        "affected_workflow": "音樂短片前期構圖和版本比較",
+        "specific_decision": "哪些歌詞段落需重做場景或鏡頭",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動限定同一副歌、兩種視覺模式與逐鏡重生。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "genie-api",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "世界模型新增程式接入及自建互動介面。",
+        "source_locator": "Official developer announcement L216–220",
+        "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
+        "event_change": "新增Interactions API與AI Studio入口",
+        "affected_workflow": "品牌互動概念的原型開發",
+        "specific_decision": "哪些場景控制可接自建介面",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動對照鍵盤、文字指令與場景改變，針對API控制機制。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "ideogram",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "AI圖片編輯新增遮罩API和連續編輯選項。",
+        "source_locator": "Official model page L343–379",
+        "source_url": "https://ideogram.ai/models/4.6/",
+        "event_change": "推出4.6及Precise Edit",
+        "affected_workflow": "商品圖局部修改和批次製作",
+        "specific_decision": "哪些品質設定可保留商品細節",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動比較固定商品、背景遮罩、品質模式及連續修改細節。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    },
+    {
+      "slug": "pika-enact",
+      "decision": {
+        "decision": "PASS",
+        "ai_connection": "串流AI影片研究引入角色走位、語音表演指導及鏡頭控制。",
+        "source_locator": "Research post L182–205, L266–271",
+        "source_url": "https://pika.art/blog/pika-enact",
+        "event_change": "公布Enact研究預覽",
+        "affected_workflow": "生成影片的導演及鏡頭規劃",
+        "specific_decision": "哪些走位和鏡頭控制值得追蹤研究試用",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "行動列出角色位置與攝影機路徑，對應三種互動機制且保留研究狀態。",
+        "inference_label": "why and next_step are editorial implications based on the described mechanism.",
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-21T07:13:18+08:00",
+        "method": "Same-assistant edit after fact review, checking Traditional Chinese fluency, English parity and Simplified terminology and relevance.",
+        "decision": "complete"
+      }
+    }
+  ],
+  "reserve_policy": "Remaining 60+ candidates retained in current queue with next action, not counted as approval. Brand section empty; no qualifying brand case added."
+}
