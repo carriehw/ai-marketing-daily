@@ -3,7 +3,7 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "13a8c7691fbbb117bf9e51603d617e57949f8b88",
   "discovery_count": 20,
-  "approved_count": 5,
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": "Compared against 1777 published archive records, grouped underlying events. Excluded already published InMobi, LaunchSignals, Microsoft labels, Picsart, Gemini Neon and Phancy. Connected Apps eligible only for Nov20 incremental retailer rollout with dated prior coverage.",
   "items": [
@@ -128,14 +128,28 @@
       }
     },
     {
-      "title": "Introducing Routines in Managed Agents",
+      "title": "HighLevel為Managed Agents加入對話排程功能",
       "url": "https://michaelreimer.ai/highlevel/updates/introducing-routines-in-managed-agents-automate-recurring-tasks/",
       "slug": "routines",
-      "source_url": "https://michaelreimer.ai/highlevel/updates/introducing-routines-in-managed-agents-automate-recurring-tasks/",
+      "source_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
       "discovery_reference": "turn852270890view3",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Selected for source verification; complete highest-value records first. MarTech：排程代理，追溯官方更新"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-22/routines.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理新增排程执行与原对话交付。",
+        "source_locator": "Official changelog L14–39,L70–79",
+        "source_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+        "event_change": "新增Routines",
+        "affected_workflow": "CRM每日线索与停滞商机检查",
+        "specific_decision": "决定哪些检查设定固定排程",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议新线索及停滞商机摘要，对应官方具体示例。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      }
     },
     {
       "title": "Launch ChatGPT Ads by OpenAI from Pinnacle Ai Ad Manager | Pinnacle Ai Product Update",
@@ -148,34 +162,76 @@
       "next_action": "Selected for source verification; complete highest-value records first. MarTech：ChatGPT廣告接入，追溯官方"
     },
     {
-      "title": "AI is becoming your brand’s new spokesperson. Is it saying the right thing? | Marketing-Interactive",
+      "title": "贊助案例：G-NiiB整理網站結構，回應AI搜尋",
       "url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
       "slug": "gniib",
       "source_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
       "discovery_reference": "turn347667303view2",
       "provisional_score": 84,
-      "state": "DISCOVERED",
-      "next_action": "Selected for source verification; complete highest-value records first. 香港品牌AI搜尋案例；贊助來源，刪成效推論"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-22/gniib.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "品牌直接调整网站结构与内容以回应AI答案检索。",
+        "source_locator": "Sponsored case L151–155,L164",
+        "source_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+        "event_change": "披露G-NiiB的AI搜索网站机制",
+        "affected_workflow": "商品页标准网址与FAQ管理",
+        "specific_decision": "决定哪些重复商品页先整合",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：原始赞助案例明确AI机制；建议逐项核对标准网址和FAQ，保留披露并删除结果断言。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      }
     },
     {
-      "title": "Ecer.com Launches EcerClaw, an AI Agent Platform to Drive End-to-End Growth for B2B Export Websites",
+      "title": "EcerClaw把出口網站內容、多語客服及CRM串接",
       "url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
       "slug": "ecerclaw",
       "source_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
       "discovery_reference": "turn913694574search16",
       "provisional_score": 84,
-      "state": "DISCOVERED",
-      "next_action": "Selected for source verification; complete highest-value records first. 中國B2B：內容、客服及CRM串接"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-22/ecerclaw.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI连接出口网站内容、多语客服与线索管理。",
+        "source_locator": "Issuer release L464–472",
+        "source_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+        "event_change": "推出EcerClaw三模块",
+        "affected_workflow": "外贸询盘到销售跟进",
+        "specific_decision": "决定哪些产品规格和买家需求跨系统保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议逐项追踪同一规格询盘，针对模块交接。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      }
     },
     {
-      "title": "MoEngage Strengthens Agentic Marketing Capabilities: Launches Merlin Agent, Fully Integrated AI Decisioning, and More at NEXT Autumn'26",
+      "title": "MoEngage整合個人AI決策，Merlin代理連接行銷資料",
       "url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
       "slug": "moengage",
       "source_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
       "discovery_reference": "turn866858796search10",
       "provisional_score": 84,
-      "state": "DISCOVERED",
-      "next_action": "Selected for source verification; complete highest-value records first. APAC：個人決策整合"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-22/moengage.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理与个人偏好决策整合营销执行。",
+        "source_locator": "Issuer release L385–399",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+        "event_change": "Aampe决策整合及Merlin更新",
+        "affected_workflow": "客户生命周期讯息选择",
+        "specific_decision": "决定优惠渠道时机的自动化范围",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：重复购买提醒限定四项可变选择，与决策机制相连。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      }
     },
     {
       "title": "Gemini can now be your go-to source for making GIFs",
@@ -188,14 +244,28 @@
       "next_action": "Selected for source verification; complete highest-value records first. 創意：Gemini GIF，須追原帖及範圍"
     },
     {
-      "title": "AI Inspo Unveils an All-in-One AI Social Media Agent That Bridges Strategy and Execution",
+      "title": "AI Inspo串接社群趨勢、內容生成與表現回顧",
       "url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
       "slug": "ai-inspo",
       "source_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
       "discovery_reference": "turn913694574search0",
       "provisional_score": 81,
-      "state": "DISCOVERED",
-      "next_action": "Selected for source verification; complete highest-value records first. 創意：社群內容至發布流程"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-22/ai-inspo.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理将社群账户分析和创作、发布回顾连成循环。",
+        "source_locator": "Issuer release L477–484",
+        "source_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+        "event_change": "推出AI社群代理",
+        "affected_workflow": "趋势选题至下一轮内容简报",
+        "specific_decision": "决定延续或修改哪些格式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一主题两种参考格式的记录，对应产品具体创作机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      }
     },
     {
       "title": "Adside — Launch Wire | StartupStarter",
