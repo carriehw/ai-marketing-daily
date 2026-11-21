@@ -1,0 +1,177 @@
+{
+  "edition_date_hkt": "2026-11-22",
+  "state": "APPROVED",
+  "article": {
+    "title": "Gemini API預覽按需載入工具規格，減少預先放入的內容",
+    "title_en": "Gemini API previews on-demand tool schemas",
+    "summary": "Google在Interactions API推出Tool Retrieval預覽，讓代理需要某項工具時才載入完整參數規格。",
+    "summary_en": "Google introduced Tool Retrieval in preview in the Interactions API, loading complete parameter schemas when an agent needs a tool.",
+    "highlights": [
+      "模型仍會看到延後載入工具的名稱及描述。",
+      "功能支援Gemini 3.6及後續模型；推論仍按標準token費率計費。"
+    ],
+    "highlights_en": [
+      "The model still sees names and descriptions of deferred tools.",
+      "It supports Gemini 3.6 and later models, with standard token billing."
+    ],
+    "why": "串接大量行銷工具的團隊可調整代理每次請求要接收的規格，決定哪些常用工具預先載入，哪些按需搜尋。",
+    "why_en": "Teams connecting many marketing tools can choose which schemas to load upfront and which to retrieve as needed.",
+    "next_step": "以同一組分析與CRM工具比較完整載入和延後載入，記錄實際輸入token及工具選擇，再決定採用範圍。",
+    "next_step_en": "Compare full and deferred loading for the same analytics and CRM tools, recording input tokens and tool choices.",
+    "detail": "參數規格說明工具需要接收哪些資料。開發者可加入tool_search，並把指定工具設為defer_loading。Google亦支援遠端MCP工具及由客戶端執行的搜尋。團隊可先保留高頻工具，再測試其他工具延後載入的情況；實際費用取決於哪些規格被載入，以及後續對話使用的內容。",
+    "detail_en": "A schema defines the data a tool expects. Developers add tool_search and mark tools with defer_loading. Remote MCP and client-side search are supported. Keep frequent tools loaded and test the remainder; actual cost depends on schemas retrieved and their later use in the conversation.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "time": "11月19日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Use Now",
+    "source_kind": "official",
+    "editorial_slug": "tool-retrieval"
+  },
+  "evidence": {
+    "story_id": "2026-11-22-tool-retrieval",
+    "title_zh": "Gemini API預覽按需載入工具規格，減少預先放入的內容",
+    "source_story_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "published_article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "source_date_display": "11月19日",
+    "event_date": "2026-11-19",
+    "first_published_date": "2026-11-19",
+    "source_documents": [
+      {
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "publisher": "Google",
+        "evidence_locator": "Official blog L269 / Official blog L272 / Official blog L357–360",
+        "source_publication_date": "2026-11-19",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+        "access_method": "Read source text and locators, then separately reopened it.",
+        "limitations": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Tool Retrieval在Interactions API以預覽形式提供。",
+        "evidence_locator": "Official blog L269",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      {
+        "claim_zh": "工具名稱和描述仍可見，參數規格可按需載入。",
+        "evidence_locator": "Official blog L272",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      {
+        "claim_zh": "按標準token費率收費，支援Gemini3.6及後續模型。",
+        "evidence_locator": "Official blog L357–360",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Tool Retrieval在Interactions API以預覽形式提供。",
+        "evidence_locator": "Official blog L269",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      {
+        "claim_zh": "工具名稱和描述仍可見，參數規格可按需載入。",
+        "evidence_locator": "Official blog L272",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      {
+        "claim_zh": "按標準token費率收費，支援Gemini3.6及後續模型。",
+        "evidence_locator": "Official blog L357–360",
+        "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+    "independent_review": {
+      "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+      "source_reopen_reference": "Read turn347667303view1; reopened turn873726560view2",
+      "finding": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+    },
+    "review_notes": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 20,
+      "actionability": 18,
+      "market_relevance": 11,
+      "novelty": 9,
+      "total": 85
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "AI代理工具检索新增按需参数载入。",
+      "source_locator": "Official blog L269–272, L357–360",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "event_change": "推出Tool Retrieval预览",
+      "affected_workflow": "营销数据代理串接大量工具",
+      "specific_decision": "选择常用及延后载入工具",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "PASS：比较同一CRM与分析工具的参数载入方式，对应新增机制。",
+      "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "title_zh_hant": "Gemini API預覽按需載入工具規格，減少預先放入的內容",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体解释“参数规范、按需加载、预览”。保留标准token计费，不把没有额外功能费写成免费，也不承诺每次都会减少成本。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "AI代理工具检索新增按需参数载入。",
+    "source_locator": "Official blog L269–272, L357–360",
+    "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "event_change": "推出Tool Retrieval预览",
+    "affected_workflow": "营销数据代理串接大量工具",
+    "specific_decision": "选择常用及延后载入工具",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "PASS：比较同一CRM与分析工具的参数载入方式，对应新增机制。",
+    "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+    "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+    "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+    "decision": "PASS"
+  }
+}
