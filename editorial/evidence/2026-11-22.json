@@ -1,0 +1,1125 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-22",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-22T07:05:55+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Ten sources read and separately reopened by same assistant. Semantic AI relevance PASS, specific event-workflow-decision mechanisms and substitution tests recorded. US rollout, preview APIs, per-routine authorization, supported integrations, sponsored case disclosure and older evaluation period preserved. No human approval, product testing or independent results claimed.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-22-creatify-max",
+      "title_zh": "Creatify Max串接廣告研究、素材與推出審批",
+      "source_story_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+      "published_article_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "publisher": "Creatify",
+          "evidence_locator": "Official launch L117–123 / Official launch L139–150 / Official launch L165–167",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Max連接競品研究、素材生成及廣告活動草擬。",
+          "evidence_locator": "Official launch L117–123",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        },
+        {
+          "claim_zh": "推出、預算變動及暫停透過批准卡呈現，可信任例行工作可另行授權自動執行。",
+          "evidence_locator": "Official launch L139–150",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        },
+        {
+          "claim_zh": "Slack可接收排程報表，並在討論串批准或拒絕建議。",
+          "evidence_locator": "Official launch L165–167",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Max連接競品研究、素材生成及廣告活動草擬。",
+          "evidence_locator": "Official launch L117–123",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        },
+        {
+          "claim_zh": "推出、預算變動及暫停透過批准卡呈現，可信任例行工作可另行授權自動執行。",
+          "evidence_locator": "Official launch L139–150",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        },
+        {
+          "claim_zh": "Slack可接收排程報表，並在討論串批准或拒絕建議。",
+          "evidence_locator": "Official launch L165–167",
+          "support_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+        "source_reopen_reference": "Read turn852270890view4 and turn347667303view4; reopened turn873726560view0",
+        "finding": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing."
+      },
+      "review_notes": "Official launch Nov18. Changes presented for approval; users may separately authorize one trusted routine to act autonomously. Removed vendor productivity and ROI claims; no product testing.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 92
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理连接广告研究、生成与账户变更。",
+        "source_locator": "Official launch L117–167",
+        "source_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+        "event_change": "新增Max整合流程",
+        "affected_workflow": "素材发现至广告账户操作",
+        "specific_decision": "界定逐次批准与单项授权",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：预算卡及单一例行工作是产品明列机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-22-ecerclaw",
+      "title_zh": "EcerClaw把出口網站內容、多語客服及CRM串接",
+      "source_story_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+      "source_date_display": "11月19日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-19",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "publisher": "Ecer",
+          "evidence_locator": "Issuer release L464–465 / Issuer release L471 / Issuer release L472",
+          "source_publication_date": "2026-11-19",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:14+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "EcerClaw包含Claw Editor、Claw Customer Service及Claw CRM。",
+          "evidence_locator": "Issuer release L464–465",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        },
+        {
+          "claim_zh": "客服模組提供多語翻譯及業界術語識別。",
+          "evidence_locator": "Issuer release L471",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        },
+        {
+          "claim_zh": "CRM模組串接潛在客戶追蹤、跟進及行銷自動化。",
+          "evidence_locator": "Issuer release L472",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "EcerClaw包含Claw Editor、Claw Customer Service及Claw CRM。",
+          "evidence_locator": "Issuer release L464–465",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        },
+        {
+          "claim_zh": "客服模組提供多語翻譯及業界術語識別。",
+          "evidence_locator": "Issuer release L471",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        },
+        {
+          "claim_zh": "CRM模組串接潛在客戶追蹤、跟進及行銷自動化。",
+          "evidence_locator": "Issuer release L472",
+          "support_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:03:43+08:00",
+        "source_reopen_reference": "Read turn248573297view3; reopened turn333370743view2",
+        "finding": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted."
+      },
+      "review_notes": "Issuer launch of three modules; descriptions not proof of indexing, buyer acquisition or order uplift. No automatic Google/AI endorsement or guaranteed rankings. Customer examples and causal outcomes omitted.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 92
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI连接出口网站内容、多语客服与线索管理。",
+        "source_locator": "Issuer release L464–472",
+        "source_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+        "event_change": "推出EcerClaw三模块",
+        "affected_workflow": "外贸询盘到销售跟进",
+        "specific_decision": "决定哪些产品规格和买家需求跨系统保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议逐项追踪同一规格询盘，针对模块交接。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-22-moengage",
+      "title_zh": "MoEngage整合個人AI決策，Merlin代理連接行銷資料",
+      "source_story_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+      "published_article_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "publisher": "MoEngage",
+          "evidence_locator": "Issuer release L380–385 / Issuer release L397 / Issuer release L399",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:24+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "MoEngage公布Merlin Agent Harness、Merlin Agent及已整合的AI Decisioning。",
+          "evidence_locator": "Issuer release L380–385",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        },
+        {
+          "claim_zh": "Harness加入Context Hub、創意生成及雙向連接器。",
+          "evidence_locator": "Issuer release L397",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        },
+        {
+          "claim_zh": "Aampe決策按個人偏好處理優惠、內容、渠道與時機。",
+          "evidence_locator": "Issuer release L399",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "MoEngage公布Merlin Agent Harness、Merlin Agent及已整合的AI Decisioning。",
+          "evidence_locator": "Issuer release L380–385",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        },
+        {
+          "claim_zh": "Harness加入Context Hub、創意生成及雙向連接器。",
+          "evidence_locator": "Issuer release L397",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        },
+        {
+          "claim_zh": "Aampe決策按個人偏好處理優惠、內容、渠道與時機。",
+          "evidence_locator": "Issuer release L399",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:03:43+08:00",
+        "source_reopen_reference": "Read turn289994682view1; reopened turn333370743view1",
+        "finding": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation."
+      },
+      "review_notes": "Issuer launch at Sydney NEXTAutumn26. Aampe AI decisioning described as fully integrated. No claim every tier or region has immediate access; omitted Loblaw scale/time-saving case and revenue causation.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 13,
+        "novelty": 8,
+        "total": 90
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理与个人偏好决策整合营销执行。",
+        "source_locator": "Issuer release L385–399",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+        "event_change": "Aampe决策整合及Merlin更新",
+        "affected_workflow": "客户生命周期讯息选择",
+        "specific_decision": "决定优惠渠道时机的自动化范围",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：重复购买提醒限定四项可变选择，与决策机制相连。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-22-routines",
+      "title_zh": "HighLevel為Managed Agents加入對話排程功能",
+      "source_story_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+      "published_article_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "publisher": "HighLevel",
+          "evidence_locator": "Official changelog L14–28 / Official changelog L70–77 / Official changelog L36–39",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:24+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        },
+        {
+          "url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "publisher": "Michael Reimer (HighLevel partner/affiliate)",
+          "evidence_locator": "Dated release distribution L34–43 and affiliate context L141–144",
+          "source_publication_date": "2026-11-20",
+          "source_class": "C",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:50+08:00",
+          "access_method": "Read then separately reopened dated partner release page.",
+          "limitations": "Partner affiliate page establishes reported Nov20 release date; product mechanics checked against official changelog."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Managed Agents可按自然語言排程並把結果送回原對話。",
+          "evidence_locator": "Official changelog L14–28",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        },
+        {
+          "claim_zh": "每人每個代理最多10項啟用例行工作，最短間隔1小時。",
+          "evidence_locator": "Official changelog L70–77",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        },
+        {
+          "claim_zh": "需新權限的敏感動作會暫停，付款一律需要批准。",
+          "evidence_locator": "Official changelog L36–39",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Managed Agents可按自然語言排程並把結果送回原對話。",
+          "evidence_locator": "Official changelog L14–28",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        },
+        {
+          "claim_zh": "每人每個代理最多10項啟用例行工作，最短間隔1小時。",
+          "evidence_locator": "Official changelog L70–77",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        },
+        {
+          "claim_zh": "需新權限的敏感動作會暫停，付款一律需要批准。",
+          "evidence_locator": "Official changelog L36–39",
+          "support_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:03:50+08:00",
+        "source_reopen_reference": "Official turn289994682view0; reopened turn679404814view0 and turn679404814view2. Dated distribution turn679404814view1 L34–43.",
+        "finding": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability."
+      },
+      "review_notes": "Official changelog read and reopened by ref and click; direct URL occasionally inaccessible. DateNov20 comes from dated Michael Reimer partner/affiliate release page, not a visible date on official Canny text. Per-person/per-agent10 limit, minimum1hour; published version and standard usage billing. Payments always require approval. No email notification availability.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 89
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理新增排程执行与原对话交付。",
+        "source_locator": "Official changelog L14–39,L70–79",
+        "source_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+        "event_change": "新增Routines",
+        "affected_workflow": "CRM每日线索与停滞商机检查",
+        "specific_decision": "决定哪些检查设定固定排程",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议新线索及停滞商机摘要，对应官方具体示例。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-22-gniib",
+      "title_zh": "贊助案例：G-NiiB整理網站結構，回應AI搜尋",
+      "source_story_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+      "published_article_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "publisher": "WPP Media Hong Kong / MARKETING-INTERACTIVE",
+          "evidence_locator": "Sponsored case L155 / Sponsored case L151–152 / Sponsored case L142,L156,L164",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:14+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "WPP香港案例描述G-NiiB的結構化資料、標準網址及FAQ調整。",
+          "evidence_locator": "Sponsored case L155",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        },
+        {
+          "claim_zh": "團隊追蹤品牌提及、引用份額及情緒。",
+          "evidence_locator": "Sponsored case L151–152",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        },
+        {
+          "claim_zh": "文章11月20日發布並披露由WPP Media Hong Kong贊助，評估期為4至6月。",
+          "evidence_locator": "Sponsored case L142,L156,L164",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "WPP香港案例描述G-NiiB的結構化資料、標準網址及FAQ調整。",
+          "evidence_locator": "Sponsored case L155",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        },
+        {
+          "claim_zh": "團隊追蹤品牌提及、引用份額及情緒。",
+          "evidence_locator": "Sponsored case L151–152",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        },
+        {
+          "claim_zh": "文章11月20日發布並披露由WPP Media Hong Kong贊助，評估期為4至6月。",
+          "evidence_locator": "Sponsored case L142,L156,L164",
+          "support_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:03:43+08:00",
+        "source_reopen_reference": "Read turn347667303view2 and turn248573297view1; reopened turn333370743view4",
+        "finding": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims."
+      },
+      "review_notes": "Sponsored first-party case publishedNov20, describing earlier Apr–Jun2026 evaluation. Event_date refers to case disclosure, not campaign launch. Mechanisms attributed to WPP; all citation/sales/ROAS uplift and causation omitted. No medical product efficacy claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 20,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 7,
+        "total": 88
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "品牌直接调整网站结构与内容以回应AI答案检索。",
+        "source_locator": "Sponsored case L151–155,L164",
+        "source_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+        "event_change": "披露G-NiiB的AI搜索网站机制",
+        "affected_workflow": "商品页标准网址与FAQ管理",
+        "specific_decision": "决定哪些重复商品页先整合",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：原始赞助案例明确AI机制；建议逐项核对标准网址和FAQ，保留披露并删除结果断言。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "sponsorship": "Original article sponsored by WPP Media Hong Kong.",
+      "evaluation_period": "2026-04 to 2026-06; date of disclosure 2026-11-20"
+    },
+    {
+      "story_id": "2026-11-22-connected-apps",
+      "title_zh": "更進新聞：Google在美國擴展Connected Apps零售結帳",
+      "source_story_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+      "published_article_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "publisher": "Google",
+          "evidence_locator": "Official update L212–216 / Official update L217 / Official update L219",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "美國Search及Gemini推出Albertsons、Safeway、Shaw’s及Target的Connected Apps。",
+          "evidence_locator": "Official update L212–216",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        },
+        {
+          "claim_zh": "新增購物應用以Universal Commerce Protocol支援建立訂單及結帳。",
+          "evidence_locator": "Official update L217",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        },
+        {
+          "claim_zh": "Angi及Thumbtack帳戶連結預計未來數週才加入Search。",
+          "evidence_locator": "Official update L219",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "美國Search及Gemini推出Albertsons、Safeway、Shaw’s及Target的Connected Apps。",
+          "evidence_locator": "Official update L212–216",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        },
+        {
+          "claim_zh": "新增購物應用以Universal Commerce Protocol支援建立訂單及結帳。",
+          "evidence_locator": "Official update L217",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        },
+        {
+          "claim_zh": "Angi及Thumbtack帳戶連結預計未來數週才加入Search。",
+          "evidence_locator": "Official update L219",
+          "support_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+        "source_reopen_reference": "Read turn347667303view0; separately reopened turn873726560view1",
+        "finding": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation."
+      },
+      "review_notes": "Official Nov20 US retailer rollout, following Oct29 platform preview. Grocery ordering/checkout supported for named retailers; Angi/Thumbtack remain coming weeks. No global availability, conversion uplift or financial-advice recommendation.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 87
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI搜尋及助理接入具名零售商訂單和結帳。",
+        "source_locator": "Official update L216–219",
+        "source_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+        "event_change": "新增美國零售接入",
+        "affected_workflow": "商品探索到購物籃交接",
+        "specific_decision": "決定哪些訂單欄位需在對話保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建議列出具名雜貨購買流程的交接點，直接對應新入口。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-10-29.html"
+    },
+    {
+      "story_id": "2026-11-22-overwatch",
+      "title_zh": "Observe.AI公布跨AI與人工客服的即時監督工具",
+      "source_story_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "publisher": "Observe.AI",
+          "evidence_locator": "Issuer release L465–478 / Issuer release L479–480 / Issuer release L481",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Agent Overwatch公布跨AI及人工客服的即時監督。",
+          "evidence_locator": "Issuer release L465–478",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        },
+        {
+          "claim_zh": "風險及升級條件可按企業政策設定，並可透過支援的Slack及Teams工具告警。",
+          "evidence_locator": "Issuer release L479–480",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        },
+        {
+          "claim_zh": "主管可查看逐字稿，介入方式取決於渠道和整合支援。",
+          "evidence_locator": "Issuer release L481",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Agent Overwatch公布跨AI及人工客服的即時監督。",
+          "evidence_locator": "Issuer release L465–478",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        },
+        {
+          "claim_zh": "風險及升級條件可按企業政策設定，並可透過支援的Slack及Teams工具告警。",
+          "evidence_locator": "Issuer release L479–480",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        },
+        {
+          "claim_zh": "主管可查看逐字稿，介入方式取決於渠道和整合支援。",
+          "evidence_locator": "Issuer release L481",
+          "support_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+        "source_reopen_reference": "Read turn896584680view3; reopened turn873726560view4",
+        "finding": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention."
+      },
+      "review_notes": "Issuer announcement. Monitoring covers supported first-/third-party AI and human workflows. Live intervention depends on channel and integration. No universal compatibility or guaranteed compliance/prevention.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 86
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI分析监测AI与人工客户对话并触发主管介入。",
+        "source_locator": "Issuer release L478–481",
+        "source_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+        "event_change": "新增跨供应商实时监督层",
+        "affected_workflow": "售前及客服升级交接",
+        "specific_decision": "决定哪些失败互动作即时升级",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议核对告警与逐字稿、介入渠道，针对新监督流程。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-22-tool-retrieval",
+      "title_zh": "Gemini API預覽按需載入工具規格，減少預先放入的內容",
+      "source_story_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "published_article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source_date_display": "11月19日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-19",
+      "source_documents": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "publisher": "Google",
+          "evidence_locator": "Official blog L269 / Official blog L272 / Official blog L357–360",
+          "source_publication_date": "2026-11-19",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        },
+        {
+          "url": "https://aistudio.google.com/docs/tool-retrieval",
+          "publisher": "Google",
+          "evidence_locator": "Tool retrieval guide L4–29",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:24+08:00",
+          "access_method": "Read official guide after blog review; turn248573297view5 and turn289994682view2",
+          "limitations": "Preview requires v1beta Interactions API; not generateContent."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Tool Retrieval在Interactions API以預覽形式提供。",
+          "evidence_locator": "Official blog L269",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        },
+        {
+          "claim_zh": "工具名稱和描述仍可見，參數規格可按需載入。",
+          "evidence_locator": "Official blog L272",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        },
+        {
+          "claim_zh": "按標準token費率收費，支援Gemini3.6及後續模型。",
+          "evidence_locator": "Official blog L357–360",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Tool Retrieval在Interactions API以預覽形式提供。",
+          "evidence_locator": "Official blog L269",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        },
+        {
+          "claim_zh": "工具名稱和描述仍可見，參數規格可按需載入。",
+          "evidence_locator": "Official blog L272",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        },
+        {
+          "claim_zh": "按標準token費率收費，支援Gemini3.6及後續模型。",
+          "evidence_locator": "Official blog L357–360",
+          "support_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+        "source_reopen_reference": "Read turn347667303view1; reopened turn873726560view2; official guide read turn289994682view2",
+        "finding": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      "review_notes": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 20,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 85
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理工具检索新增按需参数载入。",
+        "source_locator": "Official blog L269–272, L357–360",
+        "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "event_change": "推出Tool Retrieval预览",
+        "affected_workflow": "营销数据代理串接大量工具",
+        "specific_decision": "选择常用及延后载入工具",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：比较同一CRM与分析工具的参数载入方式，对应新增机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-22-ai-inspo",
+      "title_zh": "AI Inspo串接社群趨勢、內容生成與表現回顧",
+      "source_story_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "publisher": "AI Inspo",
+          "evidence_locator": "Issuer release L465–473 / Issuer release L477–478 / Issuer release L479–480",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:03:14+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AI Inspo公布策略、內容、發布及表現回顧的同一流程。",
+          "evidence_locator": "Issuer release L465–473",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        },
+        {
+          "claim_zh": "帳戶分析與趨勢探索可產生內容建議。",
+          "evidence_locator": "Issuer release L477–478",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        },
+        {
+          "claim_zh": "使用者可選參考格式並加入主題，生成後再回顧表現。",
+          "evidence_locator": "Issuer release L479–480",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AI Inspo公布策略、內容、發布及表現回顧的同一流程。",
+          "evidence_locator": "Issuer release L465–473",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        },
+        {
+          "claim_zh": "帳戶分析與趨勢探索可產生內容建議。",
+          "evidence_locator": "Issuer release L477–478",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        },
+        {
+          "claim_zh": "使用者可選參考格式並加入主題，生成後再回顧表現。",
+          "evidence_locator": "Issuer release L479–480",
+          "support_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:03:43+08:00",
+        "source_reopen_reference": "Read turn248573297view4; reopened turn333370743view3",
+        "finding": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome."
+      },
+      "review_notes": "Issuer launch, agent available. No list of every supported social channel, no guaranteed virality, revenue or time saving. Reference-format adaptation is a workflow, not a demonstrated campaign outcome.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 19,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 85
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代理将社群账户分析和创作、发布回顾连成循环。",
+        "source_locator": "Issuer release L477–484",
+        "source_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+        "event_change": "推出AI社群代理",
+        "affected_workflow": "趋势选题至下一轮内容简报",
+        "specific_decision": "决定延续或修改哪些格式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一主题两种参考格式的记录，对应产品具体创作机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-22-obsbot",
+      "title_zh": "OBSBOT新攝影機把AI追蹤與鏡頭控制整合",
+      "source_story_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+      "published_article_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "publisher": "OBSBOT / PR Newswire",
+          "evidence_locator": "Issuer wire L2,L7 / Issuer wire L14–16 / Issuer wire L21–23",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
+          "access_method": "Read source text and locators, then separately reopened it.",
+          "limitations": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "OBSBOT於11月19日介紹Tail2ADV及TailAir2，通訊稿11月20日發布。",
+          "evidence_locator": "Issuer wire L2,L7",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        },
+        {
+          "claim_zh": "AI追蹤結合主體辨識與電動鏡頭控制。",
+          "evidence_locator": "Issuer wire L14–16",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        },
+        {
+          "claim_zh": "TailAir2配1吋感光元件，AI Director Grids整合追蹤、預設及Launchpad。",
+          "evidence_locator": "Issuer wire L21–23",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "OBSBOT於11月19日介紹Tail2ADV及TailAir2，通訊稿11月20日發布。",
+          "evidence_locator": "Issuer wire L2,L7",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        },
+        {
+          "claim_zh": "AI追蹤結合主體辨識與電動鏡頭控制。",
+          "evidence_locator": "Issuer wire L14–16",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        },
+        {
+          "claim_zh": "TailAir2配1吋感光元件，AI Director Grids整合追蹤、預設及Launchpad。",
+          "evidence_locator": "Issuer wire L21–23",
+          "support_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+      "independent_review": {
+        "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
+        "source_reopen_reference": "Official page access failed turn913694574view0; same-event issuer text turn896584680view2; reopened turn873726560view3",
+        "finding": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions."
+      },
+      "review_notes": "Original OBSBOT page redirected to inaccessible Korean site. Read and reopened same issuer PRNewswire release on TNGlobal. EventNov19, wireNov20. Hardware specifications attributed; omitted exceptional tracking-distance/performance claims and local availability assertions.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 19,
+        "actionability": 17,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 83
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI主体识别与电动摄影机控制直接服务拍摄。",
+        "source_locator": "Issuer wire L14–23",
+        "source_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+        "event_change": "新增两款AI追踪摄影机及控制",
+        "affected_workflow": "直播及活动镜位操作",
+        "specific_decision": "决定自动追踪与人员接手分工",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议以讲者走动和预设切换评估镜位，针对拍摄机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}

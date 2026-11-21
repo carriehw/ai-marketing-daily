@@ -3,15 +3,15 @@
   "site_title_en": "AI Marketing Daily",
   "site_tagline": "AI Marketing Intelligence · HK / CN",
   "site_url": "https://carriehw.github.io/ai-marketing-daily/",
-  "date": "2026-11-21",
-  "date_display": "2026年11月21日 · 星期六",
-  "date_display_en": "November 21, 2026 · Saturday",
+  "date": "2026-11-22",
+  "date_display": "2026年11月22日 · 星期日",
+  "date_display_en": "November 22, 2026 · Sunday",
   "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
   "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
-  "thesis": "AI製作入口擴展，素材控制與接入條件成為決策重點",
-  "thesis_en": "As AI production access expands, asset controls and access terms shape decisions",
-  "thesis_note": "從創意模型串接、AI素材聲明到研究預覽，逐項對照可改變的工序，保留實際開放階段。",
-  "thesis_note_en": "From creative model integrations and AI asset declarations to research previews, map each change to a workflow while preserving its actual release stage.",
+  "thesis": "AI連接創意、客戶與操作，具體交接決定採用範圍",
+  "thesis_en": "AI connects creative, customers and operations; specific handoffs define adoption",
+  "thesis_note": "由購物結帳到代理審批及客服升級，逐項核對流程、推出階段與可檢視的下一步。",
+  "thesis_note_en": "From grocery checkout to agent approvals and service escalation, examine each workflow, release stage and reviewable next step.",
   "sections": [
     "AI 大模型 & 市場動態",
     "廣告平台 & 行銷科技",
@@ -28,297 +28,297 @@
   ],
   "items": [
     {
-      "title": "Picsart開放創意AI平台，統一接入生成與編輯模型",
-      "summary": "Picsart推出Picsart Platform，讓開發者把圖像、影片、音訊及文字生成接入自己的工具。",
+      "title": "Creatify Max串接廣告研究、素材與推出審批",
+      "title_en": "Creatify Max connects ad research, creative and launch approvals",
+      "summary": "Creatify推出Max，讓團隊從競品研究、素材製作到活動草擬，在Creatify或Slack內處理。",
+      "summary_en": "Creatify launched Max for competitor research, creative production and campaign drafting inside Creatify or Slack.",
       "highlights": [
-        "同一套整合可使用不同供應商模型，以及Picsart的Enhance和背景移除工具。",
-        "平台提供API、Python及TypeScript開發套件、命令列工具和MCP連接。"
+        "推出、預算及暫停建議會以批准卡呈現；個別例行工作可另行授權自動執行。",
+        "Slack支援排程報表，以及在討論串批准或拒絕建議。"
       ],
-      "why": "把生成與修圖放在同一接入層，創意技術團隊可評估能否減少每次換模型時重做串接的工作。",
-      "next_step": "選一條商品圖製作流程，檢查能否在同一整合內完成生成、去背及輸出，再比較換模型後需要修改的設定。",
-      "detail": "Picsart表示，開發者可在統一平台切換模型，並在生成前後使用其自有編輯工具。MCP是讓AI助理連接外部工具的協定，命令列則適合把操作加入既有自動化流程。團隊可以先固定輸入圖片及輸出規格，核對不同模型回傳的檔案與編輯結果，再決定是否替換現有的個別串接。",
-      "title_en": "Picsart opens a platform connecting creative generation and editing",
-      "summary_en": "Picsart launched Picsart Platform for developers to add image, video, audio and text generation to their own tools.",
       "highlights_en": [
-        "One integration accesses multiple providers and Picsart's Enhance and background-removal models.",
-        "Access includes APIs, Python and TypeScript SDKs, a CLI and MCP."
+        "Launch, budget and pause proposals arrive as approval cards; a trusted routine can be separately authorized to act autonomously.",
+        "Slack supports scheduled reports and approval or dismissal of proposals in threads."
       ],
-      "why_en": "Creative technology teams can assess whether one access layer reduces integration work when switching models.",
-      "next_step_en": "Test product-image generation, cutout and export through one integration, then compare the settings needed after a model switch.",
-      "detail_en": "Picsart says developers can switch models and use its editing tools before or after generation. MCP connects AI assistants with tools, while a CLI fits scripted workflows. Fix input and output specifications when comparing results and deciding whether to replace separate integrations.",
-      "source": "Picsart",
-      "url": "https://www.businesswire.com/news/home/20261120520968/en/Picsart-Opens-the-AI-Behind-Its-Platform-to-Developers-Businesses",
-      "time": "11月20日",
-      "section": "創意生產工具",
-      "region": "國際",
-      "action": "可即用",
-      "action_en": "Use Now",
-      "source_kind": "official",
-      "editorial_slug": "picsart"
-    },
-    {
-      "title": "Microsoft開放AI素材標示控制，可批次管理聲明",
-      "summary": "Microsoft Advertising宣布AI內容透明度控制正式可用，讓廣告主申報圖像及影片中的AI生成內容。",
-      "highlights": [
-        "支援的格式可選擇可見浮水印，實際控制按廣告格式及工作流程而異。",
-        "素材聲明可經Ads Studio素材庫、API及商品資料源更新。"
-      ],
-      "why": "素材披露加入批次管理，廣告營運團隊可把生成來源與上架欄位連結，決定哪些資產需要更新聲明。",
-      "next_step": "先抽查一批AI圖像及影片，把製作來源、素材聲明和實際版位的浮水印呈現逐項對照。",
-      "detail": "Microsoft表示，平台的AI偵測訊號可作參考，廣告主仍需自行決定及負責內容聲明。控制涵蓋多種廣告格式，浮水印大小和位置亦可能隨版位改變。團隊可以把同一素材在素材庫、商品資料源及廣告預覽中的狀態並列，確認批次更新沒有遺漏版本或錯置生成來源。",
-      "title_en": "Microsoft opens AI creative disclosures with bulk declaration controls",
-      "summary_en": "Microsoft Advertising says AI content transparency controls are generally available for declaring generated images and video.",
-      "highlights_en": [
-        "Visible watermarks are offered where supported, with controls varying by format and workflow.",
-        "Declarations can be updated through Ads Studio Library, APIs and product feeds."
-      ],
-      "why_en": "Ad operations can connect production provenance with asset fields to decide which declarations need updating.",
-      "next_step_en": "Compare provenance, declarations and rendered watermarks for a sample of AI images and videos.",
-      "detail_en": "Microsoft says detection signals are a reference and advertisers remain responsible for declarations. Watermark size and placement vary. Compare each asset's library, feed and ad-preview states to catch missing versions or incorrect source flags during bulk updates.",
-      "source": "Microsoft Advertising",
-      "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
-      "time": "11月19日",
-      "section": "廣告平台 & 行銷科技",
-      "region": "國際",
-      "action": "影響生意",
-      "action_en": "Business Impact",
-      "source_kind": "official",
-      "editorial_slug": "microsoft-labels"
-    },
-    {
-      "title": "Google Cloud在合作夥伴行銷平台加入Gemini代理工具",
-      "summary": "Google Cloud公布Partner Marketing Studio更新，把Gemini工具加入合作夥伴的聯合行銷流程。",
-      "highlights": [
-        "功能包括對話搜尋、品牌審閱、ISV素材生成、社群編輯及客戶案例草擬。",
-        "公告亦列出130種語言的輔助翻譯，以及自然語言分析。"
-      ],
-      "why": "合作行銷團隊可把Google Cloud聯名規範放進素材製作階段，評估哪些渠道和語言版本可沿用同一工作流程。",
-      "next_step": "以一項Google Cloud合作方案建立聯名素材，逐項核對品牌審閱建議及各社群渠道改寫內容。",
-      "detail": "Google Cloud的公告把這些能力定位於合作夥伴工作流程。品牌審閱代理協助檢查Google Cloud合作品牌指引，社群編輯則可調整渠道訊息並加入帳戶標籤。團隊可以先用一組已批准的聯名素材作參考，檢查代理的修訂是否仍準確呈現雙方角色及方案內容，再處理多語言版本。",
-      "title_en": "Google Cloud adds Gemini agents to partner marketing workflows",
-      "summary_en": "Google Cloud announced Gemini tools within Partner Marketing Studio for joint marketing by its partners.",
-      "highlights_en": [
-        "Features cover conversational search, brand review, ISV assets, social editing and customer-story drafting.",
-        "The announcement also lists assisted translation across 130 languages and natural-language analytics."
-      ],
-      "why_en": "Partner marketers can assess joint-brand rules during production and which channels and languages fit one workflow.",
-      "next_step_en": "Build assets for one Google Cloud partner offering and reconcile brand-review suggestions with channel-specific copy.",
-      "detail_en": "Google positions the tools for partner workflows. Its reviewer assists with partner brand guidelines, and the social editor adapts messages and account tags. Use approved joint assets as a reference to check both parties' roles and the offering before preparing translations.",
-      "source": "Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/",
-      "time": "11月19日",
-      "section": "廣告平台 & 行銷科技",
-      "region": "國際",
-      "action": "影響生意",
-      "action_en": "Business Impact",
-      "source_kind": "official",
-      "editorial_slug": "partner-studio"
-    },
-    {
-      "title": "Profound接入Teams，把AI搜尋分析帶進團隊對話",
-      "summary": "Profound推出Teams及Microsoft 365整合，讓團隊在對話中查詢品牌的AI搜尋能見度、準確度及引用份額。",
-      "highlights": [
-        "在Teams提及Profound，可提出問題、建立代理或啟動Profound Project。",
-        "Teams版本現供有有效Profound訂閱的客戶使用。"
-      ],
-      "why": "AI搜尋問題可直接在協作對話中轉成分析工作，團隊可決定哪些能見度異常值得建立專案跟進。",
-      "next_step": "挑選一項引用份額變動，在Teams追問原因並建立專案，再比對回傳內容與Profound的原始資料。",
-      "detail": "Profound表示，Microsoft 365整合可從SharePoint及OneDrive讀取文件，並建立或編輯Word和Excel檔案。系統亦可把選定內容帶入知識庫。行銷團隊可以從一個明確的AI搜尋問題開始，保留對話、來源與後續專案的連結，檢查資訊是否足以支持下一項內容調整。",
-      "title_en": "Profound brings AI search analysis into Teams conversations",
-      "summary_en": "Profound launched Teams and Microsoft 365 integrations for questions about AI search visibility, accuracy and citation share.",
-      "highlights_en": [
-        "Mentioning Profound in Teams can start questions, agents or a Profound Project.",
-        "The Teams integration is available to customers with an active Profound subscription."
-      ],
-      "why_en": "Teams can turn a visibility anomaly discussed in chat into a defined analysis project.",
-      "next_step_en": "Investigate one citation-share change in Teams, start a project and compare its answers with Profound's underlying data.",
-      "detail_en": "Profound says Microsoft 365 connections can read SharePoint and OneDrive files and create or edit Word and Excel documents. Selected content can enter a knowledge base. Keep the conversation, source and project linked when assessing a proposed content change.",
-      "source": "Profound",
-      "url": "https://www.globenewswire.com/news-release/2026/11/19/3406573/0/en/profound-brings-your-ai-marketer-into-microsoft-teams-and-microsoft-365.html",
-      "time": "11月19日",
-      "section": "廣告平台 & 行銷科技",
-      "region": "國際",
-      "action": "可即用",
-      "action_en": "Use Now",
-      "source_kind": "official",
-      "editorial_slug": "profound"
-    },
-    {
-      "title": "Ideogram 4.6加入精確編輯API，可用遮罩限定修改範圍",
-      "summary": "Ideogram推出4.6模型，提供Generate及Precise Edit API，用於生成及連續修改圖片。",
-      "highlights": [
-        "Precise Edit可加入遮罩指定修改位置，並保留來源圖片尺寸。",
-        "模型支援最高4K輸出，Very low品質模式上限為2K。"
-      ],
-      "why": "商品圖需要局部改背景或顏色時，團隊可評估遮罩編輯能否保留包裝文字和其他未指定區域。",
-      "next_step": "固定一張商品圖及一塊背景遮罩，比較不同品質設定的文字、邊緣和檔案尺寸，再決定哪種設定可進入素材流程。",
-      "detail": "Ideogram列出Very low、Low、Medium及High四種API品質設定，生成與編輯的計費亦按設定及尺寸而異。使用者可把上次編輯結果作為下一次輸入。團隊可以逐次保存原圖、遮罩和輸出，比較連續修改後哪些商品細節改變，再決定是否把這條流程接入既有批次製作。",
-      "title_en": "Ideogram 4.6 adds precise-edit APIs with optional masks",
-      "summary_en": "Ideogram released 4.6 with Generate and Precise Edit APIs for generation and successive edits.",
-      "highlights_en": [
-        "Precise Edit can use a mask to limit edits and preserves source dimensions.",
-        "Output reaches 4K, while Very low quality is limited to 2K."
-      ],
-      "why_en": "Product-image teams can assess whether masked edits preserve packaging text and unselected areas.",
-      "next_step_en": "Use one product image and background mask to compare text, edges and dimensions across quality settings.",
-      "detail_en": "The API lists four quality levels, with pricing depending on settings, size and operation. An edit can become the next input. Keep source, mask and output versions to assess detail changes before connecting the workflow to batch production.",
-      "source": "Ideogram",
-      "url": "https://ideogram.ai/models/4.6/",
-      "time": "11月19日",
-      "section": "創意生產工具",
-      "region": "國際",
-      "action": "可即用",
-      "action_en": "Use Now",
-      "source_kind": "official",
-      "editorial_slug": "ideogram"
-    },
-    {
-      "title": "Google推出Gemini 4 Neon，以長上下文處理跨格式工作",
-      "summary": "Google推出Gemini 4 Neon，提供100萬token上下文，可把多種檔案放在同一工作脈絡中處理。",
-      "highlights": [
-        "輸入包括試算表、PDF、圖表、音訊及影片。",
-        "模型在Gemini API等服務推出，Gemini應用程式的開放方案為Pro及Ultra。"
-      ],
-      "why": "跨格式活動簡報可減少分開整理文件的工序，團隊可評估長上下文是否有助把素材與成效資料連結成同一份交付。",
-      "next_step": "以同一活動的PDF及成效試算表作固定輸入，要求輸出附來源位置的摘要，檢查跨檔案引用是否準確。",
-      "detail": "Google把Neon定位為處理長時間、多步驟工作流程的模型，並提供四個思考層級供選擇。上下文token是模型可接收內容的容量單位，實際能放入多少檔案仍視內容而定。團隊可以先以一份有標準答案的活動資料測試，再決定適合把哪些跨格式工作交給模型處理。",
-      "title_en": "Google launches Gemini 4 Neon for long-context, mixed-format work",
-      "summary_en": "Google introduced Gemini 4 Neon with a one-million-token context window for work spanning multiple file types.",
-      "highlights_en": [
-        "Inputs include spreadsheets, PDFs, charts, audio and video.",
-        "Rollout includes the Gemini API, with Pro and Ultra access in the Gemini app."
-      ],
-      "why_en": "Campaign teams can assess whether one long context connects assets and performance data into a single deliverable.",
-      "next_step_en": "Use one campaign PDF and spreadsheet to request a source-located summary and check cross-file references.",
-      "detail_en": "Google positions Neon for long, multi-step workflows with four thinking levels. Tokens measure context capacity, so file coverage depends on content. Test a campaign dataset with known answers before assigning mixed-format work.",
-      "source": "Google",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "why": "創意與媒體操作由同一代理銜接，投放團隊可決定哪些建議需逐次審閱，哪些固定檢查適合設成例行工作。",
+      "why_en": "Media teams can decide which proposals need repeated review and which fixed checks fit a scheduled routine.",
+      "next_step": "選一組預算調整建議，核對批准卡的金額、活動及批准人紀錄，再界定是否授權任何單一例行工作。",
+      "next_step_en": "Reconcile campaign names, amounts and approver records on a budget-change card before authorizing any individual routine.",
+      "detail": "Max可由商品連結、簡報或媒體計劃草擬活動，並沿用命名、預算及定向規則。公司亦列出競品廣告研究與素材生成能力。團隊可先追查一項研究發現如何轉成素材和活動設定，核對批准卡能否完整交代變更，再決定如何分配代理與人員的操作責任。這些是公司公布的工作流程。",
+      "detail_en": "Max drafts campaigns from product links, briefs or media plans using naming, budget and targeting rules. Trace a research finding into creative and campaign settings, then check that the approval card explains the changes before assigning operating responsibilities.",
+      "source": "Creatify",
+      "url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
       "time": "11月18日",
-      "section": "AI 大模型 & 市場動態",
+      "section": "廣告平台 & 行銷科技",
       "region": "國際",
       "action": "可即用",
       "action_en": "Use Now",
       "source_kind": "official",
-      "editorial_slug": "gemini-neon"
+      "editorial_slug": "creatify-max"
     },
     {
-      "title": "Phancy公布Phai-M1影音模型，模型權重仍待開放",
-      "summary": "Phancy公布Phai-A1語言模型及Phai-M1影片生成模型，後者以真人風格影片為重點。",
+      "title": "EcerClaw把出口網站內容、多語客服及CRM串接",
+      "title_en": "EcerClaw links export-site content, multilingual service and CRM",
+      "summary": "Ecer推出EcerClaw，以三個AI模組支援出口企業的網站內容、買家查詢及銷售跟進。",
+      "summary_en": "Ecer launched EcerClaw with three AI modules for export businesses' site content, buyer inquiries and sales follow-up.",
       "highlights": [
-        "Phai-M1可在同一流程生成畫面及同步音訊。",
-        "公司計劃稍後開放兩款模型的權重，並提供網頁入口供用戶試用。"
+        "Claw Customer Service提供即時翻譯及業界術語識別，用於多語客戶支援。",
+        "Claw CRM連接潛在客戶追蹤、跟進及行銷自動化。"
       ],
-      "why": "真人風格短片團隊可把影音同步列入模型評估，並按網頁試用和未來權重開放兩種方式安排測試。",
-      "next_step": "先用同一段人物對白及動作要求記錄網頁輸出，再追蹤權重發布及部署條件，決定是否值得另建製作流程。",
-      "detail": "Phancy表示，Phai-M1針對面部表情、身體動作及真人風格影像訓練，Phai-A1則處理長文及多步驟任務。公司把這些模型接入ModelHub XC等產品及PhanthyMovie應用。製作團隊可分開檢視網頁服務現時能完成的工作，以及權重開放後才可評估的部署選項。",
-      "title_en": "Phancy announces Phai-M1 audiovisual model with weights still planned",
-      "summary_en": "Phancy announced Phai-A1 and Phai-M1, with the video model focused on live-action-style content.",
       "highlights_en": [
-        "Phai-M1 generates visuals and synchronized audio in one workflow.",
-        "Weights remain planned for later release, while a web entry point is offered for trying the models."
+        "Claw Customer Service provides translation and industry-term recognition for multilingual support.",
+        "Claw CRM links lead tracking, follow-up and marketing automation."
       ],
-      "why_en": "Short-form teams can assess synchronization through the web service and treat future weight access as a separate deployment choice.",
-      "next_step_en": "Record outputs for one fixed dialogue and movement brief, then track weight-release and deployment conditions.",
-      "detail_en": "Phancy describes training around expressions, body movement and live-action imagery. A1 handles long text and multi-step work. The models connect to products including ModelHub XC and PhanthyMovie. Evaluate current web tasks separately from deployment options that depend on a later release.",
-      "source": "Phancy / Media OutReach",
-      "url": "https://www.malaymail.com/news/money/mediaoutreach/2026/11/18/phancy-launches-phai-a1-language-model-and-phai-m1-video-generation-model/502315",
-      "time": "11月18日",
-      "section": "AI 大模型 & 市場動態",
+      "why": "外貿查詢可由網站內容延伸至多語對話及CRM，出口行銷團隊可決定哪些買家問題應帶入後續銷售紀錄。",
+      "why_en": "Export marketers can decide which buyer questions should travel from website conversations into sales records.",
+      "next_step": "用一項產品規格查詢，核對網站內容、客服翻譯和CRM跟進欄位是否保留相同型號及需求。",
+      "next_step_en": "Trace one product-specification inquiry through content, translation and CRM fields, checking that model numbers and requirements stay consistent.",
+      "detail": "Claw Editor被公司定位為協助搜尋與AI搜尋內容的編寫工具，其他模組負責接待和跟進。這些功能描述可用於檢查跨工序交接，並不能證明網站排名或訂單已提升。團隊可先挑選一個產品系列，列出買家常問的規格及術語，再評估哪些資料需要在內容、對話和銷售紀錄之間保留。",
+      "detail_en": "Ecer positions Claw Editor for search and AI-search content, alongside service and follow-up modules. These mechanisms support handoff evaluation rather than proving rankings or order growth. Start with one product family and define the specifications and terms that must survive each handoff.",
+      "source": "Ecer",
+      "url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+      "time": "11月19日",
+      "section": "廣告平台 & 行銷科技",
       "region": "中國",
       "action": "要留意",
       "action_en": "Watch",
       "source_kind": "official",
-      "editorial_slug": "phancy"
+      "editorial_slug": "ecerclaw"
     },
     {
-      "title": "YouCam Muse推出歌曲與音樂影片製作，支援逐場修改分鏡",
-      "summary": "Perfect Corp.推出YouCam Muse，讓創作者把歌曲構思或音軌轉成音樂影片，現供網頁及iOS使用。",
+      "title": "MoEngage整合個人AI決策，Merlin代理連接行銷資料",
+      "title_en": "MoEngage integrates individual AI decisioning with Merlin workflows",
+      "summary": "MoEngage在NEXT Autumn’26公布Merlin代理工具及已整合的Aampe AI Decisioning，連接個人偏好與活動執行。",
+      "summary_en": "MoEngage announced Merlin capabilities and integrated Aampe AI Decisioning at NEXT Autumn’26.",
       "highlights": [
-        "使用者可先審閱AI分鏡，再調整場景或重新生成鏡頭。",
-        "平台提供唱歌、敘事及混合視覺模式，並支援1080p輸出。"
+        "Merlin Agent Harness加入Context Hub、創意生成及雙向連接器。",
+        "Merlin Agent可跨資料倉庫、CRM及分析工具找出指標變化並提出活動建議。"
       ],
-      "why": "音樂導向的短片企劃可先在分鏡階段比較歌曲與畫面配合，決定哪些段落需要重新構圖或演繹。",
-      "next_step": "用同一段歌曲副歌建立兩種視覺模式，先比較場景與歌詞的配合，再只重生需要修改的鏡頭。",
-      "detail": "公告表示，YouCam Muse可從自己的歌詞生成歌曲，也可使用上載音軌。網頁及iOS共用帳戶和點數，影片生成使用Seedance 2.5。團隊可以把AI分鏡作為前期討論材料，逐場記錄需要調整的角色、畫面及節奏，再比較修改後是否更貼近歌曲要表達的內容。",
-      "title_en": "YouCam Muse adds songs and music videos with editable storyboards",
-      "summary_en": "Perfect Corp. launched YouCam Muse on web and iOS to turn song ideas or audio tracks into music videos.",
       "highlights_en": [
-        "Users can review an AI storyboard, adjust scenes and regenerate individual shots.",
-        "Singing, storytelling and hybrid visual modes support 1080p export."
+        "Merlin Agent Harness adds a Context Hub, creative generation and two-way connectors.",
+        "Merlin Agent spans warehouses, CRM and analytics to identify metric changes and propose campaigns."
       ],
-      "why_en": "Music-led creative teams can compare how lyrics and scenes work together before deciding which shots need revision.",
-      "next_step_en": "Use one chorus in two visual modes and regenerate only the shots that miss its meaning.",
-      "detail_en": "The release describes lyric-to-song generation and uploaded tracks, with shared accounts and credits across web and iOS. Videos use Seedance 2.5. Treat the storyboard as pre-production material and record character, scene and timing revisions against the song's intended message.",
-      "source": "Perfect Corp.",
-      "url": "https://www.businesswire.com/news/home/20261117242071/en/Perfect-Corp.-introduces-a-brand-new-AI-Song-Music-Video-Platform-YouCam-Muse-and-kicks-off-the-AI-Music-Video-Challenge-with-Cash-Prizes",
-      "time": "11月17日",
+      "why": "個人偏好決策與活動提案接在同一平台，客戶經營團隊可決定哪些優惠、渠道及發送時機交予模型選擇。",
+      "why_en": "Lifecycle teams can decide which offer, channel and timing choices to delegate to individual-level decisioning.",
+      "next_step": "用一項重複購買提醒列出可變的優惠、內容、渠道和時機，向供應商確認可設定的審閱點及適用帳戶。",
+      "next_step_en": "For one repeat-purchase reminder, list variable offers, content, channels and timing, then confirm review points and account access.",
+      "detail": "公告把AI Decisioning描述為已整合到MoEngage，並由行銷人員設定品牌規則及審閱位置。個人化決策是按每位客戶的偏好調整選項，與單純按群組發送有所不同。團隊可先限定一項訊息目標，再檢查代理如何把指標變動連接至提案，逐步決定要採用的決策範圍與人工審閱方式。",
+      "detail_en": "MoEngage describes decisioning as integrated, with marketers setting brand guardrails and review points. Individual preferences differ from a group-only send. Limit the initial message objective and inspect how an observed metric change becomes a proposal before selecting the scope of automated decisions.",
+      "source": "MoEngage",
+      "url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+      "time": "11月18日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "official",
+      "editorial_slug": "moengage"
+    },
+    {
+      "title": "HighLevel為Managed Agents加入對話排程功能",
+      "title_en": "HighLevel adds conversational scheduling to Managed Agents",
+      "summary": "HighLevel加入Routines，讓使用者以自然語言安排重複任務，結果回到建立任務的對話。",
+      "summary_en": "HighLevel added Routines for recurring tasks described in natural language, with results returned to the originating conversation.",
+      "highlights": [
+        "每人每個代理最多10項啟用例行工作，最短執行間隔為1小時。",
+        "涉及新權限的敏感動作會暫停，付款一律需要批准。"
+      ],
+      "highlights_en": [
+        "The limit is ten active routines per person per agent, with a one-hour minimum interval.",
+        "Sensitive actions needing new permissions pause; payments always require approval."
+      ],
+      "why": "潛在客戶與商機報表可由手動要求改為固定排程，CRM團隊可決定哪些每日檢查需要持續送回同一討論串。",
+      "why_en": "CRM teams can choose which lead and deal checks to schedule into an ongoing discussion.",
+      "next_step": "先建立一項新客戶及停滯商機摘要，核對首次授權、執行時間及回傳內容，再考慮增加其他例行工作。",
+      "next_step_en": "Start with one new-lead and stalled-deal summary, checking initial permission, timing and returned content.",
+      "detail": "Routines使用已發布的代理版本，每次執行沿用Managed Agents的使用計費。團隊可在專用分頁暫停、恢復及管理權限。合作夥伴的11月20日更新介紹了這項功能，官方變更記錄列明操作規則。郵件通知仍屬後續計劃，現階段應以原對話內的更新作為檢視入口。",
+      "detail_en": "Routines use the published agent version and standard usage billing. A dedicated tab manages pauses, resumption and permissions. A partner's November 20 update introduced the feature, while the official changelog specifies its rules. Email notifications remain planned, so review updates in the conversation.",
+      "source": "HighLevel",
+      "url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+      "time": "11月20日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "routines"
+    },
+    {
+      "title": "贊助案例：G-NiiB整理網站結構，回應AI搜尋",
+      "title_en": "Sponsored case: G-NiiB restructures its site for AI search",
+      "summary": "WPP Media Hong Kong在贊助文章介紹G-NiiB的AI搜尋工作，包含結構化資料、FAQ及商品頁面的整理。",
+      "summary_en": "WPP Media Hong Kong described G-NiiB's structured data, FAQs and product-page changes in a sponsored case article.",
+      "highlights": [
+        "案例列出標準網址、商品圖片描述及分散頁面整合等調整。",
+        "11月20日發布的文章描述較早的2026年4至6月評估，並披露WPP贊助。"
+      ],
+      "highlights_en": [
+        "The work covers canonical URLs, image descriptions and consolidation of fragmented pages.",
+        "Published November 20, the sponsored article describes an earlier April–June 2026 evaluation."
+      ],
+      "why": "AI答案能否辨識一致的商品資料，與網站結構及內容來源有關；品牌搜尋團隊可決定哪些重複商品頁需要先整合。",
+      "why_en": "Brand search teams can assess which duplicate product pages to consolidate so AI systems can identify consistent product information.",
+      "next_step": "挑一組內容分散的商品頁，比對標準網址、FAQ及圖片描述，再以固定問題記錄AI答案使用了哪些來源。",
+      "next_step_en": "Compare canonical URLs, FAQs and image descriptions for one fragmented product group, then log which sources fixed AI questions retrieve.",
+      "detail": "這是供應商披露的案例機制，並非本刊獨立成效測試。結構化資料是供搜尋系統讀取的欄位，標準網址則用來辨識主要頁面。團隊可把頁面整合與AI引用觀察分開記錄，保留問題、模型及日期，避免把同一期間的其他行銷變化都歸因於網站調整。原文由WPP Media Hong Kong贊助。",
+      "detail_en": "This is a vendor-described mechanism, not our independent outcome test. Structured data supplies machine-readable fields; canonical URLs identify main pages. Log consolidation separately from AI citation observations, retaining question, model and date. The original article is sponsored by WPP Media Hong Kong.",
+      "source": "WPP Media Hong Kong / MARKETING-INTERACTIVE",
+      "url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+      "time": "11月20日",
+      "section": "行業影響 & 品牌案例",
+      "region": "香港",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "media",
+      "editorial_slug": "gniib"
+    },
+    {
+      "title": "更進新聞：Google在美國擴展Connected Apps零售結帳",
+      "title_en": "Update: Google expands Connected Apps grocery checkout in the US",
+      "summary": "Google宣布在美國Search及Gemini推出更多Connected Apps，涵蓋Albertsons、Safeway、Shaw’s及Target。",
+      "summary_en": "Google is rolling out Connected Apps for Albertsons, Safeway, Shaw’s and Target through Search and Gemini in the US.",
+      "highlights": [
+        "新增零售應用以Universal Commerce Protocol支援建立訂單及結帳。",
+        "Angi及Thumbtack的帳戶連結仍列為未來數週推出。"
+      ],
+      "highlights_en": [
+        "The grocery apps use Universal Commerce Protocol for order building and checkout.",
+        "Angi and Thumbtack account linking remains planned for the coming weeks."
+      ],
+      "why": "商品探索至結帳可在助理入口銜接，零售團隊可評估哪些訂單資訊需要在對話內呈現，哪些仍需轉回商戶流程。",
+      "why_en": "Retail teams can assess which order details belong in an assistant conversation and where a merchant handoff is still needed.",
+      "next_step": "以一組雜貨商品列出選品、購物籃及結帳的交接點，向支援商戶確認每一步可傳遞的資料。",
+      "next_step_en": "Map product selection, basket and checkout handoffs for one grocery set, then confirm supported data with the merchant.",
+      "detail": "這次公告補充了具名零售商的美國接入，並非所有商戶都可加入。Universal Commerce Protocol是連接商務服務的協定。團隊可把訂單建立與付款確認分開檢視，再核對價格、供應及履約資訊的更新方式。對跨市場品牌而言，美國流程可作研究對象，其他市場的接入仍需另行確認。",
+      "detail_en": "The update names US retailers rather than opening access to every merchant. Universal Commerce Protocol connects commerce services. Review order creation separately from payment confirmation, including updates to price, supply and fulfillment. Confirm other markets separately.",
+      "source": "Google",
+      "url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+      "time": "11月20日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "影響生意",
+      "action_en": "Business Impact",
+      "source_kind": "official",
+      "editorial_slug": "connected-apps",
+      "followup": "10月29日版報道Connected Apps平台預覽；11月20日更新列出美國零售商的接入及結帳安排。",
+      "followup_en": "Our October 29 issue covered the platform preview. The November 20 update names US retailers and their order and checkout access."
+    },
+    {
+      "title": "Observe.AI公布跨AI與人工客服的即時監督工具",
+      "title_en": "Observe.AI announces live supervision across AI and human service",
+      "summary": "Observe.AI推出Agent Overwatch，監察支援的AI代理及人工客服對話，並把需關注的互動通知主管。",
+      "summary_en": "Observe.AI introduced Agent Overwatch to monitor supported AI and human conversations and alert supervisors to interactions needing attention.",
+      "highlights": [
+        "企業可設定風險及升級條件，經支援的Slack或Teams渠道接收告警。",
+        "主管可查看逐字稿；旁聽、加入通話等介入方式視渠道及整合而定。"
+      ],
+      "highlights_en": [
+        "Enterprises configure risk and escalation criteria, with supported Slack or Teams alerts.",
+        "Supervisors can access transcripts; listening or joining depends on channel and integration support."
+      ],
+      "why": "多家AI供應商的客服對話可放在同一監督流程評估，客戶體驗團隊可決定哪些失敗互動須即時轉交主管。",
+      "why_en": "Customer-experience teams can define which failed interactions across multiple AI providers need a supervisor during the conversation.",
+      "next_step": "以一項反覆誤解的售前查詢，核對告警原因、逐字稿及可介入渠道，確認客戶是否需要重新交代問題。",
+      "next_step_en": "Check the alert reason, transcript and intervention channel for a repeated pre-sales misunderstanding.",
+      "detail": "公告列出的訊號包括未授權要求、重複誤解及自動流程失敗。這些訊號供主管判斷是否接手，並非每一項告警都代表已發生事故。團隊可從現有服務渠道挑選具體場景，確認支援的代理、通知工具及主管動作，再安排誰負責處理不同等級的升級。公告描述的是監督機制，成效仍需按團隊自己的服務記錄評估。",
+      "detail_en": "Signals include unauthorized requests, repeated misunderstandings and failed automation. An alert is a prompt for judgment rather than proof of an incident. Map supported agents, notification tools and supervisor actions for specific service scenarios before assigning escalation responsibilities.",
+      "source": "Observe.AI",
+      "url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+      "time": "11月20日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "official",
+      "editorial_slug": "overwatch"
+    },
+    {
+      "title": "Gemini API預覽按需載入工具規格，減少預先放入的內容",
+      "title_en": "Gemini API previews on-demand tool schemas",
+      "summary": "Google在Interactions API推出Tool Retrieval預覽，讓代理需要某項工具時才載入完整參數規格。",
+      "summary_en": "Google introduced Tool Retrieval in preview in the Interactions API, loading complete parameter schemas when an agent needs a tool.",
+      "highlights": [
+        "模型仍會看到延後載入工具的名稱及描述。",
+        "功能支援Gemini 3.6及後續模型；推論仍按標準token費率計費。"
+      ],
+      "highlights_en": [
+        "The model still sees names and descriptions of deferred tools.",
+        "It supports Gemini 3.6 and later models, with standard token billing."
+      ],
+      "why": "串接大量行銷工具的團隊可調整代理每次請求要接收的規格，決定哪些常用工具預先載入，哪些按需搜尋。",
+      "why_en": "Teams connecting many marketing tools can choose which schemas to load upfront and which to retrieve as needed.",
+      "next_step": "以同一組分析與CRM工具比較完整載入和延後載入，記錄實際輸入token及工具選擇，再決定採用範圍。",
+      "next_step_en": "Compare full and deferred loading for the same analytics and CRM tools, recording input tokens and tool choices.",
+      "detail": "參數規格說明工具需要接收哪些資料。開發者可加入tool_search，並把指定工具設為defer_loading。Google亦支援遠端MCP工具及由客戶端執行的搜尋。團隊可先保留高頻工具，再測試其他工具延後載入的情況；實際費用取決於哪些規格被載入，以及後續對話使用的內容。",
+      "detail_en": "A schema defines the data a tool expects. Developers add tool_search and mark tools with defer_loading. Remote MCP and client-side search are supported. Keep frequent tools loaded and test the remainder; actual cost depends on schemas retrieved and their later use in the conversation.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "time": "11月19日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "tool-retrieval",
+      "verification_url": "https://aistudio.google.com/docs/tool-retrieval"
+    },
+    {
+      "title": "AI Inspo串接社群趨勢、內容生成與表現回顧",
+      "title_en": "AI Inspo connects social trends, creation and performance review",
+      "summary": "AI Inspo推出社群AI代理，把帳戶分析、趨勢探索、內容製作及發布放進同一工作流程。",
+      "summary_en": "AI Inspo launched a social agent connecting account analysis, trend discovery, content production and publishing.",
+      "highlights": [
+        "代理按帳戶目標及發展階段提出內容方向。",
+        "使用者可選擇參考格式並加入自己的主題，再以發布表現修訂下一份簡報。"
+      ],
+      "highlights_en": [
+        "Recommendations reflect account goals and development stage.",
+        "Users add their topic to a reference format, then use publication results to inform the next brief."
+      ],
+      "why": "社群團隊可把趨勢選題與下一輪內容規劃連結，決定哪些格式值得延續，哪些需要調整主題或結構。",
+      "why_en": "Social teams can decide which formats to repeat and which topics or structures need revision.",
+      "next_step": "用同一個品牌主題建立兩種參考格式，記錄生成稿與發布後的觀察，再決定下一份內容簡報要改哪一項。",
+      "next_step_en": "Develop two reference formats for one brand topic and retain drafts and post-publication observations before changing the next brief.",
+      "detail": "公司把社群策略與創意內容列為兩項核心能力，代理會參照帳戶的過往工作及目標調整建議。團隊可以保留每次選題的理由、使用的參考格式與後續觀察，讓下一輪規劃有具體依據。趨勢格式只是創作起點，實際內容是否適合品牌仍需逐篇審閱，不能由參考帖的表現推定新帖成效。",
+      "detail_en": "The company identifies strategy and creative production as its two core capabilities. Retain the topic rationale, reference format and later observations for each iteration. A trending format is a starting point; its prior performance does not establish results for a new post.",
+      "source": "AI Inspo",
+      "url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+      "time": "11月18日",
       "section": "創意生產工具",
       "region": "國際",
       "action": "可即用",
       "action_en": "Use Now",
       "source_kind": "official",
-      "editorial_slug": "youcam-muse"
+      "editorial_slug": "ai-inspo"
     },
     {
-      "title": "更進新聞：Genie 4開放開發者API，支援即時控制互動場景",
-      "summary": "Google公布Genie 4可經Gemini API的Interactions API及Google AI Studio接入，讓開發者建立互動世界原型。",
+      "title": "OBSBOT新攝影機把AI追蹤與鏡頭控制整合",
+      "title_en": "OBSBOT adds AI tracking and camera controls in new Tail models",
+      "summary": "OBSBOT介紹Tail 2 ADV及Tail Air 2，把AI主體追蹤與電動鏡頭控制用於不同拍攝環境。",
+      "summary_en": "OBSBOT introduced Tail 2 ADV and Tail Air 2, combining subject tracking and motorized camera control for different production settings.",
       "highlights": [
-        "輸入可用文字、參考圖或兩者，生成720p、24fps畫面及同步音訊。",
-        "鍵盤與即時文字提示可控制環境，生成內容含SynthID浮水印。"
+        "Tail Air 2配備1吋感光元件及AI影像處理晶片。",
+        "AI Director Grids把追蹤、預設及Launchpad放進同一控制介面。"
       ],
-      "why": "開發者入口讓互動概念由網頁探索走向自建原型，品牌體驗團隊可決定哪些控制需要接到自己的介面。",
-      "next_step": "先畫出一條使用者控制路徑，列出鍵盤操作與文字指令要改變的場景元素，再估算原型所需的接入及生成成本。",
-      "detail": "Google把開發者接入用於互動體驗、空間設計等原型探索，並提供AI Studio的互動畫布及起步範例。團隊可以先把一個展示概念拆成移動、觀察及改變物件的操作，判斷模型提供的即時控制是否足夠，再按文件中的定價及限制規劃開發。這項公布是開發者接入更新。",
-      "title_en": "Update: Genie 4 opens developer APIs for interactive scene control",
-      "summary_en": "Google announced Genie 4 access through the Gemini Interactions API and AI Studio for interactive-world prototypes.",
       "highlights_en": [
-        "Text, a reference image or both can generate 720p worlds at 24fps with synchronized audio.",
-        "Keyboard controls and live text prompts steer scenes. Outputs carry SynthID watermarks."
+        "Tail Air 2 has a one-inch sensor and an AI image-processing chip.",
+        "AI Director Grids brings tracking, presets and Launchpad into one interface."
       ],
-      "why_en": "Developer access lets experience teams assess which controls to connect to a custom prototype interface.",
-      "next_step_en": "Map one user-control path and its scene changes before estimating integration and generation costs.",
-      "detail_en": "Google provides an interactive canvas and starter apps for prototype exploration. Break a concept into movement, observation and object changes, then judge whether live controls fit. Review documented pricing and limits before development. This is the developer-access update.",
-      "source": "Google",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
-      "time": "11月19日",
-      "section": "AI 大模型 & 市場動態",
-      "region": "國際",
-      "action": "要留意",
-      "action_en": "Watch",
-      "source_kind": "official",
-      "editorial_slug": "genie-api",
-      "followup": "11月20日版報道Ultra訂戶入口。這份API公告發布於11月19日，早於該期，補充開發者接入方式。",
-      "followup_en": "Our November 20 issue covered Ultra subscriber access. This API announcement was published on November 19, before that issue, and adds the developer-access route.",
-      "verification_url": "https://deepmind.google/models/model-cards/genie-4/"
-    },
-    {
-      "title": "Pika預覽Enact，以拖曳角色及鏡頭控制引導影片生成",
-      "summary": "Pika公布Enact研究預覽，展示在影音生成過程中持續修改場景的實驗性介面。",
-      "highlights": [
-        "示範包括用滑鼠移動角色或物件、用語音指導表演，以及控制鏡頭。",
-        "Enact尚未向消費者開放使用，Pika提供研究及整合洽詢渠道。"
-      ],
-      "why": "即時走位及鏡頭控制把生成提示變成持續導演操作，製作團隊可先盤點哪些廣告概念需要這類互動控制。",
-      "next_step": "列出一段涉及人物走位的鏡頭需求，記下需要控制的位置、表演及鏡頭路徑，作為研究試用開放後的評估條件。",
-      "detail": "Pika表示，Enact建於H3 Flex，以短片段串流生成畫面和聲音，同時帶入新的導演指令。研究展示讓角色在影片播放中移動，並讓鏡頭按操作改變方向。團隊可把這些示範轉成具體的測試問題，例如物件移位後是否保持場景關係，再追蹤研究試用和整合機會。",
-      "title_en": "Pika previews Enact for directing generation with actor and camera controls",
-      "summary_en": "Pika unveiled Enact, an experimental interface for changing scenes during audiovisual generation.",
-      "highlights_en": [
-        "Demos cover dragging actors or objects, spoken performance direction and camera control.",
-        "It remains unavailable to consumers, with research and integration inquiries offered by Pika."
-      ],
-      "why_en": "Live staging turns prompts into ongoing direction. Production teams can identify concepts needing those controls.",
-      "next_step_en": "Specify actor positions, performance notes and a camera path as evaluation criteria for any future research access.",
-      "detail_en": "Pika says Enact streams short audiovisual chunks on H3 Flex while taking new direction. Demonstrations move subjects during playback and change camera direction. Turn them into test questions, such as whether moved objects retain their scene relationships, while tracking research access.",
-      "source": "Pika",
-      "url": "https://pika.art/blog/pika-enact",
-      "time": "11月18日",
+      "why": "直播與活動拍攝可把跟隨主體的操作交予攝影機，製作團隊可決定哪些鏡位仍需人員持續控制。",
+      "why_en": "Live-production teams can decide which shots suit automated following and which still require continuous camera operation.",
+      "next_step": "以一段講者走動的活動鏡位列出追蹤、預設切換及人工接手需求，再向供應商確認現場控制方式。",
+      "next_step_en": "Map tracking, preset switches and manual takeover for a moving speaker, then confirm the venue control setup with the supplier.",
+      "detail": "公司在11月19日紐約活動介紹新產品，相關通訊稿於11月20日發布。Tail 2 ADV面向大型場地及現場活動，Tail Air 2則結合感光元件與AI影像處理。製作團隊可先按鏡位距離、光線及主體移動方式整理需求，再比較自動追蹤與人工控制如何配合，安排實際拍攝的分工。",
+      "detail_en": "The New York introduction took place on November 19; the wire release followed on November 20. ADV targets large venues and events, while Air 2 combines sensor and AI processing. Compare distance, lighting and movement requirements before assigning automated and manual roles.",
+      "source": "OBSBOT / PR Newswire",
+      "url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+      "time": "11月20日",
       "section": "創意生產工具",
       "region": "國際",
       "action": "要留意",
       "action_en": "Watch",
       "source_kind": "official",
-      "editorial_slug": "pika-enact"
+      "editorial_slug": "obsbot"
     }
   ]
 }
