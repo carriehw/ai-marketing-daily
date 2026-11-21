@@ -1,0 +1,233 @@
+{
+  "edition_date_hkt": "2026-11-22",
+  "main_sha_at_start": "13a8c7691fbbb117bf9e51603d617e57949f8b88",
+  "candidate_count": 20,
+  "approved_count": 10,
+  "held_count": 0,
+  "reviewed_at_hkt": "2026-11-22T07:06:11+08:00",
+  "method": "Same assistant read original sources and separately reopened them to challenge claims, dates, release scope and relevance. No separate reviewer, human approval or product trial.",
+  "local_checks": [
+    "10 complete article packets passed",
+    "edition_packet check passed",
+    "date chronology10 passed",
+    "normalization27 pass0 fail"
+  ],
+  "relevance_reviews": [
+    {
+      "slug": "connected-apps",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI搜尋及助理接入具名零售商訂單和結帳。",
+        "source_locator": "Official update L216–219",
+        "source_url": "https://blog.google/products-and-platforms/products/search/connected-apps-holiday-errands/",
+        "event_change": "新增美國零售接入",
+        "affected_workflow": "商品探索到購物籃交接",
+        "specific_decision": "決定哪些訂單欄位需在對話保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建議列出具名雜貨購買流程的交接點，直接對應新入口。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "creatify-max",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI代理连接广告研究、生成与账户变更。",
+        "source_locator": "Official launch L117–167",
+        "source_url": "https://creatify.ai/blog/meet-creatify-max-ai-marketing-agent",
+        "event_change": "新增Max整合流程",
+        "affected_workflow": "素材发现至广告账户操作",
+        "specific_decision": "界定逐次批准与单项授权",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：预算卡及单一例行工作是产品明列机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "tool-retrieval",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI代理工具检索新增按需参数载入。",
+        "source_locator": "Official blog L269–272, L357–360",
+        "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "event_change": "推出Tool Retrieval预览",
+        "affected_workflow": "营销数据代理串接大量工具",
+        "specific_decision": "选择常用及延后载入工具",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：比较同一CRM与分析工具的参数载入方式，对应新增机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "overwatch",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI分析监测AI与人工客户对话并触发主管介入。",
+        "source_locator": "Issuer release L478–481",
+        "source_url": "https://www.prnewswire.com/news-releases/observeai-introduces-agent-overwatch-bringing-real-time-supervision-to-any-ai-agent-and-human-contact-center-team-302946332.html",
+        "event_change": "新增跨供应商实时监督层",
+        "affected_workflow": "售前及客服升级交接",
+        "specific_decision": "决定哪些失败互动作即时升级",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议核对告警与逐字稿、介入渠道，针对新监督流程。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "obsbot",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI主体识别与电动摄影机控制直接服务拍摄。",
+        "source_locator": "Issuer wire L14–23",
+        "source_url": "https://technode.global/prnasia/obsbot-introduces-tail-2-adv-and-tail-air-2-expanding-creative-freedom-for-professional-production-teams-and-creators/",
+        "event_change": "新增两款AI追踪摄影机及控制",
+        "affected_workflow": "直播及活动镜位操作",
+        "specific_decision": "决定自动追踪与人员接手分工",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议以讲者走动和预设切换评估镜位，针对拍摄机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:02:54+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "routines",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI代理新增排程执行与原对话交付。",
+        "source_locator": "Official changelog L14–39,L70–79",
+        "source_url": "https://ideas.gohighlevel.com/changelog/introducing-routines-in-managed-agents-automate-recurring-tasks?fp_ref=crmpros",
+        "event_change": "新增Routines",
+        "affected_workflow": "CRM每日线索与停滞商机检查",
+        "specific_decision": "决定哪些检查设定固定排程",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议新线索及停滞商机摘要，对应官方具体示例。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "moengage",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI代理与个人偏好决策整合营销执行。",
+        "source_locator": "Issuer release L385–399",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/moengage-strengthens-agentic-marketing-capabilities-launches-merlin-agent-fully-integrated-ai-decisioning-and-more-at-next-autumn26-302942719.html",
+        "event_change": "Aampe决策整合及Merlin更新",
+        "affected_workflow": "客户生命周期讯息选择",
+        "specific_decision": "决定优惠渠道时机的自动化范围",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：重复购买提醒限定四项可变选择，与决策机制相连。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "ecerclaw",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI连接出口网站内容、多语客服与线索管理。",
+        "source_locator": "Issuer release L464–472",
+        "source_url": "https://www.prnewswire.com/news-releases/ecercom-launches-ecerclaw-an-ai-agent-platform-to-drive-end-to-end-growth-for-b2b-export-websites-302945392.html",
+        "event_change": "推出EcerClaw三模块",
+        "affected_workflow": "外贸询盘到销售跟进",
+        "specific_decision": "决定哪些产品规格和买家需求跨系统保留",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议逐项追踪同一规格询盘，针对模块交接。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "gniib",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "品牌直接调整网站结构与内容以回应AI答案检索。",
+        "source_locator": "Sponsored case L151–155,L164",
+        "source_url": "https://www.marketing-interactive.com/ai-is-becoming-your-brand-s-new-spokesperson-is-it-saying-the-right-thing",
+        "event_change": "披露G-NiiB的AI搜索网站机制",
+        "affected_workflow": "商品页标准网址与FAQ管理",
+        "specific_decision": "决定哪些重复商品页先整合",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：原始赞助案例明确AI机制；建议逐项核对标准网址和FAQ，保留披露并删除结果断言。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "ai-inspo",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI代理将社群账户分析和创作、发布回顾连成循环。",
+        "source_locator": "Issuer release L477–484",
+        "source_url": "https://www.prnewswire.com/news-releases/ai-inspo-unveils-an-all-in-one-ai-social-media-agent-that-bridges-strategy-and-execution-302943251.html",
+        "event_change": "推出AI社群代理",
+        "affected_workflow": "趋势选题至下一轮内容简报",
+        "specific_decision": "决定延续或修改哪些格式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一主题两种参考格式的记录，对应产品具体创作机制。",
+        "inference_label": "why and next_step are editorial implications; announcement mechanisms are not proven outcomes.",
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-22T07:05:25+08:00",
+        "method": "Reviewed Traditional Chinese and English independently for fact parity, concrete subject and action, technical terms and scope. Simplified risk notes recorded; generated page to be read after CI.",
+        "decision": "PASS"
+      }
+    }
+  ],
+  "limitations": [
+    "Original OBSBOT page inaccessible after redirect; same-event issuer wire on TNGlobal read and reopened.",
+    "HighLevel Canny direct URL intermittently inaccessible; ref/click source text read and reopened. Release date from dated affiliate distribution separately disclosed.",
+    "G-NiiB source is sponsored first-party case, Nov20 disclosure of earlier Apr–Jun evaluation; outcome figures removed.",
+    "Connected Apps is incremental Nov20 US retailer rollout after Oct29 platform preview."
+  ]
+}

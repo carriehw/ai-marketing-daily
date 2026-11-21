@@ -28,7 +28,8 @@
     "action": "可即用",
     "action_en": "Use Now",
     "source_kind": "official",
-    "editorial_slug": "tool-retrieval"
+    "editorial_slug": "tool-retrieval",
+    "verification_url": "https://aistudio.google.com/docs/tool-retrieval"
   },
   "evidence": {
     "story_id": "2026-11-22-tool-retrieval",
@@ -49,6 +50,17 @@
         "accessed_at_hkt": "2026-11-22T07:00:34+08:00",
         "access_method": "Read source text and locators, then separately reopened it.",
         "limitations": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
+      },
+      {
+        "url": "https://aistudio.google.com/docs/tool-retrieval",
+        "publisher": "Google",
+        "evidence_locator": "Tool retrieval guide L4–29",
+        "source_publication_date": null,
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-22T07:03:24+08:00",
+        "access_method": "Read official guide after blog review; turn248573297view5 and turn289994682view2",
+        "limitations": "Preview requires v1beta Interactions API; not generateContent."
       }
     ],
     "claims": [
@@ -108,7 +120,7 @@
     "independent_review": {
       "method": "Same assistant reopened original source separately to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
       "second_pass_accessed_at_hkt": "2026-11-22T07:00:45+08:00",
-      "source_reopen_reference": "Read turn347667303view1; reopened turn873726560view2",
+      "source_reopen_reference": "Read turn347667303view1; reopened turn873726560view2; official guide read turn289994682view2",
       "finding": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference."
     },
     "review_notes": "Preview in Interactions API, Gemini3.6+ including Gemini4. No guaranteed token saving or latency improvement. Standard token billing; schemas loaded remain billed. No separate charge does not mean free inference.",
