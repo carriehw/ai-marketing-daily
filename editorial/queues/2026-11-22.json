@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-22",
-  "status": "CI IN PROGRESS",
+  "status": "PUBLISHED & VERIFIED",
   "main_sha_at_start": "13a8c7691fbbb117bf9e51603d617e57949f8b88",
   "discovery_count": 20,
   "approved_count": 10,
@@ -15,7 +15,7 @@
       "discovery_reference": "turn347667303view0",
       "provisional_score": 94,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/connected-apps.json",
       "relevance_review": {
         "decision": "PASS",
@@ -39,7 +39,7 @@
       "discovery_reference": "turn852270890view4",
       "provisional_score": 94,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/creatify-max.json",
       "relevance_review": {
         "decision": "PASS",
@@ -63,7 +63,7 @@
       "discovery_reference": "turn347667303view1",
       "provisional_score": 88,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/tool-retrieval.json",
       "relevance_review": {
         "decision": "PASS",
@@ -87,7 +87,7 @@
       "discovery_reference": "turn913694574view1",
       "provisional_score": 87,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/overwatch.json",
       "relevance_review": {
         "decision": "PASS",
@@ -111,7 +111,7 @@
       "discovery_reference": "turn896584680view2",
       "provisional_score": 86,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/obsbot.json",
       "relevance_review": {
         "decision": "PASS",
@@ -135,7 +135,7 @@
       "discovery_reference": "turn852270890view3",
       "provisional_score": 85,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/routines.json",
       "relevance_review": {
         "decision": "PASS",
@@ -169,7 +169,7 @@
       "discovery_reference": "turn347667303view2",
       "provisional_score": 84,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/gniib.json",
       "relevance_review": {
         "decision": "PASS",
@@ -193,7 +193,7 @@
       "discovery_reference": "turn913694574search16",
       "provisional_score": 84,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/ecerclaw.json",
       "relevance_review": {
         "decision": "PASS",
@@ -217,7 +217,7 @@
       "discovery_reference": "turn866858796search10",
       "provisional_score": 84,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/moengage.json",
       "relevance_review": {
         "decision": "PASS",
@@ -251,7 +251,7 @@
       "discovery_reference": "turn913694574search0",
       "provisional_score": 81,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly.",
+      "next_action": "Published in verified edition. Reuse complete reviewed article packet.",
       "article_packet_path": "editorial/articles/2026-11-22/ai-inspo.json",
       "relevance_review": {
         "decision": "PASS",
@@ -348,8 +348,11 @@
       "next_action": "Reserve (60+): Selected for source verification; complete highest-value records first. AI推出範圍研究；方法待核實"
     }
   ],
-  "next_action": "Track live CI; fix only concrete failed steps, then match receipt hashes and actual language article counts.",
+  "next_action": "Edition complete. On a same-day rerun validate current receipt, data/evidence hashes and successful linked workflow before reopening discovery.",
   "workflow_run_id": 44960122714,
   "workflow_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/44960122714",
-  "submission_sha": "b7d9c88a1e5a0e6b384a2c6ea1dbe337269d54f1"
+  "submission_sha": "b7d9c88a1e5a0e6b384a2c6ea1dbe337269d54f1",
+  "verified_at_hkt": "2026-11-22T07:08:07+08:00",
+  "receipt_url": "https://github.com/carriehw/ai-marketing-daily/blob/main/editorial/releases/2026-11-22.json",
+  "live_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/"
 }
