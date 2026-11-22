@@ -1,0 +1,180 @@
+{
+  "edition_date_hkt": "2026-11-23",
+  "state": "APPROVED",
+  "article": {
+    "title": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
+    "title_en": "Update: Tencent publishes Hy4 weights in three variants",
+    "summary": "騰訊已發布Hy4完整模型權重，提供指令版、FP8版及預訓練base版，讓團隊評估自行部署。",
+    "summary_en": "Tencent published full Hy4 weights as instruction-tuned, FP8 and pretrained-base variants for deployment evaluation.",
+    "highlights": [
+      "模型卡列出文字、圖像及影片理解，以及約100萬token上下文。",
+      "採用Tencent Hy License，商業使用安排須按該授權條款核對。"
+    ],
+    "highlights_en": [
+      "The card lists text, image and video understanding with roughly one million context tokens.",
+      "Weights use the Tencent Hy License; commercial arrangements follow its terms."
+    ],
+    "why": "權重接入讓技術團隊多一種部署選擇，行銷資料應用可評估哪些跨檔分析值得在自有環境測試，再決定是否投入運算資源。",
+    "why_en": "Technical teams can assess which campaign-document tasks merit testing in their own environment before committing compute resources.",
+    "next_step": "先以一份已有標準答案的活動文件包列出文字、圖片及表格任務，請技術團隊評估容量、部署版本及授權條件。",
+    "next_step_en": "Define text, image and table tasks in a campaign document set with known answers, then assess capacity, variant and license requirements.",
+    "detail": "11月5日版報道時權重仍屬計劃，這次可核對的進展是模型檔案與官方部署資料已公開。Base版是預訓練模型，不能直接當作已調整好的聊天版本。團隊可先用指令版安排有限測試，分開估算運算、維護及資料處理要求，再比較自行部署與既有託管服務的適用工作。",
+    "detail_en": "Our November 5 issue described weights as planned. Checkpoint links and official deployment information are now public. The base checkpoint is pretrained rather than a chat-tuned version. Evaluate compute, maintenance and data-handling needs separately when comparing an instruction model with hosted access.",
+    "source": "Tencent Hy",
+    "url": "https://huggingface.co/tencent/Hy4",
+    "time": "11月20日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "中國",
+    "action": "要留意",
+    "action_en": "Watch",
+    "source_kind": "official",
+    "editorial_slug": "hy4-weights",
+    "followup": "11月5日版報道Hy4託管推出及權重計劃；11月20日官方程式庫提供模型權重與部署資料。",
+    "followup_en": "Our November 5 issue covered hosted Hy4 and planned weights. The November 20 official repository supplies checkpoint links and deployment material."
+  },
+  "evidence": {
+    "story_id": "2026-11-23-hy4-weights",
+    "title_zh": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
+    "source_story_url": "https://huggingface.co/tencent/Hy4",
+    "published_article_url": "https://huggingface.co/tencent/Hy4",
+    "source_date_display": "11月20日",
+    "event_date": "2026-11-20",
+    "first_published_date": "2026-11-20",
+    "source_documents": [
+      {
+        "url": "https://huggingface.co/tencent/Hy4",
+        "publisher": "Tencent Hy",
+        "evidence_locator": "Official model card L410–420 / Official model card L294–308 / Official GitHub README License section; LICENSE opening and Section10",
+        "source_publication_date": "2026-11-20",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+        "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+        "limitations": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "模型卡提供Hy4、Hy4-FP8及預訓練base權重連結。",
+        "evidence_locator": "Official model card L410–420",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      },
+      {
+        "claim_zh": "模型支援文字、圖像及影片理解，並列出1M上下文。",
+        "evidence_locator": "Official model card L294–308",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      },
+      {
+        "claim_zh": "權重採Tencent Hy License，並非未修改的Apache2.0。",
+        "evidence_locator": "Official GitHub README License section; LICENSE opening and Section10",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "模型卡提供Hy4、Hy4-FP8及預訓練base權重連結。",
+        "evidence_locator": "Official model card L410–420",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      },
+      {
+        "claim_zh": "模型支援文字、圖像及影片理解，並列出1M上下文。",
+        "evidence_locator": "Official model card L294–308",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      },
+      {
+        "claim_zh": "權重採Tencent Hy License，並非未修改的Apache2.0。",
+        "evidence_locator": "Official GitHub README License section; LICENSE opening and Section10",
+        "support_url": "https://huggingface.co/tencent/Hy4",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+    "independent_review": {
+      "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+      "second_pass_accessed_at_hkt": "2026-11-23T07:04:53+08:00",
+      "source_reopen_reference": "HF model card turn352936115view2 and separately reopened turn580503409view0. Official GitHub README/LICENSE at commit6eb6613298923f528b6f991f1d81c319e3603829 read via connector; LICENSE reread same SHA. GitHub commits API confirmsNov20 02:46UTC.",
+      "finding": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+    },
+    "review_notes": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 26,
+      "business_impact": 20,
+      "actionability": 16,
+      "market_relevance": 15,
+      "novelty": 9,
+      "total": 86
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "多模态AI模型权重由计划变为可下载部署。",
+      "source_locator": "Official model card L294–308,L410–423; GitHubNov20 commit",
+      "source_url": "https://huggingface.co/tencent/Hy4",
+      "event_change": "发布完整Hy4模型权重",
+      "affected_workflow": "营销跨格式文档的自有环境评估",
+      "specific_decision": "判断版本容量与部署投入",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "PASS：固定活动文件包及标准答案对应多模态自部署评估，不复制模型榜单。",
+      "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor",
+    "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-11-05.html"
+  },
+  "localization_review": {
+    "url": "https://huggingface.co/tencent/Hy4",
+    "title_zh_hant": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体保留指令版、FP8和预训练base三种区别。采用“开放权重”，不写无条件开源或Apache2.0，不承诺自部署更便宜或表现领先。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "多模态AI模型权重由计划变为可下载部署。",
+    "source_locator": "Official model card L294–308,L410–423; GitHubNov20 commit",
+    "source_url": "https://huggingface.co/tencent/Hy4",
+    "event_change": "发布完整Hy4模型权重",
+    "affected_workflow": "营销跨格式文档的自有环境评估",
+    "specific_decision": "判断版本容量与部署投入",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "PASS：固定活动文件包及标准答案对应多模态自部署评估，不复制模型榜单。",
+    "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+    "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+    "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+    "decision": "PASS"
+  }
+}

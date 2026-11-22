@@ -3,7 +3,7 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "15c425d5611264520b165cc94f1464ae4bc3e086",
   "discovery_count": 20,
-  "approved_count": 5,
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": "Compared 1787 published records. Excluded prior editions' Creatify, Routines, G-NiiB, Ecer, MoEngage, Picsart, Ideogram and Gemini Neon. Hy4 weights and Space Plus eligible only for incremental access change, with dated prior links. Quick platform and Meta connector coverage grouped into one packet.",
   "items": [
@@ -80,24 +80,52 @@
       }
     },
     {
-      "title": "tencent/Hy4 · Hugging Face",
+      "title": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
       "url": "https://huggingface.co/tencent/Hy4",
       "slug": "hy4-weights",
       "source_url": "https://huggingface.co/tencent/Hy4",
       "discovery_reference": "turn844652788view3",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 中國AI平台：API之後權重發布，核對原始日期"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/hy4-weights.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "多模态AI模型权重由计划变为可下载部署。",
+        "source_locator": "Official model card L294–308,L410–423; GitHubNov20 commit",
+        "source_url": "https://huggingface.co/tencent/Hy4",
+        "event_change": "发布完整Hy4模型权重",
+        "affected_workflow": "营销跨格式文档的自有环境评估",
+        "specific_decision": "判断版本容量与部署投入",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定活动文件包及标准答案对应多模态自部署评估，不复制模型榜单。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      }
     },
     {
-      "title": "HeyGen Introduces Avatar 6, an Audio-Driven, Context-Aware AI Model that Alleviates Repetitive or Unnatural Motion in AI-Generated Video",
+      "title": "HeyGen Avatar 6按稿件語境生成動作，既有分身可升級",
       "url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
       "slug": "heygen-avatar6",
       "source_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
       "discovery_reference": "turn367080529search0",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 創意：語境動作與同意要求"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/heygen-avatar6.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI分身按语境生成表演并升级既有素材。",
+        "source_locator": "Issuer release L468–483",
+        "source_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+        "event_change": "推出Avatar6语境动作",
+        "affected_workflow": "产品讲者稿与动作审阅",
+        "specific_decision": "决定哪些语句加入手势情绪提示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：逐句标注指向和数量动作，对应新模型控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      }
     },
     {
       "title": "HighLevel Ad Manager加入ChatGPT廣告建案與報表",
@@ -124,24 +152,52 @@
       }
     },
     {
-      "title": "Bing Opens AI Overviews to Ads in Every Market Except China",
+      "title": "更進新聞：Bing AI Overviews廣告沿用現有活動",
       "url": "https://www.thekeyword.co/news/bing-ai-overviews-ads",
       "slug": "bing-overviews",
-      "source_url": "https://www.thekeyword.co/news/bing-ai-overviews-ads",
+      "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
       "discovery_reference": "turn274874470news6",
       "provisional_score": 93,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 廣告庫存：須追原文，19日公告晚收錄"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/bing-overviews.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI答案旁新增相关广告版位。",
+        "source_locator": "Official roundup L15–24",
+        "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+        "event_change": "现有活动接到Bing答案广告",
+        "affected_workflow": "搜索情境与素材匹配",
+        "specific_decision": "确认素材能否回应行程等完整需求",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：酒店与国家公园行程是原文特定机制，删除成效推论。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      }
     },
     {
-      "title": "Proton launches Lumo Desktop, bringing connectivity and automation to privacy-first AI | Proton",
+      "title": "Lumo Desktop加入連接器、排程與可重用工作指引",
       "url": "https://proton.me/blog/lumo-desktop-features",
       "slug": "lumo-desktop",
       "source_url": "https://proton.me/blog/lumo-desktop-features",
       "discovery_reference": "turn229705865view1",
       "provisional_score": 84,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI流程：連接器、排程及技能"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/lumo-desktop.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "桌面AI把工具存取、排程及可重用指引组合。",
+        "source_locator": "Official blog L230–259",
+        "source_url": "https://proton.me/blog/lumo-desktop-features",
+        "event_change": "推出桌面连接与排程能力",
+        "affected_workflow": "内容资料搜集至固定格式摘要",
+        "specific_decision": "决定自动整理与外部动作批准边界",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定资料夹、品牌模板及外部动作设置，对应三项新能力。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      }
     },
     {
       "title": "AdMaven邀請制推出Mave，廣告變更須批准確認卡",
@@ -168,14 +224,28 @@
       }
     },
     {
-      "title": "Spaceback Turns Brands’ Social Posts Into Playable Display Ads in Minutes | VentureBeat",
+      "title": "Spaceback把社群素材轉成互動展示廣告",
       "url": "https://venturebeat.com/business/spaceback-turns-brands-social-posts-into-playable-display-ads-in-minutes",
       "slug": "spaceback",
-      "source_url": "https://venturebeat.com/business/spaceback-turns-brands-social-posts-into-playable-display-ads-in-minutes",
+      "source_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
       "discovery_reference": "turn634184007search16",
       "provisional_score": 87,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. MarTech：社群素材轉可互動展示格式"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/spaceback.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "实质广告格式与素材生产流程更新；非一般品牌宣传。",
+        "source_locator": "Issuer wire L29–38",
+        "source_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+        "event_change": "互动展示单元正式可用",
+        "affected_workflow": "社交素材转展示交付",
+        "specific_decision": "决定贴文对应测验投票还是揭示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一产品讯息转两种互动流程，直接对应新格式。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      }
     },
     {
       "title": "What is Suno MCP ?",
@@ -185,7 +255,7 @@
       "discovery_reference": "turn367080529search17",
       "provisional_score": 82,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 音樂工具：更新文件；查是否只是10月既有beta"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. 音樂工具：更新文件；查是否只是10月既有beta"
     },
     {
       "title": "FLUX VTO: Virtual Try-On at scale | Black Forest Labs",
@@ -194,8 +264,16 @@
       "source_url": "https://bfl.ai/blog/flux-vto-virtual-try-on-at-catalog-scale",
       "discovery_reference": "turn860616906search1",
       "provisional_score": 81,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 電商創意：目錄新收錄可能是舊產品"
+      "state": "REJECTED",
+      "next_action": "Original BFL blog is May28,2026 (turn361575082view0 L17), not a Nov21 launch. No verified new increment. Exclude as stale re-indexing.",
+      "relevance_review": {
+        "decision": "REJECTED",
+        "ai_connection": "Relevant virtual try-on mechanism, but no fresh event.",
+        "source_url": "https://bfl.ai/blog/flux-vto-virtual-try-on-at-catalog-scale",
+        "source_locator": "L17 publication date",
+        "reason": "May28 original, November directory indexing is not a launch.",
+        "reviewed_at_hkt": "2026-11-23T07:04:53+08:00"
+      }
     },
     {
       "title": "Wonder Unveils AI-Powered Restaurant Builder as Marc Lore Pushes Toward a Fully Automated Food Business",
@@ -205,7 +283,7 @@
       "discovery_reference": "turn860616906search6",
       "provisional_score": 80,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI品牌創建案例：查推出範圍"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. AI品牌創建案例：查推出範圍"
     },
     {
       "title": "Mayiduo teases new ghost movie starring 'veteran Hong Kong actor', as company goes regional and embraces AI, Entertainment News - AsiaOne",
@@ -215,7 +293,7 @@
       "discovery_reference": "turn860616906search5",
       "provisional_score": 76,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. APAC品牌創意：AI混合製作仍是計劃"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. APAC品牌創意：AI混合製作仍是計劃"
     },
     {
       "title": "GoDaddy Inc. - New GoDaddy Airo AI Builder Lets Small Businesses Turn Ideas into Websites and Apps",
@@ -225,7 +303,7 @@
       "discovery_reference": "turn634184007search21",
       "provisional_score": 75,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI網站及工具串接，來源16日較早"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. AI網站及工具串接，來源16日較早"
     },
     {
       "title": "New AI Tool Releases, Week of Nov 16–22, 2026 (25 Launches) — SIloadout",
@@ -235,7 +313,7 @@
       "discovery_reference": "turn367080529view2",
       "provisional_score": 72,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI結構決策工具，需追源"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. AI結構決策工具，需追源"
     },
     {
       "title": "New AI Tool Releases, Week of Nov 16–22, 2026 (25 Launches) — SIloadout",
@@ -245,7 +323,7 @@
       "discovery_reference": "turn367080529view2",
       "provisional_score": 71,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI研究監察API，需追源"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. AI研究監察API，需追源"
     },
     {
       "title": "New AI Tool Releases, Week of Nov 16–22, 2026 (25 Launches) — SIloadout",
@@ -255,7 +333,7 @@
       "discovery_reference": "turn367080529view2",
       "provisional_score": 70,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 本機模型與瀏覽器API，需追源"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. 本機模型與瀏覽器API，需追源"
     },
     {
       "title": "New AI Tool Releases, Week of Nov 16–22, 2026 (25 Launches) — SIloadout",
@@ -265,7 +343,7 @@
       "discovery_reference": "turn367080529view2",
       "provisional_score": 68,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 開發代理流程，需具行銷場景"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. 開發代理流程，需具行銷場景"
     },
     {
       "title": "New AI tool releases & updates | Pickfinch",
@@ -275,7 +353,7 @@
       "discovery_reference": "turn274874470search4",
       "provisional_score": 67,
       "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI原型平行探索，需追原始發布"
+      "next_action": "Reserve (60+): Selected for verification; reserve if ten stronger items close. AI原型平行探索，需追原始發布"
     }
   ]
 }
