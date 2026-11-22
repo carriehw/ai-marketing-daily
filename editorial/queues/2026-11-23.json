@@ -3,39 +3,81 @@
   "status": "IN PROGRESS",
   "main_sha_at_start": "15c425d5611264520b165cc94f1464ae4bc3e086",
   "discovery_count": 20,
-  "approved_count": 0,
+  "approved_count": 5,
   "held_count": 0,
   "deduplication": "Compared 1787 published records. Excluded prior editions' Creatify, Routines, G-NiiB, Ecer, MoEngage, Picsart, Ideogram and Gemini Neon. Hy4 weights and Space Plus eligible only for incremental access change, with dated prior links. Quick platform and Meta connector coverage grouped into one packet.",
   "items": [
     {
-      "title": "Meta ads is now available in AWS Quick | Artificial Intelligence",
+      "title": "AWS Quick接入Meta廣告，把活動與商業資料放進同一流程",
       "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick",
       "slug": "aws-meta",
-      "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
       "discovery_reference": "turn352936115view0",
       "provisional_score": 95,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. MarTech：Meta廣告接入及跨資料分析；Quick整體更新合併處理"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/aws-meta.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI连接器把Meta账户操作和跨源资料接在同一流程。",
+        "source_locator": "Official blog L216–234",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "event_change": "新增Meta ads连接器",
+        "affected_workflow": "商品库存与媒体预算判断",
+        "specific_decision": "选择哪些商品预算变更交人审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一商品活动与库存表的预算提案，直接对应新连接机制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      }
     },
     {
-      "title": "ChatGPT release notes | OpenAI Help Center",
+      "title": "更進新聞：ChatGPT Space向Plus推出，分享仍需帳戶資格",
       "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "slug": "space-plus",
       "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "discovery_reference": "turn229705865view0",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. AI平台：Plus推出及受限分享，需對照9月既有功能"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/space-plus.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI协作页面与简报新增Plus账户接入。",
+        "source_locator": "Release notes Nov20 L14–23",
+        "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "event_change": "Plus资格扩展",
+        "affected_workflow": "客户简报共同修订与交付",
+        "specific_decision": "按收件资格决定交付形式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议确认双方Space资格和实际开页，对应本次接入变化。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      }
     },
     {
-      "title": "Meet Kling Image 4.0 | Stunningly realistic. Sharp. Precise.",
+      "title": "Kling Image 4.0加入多圖集及長版素材生成",
       "url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
       "slug": "kling-image4",
       "source_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
       "discovery_reference": "turn229705865view2",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 中國創意模型：圖集與長版製作"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/kling-image4.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI图像生成新增图集与长版创意工作流程。",
+        "source_locator": "Official blog L98–121",
+        "source_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+        "event_change": "推出Image4.0的成组输出及文字修改",
+        "affected_workflow": "商品素材整组规划",
+        "specific_decision": "决定共用视觉与单张重点",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：主视觉、功能及情境图的同产品核对，对应成组输出。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      }
     },
     {
       "title": "tencent/Hy4 · Hugging Face",
@@ -58,14 +100,28 @@
       "next_action": "Selected for verification; reserve if ten stronger items close. 創意：語境動作與同意要求"
     },
     {
-      "title": "Launch ChatGPT Ads by OpenAI from HighLevel Ad Manager | HighLevel Changelog",
+      "title": "HighLevel Ad Manager加入ChatGPT廣告建案與報表",
       "url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
       "slug": "highlevel-chatgpt",
       "source_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
       "discovery_reference": "turn718059097search4",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. MarTech：ChatGPT廣告建案與衡量"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/highlevel-chatgpt.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "ChatGPT广告新增跨渠道建案及衡量入口。",
+        "source_locator": "Official changelog L16–46,L123–129",
+        "source_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+        "event_change": "新增OpenAI渠道",
+        "affected_workflow": "代理商广告建案与转化事件设置",
+        "specific_decision": "决定提示素材及事件的渠道专属设置",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：围绕同一查询情境核对提示、素材和事件，针对新接入。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      }
     },
     {
       "title": "Bing Opens AI Overviews to Ads in Every Market Except China",
@@ -88,14 +144,28 @@
       "next_action": "Selected for verification; reserve if ten stronger items close. AI流程：連接器、排程及技能"
     },
     {
-      "title": "Ask, Approve, Done: AdMaven's AI Assistant Mave Lets Advertisers Manage Campaigns by Chat",
+      "title": "AdMaven邀請制推出Mave，廣告變更須批准確認卡",
       "url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
       "slug": "mave",
       "source_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
       "discovery_reference": "turn718059097search8",
       "provisional_score": 89,
-      "state": "DISCOVERED",
-      "next_action": "Selected for verification; reserve if ten stronger items close. 廣告操作：邀請制與逐項批准"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-23/mave.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI助理把广告账户分析与受批准写入连接。",
+        "source_locator": "Issuer release L394–406",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+        "event_change": "新增Mave对话控制",
+        "affected_workflow": "媒体批次暂停及预算调整",
+        "specific_decision": "决定哪些变更适合确认卡审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：活动状态及卡片有效期是公告特有控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      }
     },
     {
       "title": "Spaceback Turns Brands’ Social Posts Into Playable Display Ads in Minutes | VentureBeat",
