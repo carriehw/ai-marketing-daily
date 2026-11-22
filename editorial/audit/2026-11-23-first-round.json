@@ -1,0 +1,237 @@
+{
+  "edition_date_hkt": "2026-11-23",
+  "main_sha_at_start": "15c425d5611264520b165cc94f1464ae4bc3e086",
+  "candidate_count": 20,
+  "newly_closed": 11,
+  "approved_count": 10,
+  "rejected_count": 1,
+  "held_count": 0,
+  "reviewed_at_hkt": "2026-11-23T07:08:04+08:00",
+  "method": "Same assistant original-source reading followed by source reopening and challenge review. No separate human reviewer or product trial.",
+  "local_checks": [
+    "10 article packets passed",
+    "edition_packet check passed",
+    "date chronology10 passed",
+    "normalization30 pass0 fail"
+  ],
+  "relevance_reviews": [
+    {
+      "slug": "aws-meta",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI连接器把Meta账户操作和跨源资料接在同一流程。",
+        "source_locator": "Official blog L216–234",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "event_change": "新增Meta ads连接器",
+        "affected_workflow": "商品库存与媒体预算判断",
+        "specific_decision": "选择哪些商品预算变更交人审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一商品活动与库存表的预算提案，直接对应新连接机制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "space-plus",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI协作页面与简报新增Plus账户接入。",
+        "source_locator": "Release notes Nov20 L14–23",
+        "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "event_change": "Plus资格扩展",
+        "affected_workflow": "客户简报共同修订与交付",
+        "specific_decision": "按收件资格决定交付形式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议确认双方Space资格和实际开页，对应本次接入变化。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "highlevel-chatgpt",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "ChatGPT广告新增跨渠道建案及衡量入口。",
+        "source_locator": "Official changelog L16–46,L123–129",
+        "source_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+        "event_change": "新增OpenAI渠道",
+        "affected_workflow": "代理商广告建案与转化事件设置",
+        "specific_decision": "决定提示素材及事件的渠道专属设置",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：围绕同一查询情境核对提示、素材和事件，针对新接入。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "mave",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI助理把广告账户分析与受批准写入连接。",
+        "source_locator": "Issuer release L394–406",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+        "event_change": "新增Mave对话控制",
+        "affected_workflow": "媒体批次暂停及预算调整",
+        "specific_decision": "决定哪些变更适合确认卡审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：活动状态及卡片有效期是公告特有控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "kling-image4",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI图像生成新增图集与长版创意工作流程。",
+        "source_locator": "Official blog L98–121",
+        "source_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+        "event_change": "推出Image4.0的成组输出及文字修改",
+        "affected_workflow": "商品素材整组规划",
+        "specific_decision": "决定共用视觉与单张重点",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：主视觉、功能及情境图的同产品核对，对应成组输出。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "bing-overviews",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI答案旁新增相关广告版位。",
+        "source_locator": "Official roundup L15–24",
+        "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+        "event_change": "现有活动接到Bing答案广告",
+        "affected_workflow": "搜索情境与素材匹配",
+        "specific_decision": "确认素材能否回应行程等完整需求",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：酒店与国家公园行程是原文特定机制，删除成效推论。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "heygen-avatar6",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "AI分身按语境生成表演并升级既有素材。",
+        "source_locator": "Issuer release L468–483",
+        "source_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+        "event_change": "推出Avatar6语境动作",
+        "affected_workflow": "产品讲者稿与动作审阅",
+        "specific_decision": "决定哪些语句加入手势情绪提示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：逐句标注指向和数量动作，对应新模型控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "lumo-desktop",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "桌面AI把工具存取、排程及可重用指引组合。",
+        "source_locator": "Official blog L230–259",
+        "source_url": "https://proton.me/blog/lumo-desktop-features",
+        "event_change": "推出桌面连接与排程能力",
+        "affected_workflow": "内容资料搜集至固定格式摘要",
+        "specific_decision": "决定自动整理与外部动作批准边界",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定资料夹、品牌模板及外部动作设置，对应三项新能力。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "spaceback",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "实质广告格式与素材生产流程更新；非一般品牌宣传。",
+        "source_locator": "Issuer wire L29–38",
+        "source_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+        "event_change": "互动展示单元正式可用",
+        "affected_workflow": "社交素材转展示交付",
+        "specific_decision": "决定贴文对应测验投票还是揭示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一产品讯息转两种互动流程，直接对应新格式。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    },
+    {
+      "slug": "hy4-weights",
+      "relevance": {
+        "decision": "PASS",
+        "ai_connection": "多模态AI模型权重由计划变为可下载部署。",
+        "source_locator": "Official model card L294–308,L410–423; GitHubNov20 commit",
+        "source_url": "https://huggingface.co/tencent/Hy4",
+        "event_change": "发布完整Hy4模型权重",
+        "affected_workflow": "营销跨格式文档的自有环境评估",
+        "specific_decision": "判断版本容量与部署投入",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定活动文件包及标准答案对应多模态自部署评估，不复制模型榜单。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "wording_review": {
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+        "method": "Reviewed Traditional Chinese and English for same facts, concrete subjects/actions, technical terms and availability. Simplified lexical and risk notes reviewed; compiled locales to be read after CI.",
+        "decision": "PASS"
+      }
+    }
+  ],
+  "limitations": [
+    "AWS originalNov21 vs syndicationNov22; occasional direct URL failed, linked original ref read/reopened.",
+    "Space Plus incremental access afterSep30, not new product functionality.",
+    "Bing inventory late inclusion:Nov19 predatesNov21 labels issue, explicitly disclosed.",
+    "Hy4 X403 and HF license page failed. Used official pinned GitHub README/LICENSE and Nov20 commit, license reread same SHA.",
+    "Spaceback short wire URL failed; full title URL worked, dated same wire reproduction checked.",
+    "FLUX VTO rejected as May28 launch re-indexed in November; no quota filler. Brand cases left empty."
+  ]
+}
