@@ -1,0 +1,1158 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-23",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-23T07:07:25+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Ten original announcements read and separately reopened by same assistant. Semantic relevance PASS and event-workflow-decision substitution tests recorded. Preserved invite-only Mave, Plus sharing eligibility, account/billing boundaries, Bing market exclusion, dated earlier coverage and custom model license. Removed outcome/realism/efficiency figures. No independent human approval or product trial claimed.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-23-kling-image4",
+      "title_zh": "Kling Image 4.0加入多圖集及長版素材生成",
+      "source_story_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+      "published_article_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "publisher": "Kling AI",
+          "evidence_locator": "Official blog L42–50 / Official blog L58,L110–121 / Official blog L98–107",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Kling Image4.0在Creative Studio及企業、開發者API提供。",
+          "evidence_locator": "Official blog L42–50",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        },
+        {
+          "claim_zh": "一個提示可生成最多10張圖，亦支援長版圖像。",
+          "evidence_locator": "Official blog L58,L110–121",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        },
+        {
+          "claim_zh": "平台可直接修改生成圖內的文字及字體。",
+          "evidence_locator": "Official blog L98–107",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Kling Image4.0在Creative Studio及企業、開發者API提供。",
+          "evidence_locator": "Official blog L42–50",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        },
+        {
+          "claim_zh": "一個提示可生成最多10張圖，亦支援長版圖像。",
+          "evidence_locator": "Official blog L58,L110–121",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        },
+        {
+          "claim_zh": "平台可直接修改生成圖內的文字及字體。",
+          "evidence_locator": "Official blog L98–107",
+          "support_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+        "source_reopen_reference": "Read turn229705865view2 and turn248594151view2; reopened turn815467972view4 and turn975971029view3.",
+        "finding": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification."
+      },
+      "review_notes": "English original blog datedNov18; other reports reference Nov17 launch. Use source publicationNov18 and documented availability. Up to10 coordinated images; long-form visuals, Studio/API. No guaranteed typography accuracy, production readiness or performance rankings. Native8K is issuer specification.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 93
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI图像生成新增图集与长版创意工作流程。",
+        "source_locator": "Official blog L98–121",
+        "source_url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
+        "event_change": "推出Image4.0的成组输出及文字修改",
+        "affected_workflow": "商品素材整组规划",
+        "specific_decision": "决定共用视觉与单张重点",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：主视觉、功能及情境图的同产品核对，对应成组输出。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-23-aws-meta",
+      "title_zh": "AWS Quick接入Meta廣告，把活動與商業資料放進同一流程",
+      "source_story_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "published_article_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "source_date_display": "11月21日",
+      "event_date": "2026-11-21",
+      "first_published_date": "2026-11-21",
+      "source_documents": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "publisher": "AWS",
+          "evidence_locator": "Official blog L213–216 / Official blog L217 / Official blog L223",
+          "source_publication_date": "2026-11-21",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AWS Quick加入Meta ads AI連接器，可用自然語言建立、管理及分析活動。",
+          "evidence_locator": "Official blog L213–216",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        },
+        {
+          "claim_zh": "Meta廣告資料可與第一方及第三方資料組合成儀表板、文件及簡報。",
+          "evidence_locator": "Official blog L217",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        },
+        {
+          "claim_zh": "連接時可選擇Quick可存取的Facebook專頁、企業及Instagram帳戶。",
+          "evidence_locator": "Official blog L223",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AWS Quick加入Meta ads AI連接器，可用自然語言建立、管理及分析活動。",
+          "evidence_locator": "Official blog L213–216",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        },
+        {
+          "claim_zh": "Meta廣告資料可與第一方及第三方資料組合成儀表板、文件及簡報。",
+          "evidence_locator": "Official blog L217",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        },
+        {
+          "claim_zh": "連接時可選擇Quick可存取的Facebook專頁、企業及Instagram帳戶。",
+          "evidence_locator": "Official blog L223",
+          "support_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+        "source_reopen_reference": "Official body turn352936115view0 L213–234; separately reopened turn975971029view0; direct retry failed turn815467972view0.",
+        "finding": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story."
+      },
+      "review_notes": "Official blog datedNov21; syndication indexedNov22. Meta ads AI connector supports create/manage/analyze via MCP operations. Examples include approval checks, not proof of measured lift. Direct URL sometimes failed; same official article read/reopened by linked ref. Quick suite update grouped, not a second counted story.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 92
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI连接器把Meta账户操作和跨源资料接在同一流程。",
+        "source_locator": "Official blog L216–234",
+        "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "event_change": "新增Meta ads连接器",
+        "affected_workflow": "商品库存与媒体预算判断",
+        "specific_decision": "选择哪些商品预算变更交人审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一商品活动与库存表的预算提案，直接对应新连接机制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-23-bing-overviews",
+      "title_zh": "更進新聞：Bing AI Overviews廣告沿用現有活動",
+      "source_story_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+      "published_article_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+      "source_date_display": "11月19日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-19",
+      "source_documents": [
+        {
+          "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "publisher": "Microsoft Advertising",
+          "evidence_locator": "Official roundup L15–19 / Official roundup L24 / Official roundup L24",
+          "source_publication_date": "2026-11-19",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "廣告可在Bing的AI Overviews答案旁呈現。",
+          "evidence_locator": "Official roundup L15–19",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        },
+        {
+          "claim_zh": "毋須另建獨立活動，可透過現有活動包括Performance Max及AI Max投放。",
+          "evidence_locator": "Official roundup L24",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        },
+        {
+          "claim_zh": "公布的市場範圍為中國以外市場。",
+          "evidence_locator": "Official roundup L24",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "廣告可在Bing的AI Overviews答案旁呈現。",
+          "evidence_locator": "Official roundup L15–19",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        },
+        {
+          "claim_zh": "毋須另建獨立活動，可透過現有活動包括Performance Max及AI Max投放。",
+          "evidence_locator": "Official roundup L24",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        },
+        {
+          "claim_zh": "公布的市場範圍為中國以外市場。",
+          "evidence_locator": "Official roundup L24",
+          "support_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:04:15+08:00",
+        "source_reopen_reference": "Read original turn248594151view1 L6–24; separately reopened turn620213051view4.",
+        "finding": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift."
+      },
+      "review_notes": "Official Nov19 roundup. PriorNov21 covered disclosure controls, not this inventory. Explicit late inclusion of earlier ad-placement announcement. Existing campaigns inclPMax/AIMax; all markets exceptChina. No claims all queries/campaigns guaranteed exposure, separate AI-placement reporting or measured conversion uplift.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 13,
+        "novelty": 8,
+        "total": 92
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI答案旁新增相关广告版位。",
+        "source_locator": "Official roundup L15–24",
+        "source_url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
+        "event_change": "现有活动接到Bing答案广告",
+        "affected_workflow": "搜索情境与素材匹配",
+        "specific_decision": "确认素材能否回应行程等完整需求",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：酒店与国家公园行程是原文特定机制，删除成效推论。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-11-21.html"
+    },
+    {
+      "story_id": "2026-11-23-highlevel-chatgpt",
+      "title_zh": "HighLevel Ad Manager加入ChatGPT廣告建案與報表",
+      "source_story_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+      "published_article_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "publisher": "HighLevel",
+          "evidence_locator": "Official changelog L16–17 / Official changelog L34–41 / Official changelog L123–129",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        },
+        {
+          "url": "https://ideas.gohighlevel.com/changelog",
+          "publisher": "HighLevel",
+          "evidence_locator": "November20 dated changelog listing; turn718059097search7",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+          "access_method": "Retrieved official listing and searched publication date.",
+          "limitations": "Individual item rendering omitted date; release date retained from dated parent listing."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "HighLevel Ad Manager加入OpenAI廣告活動建立及衡量。",
+          "evidence_locator": "Official changelog L16–17",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        },
+        {
+          "claim_zh": "廣告組使用情境提示，素材含標題、描述及一張方形圖片。",
+          "evidence_locator": "Official changelog L34–41",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        },
+        {
+          "claim_zh": "需要連接OpenAI Ads帳戶，帳單與廣告審核仍由OpenAI處理。",
+          "evidence_locator": "Official changelog L123–129",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "HighLevel Ad Manager加入OpenAI廣告活動建立及衡量。",
+          "evidence_locator": "Official changelog L16–17",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        },
+        {
+          "claim_zh": "廣告組使用情境提示，素材含標題、描述及一張方形圖片。",
+          "evidence_locator": "Official changelog L34–41",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        },
+        {
+          "claim_zh": "需要連接OpenAI Ads帳戶，帳單與廣告審核仍由OpenAI處理。",
+          "evidence_locator": "Official changelog L123–129",
+          "support_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+        "source_reopen_reference": "Read turn248594151view0; reopened turn815467972view2 and turn975971029view2. Dated official listing turn718059097search7.",
+        "finding": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing."
+      },
+      "review_notes": "Official Ad Manager changelog; Nov20 date from official listing. Requires connected OpenAI Ads account; billing/ad review stays OpenAI. Audience minimum25000 matched users, Standard at launch; templates planned. This is HighLevel integration, not ChatGPT Ads global launch. No privacy guarantee inferred from hashing.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 91
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "ChatGPT广告新增跨渠道建案及衡量入口。",
+        "source_locator": "Official changelog L16–46,L123–129",
+        "source_url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
+        "event_change": "新增OpenAI渠道",
+        "affected_workflow": "代理商广告建案与转化事件设置",
+        "specific_decision": "决定提示素材及事件的渠道专属设置",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：围绕同一查询情境核对提示、素材和事件，针对新接入。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-23-mave",
+      "title_zh": "AdMaven邀請制推出Mave，廣告變更須批准確認卡",
+      "source_story_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+      "published_article_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "publisher": "AdMaven",
+          "evidence_locator": "Issuer release L388–389 / Issuer release L392–394 / Issuer release L404–406",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Mave在AdMaven儀表板以對話建立pop活動及分析帳戶。",
+          "evidence_locator": "Issuer release L388–389",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        },
+        {
+          "claim_zh": "每項變動須批准確認卡，卡片10分鐘後失效。",
+          "evidence_locator": "Issuer release L392–394",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        },
+        {
+          "claim_zh": "現採逐帳戶邀請制，API提供唯讀問答。",
+          "evidence_locator": "Issuer release L404–406",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Mave在AdMaven儀表板以對話建立pop活動及分析帳戶。",
+          "evidence_locator": "Issuer release L388–389",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        },
+        {
+          "claim_zh": "每項變動須批准確認卡，卡片10分鐘後失效。",
+          "evidence_locator": "Issuer release L392–394",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        },
+        {
+          "claim_zh": "現採逐帳戶邀請制，API提供唯讀問答。",
+          "evidence_locator": "Issuer release L404–406",
+          "support_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+        "source_reopen_reference": "Issuer text turn322136831view1 L382–406; separately reopened turn815467972view3.",
+        "finding": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes."
+      },
+      "review_notes": "Issuer announcement invite-only account-by-account rollout. Confirmation card approval mandatory, expires10min. Up to5 pop campaigns created; pause/resume20. API Q&A read-only. Removed campaign-manager time and ROI figures. Not universal availability or autonomous changes.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 8,
+        "total": 89
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI助理把广告账户分析与受批准写入连接。",
+        "source_locator": "Issuer release L394–406",
+        "source_url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
+        "event_change": "新增Mave对话控制",
+        "affected_workflow": "媒体批次暂停及预算调整",
+        "specific_decision": "决定哪些变更适合确认卡审阅",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：活动状态及卡片有效期是公告特有控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-23-spaceback",
+      "title_zh": "Spaceback把社群素材轉成互動展示廣告",
+      "source_story_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+      "published_article_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "publisher": "Spaceback",
+          "evidence_locator": "Issuer wire L29,L41 / Issuer wire L32,L35–37 / Issuer wire L30,L38",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        },
+        {
+          "url": "https://www.streetinsider.com/Business%2BWire/Spaceback%2BTurns%2BBrands%E2%80%99%2BSocial%2BPosts%2BInto%2BPlayable%2BDisplay%2BAds%2Bin%2BMinutes/27367598.html",
+          "publisher": "Spaceback via Business Wire / StreetInsider",
+          "evidence_locator": "L171 publication date and L178–190 same wire text",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:04:53+08:00",
+          "access_method": "Read dated reproduction of the same issuer wire, turn350687159view0.",
+          "limitations": "Issuer announcement, no independent engagement measurement."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Spaceback推出正式可用的Interactive Display Units。",
+          "evidence_locator": "Issuer wire L29,L41",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        },
+        {
+          "claim_zh": "可把社群內容、品牌色及標誌轉成不同互動格式。",
+          "evidence_locator": "Issuer wire L32,L35–37",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        },
+        {
+          "claim_zh": "提供標準展示尺寸，可透過DSP或Spaceback Deal ID投放。",
+          "evidence_locator": "Issuer wire L30,L38",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Spaceback推出正式可用的Interactive Display Units。",
+          "evidence_locator": "Issuer wire L29,L41",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        },
+        {
+          "claim_zh": "可把社群內容、品牌色及標誌轉成不同互動格式。",
+          "evidence_locator": "Issuer wire L32,L35–37",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        },
+        {
+          "claim_zh": "提供標準展示尺寸，可透過DSP或Spaceback Deal ID投放。",
+          "evidence_locator": "Issuer wire L30,L38",
+          "support_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:04:15+08:00",
+        "source_reopen_reference": "Original wire turn310243110view3; reopened turn620213051view2; dated wire reproduction turn350687159view0 L171–190.",
+        "finding": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims."
+      },
+      "review_notes": "Issuer release, wireNov18 corroborated in same wire reproduction. New InteractiveDisplayUnits GA. Substantive ad-format/production workflow qualifies MarTech; do not infer additional AI mechanism merely from WRLabs ownership. Removed no-cost, minutes and higher-engagement claims.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 88
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "实质广告格式与素材生产流程更新；非一般品牌宣传。",
+        "source_locator": "Issuer wire L29–38",
+        "source_url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
+        "event_change": "互动展示单元正式可用",
+        "affected_workflow": "社交素材转展示交付",
+        "specific_decision": "决定贴文对应测验投票还是揭示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：同一产品讯息转两种互动流程，直接对应新格式。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-23-heygen-avatar6",
+      "title_zh": "HeyGen Avatar 6按稿件語境生成動作，既有分身可升級",
+      "source_story_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "publisher": "HeyGen",
+          "evidence_locator": "Issuer release L468–470,L478 / Issuer release L481 / Issuer release L472,L483",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Avatar6以語音及稿件語境生成相應動作與表情。",
+          "evidence_locator": "Issuer release L468–470,L478",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        },
+        {
+          "claim_zh": "既有Personal Avatars可自動升級，毋須重錄。",
+          "evidence_locator": "Issuer release L481",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        },
+        {
+          "claim_zh": "真人逼真影片保留在HeyGen平台，要求明確同意及身份核實。",
+          "evidence_locator": "Issuer release L472,L483",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Avatar6以語音及稿件語境生成相應動作與表情。",
+          "evidence_locator": "Issuer release L468–470,L478",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        },
+        {
+          "claim_zh": "既有Personal Avatars可自動升級，毋須重錄。",
+          "evidence_locator": "Issuer release L481",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        },
+        {
+          "claim_zh": "真人逼真影片保留在HeyGen平台，要求明確同意及身份核實。",
+          "evidence_locator": "Issuer release L472,L483",
+          "support_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:04:15+08:00",
+        "source_reopen_reference": "Read turn310243110view1 L457–483 and model page turn310243110view0; separately reopened turn620213051view5.",
+        "finding": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees."
+      },
+      "review_notes": "Issuer launchNov17, native2K and existing PersonalAvatar upgrade attributed. Realistic real-person videos remain on HeyGen with explicit consent; third-party access limited to supported photo/virtual use. Removed realism percentages, rankings and blanket guarantees.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 12,
+        "novelty": 8,
+        "total": 87
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI分身按语境生成表演并升级既有素材。",
+        "source_locator": "Issuer release L468–483",
+        "source_url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
+        "event_change": "推出Avatar6语境动作",
+        "affected_workflow": "产品讲者稿与动作审阅",
+        "specific_decision": "决定哪些语句加入手势情绪提示",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：逐句标注指向和数量动作，对应新模型控制。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-23-space-plus",
+      "title_zh": "更進新聞：ChatGPT Space向Plus推出，分享仍需帳戶資格",
+      "source_story_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "published_article_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publisher": "OpenAI",
+          "evidence_locator": "Release notes Nov20 L14–17 / Release notes L20 / Release notes L20–21",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:00:55+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        },
+        {
+          "url": "https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt",
+          "publisher": "OpenAI",
+          "evidence_locator": "Availability L14–29",
+          "source_publication_date": null,
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+          "access_method": "Read official support guidance turn361575082view1.",
+          "limitations": "Eligible account rollout; managed workspace sharing settings apply."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Space開始向全球18歲以上Plus使用者推出。",
+          "evidence_locator": "Release notes Nov20 L14–17",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        },
+        {
+          "claim_zh": "分享頁面需要瀏覽權限，以及具Space資格的Plus、Pro、Business或Enterprise帳戶。",
+          "evidence_locator": "Release notes L20",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        },
+        {
+          "claim_zh": "Free不能開啟分享頁面，亦未提供公開連結。",
+          "evidence_locator": "Release notes L20–21",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Space開始向全球18歲以上Plus使用者推出。",
+          "evidence_locator": "Release notes Nov20 L14–17",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        },
+        {
+          "claim_zh": "分享頁面需要瀏覽權限，以及具Space資格的Plus、Pro、Business或Enterprise帳戶。",
+          "evidence_locator": "Release notes L20",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        },
+        {
+          "claim_zh": "Free不能開啟分享頁面，亦未提供公開連結。",
+          "evidence_locator": "Release notes L20–21",
+          "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:03:18+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:01:12+08:00",
+        "source_reopen_reference": "Original release notes turn229705865view0 L14–23; reopened turn815467972view1 and turn975971029view1.",
+        "finding": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today."
+      },
+      "review_notes": "Nov20 release notes: global rollout to Plus18+. Shared pages require view permission and signed-in Plus/Pro/Business/Enterprise with Space access. Free cannot open; no public links. Sept30 production features already covered; incremental event is Plus access, not brand-new Space. No guaranteed access for every Plus account today.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 27,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 9,
+        "total": 86
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI协作页面与简报新增Plus账户接入。",
+        "source_locator": "Release notes Nov20 L14–23",
+        "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "event_change": "Plus资格扩展",
+        "affected_workflow": "客户简报共同修订与交付",
+        "specific_decision": "按收件资格决定交付形式",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：建议确认双方Space资格和实际开页，对应本次接入变化。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:03:18+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-09-30.html"
+    },
+    {
+      "story_id": "2026-11-23-hy4-weights",
+      "title_zh": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
+      "source_story_url": "https://huggingface.co/tencent/Hy4",
+      "published_article_url": "https://huggingface.co/tencent/Hy4",
+      "source_date_display": "11月20日",
+      "event_date": "2026-11-20",
+      "first_published_date": "2026-11-20",
+      "source_documents": [
+        {
+          "url": "https://huggingface.co/tencent/Hy4",
+          "publisher": "Tencent Hy",
+          "evidence_locator": "Official model card L410–420 / Official model card L294–308 / Official GitHub README License section; LICENSE opening and Section10",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        },
+        {
+          "url": "https://github.com/Tencent-Hunyuan/Hy4/blob/6eb6613298923f528b6f991f1d81c319e3603829/LICENSE",
+          "publisher": "Tencent Hy",
+          "evidence_locator": "LICENSE opening and section10",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:04:53+08:00",
+          "access_method": "Official pinned GitHub source fetched via connector; LICENSE fetched again to challenge exact scope.",
+          "limitations": "Custom Tencent Hy License, not unmodified Apache2.0. No independent benchmarks."
+        },
+        {
+          "url": "https://github.com/Tencent-Hunyuan/Hy4/blob/6eb6613298923f528b6f991f1d81c319e3603829/README.md",
+          "publisher": "Tencent Hy",
+          "evidence_locator": "README News, Model Links, License; Nov20 commit6eb6613298923f528b6f991f1d81c319e3603829",
+          "source_publication_date": "2026-11-20",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:04:53+08:00",
+          "access_method": "Official pinned GitHub source fetched via connector; LICENSE fetched again to challenge exact scope.",
+          "limitations": "Custom Tencent Hy License, not unmodified Apache2.0. No independent benchmarks."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "模型卡提供Hy4、Hy4-FP8及預訓練base權重連結。",
+          "evidence_locator": "Official model card L410–420",
+          "support_url": "https://huggingface.co/tencent/Hy4",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        },
+        {
+          "claim_zh": "模型支援文字、圖像及影片理解，並列出1M上下文。",
+          "evidence_locator": "Official model card L294–308",
+          "support_url": "https://huggingface.co/tencent/Hy4",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        },
+        {
+          "claim_zh": "權重採Tencent Hy License，並非未修改的Apache2.0。",
+          "evidence_locator": "Official GitHub README License section; LICENSE opening and Section10",
+          "support_url": "https://github.com/Tencent-Hunyuan/Hy4/blob/6eb6613298923f528b6f991f1d81c319e3603829/LICENSE",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "模型卡提供Hy4、Hy4-FP8及預訓練base權重連結。",
+          "evidence_locator": "Official model card L410–420",
+          "support_url": "https://huggingface.co/tencent/Hy4",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        },
+        {
+          "claim_zh": "模型支援文字、圖像及影片理解，並列出1M上下文。",
+          "evidence_locator": "Official model card L294–308",
+          "support_url": "https://huggingface.co/tencent/Hy4",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        },
+        {
+          "claim_zh": "權重採Tencent Hy License，並非未修改的Apache2.0。",
+          "evidence_locator": "Official GitHub README License section; LICENSE opening and Section10",
+          "support_url": "https://github.com/Tencent-Hunyuan/Hy4/blob/6eb6613298923f528b6f991f1d81c319e3603829/LICENSE",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:04:53+08:00",
+        "source_reopen_reference": "HF model card turn352936115view2 and separately reopened turn580503409view0. Official GitHub README/LICENSE at commit6eb6613298923f528b6f991f1d81c319e3603829 read via connector; LICENSE reread same SHA. GitHub commits API confirmsNov20 02:46UTC.",
+        "finding": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise."
+      },
+      "review_notes": "Full weights now published distinct fromNov4 hosted launch and Augpreview. Official repo commit6eb661 Nov20 contains checkpoint links; model card and license reread. X403, HFlicense inaccessible; used identical official GitHub license. Custom TencentHyLicense, not unmodified Apache2.0. No benchmark superiority or cheap self-hosting promise.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 20,
+        "actionability": 16,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 86
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "多模态AI模型权重由计划变为可下载部署。",
+        "source_locator": "Official model card L294–308,L410–423; GitHubNov20 commit",
+        "source_url": "https://huggingface.co/tencent/Hy4",
+        "event_change": "发布完整Hy4模型权重",
+        "affected_workflow": "营销跨格式文档的自有环境评估",
+        "specific_decision": "判断版本容量与部署投入",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定活动文件包及标准答案对应多模态自部署评估，不复制模型榜单。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor",
+      "prior_edition_url": "https://carriehw.github.io/ai-marketing-daily/archive/2026-11-05.html"
+    },
+    {
+      "story_id": "2026-11-23-lumo-desktop",
+      "title_zh": "Lumo Desktop加入連接器、排程與可重用工作指引",
+      "source_story_url": "https://proton.me/blog/lumo-desktop-features",
+      "published_article_url": "https://proton.me/blog/lumo-desktop-features",
+      "source_date_display": "11月17日",
+      "event_date": "2026-11-17",
+      "first_published_date": "2026-11-17",
+      "source_documents": [
+        {
+          "url": "https://proton.me/blog/lumo-desktop-features",
+          "publisher": "Proton",
+          "evidence_locator": "Official blog L218–230 / Official blog L242–249 / Official blog L250–259",
+          "source_publication_date": "2026-11-17",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-23T07:03:56+08:00",
+          "access_method": "Read original source text and locators; source separately reopened for challenge review.",
+          "limitations": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Lumo Desktop在Windows、macOS及Linux推出並加入連接器、排程與技能。",
+          "evidence_locator": "Official blog L218–230",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        },
+        {
+          "claim_zh": "連接器動作可設為自動、需批准或封鎖，已連接工具預設在對話啟用。",
+          "evidence_locator": "Official blog L242–249",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        },
+        {
+          "claim_zh": "排程有獨立權限，技能可儲存範本及參考檔案。",
+          "evidence_locator": "Official blog L250–259",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Lumo Desktop在Windows、macOS及Linux推出並加入連接器、排程與技能。",
+          "evidence_locator": "Official blog L218–230",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        },
+        {
+          "claim_zh": "連接器動作可設為自動、需批准或封鎖，已連接工具預設在對話啟用。",
+          "evidence_locator": "Official blog L242–249",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        },
+        {
+          "claim_zh": "排程有獨立權限，技能可儲存範本及參考檔案。",
+          "evidence_locator": "Official blog L250–259",
+          "support_url": "https://proton.me/blog/lumo-desktop-features",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-23T07:06:32+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened sources to challenge pivotal claims, dates and scope. No separate human reviewer or product testing.",
+        "second_pass_accessed_at_hkt": "2026-11-23T07:04:15+08:00",
+        "source_reopen_reference": "Read turn844652788view4 and turn310243110view2 L230–261; separately reopened turn620213051view3.",
+        "finding": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim."
+      },
+      "review_notes": "OfficialNov17 desktop launch forWindows/macOS/Linux with connectors,schedules,skills. Connected tools enabled in conversations by default but individual actions configurable. No privacy/legal guarantee inferred, no email sent/tested. Not cloud-only automation claim.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 26,
+        "business_impact": 20,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 7,
+        "total": 82
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "桌面AI把工具存取、排程及可重用指引组合。",
+        "source_locator": "Official blog L230–259",
+        "source_url": "https://proton.me/blog/lumo-desktop-features",
+        "event_change": "推出桌面连接与排程能力",
+        "affected_workflow": "内容资料搜集至固定格式摘要",
+        "specific_decision": "决定自动整理与外部动作批准边界",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "PASS：固定资料夹、品牌模板及外部动作设置，对应三项新能力。",
+        "inference_label": "why and next_step are editorial implications; announced mechanisms are not proven performance.",
+        "reviewed_at_hkt": "2026-11-23T07:06:32+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    }
+  ]
+}
