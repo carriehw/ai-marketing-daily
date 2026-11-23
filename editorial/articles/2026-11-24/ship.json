@@ -1,0 +1,193 @@
+{
+  "edition_date_hkt": "2026-11-24",
+  "state": "APPROVED",
+  "article": {
+    "title": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+    "title_en": "Claude Ship adds repair and approval agents with an observe-first option",
+    "summary": "Anthropic推出Claude Ship，結合程式碼審查，以及仍在測試的修復與批准代理，依團隊政策處理拉取請求。",
+    "summary_en": "Anthropic launched Claude Ship, combining code review with beta repair and approval agents governed by team policy.",
+    "highlights": [
+      "PR Steward可處理失敗檢查及合併衝突，本身不批准或合併變更。",
+      "Claude Approvals讀取儲存庫政策；官方建議先以僅觀察模式啟用。"
+    ],
+    "highlights_en": [
+      "PR Steward addresses failing checks and merge conflicts without approving or merging changes.",
+      "Claude Approvals reads repository policy; Anthropic recommends starting in observe-only mode."
+    ],
+    "why": "製作活動網站或行銷工具的團隊，可把修復與批准拆開管理，決定哪些例行變更交予代理、哪些仍由負責人簽核。",
+    "why_en": "Teams building campaign sites can separate repairs from approval and define which routine changes still need an accountable reviewer.",
+    "next_step": "在測試網站的儲存庫列出一類低影響變更，讓批准代理先記錄判斷，再與團隊實際決定逐筆比較。",
+    "next_step_en": "Define one low-impact change type in a test-site repository and compare observe-only approval decisions with the team's actual reviews.",
+    "detail": "服務適用於Claude Team及Enterprise的GitHub儲存庫。PR是提出程式變更供團隊審查的拉取請求，持續集成檢查則用來驗證建置及測試。Ship按用量計費，管理員可設定部分開支上限；使用零資料保留、HIPAA設定或客戶管理加密金鑰的組織不適用。自動批准仍須符合儲存庫規則，不能視為品質保證。",
+    "detail_en": "Ship supports GitHub repositories on Claude Team and Enterprise. A pull request proposes code changes, while CI checks build and test them. Usage is billed in tokens, with selected spending controls. Organizations using Zero Data Retention, HIPAA configuration or customer-managed encryption keys are excluded. Repository rules still govern approval.",
+    "source": "Anthropic",
+    "url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "time": "11月23日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "可即用",
+    "action_en": "Use Now",
+    "source_kind": "official",
+    "editorial_slug": "ship"
+  },
+  "evidence": {
+    "story_id": "2026-11-24-ship",
+    "title_zh": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+    "source_story_url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "published_article_url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "source_date_display": "11月23日",
+    "event_date": "2026-11-23",
+    "first_published_date": "2026-11-23",
+    "source_documents": [
+      {
+        "url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "publisher": "Anthropic",
+        "evidence_locator": "L33–38,L80 / L44 / L46–47 / L80–83",
+        "source_publication_date": "2026-11-23",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+        "access_method": "Read original text and separately reopened source.",
+        "limitations": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Claude Ship包含已正式提供的Code Review，以及測試版PR Steward與Claude Approvals。",
+        "evidence_locator": "Original source L33–38,L80",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "PR Steward處理失敗檢查與衝突，不負責批准或合併。",
+        "evidence_locator": "Original source L44",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "Claude Approvals依儲存庫政策決定批准，官方建議先用僅觀察模式。",
+        "evidence_locator": "Original source L46–47",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "Ship支援Team及Enterprise的GitHub儲存庫，ZDR、HIPAA或客戶管理金鑰組織不適用。",
+        "evidence_locator": "Original source L80–83",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Claude Ship包含已正式提供的Code Review，以及測試版PR Steward與Claude Approvals。",
+        "evidence_locator": "Original source L33–38,L80",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "PR Steward處理失敗檢查與衝突，不負責批准或合併。",
+        "evidence_locator": "Original source L44",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "Claude Approvals依儲存庫政策決定批准，官方建議先用僅觀察模式。",
+        "evidence_locator": "Original source L46–47",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      },
+      {
+        "claim_zh": "Ship支援Team及Enterprise的GitHub儲存庫，ZDR、HIPAA或客戶管理金鑰組織不適用。",
+        "evidence_locator": "Original source L80–83",
+        "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+    "independent_review": {
+      "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+      "source_reopen_reference": "Original turn566798724view0 L33–62,L78–86; reopened turn348850331view2.",
+      "finding": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+    },
+    "review_notes": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 23,
+      "actionability": 18,
+      "market_relevance": 9,
+      "novelty": 10,
+      "total": 87
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "AI代码修正及批准改变营销网站交付流程。",
+      "source_locator": "L33–38,L80; L44; L46–47; L80–83",
+      "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "event_change": "新增PR Steward及Claude Approvals beta",
+      "affected_workflow": "活动网页程式变更审查",
+      "specific_decision": "决定可自动批准的变更类型",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "限定测试站PR及observe-only审批，直接对应本次政策文件机制。",
+      "inference_label": "why and next_step are editorial implications, not measured performance.",
+      "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "title_zh_hant": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体用“拉取请求（PR）、持续集成检查、仅观察模式”。修复代理不等于批准代理；保留beta、GitHub、方案与数据设置限制。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "AI代码修正及批准改变营销网站交付流程。",
+    "source_locator": "L33–38,L80; L44; L46–47; L80–83",
+    "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
+    "event_change": "新增PR Steward及Claude Approvals beta",
+    "affected_workflow": "活动网页程式变更审查",
+    "specific_decision": "决定可自动批准的变更类型",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "限定测试站PR及observe-only审批，直接对应本次政策文件机制。",
+    "inference_label": "why and next_step are editorial implications, not measured performance.",
+    "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+    "method": "Edited Traditional Chinese and English for fact parity, dates, scope and natural wording; reviewed Simplified terminology and caveats. Final compiled locales to be reread.",
+    "decision": "PASS"
+  }
+}
