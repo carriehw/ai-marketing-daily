@@ -6,7 +6,7 @@
   "approved_count": 10,
   "held_count": 3,
   "rejected_count": 1,
-  "newly_closed": 14,
+  "newly_closed": 11,
   "reviewed_at_hkt": "2026-11-24T07:08:00+08:00",
   "method": "Same assistant original text reading then actual source reopens; no separate human or agent reviewer and no product test.",
   "relevance_reviews": [
@@ -178,14 +178,17 @@
     "first_source_commit": "c37d939da02605ea70458fb94b7f81e5ce34a7ff",
     "first_run_id": 45286151017,
     "first_failure": "Validate publication dates and story chronology:退役日前 treated as unanchored relative日前. Fixed to explicit2027年1月22日退役前; no fact change or validator change.",
-    "current_source_commit": "ca5457b34cee7370f946220f254d856d8ce2d252",
-    "current_run_id": 45286234160,
-    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286234160",
-    "next_action": "Trace run45286234160, fix only concrete failures; on success compare main receipt/data/evidence hashes and reread actual rendered locale and Newsletter content."
+    "current_source_commit": "66f39c01ce5bfa12be2db9a32137fe1b653f428b",
+    "current_run_id": 45286484870,
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286484870",
+    "next_action": "Trace run45286484870; source-label English fix and date wording verified. Await live receipt then compare hashes/read all compiled locales.",
+    "second_failed_run_id": 45286234160,
+    "second_failure": "English team EDM: source labels carried Chinese parenthetical disclosure into shared English source field. Replaced source labels with English equivalents while preserving Chinese detail disclosures, without changing fact or validator."
   },
   "local_checks": [
     "10 approved article packets pass",
     "edition_packet check passes",
     "date chronology28 pass0 fail"
-  ]
+  ],
+  "unresolved_held": 3
 }
