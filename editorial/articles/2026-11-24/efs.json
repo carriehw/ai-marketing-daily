@@ -1,0 +1,188 @@
+{
+  "edition_date_hkt": "2026-11-24",
+  "state": "APPROVED",
+  "article": {
+    "title": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+    "title_en": "Anthropic launches EFS beta with customer-owned safety-data storage",
+    "summary": "Anthropic宣布Enterprise Frontier Safeguards測試版，為合資格組織提供有指定範圍的零資料保留安排。",
+    "summary_en": "Anthropic announced an Enterprise Frontier Safeguards beta offering scoped Zero Data Retention for eligible organizations.",
+    "highlights": [
+      "客戶須提供自有儲存桶，接收供應商格式加密的安全資料，並由內部團隊審閱安全個案。",
+      "安排不涵蓋Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料。"
+    ],
+    "highlights_en": [
+      "Customers provide a bucket for sealed safety data and their own team reviews safety cases.",
+      "The arrangement excludes feature data such as Files uploads, code containers, Batch results and Managed Agents sessions."
+    ],
+    "why": "使用客戶資料的行銷助理，需分清一般API請求與檔案、執行環境的資料流，才能決定哪些工作適合接入這項安排。",
+    "why_en": "Marketing-assistant teams need to distinguish API traffic from file and execution storage before deciding which client-data workflows fit the arrangement.",
+    "next_step": "把一項客戶報告流程拆成訊息、上傳檔案及程式執行三部分，請技術負責人逐項確認保留範圍及內部安全個案負責人。",
+    "next_step_en": "Map a client-report workflow into messages, file uploads and code execution, then confirm retention coverage and an internal safety-case owner.",
+    "detail": "EFS仍屬測試版，須按與Anthropic的協議取得資格。文件表示安全資料雖放在客戶雲端帳戶，仍採封存加密格式，客戶不能直接閱讀；這與安全個案由內部審閱是兩項不同安排。Anthropic不另收EFS費用，雲端儲存費照常計算。團隊應逐個功能核對適用範圍，不能把零資料保留名稱解作所有工具均不存資料。",
+    "detail_en": "EFS remains a beta under an agreement with Anthropic. Sealed data in the customer's cloud bucket is not directly readable by that customer; internal safety-case review is a separate responsibility. Anthropic adds no EFS fee, while cloud-storage charges remain. The name does not mean every platform feature stores no data.",
+    "source": "Anthropic",
+    "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+    "time": "11月23日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "要留意",
+    "action_en": "Watch",
+    "source_kind": "official",
+    "editorial_slug": "efs"
+  },
+  "evidence": {
+    "story_id": "2026-11-24-efs",
+    "title_zh": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+    "source_story_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+    "published_article_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+    "source_date_display": "11月23日",
+    "event_date": "2026-11-23",
+    "first_published_date": "2026-11-23",
+    "source_documents": [
+      {
+        "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "publisher": "Anthropic",
+        "evidence_locator": "Release notes L35–38 / Overview L75–79 / Overview L79–81",
+        "source_publication_date": "2026-11-23",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+        "access_method": "Read original text and separately reopened source.",
+        "limitations": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "publisher": "Anthropic",
+        "evidence_locator": "Nov23 release L35–39",
+        "source_publication_date": "2026-11-23",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+        "access_method": "Read dated original release and separately reopened.",
+        "limitations": "EFS beta for eligible organizations; feature exclusions remain."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Anthropic在11月23日推出Enterprise Frontier Safeguards測試版，適用於合資格組織。",
+        "evidence_locator": "Original source Release notes L35–38",
+        "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      },
+      {
+        "claim_zh": "EFS需客戶自有儲存桶，存放Anthropic格式加密的安全資料，客戶本身不能讀取該封存資料。",
+        "evidence_locator": "Original source Overview L75–79",
+        "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      },
+      {
+        "claim_zh": "安全個案改由客戶團隊審閱；Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料不在此保留範圍。",
+        "evidence_locator": "Original source Overview L79–81",
+        "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Anthropic在11月23日推出Enterprise Frontier Safeguards測試版，適用於合資格組織。",
+        "evidence_locator": "Original source Release notes L35–38",
+        "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      },
+      {
+        "claim_zh": "EFS需客戶自有儲存桶，存放Anthropic格式加密的安全資料，客戶本身不能讀取該封存資料。",
+        "evidence_locator": "Original source Overview L75–79",
+        "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      },
+      {
+        "claim_zh": "安全個案改由客戶團隊審閱；Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料不在此保留範圍。",
+        "evidence_locator": "Original source Overview L79–81",
+        "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-24T07:07:15+08:00",
+    "independent_review": {
+      "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-24T07:07:15+08:00",
+      "source_reopen_reference": "Original overview turn732578454view6, fulltext read turn861894075view3 L75–86; reopened turn485592201view0. Nov23 release turn752663272view1 L37–39 separately reopened turn849007113view1.",
+      "finding": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+    },
+    "review_notes": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 28,
+      "business_impact": 23,
+      "actionability": 17,
+      "market_relevance": 10,
+      "novelty": 9,
+      "total": 87
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "AI资料保留及安全个案审阅责任变化影响客户资料处理。",
+      "source_locator": "Release notes L35–38; Overview L75–79; Overview L79–81",
+      "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+      "event_change": "EFS合资格组织beta",
+      "affected_workflow": "营销助理API资料流与审阅责任",
+      "specific_decision": "区分Messages流量和Files等服务存储",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "按公告明确排除的上传与执行功能绘制资料流，非泛化隐私建议。",
+      "inference_label": "why and next_step are editorial implications, not measured performance.",
+      "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Monitor"
+  },
+  "localization_review": {
+    "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+    "title_zh_hant": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体用“零数据保留、客户自有存储桶、加密安全数据、安全个案”。明确功能范围排除和内部审阅责任，不等同完全无副本或所有功能不存储。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "AI资料保留及安全个案审阅责任变化影响客户资料处理。",
+    "source_locator": "Release notes L35–38; Overview L75–79; Overview L79–81",
+    "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+    "event_change": "EFS合资格组织beta",
+    "affected_workflow": "营销助理API资料流与审阅责任",
+    "specific_decision": "区分Messages流量和Files等服务存储",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "按公告明确排除的上传与执行功能绘制资料流，非泛化隐私建议。",
+    "inference_label": "why and next_step are editorial implications, not measured performance.",
+    "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-24T07:07:15+08:00",
+    "method": "Edited Traditional Chinese and English for fact parity, dates, scope and natural wording; reviewed Simplified terminology and caveats. Final compiled locales to be reread.",
+    "decision": "PASS"
+  }
+}

@@ -3,57 +3,141 @@
   "status": "VERIFYING",
   "main_sha_at_start": "bcd4a13acb03c76919b31570dfaf6b370e8ede19",
   "discovery_count": 21,
-  "approved_count": 3,
+  "approved_count": 10,
   "held_count": 0,
   "deduplication": "Compared 1797 archive records. Excluded duplicate Kling4, Duda native email/SMS, Kantar LaunchSignals, Picsart, AWS Meta connector. Separate dated API retirement and Chat tab release from older model launches.",
   "items": [
     {
       "slug": "chat62",
-      "title": "ChatGPT Chat tab GPT-6.2 rollout",
+      "title": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
       "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "provisional_score": 93,
-      "state": "DISCOVERED",
-      "next_action": "AI platform incremental Chat availability; exclude Nov17 Work launch"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/chat62.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Chat版本新增模型接入而非重复Work发布。",
+        "source_locator": "L19,L41–42; L42; L42",
+        "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "event_change": "Chat分页推出GPT6.2 Sol版本",
+        "affected_workflow": "复杂资料比较与图片问答",
+        "specific_decision": "分开比较Chat与Work既有输出",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以酒店价格地点等多条件查询验证Chat变化，明确Work未变。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+      }
     },
     {
       "slug": "ship",
-      "title": "Claude Ship review fix approvals beta",
+      "title": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
       "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
       "provisional_score": 89,
-      "state": "DISCOVERED",
-      "next_action": "AI delivery workflow, beta limits"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/ship.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI代码修正及批准改变营销网站交付流程。",
+        "source_locator": "L33–38,L80; L44; L46–47; L80–83",
+        "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "event_change": "新增PR Steward及Claude Approvals beta",
+        "affected_workflow": "活动网页程式变更审查",
+        "specific_decision": "决定可自动批准的变更类型",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "限定测试站PR及observe-only审批，直接对应本次政策文件机制。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+      }
     },
     {
       "slug": "adplug",
-      "title": "AdPlug agency permissions and previews",
+      "title": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
       "source_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
       "provisional_score": 95,
-      "state": "DISCOVERED",
-      "next_action": "Agency PPC; find accessible same issuer release"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/adplug.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI广告操作新增代理商级逐人逐平台权限及修改预览。",
+        "source_locator": "Issuer release paragraphs P2–3; Issuer release paragraph P7; Issuer release paragraph P7; Issuer release paragraphs P12,P15",
+        "source_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+        "event_change": "由个人工具扩展至代理商团队",
+        "affected_workflow": "多客户广告报告和受控写入",
+        "specific_decision": "哪些成员可查看或修改哪一平台",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按每人每平台权限测试相同预算变更，直接对应此次代理商新机制。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+      }
     },
     {
       "slug": "loopyah",
-      "title": "Loopyah checkout-linked AI Ads Manager",
+      "title": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
       "source_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "APAC event marketing, remove ROI promises"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/loopyah.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI依据票务结账信号调整跨平台广告。",
+        "source_locator": "L179–180; L181; L180,L183–185",
+        "source_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+        "event_change": "推出票务平台AI AdsManager",
+        "affected_workflow": "售票活动跨渠道预算调整",
+        "specific_decision": "按自有结账销售决定平台预算",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "核对同活动三平台预算及售票日志，是特定票务机制。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+      }
     },
     {
       "slug": "zoom-monday",
-      "title": "ZoomInfo monday CRM integration",
+      "title": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
       "source_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
       "provisional_score": 88,
-      "state": "DISCOVERED",
-      "next_action": "B2B enrichment and audience workflow"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/zoom-monday.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "GTM.AI将CRM丰富资料与受众建构接合。",
+        "source_locator": "PDF L3–5; PDF L5; PDF L5",
+        "source_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+        "event_change": "新增mondayCRM连接",
+        "affected_workflow": "B2B潜客资料补全与受众建立",
+        "specific_decision": "哪些字段值得回写和用于受众",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以现有潜客字段缺漏为样本，对应双向CRMcontext流。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+      }
     },
     {
       "slug": "morning",
-      "title": "MorningAI Mailchimp and image variations",
+      "title": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
       "source_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
       "provisional_score": 95,
-      "state": "DISCOVERED",
-      "next_action": "Group same update into one full story"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/morning.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Mailchimp操作与AI素材变体的实质新工作流程。",
+        "source_locator": "L20–30; L25–30; L43–48",
+        "source_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+        "event_change": "新增Mailchimp连接及批次变体",
+        "affected_workflow": "邮件建案、审批及素材本地化",
+        "specific_decision": "以三行样本决定是否扩大量产",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "基于新表格100行和Try first3机制设计，不能替换到无批次工具的新闻。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+      }
     },
     {
       "slug": "dolphin",
@@ -139,11 +223,25 @@
     },
     {
       "slug": "efs",
-      "title": "Anthropic Enterprise Frontier Safeguards beta",
+      "title": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
       "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
       "provisional_score": 82,
-      "state": "DISCOVERED",
-      "next_action": "Reserve; data handling complex, inspect requirements"
+      "state": "APPROVED",
+      "next_action": "Ready for edition assembly",
+      "article_packet_path": "editorial/articles/2026-11-24/efs.json",
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI资料保留及安全个案审阅责任变化影响客户资料处理。",
+        "source_locator": "Release notes L35–38; Overview L75–79; Overview L79–81",
+        "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "event_change": "EFS合资格组织beta",
+        "affected_workflow": "营销助理API资料流与审阅责任",
+        "specific_decision": "区分Messages流量和Files等服务存储",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按公告明确排除的上传与执行功能绘制资料流，非泛化隐私建议。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+      }
     },
     {
       "slug": "hk-aleph",
