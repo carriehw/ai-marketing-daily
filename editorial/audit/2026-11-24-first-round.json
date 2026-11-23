@@ -173,5 +173,19 @@
       "reason": "Official Braze event recap403 in web and urllib; must read full POINTX mechanism and dates before case approval."
     }
   ],
-  "next_action": "Submit edition to main and trace actual CI/live receipt."
+  "next_action": "Submit edition to main and trace actual CI/live receipt.",
+  "publication": {
+    "first_source_commit": "c37d939da02605ea70458fb94b7f81e5ce34a7ff",
+    "first_run_id": 45286151017,
+    "first_failure": "Validate publication dates and story chronology:退役日前 treated as unanchored relative日前. Fixed to explicit2027年1月22日退役前; no fact change or validator change.",
+    "current_source_commit": "ca5457b34cee7370f946220f254d856d8ce2d252",
+    "current_run_id": 45286234160,
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286234160",
+    "next_action": "Trace run45286234160, fix only concrete failures; on success compare main receipt/data/evidence hashes and reread actual rendered locale and Newsletter content."
+  },
+  "local_checks": [
+    "10 approved article packets pass",
+    "edition_packet check passes",
+    "date chronology28 pass0 fail"
+  ]
 }

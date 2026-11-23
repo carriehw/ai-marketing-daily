@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-24",
-  "status": "EDITORIAL APPROVED",
+  "status": "CI IN PROGRESS",
   "main_sha_at_start": "bcd4a13acb03c76919b31570dfaf6b370e8ede19",
   "discovery_count": 21,
   "approved_count": 10,
@@ -344,6 +344,8 @@
       "next_action": "Reserve (60+): Reserve China/HK; trace original and marketing relevance"
     }
   ],
-  "next_action": "Submit edition to main and trace actual CI/live receipt.",
-  "rejected_count": 1
+  "next_action": "Trace run45286234160, fix only concrete failures; on success compare main receipt/data/evidence hashes and reread actual rendered locale and Newsletter content.",
+  "rejected_count": 1,
+  "source_commit": "ca5457b34cee7370f946220f254d856d8ce2d252",
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286234160"
 }
