@@ -178,17 +178,65 @@
     "first_source_commit": "c37d939da02605ea70458fb94b7f81e5ce34a7ff",
     "first_run_id": 45286151017,
     "first_failure": "Validate publication dates and story chronology:退役日前 treated as unanchored relative日前. Fixed to explicit2027年1月22日退役前; no fact change or validator change.",
-    "current_source_commit": "66f39c01ce5bfa12be2db9a32137fe1b653f428b",
-    "current_run_id": 45286484870,
-    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286484870",
-    "next_action": "Trace run45286484870; source-label English fix and date wording verified. Await live receipt then compare hashes/read all compiled locales.",
+    "current_source_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f",
+    "current_run_id": 45287313775,
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45287313775",
+    "next_action": "Trace recovery run45287313775 on fresh latest-main base. Compiled 30 article blocks and Newsletter semantically reviewed; await actual deployment and live receipt/hashes.",
     "second_failed_run_id": 45286234160,
-    "second_failure": "English team EDM: source labels carried Chinese parenthetical disclosure into shared English source field. Replaced source labels with English equivalents while preserving Chinese detail disclosures, without changing fact or validator."
+    "second_failure": "English team EDM: source labels carried Chinese parenthetical disclosure into shared English source field. Replaced source labels with English equivalents while preserving Chinese detail disclosures, without changing fact or validator.",
+    "third_attempt_first_job_failure": {
+      "run_id": 45286484870,
+      "job_id": 138084025849,
+      "step": "Deploy to GitHub Pages",
+      "reason": "Artifact lookup failed just after upload. REST artifact list confirms github-pages14872705694 exists and unexpired.",
+      "action": "Reran only failed job using rerun_workflow_job; success true."
+    },
+    "failed_job_rerun_result": {
+      "job_id": 138084798636,
+      "failure": "Expected-main SHA guard rejected stale original run checkout after original build committed a550a0c. Guard preserved.",
+      "recovery": {
+        "edition_date_hkt": "2026-11-24",
+        "requested_at_hkt": "2026-11-24T07:16:07+08:00",
+        "reason": "Recover approved edition deployment after transient Pages artifact lookup failure. Failed-job rerun stopped correctly at expected-main SHA check because the original successful build already committed generated artifacts. Rebuild/audit latest main without overwriting newer work.",
+        "approved_packet_path": "editorial/editions/2026-11-24.json",
+        "previous_workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286484870",
+        "previous_job_ids": [
+          138084025849,
+          138084798636
+        ],
+        "expected_main_at_request": "a550a0ce75545c5e5b73b6977b8840d626b71def"
+      },
+      "current_source_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f"
+    }
   },
   "local_checks": [
     "10 approved article packets pass",
     "edition_packet check passes",
     "date chronology28 pass0 fail"
   ],
-  "unresolved_held": 3
+  "unresolved_held": 3,
+  "post_build_semantic_review": {
+    "reviewed_at_hkt": "2026-11-24T07:13:20+08:00",
+    "reviewer": "same assistant",
+    "method": "Read all30 actual compiled article blocks from zh-hans, zh-hant and en on candidate main, plus complete generated English Newsletter text. Checked fact parity, rollout/beta limits, notices versus retired models, reproduced/paid release disclosure, and event-workflow-decision implications.",
+    "decision": "PASS",
+    "candidate_main": "a550a0ce75545c5e5b73b6977b8840d626b71def",
+    "actual_language_article_counts": {
+      "zh-hans": 10,
+      "zh-hant": 10,
+      "en": 10
+    },
+    "newsletter": {
+      "headline_count": 10,
+      "featured_count": 6,
+      "sent_by_this_run": false
+    },
+    "notes": [
+      "No invented ROI or user tests.",
+      "GoogleOct15 design and Nov23 observation distinguished.",
+      "Dolphin earlyaccess and futureadformat retained.",
+      "ShipSteward cannotapprove; EFS exclusions and unreadable sealeddata retained.",
+      "Traditional and Simplified deployment/library terminology remains understandable; source labels English to match shared renderer."
+    ]
+  }
 }
