@@ -1,0 +1,1708 @@
+{
+  "packet_version": "1.0",
+  "edition_date_hkt": "2026-11-24",
+  "status": "editorial_approved",
+  "data": {
+    "site_title": "AI・行銷情報",
+    "site_title_en": "AI Marketing Daily",
+    "site_tagline": "AI Marketing Intelligence · HK / CN",
+    "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+    "date": "2026-11-24",
+    "date_display": "2026年11月24日 · 星期二",
+    "date_display_en": "November 24, 2026 · Tuesday",
+    "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
+    "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
+    "thesis": "AI把行銷流程接起，批准、資料與推出階段仍須分清",
+    "thesis_en": "AI connects marketing workflows while approvals, data boundaries and rollout stages remain distinct",
+    "thesis_note": "代理商廣告、電郵與CRM新增連接方式；創意製作保留早期接入限制，模型遷移與資料保留按官方範圍處理。",
+    "thesis_note_en": "New agency, email and CRM connections meet early-access creative tools, model migration notices and scoped data controls.",
+    "sections": [
+      "AI 大模型 & 市場動態",
+      "廣告平台 & 行銷科技",
+      "創意生產工具",
+      "行業影響 & 品牌案例",
+      "即學技巧 & 玩法"
+    ],
+    "sections_en": [
+      "AI Models & Market Moves",
+      "Ad Platforms & MarTech",
+      "Creative Production Tools",
+      "Industry Impact & Brand Cases",
+      "Tips, Tactics & Tools"
+    ],
+    "items": [
+      {
+        "title": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
+        "title_en": "Loopyah launches AI ads management tied to ticket-checkout results",
+        "summary": "澳洲售票平台Loopyah公布AI Ads Manager，使用Claude及Amazon Bedrock管理Meta、Google及TikTok廣告。",
+        "summary_en": "Australian ticketing platform Loopyah announced an AI Ads Manager using Claude and Amazon Bedrock across Meta, Google and TikTok.",
+        "highlights": [
+          "主辦方連接廣告帳戶、設定預算，活動結束日須在3至30日後。",
+          "系統按平台結帳售票資料調整投放，並以文字記錄變更及原因。"
+        ],
+        "highlights_en": [
+          "Organizers connect ad accounts and set a budget with an end date 3 to 30 days away.",
+          "The system uses its checkout sales to adjust delivery and logs changes and reasons."
+        ],
+        "why": "售票團隊可用同一結帳訊號檢視跨渠道預算分配，決定是否讓系統把支出移向帶來售票的平台。",
+        "why_en": "Event teams can assess cross-channel allocation against one checkout signal before allowing budget to move between platforms.",
+        "next_step": "以一場活動列清售票目標、總預算及結束日，逐日比對售票記錄與系統變更日誌，再決定是否擴大接入渠道。",
+        "next_step_en": "Set ticket goals, budget and end date for one event, then reconcile daily sales with change logs before adding channels.",
+        "detail": "消息來自Loopyah發布的付費新聞稿，並非獨立投放測試。公司表示主辦方可暫停個別或全部活動，廣告費直接付予平台，Loopyah不另加廣告支出費用。系統以自有結帳資料作調整依據，與單靠各廣告平台回報的轉換不同。這項機制不等於已證明增量銷售或改善廣告回報，團隊應把變更記錄與實際售票逐筆對照。",
+        "detail_en": "This is a paid issuer release, not an independent campaign test. Loopyah says organizers can pause campaigns and pay platforms directly without an ad-spend markup. Its checkout signal differs from relying only on platform conversions. That mechanism does not prove incremental ticket sales or improved return; reconcile logs with actual transactions.",
+        "source": "Loopyah（付費新聞稿）",
+        "url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+        "time": "11月23日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "loopyah"
+      },
+      {
+        "title": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
+        "title_en": "MorningAI connects Mailchimp and adds table-based image variations",
+        "summary": "MorningAI於11月23日加入Mailchimp連接器，並讓Studio按表格批次製作既有圖像的變體。",
+        "summary_en": "MorningAI added a Mailchimp connector and a table workflow for making variations of an existing Studio image.",
+        "highlights": [
+          "Mailchimp修改前會顯示批准卡，涵蓋聯絡人、活動及發送排程。",
+          "圖像變體單次最多100行，可先生成前三行作檢查。"
+        ],
+        "highlights_en": [
+          "An approval card precedes Mailchimp changes, including contact, campaign and sending operations.",
+          "Image runs support up to 100 rows, with an option to try the first three."
+        ],
+        "why": "電郵營運與素材版本管理可接在同一工作流程，團隊可先用少量變體確認規格，再決定是否擴大整批製作。",
+        "why_en": "Email and creative operations can test a small set of variants before committing a complete campaign batch.",
+        "next_step": "把一份活動的城市、標題及產品圖片列成表格，先試三行；通過品牌核對後，再生成其餘版本並寄出測試電郵。",
+        "next_step_en": "Tabulate cities, headlines and product images for one campaign, try three rows, then review before generating the rest and sending a test email.",
+        "detail": "品牌管理員需先在DNA的連接器設定接入Mailchimp，同品牌成員才可在Agent選用。系統支援草擬或修改活動、執行寄送前檢查及安排發送；郵件成效亦會顯示在Performance。Studio可匯入CSV或為各行加入照片，讓每個版本的修改要求清楚對應。批准卡是操作控制，不能代替逐項檢查收件對象與素材。",
+        "detail_en": "A brand admin connects Mailchimp under DNA before members use it in the Agent. The connector supports campaign drafts, pre-send checks and scheduling, with email results in Performance. Studio accepts CSV tables and row-specific photos. Treat approval cards as an operational control and review recipients and assets separately.",
+        "source": "MorningAI",
+        "url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+        "time": "11月23日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "morning"
+      },
+      {
+        "title": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
+        "title_en": "AdPlug expands to agencies with per-platform permissions and change previews",
+        "summary": "AdPlug公布代理商版本，讓團隊透過Claude、ChatGPT等工具處理多客戶Google Ads及LinkedIn Ads報告與操作。",
+        "summary_en": "AdPlug announced an agency offering for reporting and operating multiple clients' Google Ads and LinkedIn Ads through tools including Claude and ChatGPT.",
+        "highlights": [
+          "擁有人可按成員及平台分別設定只讀或可編輯權限。",
+          "修改會列出活動、設定及新舊數值，由人確認後執行，並記錄操作者。"
+        ],
+        "highlights_en": [
+          "Owners set view-only or editing access separately for each member and platform.",
+          "Previews show campaigns, settings and old and new values; a person confirms changes and actions are logged."
+        ],
+        "why": "代理商可把跨客戶報告與寫入權限拆開，決定哪些同事只整理資料，哪些可批准預算或投放修改。",
+        "why_en": "Agencies can separate cross-client reporting from write access and decide who may authorize budget or delivery changes.",
+        "next_step": "為一個客戶設定一名只讀及一名可編輯成員，檢查同一筆預算建議的預覽、批准及操作記錄是否符合分工。",
+        "next_step_en": "Set up one viewer and one editor for a client, then check how a budget proposal appears in previews, confirmations and logs.",
+        "detail": "消息來自MarketersMEDIA發布的公司新聞稿，尚無獨立產品測試。Google Ads可經管理員帳戶接入其下客戶；LinkedIn報表可按職位、年資、公司及行業拆分。團隊亦可加入客戶目標、預算與品牌規則作背景。這些設計提供較具體的操作範圍，實際使用時仍需核對預覽的客戶、活動及修改數值。",
+        "detail_en": "This is a company release distributed by MarketersMEDIA, not an independent product test. Google Ads manager accounts connect underlying clients; LinkedIn reporting can break down roles, seniority, companies and industries. Client briefs can supply goals, budgets and brand rules. Review the client, campaign and values in each preview.",
+        "source": "AdPlug（MarketersMEDIA新聞稿）",
+        "url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+        "time": "11月23日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "adplug"
+      },
+      {
+        "title": "Dolphin AI Film Studio開放早期接入，先支援微短劇製作",
+        "title_en": "Dolphin AI Film Studio opens early access, starting with micro-dramas",
+        "summary": "EloElo Group在印度IFFI宣布Dolphin AI Film Studio，先以微短劇串連腳本、分鏡及影片製作。",
+        "summary_en": "EloElo Group announced Dolphin AI Film Studio at India's IFFI, initially supporting micro-drama production.",
+        "highlights": [
+          "World Lock旨在維持角色、場景及道具的跨鏡頭連續性，並容許局部重新生成。",
+          "目前需候補名單或邀請碼；廣告片及品牌內容格式仍在後續計劃。"
+        ],
+        "highlights_en": [
+          "World Lock is designed to preserve characters, locations and props across shots while allowing selective regeneration.",
+          "Access requires a waitlist or invite code; advertising and branded-content formats remain planned."
+        ],
+        "why": "連續敘事的創意團隊可先檢查局部修改能否維持前後鏡頭一致，再決定這種製作流程是否適合系列內容。",
+        "why_en": "Creative teams can test whether selective edits preserve shot continuity before considering the workflow for a content series.",
+        "next_step": "取得早期資格後，以同一角色及道具規劃三個相連鏡頭，修改其中一個元素，逐格記錄前後一致性。",
+        "next_step_en": "After obtaining access, plan three connected shots with one character and prop, change one element and inspect continuity frame by frame.",
+        "detail": "消息按公司公告轉載整理，尚無獨立製作成效驗證。平台聲稱可預先顯示生成成本，完成場景後可組合、下載及繼續剪輯。創意團隊可先把人物外觀、道具位置及場景設定寫成鏡頭檢查表，再比較局部重做所需的修訂。這次首先支援微短劇，不能把後續廣告格式的規劃寫成已全面可用。",
+        "detail_en": "This report follows a reproduced company announcement rather than an independent production test. The platform describes upfront generation-cost visibility and scene assembly, downloads and editing. Define character, prop and setting requirements before inspecting selective revisions. Micro-dramas are supported first; planned advertising formats are not generally available.",
+        "source": "EloElo Group（公告轉載）",
+        "url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+        "time": "11月23日",
+        "section": "創意生產工具",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "dolphin"
+      },
+      {
+        "title": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
+        "title_en": "ZoomInfo connects monday CRM enrichment with audience building",
+        "summary": "ZoomInfo宣布由GTM.AI支援的monday CRM整合，讓共同客戶在CRM流程內補全商業資料。",
+        "summary_en": "ZoomInfo announced a GTM.AI-powered monday CRM integration for enriching records within existing CRM workflows.",
+        "highlights": [
+          "團隊透過API Connector補全記錄，也可把CRM內容帶回ZoomInfo。",
+          "資料補全需要有效ZoomInfo帳戶；回傳內容可用於受眾建立及聊天。"
+        ],
+        "highlights_en": [
+          "API Connector supports record enrichment and brings CRM context back into ZoomInfo.",
+          "An active ZoomInfo account is required; returned context can support audiences and chat."
+        ],
+        "why": "B2B團隊可把資料缺漏檢查接到受眾建立之前，決定哪些公司及聯絡人欄位需要補全，避免只按殘缺記錄分組。",
+        "why_en": "B2B teams can decide which missing company and contact fields to enrich before building audiences from incomplete CRM records.",
+        "next_step": "抽取一組現有潛客，列出職位、公司及行業欄位缺漏，檢查補全結果如何改變受眾分組，再決定回寫規則。",
+        "next_step_en": "Sample existing leads, identify missing role, company and industry fields, and review how enrichment changes audience groups before defining write-back rules.",
+        "detail": "CRM是管理潛客、交易及客戶關係的系統；這次整合讓資料補全留在原有工作介面。GTM.AI是ZoomInfo連接資料及編排能力的後端層，可經API等介面提供服務。公告表示不同介面沿用存取控制及操作記錄。這些屬供應商描述，團隊仍需逐欄確認資料適用性，不能由接通整合推定名單品質已改善。",
+        "detail_en": "A CRM manages leads, deals and customer relationships. This integration keeps enrichment in that interface. GTM.AI is ZoomInfo's backend data and orchestration layer, exposed through interfaces including APIs. The company says access controls and audit logs apply across surfaces. Connectivity alone does not establish improved list quality.",
+        "source": "ZoomInfo",
+        "url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+        "time": "11月23日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "zoom-monday"
+      },
+      {
+        "title": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
+        "title_en": "GPT-6.2 starts rolling out in ChatGPT Chat; Work and Codex stay unchanged",
+        "summary": "OpenAI於11月23日宣布，為聊天頁調整的GPT-6.2版本開始向四類付費方案逐步推出。",
+        "summary_en": "OpenAI began rolling out a chat-tuned version of GPT-6.2 to four paid ChatGPT tiers on November 23.",
+        "highlights": [
+          "涵蓋Plus、Pro、Business及Enterprise；企業接入仍依管理員設定。",
+          "聊天頁採用GPT-6.2 Sol的調整版本，本次不更改Work或Codex模型。"
+        ],
+        "highlights_en": [
+          "The rollout covers Plus, Pro, Business and Enterprise, subject to enterprise admin settings.",
+          "Chat uses a version of GPT-6.2 Sol; this release does not change Work or Codex models."
+        ],
+        "why": "以Chat整理旅遊、產品或市場資料的團隊，可重新檢視多條件比較的輸出；Work既有流程的表現不應歸因於這次更新。",
+        "why_en": "Teams researching travel, products or markets in Chat can reassess multi-constraint comparisons without attributing Work results to this update.",
+        "next_step": "用同一份酒店價格、地點及客群要求，比對聊天頁的新回覆與既有範本，逐項檢查遺漏條件及來源。",
+        "next_step_en": "Compare Chat responses against an existing hotel brief with fixed price, location and audience requirements, checking omissions and sources.",
+        "detail": "OpenAI表示此版本改善複雜指令、網上資料搜尋及圖片理解，這些屬公司對模型能力的描述。公告列出的例子包括按價格及地點比較酒店，以及提出後續價格提醒。團隊可把這些任務拆成明確驗收條件，確認帳戶已收到更新後再比較結果；逐步推出並不代表每個帳戶同時可用。",
+        "detail_en": "OpenAI describes improvements in complex instructions, web research and image understanding. Its examples include hotel trade-offs and follow-up price reminders. These are company capability claims. Define acceptance criteria and confirm the account has received the rollout before comparing results; access is gradual.",
+        "source": "OpenAI",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "time": "11月23日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "chat62"
+      },
+      {
+        "title": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+        "title_en": "Claude Ship adds repair and approval agents with an observe-first option",
+        "summary": "Anthropic推出Claude Ship，結合程式碼審查，以及仍在測試的修復與批准代理，依團隊政策處理拉取請求。",
+        "summary_en": "Anthropic launched Claude Ship, combining code review with beta repair and approval agents governed by team policy.",
+        "highlights": [
+          "PR Steward可處理失敗檢查及合併衝突，本身不批准或合併變更。",
+          "Claude Approvals讀取儲存庫政策；官方建議先以僅觀察模式啟用。"
+        ],
+        "highlights_en": [
+          "PR Steward addresses failing checks and merge conflicts without approving or merging changes.",
+          "Claude Approvals reads repository policy; Anthropic recommends starting in observe-only mode."
+        ],
+        "why": "製作活動網站或行銷工具的團隊，可把修復與批准拆開管理，決定哪些例行變更交予代理、哪些仍由負責人簽核。",
+        "why_en": "Teams building campaign sites can separate repairs from approval and define which routine changes still need an accountable reviewer.",
+        "next_step": "在測試網站的儲存庫列出一類低影響變更，讓批准代理先記錄判斷，再與團隊實際決定逐筆比較。",
+        "next_step_en": "Define one low-impact change type in a test-site repository and compare observe-only approval decisions with the team's actual reviews.",
+        "detail": "服務適用於Claude Team及Enterprise的GitHub儲存庫。PR是提出程式變更供團隊審查的拉取請求，持續集成檢查則用來驗證建置及測試。Ship按用量計費，管理員可設定部分開支上限；使用零資料保留、HIPAA設定或客戶管理加密金鑰的組織不適用。自動批准仍須符合儲存庫規則，不能視為品質保證。",
+        "detail_en": "Ship supports GitHub repositories on Claude Team and Enterprise. A pull request proposes code changes, while CI checks build and test them. Usage is billed in tokens, with selected spending controls. Organizations using Zero Data Retention, HIPAA configuration or customer-managed encryption keys are excluded. Repository rules still govern approval.",
+        "source": "Anthropic",
+        "url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "time": "11月23日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "可即用",
+        "action_en": "Use Now",
+        "source_kind": "official",
+        "editorial_slug": "ship"
+      },
+      {
+        "title": "Claude Opus 4.5將於2027年1月22日從API退役",
+        "title_en": "Claude Opus 4.5 is scheduled to retire from the API on January 22, 2027",
+        "summary": "Anthropic在11月23日發出Opus 4.5棄用通知，建議Claude API用戶在退役日前遷移至Opus 5.5。",
+        "summary_en": "Anthropic issued an Opus 4.5 deprecation notice on November 23, recommending migration before its scheduled API retirement.",
+        "highlights": [
+          "日期版與無日期版Opus 4.5模型編號均包括在內，目前並非立即停用。",
+          "模型退役後請求會失敗；合作夥伴營運的平台可能採用不同時間表。"
+        ],
+        "highlights_en": [
+          "Both dated and undated Opus 4.5 IDs are covered; the notice is not an immediate shutdown.",
+          "Requests to retired models fail, while partner-operated platforms may follow different schedules."
+        ],
+        "why": "仍以Opus 4.5產出內容或分析報表的團隊，需要把模型遷移納入交付安排，避免既有自動流程在退役後中斷。",
+        "why_en": "Teams using Opus 4.5 for content or reporting need to schedule migration before existing automated deliveries stop working.",
+        "next_step": "請技術負責人列出兩個Opus 4.5編號的使用位置，按平台時間表安排替換，並用既有品牌格式及標準答案做回歸檢查。",
+        "next_step_en": "Locate both Opus 4.5 IDs, confirm the serving platform's schedule and test replacements against established brand formats and known answers.",
+        "detail": "棄用表示模型仍可運作，已不再建議作新部署；退役則代表無法繼續請求。官方模型表列明日期，並提供使用量匯出方法，協助按API金鑰及模型找出依賴。行銷團隊可把準時交付、欄位格式及既有內容規則列成遷移驗收項目，逐一比較替換結果，而非只確認新模型能回覆。",
+        "detail_en": "Deprecated models still function, whereas retired models cannot serve requests. Anthropic documents usage exports by API key and model to locate dependencies. Marketing teams can define delivery, field-format and content-rule checks for migration rather than treating a successful response from the replacement as sufficient.",
+        "source": "Anthropic",
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "time": "11月23日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "影響生意",
+        "action_en": "Business Impact",
+        "source_kind": "official",
+        "editorial_slug": "opus-retire"
+      },
+      {
+        "title": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+        "title_en": "Anthropic launches EFS beta with customer-owned safety-data storage",
+        "summary": "Anthropic宣布Enterprise Frontier Safeguards測試版，為合資格組織提供有指定範圍的零資料保留安排。",
+        "summary_en": "Anthropic announced an Enterprise Frontier Safeguards beta offering scoped Zero Data Retention for eligible organizations.",
+        "highlights": [
+          "客戶須提供自有儲存桶，接收供應商格式加密的安全資料，並由內部團隊審閱安全個案。",
+          "安排不涵蓋Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料。"
+        ],
+        "highlights_en": [
+          "Customers provide a bucket for sealed safety data and their own team reviews safety cases.",
+          "The arrangement excludes feature data such as Files uploads, code containers, Batch results and Managed Agents sessions."
+        ],
+        "why": "使用客戶資料的行銷助理，需分清一般API請求與檔案、執行環境的資料流，才能決定哪些工作適合接入這項安排。",
+        "why_en": "Marketing-assistant teams need to distinguish API traffic from file and execution storage before deciding which client-data workflows fit the arrangement.",
+        "next_step": "把一項客戶報告流程拆成訊息、上傳檔案及程式執行三部分，請技術負責人逐項確認保留範圍及內部安全個案負責人。",
+        "next_step_en": "Map a client-report workflow into messages, file uploads and code execution, then confirm retention coverage and an internal safety-case owner.",
+        "detail": "EFS仍屬測試版，須按與Anthropic的協議取得資格。文件表示安全資料雖放在客戶雲端帳戶，仍採封存加密格式，客戶不能直接閱讀；這與安全個案由內部審閱是兩項不同安排。Anthropic不另收EFS費用，雲端儲存費照常計算。團隊應逐個功能核對適用範圍，不能把零資料保留名稱解作所有工具均不存資料。",
+        "detail_en": "EFS remains a beta under an agreement with Anthropic. Sealed data in the customer's cloud bucket is not directly readable by that customer; internal safety-case review is a separate responsibility. Anthropic adds no EFS fee, while cloud-storage charges remain. The name does not mean every platform feature stores no data.",
+        "source": "Anthropic",
+        "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "time": "11月23日",
+        "section": "AI 大模型 & 市場動態",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "official",
+        "editorial_slug": "efs"
+      },
+      {
+        "title": "Google AI Mode現相關文章卡片，記者觀察Dive deeper逐步出現",
+        "title_en": "Reporters observe Dive deeper article cards appearing in Google AI Mode",
+        "summary": "Search Engine Roundtable於11月23日報道，記者已在AI Mode看見Google較早公布的Dive deeper文章連結。",
+        "summary_en": "Search Engine Roundtable reported on November 23 that reporters were seeing the previously announced Dive deeper links in AI Mode.",
+        "highlights": [
+          "部分答案末端出現藍色連結、縮圖及文章說明。",
+          "Google於10月15日公布設計；這次是介面出現的觀察，並非全球可用確認。"
+        ],
+        "highlights_en": [
+          "Some answer endings display blue links, thumbnails and article descriptions.",
+          "Google announced the design on October 15; this is an observed rollout rather than confirmation of universal access."
+        ],
+        "why": "品牌內容多了一種可能被AI答案帶出的位置，編輯團隊可分開觀察卡片是否出現，以及是否真正帶來網站回流。",
+        "why_en": "Brand editors can distinguish article-card visibility from actual referral traffic as another link surface appears beside AI answers.",
+        "next_step": "選三個與既有文章相關的查詢，記錄答案末端是否有卡片、所用縮圖及連結，再對照網站實際回流資料。",
+        "next_step_en": "Record end-of-answer cards, thumbnails and destinations for three relevant queries, then compare them with actual site referrals.",
+        "detail": "報道作者Barry Schwartz及搜尋顧問Glenn Gabe均描述看見相關介面，文章亦展示例圖。作者提醒需向下捲過較長的AI內容才到達這組連結。這與增加點擊是兩回事，現有資料未提供回流成效。團隊可記下查詢、日期及可見介面，與既有搜尋來源分開觀察，避免把偶爾出現的卡片當作穩定流量。",
+        "detail_en": "Barry Schwartz and search consultant Glenn Gabe describe seeing the interface, with examples in the report. Schwartz notes the section can sit below substantial AI-generated content. No referral uplift is established. Record queries, dates and visible layouts separately from existing search sources before treating the cards as a dependable channel.",
+        "source": "Search Engine Roundtable",
+        "url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+        "time": "11月23日",
+        "section": "廣告平台 & 行銷科技",
+        "region": "國際",
+        "action": "要留意",
+        "action_en": "Watch",
+        "source_kind": "reported",
+        "editorial_slug": "dive",
+        "verification_url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/"
+      }
+    ]
+  },
+  "evidence": {
+    "schema_version": "1.0",
+    "edition_date_hkt": "2026-11-24",
+    "coverage_floor": 10,
+    "coverage_target": 18,
+    "verified_at_hkt": "2026-11-24T07:08:00+08:00",
+    "status": "approved",
+    "editorial_owner": "Carrie Hui",
+    "release_status": "pending_live_validation",
+    "audit_status": "Ten complete articles: original issuer text or direct reporting read and separately reopened by same assistant. Per-story relevance and substitution tests PASS. Preserved approval and access controls, beta status, data-feature exclusions, observed rollout versus universal availability, and 2027 retirement date. No independent human review, legal certification, campaign test or measured outcomes claimed.",
+    "review_provenance": {
+      "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+      "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+      "separate_human_review": false,
+      "separate_subagent_review": false
+    },
+    "corrections": [],
+    "stories": [
+      {
+        "story_id": "2026-11-24-loopyah",
+        "title_zh": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
+        "source_story_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+        "published_article_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "publisher": "Loopyah（付費新聞稿）",
+            "evidence_locator": "L179–180 / L181 / L180,L183–185",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Loopyah宣布AI Ads Manager以Claude及Amazon Bedrock運作，管理Meta、Google及TikTok廣告。",
+            "evidence_locator": "Original source L179–180",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          },
+          {
+            "claim_zh": "建立活動時可連接一至三個廣告帳戶，設定預算及3至30日後的結束日。",
+            "evidence_locator": "Original source L181",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          },
+          {
+            "claim_zh": "系統按Loopyah結帳的售票結果調整，並記錄所讀結果、變更及原因。",
+            "evidence_locator": "Original source L180,L183–185",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Loopyah宣布AI Ads Manager以Claude及Amazon Bedrock運作，管理Meta、Google及TikTok廣告。",
+            "evidence_locator": "Original source L179–180",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          },
+          {
+            "claim_zh": "建立活動時可連接一至三個廣告帳戶，設定預算及3至30日後的結束日。",
+            "evidence_locator": "Original source L181",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          },
+          {
+            "claim_zh": "系統按Loopyah結帳的售票結果調整，並記錄所讀結果、變更及原因。",
+            "evidence_locator": "Original source L180,L183–185",
+            "support_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original issuer release turn566798724view4 L172–189; reopened turn766190189view0.",
+          "finding": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility."
+        },
+        "review_notes": "Paid issuer release, not independent campaign test. Based onClaude viaBedrock. Enddate3–30days, actualROI unverified, no promiseallmarkets or universalno-pixelcompatibility.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 19,
+          "market_relevance": 14,
+          "novelty": 9,
+          "total": 95
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI依据票务结账信号调整跨平台广告。",
+          "source_locator": "L179–180; L181; L180,L183–185",
+          "source_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+          "event_change": "推出票务平台AI AdsManager",
+          "affected_workflow": "售票活动跨渠道预算调整",
+          "specific_decision": "按自有结账销售决定平台预算",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "核对同活动三平台预算及售票日志，是特定票务机制。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-morning",
+        "title_zh": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
+        "source_story_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+        "published_article_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "publisher": "MorningAI",
+            "evidence_locator": "L20–30 / L25–30 / L43–48",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "MorningAI新增Mailchimp連接器，品牌管理員連接後同品牌成員可使用。",
+            "evidence_locator": "Original source L20–30",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          },
+          {
+            "claim_zh": "修改Mailchimp前會顯示批准卡，可建立、測試、發送及排程活動。",
+            "evidence_locator": "Original source L25–30",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          },
+          {
+            "claim_zh": "Studio按表格製作圖像變體，單次最多100行並可先試前三行。",
+            "evidence_locator": "Original source L43–48",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "MorningAI新增Mailchimp連接器，品牌管理員連接後同品牌成員可使用。",
+            "evidence_locator": "Original source L20–30",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          },
+          {
+            "claim_zh": "修改Mailchimp前會顯示批准卡，可建立、測試、發送及排程活動。",
+            "evidence_locator": "Original source L25–30",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          },
+          {
+            "claim_zh": "Studio按表格製作圖像變體，單次最多100行並可先試前三行。",
+            "evidence_locator": "Original source L43–48",
+            "support_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original turn732578454view4 L16–48; reopened turn348850331view4.",
+          "finding": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim."
+        },
+        "review_notes": "One grouped Nov23 release. Approval card precedes Mailchimp writes. Up to100 rows per image run, not100 automatically approved assets. No uplift or quality claim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 23,
+          "actionability": 20,
+          "market_relevance": 10,
+          "novelty": 10,
+          "total": 93
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "Mailchimp操作与AI素材变体的实质新工作流程。",
+          "source_locator": "L20–30; L25–30; L43–48",
+          "source_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+          "event_change": "新增Mailchimp连接及批次变体",
+          "affected_workflow": "邮件建案、审批及素材本地化",
+          "specific_decision": "以三行样本决定是否扩大量产",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "基于新表格100行和Try first3机制设计，不能替换到无批次工具的新闻。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-adplug",
+        "title_zh": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
+        "source_story_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+        "published_article_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "publisher": "AdPlug（MarketersMEDIA新聞稿）",
+            "evidence_locator": "Issuer release paragraphs P2–3 / Issuer release paragraph P7 / Issuer release paragraph P7 / Issuer release paragraphs P12,P15",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:02:06+08:00",
+            "access_method": "Original issuer release on Sina fetched twice with Python urllib; browser-search opens failed. Text inspected both times.",
+            "limitations": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "AdPlug於11月23日公布代理商版本，讓團隊從AI工具處理Google Ads及LinkedIn Ads。",
+            "evidence_locator": "Original source Issuer release paragraphs P2–3",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "團隊成員按平台分別設為只讀或可編輯。",
+            "evidence_locator": "Original source Issuer release paragraph P7",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "每項變更先顯示活動及新舊數值，由人確認後才執行並留下操作記錄。",
+            "evidence_locator": "Original source Issuer release paragraph P7",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "Google Ads管理員帳戶可一次連接其下客戶；LinkedIn報表可按職位、年資及公司拆分。",
+            "evidence_locator": "Original source Issuer release paragraphs P12,P15",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "AdPlug於11月23日公布代理商版本，讓團隊從AI工具處理Google Ads及LinkedIn Ads。",
+            "evidence_locator": "Original source Issuer release paragraphs P2–3",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "團隊成員按平台分別設為只讀或可編輯。",
+            "evidence_locator": "Original source Issuer release paragraph P7",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "每項變更先顯示活動及新舊數值，由人確認後才執行並留下操作記錄。",
+            "evidence_locator": "Original source Issuer release paragraph P7",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          },
+          {
+            "claim_zh": "Google Ads管理員帳戶可一次連接其下客戶；LinkedIn報表可按職位、年資及公司拆分。",
+            "evidence_locator": "Original source Issuer release paragraphs P12,P15",
+            "support_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:07:15+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:04:48+08:00",
+          "source_reopen_reference": "Sina MarketersMEDIA issuer release ReleaseID89210551, source-adplug-first.html then independently refetched source-adplug-second.html; bodyP2–3,P7,P9–19 read twice with urllib. Search opensFailedDisabledError; rawHTTP200 alone not treatedasverification: actual articlebody read.",
+          "finding": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch."
+        },
+        "review_notes": "Issuer press release, not independent producttest. P7previewandhumanconfirmation applieschanges. Omitsecurityguarantees, training/privacyclaims and founderbudget/efficiencystatistics. Agenciesofferingavailable, notnewClaude/ChatGPTAdslaunch.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 30,
+          "business_impact": 24,
+          "actionability": 20,
+          "market_relevance": 10,
+          "novelty": 9,
+          "total": 93
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI广告操作新增代理商级逐人逐平台权限及修改预览。",
+          "source_locator": "Issuer release paragraphs P2–3; Issuer release paragraph P7; Issuer release paragraph P7; Issuer release paragraphs P12,P15",
+          "source_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+          "event_change": "由个人工具扩展至代理商团队",
+          "affected_workflow": "多客户广告报告和受控写入",
+          "specific_decision": "哪些成员可查看或修改哪一平台",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "按每人每平台权限测试相同预算变更，直接对应此次代理商新机制。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-dolphin",
+        "title_zh": "Dolphin AI Film Studio開放早期接入，先支援微短劇製作",
+        "source_story_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+        "published_article_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "publisher": "EloElo Group（公告轉載）",
+            "evidence_locator": "L50–54 / L61–62 / L64–65 / L67",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "EloElo於11月23日宣布Dolphin AI Film Studio，把腳本至影片製作接在同一環境。",
+            "evidence_locator": "Original source L50–54",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "World Lock用來維持角色、場景及道具連續性，也可重新生成局部元素。",
+            "evidence_locator": "Original source L61–62",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "首批支援微短劇，廣告及品牌內容格式仍屬後續計劃。",
+            "evidence_locator": "Original source L64–65",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "目前屬早期接入，可加入候補名單或用邀請碼進入。",
+            "evidence_locator": "Original source L67",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "EloElo於11月23日宣布Dolphin AI Film Studio，把腳本至影片製作接在同一環境。",
+            "evidence_locator": "Original source L50–54",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "World Lock用來維持角色、場景及道具連續性，也可重新生成局部元素。",
+            "evidence_locator": "Original source L61–62",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "首批支援微短劇，廣告及品牌內容格式仍屬後續計劃。",
+            "evidence_locator": "Original source L64–65",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          },
+          {
+            "claim_zh": "目前屬早期接入，可加入候補名單或用邀請碼進入。",
+            "evidence_locator": "Original source L67",
+            "support_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:05:55+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Company announcement reproduced turn383590353view3 L53–70; reopened turn766190189view1 and turn126219687view0. Same event direct report turn383590353view2 L65–82.",
+          "finding": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim."
+        },
+        "review_notes": "Issuer announcement reproduced bytradepublication, not independent testing. Early access waitlist/invite. Microdramas first supported, advertising films/brandedcontent future roadmap. WorldLock consistency claimed not guaranteed; nocostgainclaim.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 21,
+          "actionability": 17,
+          "market_relevance": 14,
+          "novelty": 9,
+          "total": 89
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI多镜头生产及视觉连续性机制直接影响创意流程。",
+          "source_locator": "L50–54; L61–62; L64–65; L67",
+          "source_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+          "event_change": "推出FilmStudio早期接入",
+          "affected_workflow": "短剧镜头规划与局部修改",
+          "specific_decision": "先测试连续镜头，不假定广告片现已开放",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "以角色、道具跨镜头连续性作验收，对应WorldLock；排除泛化节省成本建议。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:05:55+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-24-zoom-monday",
+        "title_zh": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
+        "source_story_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+        "published_article_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "publisher": "ZoomInfo",
+            "evidence_locator": "PDF L3–5 / PDF L5 / PDF L5",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "ZoomInfo宣布monday CRM整合，可在CRM內補全記錄。",
+            "evidence_locator": "Original source PDF L3–5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          },
+          {
+            "claim_zh": "整合經API Connector運作，亦可把monday CRM內容帶回ZoomInfo作受眾建立及聊天。",
+            "evidence_locator": "Original source PDF L5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          },
+          {
+            "claim_zh": "ZoomInfo資料補全須有有效ZoomInfo帳戶。",
+            "evidence_locator": "Original source PDF L5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "ZoomInfo宣布monday CRM整合，可在CRM內補全記錄。",
+            "evidence_locator": "Original source PDF L3–5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          },
+          {
+            "claim_zh": "整合經API Connector運作，亦可把monday CRM內容帶回ZoomInfo作受眾建立及聊天。",
+            "evidence_locator": "Original source PDF L5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          },
+          {
+            "claim_zh": "ZoomInfo資料補全須有有效ZoomInfo帳戶。",
+            "evidence_locator": "Original source PDF L5",
+            "support_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original PDF turn752663272view3 L3–7; reopened turn348850331view5.",
+          "finding": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted."
+        },
+        "review_notes": "Mutual customers need activeZoomInfoaccount. APIConnector directflowsetup; no claim of automatically perfect data orconversiongain. Graphsizefigures omitted.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 22,
+          "actionability": 19,
+          "market_relevance": 9,
+          "novelty": 9,
+          "total": 88
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "GTM.AI将CRM丰富资料与受众建构接合。",
+          "source_locator": "PDF L3–5; PDF L5; PDF L5",
+          "source_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+          "event_change": "新增mondayCRM连接",
+          "affected_workflow": "B2B潜客资料补全与受众建立",
+          "specific_decision": "哪些字段值得回写和用于受众",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "以现有潜客字段缺漏为样本，对应双向CRMcontext流。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-chat62",
+        "title_zh": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
+        "source_story_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "published_article_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "publisher": "OpenAI",
+            "evidence_locator": "L19,L41–42 / L42 / L42",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "GPT-6.2的Chat版本開始向Plus、Pro、Business及Enterprise全球逐步推出。",
+            "evidence_locator": "Original source L19,L41–42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          },
+          {
+            "claim_zh": "Chat使用為日常對話調整的GPT-6.2 Sol版本。",
+            "evidence_locator": "Original source L42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          },
+          {
+            "claim_zh": "Enterprise取決於管理設定，本次不更改Work與Codex的模型。",
+            "evidence_locator": "Original source L42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "GPT-6.2的Chat版本開始向Plus、Pro、Business及Enterprise全球逐步推出。",
+            "evidence_locator": "Original source L19,L41–42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          },
+          {
+            "claim_zh": "Chat使用為日常對話調整的GPT-6.2 Sol版本。",
+            "evidence_locator": "Original source L42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          },
+          {
+            "claim_zh": "Enterprise取決於管理設定，本次不更改Work與Codex的模型。",
+            "evidence_locator": "Original source L42",
+            "support_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original turn107404965view0 L14–42; reopened turn348850331view3.",
+          "finding": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested."
+        },
+        "review_notes": "Global gradual rollout to Plus/Pro/Business/Enterprise Chat; Enterprise admin settings apply. Version ofSol; Work/Codex unchanged. Internal benchmark percentages omitted, not independently tested.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 22,
+          "actionability": 18,
+          "market_relevance": 10,
+          "novelty": 9,
+          "total": 87
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "Chat版本新增模型接入而非重复Work发布。",
+          "source_locator": "L19,L41–42; L42; L42",
+          "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "event_change": "Chat分页推出GPT6.2 Sol版本",
+          "affected_workflow": "复杂资料比较与图片问答",
+          "specific_decision": "分开比较Chat与Work既有输出",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "以酒店价格地点等多条件查询验证Chat变化，明确Work未变。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-ship",
+        "title_zh": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+        "source_story_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "published_article_url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "publisher": "Anthropic",
+            "evidence_locator": "L33–38,L80 / L44 / L46–47 / L80–83",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Claude Ship包含已正式提供的Code Review，以及測試版PR Steward與Claude Approvals。",
+            "evidence_locator": "Original source L33–38,L80",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "PR Steward處理失敗檢查與衝突，不負責批准或合併。",
+            "evidence_locator": "Original source L44",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "Claude Approvals依儲存庫政策決定批准，官方建議先用僅觀察模式。",
+            "evidence_locator": "Original source L46–47",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "Ship支援Team及Enterprise的GitHub儲存庫，ZDR、HIPAA或客戶管理金鑰組織不適用。",
+            "evidence_locator": "Original source L80–83",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Claude Ship包含已正式提供的Code Review，以及測試版PR Steward與Claude Approvals。",
+            "evidence_locator": "Original source L33–38,L80",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "PR Steward處理失敗檢查與衝突，不負責批准或合併。",
+            "evidence_locator": "Original source L44",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "Claude Approvals依儲存庫政策決定批准，官方建議先用僅觀察模式。",
+            "evidence_locator": "Original source L46–47",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          },
+          {
+            "claim_zh": "Ship支援Team及Enterprise的GitHub儲存庫，ZDR、HIPAA或客戶管理金鑰組織不適用。",
+            "evidence_locator": "Original source L80–83",
+            "support_url": "https://claude.com/resources/articles/introducing-claude-ship",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:03:53+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original turn566798724view0 L33–62,L78–86; reopened turn348850331view2.",
+          "finding": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases."
+        },
+        "review_notes": "Team/Enterprise GitHub; Code Review GA, PRSteward andApprovals beta. Steward does not approve/merge. Token costs and excludedZDR/HIPAA/CMEK preserved; no claims of automatic safe releases.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 23,
+          "actionability": 18,
+          "market_relevance": 9,
+          "novelty": 10,
+          "total": 87
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI代码修正及批准改变营销网站交付流程。",
+          "source_locator": "L33–38,L80; L44; L46–47; L80–83",
+          "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
+          "event_change": "新增PR Steward及Claude Approvals beta",
+          "affected_workflow": "活动网页程式变更审查",
+          "specific_decision": "决定可自动批准的变更类型",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "限定测试站PR及observe-only审批，直接对应本次政策文件机制。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:03:53+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-opus-retire",
+        "title_zh": "Claude Opus 4.5將於2027年1月22日從API退役",
+        "source_story_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "published_article_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "publisher": "Anthropic",
+            "evidence_locator": "Release L35–36 / Deprecations L132–140 / Deprecations L58–67,L136–143",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+            "publisher": "Anthropic",
+            "evidence_locator": "LifecycleL58–67; modeltableL116; Nov23 noticeL132–143",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+            "access_method": "Read official model schedule and notification; no independent performance test.",
+            "limitations": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Anthropic於11月23日公告Opus 4.5在Claude API的退役日為2027年1月22日。",
+            "evidence_locator": "Original source Release L35–36",
+            "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          },
+          {
+            "claim_zh": "通知涵蓋claude-opus-4-5-20251101及無日期的claude-opus-4-5。",
+            "evidence_locator": "Original source Deprecations L132–140",
+            "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          },
+          {
+            "claim_zh": "官方建議改用Opus 5.5，退役模型的請求會失敗；合作夥伴平台可有不同時間。",
+            "evidence_locator": "Original source Deprecations L58–67,L136–143",
+            "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Anthropic於11月23日公告Opus 4.5在Claude API的退役日為2027年1月22日。",
+            "evidence_locator": "Original source Release L35–36",
+            "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          },
+          {
+            "claim_zh": "通知涵蓋claude-opus-4-5-20251101及無日期的claude-opus-4-5。",
+            "evidence_locator": "Original source Deprecations L132–140",
+            "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          },
+          {
+            "claim_zh": "官方建議改用Opus 5.5，退役模型的請求會失敗；合作夥伴平台可有不同時間。",
+            "evidence_locator": "Original source Deprecations L58–67,L136–143",
+            "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:05:55+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original release turn752663272view1 L35–36; official deprecation table turn766190189view2 L116,L132–143 and lifecycleL58–67; release separately reopened turn849007113view1.",
+          "finding": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+        },
+        "review_notes": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 27,
+          "business_impact": 23,
+          "actionability": 19,
+          "market_relevance": 9,
+          "novelty": 9,
+          "total": 87
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "营销助理依赖模型的服务连续性更新。",
+          "source_locator": "Release L35–36; Deprecations L132–140; Deprecations L58–67,L136–143",
+          "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "event_change": "公告Opus4.5于2027年1月22日退役",
+          "affected_workflow": "既有内容/分析助理API迁移",
+          "specific_decision": "按模型ID清单安排替换回归",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "指定模型ID和退役日，以既有品牌格式输出测试迁移，非泛化升级建议。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:05:55+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Test"
+      },
+      {
+        "story_id": "2026-11-24-efs",
+        "title_zh": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+        "source_story_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "published_article_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+            "publisher": "Anthropic",
+            "evidence_locator": "Release notes L35–38 / Overview L75–79 / Overview L79–81",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "publisher": "Anthropic",
+            "evidence_locator": "Nov23 release L35–39",
+            "source_publication_date": "2026-11-23",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read dated original release and separately reopened.",
+            "limitations": "EFS beta for eligible organizations; feature exclusions remain."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Anthropic在11月23日推出Enterprise Frontier Safeguards測試版，適用於合資格組織。",
+            "evidence_locator": "Original source Release notes L35–38",
+            "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          },
+          {
+            "claim_zh": "EFS需客戶自有儲存桶，存放Anthropic格式加密的安全資料，客戶本身不能讀取該封存資料。",
+            "evidence_locator": "Original source Overview L75–79",
+            "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          },
+          {
+            "claim_zh": "安全個案改由客戶團隊審閱；Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料不在此保留範圍。",
+            "evidence_locator": "Original source Overview L79–81",
+            "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Anthropic在11月23日推出Enterprise Frontier Safeguards測試版，適用於合資格組織。",
+            "evidence_locator": "Original source Release notes L35–38",
+            "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          },
+          {
+            "claim_zh": "EFS需客戶自有儲存桶，存放Anthropic格式加密的安全資料，客戶本身不能讀取該封存資料。",
+            "evidence_locator": "Original source Overview L75–79",
+            "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          },
+          {
+            "claim_zh": "安全個案改由客戶團隊審閱；Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料不在此保留範圍。",
+            "evidence_locator": "Original source Overview L79–81",
+            "support_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+            "status": "attributed",
+            "second_pass_checked": true,
+            "caveat": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:07:15+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:07:15+08:00",
+          "source_reopen_reference": "Original overview turn732578454view6, fulltext read turn861894075view3 L75–86; reopened turn485592201view0. Nov23 release turn752663272view1 L37–39 separately reopened turn849007113view1.",
+          "finding": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release."
+        },
+        "review_notes": "Announcement and documentedscope only, no legal/privacycertification. Eligibleorganizations beta underagreement; ownbucketnecessary; sealeddata unreadablebycustomer; safetycases reviewedbycustomer. ZDRscopeexcludesFiles,codecontainers,Batchresults,ManagedAgentssessions; cloudstoragecharged. DatesourceNov23release.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 28,
+          "business_impact": 23,
+          "actionability": 17,
+          "market_relevance": 10,
+          "novelty": 9,
+          "total": 87
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI资料保留及安全个案审阅责任变化影响客户资料处理。",
+          "source_locator": "Release notes L35–38; Overview L75–79; Overview L79–81",
+          "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+          "event_change": "EFS合资格组织beta",
+          "affected_workflow": "营销助理API资料流与审阅责任",
+          "specific_decision": "区分Messages流量和Files等服务存储",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "按公告明确排除的上传与执行功能绘制资料流，非泛化隐私建议。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:07:15+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      },
+      {
+        "story_id": "2026-11-24-dive",
+        "title_zh": "Google AI Mode現相關文章卡片，記者觀察Dive deeper逐步出現",
+        "source_story_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+        "published_article_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+        "source_date_display": "11月23日",
+        "event_date": "2026-11-23",
+        "first_published_date": "2026-11-23",
+        "source_documents": [
+          {
+            "url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+            "publisher": "Search Engine Roundtable",
+            "evidence_locator": "Direct report L52,L67–79 / Direct report L61–69 / Google blog L216,L264–266",
+            "source_publication_date": "2026-11-23",
+            "source_class": "B",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+            "access_method": "Read original text and separately reopened source.",
+            "limitations": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          },
+          {
+            "url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/",
+            "publisher": "Google",
+            "evidence_locator": "Oct15 publicationL216; DiveDeeperL264–266",
+            "source_publication_date": "2026-10-15",
+            "source_class": "A",
+            "access_state": "accessible",
+            "accessed_at_hkt": "2026-11-24T07:04:48+08:00",
+            "access_method": "Read original October mechanics and separately reopened.",
+            "limitations": "Dated mechanism context, not new November announcement."
+          }
+        ],
+        "claims": [
+          {
+            "claim_zh": "Barry Schwartz於11月23日報道，他及Glenn Gabe看見AI Mode的Dive deeper連結。",
+            "evidence_locator": "Original source Direct report L52,L67–79",
+            "support_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          },
+          {
+            "claim_zh": "介面在部分AI答案末端加入藍色連結、縮圖及說明。",
+            "evidence_locator": "Original source Direct report L61–69",
+            "support_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          },
+          {
+            "claim_zh": "Google早於10月15日已公告答案末端的相關文章連結設計。",
+            "evidence_locator": "Original source Google blog L216,L264–266",
+            "support_url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          }
+        ],
+        "material_claims": [
+          {
+            "claim_zh": "Barry Schwartz於11月23日報道，他及Glenn Gabe看見AI Mode的Dive deeper連結。",
+            "evidence_locator": "Original source Direct report L52,L67–79",
+            "support_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          },
+          {
+            "claim_zh": "介面在部分AI答案末端加入藍色連結、縮圖及說明。",
+            "evidence_locator": "Original source Direct report L61–69",
+            "support_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          },
+          {
+            "claim_zh": "Google早於10月15日已公告答案末端的相關文章連結設計。",
+            "evidence_locator": "Original source Google blog L216,L264–266",
+            "support_url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/",
+            "status": "verified",
+            "second_pass_checked": true,
+            "caveat": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+          }
+        ],
+        "reviewed_by": "Codex same-assistant editorial desk",
+        "reviewed_at_hkt": "2026-11-24T07:05:55+08:00",
+        "independent_review": {
+          "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+          "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+          "source_reopen_reference": "Original direct observation turn861894075view0 L61–79, separately reopened turn849007113view2. Original GoogleOct15 mechanics read turn766190189view4 / reopened turn849007113view0 L264–266.",
+          "finding": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured."
+        },
+        "review_notes": "Observed rollout byreporter BarrySchwartz andGlennGabe, not universalavailability. OriginallyannouncedOct15. Same reporterSEL isnot independentcorroboration. Nov21 socialobservation, Nov23 article. Noclickliftmeasured.",
+        "editorial_decision": "approved",
+        "needs_human_review": false,
+        "editorial_relevance_score": {
+          "direct_marketing_relevance": 29,
+          "business_impact": 21,
+          "actionability": 17,
+          "market_relevance": 10,
+          "novelty": 9,
+          "total": 86
+        },
+        "relevance_review": {
+          "decision": "PASS",
+          "ai_connection": "AI答案的外连呈现新增可见入口。",
+          "source_locator": "Direct report L52,L67–79; Direct report L61–69; Google blog L216,L264–266",
+          "source_url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+          "event_change": "记者观察到DiveDeeper卡片",
+          "affected_workflow": "品牌编辑与搜索外连表现追踪",
+          "specific_decision": "区分新增卡片曝光与真实回流",
+          "substitution_test": "PASS",
+          "substitution_test_reason": "记录答案末端卡片、缩图和点击，不承诺排名和流量。",
+          "inference_label": "why and next_step are editorial implications, not measured performance.",
+          "reviewed_at_hkt": "2026-11-24T07:05:55+08:00"
+        },
+        "impact": "Medium",
+        "recommended_response": "Monitor"
+      }
+    ]
+  },
+  "localization_review": {
+    "edition_date": "2026-11-24",
+    "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+    "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+    "quality_policy": {
+      "mandatory_languages": [
+        "en",
+        "zh-Hant",
+        "zh-Hans"
+      ],
+      "no_added_factual_claims": true,
+      "keep_original_links_and_dates": true,
+      "do_not_erase_uncertainty": true,
+      "do_not_silently_translate_urls_or_identifiers": true,
+      "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+      "human_editorial_review": "No human approval claimed"
+    },
+    "items": [
+      {
+        "url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+        "title_zh_hant": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“售票、结账、预算、投放日志”。明确付费新闻稿，票务归因与平台数据区别不等于独立因果测量；不写ROAS提升。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+        "title_zh_hant": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“邮件营销、联系人、表格、图片变体”。保留修改前批准卡及单次最多100行，试做前三行；功能机制不等于成效。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+        "title_zh_hant": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“只读、可编辑、操作日志、客户经理账户”。按团队成员及平台分别授权，修改前确认；不把新闻稿的安全声明写成独立保证。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+        "title_zh_hant": "Dolphin AI Film Studio開放早期接入，先支援微短劇製作",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“分镜、角色连续性、候补名单、邀请码”。短剧是首批支持格式，广告及品牌内容仍属计划；不可称全面开放或已证明省钱。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+        "title_zh_hant": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“客户关系管理、潜客、字段补全、受众”。保留有效ZoomInfo账户条件，不把供应商资料称作独立确认准确。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title_zh_hant": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体使用“聊天页、逐步推出、企业管理员”。区分Chat与Work/Codex，保留付费资格，不把公司评测写成已实测。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://claude.com/resources/articles/introducing-claude-ship",
+        "title_zh_hant": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“拉取请求（PR）、持续集成检查、仅观察模式”。修复代理不等于批准代理；保留beta、GitHub、方案与数据设置限制。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "title_zh_hant": "Claude Opus 4.5將於2027年1月22日從API退役",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“弃用通知、退役、模型编号、回归检查”。弃用仍可用不等于已停服，保留2027年1月22日及不同托管平台时间差异。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+        "title_zh_hant": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“零数据保留、客户自有存储桶、加密安全数据、安全个案”。明确功能范围排除和内部审阅责任，不等同完全无副本或所有功能不存储。",
+        "decision": "approved_for_ai_assisted_localization"
+      },
+      {
+        "url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+        "title_zh_hant": "Google AI Mode現相關文章卡片，記者觀察Dive deeper逐步出現",
+        "review_scope": [
+          "title",
+          "summary",
+          "highlights",
+          "why",
+          "next_step",
+          "detail",
+          "source_dates",
+          "risk_qualifiers",
+          "ai_relevance",
+          "substitution_test"
+        ],
+        "simplified_editorial_note": "简体用“相关文章卡片、缩略图、回流点击”。保留记者观察和部分答案，不写全球正式上线或保证流量增加；10月15日为原公告，11月23日为观察报道。",
+        "decision": "approved_for_ai_assisted_localization"
+      }
+    ]
+  }
+}

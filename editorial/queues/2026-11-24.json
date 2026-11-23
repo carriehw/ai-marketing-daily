@@ -1,10 +1,10 @@
 {
   "edition_date_hkt": "2026-11-24",
-  "status": "VERIFYING",
+  "status": "EDITORIAL APPROVED",
   "main_sha_at_start": "bcd4a13acb03c76919b31570dfaf6b370e8ede19",
   "discovery_count": 21,
   "approved_count": 10,
-  "held_count": 0,
+  "held_count": 3,
   "deduplication": "Compared 1797 archive records. Excluded duplicate Kling4, Duda native email/SMS, Kantar LaunchSignals, Picsart, AWS Meta connector. Separate dated API retirement and Chat tab release from older model launches.",
   "items": [
     {
@@ -166,8 +166,15 @@
       "title": "Microsoft Search new customer acquisition",
       "source_url": "https://ppcnewsfeed.com/ppc-news/2026-11/microsoft-adds-new-customer-acquisition-search-campaigns/",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Measurement/bidding technical change, primary help linked"
+      "state": "HELD",
+      "next_action": "Direct Nov22 observation read/reopened. Linked officialhelp resolves homepage only and rawrequest403; original feature date and detailed requirements not independently confirmed. Need relevant official help or direct witness source.",
+      "relevance_review": {
+        "decision": "HELD",
+        "reason": "Direct Nov22 observation read/reopened. Linked officialhelp resolves homepage only and rawrequest403; original feature date and detailed requirements not independently confirmed. Need relevant official help or direct witness source.",
+        "source_url": "https://ppcnewsfeed.com/ppc-news/2026-11/microsoft-adds-new-customer-acquisition-search-campaigns/",
+        "source_locator": "Recorded source access failures",
+        "reviewed_at_hkt": "2026-11-24T07:08:00+08:00"
+      }
     },
     {
       "slug": "dive",
@@ -248,24 +255,45 @@
       "title": "Hong Kong advertisers eligible overseas ChatGPT audiences",
       "source_url": "https://marketech-apac.com/why-hong-kongs-chatgpt-ads-question-is-really-about-audience-not-availability/",
       "provisional_score": 90,
-      "state": "DISCOVERED",
-      "next_action": "Direct interview followup;403 original must resolve"
+      "state": "HELD",
+      "next_action": "Nov23 original direct interview403 in web and urllib. Nov19 issuer source turn818673961view0 supports outbound scope, but originalpartnership datesNov12/19 conflict and no verified freshNov23 increment available from accessible fulltext. Need original interview read.",
+      "relevance_review": {
+        "decision": "HELD",
+        "reason": "Nov23 original direct interview403 in web and urllib. Nov19 issuer source turn818673961view0 supports outbound scope, but originalpartnership datesNov12/19 conflict and no verified freshNov23 increment available from accessible fulltext. Need original interview read.",
+        "source_url": "https://marketech-apac.com/why-hong-kongs-chatgpt-ads-question-is-really-about-audience-not-availability/",
+        "source_locator": "Recorded source access failures",
+        "reviewed_at_hkt": "2026-11-24T07:08:00+08:00"
+      }
     },
     {
       "slug": "ascenda",
       "title": "CommBank Yello Ascenda stack disclosure",
       "source_url": "https://www.aap.com.au/aapreleases/cision20261122ae02494/",
       "provisional_score": 79,
-      "state": "DISCOVERED",
-      "next_action": "Reserve (60+): AI relevance needs substantive mechanism; August program not new rollout"
+      "state": "REJECTED",
+      "next_action": "Original issuer wire read turn732578454view2 L4–14: AI personalization named only; no substantive mechanism supporting a brand-case decision. August program is not a new Nov23 deployment.",
+      "relevance_review": {
+        "decision": "REJECTED",
+        "reason": "Original issuer wire read turn732578454view2 L4–14: AI personalization named only; no substantive mechanism supporting a brand-case decision. August program is not a new Nov23 deployment.",
+        "source_url": "https://www.aap.com.au/aapreleases/cision20261122ae02494/",
+        "source_locator": "Issuer wireL4–14",
+        "reviewed_at_hkt": "2026-11-24T07:08:00+08:00"
+      }
     },
     {
       "slug": "braze-pointx",
       "title": "Braze Bangkok POINT X AI recommendations case",
       "source_url": "https://www-origin.braze.com/resources/articles/key-insights-from-grow-with-braze-bangkok-2026",
       "provisional_score": 78,
-      "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Brand case source Nov23 eventNov3; access pending"
+      "state": "HELD",
+      "next_action": "Official Braze event recap403 in web and urllib; must read full POINTX mechanism and dates before case approval.",
+      "relevance_review": {
+        "decision": "HELD",
+        "reason": "Official Braze event recap403 in web and urllib; must read full POINTX mechanism and dates before case approval.",
+        "source_url": "https://www-origin.braze.com/resources/articles/key-insights-from-grow-with-braze-bangkok-2026",
+        "source_locator": "Recorded source access failures",
+        "reviewed_at_hkt": "2026-11-24T07:08:00+08:00"
+      }
     },
     {
       "slug": "gethookd",
@@ -316,5 +344,6 @@
       "next_action": "Reserve (60+): Reserve China/HK; trace original and marketing relevance"
     }
   ],
-  "next_action": "Close highest-value original source packets; publish after10 complete."
+  "next_action": "Submit edition to main and trace actual CI/live receipt.",
+  "rejected_count": 1
 }
