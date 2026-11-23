@@ -1,0 +1,12 @@
+{
+  "edition_date_hkt": "2026-11-24",
+  "requested_at_hkt": "2026-11-24T07:16:07+08:00",
+  "reason": "Recover approved edition deployment after transient Pages artifact lookup failure. Failed-job rerun stopped correctly at expected-main SHA check because the original successful build already committed generated artifacts. Rebuild/audit latest main without overwriting newer work.",
+  "approved_packet_path": "editorial/editions/2026-11-24.json",
+  "previous_workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45286484870",
+  "previous_job_ids": [
+    138084025849,
+    138084798636
+  ],
+  "expected_main_at_request": "a550a0ce75545c5e5b73b6977b8840d626b71def"
+}
