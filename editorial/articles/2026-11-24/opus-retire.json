@@ -1,0 +1,188 @@
+{
+  "edition_date_hkt": "2026-11-24",
+  "state": "APPROVED",
+  "article": {
+    "title": "Claude Opus 4.5將於2027年1月22日從API退役",
+    "title_en": "Claude Opus 4.5 is scheduled to retire from the API on January 22, 2027",
+    "summary": "Anthropic在11月23日發出Opus 4.5棄用通知，建議Claude API用戶在退役日前遷移至Opus 5.5。",
+    "summary_en": "Anthropic issued an Opus 4.5 deprecation notice on November 23, recommending migration before its scheduled API retirement.",
+    "highlights": [
+      "日期版與無日期版Opus 4.5模型編號均包括在內，目前並非立即停用。",
+      "模型退役後請求會失敗；合作夥伴營運的平台可能採用不同時間表。"
+    ],
+    "highlights_en": [
+      "Both dated and undated Opus 4.5 IDs are covered; the notice is not an immediate shutdown.",
+      "Requests to retired models fail, while partner-operated platforms may follow different schedules."
+    ],
+    "why": "仍以Opus 4.5產出內容或分析報表的團隊，需要把模型遷移納入交付安排，避免既有自動流程在退役後中斷。",
+    "why_en": "Teams using Opus 4.5 for content or reporting need to schedule migration before existing automated deliveries stop working.",
+    "next_step": "請技術負責人列出兩個Opus 4.5編號的使用位置，按平台時間表安排替換，並用既有品牌格式及標準答案做回歸檢查。",
+    "next_step_en": "Locate both Opus 4.5 IDs, confirm the serving platform's schedule and test replacements against established brand formats and known answers.",
+    "detail": "棄用表示模型仍可運作，已不再建議作新部署；退役則代表無法繼續請求。官方模型表列明日期，並提供使用量匯出方法，協助按API金鑰及模型找出依賴。行銷團隊可把準時交付、欄位格式及既有內容規則列成遷移驗收項目，逐一比較替換結果，而非只確認新模型能回覆。",
+    "detail_en": "Deprecated models still function, whereas retired models cannot serve requests. Anthropic documents usage exports by API key and model to locate dependencies. Marketing teams can define delivery, field-format and content-rule checks for migration rather than treating a successful response from the replacement as sufficient.",
+    "source": "Anthropic",
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "time": "11月23日",
+    "section": "AI 大模型 & 市場動態",
+    "region": "國際",
+    "action": "影響生意",
+    "action_en": "Business Impact",
+    "source_kind": "official",
+    "editorial_slug": "opus-retire"
+  },
+  "evidence": {
+    "story_id": "2026-11-24-opus-retire",
+    "title_zh": "Claude Opus 4.5將於2027年1月22日從API退役",
+    "source_story_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "published_article_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "source_date_display": "11月23日",
+    "event_date": "2026-11-23",
+    "first_published_date": "2026-11-23",
+    "source_documents": [
+      {
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "publisher": "Anthropic",
+        "evidence_locator": "Release L35–36 / Deprecations L132–140 / Deprecations L58–67,L136–143",
+        "source_publication_date": "2026-11-23",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-24T07:00:53+08:00",
+        "access_method": "Read original text and separately reopened source.",
+        "limitations": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      },
+      {
+        "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "publisher": "Anthropic",
+        "evidence_locator": "LifecycleL58–67; modeltableL116; Nov23 noticeL132–143",
+        "source_publication_date": "2026-11-23",
+        "source_class": "A",
+        "access_state": "accessible",
+        "accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+        "access_method": "Read official model schedule and notification; no independent performance test.",
+        "limitations": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      }
+    ],
+    "claims": [
+      {
+        "claim_zh": "Anthropic於11月23日公告Opus 4.5在Claude API的退役日為2027年1月22日。",
+        "evidence_locator": "Original source Release L35–36",
+        "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      },
+      {
+        "claim_zh": "通知涵蓋claude-opus-4-5-20251101及無日期的claude-opus-4-5。",
+        "evidence_locator": "Original source Deprecations L132–140",
+        "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      },
+      {
+        "claim_zh": "官方建議改用Opus 5.5，退役模型的請求會失敗；合作夥伴平台可有不同時間。",
+        "evidence_locator": "Original source Deprecations L58–67,L136–143",
+        "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      }
+    ],
+    "material_claims": [
+      {
+        "claim_zh": "Anthropic於11月23日公告Opus 4.5在Claude API的退役日為2027年1月22日。",
+        "evidence_locator": "Original source Release L35–36",
+        "support_url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      },
+      {
+        "claim_zh": "通知涵蓋claude-opus-4-5-20251101及無日期的claude-opus-4-5。",
+        "evidence_locator": "Original source Deprecations L132–140",
+        "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      },
+      {
+        "claim_zh": "官方建議改用Opus 5.5，退役模型的請求會失敗；合作夥伴平台可有不同時間。",
+        "evidence_locator": "Original source Deprecations L58–67,L136–143",
+        "support_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "status": "attributed",
+        "second_pass_checked": true,
+        "caveat": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+      }
+    ],
+    "reviewed_by": "Codex same-assistant editorial desk",
+    "reviewed_at_hkt": "2026-11-24T07:05:55+08:00",
+    "independent_review": {
+      "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+      "second_pass_accessed_at_hkt": "2026-11-24T07:01:37+08:00",
+      "source_reopen_reference": "Original release turn752663272view1 L35–36; official deprecation table turn766190189view2 L116,L132–143 and lifecycleL58–67; release separately reopened turn849007113view1.",
+      "finding": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration."
+    },
+    "review_notes": "Nov23 notice, retirementJan22 2027 not immediate shutdown. Bothdated/undatedOpus4.5IDs. ClaudeAPI schedule, partner-operatedBedrock/Googlemanagedplatform schedulesdiffer. Opus5.5recommended not automatic guaranteedmigration.",
+    "editorial_decision": "approved",
+    "needs_human_review": false,
+    "editorial_relevance_score": {
+      "direct_marketing_relevance": 27,
+      "business_impact": 23,
+      "actionability": 19,
+      "market_relevance": 9,
+      "novelty": 9,
+      "total": 87
+    },
+    "relevance_review": {
+      "decision": "PASS",
+      "ai_connection": "营销助理依赖模型的服务连续性更新。",
+      "source_locator": "Release L35–36; Deprecations L132–140; Deprecations L58–67,L136–143",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "event_change": "公告Opus4.5于2027年1月22日退役",
+      "affected_workflow": "既有内容/分析助理API迁移",
+      "specific_decision": "按模型ID清单安排替换回归",
+      "substitution_test": "PASS",
+      "substitution_test_reason": "指定模型ID和退役日，以既有品牌格式输出测试迁移，非泛化升级建议。",
+      "inference_label": "why and next_step are editorial implications, not measured performance.",
+      "reviewed_at_hkt": "2026-11-24T07:05:55+08:00"
+    },
+    "impact": "Medium",
+    "recommended_response": "Test"
+  },
+  "localization_review": {
+    "url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "title_zh_hant": "Claude Opus 4.5將於2027年1月22日從API退役",
+    "review_scope": [
+      "title",
+      "summary",
+      "highlights",
+      "why",
+      "next_step",
+      "detail",
+      "source_dates",
+      "risk_qualifiers",
+      "ai_relevance",
+      "substitution_test"
+    ],
+    "simplified_editorial_note": "简体用“弃用通知、退役、模型编号、回归检查”。弃用仍可用不等于已停服，保留2027年1月22日及不同托管平台时间差异。",
+    "decision": "approved_for_ai_assisted_localization"
+  },
+  "relevance_review": {
+    "decision": "PASS",
+    "ai_connection": "营销助理依赖模型的服务连续性更新。",
+    "source_locator": "Release L35–36; Deprecations L132–140; Deprecations L58–67,L136–143",
+    "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+    "event_change": "公告Opus4.5于2027年1月22日退役",
+    "affected_workflow": "既有内容/分析助理API迁移",
+    "specific_decision": "按模型ID清单安排替换回归",
+    "substitution_test": "PASS",
+    "substitution_test_reason": "指定模型ID和退役日，以既有品牌格式输出测试迁移，非泛化升级建议。",
+    "inference_label": "why and next_step are editorial implications, not measured performance.",
+    "reviewed_at_hkt": "2026-11-24T07:05:55+08:00"
+  },
+  "wording_review": {
+    "reviewed_at_hkt": "2026-11-24T07:05:55+08:00",
+    "method": "Edited Traditional Chinese and English for fact parity, dates, scope and natural wording; reviewed Simplified terminology and caveats. Final compiled locales to be reread.",
+    "decision": "PASS"
+  }
+}
