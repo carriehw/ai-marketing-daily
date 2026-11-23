@@ -1,328 +1,322 @@
 {
- "site_title": "AI・行銷情報",
- "site_title_en": "AI Marketing Daily",
- "site_tagline": "AI Marketing Intelligence · HK / CN",
- "site_url": "https://carriehw.github.io/ai-marketing-daily/",
- "date": "2026-11-23",
- "date_display": "2026年11月23日 · 星期一",
- "date_display_en": "November 23, 2026 · Monday",
- "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
- "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
- "thesis": "廣告操作接入AI，創意與協作各有明確邊界",
- "thesis_en": "Ad operations connect to AI while creative and collaboration retain specific limits",
- "thesis_note": "從廣告連接器、批准卡到模型權重與素材格式，按實際接入方式安排工作，保留邀請、帳戶及市場限制。",
- "thesis_note_en": "Use connectors, approval cards, weights and creative formats according to their documented access, preserving invitation, account and market limits.",
- "sections": [
-  "AI 大模型 & 市場動態",
-  "廣告平台 & 行銷科技",
-  "創意生產工具",
-  "行業影響 & 品牌案例",
-  "即學技巧 & 玩法"
- ],
- "sections_en": [
-  "AI Models & Market Moves",
-  "Ad Platforms & MarTech",
-  "Creative Production Tools",
-  "Industry Impact & Brand Cases",
-  "Tips, Tactics & Tools"
- ],
- "items": [
-  {
-   "title": "Kling Image 4.0加入多圖集及長版素材生成",
-   "title_en": "Kling Image 4.0 adds image sets and long-form visuals",
-   "summary": "Kling AI推出Image 4.0，在Creative Studio及API提供圖像生成，支援同一提示製作圖集與長版素材。",
-   "summary_en": "Kling AI introduced Image 4.0 in Creative Studio and the API, including coordinated sets and long-form image generation.",
-   "highlights": [
-    "單次提示可生成最多10張圖，並按同一創意方向安排各圖重點。",
-    "平台可直接修改生成圖內的文字及字體，適合逐步修訂版面。"
-   ],
-   "highlights_en": [
-    "One prompt can generate up to10 images organized around a creative direction.",
-    "Users can edit text and fonts within platform-generated images."
-   ],
-   "why": "商品展示可由逐張製作改為先規劃整組素材，創意團隊可決定哪些畫面共用主題，哪些需要獨立突出產品細節。",
-   "why_en": "Creative teams can plan a complete product set, deciding which frames share a theme and which emphasize separate details.",
-   "next_step": "以同一產品建立一組主視覺、功能圖及情境圖，逐張核對包裝、文字和色彩，再決定哪些圖需要重做。",
-   "next_step_en": "Create hero, feature and lifestyle images for one product and review packaging, copy and color in each.",
-   "detail": "官方11月18日文章亦列出原生8K輸出及長版商品頁圖像。這些是模型規格與功能描述，實際可讀性及產品細節仍需逐張覆查。團隊可先把每張圖的用途和必須保留的資訊列清楚，再比較圖集是否沿用一致的產品外觀與視覺方向，最後才安排不同版位的輸出。公告列明支援繁簡中文等七種語言。",
-   "detail_en": "The November 18 official article also lists native 8K and long product-page visuals. These are product specifications rather than verified output quality. Define every frame's purpose and required information, then compare product appearance and art direction before preparing placement variants. The company lists seven languages, including Traditional and Simplified Chinese.",
-   "source": "Kling AI",
-   "url": "https://kling.ai/blog/kling-image-4-stunningly-realistic-sharp-precise?tab=all",
-   "time": "11月18日",
-   "section": "創意生產工具",
-   "region": "中國",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "kling-image4"
-  },
-  {
-   "title": "AWS Quick接入Meta廣告，把活動與商業資料放進同一流程",
-   "title_en": "AWS Quick connects Meta ads with business data",
-   "summary": "AWS宣布Quick加入Meta ads AI連接器，讓團隊以自然語言建立、管理及分析廣告活動。",
-   "summary_en": "AWS added a Meta ads AI connector to Quick for natural-language campaign creation, management and analysis.",
-   "highlights": [
-    "廣告資料可與第一方及第三方資料組合成儀表板、文件及簡報。",
-    "連接時需選擇Quick可存取的專頁、企業及Instagram帳戶。"
-   ],
-   "highlights_en": [
-    "Meta ads data can be combined with first- and third-party sources in dashboards, documents and slides.",
-    "Connection setup selects the Pages, Businesses and Instagram accounts Quick may access."
-   ],
-   "why": "媒體團隊可把廣告表現與庫存、毛利等商業資料並列，決定哪些商品需要調整預算，再準備供人員審閱的變更。",
-   "why_en": "Media teams can compare performance with stock and margin before proposing budget shifts for review.",
-   "next_step": "先以一組商品活動與獲授權庫存表建立比較，要求只提出預算建議，再核對活動、商品及金額後決定是否修改。",
-   "next_step_en": "Compare one product campaign with authorized inventory data, request proposals only, then reconcile products, campaigns and amounts.",
-   "detail": "AWS的示例包含分析表現、整理商品目錄及準備活動計劃，部分動作要求先批准。MCP是讓AI助理連接外部工具的協定，實際可做哪些操作仍取決於帳戶授權。團隊可先限定一個商品系列，追查分析資料如何連到活動設定，確保建議使用的商品及商業指標有清楚對應。",
-   "detail_en": "AWS illustrates performance analysis, catalog work and campaign planning, with approval in selected workflows. MCP connects AI assistants with external tools; actions depend on account authorization. Trace one product line from business data to campaign settings before applying changes.",
-   "source": "AWS",
-   "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
-   "time": "11月21日",
-   "section": "廣告平台 & 行銷科技",
-   "region": "國際",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "aws-meta"
-  },
-  {
-   "title": "更進新聞：Bing AI Overviews廣告沿用現有活動",
-   "title_en": "Update: Bing AI Overview ads use existing campaigns",
-   "summary": "Microsoft宣布Bing AI Overviews可在答案旁顯示相關廣告，讓既有活動進入新的AI搜尋版位。",
-   "summary_en": "Microsoft announced ads beside Bing AI Overview answers, extending existing campaigns into an AI search placement.",
-   "highlights": [
-    "無須另建獨立活動，支援現有活動包括Performance Max及AI Max。",
-    "原文列明在中國以外市場提供，並非保證每次查詢都有廣告。"
-   ],
-   "highlights_en": [
-    "No separate campaign setup is required; existing routes include Performance Max and AI Max.",
-    "The stated scope covers markets outside China, without guaranteeing an ad on every query."
-   ],
-   "why": "搜尋需求可在AI整理的答案旁銜接商業訊息，媒體團隊可重新檢視現有素材是否能回應較完整的情境。",
-   "why_en": "Media teams can assess whether existing creative addresses the fuller situations described in AI answers.",
-   "next_step": "選一組旅遊住宿查詢，把AI答案可能涵蓋的行程需求與現有酒店廣告逐項對照，再確認可取得的投放報表。",
-   "next_step_en": "Compare a travel-itinerary context with current hotel ads and confirm the reporting available for delivery.",
-   "detail": "Microsoft以國家公園行程旁出現酒店廣告說明機制，廣告仍由既有活動承接。團隊可先列出產品在同一情境中的不同需求，核對素材和落地頁是否提供相應資訊，再向平台確認能觀察哪些版位及表現資料。這是廣告庫存與呈現方式的改變，不能由公告推定新增版位已改善銷售。",
-   "detail_en": "Microsoft illustrates hotel ads beside a national-park itinerary. Map the different needs in one product context to creative and destination information, then confirm observable placement data with the platform. An inventory change does not establish improved sales.",
-   "source": "Microsoft Advertising",
-   "url": "https://about.ads.microsoft.com/en/blog/post/november-2026/put-ai-to-work-engaging-customers-in-more-places-whats-new-in-microsoft-advertising-this-november",
-   "time": "11月19日",
-   "section": "廣告平台 & 行銷科技",
-   "region": "國際",
-   "action": "影響生意",
-   "action_en": "Business Impact",
-   "source_kind": "official",
-   "editorial_slug": "bing-overviews",
-   "followup": "11月21日版報道AI素材聲明；同一11月19日公告亦涵蓋Bing答案廣告。本篇補充較早的版位消息，早於前述期數。",
-   "followup_en": "Our November 21 issue covered AI creative declarations. The same November 19 announcement also covered Bing answer ads; this adds earlier placement information published before that issue."
-  },
-  {
-   "title": "HighLevel Ad Manager加入ChatGPT廣告建案與報表",
-   "title_en": "HighLevel adds ChatGPT campaign building and reporting",
-   "summary": "HighLevel讓廣告主在Ad Manager連接OpenAI Ads帳戶，建立及衡量ChatGPT廣告活動。",
-   "summary_en": "HighLevel lets advertisers connect an OpenAI Ads account to build and measure ChatGPT campaigns in Ad Manager.",
-   "highlights": [
-    "廣告組可加入描述適用對話的情境提示，素材使用標題、描述及方形圖片。",
-    "帳單及廣告審核仍由OpenAI處理；推出時使用Standard活動類型。"
-   ],
-   "highlights_en": [
-    "Ad groups use context hints, while creative combines a title, description and square image.",
-    "OpenAI retains billing and ad review; launch campaigns use the Standard type."
-   ],
-   "why": "代理商可把ChatGPT活動與既有渠道放在同一管理介面，決定哪些情境提示、素材及轉換事件需獨立準備。",
-   "why_en": "Agencies can decide which context hints, assets and conversion events need separate preparation within the shared management interface.",
-   "next_step": "用一項明確的產品查詢情境草擬廣告，對照情境提示、方形素材、落地頁及轉換事件，再進入平台審閱流程。",
-   "next_step_en": "Draft one product-query context and reconcile hints, square creative, destination and conversion events before review.",
-   "detail": "這是HighLevel的渠道整合，並非ChatGPT廣告首次推出。官方文件列出觸及、點擊及轉換三種目標，並提供裝置與位置等報表分段。自訂受眾需要至少25,000名匹配使用者，活動範本仍屬後續計劃。團隊可先由帳戶已有資格及實際支援的市場開始確認投放安排。",
-   "detail_en": "This is a HighLevel channel integration, not the original ChatGPT Ads launch. Objectives cover reach, clicks and conversions, with device and location reporting. Custom audiences need25,000 matched users and templates remain planned. Confirm account eligibility and supported markets first.",
-   "source": "HighLevel",
-   "url": "https://ideas.gohighlevel.com/changelog/launch-chatgpt-ads-by-openai-from-highlevel-ad-manager?fp_ref=crmpros",
-   "time": "11月20日",
-   "section": "廣告平台 & 行銷科技",
-   "region": "國際",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "highlevel-chatgpt"
-  },
-  {
-   "title": "AdMaven邀請制推出Mave，廣告變更須批准確認卡",
-   "title_en": "AdMaven rolls out invite-only Mave with approval cards",
-   "summary": "AdMaven在廣告主儀表板加入Mave，以對話處理pop廣告建案、帳戶分析及設定調整。",
-   "summary_en": "AdMaven added Mave to its advertiser dashboard for conversational pop-campaign creation, account analysis and settings changes.",
-   "highlights": [
-    "變動須由廣告主批准確認卡，卡片10分鐘後失效。",
-    "服務按帳戶邀請開放；API問答屬唯讀，不能據此修改活動。"
-   ],
-   "highlights_en": [
-    "Changes require an advertiser's confirmation card, which expires after10 minutes.",
-    "Access rolls out by invitation per account; API Q&A is read-only."
-   ],
-   "why": "媒體操作可從分析直接形成待批准變更，團隊可決定哪些批次暫停或預算調整適合用確認卡覆查。",
-   "why_en": "Media teams can assess which batch pauses or budget adjustments suit a reviewed confirmation card.",
-   "next_step": "取得邀請後，先以少量活動提出暫停建議，逐項對照活動名稱及擬改狀態，在確認卡有效期內決定是否執行。",
-   "next_step_en": "After receiving access, propose pauses for a small group and reconcile campaign names and states before the card expires.",
-   "detail": "官方表示可一次建立最多5個pop活動，或批次暫停、恢復最多20個活動。Pop是彈出式廣告格式，仍須經標準素材審核。Mave亦可按國家、裝置及流量來源拆解資料。團隊可先把唯讀查詢與實際寫入分開，確認卡片顯示的對象和設定完整，再擴大批次操作範圍。",
-   "detail_en": "The company lists creation of up to 5 pop campaigns and batch pause/resume for up to 20. Pop ads are pop-up formats and still undergo normal creative review. Keep read-only analysis separate from writes, and inspect the objects and settings on each card before scaling batch work.",
-   "source": "AdMaven",
-   "url": "https://www.prnewswire.com/apac/news-releases/ask-approve-done-admavens-ai-assistant-mave-lets-advertisers-manage-campaigns-by-chat-302942833.html",
-   "time": "11月18日",
-   "section": "廣告平台 & 行銷科技",
-   "region": "國際",
-   "action": "要留意",
-   "action_en": "Watch",
-   "source_kind": "official",
-   "editorial_slug": "mave"
-  },
-  {
-   "title": "Spaceback把社群素材轉成互動展示廣告",
-   "title_en": "Spaceback turns social assets into interactive display ads",
-   "summary": "Spaceback正式推出Interactive Display Units，讓品牌由既有社群內容製作測驗、投票及遊戲等展示廣告。",
-   "summary_en": "Spaceback made Interactive Display Units generally available for adapting social content into quizzes, polls and games.",
-   "highlights": [
-    "平台按品牌貼文、色彩及標誌建立選項，再由廣告主挑選。",
-    "素材以標準展示尺寸交付，可經DSP或Spaceback Deal ID投放。"
-   ],
-   "highlights_en": [
-    "The platform builds options from brand posts, colors and logos for advertiser selection.",
-    "Standard-size assets run through DSPs or a Spaceback Deal ID."
-   ],
-   "why": "社群內容可延伸至可互動的展示版位，創意營運團隊可決定哪些貼文適合改成測驗、揭示或遊戲流程。",
-   "why_en": "Creative operations can choose which social posts fit a quiz, reveal or playable display sequence.",
-   "next_step": "選一則有明確產品訊息的貼文，分別設計投票與揭示流程，核對互動完成後的訊息及落地頁是否一致。",
-   "next_step_en": "Turn one clear product post into poll and reveal concepts, checking the end message and destination.",
-   "detail": "DSP是讓買方採購程式化廣告的平台，Deal ID則用於辨識交易安排。新格式涵蓋測驗、投票、刮開揭示及遊戲等類型，品牌可按原素材選擇互動機制。團隊可先檢查訊息在不同尺寸及操作步驟中的呈現，再比較要保留哪些社群元素，安排小範圍的素材測試及媒體交付。",
-   "detail_en": "A DSP supports programmatic buying, while a Deal ID identifies a trading arrangement. Formats include quizzes, polls, scratch-to-reveal units and games. Inspect message presentation across sizes and interaction steps before choosing which social elements to retain for limited testing and delivery.",
-   "source": "Spaceback",
-   "url": "https://www.businesswire.com/news/home/20261118613216/en/Spaceback-Turns-Brands-Social-Posts-Into-Playable-Display-Ads-in-Minutes",
-   "time": "11月18日",
-   "section": "廣告平台 & 行銷科技",
-   "region": "國際",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "spaceback"
-  },
-  {
-   "title": "HeyGen Avatar 6按稿件語境生成動作，既有分身可升級",
-   "title_en": "HeyGen Avatar 6 follows script context, with existing-avatar upgrades",
-   "summary": "HeyGen推出Avatar 6，以語音及稿件內容引導分身的動作與表情，支援原生2K影片。",
-   "summary_en": "HeyGen launched Avatar 6 with audio- and script-led movement and expressions, including native 2K video.",
-   "highlights": [
-    "既有Personal Avatars可升級，無須重新錄製素材。",
-    "真人逼真影片保留在HeyGen平台，需明確同意及身份核實。"
-   ],
-   "highlights_en": [
-    "Existing Personal Avatars can upgrade without new recording.",
-    "Realistic real-person videos remain on HeyGen with identity verification and explicit consent."
-   ],
-   "why": "講者影片可把動作設計與稿件內容一起審閱，內容團隊可決定哪些語句需要更清楚的手勢或情緒提示。",
-   "why_en": "Content teams can review gestures alongside scripts and choose which lines need clearer motion or emotion cues.",
-   "next_step": "以一段產品示範稿標記指向、數量及語氣要求，比較分身動作是否對應句意，再修訂不合適的段落。",
-   "next_step_en": "Mark pointing, counting and tone requirements in one product script and compare movement with each line's meaning.",
-   "detail": "公司表示模型可參照個人素材的動作方式，並依說話語境調整表演。第三方平台的支援仍有範圍區分，不能把照片或虛擬分身接入等同所有真人影片都可外部生成。團隊可先以已取得同意的講者材料建立參考，逐段審閱口形、動作與產品陳述，再由品牌負責人決定哪些版本適合交付。",
-   "detail_en": "HeyGen describes reference-led personal motion and contextual performance. Third-party access has scope limits: photo or virtual avatars do not imply every real-person workflow is available externally. Use consented reference material and review lip sync, motion and product statements before the brand owner approves delivery.",
-   "source": "HeyGen",
-   "url": "https://www.prnewswire.com/news-releases/heygen-introduces-avatar-6-an-audio-driven-context-aware-ai-model-that-alleviates-repetitive-or-unnatural-motion-in-ai-generated-video-302942527.html",
-   "time": "11月17日",
-   "section": "創意生產工具",
-   "region": "國際",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "heygen-avatar6"
-  },
-  {
-   "title": "更進新聞：ChatGPT Space向Plus推出，分享仍需帳戶資格",
-   "title_en": "Update: ChatGPT Space rolls out to Plus with restricted sharing",
-   "summary": "OpenAI開始向全球18歲以上Plus使用者推出Space，將互動頁面與簡報協作擴至更多帳戶。",
-   "summary_en": "OpenAI began a global Space rollout to Plus users aged 18 and older, widening access to interactive pages and presentation collaboration.",
-   "highlights": [
-    "收件人需有瀏覽權限，並登入具Space資格的付費帳戶。",
-    "Free使用者不能開啟分享頁面，現階段沒有公開連結。"
-   ],
-   "highlights_en": [
-    "Recipients need viewing permission and a paid account with Space access.",
-    "Free users cannot open shared pages, and public links are unavailable."
-   ],
-   "why": "代理商可重新評估哪些客戶能在Space共同修改簡報，並按收件人的帳戶資格決定交付形式。",
-   "why_en": "Agencies can assess which clients can collaborate in Space and choose delivery formats around recipient access.",
-   "next_step": "在一份客戶簡報開始協作前，先確認雙方帳戶已有Space及頁面權限，再測試收件人能否開啟該頁。",
-   "next_step_en": "Confirm both accounts have Space and page permission, then test whether the recipient can open a shared client brief.",
-   "detail": "Space可建立互動頁面及簡報，也可按已連接工具的資料安排內容更新。這次的新進展是Plus資格擴展，並非首次推出整套功能。側欄的Space會取代Library作為檔案與頁面的入口；團隊可先選一份需要共同修改的材料，確認參與者資格後再安排後續更新。",
-   "detail_en": "Space supports interactive pages, slides and updates from connected tools. The incremental event is Plus access rather than the first launch of all features. Space replaces Library as the file and page entry point. Start with one collaborative brief after confirming participants' eligibility.",
-   "source": "OpenAI",
-   "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-   "time": "11月20日",
-   "section": "AI 大模型 & 市場動態",
-   "region": "國際",
-   "action": "要留意",
-   "action_en": "Watch",
-   "source_kind": "official",
-   "editorial_slug": "space-plus",
-   "followup": "9月30日版已報道Pages及Space投入使用；11月20日更新擴展Plus接入資格，原有分享限制仍需核對。",
-   "followup_en": "Our September 30 issue covered Pages and Space in production. The November 20 update expands Plus access, with sharing limits still applying.",
-   "verification_url": "https://help.openai.com/en/articles/20001549-getting-started-with-space-in-chatgpt"
-  },
-  {
-   "title": "更進新聞：騰訊發布Hy4權重，提供三種模型版本",
-   "title_en": "Update: Tencent publishes Hy4 weights in three variants",
-   "summary": "騰訊已發布Hy4完整模型權重，提供指令版、FP8版及預訓練base版，讓團隊評估自行部署。",
-   "summary_en": "Tencent published full Hy4 weights as instruction-tuned, FP8 and pretrained-base variants for deployment evaluation.",
-   "highlights": [
-    "模型卡列出文字、圖像及影片理解，以及約100萬token上下文。",
-    "採用Tencent Hy License，商業使用安排須按該授權條款核對。"
-   ],
-   "highlights_en": [
-    "The card lists text, image and video understanding with roughly one million context tokens.",
-    "Weights use the Tencent Hy License; commercial arrangements follow its terms."
-   ],
-   "why": "權重接入讓技術團隊多一種部署選擇，行銷資料應用可評估哪些跨檔分析值得在自有環境測試，再決定是否投入運算資源。",
-   "why_en": "Technical teams can assess which campaign-document tasks merit testing in their own environment before committing compute resources.",
-   "next_step": "先以一份已有標準答案的活動文件包列出文字、圖片及表格任務，請技術團隊評估容量、部署版本及授權條件。",
-   "next_step_en": "Define text, image and table tasks in a campaign document set with known answers, then assess capacity, variant and license requirements.",
-   "detail": "11月5日版報道時權重仍屬計劃，這次可核對的進展是模型檔案與官方部署資料已公開。Base版是預訓練模型，不能直接當作已調整好的聊天版本。團隊可先用指令版安排有限測試，分開估算運算、維護及資料處理要求，再比較自行部署與既有託管服務的適用工作。",
-   "detail_en": "Our November 5 issue described weights as planned. Checkpoint links and official deployment information are now public. The base checkpoint is pretrained rather than a chat-tuned version. Evaluate compute, maintenance and data-handling needs separately when comparing an instruction model with hosted access.",
-   "source": "Tencent Hy",
-   "url": "https://huggingface.co/tencent/Hy4",
-   "time": "11月20日",
-   "section": "AI 大模型 & 市場動態",
-   "region": "中國",
-   "action": "要留意",
-   "action_en": "Watch",
-   "source_kind": "official",
-   "editorial_slug": "hy4-weights",
-   "followup": "11月5日版報道Hy4託管推出及權重計劃；11月20日官方程式庫提供模型權重與部署資料。",
-   "followup_en": "Our November 5 issue covered hosted Hy4 and planned weights. The November 20 official repository supplies checkpoint links and deployment material."
-  },
-  {
-   "title": "Lumo Desktop加入連接器、排程與可重用工作指引",
-   "title_en": "Lumo Desktop adds connectors, schedules and reusable instructions",
-   "summary": "Proton推出Windows、macOS及Linux版Lumo Desktop，讓助理連接檔案與工具，並加入排程及技能。",
-   "summary_en": "Proton launched Lumo Desktop on Windows, macOS and Linux with app connections, schedules and Skills.",
-   "highlights": [
-    "動作可設為自動、需批准或封鎖；已連接工具預設在對話啟用。",
-    "排程有獨立權限，技能可保存寫作指引、範本及參考檔案。"
-   ],
-   "highlights_en": [
-    "Actions can be automatic, approval-based or blocked; connected tools are enabled in conversations by default.",
-    "Schedules have their own permissions, while Skills retain instructions, templates and reference files."
-   ],
-   "why": "內容營運可把資料來源、執行時間與寫作規則組成固定流程，團隊可決定哪些步驟自動整理，哪些交予人員批准。",
-   "why_en": "Content operations can define which steps of a recurring source-to-draft process run automatically and which require approval.",
-   "next_step": "先建立一份定期內容資料摘要，限定可讀取的資料夾，加入品牌寫作範本，並把任何對外動作設為需批准。",
-   "next_step_en": "Limit a recurring content digest to a specific folder, add a brand template and require approval for external actions.",
-   "detail": "連接器可存取本機工具、Proton Mail Bridge及支援的第三方服務，也可接自設MCP伺服器。技能會按對話需要套用，既有Custom Lumos將遷移成技能。團隊可先分開檢查來源存取和執行動作，再為一項固定摘要安排排程，確認每次產出的來源與格式符合工作要求。",
-   "detail_en": "Connectors support local tools, Proton Mail Bridge, selected third-party services and custom MCP servers. Relevant Skills apply in conversation, and Custom Lumos migrate to Skills. Review source access separately from actions, then inspect each digest's sources and format.",
-   "source": "Proton",
-   "url": "https://proton.me/blog/lumo-desktop-features",
-   "time": "11月17日",
-   "section": "AI 大模型 & 市場動態",
-   "region": "國際",
-   "action": "可即用",
-   "action_en": "Use Now",
-   "source_kind": "official",
-   "editorial_slug": "lumo-desktop"
-  }
- ]
+  "site_title": "AI・行銷情報",
+  "site_title_en": "AI Marketing Daily",
+  "site_tagline": "AI Marketing Intelligence · HK / CN",
+  "site_url": "https://carriehw.github.io/ai-marketing-daily/",
+  "date": "2026-11-24",
+  "date_display": "2026年11月24日 · 星期二",
+  "date_display_en": "November 24, 2026 · Tuesday",
+  "sources_note": "來源與日期逐篇列明。公司公告按原文歸因，開放範圍以可核對的資料為準。",
+  "sources_note_en": "Each story lists its source and date. Company announcements are attributed and availability follows the documented scope.",
+  "thesis": "AI把行銷流程接起，批准、資料與推出階段仍須分清",
+  "thesis_en": "AI connects marketing workflows while approvals, data boundaries and rollout stages remain distinct",
+  "thesis_note": "代理商廣告、電郵與CRM新增連接方式；創意製作保留早期接入限制，模型遷移與資料保留按官方範圍處理。",
+  "thesis_note_en": "New agency, email and CRM connections meet early-access creative tools, model migration notices and scoped data controls.",
+  "sections": [
+    "AI 大模型 & 市場動態",
+    "廣告平台 & 行銷科技",
+    "創意生產工具",
+    "行業影響 & 品牌案例",
+    "即學技巧 & 玩法"
+  ],
+  "sections_en": [
+    "AI Models & Market Moves",
+    "Ad Platforms & MarTech",
+    "Creative Production Tools",
+    "Industry Impact & Brand Cases",
+    "Tips, Tactics & Tools"
+  ],
+  "items": [
+    {
+      "title": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
+      "title_en": "Loopyah launches AI ads management tied to ticket-checkout results",
+      "summary": "澳洲售票平台Loopyah公布AI Ads Manager，使用Claude及Amazon Bedrock管理Meta、Google及TikTok廣告。",
+      "summary_en": "Australian ticketing platform Loopyah announced an AI Ads Manager using Claude and Amazon Bedrock across Meta, Google and TikTok.",
+      "highlights": [
+        "主辦方連接廣告帳戶、設定預算，活動結束日須在3至30日後。",
+        "系統按平台結帳售票資料調整投放，並以文字記錄變更及原因。"
+      ],
+      "highlights_en": [
+        "Organizers connect ad accounts and set a budget with an end date 3 to 30 days away.",
+        "The system uses its checkout sales to adjust delivery and logs changes and reasons."
+      ],
+      "why": "售票團隊可用同一結帳訊號檢視跨渠道預算分配，決定是否讓系統把支出移向帶來售票的平台。",
+      "why_en": "Event teams can assess cross-channel allocation against one checkout signal before allowing budget to move between platforms.",
+      "next_step": "以一場活動列清售票目標、總預算及結束日，逐日比對售票記錄與系統變更日誌，再決定是否擴大接入渠道。",
+      "next_step_en": "Set ticket goals, budget and end date for one event, then reconcile daily sales with change logs before adding channels.",
+      "detail": "消息來自Loopyah發布的付費新聞稿，並非獨立投放測試。公司表示主辦方可暫停個別或全部活動，廣告費直接付予平台，Loopyah不另加廣告支出費用。系統以自有結帳資料作調整依據，與單靠各廣告平台回報的轉換不同。這項機制不等於已證明增量銷售或改善廣告回報，團隊應把變更記錄與實際售票逐筆對照。",
+      "detail_en": "This is a paid issuer release, not an independent campaign test. Loopyah says organizers can pause campaigns and pay platforms directly without an ad-spend markup. Its checkout signal differs from relying only on platform conversions. That mechanism does not prove incremental ticket sales or improved return; reconcile logs with actual transactions.",
+      "source": "Loopyah (paid press release)",
+      "url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+      "time": "11月23日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "loopyah"
+    },
+    {
+      "title": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
+      "title_en": "MorningAI connects Mailchimp and adds table-based image variations",
+      "summary": "MorningAI於11月23日加入Mailchimp連接器，並讓Studio按表格批次製作既有圖像的變體。",
+      "summary_en": "MorningAI added a Mailchimp connector and a table workflow for making variations of an existing Studio image.",
+      "highlights": [
+        "Mailchimp修改前會顯示批准卡，涵蓋聯絡人、活動及發送排程。",
+        "圖像變體單次最多100行，可先生成前三行作檢查。"
+      ],
+      "highlights_en": [
+        "An approval card precedes Mailchimp changes, including contact, campaign and sending operations.",
+        "Image runs support up to 100 rows, with an option to try the first three."
+      ],
+      "why": "電郵營運與素材版本管理可接在同一工作流程，團隊可先用少量變體確認規格，再決定是否擴大整批製作。",
+      "why_en": "Email and creative operations can test a small set of variants before committing a complete campaign batch.",
+      "next_step": "把一份活動的城市、標題及產品圖片列成表格，先試三行；通過品牌核對後，再生成其餘版本並寄出測試電郵。",
+      "next_step_en": "Tabulate cities, headlines and product images for one campaign, try three rows, then review before generating the rest and sending a test email.",
+      "detail": "品牌管理員需先在DNA的連接器設定接入Mailchimp，同品牌成員才可在Agent選用。系統支援草擬或修改活動、執行寄送前檢查及安排發送；郵件成效亦會顯示在Performance。Studio可匯入CSV或為各行加入照片，讓每個版本的修改要求清楚對應。批准卡是操作控制，不能代替逐項檢查收件對象與素材。",
+      "detail_en": "A brand admin connects Mailchimp under DNA before members use it in the Agent. The connector supports campaign drafts, pre-send checks and scheduling, with email results in Performance. Studio accepts CSV tables and row-specific photos. Treat approval cards as an operational control and review recipients and assets separately.",
+      "source": "MorningAI",
+      "url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+      "time": "11月23日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "morning"
+    },
+    {
+      "title": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
+      "title_en": "AdPlug expands to agencies with per-platform permissions and change previews",
+      "summary": "AdPlug公布代理商版本，讓團隊透過Claude、ChatGPT等工具處理多客戶Google Ads及LinkedIn Ads報告與操作。",
+      "summary_en": "AdPlug announced an agency offering for reporting and operating multiple clients' Google Ads and LinkedIn Ads through tools including Claude and ChatGPT.",
+      "highlights": [
+        "擁有人可按成員及平台分別設定只讀或可編輯權限。",
+        "修改會列出活動、設定及新舊數值，由人確認後執行，並記錄操作者。"
+      ],
+      "highlights_en": [
+        "Owners set view-only or editing access separately for each member and platform.",
+        "Previews show campaigns, settings and old and new values; a person confirms changes and actions are logged."
+      ],
+      "why": "代理商可把跨客戶報告與寫入權限拆開，決定哪些同事只整理資料，哪些可批准預算或投放修改。",
+      "why_en": "Agencies can separate cross-client reporting from write access and decide who may authorize budget or delivery changes.",
+      "next_step": "為一個客戶設定一名只讀及一名可編輯成員，檢查同一筆預算建議的預覽、批准及操作記錄是否符合分工。",
+      "next_step_en": "Set up one viewer and one editor for a client, then check how a budget proposal appears in previews, confirmations and logs.",
+      "detail": "消息來自MarketersMEDIA發布的公司新聞稿，尚無獨立產品測試。Google Ads可經管理員帳戶接入其下客戶；LinkedIn報表可按職位、年資、公司及行業拆分。團隊亦可加入客戶目標、預算與品牌規則作背景。這些設計提供較具體的操作範圍，實際使用時仍需核對預覽的客戶、活動及修改數值。",
+      "detail_en": "This is a company release distributed by MarketersMEDIA, not an independent product test. Google Ads manager accounts connect underlying clients; LinkedIn reporting can break down roles, seniority, companies and industries. Client briefs can supply goals, budgets and brand rules. Review the client, campaign and values in each preview.",
+      "source": "AdPlug (MarketersMEDIA release)",
+      "url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+      "time": "11月23日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "adplug"
+    },
+    {
+      "title": "Dolphin AI Film Studio開放早期接入，先支援微短劇製作",
+      "title_en": "Dolphin AI Film Studio opens early access, starting with micro-dramas",
+      "summary": "EloElo Group在印度IFFI宣布Dolphin AI Film Studio，先以微短劇串連腳本、分鏡及影片製作。",
+      "summary_en": "EloElo Group announced Dolphin AI Film Studio at India's IFFI, initially supporting micro-drama production.",
+      "highlights": [
+        "World Lock旨在維持角色、場景及道具的跨鏡頭連續性，並容許局部重新生成。",
+        "目前需候補名單或邀請碼；廣告片及品牌內容格式仍在後續計劃。"
+      ],
+      "highlights_en": [
+        "World Lock is designed to preserve characters, locations and props across shots while allowing selective regeneration.",
+        "Access requires a waitlist or invite code; advertising and branded-content formats remain planned."
+      ],
+      "why": "連續敘事的創意團隊可先檢查局部修改能否維持前後鏡頭一致，再決定這種製作流程是否適合系列內容。",
+      "why_en": "Creative teams can test whether selective edits preserve shot continuity before considering the workflow for a content series.",
+      "next_step": "取得早期資格後，以同一角色及道具規劃三個相連鏡頭，修改其中一個元素，逐格記錄前後一致性。",
+      "next_step_en": "After obtaining access, plan three connected shots with one character and prop, change one element and inspect continuity frame by frame.",
+      "detail": "消息按公司公告轉載整理，尚無獨立製作成效驗證。平台聲稱可預先顯示生成成本，完成場景後可組合、下載及繼續剪輯。創意團隊可先把人物外觀、道具位置及場景設定寫成鏡頭檢查表，再比較局部重做所需的修訂。這次首先支援微短劇，不能把後續廣告格式的規劃寫成已全面可用。",
+      "detail_en": "This report follows a reproduced company announcement rather than an independent production test. The platform describes upfront generation-cost visibility and scene assembly, downloads and editing. Define character, prop and setting requirements before inspecting selective revisions. Micro-dramas are supported first; planned advertising formats are not generally available.",
+      "source": "EloElo Group (reproduced announcement)",
+      "url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+      "time": "11月23日",
+      "section": "創意生產工具",
+      "region": "國際",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "official",
+      "editorial_slug": "dolphin"
+    },
+    {
+      "title": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
+      "title_en": "ZoomInfo connects monday CRM enrichment with audience building",
+      "summary": "ZoomInfo宣布由GTM.AI支援的monday CRM整合，讓共同客戶在CRM流程內補全商業資料。",
+      "summary_en": "ZoomInfo announced a GTM.AI-powered monday CRM integration for enriching records within existing CRM workflows.",
+      "highlights": [
+        "團隊透過API Connector補全記錄，也可把CRM內容帶回ZoomInfo。",
+        "資料補全需要有效ZoomInfo帳戶；回傳內容可用於受眾建立及聊天。"
+      ],
+      "highlights_en": [
+        "API Connector supports record enrichment and brings CRM context back into ZoomInfo.",
+        "An active ZoomInfo account is required; returned context can support audiences and chat."
+      ],
+      "why": "B2B團隊可把資料缺漏檢查接到受眾建立之前，決定哪些公司及聯絡人欄位需要補全，避免只按殘缺記錄分組。",
+      "why_en": "B2B teams can decide which missing company and contact fields to enrich before building audiences from incomplete CRM records.",
+      "next_step": "抽取一組現有潛客，列出職位、公司及行業欄位缺漏，檢查補全結果如何改變受眾分組，再決定回寫規則。",
+      "next_step_en": "Sample existing leads, identify missing role, company and industry fields, and review how enrichment changes audience groups before defining write-back rules.",
+      "detail": "CRM是管理潛客、交易及客戶關係的系統；這次整合讓資料補全留在原有工作介面。GTM.AI是ZoomInfo連接資料及編排能力的後端層，可經API等介面提供服務。公告表示不同介面沿用存取控制及操作記錄。這些屬供應商描述，團隊仍需逐欄確認資料適用性，不能由接通整合推定名單品質已改善。",
+      "detail_en": "A CRM manages leads, deals and customer relationships. This integration keeps enrichment in that interface. GTM.AI is ZoomInfo's backend data and orchestration layer, exposed through interfaces including APIs. The company says access controls and audit logs apply across surfaces. Connectivity alone does not establish improved list quality.",
+      "source": "ZoomInfo",
+      "url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+      "time": "11月23日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "zoom-monday"
+    },
+    {
+      "title": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
+      "title_en": "GPT-6.2 starts rolling out in ChatGPT Chat; Work and Codex stay unchanged",
+      "summary": "OpenAI於11月23日宣布，為聊天頁調整的GPT-6.2版本開始向四類付費方案逐步推出。",
+      "summary_en": "OpenAI began rolling out a chat-tuned version of GPT-6.2 to four paid ChatGPT tiers on November 23.",
+      "highlights": [
+        "涵蓋Plus、Pro、Business及Enterprise；企業接入仍依管理員設定。",
+        "聊天頁採用GPT-6.2 Sol的調整版本，本次不更改Work或Codex模型。"
+      ],
+      "highlights_en": [
+        "The rollout covers Plus, Pro, Business and Enterprise, subject to enterprise admin settings.",
+        "Chat uses a version of GPT-6.2 Sol; this release does not change Work or Codex models."
+      ],
+      "why": "以Chat整理旅遊、產品或市場資料的團隊，可重新檢視多條件比較的輸出；Work既有流程的表現不應歸因於這次更新。",
+      "why_en": "Teams researching travel, products or markets in Chat can reassess multi-constraint comparisons without attributing Work results to this update.",
+      "next_step": "用同一份酒店價格、地點及客群要求，比對聊天頁的新回覆與既有範本，逐項檢查遺漏條件及來源。",
+      "next_step_en": "Compare Chat responses against an existing hotel brief with fixed price, location and audience requirements, checking omissions and sources.",
+      "detail": "OpenAI表示此版本改善複雜指令、網上資料搜尋及圖片理解，這些屬公司對模型能力的描述。公告列出的例子包括按價格及地點比較酒店，以及提出後續價格提醒。團隊可把這些任務拆成明確驗收條件，確認帳戶已收到更新後再比較結果；逐步推出並不代表每個帳戶同時可用。",
+      "detail_en": "OpenAI describes improvements in complex instructions, web research and image understanding. Its examples include hotel trade-offs and follow-up price reminders. These are company capability claims. Define acceptance criteria and confirm the account has received the rollout before comparing results; access is gradual.",
+      "source": "OpenAI",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "time": "11月23日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "chat62"
+    },
+    {
+      "title": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+      "title_en": "Claude Ship adds repair and approval agents with an observe-first option",
+      "summary": "Anthropic推出Claude Ship，結合程式碼審查，以及仍在測試的修復與批准代理，依團隊政策處理拉取請求。",
+      "summary_en": "Anthropic launched Claude Ship, combining code review with beta repair and approval agents governed by team policy.",
+      "highlights": [
+        "PR Steward可處理失敗檢查及合併衝突，本身不批准或合併變更。",
+        "Claude Approvals讀取儲存庫政策；官方建議先以僅觀察模式啟用。"
+      ],
+      "highlights_en": [
+        "PR Steward addresses failing checks and merge conflicts without approving or merging changes.",
+        "Claude Approvals reads repository policy; Anthropic recommends starting in observe-only mode."
+      ],
+      "why": "製作活動網站或行銷工具的團隊，可把修復與批准拆開管理，決定哪些例行變更交予代理、哪些仍由負責人簽核。",
+      "why_en": "Teams building campaign sites can separate repairs from approval and define which routine changes still need an accountable reviewer.",
+      "next_step": "在測試網站的儲存庫列出一類低影響變更，讓批准代理先記錄判斷，再與團隊實際決定逐筆比較。",
+      "next_step_en": "Define one low-impact change type in a test-site repository and compare observe-only approval decisions with the team's actual reviews.",
+      "detail": "服務適用於Claude Team及Enterprise的GitHub儲存庫。PR是提出程式變更供團隊審查的拉取請求，持續集成檢查則用來驗證建置及測試。Ship按用量計費，管理員可設定部分開支上限；使用零資料保留、HIPAA設定或客戶管理加密金鑰的組織不適用。自動批准仍須符合儲存庫規則，不能視為品質保證。",
+      "detail_en": "Ship supports GitHub repositories on Claude Team and Enterprise. A pull request proposes code changes, while CI checks build and test them. Usage is billed in tokens, with selected spending controls. Organizations using Zero Data Retention, HIPAA configuration or customer-managed encryption keys are excluded. Repository rules still govern approval.",
+      "source": "Anthropic",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "time": "11月23日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "可即用",
+      "action_en": "Use Now",
+      "source_kind": "official",
+      "editorial_slug": "ship"
+    },
+    {
+      "title": "Claude Opus 4.5將於2027年1月22日從API退役",
+      "title_en": "Claude Opus 4.5 is scheduled to retire from the API on January 22, 2027",
+      "summary": "Anthropic在11月23日發出Opus 4.5棄用通知，建議Claude API用戶在2027年1月22日退役前遷移至Opus 5.5。",
+      "summary_en": "Anthropic issued an Opus 4.5 deprecation notice on November 23, recommending migration before its scheduled API retirement.",
+      "highlights": [
+        "日期版與無日期版Opus 4.5模型編號均包括在內，目前並非立即停用。",
+        "模型退役後請求會失敗；合作夥伴營運的平台可能採用不同時間表。"
+      ],
+      "highlights_en": [
+        "Both dated and undated Opus 4.5 IDs are covered; the notice is not an immediate shutdown.",
+        "Requests to retired models fail, while partner-operated platforms may follow different schedules."
+      ],
+      "why": "仍以Opus 4.5產出內容或分析報表的團隊，需要把模型遷移納入交付安排，避免既有自動流程在退役後中斷。",
+      "why_en": "Teams using Opus 4.5 for content or reporting need to schedule migration before existing automated deliveries stop working.",
+      "next_step": "請技術負責人列出兩個Opus 4.5編號的使用位置，按平台時間表安排替換，並用既有品牌格式及標準答案做回歸檢查。",
+      "next_step_en": "Locate both Opus 4.5 IDs, confirm the serving platform's schedule and test replacements against established brand formats and known answers.",
+      "detail": "棄用表示模型仍可運作，已不再建議作新部署；退役則代表無法繼續請求。官方模型表列明日期，並提供使用量匯出方法，協助按API金鑰及模型找出依賴。行銷團隊可把準時交付、欄位格式及既有內容規則列成遷移驗收項目，逐一比較替換結果，而非只確認新模型能回覆。",
+      "detail_en": "Deprecated models still function, whereas retired models cannot serve requests. Anthropic documents usage exports by API key and model to locate dependencies. Marketing teams can define delivery, field-format and content-rule checks for migration rather than treating a successful response from the replacement as sufficient.",
+      "source": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "time": "11月23日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "影響生意",
+      "action_en": "Business Impact",
+      "source_kind": "official",
+      "editorial_slug": "opus-retire"
+    },
+    {
+      "title": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+      "title_en": "Anthropic launches EFS beta with customer-owned safety-data storage",
+      "summary": "Anthropic宣布Enterprise Frontier Safeguards測試版，為合資格組織提供有指定範圍的零資料保留安排。",
+      "summary_en": "Anthropic announced an Enterprise Frontier Safeguards beta offering scoped Zero Data Retention for eligible organizations.",
+      "highlights": [
+        "客戶須提供自有儲存桶，接收供應商格式加密的安全資料，並由內部團隊審閱安全個案。",
+        "安排不涵蓋Files上傳、程式執行容器、Batch結果及Managed Agents等功能資料。"
+      ],
+      "highlights_en": [
+        "Customers provide a bucket for sealed safety data and their own team reviews safety cases.",
+        "The arrangement excludes feature data such as Files uploads, code containers, Batch results and Managed Agents sessions."
+      ],
+      "why": "使用客戶資料的行銷助理，需分清一般API請求與檔案、執行環境的資料流，才能決定哪些工作適合接入這項安排。",
+      "why_en": "Marketing-assistant teams need to distinguish API traffic from file and execution storage before deciding which client-data workflows fit the arrangement.",
+      "next_step": "把一項客戶報告流程拆成訊息、上傳檔案及程式執行三部分，請技術負責人逐項確認保留範圍及內部安全個案負責人。",
+      "next_step_en": "Map a client-report workflow into messages, file uploads and code execution, then confirm retention coverage and an internal safety-case owner.",
+      "detail": "EFS仍屬測試版，須按與Anthropic的協議取得資格。文件表示安全資料雖放在客戶雲端帳戶，仍採封存加密格式，客戶不能直接閱讀；這與安全個案由內部審閱是兩項不同安排。Anthropic不另收EFS費用，雲端儲存費照常計算。團隊應逐個功能核對適用範圍，不能把零資料保留名稱解作所有工具均不存資料。",
+      "detail_en": "EFS remains a beta under an agreement with Anthropic. Sealed data in the customer's cloud bucket is not directly readable by that customer; internal safety-case review is a separate responsibility. Anthropic adds no EFS fee, while cloud-storage charges remain. The name does not mean every platform feature stores no data.",
+      "source": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+      "time": "11月23日",
+      "section": "AI 大模型 & 市場動態",
+      "region": "國際",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "official",
+      "editorial_slug": "efs"
+    },
+    {
+      "title": "Google AI Mode現相關文章卡片，記者觀察Dive deeper逐步出現",
+      "title_en": "Reporters observe Dive deeper article cards appearing in Google AI Mode",
+      "summary": "Search Engine Roundtable於11月23日報道，記者已在AI Mode看見Google較早公布的Dive deeper文章連結。",
+      "summary_en": "Search Engine Roundtable reported on November 23 that reporters were seeing the previously announced Dive deeper links in AI Mode.",
+      "highlights": [
+        "部分答案末端出現藍色連結、縮圖及文章說明。",
+        "Google於10月15日公布設計；這次是介面出現的觀察，並非全球可用確認。"
+      ],
+      "highlights_en": [
+        "Some answer endings display blue links, thumbnails and article descriptions.",
+        "Google announced the design on October 15; this is an observed rollout rather than confirmation of universal access."
+      ],
+      "why": "品牌內容多了一種可能被AI答案帶出的位置，編輯團隊可分開觀察卡片是否出現，以及是否真正帶來網站回流。",
+      "why_en": "Brand editors can distinguish article-card visibility from actual referral traffic as another link surface appears beside AI answers.",
+      "next_step": "選三個與既有文章相關的查詢，記錄答案末端是否有卡片、所用縮圖及連結，再對照網站實際回流資料。",
+      "next_step_en": "Record end-of-answer cards, thumbnails and destinations for three relevant queries, then compare them with actual site referrals.",
+      "detail": "報道作者Barry Schwartz及搜尋顧問Glenn Gabe均描述看見相關介面，文章亦展示例圖。作者提醒需向下捲過較長的AI內容才到達這組連結。這與增加點擊是兩回事，現有資料未提供回流成效。團隊可記下查詢、日期及可見介面，與既有搜尋來源分開觀察，避免把偶爾出現的卡片當作穩定流量。",
+      "detail_en": "Barry Schwartz and search consultant Glenn Gabe describe seeing the interface, with examples in the report. Schwartz notes the section can sit below substantial AI-generated content. No referral uplift is established. Record queries, dates and visible layouts separately from existing search sources before treating the cards as a dependable channel.",
+      "source": "Search Engine Roundtable",
+      "url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+      "time": "11月23日",
+      "section": "廣告平台 & 行銷科技",
+      "region": "國際",
+      "action": "要留意",
+      "action_en": "Watch",
+      "source_kind": "reported",
+      "editorial_slug": "dive",
+      "verification_url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/"
+    }
+  ]
 }

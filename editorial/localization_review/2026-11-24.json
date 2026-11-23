@@ -1,0 +1,200 @@
+{
+  "edition_date": "2026-11-24",
+  "scope": "AI-assisted Simplified Chinese editorial localization review, not independent human proofreading or product testing",
+  "method": "Per-story Chinese/English fact and caveat parity reviewed; existing OpenCC and marketing glossary build produces Simplified Chinese, with per-story lexical and risk review notes. No independent human proofreader.",
+  "quality_policy": {
+    "mandatory_languages": [
+      "en",
+      "zh-Hant",
+      "zh-Hans"
+    ],
+    "no_added_factual_claims": true,
+    "keep_original_links_and_dates": true,
+    "do_not_erase_uncertainty": true,
+    "do_not_silently_translate_urls_or_identifiers": true,
+    "legacy_archives": "Original historic snapshots, not retrospectively re-factchecked",
+    "human_editorial_review": "No human approval claimed"
+  },
+  "items": [
+    {
+      "url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
+      "title_zh_hant": "Loopyah推出AI廣告管理，以售票結帳資料調整跨平台預算",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“售票、结账、预算、投放日志”。明确付费新闻稿，票务归因与平台数据区别不等于独立因果测量；不写ROAS提升。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.morningai.com/blog/november-23-2026-product-updates",
+      "title_zh_hant": "MorningAI接入Mailchimp，圖像變體可先試三行再批次生成",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“邮件营销、联系人、表格、图片变体”。保留修改前批准卡及单次最多100行，试做前三行；功能机制不等于成效。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
+      "title_zh_hant": "AdPlug擴展代理商版本，AI廣告修改須預覽並由人確認",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“只读、可编辑、操作日志、客户经理账户”。按团队成员及平台分别授权，修改前确认；不把新闻稿的安全声明写成独立保证。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
+      "title_zh_hant": "Dolphin AI Film Studio開放早期接入，先支援微短劇製作",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“分镜、角色连续性、候补名单、邀请码”。短剧是首批支持格式，广告及品牌内容仍属计划；不可称全面开放或已证明省钱。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
+      "title_zh_hant": "ZoomInfo接入monday CRM，潛客資料可直接補全並用於受眾建立",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“客户关系管理、潜客、字段补全、受众”。保留有效ZoomInfo账户条件，不把供应商资料称作独立确认准确。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "title_zh_hant": "ChatGPT聊天頁開始推出GPT-6.2，Work與Codex模型維持原樣",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体使用“聊天页、逐步推出、企业管理员”。区分Chat与Work/Codex，保留付费资格，不把公司评测写成已实测。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "title_zh_hant": "Claude Ship加入修復與批准代理，團隊可先用僅觀察模式",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“拉取请求（PR）、持续集成检查、仅观察模式”。修复代理不等于批准代理；保留beta、GitHub、方案与数据设置限制。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title_zh_hant": "Claude Opus 4.5將於2027年1月22日從API退役",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“弃用通知、退役、模型编号、回归检查”。弃用仍可用不等于已停服，保留2027年1月22日及不同托管平台时间差异。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
+      "title_zh_hant": "Anthropic試推EFS，零資料保留安排須配合客戶自有儲存",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“零数据保留、客户自有存储桶、加密安全数据、安全个案”。明确功能范围排除和内部审阅责任，不等同完全无副本或所有功能不存储。",
+      "decision": "approved_for_ai_assisted_localization"
+    },
+    {
+      "url": "https://www.seroundtable.com/google-ai-mode-dive-deeper-feature-live-42589.html",
+      "title_zh_hant": "Google AI Mode現相關文章卡片，記者觀察Dive deeper逐步出現",
+      "review_scope": [
+        "title",
+        "summary",
+        "highlights",
+        "why",
+        "next_step",
+        "detail",
+        "source_dates",
+        "risk_qualifiers",
+        "ai_relevance",
+        "substitution_test"
+      ],
+      "simplified_editorial_note": "简体用“相关文章卡片、缩略图、回流点击”。保留记者观察和部分答案，不写全球正式上线或保证流量增加；10月15日为原公告，11月23日为观察报道。",
+      "decision": "approved_for_ai_assisted_localization"
+    }
+  ]
+}
