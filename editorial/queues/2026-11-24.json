@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-24",
-  "status": "CI RECOVERY IN PROGRESS",
+  "status": "PUBLISHED & VERIFIED",
   "main_sha_at_start": "bcd4a13acb03c76919b31570dfaf6b370e8ede19",
   "discovery_count": 21,
   "approved_count": 10,
@@ -13,7 +13,7 @@
       "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "provisional_score": 93,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/chat62.json",
       "relevance_review": {
         "decision": "PASS",
@@ -35,7 +35,7 @@
       "source_url": "https://claude.com/resources/articles/introducing-claude-ship",
       "provisional_score": 89,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/ship.json",
       "relevance_review": {
         "decision": "PASS",
@@ -57,7 +57,7 @@
       "source_url": "https://portal.sina.com.hk/finance/marketersmedianewswire/marketersmedia/2026/11/23/1995457/adplug-brings-claude-and-chatgpt-to-ppc-agencies-running-google-ads-and-linkedin-ads/",
       "provisional_score": 95,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/adplug.json",
       "relevance_review": {
         "decision": "PASS",
@@ -79,7 +79,7 @@
       "source_url": "https://www.streetinsider.com/Press%2BReleases/Loopyah%2BLaunches%2BAI-Driven%2BAds%2BManager%2BBuilt%2Bon%2BAWS%2Band%2BClaude%2Bto%2BOptimize%2BEvent%2BTicket%2BSales/27384032.html",
       "provisional_score": 94,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/loopyah.json",
       "relevance_review": {
         "decision": "PASS",
@@ -101,7 +101,7 @@
       "source_url": "https://zoominfotechnologiesinc.gcs-web.com/node/16756/pdf",
       "provisional_score": 88,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/zoom-monday.json",
       "relevance_review": {
         "decision": "PASS",
@@ -123,7 +123,7 @@
       "source_url": "https://www.morningai.com/blog/november-23-2026-product-updates",
       "provisional_score": 95,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/morning.json",
       "relevance_review": {
         "decision": "PASS",
@@ -145,7 +145,7 @@
       "source_url": "https://www.passionateinmarketing.com/eloelo-group-launches-dolphin-ai-film-studio-at-iffi-2026-advancing-indias-vision-for-a-global-creative-economy/",
       "provisional_score": 88,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/dolphin.json",
       "relevance_review": {
         "decision": "PASS",
@@ -182,7 +182,7 @@
       "source_url": "https://searchengineland.com/google-ai-mode-dive-deeper-is-now-live-502838",
       "provisional_score": 86,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/dive.json",
       "relevance_review": {
         "decision": "PASS",
@@ -204,7 +204,7 @@
       "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
       "provisional_score": 83,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/opus-retire.json",
       "relevance_review": {
         "decision": "PASS",
@@ -234,7 +234,7 @@
       "source_url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview",
       "provisional_score": 82,
       "state": "APPROVED",
-      "next_action": "Ready for edition assembly",
+      "next_action": "Published and verified; approved packet is reusable.",
       "article_packet_path": "editorial/articles/2026-11-24/efs.json",
       "relevance_review": {
         "decision": "PASS",
@@ -344,8 +344,12 @@
       "next_action": "Reserve (60+): Reserve China/HK; trace original and marketing relevance"
     }
   ],
-  "next_action": "Trace recovery run45287313775 on fresh latest-main base. Compiled 30 article blocks and Newsletter semantically reviewed; await actual deployment and live receipt/hashes.",
+  "next_action": "Complete. Next invocation should check dated main receipt, data/evidence hashes and linked successful run before any new funnel.",
   "rejected_count": 1,
   "source_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f",
-  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45287313775"
+  "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45287313775",
+  "published_at_hkt": "2026-11-24T07:17:18+08:00",
+  "verified_at_hkt": "2026-11-24T07:18:26+08:00",
+  "release_receipt_url": "https://github.com/carriehw/ai-marketing-daily/blob/main/editorial/releases/2026-11-24.json",
+  "live_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/"
 }

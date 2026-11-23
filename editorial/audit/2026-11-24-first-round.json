@@ -181,7 +181,7 @@
     "current_source_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f",
     "current_run_id": 45287313775,
     "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45287313775",
-    "next_action": "Trace recovery run45287313775 on fresh latest-main base. Compiled 30 article blocks and Newsletter semantically reviewed; await actual deployment and live receipt/hashes.",
+    "next_action": "Complete: recovery run45287313775 success; receipt and public bytes verified.",
     "second_failed_run_id": 45286234160,
     "second_failure": "English team EDM: source labels carried Chinese parenthetical disclosure into shared English source field. Replaced source labels with English equivalents while preserving Chinese detail disclosures, without changing fact or validator.",
     "third_attempt_first_job_failure": {
@@ -237,6 +237,104 @@
       "Dolphin earlyaccess and futureadformat retained.",
       "ShipSteward cannotapprove; EFS exclusions and unreadable sealeddata retained.",
       "Traditional and Simplified deployment/library terminology remains understandable; source labels English to match shared renderer."
-    ]
-  }
+    ],
+    "live_bytes_match_reviewed_candidate": true
+  },
+  "final_status": "PUBLISHED & VERIFIED",
+  "release_receipt": {
+    "release_schema_version": "2.0",
+    "edition_date_hkt": "2026-11-24",
+    "status": "PUBLISHED & VERIFIED",
+    "published_story_count": 10,
+    "language_article_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    },
+    "verified_at_hkt": "2026-11-24T07:17:18+08:00",
+    "published_at_hkt": "2026-11-24T07:17:18+08:00",
+    "acceptance_action": "DEPLOY_VERIFIED_CANDIDATE",
+    "source_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f",
+    "deployed_artifact_commit": "c2c4c2114e0d3f762ef1fb17e5fb6ea44738d04f",
+    "workflow_run": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45287313775",
+    "data_sha256": "0050320a0eb3b99c6285077f645f438bc963da9b9224fe0006bee65e4bfb445a",
+    "deployed_evidence_sha256": "8a494a8c552e42912dd9eeb4a36189c33d99a920fdb8a6949c29158ca53df731",
+    "verified_asset_sha256": {
+      "index.html": "d44e9d1e05c6a405c32930717da443ba529fc2836cd1cef858fd0c4ac2938edc",
+      "data.json": "0050320a0eb3b99c6285077f645f438bc963da9b9224fe0006bee65e4bfb445a",
+      "archive/2026-11-24.html": "d16f527974099e335a8025df4ad3da3ff44c4d1d92990ba856f0ca7218f27fe0",
+      "archive/manifest.json": "f1d09a14dd4a9028af75c60ec865de0980913a7f1d9fcb4eb84d703a201c5faa",
+      "archive/search-index.json": "b31cb66adc147efb25199d4170d65aad3240d20f5f4cc538f89c27ca08c4221a",
+      "archive/search-index-zh-hans.json": "ff0eec22c5a90922c858352fcd2bb3c9ad262d92c2bbf9e08864bbbe37e68bd3",
+      "discovery.js": "c793fe80f1be45775e9d47581bd1e601f5e8d28f27dfc80580f288711e2f55d7",
+      "discovery-zh-hans.js": "3ece3902ca18fb516ace9a16deea37b842715efa68bc48c93c33c7385dc443d4",
+      "sitemap.xml": "3c3ba790930881c3bf48f272276a43a38165fe433c3a1f974fd91fdf25037670",
+      "robots.txt": "40e54f9d4ff2d429e624d4d4a0d1745b40fa77c34ea5cb0e605d404240c1bf98",
+      "og/2026-11-24.jpg": "c1c6bc380baed9561b8eb4b6688160be682cec31389e6c3df4562ff9e1821d99",
+      "editorial/evidence/2026-11-24.json": "8a494a8c552e42912dd9eeb4a36189c33d99a920fdb8a6949c29158ca53df731",
+      "edm/team.html": "9698db97cbfdc00749c982260ee5461ee91af4a26dca5812111564b0c6cf3ab9",
+      "edm/payload.json": "b09a97007c617824af8bb43f7e5be3ab367bc3df39fb935b21ce3b3d3efc43f8",
+      "edm/payload-feed.xml": "d9b704d67425acaeeecbc939822db21d78bbb16bd7ac5474b4a00bec12c8b662",
+      "edm/feed.xml": "bef6e9fa6d472631ac1adbb8fd72cc3e26095881cbb5085f0bf462719c4a882a",
+      "en/index.html": "bf6d8e589ac95c610815978abda0dc96f6eaadf3f4d5fa1f71dd2c0250081433",
+      "en/archive/2026-11-24.html": "99dc6374985736c8d490a1fd8fbb438cc70fb7c7fac927bbd5b2c22900487e61",
+      "en/archive/index.html": "38656dacda648ef39407341b2028e526520dd535bdda5fea6ea1a6f59c37d2be",
+      "zh-hant/index.html": "a99dcf01e460c2ca3547e8bb8c1a6474dd3fc0f5513064a6dde756139d0d2779",
+      "zh-hant/archive/2026-11-24.html": "a42f5fa7020a9ec24a6b69afe0c5806742047114eb50974a6ee2a1d0f4373586",
+      "zh-hant/archive/index.html": "f5d40024e46a203ddecd869b32251e2c90c0ff97268d665aae99eb0d9a533d2c",
+      "zh-hans/index.html": "f11643108c9c96c7a61274a369f598265d56c9f1ed47799654fa2684ec2467f5",
+      "zh-hans/archive/2026-11-24.html": "a48d540681f2a2a6d523c49a0f4ca455fc1d765cb2213e5a32136e25455aad2a",
+      "zh-hans/archive/index.html": "b749864e617c0fb9a32b6f2c0392c42deb0a1d7acc4aeaead72cd93d8f375914"
+    },
+    "live_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/",
+    "archive_url": "https://carriehw.github.io/ai-marketing-daily/zh-hant/archive/2026-11-24.html",
+    "verification": {
+      "live_bytes": true,
+      "actual_language_article_counts": true,
+      "newsletter_snapshot": true
+    },
+    "newsletter_sent_by_this_run": false,
+    "social_posted_by_this_run": false,
+    "review_scope": "Ten complete articles: original issuer text or direct reporting read and separately reopened by same assistant. Per-story relevance and substitution tests PASS. Preserved approval and access controls, beta status, data-feature exclusions, observed rollout versus universal availability, and 2027 retirement date. No independent human review, legal certification, campaign test or measured outcomes claimed."
+  },
+  "acceptance_checked_at_hkt": "2026-11-24T07:18:26+08:00",
+  "verified_main_sha": "0cb1af3f61da4f651e84f9b510e6b4f5828f7a5f",
+  "direct_live_checks": [
+    {
+      "path": "data.json",
+      "sha256": "0050320a0eb3b99c6285077f645f438bc963da9b9224fe0006bee65e4bfb445a",
+      "exact_bytes": true,
+      "story_count": null
+    },
+    {
+      "path": "editorial/evidence/2026-11-24.json",
+      "sha256": "8a494a8c552e42912dd9eeb4a36189c33d99a920fdb8a6949c29158ca53df731",
+      "exact_bytes": true,
+      "story_count": null
+    },
+    {
+      "path": "zh-hans/index.html",
+      "sha256": "f11643108c9c96c7a61274a369f598265d56c9f1ed47799654fa2684ec2467f5",
+      "exact_bytes": true,
+      "story_count": 10
+    },
+    {
+      "path": "zh-hant/index.html",
+      "sha256": "a99dcf01e460c2ca3547e8bb8c1a6474dd3fc0f5513064a6dde756139d0d2779",
+      "exact_bytes": true,
+      "story_count": 10
+    },
+    {
+      "path": "en/index.html",
+      "sha256": "bf6d8e589ac95c610815978abda0dc96f6eaadf3f4d5fa1f71dd2c0250081433",
+      "exact_bytes": true,
+      "story_count": 10
+    },
+    {
+      "path": "edm/payload.json",
+      "sha256": "b09a97007c617824af8bb43f7e5be3ab367bc3df39fb935b21ce3b3d3efc43f8",
+      "exact_bytes": true,
+      "story_count": null
+    }
+  ]
 }
