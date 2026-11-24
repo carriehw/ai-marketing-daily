@@ -1,9 +1,9 @@
 {
   "edition_date_hkt": "2026-11-25",
-  "status": "VERIFYING",
+  "status": "IN_PROGRESS",
   "main_sha_at_start": "0cb1af3f61da4f651e84f9b510e6b4f5828f7a5f",
   "discovery_count": 21,
-  "approved_count": 0,
+  "approved_count": 1,
   "held_count": 0,
   "deduplication": "Compared1807publishedrecords. ExcludedChatGPTSales, XnurtaMCP, CocaColaEnjoyJoy andpreviousNov24platformnews. All21sourced, no duplicateevents; SellforteGA/APAC grouped, datedoriginsrequired.",
   "items": [
@@ -12,8 +12,9 @@
       "title": "The Trade Desk connects OnAudience agents to Koa",
       "source_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
       "provisional_score": 94,
-      "state": "DISCOVERED",
-      "next_action": "Verify global scope; no measured precision/speed claims"
+      "state": "APPROVED",
+      "next_action": "Reuse complete approved packet in edition assembly.",
+      "article_packet_path": "editorial/articles/2026-11-25/ttd.json"
     },
     {
       "slug": "pinterest",
@@ -176,5 +177,5 @@
       "next_action": "Reserve (60+): Reserve: distinguishcurrentcapability from5yearvision"
     }
   ],
-  "next_action": "Finish highest-value original-source packets, then submit>=10."
+  "next_action": "Complete highest-value unfinished source verification and submit once ten complete packets exist."
 }
