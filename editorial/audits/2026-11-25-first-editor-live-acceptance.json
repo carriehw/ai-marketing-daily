@@ -1,0 +1,56 @@
+{
+  "edition_date_hkt": "2026-11-25",
+  "completed_at_hkt": "2026-11-25T07:17:45+08:00",
+  "main_sha_checked": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
+  "newly_closed": 10,
+  "approved": 10,
+  "held": 2,
+  "reserve": 9,
+  "workflow_run_id": 45508192916,
+  "workflow_conclusion": "success",
+  "editorial_qa_run_id": 45508192895,
+  "editorial_qa_conclusion": "success",
+  "receipt_path": "editorial/releases/2026-11-25.json",
+  "live_acceptance": {
+    "verified_at_hkt": "2026-11-25T07:17:45+08:00",
+    "receipt_status": "PUBLISHED & VERIFIED",
+    "language_article_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    },
+    "data_sha256": "b2ecdd4e3138d0d39a6b9902bb461af8e96ca30f67d87d1b1665b21a0a594f75",
+    "evidence_sha256": "d5637edb03e6b961aa7026c46456a6e4be11ef1081da42fba01e311083f4d677",
+    "main_sha_checked": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
+    "workflow_success": true,
+    "locales_and_newsletter_public_bytes_match": true
+  },
+  "review_provenance": "Same assistant personally read all 30 rendered article blocks across en/zh-hant/zh-hans and the generated English Newsletter. No human or independent reviewer claimed.",
+  "semantic_findings": [
+    "All ten source dates retained, including Nov18/19 developments.",
+    "Pinterest planned rollout and initial region limits retained.",
+    "loveholidays production remit and feedback mechanism are not outcome evidence.",
+    "WPP UK opt-in panel and noncausal interpretation retained.",
+    "WebMD eligibility and platform approval roles retained.",
+    "Syndigo human write approval and login permissions retained.",
+    "Perform.AI fixed-rule score is not an agent trial or certification.",
+    "Newsletter six-feature selection retains issuer/reproduced source labels, dates and advisory framing."
+  ],
+  "localization_risks": "Simplified generated output retains some cross-regional vocabulary (for example API金钥/栏位). Meaning and scope are intact; terminology normalization remains a copy-style improvement, not a factual or approval hold.",
+  "direct_public_verification": {
+    "paths": [
+      "en/index.html",
+      "zh-hant/index.html",
+      "zh-hans/index.html",
+      "edm/payload.json"
+    ],
+    "method": "Python urllib retrieved actual public bytes; each equals inspected committed candidate bytes and the receipt SHA256.",
+    "actual_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    }
+  },
+  "no_outlook_email_sent": true,
+  "no_social_posted": true
+}
