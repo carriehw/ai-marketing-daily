@@ -1,10 +1,10 @@
 {
   "edition_date_hkt": "2026-11-25",
-  "status": "IN_PROGRESS",
+  "status": "EDITORIAL_APPROVED_PENDING_CI",
   "main_sha_at_start": "0cb1af3f61da4f651e84f9b510e6b4f5828f7a5f",
   "discovery_count": 21,
   "approved_count": 10,
-  "held_count": 0,
+  "held_count": 2,
   "deduplication": "Compared1807publishedrecords. ExcludedChatGPTSales, XnurtaMCP, CocaColaEnjoyJoy andpreviousNov24platformnews. All21sourced, no duplicateevents; SellforteGA/APAC grouped, datedoriginsrequired.",
   "items": [
     {
@@ -14,7 +14,8 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/ttd.json"
+      "article_packet_path": "editorial/articles/2026-11-25/ttd.json",
+      "editorial_score": 94
     },
     {
       "slug": "pinterest",
@@ -23,7 +24,8 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/pinterest.json"
+      "article_packet_path": "editorial/articles/2026-11-25/pinterest.json",
+      "editorial_score": 94
     },
     {
       "slug": "loveholidays",
@@ -32,7 +34,8 @@
       "provisional_score": 93,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/loveholidays.json"
+      "article_packet_path": "editorial/articles/2026-11-25/loveholidays.json",
+      "editorial_score": 93
     },
     {
       "slug": "wpp",
@@ -41,7 +44,8 @@
       "provisional_score": 91,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/wpp.json"
+      "article_packet_path": "editorial/articles/2026-11-25/wpp.json",
+      "editorial_score": 91
     },
     {
       "slug": "webmd",
@@ -50,7 +54,8 @@
       "provisional_score": 87,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/webmd.json"
+      "article_packet_path": "editorial/articles/2026-11-25/webmd.json",
+      "editorial_score": 87
     },
     {
       "slug": "sellforte",
@@ -59,23 +64,26 @@
       "provisional_score": 90,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/sellforte.json"
+      "article_packet_path": "editorial/articles/2026-11-25/sellforte.json",
+      "editorial_score": 87
     },
     {
       "slug": "handler",
       "title": "Handler posting and experimental Spark Ads",
       "source_url": "https://advertisingtoday.com/article/958547523-handler-the-ai-tiktok-marketing-agent-for-app-makers-adds-posting-comment-seeding-and-spark-ads-to-its-tiktok-loop",
       "provisional_score": 86,
-      "state": "DISCOVERED",
-      "next_action": "Human review of commentseeding/platformrisks; omit dubiousguarantees"
+      "state": "HELD",
+      "next_action": "Original full text unavailable via web open; NEXUS also returned urllib403. Find same-event official/full direct source, then verify stage/claims and reopen. Do not count snippets.",
+      "reason": "Pivotal full-source access unresolved."
     },
     {
       "slug": "nexus",
       "title": "NEXUS Advertising OS Singapore launch",
       "source_url": "https://software.einnews.com/pr_news/957257619/nexus-launches-advertising-os-uniting-dsp-programmatic-ad-networks-and-commerce-media",
       "provisional_score": 85,
-      "state": "DISCOVERED",
-      "next_action": "Read issuer technical workflow; providerintegration notoutcomes"
+      "state": "HELD",
+      "next_action": "Original full text unavailable via web open; NEXUS also returned urllib403. Find same-event official/full direct source, then verify stage/claims and reopen. Do not count snippets.",
+      "reason": "Pivotal full-source access unresolved."
     },
     {
       "slug": "constructor",
@@ -84,7 +92,8 @@
       "provisional_score": 88,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/constructor.json"
+      "article_packet_path": "editorial/articles/2026-11-25/constructor.json",
+      "editorial_score": 86
     },
     {
       "slug": "syndigo",
@@ -93,7 +102,8 @@
       "provisional_score": 86,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/syndigo.json"
+      "article_packet_path": "editorial/articles/2026-11-25/syndigo.json",
+      "editorial_score": 84
     },
     {
       "slug": "fast-simon",
@@ -102,7 +112,8 @@
       "provisional_score": 85,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/fast-simon.json"
+      "article_packet_path": "editorial/articles/2026-11-25/fast-simon.json",
+      "editorial_score": 83
     },
     {
       "slug": "perform",
@@ -111,7 +122,8 @@
       "provisional_score": 84,
       "state": "APPROVED",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-25/perform.json"
+      "article_packet_path": "editorial/articles/2026-11-25/perform.json",
+      "editorial_score": 84
     },
     {
       "slug": "salescloser",
@@ -119,7 +131,8 @@
       "source_url": "https://www.globenewswire.com/news-release/2026/11/17/3404471/0/en/salescloser-launches-live-ai-video-sales-agent-for-shopify-stores.html",
       "provisional_score": 80,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: Nov17original; verifyappavailability"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "suno-visuals",
@@ -127,7 +140,8 @@
       "source_url": "https://suno.com/release-notes/visuals",
       "provisional_score": 82,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: Nov17original, notNov24launch; useownershiprestrictions"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "skillsync",
@@ -135,7 +149,8 @@
       "source_url": "https://digg.com/ai/0yqykj2d",
       "provisional_score": 76,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: Needoriginalnewincrement versusNov3terms"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "adidas",
@@ -143,7 +158,8 @@
       "source_url": "https://wisevoter.com/world/2026/11/24/adidas-luma-ai-localized-ad-content",
       "provisional_score": 81,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: needCampaignoriginal; Marchdeployment maystale"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "dv",
@@ -151,7 +167,8 @@
       "source_url": "https://www.medianews4u.com/74-of-consumers-shop-year-round-as-ai-and-social-media-shape-product-research-dv-report/",
       "provisional_score": 78,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: requireoriginalmethods andsample"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "insight-cn",
@@ -159,7 +176,8 @@
       "source_url": "https://tw.tradingview.com/news/gelonghui%3Ad90a22163acdf%3A0/",
       "provisional_score": 79,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: primaryinvestorstatementneeded; no financialinference"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "zhihu",
@@ -167,7 +185,8 @@
       "source_url": "https://tw.tradingview.com/news/gelonghui%3A3c2be3c36acdf%3A0/",
       "provisional_score": 75,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: originalearnings andAImechanismneeded"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "asus",
@@ -175,7 +194,8 @@
       "source_url": "https://press.asus.com/blog/agentic-ai-transforming-creator-workflow-proart/",
       "provisional_score": 64,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: distinguishanalysisfromnewproduct"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     },
     {
       "slug": "adgraam",
@@ -183,8 +203,9 @@
       "source_url": "https://www.indianstartuptimes.com/interviews/adgraam-building-the-ai-creative-operating-system-for-performance-marketing/",
       "provisional_score": 73,
       "state": "DISCOVERED",
-      "next_action": "Reserve (60+): Reserve: distinguishcurrentcapability from5yearvision"
+      "next_action": "Recorded reserve >=60; verify original date, dedup and substantive AI/technology change before any approval.",
+      "disposition": "reserve"
     }
   ],
-  "next_action": "Complete highest-value unfinished source verification and submit once ten complete packets exist."
+  "next_action": "Submit approved ten-story edition and track workflow/live receipt."
 }
