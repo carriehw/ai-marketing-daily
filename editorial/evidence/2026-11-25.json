@@ -1,0 +1,1110 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-25",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-25T07:13:40+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Ten complete same-assistant approvals. Original texts read and separately reopened; explicit AI/technology relevance, substitution test and wording reviews completed. Five timely Nov23–24 stories plus five unreported Nov18–19 developments within seven days, preserving original dates. No independent human review or product trials. Planned Pinterest scope, loveholidays production remit, eligible healthcare access, panel geography, model uncertainty and human write approvals retained.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-25-ttd",
+      "title_zh": "The Trade Desk接入OnAudience，Koa可按簡報建立及啟用受眾",
+      "source_story_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+      "published_article_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "publisher": "The Trade Desk",
+          "evidence_locator": "L144–145; L146–149; L157",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:05+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        },
+        {
+          "url": "https://onaudience.com/onaudience-mcp-integration-guide-for-claude/",
+          "publisher": "OnAudience",
+          "source_class": "A",
+          "evidence_locator": "Integration guide sections 2 and 7, L67–86,L270–284; context for pre-existing MCP, not Koa launch proof.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:10:26+08:00",
+          "access_method": "Read guide turn700417844view2, reopened turn926137115view1, inspected relevant sections turn838796694view0/1.",
+          "limitations": "Undated living guide used only as background. Koa launch and global scope rely on The Trade Desk Nov24 release."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "The Trade Desk宣布OnAudience接入Koa，以MCP連接受眾功能。",
+          "evidence_locator": "Original source L144–145",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        },
+        {
+          "claim_zh": "可用自然語言發現、建立及啟用受眾，將第三方分組配對活動簡報。",
+          "evidence_locator": "Original source L146–149",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        },
+        {
+          "claim_zh": "公司稱整合已在全球提供。",
+          "evidence_locator": "Original source L157",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "The Trade Desk宣布OnAudience接入Koa，以MCP連接受眾功能。",
+          "evidence_locator": "Original source L144–145",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        },
+        {
+          "claim_zh": "可用自然語言發現、建立及啟用受眾，將第三方分組配對活動簡報。",
+          "evidence_locator": "Original source L146–149",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        },
+        {
+          "claim_zh": "公司稱整合已在全球提供。",
+          "evidence_locator": "Original source L157",
+          "support_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:08:39+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+        "source_reopen_reference": "Original turn133321512view0; separately reopened turn174083469view0 L142–157.",
+        "finding": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration."
+      },
+      "review_notes": "Issuer announcement; global availability attributed. No independent test or verified improvement in speed, precision or ROI. OnAudience MCP predates this integration.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 10,
+        "total": 94
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Koa代理透過OnAudience MCP按簡報發現及啟用受眾。",
+        "source_locator": "L144–145; L146–149; L157",
+        "source_url": "https://www.thetradedesk.com/press-room/the-trade-desk-partners-with-onaudience-to-help-advertisers-reach-the-right-audiences-faster",
+        "event_change": "OnAudience整合進Koa",
+        "affected_workflow": "受眾簡報轉為第三方分組與啟用",
+        "specific_decision": "用一份現有活動簡報要求Koa提出受眾分組，逐項核對分組定義與目標客群，再批准啟用名單。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按同一簡報核對第三方分組再啟用，直接對應此次Koa整合。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:08:39+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-pinterest",
+      "title_zh": "Pinterest宣布接入Microsoft Advertising，首階段涵蓋北美及澳紐",
+      "source_story_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+      "published_article_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+      "source_date_display": "11月23日",
+      "event_date": "2026-11-23",
+      "first_published_date": "2026-11-23",
+      "source_documents": [
+        {
+          "url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "publisher": "Pinterest",
+          "evidence_locator": "L2,L7; L7–11; L17",
+          "source_publication_date": "2026-11-23",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:05+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Pinterest於11月23日宣布Microsoft Advertising整合。",
+          "evidence_locator": "Original source L2,L7",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        },
+        {
+          "claim_zh": "合資格活動將可在首頁、搜尋及相關Pin中透過公開競價投放，毋須新購買工具。",
+          "evidence_locator": "Original source L7–11",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        },
+        {
+          "claim_zh": "首批將在北美、澳洲及紐西蘭提供。",
+          "evidence_locator": "Original source L17",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Pinterest於11月23日宣布Microsoft Advertising整合。",
+          "evidence_locator": "Original source L2,L7",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        },
+        {
+          "claim_zh": "合資格活動將可在首頁、搜尋及相關Pin中透過公開競價投放，毋須新購買工具。",
+          "evidence_locator": "Original source L7–11",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        },
+        {
+          "claim_zh": "首批將在北美、澳洲及紐西蘭提供。",
+          "evidence_locator": "Original source L17",
+          "support_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:09:01+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+        "source_reopen_reference": "Original turn997723418view0; separately reopened turn174083469view1 L2–17.",
+        "finding": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results."
+      },
+      "review_notes": "Future availability, not a completed universal rollout. Initial North America, Australia and New Zealand only; eligibility details, formats and launch date unspecified. No observed results.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 17,
+        "market_relevance": 14,
+        "novelty": 9,
+        "total": 94
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Pinterest Intelligence使用AI視覺與行為訊號配對Microsoft廣告。",
+        "source_locator": "L2,L7; L7–11; L17",
+        "source_url": "https://newsroom.pinterest.com/news/pinterest-microsoft-advertising-integration-2026/",
+        "event_change": "Pinterest宣布新增Microsoft Advertising庫存整合",
+        "affected_workflow": "既有搜尋廣告延伸至視覺探索場景",
+        "specific_decision": "先列出北美及澳紐的Microsoft活動，按圖片素材與產品探索意圖篩選試點，待平台確認資格及日期才安排支出。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "須分開北美及澳紐資格與原有Microsoft活動，不能換成任意平台通用建議。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:09:01+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-25-loveholidays",
+      "title_zh": "loveholidays委託Nest製作AI社交廣告，以投放表現回饋下一批創意",
+      "source_story_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+      "published_article_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "publisher": "Nest Commerce (reproduced announcement)",
+          "evidence_locator": "L10–12; L12,L16–17; L13–14",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:05+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "loveholidays委託Nest Commerce提供付費社交創意策略與Nest AI Creative製作。",
+          "evidence_locator": "Original source L10–12",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        },
+        {
+          "claim_zh": "委託量為每月200則，涵蓋英國、愛爾蘭及德國。",
+          "evidence_locator": "Original source L12,L16–17",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        },
+        {
+          "claim_zh": "平台以已投放素材的表現塑造下一批，專家逐則核對品牌規則及簡報。",
+          "evidence_locator": "Original source L13–14",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "loveholidays委託Nest Commerce提供付費社交創意策略與Nest AI Creative製作。",
+          "evidence_locator": "Original source L10–12",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        },
+        {
+          "claim_zh": "委託量為每月200則，涵蓋英國、愛爾蘭及德國。",
+          "evidence_locator": "Original source L12,L16–17",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        },
+        {
+          "claim_zh": "平台以已投放素材的表現塑造下一批，專家逐則核對品牌規則及簡報。",
+          "evidence_locator": "Original source L13–14",
+          "support_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:09:24+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+        "source_reopen_reference": "Original turn133321512view3; separately reopened turn174083469view2 L7–21.",
+        "finding": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test."
+      },
+      "review_notes": "Issuer announcement reproduced by MarComm News, credited to Nest Commerce. 200 monthly ads is production remit, not delivered volume or measured growth. No independent campaign test.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 93
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Nest AI Creative按已投放廣告表現塑造下一批素材，由專家檢查品牌規則。",
+        "source_locator": "L10–12; L12,L16–17; L13–14",
+        "source_url": "https://marcommnews.com/loveholidays-appoints-nest-commerce-for-paid-social-creative-strategy-and-ai-creative/",
+        "event_change": "loveholidays委託Nest製作AI付費社交廣告",
+        "affected_workflow": "旅遊廣告表現回饋至下一批創意",
+        "specific_decision": "以同一行程分別測試選擇、方便、支援及期待四種預訂動機，固定主要投放條件，再把結果轉成下一批創意簡報。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按旅遊預訂的Choice/Ease/Support/Anticipation四種動機分組測試，與這次簡報直接對應。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:09:24+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-wpp",
+      "title_zh": "WPP Media聯手Viewerslogic，把LLM活動納入購物旅程觀察",
+      "source_story_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+      "published_article_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "publisher": "The Media Leader",
+          "evidence_locator": "L83,L106–107; L108; L109,L117–119",
+          "source_publication_date": "2026-11-24",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:05+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "WPP Media與Viewerslogic在11月24日NextM活動宣布合作。",
+          "evidence_locator": "Original source L83,L106–107",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        },
+        {
+          "claim_zh": "報道指方法使用一萬名自願加入的英國用戶面板及背景手機應用程式。",
+          "evidence_locator": "Original source L108",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        },
+        {
+          "claim_zh": "資料涵蓋電視接觸、手機瀏覽、購物及LLM活動，用於檢視發現與購買旅程。",
+          "evidence_locator": "Original source L109,L117–119",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "WPP Media與Viewerslogic在11月24日NextM活動宣布合作。",
+          "evidence_locator": "Original source L83,L106–107",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        },
+        {
+          "claim_zh": "報道指方法使用一萬名自願加入的英國用戶面板及背景手機應用程式。",
+          "evidence_locator": "Original source L108",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        },
+        {
+          "claim_zh": "資料涵蓋電視接觸、手機瀏覽、購物及LLM活動，用於檢視發現與購買旅程。",
+          "evidence_locator": "Original source L109,L117–119",
+          "support_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:09:48+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+        "source_reopen_reference": "Original turn133321512view4; separately reopened turn174083469view3 L83,L106–119.",
+        "finding": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons."
+      },
+      "review_notes": "Direct event report of company-described methodology. Opt-in 10,000-person UK panel, not all consumers or Hong Kong. Omit uninspected percentages, causal claims and effectiveness comparisons.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 24,
+        "actionability": 17,
+        "market_relevance": 13,
+        "novelty": 7,
+        "total": 91
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "觀察LLM使用與媒體接觸、購物路徑的關聯。",
+        "source_locator": "L83,L106–107; L108; L109,L117–119",
+        "source_url": "https://uk.themedialeader.com/wpp-media-to-track-real-world-purchase-journeys-with-viewerslogic-partnership/",
+        "event_change": "WPP Media與Viewerslogic合作觀察實際購物旅程",
+        "affected_workflow": "品牌曝光、AI發現與網站購物的跨接點衡量",
+        "specific_decision": "為一個英國活動列出曝光、LLM使用、到站及購物四個接點，向供應商確認可觀察範圍、樣本適配及缺失資料，再決定研究設計。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以UK panel的TV/mobile/LLM路徑核對特定問題，不是泛稱AI更重要。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:09:48+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-webmd",
+      "title_zh": "WebMD Ignite推出ChatGPT廣告服務，醫療機構仍須通過平台審核",
+      "source_story_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "publisher": "WebMD Ignite",
+          "evidence_locator": "L457,L466–467; L465–468; L476–479",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:05+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "WebMD Ignite於11月24日宣布向合資格醫療機構提供ChatGPT廣告服務。",
+          "evidence_locator": "Original source L457,L466–467",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        },
+        {
+          "claim_zh": "服務涵蓋策略、創意、啟動及衡量，並稱已開始初期心臟科活動。",
+          "evidence_locator": "Original source L465–468",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        },
+        {
+          "claim_zh": "WebMD Ignite管理策略及執行，OpenAI決定廣告主資格、素材批准與投放。",
+          "evidence_locator": "Original source L476–479",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "WebMD Ignite於11月24日宣布向合資格醫療機構提供ChatGPT廣告服務。",
+          "evidence_locator": "Original source L457,L466–467",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        },
+        {
+          "claim_zh": "服務涵蓋策略、創意、啟動及衡量，並稱已開始初期心臟科活動。",
+          "evidence_locator": "Original source L465–468",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        },
+        {
+          "claim_zh": "WebMD Ignite管理策略及執行，OpenAI決定廣告主資格、素材批准與投放。",
+          "evidence_locator": "Original source L476–479",
+          "support_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:10:13+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:07:31+08:00",
+        "source_reopen_reference": "Original turn164534019view0; separately reopened turn273476344view0 L457–479.",
+        "finding": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification."
+      },
+      "review_notes": "Issuer release. Only eligible health systems; OpenAI controls eligibility, creative approval and delivery. Initial cardiology campaign unnamed and no results supplied. No medical, legal or privacy certification.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 16,
+        "market_relevance": 10,
+        "novelty": 9,
+        "total": 87
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "為合資格醫療機構提供ChatGPT廣告策劃及啟動服務。",
+        "source_locator": "L457,L466–467; L465–468; L476–479",
+        "source_url": "https://www.prnewswire.com/news-releases/webmd-ignite-brings-chatgpt-advertising-to-health-systems-302948822.html",
+        "event_change": "WebMD Ignite推出ChatGPT廣告服務",
+        "affected_workflow": "醫療廣告由服務線簡報進入平台審核及衡量",
+        "specific_decision": "選一條服務線，先取得廣告主與素材資格要求，列清WebMD Ignite及平台各自負責的批准環節，再制定衡量方案。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "區分WebMD執行與OpenAI資格/素材/投放決定，是醫療ChatGPT服務特定分工。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:10:13+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-25-sellforte",
+      "title_zh": "Sellforte與Exact AI合作，為香港零售團隊導入AI衡量流程",
+      "source_story_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+      "published_article_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "publisher": "Sellforte",
+          "evidence_locator": "L319–320; L327; L320,L327,L333–334",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Sellforte於11月18日公布Exact AI合作，涵蓋澳洲、新加坡及香港客戶導入。",
+          "evidence_locator": "Original source L319–320",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        },
+        {
+          "claim_zh": "平台結合營銷組合建模、增量測試、歸因及預算優化。",
+          "evidence_locator": "Original source L327",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        },
+        {
+          "claim_zh": "團隊可經Sellforte AI及MCP把模型結果帶入既有AI助理，Exact AI協助日常決策及季度業務檢討。",
+          "evidence_locator": "Original source L320,L327,L333–334",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Sellforte於11月18日公布Exact AI合作，涵蓋澳洲、新加坡及香港客戶導入。",
+          "evidence_locator": "Original source L319–320",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        },
+        {
+          "claim_zh": "平台結合營銷組合建模、增量測試、歸因及預算優化。",
+          "evidence_locator": "Original source L327",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        },
+        {
+          "claim_zh": "團隊可經Sellforte AI及MCP把模型結果帶入既有AI助理，Exact AI協助日常決策及季度業務檢討。",
+          "evidence_locator": "Original source L320,L327,L333–334",
+          "support_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:11:07+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:07:31+08:00",
+        "source_reopen_reference": "Original turn164534019view5 L319–338; separately reopened turn273476344view4.",
+        "finding": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established."
+      },
+      "review_notes": "Nov18 APAC partnership, not a Nov24 MCP launch. Company-described model outputs, not proof of incremental return. Unnamed fashion client omitted; no Hong Kong case performance established.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 3,
+        "total": 87
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Sellforte AI/MCP可把MMM等結果帶入AI助理，Exact AI為香港等市場提供導入。",
+        "source_locator": "L319–320; L327; L320,L327,L333–334",
+        "source_url": "https://sellforte.com/customer-news/sellforte-expands-into-asia-pacific-through-a-strategic-partnership-with-exact-ai",
+        "event_change": "Exact AI負責澳洲、新加坡及香港客戶導入",
+        "affected_workflow": "多渠道模型結果進入日常預算決策及季度檢討",
+        "specific_decision": "選一個同時有門店及網店的品牌，列清價格、促銷與銷售資料，要求夥伴示範模型假設如何連到季度預算建議。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "促銷、門店與網上銷售結合MMM，並由指定地區夥伴導入，對應香港零售實際選型。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:11:07+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-constructor",
+      "title_zh": "Constructor推出Commerce AEO，把AI引流追蹤接到商品內容修訂",
+      "source_story_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+      "source_date_display": "11月19日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-19",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "publisher": "Constructor",
+          "evidence_locator": "L457,L467; L485; L487–488",
+          "source_publication_date": "2026-11-19",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Constructor於11月19日宣布Commerce AEO。",
+          "evidence_locator": "Original source L457,L467",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        },
+        {
+          "claim_zh": "功能可追蹤AI引流由點擊至購買，並比較來源、商品與類別。",
+          "evidence_locator": "Original source L485",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        },
+        {
+          "claim_zh": "系統建議補全商品資料，並用行為與購買資料生成描述、FAQ及指南。",
+          "evidence_locator": "Original source L487–488",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Constructor於11月19日宣布Commerce AEO。",
+          "evidence_locator": "Original source L457,L467",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        },
+        {
+          "claim_zh": "功能可追蹤AI引流由點擊至購買，並比較來源、商品與類別。",
+          "evidence_locator": "Original source L485",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        },
+        {
+          "claim_zh": "系統建議補全商品資料，並用行為與購買資料生成描述、FAQ及指南。",
+          "evidence_locator": "Original source L487–488",
+          "support_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:11:33+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:10:26+08:00",
+        "source_reopen_reference": "Original turn997723418view1/turn700417844view0; separately reopened turn926137115view3 L457,L480–488.",
+        "finding": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift."
+      },
+      "review_notes": "Nov19 issuer announcement, not Nov24 launch. Announced tracking/content functions; no verified incremental revenue. Running-shoe scenario hypothetical, omitted; no copied surveys or $10M uplift.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 4,
+        "total": 86
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Commerce AEO連接AI答案引流、交易追蹤與產品內容修訂。",
+        "source_locator": "L457,L467; L485; L487–488",
+        "source_url": "https://www.prnewswire.com/news-releases/constructor-launches-commerce-aeo-to-help-retailers-turn-ai-visibility-into-sales-302945434.html",
+        "event_change": "推出Commerce AEO的電商追蹤與內容流程",
+        "affected_workflow": "AI引流按商品/類別連到加購與購買",
+        "specific_decision": "選一個有AI引流的商品類別，比較到站、加購與購買的缺口，再把缺失屬性轉成一輪FAQ及描述修訂。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按AI來源的加購、商品屬性缺漏及FAQ調整，直接對應Commerce AEO而非通用曝光建議。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:11:33+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-syndigo",
+      "title_zh": "Syndigo擴展Copilot商品操作，AI修改資料須經人批准才保存",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "publisher": "Syndigo",
+          "evidence_locator": "L55,L60; L67–68; L72–73",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Syndigo於11月18日公布MCP能力擴展，可建立、更新及補全商品。",
+          "evidence_locator": "Original source L55,L60",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        },
+        {
+          "claim_zh": "可補屬性及行銷文案，檢查零售商要求；每項修改對照現值，經人批准才保存。",
+          "evidence_locator": "Original source L67–68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        },
+        {
+          "claim_zh": "適用PIM、MDM及syndication客戶，沿用登入者既有權限。",
+          "evidence_locator": "Original source L72–73",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Syndigo於11月18日公布MCP能力擴展，可建立、更新及補全商品。",
+          "evidence_locator": "Original source L55,L60",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        },
+        {
+          "claim_zh": "可補屬性及行銷文案，檢查零售商要求；每項修改對照現值，經人批准才保存。",
+          "evidence_locator": "Original source L67–68",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        },
+        {
+          "claim_zh": "適用PIM、MDM及syndication客戶，沿用登入者既有權限。",
+          "evidence_locator": "Original source L72–73",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:11:59+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:07:31+08:00",
+        "source_reopen_reference": "Original turn164534019view3; separately reopened turn273476344view2 L55–73.",
+        "finding": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement."
+      },
+      "review_notes": "Nov18 issuer announcement, not new this morning. Available to Syndigo PIM/MDM/syndication customers within signed-in permissions. Every proposed write needs human approval; no verified speed or sales improvement.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 3,
+        "total": 84
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Copilot經MCP建立及修改商品資料，寫入前人手批准。",
+        "source_locator": "L55,L60; L67–68; L72–73",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/18/3405735/0/en/syndigo-helps-brands-and-retailers-get-products-to-market-faster-with-microsoft-copilot.html",
+        "event_change": "Syndigo MCP由只讀擴至商品資料寫入",
+        "affected_workflow": "商品欄位、文案與零售商要求的檢查及批准",
+        "specific_decision": "選一組待上架商品，指定可補全欄位及批准人，核對建議值、現值與零售商缺漏，再逐項批准保存。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "逐欄比較修改前後值及零售商缺漏，直接針對商品資料寫入機制。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:11:59+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-fast-simon",
+      "title_zh": "Fast Simon推出MCP，把店面SDK與搜尋分析接入AI編碼工具",
+      "source_story_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+      "published_article_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+      "source_date_display": "11月19日",
+      "event_date": "2026-11-19",
+      "first_published_date": "2026-11-19",
+      "source_documents": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "publisher": "Fast Simon",
+          "evidence_locator": "L54,L61; L62–65; L65",
+          "source_publication_date": "2026-11-19",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:05:07+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Fast Simon於11月19日公布MCP，支援Claude Code、Cursor、Windsurf及Cline。",
+          "evidence_locator": "Original source L54,L61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        },
+        {
+          "claim_zh": "服務提供SDK實作知識，面向自建店面開發團隊。",
+          "evidence_locator": "Original source L62–65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        },
+        {
+          "claim_zh": "商戶API金鑰可用於自然語言查詢熱門搜尋、商品集及元件影響等自身分析。",
+          "evidence_locator": "Original source L65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Fast Simon於11月19日公布MCP，支援Claude Code、Cursor、Windsurf及Cline。",
+          "evidence_locator": "Original source L54,L61",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        },
+        {
+          "claim_zh": "服務提供SDK實作知識，面向自建店面開發團隊。",
+          "evidence_locator": "Original source L62–65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        },
+        {
+          "claim_zh": "商戶API金鑰可用於自然語言查詢熱門搜尋、商品集及元件影響等自身分析。",
+          "evidence_locator": "Original source L65",
+          "support_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:12:22+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:07:31+08:00",
+        "source_reopen_reference": "Original turn164534019view4; separately reopened turn273476344view3 L54–66.",
+        "finding": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal."
+      },
+      "review_notes": "Nov19 issuer announcement. Omit hours-versus-weeks guarantee, revenue claims and single-customer testimonial as general proof. API key required for merchant analytics; supported tools named, not universal.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 4,
+        "total": 83
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "MCP把電商SDK知識及商戶搜尋分析接到AI編碼工具。",
+        "source_locator": "L54,L61; L62–65; L65",
+        "source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406782/0/en/fast-simon-unveils-new-mcp-server-slashing-time-to-market-for-e-commerce-agencies-and-developers.html",
+        "event_change": "Fast Simon推出供編碼工具連接的MCP服務",
+        "affected_workflow": "自建店面SDK整合與商品搜尋分析",
+        "specific_decision": "先從熱門搜尋選一項店面需求，讓開發團隊用SDK做測試元件，再比對分析回覆與原報表，才排入正式改版。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "使用熱門搜尋/商品集/元件分析驗證店面需求，適用這次特定SDK與分析介面。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:12:22+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-25-perform",
+      "title_zh": "Perform.AI免費檢查網店UCP及ACP準備度，評分採固定規則",
+      "source_story_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+      "source_date_display": "11月18日",
+      "event_date": "2026-11-18",
+      "first_published_date": "2026-11-18",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "publisher": "Perform.AI",
+          "evidence_locator": "L457,L466,L478; L469–473; L474",
+          "source_publication_date": "2026-11-18",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-25T07:10:26+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Perform.AI於11月18日推出免費UCP及ACP準備度檢查器。",
+          "evidence_locator": "Original source L457,L466,L478",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        },
+        {
+          "claim_zh": "147項檢查按店面使用協定計分，涵蓋發現、購買、售後與系統連接。",
+          "evidence_locator": "Original source L469–473",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        },
+        {
+          "claim_zh": "完整報告需姓名、公司及工作電郵，分數由固定規則產生，不使用LLM或AI代理。",
+          "evidence_locator": "Original source L474",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Perform.AI於11月18日推出免費UCP及ACP準備度檢查器。",
+          "evidence_locator": "Original source L457,L466,L478",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        },
+        {
+          "claim_zh": "147項檢查按店面使用協定計分，涵蓋發現、購買、售後與系統連接。",
+          "evidence_locator": "Original source L469–473",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        },
+        {
+          "claim_zh": "完整報告需姓名、公司及工作電郵，分數由固定規則產生，不使用LLM或AI代理。",
+          "evidence_locator": "Original source L474",
+          "support_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-25T07:12:48+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-25T07:10:26+08:00",
+        "source_reopen_reference": "Original turn700417844view1; separately reopened turn926137115view2 L457–478.",
+        "finding": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee."
+      },
+      "review_notes": "Nov18 issuer release; score is fixed-rule readiness diagnostic without LLM/agent, not protocol certification or successful agent purchase test. Full report requires name/company/work email. No product trial or speed guarantee.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 3,
+        "total": 84
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "檢查網店供AI購物代理發現、結帳及售後使用的協定介面；檢查器本身按固定規則運作。",
+        "source_locator": "L457,L466,L478; L469–473; L474",
+        "source_url": "https://www.prnewswire.com/news-releases/performai-launches-ucp-and-acp-readiness-checker-for-online-stores-302943404.html",
+        "event_change": "推出UCP/ACP網店準備度檢查器",
+        "affected_workflow": "AI代理商務上線前的資料與介面缺漏排查",
+        "specific_decision": "先用網店網址取得分數，按發現、結帳及售後把缺漏交予負責人，修復後重跑同一檢查；另行驗證實際購物流程。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按發現/結帳/售後/連接點的147檢查修復，再重跑同規則，不是泛稱使用AI工具。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-25T07:12:48+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    }
+  ]
+}
