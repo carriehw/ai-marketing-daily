@@ -1,0 +1,1111 @@
+{
+  "schema_version": "1.0",
+  "edition_date_hkt": "2026-11-26",
+  "coverage_floor": 10,
+  "coverage_target": 18,
+  "verified_at_hkt": "2026-11-26T07:11:58+08:00",
+  "status": "approved",
+  "editorial_owner": "Carrie Hui",
+  "release_status": "pending_live_validation",
+  "audit_status": "Ten genuinely complete same-assistant approvals. Original issuer texts and direct reports read; pivotal claims separately re-opened and challenged, including Python retrieval for blocked MYAVANA article. Per-story relevance, substitution and wording reviews completed. Research preview/beta/waitlist, future open source, future summary preview and case-disclosure-versus-launch distinctions preserved. OpenReel excluded after Nov9 earlier official page discovered. No independent human or product trial claimed.",
+  "review_provenance": {
+    "first_pass": "Original company text, official product documentation and dated direct reporting inspected, not headlines alone.",
+    "second_pass": "Same assistant separately re-retrieved source text to challenge dates, release stages, scope, attribution and unsupported outcomes; individual references retained.",
+    "separate_human_review": false,
+    "separate_subagent_review": false
+  },
+  "corrections": [],
+  "stories": [
+    {
+      "story_id": "2026-11-26-pine",
+      "title_zh": "Pine Labs在印度推出商戶AI代理，Google廣告支出前須先批准",
+      "source_story_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+      "published_article_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+      "source_date_display": "11月25日",
+      "event_date": "2026-11-25",
+      "first_published_date": "2026-11-25",
+      "source_documents": [
+        {
+          "url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "publisher": "Pine Labs (reproduced announcement)",
+          "evidence_locator": "L50,L53; L58–61; L63–67",
+          "source_publication_date": "2026-11-25",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:02:18+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Pine Labs於11月25日宣布Guide及Marketer Agent，整合Pine Labs One並在印度逐步推出。",
+          "evidence_locator": "Original source L50,L53",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        },
+        {
+          "claim_zh": "Guide可用自然語言查詢門店銷售、POS交易、結算及退款資料。",
+          "evidence_locator": "Original source L58–61",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        },
+        {
+          "claim_zh": "Marketer Agent先支援Google廣告設定，商戶批准前不承諾支出；其他LLM渠道屬後續方向。",
+          "evidence_locator": "Original source L63–67",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Pine Labs於11月25日宣布Guide及Marketer Agent，整合Pine Labs One並在印度逐步推出。",
+          "evidence_locator": "Original source L50,L53",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        },
+        {
+          "claim_zh": "Guide可用自然語言查詢門店銷售、POS交易、結算及退款資料。",
+          "evidence_locator": "Original source L58–61",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        },
+        {
+          "claim_zh": "Marketer Agent先支援Google廣告設定，商戶批准前不承諾支出；其他LLM渠道屬後續方向。",
+          "evidence_locator": "Original source L63–67",
+          "support_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:04:34+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:03:50+08:00",
+        "source_reopen_reference": "Original turn594779437view1 L50–71; separately reopened turn132593885view0.",
+        "finding": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation."
+      },
+      "review_notes": "Issuer announcement reproduced by Passionate in Marketing. India rollout, not universal availability. Google first; LLM discovery surfaces and marketplace/Market roadmap remain planned. No independent targeting, privacy, attribution or revenue validation.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 95
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Gemini支援Marketer Agent把商戶目標轉為廣告，承諾支出前須商戶批准。",
+        "source_locator": "L50,L53; L58–61; L63–67",
+        "source_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
+        "event_change": "Pine Labs One開始加入Guide及Marketer Agent",
+        "affected_workflow": "印度商戶從營業資料問答到Google廣告設定",
+        "specific_decision": "已獲接入的印度商戶可選一間門店，核對Guide銷售回覆，再檢查Google活動的關鍵字、素材及預算，逐項批准。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "商戶批准後直接發布Google活動，與門店交易問答接在Pine Labs One；不是通用代理建議。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:04:34+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-26-magi",
+      "title_zh": "MAGI-2旗艦版公布30秒聲畫生成，開源仍列後續計劃",
+      "source_story_url": "https://sand.ai/blog/magi-2",
+      "published_article_url": "https://sand.ai/blog/magi-2",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://sand.ai/blog/magi-2",
+          "publisher": "Sand.ai",
+          "evidence_locator": "L4,L10–11; L12,L72; L12,L14,L221–222",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:03:03+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Sand.ai於11月24日宣布480B MAGI-2旗艦版，與114B預覽版不同。",
+          "evidence_locator": "Original source L4,L10–11",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        },
+        {
+          "claim_zh": "公司稱可生成最長30秒、1080p、每秒25格同步聲畫，原生請求最多20項媒體參照。",
+          "evidence_locator": "Original source L12,L72",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        },
+        {
+          "claim_zh": "支援時間線及影片編輯；開源與完整技術報告仍列為後續計劃。",
+          "evidence_locator": "Original source L12,L14,L221–222",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Sand.ai於11月24日宣布480B MAGI-2旗艦版，與114B預覽版不同。",
+          "evidence_locator": "Original source L4,L10–11",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        },
+        {
+          "claim_zh": "公司稱可生成最長30秒、1080p、每秒25格同步聲畫，原生請求最多20項媒體參照。",
+          "evidence_locator": "Original source L12,L72",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        },
+        {
+          "claim_zh": "支援時間線及影片編輯；開源與完整技術報告仍列為後續計劃。",
+          "evidence_locator": "Original source L12,L14,L221–222",
+          "support_url": "https://sand.ai/blog/magi-2",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:05:05+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:03:50+08:00",
+        "source_reopen_reference": "Original turn622236891view2 L4–14,L72,L219–222; separately reopened turn132593885view1. Prior archive Sept4 covered 114B preview, not this 480B flagship.",
+        "finding": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred."
+      },
+      "review_notes": "Company-described capabilities, not independent production test. Up to30s/1080p/25fps and20 references per native request. Open-source weights/technical report are future plans, not already released. Omit ranking and benchmark claims; no pricing or universal access inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 23,
+        "actionability": 18,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 94
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "生成同步聲畫，支援多媒體參照、時間線控制與局部影片編輯。",
+        "source_locator": "L4,L10–11; L12,L72; L12,L14,L221–222",
+        "source_url": "https://sand.ai/blog/magi-2",
+        "event_change": "MAGI-2從114B預覽版擴至480B旗艦版",
+        "affected_workflow": "品牌短片的參照素材、剪接時間及聲畫生成",
+        "specific_decision": "取得接入後，用一份30秒分鏡指定參照素材、對白及剪接點，逐項記錄人物、產品與聲畫是否一致。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "以30秒片、參照數量及時間線控制驗收，對應此模型具體新能力與限制。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:05:05+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-26-marcora",
+      "title_zh": "Marcora上架Google Chat，把品牌參考庫帶進行銷與銷售對話",
+      "source_story_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+      "published_article_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "publisher": "Marcora",
+          "evidence_locator": "L46,L54,L78; L55–67; L75,L78–81",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:02:18+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Marcora於11月24日公布Google Chat代理已上架Workspace Marketplace。",
+          "evidence_locator": "Original source L46,L54,L78",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        },
+        {
+          "claim_zh": "代理以品牌基礎與參考庫回答定位、產品、競爭者問題及草擬內容。",
+          "evidence_locator": "Original source L55–67",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        },
+        {
+          "claim_zh": "每人連接自己帳戶，Google Workspace可能需管理員允許；Teams不支援群組聊天。",
+          "evidence_locator": "Original source L75,L78–81",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Marcora於11月24日公布Google Chat代理已上架Workspace Marketplace。",
+          "evidence_locator": "Original source L46,L54,L78",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        },
+        {
+          "claim_zh": "代理以品牌基礎與參考庫回答定位、產品、競爭者問題及草擬內容。",
+          "evidence_locator": "Original source L55–67",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        },
+        {
+          "claim_zh": "每人連接自己帳戶，Google Workspace可能需管理員允許；Teams不支援群組聊天。",
+          "evidence_locator": "Original source L75,L78–81",
+          "support_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:06:00+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:03:50+08:00",
+        "source_reopen_reference": "Original turn979949953view2 L46–88; separately reopened turn132593885view2.",
+        "finding": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported."
+      },
+      "review_notes": "Issuer announcement of Google Chat listing and chat integrations. Requires own Marcora account and workspace/admin permission. Teams group chats unsupported. Approved reference context does not guarantee generated draft is approved; no privacy certification or model-training guarantee reported.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 92
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "工作聊天代理根據品牌基礎與參考庫回答定位問題並草擬內容。",
+        "source_locator": "L46,L54,L78; L55–67; L75,L78–81",
+        "source_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
+        "event_change": "Marcora Marketing Agent上架Google Workspace Marketplace",
+        "affected_workflow": "銷售及產品行銷在聊天中取用已核准品牌背景",
+        "specific_decision": "選一個買家角色及行業，要求代理組合話術，逐句對照定位、產品與競爭參考，再把已確認版本存回團隊文件。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "特定職能/行業的訊息由多份已批准參考組合而成，須核對組合是否保留適用範圍。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:06:00+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-26-suresignal",
+      "title_zh": "SureSignal以beta整合廣告訊號，供AI買量與既有競價平台接入",
+      "source_story_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+      "published_article_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "publisher": "SureSignal (ExchangeWire PressBox)",
+          "evidence_locator": "L127,L130–135; L138–141; L154",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:02:18+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "SureSignal於11月24日公布平台，將定向及衡量訊號放在同一API、儀表板與合約。",
+          "evidence_locator": "Original source L127,L130–135",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        },
+        {
+          "claim_zh": "訊號可送入既有競價平台、精選交易及AI代理，衡量結果用於後續權重調整。",
+          "evidence_locator": "Original source L138–141",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        },
+        {
+          "claim_zh": "公司正與小型啟動夥伴群建立服務，接受beta及訊號供應商申請。",
+          "evidence_locator": "Original source L154",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "SureSignal於11月24日公布平台，將定向及衡量訊號放在同一API、儀表板與合約。",
+          "evidence_locator": "Original source L127,L130–135",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        },
+        {
+          "claim_zh": "訊號可送入既有競價平台、精選交易及AI代理，衡量結果用於後續權重調整。",
+          "evidence_locator": "Original source L138–141",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        },
+        {
+          "claim_zh": "公司正與小型啟動夥伴群建立服務，接受beta及訊號供應商申請。",
+          "evidence_locator": "Original source L154",
+          "support_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:06:29+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:03:50+08:00",
+        "source_reopen_reference": "Original turn594779437view2 L127–154; separately reopened turn132593885view4.",
+        "finding": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24."
+      },
+      "review_notes": "Issuer PressBox announcement, not independent verification of signal quality or lift. Small launch-partner group and beta application; no universal access. Omit first/neutrality/performance superiority assertions. SSA category concept dates March2025, product announcement Nov24.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 23,
+        "actionability": 17,
+        "market_relevance": 12,
+        "novelty": 9,
+        "total": 91
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "把獨立定向與衡量訊號整合為AI代理及自訂競價的輸入。",
+        "source_locator": "L127,L130–135; L138–141; L154",
+        "source_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
+        "event_change": "SureSignal以小型夥伴群及beta啟動訊號聚合平台",
+        "affected_workflow": "媒體買手分別採購訊號再接入既有競價系統",
+        "specific_decision": "申請beta時指定一項活動目標，要求列清訊號來源、驗證方法與混合權重，再與原有訊號設定做可比較的測試。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "同一API/合約聚合訊號並接入既有DSP，須比較混合訊號而非泛稱採用AI。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:06:29+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-26-profound-japan",
+      "title_zh": "transcosmos宣布採用Profound，支援日本及多語AI搜尋優化",
+      "source_story_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "publisher": "transcosmos",
+          "evidence_locator": "L457,L466; L467,L486; L482–486",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:02:18+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "transcosmos於11月24日宣布採用Profound，將其用作trans-GEO分析與衡量基礎。",
+          "evidence_locator": "Original source L457,L466",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        },
+        {
+          "claim_zh": "Profound追蹤AI搜尋中的品牌出現、引用與推薦。",
+          "evidence_locator": "Original source L467,L486",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        },
+        {
+          "claim_zh": "trans-GEO服務涵蓋診斷、內容及網站優化，並支援多語言。",
+          "evidence_locator": "Original source L482–486",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "transcosmos於11月24日宣布採用Profound，將其用作trans-GEO分析與衡量基礎。",
+          "evidence_locator": "Original source L457,L466",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        },
+        {
+          "claim_zh": "Profound追蹤AI搜尋中的品牌出現、引用與推薦。",
+          "evidence_locator": "Original source L467,L486",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        },
+        {
+          "claim_zh": "trans-GEO服務涵蓋診斷、內容及網站優化，並支援多語言。",
+          "evidence_locator": "Original source L482–486",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:07:37+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:07:01+08:00",
+        "source_reopen_reference": "Original turn979949953view3 L457–489; separately reopened turn671765650view0.",
+        "finding": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage."
+      },
+      "review_notes": "Issuer announcement of adopting Profound for trans-GEO. Will use measurement foundation; no independent superiority or outcome proof. Omit first-in-Japan, Fortune500, prompt/customer counts and guaranteed citations. Distinct from existing Profound Teams/APAC-office coverage.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 14,
+        "novelty": 7,
+        "total": 90
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "以Profound的AI答案品牌出現、引用及推薦追蹤支援trans-GEO診斷。",
+        "source_locator": "L457,L466; L467,L486; L482–486",
+        "source_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
+        "event_change": "transcosmos宣布Profound成為trans-GEO的衡量基礎",
+        "affected_workflow": "日本及多語網站的AI搜尋診斷到內容/架構改版",
+        "specific_decision": "選一個日文產品頁及對應英文頁，列出相同購買問題，核對品牌引用與頁面資料差異，再排定內容修訂次序。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "把特定語言的品牌引用觀察連到網站資訊架構修訂，對應此次服務整合。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:07:37+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    },
+    {
+      "story_id": "2026-11-26-trans-voice",
+      "title_zh": "transcosmos推出trans-AI Voice，把門店對話接到顧客資料與行銷跟進",
+      "source_story_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+      "published_article_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "publisher": "transcosmos",
+          "evidence_locator": "L457,L466; L467,L483–485; L488–491",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:07:50+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        },
+        {
+          "url": "https://www.streetinsider.com/PRNewswire/transcosmos%2Blaunches%2Btrans-AI%2BVoice%2Bto%2Bdrive%2Bsales%2Bgrowth%2Band%2BCX%2Btransformation%2Bby%2Bleveraging%2Bcustomer%2Bvoices%2Bfrom%2Boffline%2Btouchpoints%2C%2Bincluding%2Bin-store%2Binteractions%2Band%2Bbusiness%2Bmeetings/27390218.html",
+          "publisher": "transcosmos (PR Newswire syndicated release)",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "evidence_locator": "turn631184462view0 L170–200; same issuer release independently retrieved on canonical PRNewswire page.",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:03:50+08:00",
+          "access_method": "Full original syndicated issuer release read and source/date challenged.",
+          "limitations": "Same issuer text, not independent product test or outcomes corroboration."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "transcosmos於11月24日宣布trans-AI Voice，涵蓋門店、會議及聯絡中心對話。",
+          "evidence_locator": "Original source L457,L466",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        },
+        {
+          "claim_zh": "服務結合Treasure AI Voice記錄及摘要，再與購買及行為資料接入顧客資料平台。",
+          "evidence_locator": "Original source L467,L483–485",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        },
+        {
+          "claim_zh": "可把對話洞察透過CRM、銷售自動化及行銷自動化整合至跟進流程。",
+          "evidence_locator": "Original source L488–491",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "transcosmos於11月24日宣布trans-AI Voice，涵蓋門店、會議及聯絡中心對話。",
+          "evidence_locator": "Original source L457,L466",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        },
+        {
+          "claim_zh": "服務結合Treasure AI Voice記錄及摘要，再與購買及行為資料接入顧客資料平台。",
+          "evidence_locator": "Original source L467,L483–485",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        },
+        {
+          "claim_zh": "可把對話洞察透過CRM、銷售自動化及行銷自動化整合至跟進流程。",
+          "evidence_locator": "Original source L488–491",
+          "support_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:08:31+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:08:02+08:00",
+        "source_reopen_reference": "Original issuer text turn631184462view0 L177–200, canonical release turn953858261view4; separately reopened canonical turn985845528view0 L466–491.",
+        "finding": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred."
+      },
+      "review_notes": "Company-described integrated service, not verified accuracy, win-rate, LTV, revenue or privacy outcomes. Includes offline recordings, AI extraction and CDP/CRM/MA integration. No universal regional availability inferred.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 13,
+        "novelty": 7,
+        "total": 89
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "AI把門店及銷售對話轉為結構化洞察並連接顧客資料。",
+        "source_locator": "L457,L466; L467,L483–485; L488–491",
+        "source_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
+        "event_change": "transcosmos推出trans-AI Voice整合服務",
+        "affected_workflow": "線下對話資料進入CRM及後續溝通設計",
+        "specific_decision": "選一類獲准記錄的門店諮詢，人工核對AI摘要中的購買顧慮，再與CRM記錄配對，測試一項針對性的跟進訊息。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "把購買顧慮及流失理由與交易記錄相連，再決定追問與跟進，對應這次線下VoC整合。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:08:31+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-26-stensul",
+      "title_zh": "Stensul檢查電郵優惠是否易被AI讀取，摘要預覽仍待推出",
+      "source_story_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+      "published_article_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+      "source_date_display": "11月23日",
+      "event_date": "2026-11-23",
+      "first_published_date": "2026-11-23",
+      "source_documents": [
+        {
+          "url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "publisher": "Stensul (Business Wire release)",
+          "evidence_locator": "L5,L9,L30; L17; L20–21,L28",
+          "source_publication_date": "2026-11-23",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:07:01+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "Stensul於11月23日公布AI Inbox Summary Optimization及Gmail促銷註記，現供客戶使用。",
+          "evidence_locator": "Original source L5,L9,L30",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        },
+        {
+          "claim_zh": "QA可指出優惠只在圖片、缺少預覽文字及主旨與正文不一致等問題。",
+          "evidence_locator": "Original source L17",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        },
+        {
+          "claim_zh": "管理員按資料庫啟用促銷註記並授權使用者；摘要預覽仍計劃於2027年初推出。",
+          "evidence_locator": "Original source L20–21,L28",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "Stensul於11月23日公布AI Inbox Summary Optimization及Gmail促銷註記，現供客戶使用。",
+          "evidence_locator": "Original source L5,L9,L30",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        },
+        {
+          "claim_zh": "QA可指出優惠只在圖片、缺少預覽文字及主旨與正文不一致等問題。",
+          "evidence_locator": "Original source L17",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        },
+        {
+          "claim_zh": "管理員按資料庫啟用促銷註記並授權使用者；摘要預覽仍計劃於2027年初推出。",
+          "evidence_locator": "Original source L20–21,L28",
+          "support_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:09:04+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:08:02+08:00",
+        "source_reopen_reference": "Original syndicated Business Wire text turn146448787view1 L5–30; separately reopened turn953858261view0 and turn985845528view1.",
+        "finding": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback."
+      },
+      "review_notes": "Official Stensul page blocked, full same-event Business Wire release accessible via MarketMinute. Current QA is not a Gmail summary simulator: preview planned early2027. Gmail placement not guaranteed. Omit survey/Salesforce numbers, conversion promises. Distinct from Nov8 performance feedback.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 30,
+        "business_impact": 22,
+        "actionability": 19,
+        "market_relevance": 11,
+        "novelty": 8,
+        "total": 90
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "電郵製作時檢查優惠是否藏在圖像、缺少預覽文字或主旨不一致，回應AI收件匣摘要。",
+        "source_locator": "L5,L9,L30; L17; L20–21,L28",
+        "source_url": "https://week.marketminute.com/article/bizwire-2026-11-23-stensul-launches-new-features-to-help-marketers-win-the-ai-inbox-this-holiday-season",
+        "event_change": "新增AI Inbox Summary Optimization及Gmail促銷註記",
+        "affected_workflow": "寄送前優惠可讀性及促銷資料設定",
+        "specific_decision": "取同一優惠的圖片版與文字版，檢查兩者是否被指出缺漏，再核對主旨、預覽文字、促銷碼及到期日是否一致。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "用圖片優惠/文字優惠兩版檢查缺漏，正是這次新增QA，不是泛稱改善電郵內容。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:09:04+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-26-clay",
+      "title_zh": "OpenAI披露Clay案例：客戶研究進入ChatGPT與Codex，模型按任務分工",
+      "source_story_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+      "published_article_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+      "source_date_display": "11月24日",
+      "event_date": "2026-11-24",
+      "first_published_date": "2026-11-24",
+      "source_documents": [
+        {
+          "url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "publisher": "OpenAI (Clay customer story)",
+          "evidence_locator": "L13,L42–53; L56; L58,L63",
+          "source_publication_date": "2026-11-24",
+          "source_class": "A",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:02:18+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "OpenAI於11月24日發布Clay客戶案例，描述ChatGPT及Codex研究與工作流程整合。",
+          "evidence_locator": "Original source L13,L42–53",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        },
+        {
+          "claim_zh": "模型用於Claygent研究、資格判斷、資料補全及訊號偵測。",
+          "evidence_locator": "Original source L56",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        },
+        {
+          "claim_zh": "Clay以GPT-6 Sol作主要模型，較難任務採Astra，成本敏感工作採Luna。",
+          "evidence_locator": "Original source L58,L63",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "OpenAI於11月24日發布Clay客戶案例，描述ChatGPT及Codex研究與工作流程整合。",
+          "evidence_locator": "Original source L13,L42–53",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        },
+        {
+          "claim_zh": "模型用於Claygent研究、資格判斷、資料補全及訊號偵測。",
+          "evidence_locator": "Original source L56",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        },
+        {
+          "claim_zh": "Clay以GPT-6 Sol作主要模型，較難任務採Astra，成本敏感工作採Luna。",
+          "evidence_locator": "Original source L58,L63",
+          "support_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:09:37+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:08:02+08:00",
+        "source_reopen_reference": "Original turn979949953view0 L13,L42–68; separately reopened turn671765650view1 and turn985845528view2.",
+        "finding": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified."
+      },
+      "review_notes": "New Nov24 vendor customer-story disclosure, not integration launch date or independent case study. Concrete current research/workflow mechanisms supported. GPT-Live1 inbound demos/DecisionsAPI opportunities are forward-looking and excluded. No quantified sales performance verified.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 8,
+        "total": 87
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Clay以OpenAI模型處理潛客研究、資料補全及工作流程，並透過ChatGPT/Codex使用。",
+        "source_locator": "L13,L42–53; L56; L58,L63",
+        "source_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
+        "event_change": "新案例披露Clay把研究與GTM流程放入ChatGPT/Codex的實作",
+        "affected_workflow": "B2B名單補全、客戶研究及銷售簡報",
+        "specific_decision": "選一組潛客，把公開研究、資格判斷及銷售簡報分開列成任務，比較各步資料依據與成本，再決定模型分工。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "按研究/資格判斷/文案任務選模型再把同客戶背景帶入簡報，對應案例的分工而非通用AI建議。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:09:37+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-26-myavana",
+      "title_zh": "MYAVANA黑五活動先做AI髮質分析，再導向個人化產品選購",
+      "source_story_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+      "published_article_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+      "source_date_display": "11月25日",
+      "event_date": "2026-11-25",
+      "first_published_date": "2026-11-25",
+      "source_documents": [
+        {
+          "url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "publisher": "UrbanGeekz",
+          "evidence_locator": "Published by/date; A Smarter Way to Shop for Hair Care This Black Friday; Bringing Agentic AI to the Beauty Industry, app capabilities bullets1–4; App capabilities bullet5; A Smarter Way... final paragraph",
+          "source_publication_date": "2026-11-25",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:09:56+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "UrbanGeekz於11月25日報道Meet MYAVANA假日活動，鼓勵先取得Hair ID再選購黑五優惠。",
+          "evidence_locator": "Original source Published by/date; A Smarter Way to Shop for Hair Care This Black Friday",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        },
+        {
+          "claim_zh": "HairAI用於髮質分析，應用程式提供個人化產品推薦及依天氣調整的護髮建議。",
+          "evidence_locator": "Original source Bringing Agentic AI to the Beauty Industry, app capabilities bullets1–4",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        },
+        {
+          "claim_zh": "報道描述零售夥伴購物連接，並列11月27至30日優惠選購安排。",
+          "evidence_locator": "Original source App capabilities bullet5; A Smarter Way... final paragraph",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "UrbanGeekz於11月25日報道Meet MYAVANA假日活動，鼓勵先取得Hair ID再選購黑五優惠。",
+          "evidence_locator": "Original source Published by/date; A Smarter Way to Shop for Hair Care This Black Friday",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        },
+        {
+          "claim_zh": "HairAI用於髮質分析，應用程式提供個人化產品推薦及依天氣調整的護髮建議。",
+          "evidence_locator": "Original source Bringing Agentic AI to the Beauty Industry, app capabilities bullets1–4",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        },
+        {
+          "claim_zh": "報道描述零售夥伴購物連接，並列11月27至30日優惠選購安排。",
+          "evidence_locator": "Original source App capabilities bullet5; A Smarter Way... final paragraph",
+          "support_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:10:42+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:10:12+08:00",
+        "source_reopen_reference": "Web open blocked. Full original UrbanGeekz HTML read using Python urllib (session88700), separately retrieved and compared identical text (session87026). Exact sections: Bringing Agentic AI to the Beauty Industry; A Smarter Way to Shop for Hair Care This Black Friday. Official campaign homepage also inspected; displays11/11/2026, so assistant not labelled newly launchedNov25.",
+        "finding": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored."
+      },
+      "review_notes": "Direct campaign report with founder quotations; no product trial, efficacy, medical advice or measured sales proof. Nov25 is report date, not established original assistant launch date. Holiday shopping promoted Nov27–30; do not infer all-market retail access. Onsite Advertisement markers retained as ads, not proof entire report sponsored.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 29,
+        "business_impact": 21,
+        "actionability": 18,
+        "market_relevance": 11,
+        "novelty": 7,
+        "total": 86
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "HairAI分析Hair ID，再把個人髮質、產品推薦及零售購物連接至黑五活動。",
+        "source_locator": "Published by/date; A Smarter Way to Shop for Hair Care This Black Friday; Bringing Agentic AI to the Beauty Industry, app capabilities bullets1–4; App capabilities bullet5; A Smarter Way... final paragraph",
+        "source_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
+        "event_change": "Meet MYAVANA黑五活動把AI分析置於折扣選購之前",
+        "affected_workflow": "美髮產品的需求辨識、個人化推薦及零售導流",
+        "specific_decision": "檢視一次Hair ID到產品推薦再到零售頁的流程，列清每步使用的需求訊號，核對推薦理由與商品資料能否對應。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "先HairID後商品推薦再零售連結的三步機制具體，不能替換為一般名人代言或折扣活動。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:10:42+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Test"
+    },
+    {
+      "story_id": "2026-11-26-duet-india",
+      "title_zh": "Claude Duet研究預覽擴至印度，個人候補與企業測試分開",
+      "source_story_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+      "published_article_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+      "source_date_display": "11月25日",
+      "event_date": "2026-11-25",
+      "first_published_date": "2026-11-25",
+      "source_documents": [
+        {
+          "url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "publisher": "Analytics India Magazine",
+          "evidence_locator": "L19,L34; L37; L36,L43,L46",
+          "source_publication_date": "2026-11-25",
+          "source_class": "B",
+          "access_state": "accessible",
+          "accessed_at_hkt": "2026-11-26T07:09:56+08:00",
+          "access_method": "Read original text, then separately reopened source for challenge review.",
+          "limitations": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        }
+      ],
+      "claims": [
+        {
+          "claim_zh": "AIM於11月25日報道Anthropic把Duet研究預覽擴至印度。",
+          "evidence_locator": "Original source L19,L34",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        },
+        {
+          "claim_zh": "Pro、Max、Ultra採候補，Team為公開beta，Enterprise為私人beta。",
+          "evidence_locator": "Original source L37",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        },
+        {
+          "claim_zh": "報道引述公司指代理可背景工作，發訊息、付款、簽署及刪除資料前須批准。",
+          "evidence_locator": "Original source L36,L43,L46",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        }
+      ],
+      "material_claims": [
+        {
+          "claim_zh": "AIM於11月25日報道Anthropic把Duet研究預覽擴至印度。",
+          "evidence_locator": "Original source L19,L34",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        },
+        {
+          "claim_zh": "Pro、Max、Ultra採候補，Team為公開beta，Enterprise為私人beta。",
+          "evidence_locator": "Original source L37",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        },
+        {
+          "claim_zh": "報道引述公司指代理可背景工作，發訊息、付款、簽署及刪除資料前須批准。",
+          "evidence_locator": "Original source L36,L43,L46",
+          "support_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+          "status": "attributed",
+          "second_pass_checked": true,
+          "caveat": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+        }
+      ],
+      "reviewed_by": "Codex same-assistant editorial desk",
+      "reviewed_at_hkt": "2026-11-26T07:11:12+08:00",
+      "independent_review": {
+        "method": "Same assistant separately reopened source to challenge claims, dates and scope. No independent human reviewer or product trial.",
+        "second_pass_accessed_at_hkt": "2026-11-26T07:10:12+08:00",
+        "source_reopen_reference": "Original direct report turn455106489view0 L19,L34–53; separately reopened turn675385110view0. Medianews4u same-event report inspected. GizArena search text confirms Team restoration but does not confirm active personal access; waitlist not equated with access.",
+        "finding": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features."
+      },
+      "review_notes": "Original report quotes Anthropic; primary announcement page not found. Reported India research preview, not global GA. Pro/Max/Ultra waitlist, Team public beta, Enterprise private beta. Do not infer Hong Kong access or active personal-account access. Omit unverified security guarantees, tester outcomes and future Shopify/1Password features.",
+      "editorial_decision": "approved",
+      "needs_human_review": false,
+      "editorial_relevance_score": {
+        "direct_marketing_relevance": 28,
+        "business_impact": 22,
+        "actionability": 17,
+        "market_relevance": 15,
+        "novelty": 9,
+        "total": 91
+      },
+      "relevance_review": {
+        "decision": "PASS",
+        "ai_connection": "Duet從已連接應用程式找出工作並在背景執行，印度開始按方案開放預覽。",
+        "source_locator": "L19,L34; L37; L36,L43,L46",
+        "source_url": "https://analyticsindiamag.com/ai-news/anthropic-brings-claude-duet-ai-agent-to-india",
+        "event_change": "研究預覽擴至印度並按個人/Team/Enterprise分流",
+        "affected_workflow": "印度行銷團隊接入背景任務與批准安排",
+        "specific_decision": "印度團隊先確認帳戶實際候補或beta狀態，再用一項客戶會議整理任務檢查背景輸出與發送前批准，通過後才擴大範圍。",
+        "substitution_test": "PASS",
+        "substitution_test_reason": "先核對印度方案的候補或beta資格，再選擇需逐次批准的客戶訊息任務，對應此次地區/方案改變。",
+        "inference_label": "why and next_step are editorial implications, not measured performance.",
+        "reviewed_at_hkt": "2026-11-26T07:11:12+08:00"
+      },
+      "impact": "Medium",
+      "recommended_response": "Monitor"
+    }
+  ]
+}
