@@ -1,8 +1,10 @@
 {
   "edition_date_hkt": "2026-11-26",
-  "requested_at_hkt": "2026-11-26T07:13:47+08:00",
+  "requested_at_hkt": "2026-11-26T07:18:29+08:00",
   "packet_path": "editorial/editions/2026-11-26.json",
-  "reason": "Retry reviewed packet after fixing email renderer to include its visible numeric chip in reading-time count. Existing verifier unchanged.",
-  "prior_failed_run_id": 45719533824,
-  "expected_main_sha": "3a3a65d5b5507d4e65fd4f8cf6b184eab31f7f8a"
+  "reason": "Recover latest-main approved wording revision after deploy-pages artifact metadata lookup failed despite successful artifact upload. Compiled artifacts were already committed; fresh latest-main audit preserves expected-SHA protection.",
+  "prior_failed_run_id": 45720085579,
+  "failed_job_id": 139575926022,
+  "uploaded_artifact_id": 15071657216,
+  "expected_main_sha": "25a3b6d4238ec0be45e7528471f0511292f07389"
 }
