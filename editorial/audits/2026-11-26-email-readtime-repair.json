@@ -1,0 +1,12 @@
+{
+  "edition_date_hkt": "2026-11-26",
+  "requested_at_hkt": "2026-11-26T07:13:47+08:00",
+  "packet_path": "editorial/editions/2026-11-26.json",
+  "reason": "Retry reviewed packet after fixing email renderer to include its visible numeric chip in reading-time count. Existing verifier unchanged.",
+  "prior_failed_run_id": 45719533824,
+  "expected_main_sha": "3a3a65d5b5507d4e65fd4f8cf6b184eab31f7f8a",
+  "failed_step": "Build site, archive and bilingual email from same data / verify_email.py",
+  "failure": "441 visible words rendered with 2-minute chip; exact boundary missed by excluding chip's own numeric word.",
+  "repair": "Count the one visible numeric word before rendering chip. No gate or facts changed.",
+  "validation": "Boundary fixtures 440/441/442 visible words pass; CI will rerun all publication checks."
+}
