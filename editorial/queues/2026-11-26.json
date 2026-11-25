@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-26",
-  "status": "CI_IN_PROGRESS",
+  "status": "PUBLISHED & VERIFIED",
   "main_sha_at_start": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
   "discovery_count": 23,
   "approved_count": 10,
@@ -17,7 +17,7 @@
       "provisional_score": 95,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/pine.json",
       "editorial_score": 95
     },
@@ -28,7 +28,7 @@
       "provisional_score": 94,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/magi.json",
       "editorial_score": 94
     },
@@ -50,7 +50,7 @@
       "provisional_score": 92,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/marcora.json",
       "editorial_score": 92
     },
@@ -61,7 +61,7 @@
       "provisional_score": 91,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/suresignal.json",
       "editorial_score": 91
     },
@@ -72,7 +72,7 @@
       "provisional_score": 90,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/profound-japan.json",
       "editorial_score": 90
     },
@@ -83,7 +83,7 @@
       "provisional_score": 89,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/trans-voice.json",
       "editorial_score": 89
     },
@@ -94,7 +94,7 @@
       "provisional_score": 89,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/stensul.json",
       "editorial_score": 90
     },
@@ -105,7 +105,7 @@
       "provisional_score": 89,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/duet-india.json",
       "editorial_score": 91
     },
@@ -126,7 +126,7 @@
       "provisional_score": 87,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/clay.json",
       "editorial_score": 87
     },
@@ -146,7 +146,7 @@
       "provisional_score": 84,
       "state": "APPROVED",
       "disposition": "approved",
-      "next_action": "Reuse complete approved packet in edition assembly.",
+      "next_action": "Published in accepted issue; reuse approved article packet without repeating source research.",
       "article_packet_path": "editorial/articles/2026-11-26/myavana.json",
       "editorial_score": 86
     },
@@ -243,7 +243,7 @@
       "next_action": "Reconsider only if a dated substantive change is documented."
     }
   ],
-  "next_action": "Follow run45720338250 attempt2 after rerunning failed job139576784639; main unchanged at recovery commit, no source or gate changes.",
+  "next_action": "Current issue accepted. Reuse ten exact approved packets; investigate OpenReel freshness and AdFlank source-access holds only for a justified update. Reserves remain unapproved; do not open another same-day funnel.",
   "rejected_count": 2,
   "run_id": 45720338250,
   "run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45720338250",
@@ -252,5 +252,22 @@
   "previous_successful_run_id": 45719729568,
   "latest_failed_run_id": 45720085579,
   "recovery_commit": "0f1e980cd65f2b4d67dd790afc9d6a180d76882e",
-  "run_attempt": 2
+  "run_attempt": 2,
+  "newly_closed_count": 12,
+  "receipt_path": "editorial/releases/2026-11-26.json",
+  "live_acceptance": {
+    "checked_at_hkt": "2026-11-26T07:23:31+08:00",
+    "verified_main_sha": "affe478deb1ae953e6f72813c9e7d32c156ee52f",
+    "receipt_status": "PUBLISHED & VERIFIED",
+    "data_sha256": "976bcb8cde37025ce7f7740691ceb47866a2cb7c0172e5b0b14b8d59df96fbc9",
+    "evidence_sha256": "3085755aba31d4dbf3a9eaa6272ae8995c5817dda4a10722e078dc2fb27d47b5",
+    "language_article_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    },
+    "workflow_success": true,
+    "actual_public_bytes_match": true,
+    "newsletter_snapshot_hashes_match": true
+  }
 }

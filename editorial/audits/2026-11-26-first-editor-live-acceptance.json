@@ -1,0 +1,63 @@
+{
+  "edition_date_hkt": "2026-11-26",
+  "completed_at_hkt": "2026-11-26T07:23:31+08:00",
+  "approved": 10,
+  "held": 2,
+  "rejected": 2,
+  "reserve": 10,
+  "newly_closed": 12,
+  "discovery_count": 23,
+  "live_acceptance": {
+    "checked_at_hkt": "2026-11-26T07:23:31+08:00",
+    "verified_main_sha": "affe478deb1ae953e6f72813c9e7d32c156ee52f",
+    "receipt_status": "PUBLISHED & VERIFIED",
+    "data_sha256": "976bcb8cde37025ce7f7740691ceb47866a2cb7c0172e5b0b14b8d59df96fbc9",
+    "evidence_sha256": "3085755aba31d4dbf3a9eaa6272ae8995c5817dda4a10722e078dc2fb27d47b5",
+    "language_article_counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    },
+    "workflow_success": true,
+    "actual_public_bytes_match": true,
+    "newsletter_snapshot_hashes_match": true
+  },
+  "successful_run_id": 45720338250,
+  "successful_run_attempt": 2,
+  "editorial_qa_run_id": 45720338256,
+  "editorial_qa_conclusion": "success",
+  "initial_readtime_failure_run": 45719533824,
+  "minor_wording_deploy_failure_run": 45720085579,
+  "receipt_path": "editorial/releases/2026-11-26.json",
+  "semantic_review": {
+    "reviewer": "Codex same-assistant editorial desk",
+    "method": "Personally read all30 rendered story blocks across Traditional Chinese, Simplified Chinese and English, plus six-feature English Newsletter. Revised one normalized Chinese waitlist sentence; compared final output and confirmed only that sentence changed, with all English and remaining locale article blocks identical.",
+    "findings": [
+      "India rollout/preview/waitlist/beta scopes retained; no Hong Kong availability inferred.",
+      "MAGI flagship distinct from114B preview,30sec/1080p/25fps/20references retained, open source future only.",
+      "Marcora approved context not equated with approved final copy.",
+      "SureSignal beta/company verification mechanism not an independent results audit.",
+      "trans-GEO and trans-AI Voice are distinct specific workflows, no revenue/accuracy guarantees.",
+      "Stensul current QA distinct from early2027 planned summary preview.",
+      "Clay Nov24 customer-story disclosure not a new-launch date; future voice features not current.",
+      "MYAVANA Nov25 holiday report not first assistant-launch date; Nov27–30 prospective campaign period; mechanism not outcome."
+    ],
+    "localization_risks": "Facts and qualifiers preserved. Generated Simplified wording retains some shared cross-regional terms (e.g. 讯号/介面); read for meaning, without claiming independent human proofreading."
+  },
+  "direct_public_verification": {
+    "method": "Python urllib retrieved all three public locale HTML files and Newsletter payload; exact bytes matched inspected main candidates and receipt SHA256.",
+    "paths": [
+      "en/index.html",
+      "zh-hant/index.html",
+      "zh-hans/index.html",
+      "edm/payload.json"
+    ],
+    "counts": {
+      "en": 10,
+      "zh-hant": 10,
+      "zh-hans": 10
+    }
+  },
+  "no_outlook_email_sent_by_this_run": true,
+  "no_social_posted_by_this_run": true
+}
