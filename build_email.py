@@ -749,8 +749,9 @@ def _visible_words(doc):
     return latin + cjk / 2.5, latin, cjk
 
 assert page.count("@@READMIN@@") == 1, f"read-time placeholder count={page.count('@@READMIN@@')}"
-# Count with the placeholder gone, else READMIN itself scores as a word.
-_w, _latin, _cjk = _visible_words(page.replace("@@READMIN@@", " "))
+# The rendered numeric chip is one visible word; include it so exact
+# 220-word boundaries match the final-page reading-time validation.
+_w, _latin, _cjk = _visible_words(page.replace("@@READMIN@@", "1"))
 _read_min = max(1, int(math.ceil(_w / _WPM - 1e-9)))
 page = page.replace("@@READMIN@@", str(_read_min))
 
