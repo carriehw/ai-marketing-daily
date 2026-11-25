@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-26",
-  "status": "IN_PROGRESS",
+  "status": "EDITORIAL_APPROVED_PENDING_CI",
   "main_sha_at_start": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
   "discovery_count": 22,
   "approved_count": 10,
@@ -16,9 +16,10 @@
       "source_url": "https://www.passionateinmarketing.com/pine-labs-extends-agentic-org-platform-with-guide-and-marketer-agent-for-indias-smbs/",
       "provisional_score": 95,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/pine.json"
+      "article_packet_path": "editorial/articles/2026-11-26/pine.json",
+      "editorial_score": 95
     },
     {
       "slug": "magi",
@@ -26,9 +27,10 @@
       "source_url": "https://sand.ai/blog/magi-2",
       "provisional_score": 94,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/magi.json"
+      "article_packet_path": "editorial/articles/2026-11-26/magi.json",
+      "editorial_score": 94
     },
     {
       "slug": "openreel",
@@ -47,9 +49,10 @@
       "source_url": "https://marcora.ai/blog/marcora-marketing-agent-in-google-chat-slack-teams",
       "provisional_score": 92,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/marcora.json"
+      "article_packet_path": "editorial/articles/2026-11-26/marcora.json",
+      "editorial_score": 92
     },
     {
       "slug": "suresignal",
@@ -57,9 +60,10 @@
       "source_url": "https://www.exchangewire.com/blog/2026/11/24/suresignal-launches-to-power-ai-agentic-buying-with-verified-independent-signal-2/",
       "provisional_score": 91,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/suresignal.json"
+      "article_packet_path": "editorial/articles/2026-11-26/suresignal.json",
+      "editorial_score": 91
     },
     {
       "slug": "profound-japan",
@@ -67,9 +71,10 @@
       "source_url": "https://www.prnewswire.com/news-releases/transcosmos-introduces-profound-a-leading-ai-marketing-platform-at-the-forefront-of-the-global-ai-search-market-to-japan-ahead-of-others-302950010.html",
       "provisional_score": 90,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/profound-japan.json"
+      "article_packet_path": "editorial/articles/2026-11-26/profound-japan.json",
+      "editorial_score": 90
     },
     {
       "slug": "trans-voice",
@@ -77,9 +82,10 @@
       "source_url": "https://www.prnewswire.com/news-releases/transcosmos-launches-trans-ai-voice-to-drive-sales-growth-and-cx-transformation-by-leveraging-customer-voices-from-offline-touchpoints-including-in-store-interactions-and-business-meetings-302949237.html",
       "provisional_score": 89,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/trans-voice.json"
+      "article_packet_path": "editorial/articles/2026-11-26/trans-voice.json",
+      "editorial_score": 89
     },
     {
       "slug": "stensul",
@@ -87,9 +93,10 @@
       "source_url": "https://businessnewsthisweek.com/business/stensul-launches-new-ai-inbox-marketing-features/",
       "provisional_score": 89,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/stensul.json"
+      "article_packet_path": "editorial/articles/2026-11-26/stensul.json",
+      "editorial_score": 90
     },
     {
       "slug": "duet-india",
@@ -97,18 +104,20 @@
       "source_url": "https://www.medianews4u.com/anthropic-expands-claude-duet-research-preview-to-india-opens-access-across-pro-team-and-enterprise-plans/",
       "provisional_score": 89,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/duet-india.json"
+      "article_packet_path": "editorial/articles/2026-11-26/duet-india.json",
+      "editorial_score": 91
     },
     {
       "slug": "adform",
       "title": "Adform MCP workflows at Omnicom and Publicis",
-      "source_url": "https://www.exchangewire.com/",
+      "source_url": "https://finance.yahoo.com/media-advertising/articles/adform-mcp-server-transforms-workflows-153000267.html",
       "provisional_score": 88,
-      "state": "DISCOVERED",
+      "state": "REJECTED",
       "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Resolve exact new case article and primary mechanics, avoid generic adoption."
+      "next_action": "Do not count a newly redisplayed old release as news.",
+      "reason": "Source discovery resolves to Oct30 issuer release, with no new increment identified; too old to count as new case."
     },
     {
       "slug": "clay",
@@ -116,9 +125,10 @@
       "source_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
       "provisional_score": 87,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/clay.json"
+      "article_packet_path": "editorial/articles/2026-11-26/clay.json",
+      "editorial_score": 87
     },
     {
       "slug": "walmart",
@@ -126,8 +136,8 @@
       "source_url": "https://marketingexploit.com/briefing/2026-11-25",
       "provisional_score": 85,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Find direct event source, distinguish historic agent gateway."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Find direct event source, distinguish historic agent gateway."
     },
     {
       "slug": "myavana",
@@ -135,9 +145,10 @@
       "source_url": "https://urbangeekz.com/2026/11/myavana-ai-hair-care-shopping-assistant/",
       "provisional_score": 84,
       "state": "APPROVED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
+      "disposition": "approved",
       "next_action": "Reuse complete approved packet in edition assembly.",
-      "article_packet_path": "editorial/articles/2026-11-26/myavana.json"
+      "article_packet_path": "editorial/articles/2026-11-26/myavana.json",
+      "editorial_score": 86
     },
     {
       "slug": "adflank",
@@ -145,8 +156,8 @@
       "source_url": "https://www.thebusinessgazetteonline.com/article/958917522-marketing-teams-can-t-keep-up-with-competitors-ads-gen-z-founders-raised-100-000-to-fix-that-with-ai",
       "provisional_score": 82,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Blocked original release; find canonical same-event text."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Blocked original release; find canonical same-event text."
     },
     {
       "slug": "openclips",
@@ -154,8 +165,8 @@
       "source_url": "https://www.prnewswire.com/news-releases/openclips-is-the-first-ai-platform-to-actually-turn-a-product-link-into-production-ready-ads-302948391.html",
       "provisional_score": 80,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Compare Sept product-link launch; count only demonstrably new feature."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Compare Sept product-link launch; count only demonstrably new feature."
     },
     {
       "slug": "adlibrary",
@@ -163,8 +174,8 @@
       "source_url": "https://adlibrary.com/posts/meta-ad-library-mcp",
       "provisional_score": 80,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Verify Nov25 material change versus tutorial publication."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Verify Nov25 material change versus tutorial publication."
     },
     {
       "slug": "amazon",
@@ -172,8 +183,8 @@
       "source_url": "https://marketingexploit.com/briefing/2026-11-25",
       "provisional_score": 80,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Find direct new evidence, distinguish ad buying from crawler permission."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Find direct new evidence, distinguish ad buying from crawler permission."
     },
     {
       "slug": "reddit",
@@ -181,8 +192,8 @@
       "source_url": "https://www.businessinsider.com/reddit-ad-growth-plans-search-shopping-ai-agents-2026-11",
       "provisional_score": 78,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Check incremental facts beyond published Nov7 search test."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Check incremental facts beyond published Nov7 search test."
     },
     {
       "slug": "richpanel",
@@ -190,8 +201,8 @@
       "source_url": "https://openai.com/business/customer-stories/clay-plugins-openai/",
       "provisional_score": 78,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Follow dated related original case, verify methods before outcomes."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Follow dated related original case, verify methods before outcomes."
     },
     {
       "slug": "adlude",
@@ -199,8 +210,8 @@
       "source_url": "https://adlude.com/",
       "provisional_score": 75,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Confirm shutdown date/export or access implications; announcement date unspecified."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Confirm shutdown date/export or access implications; announcement date unspecified."
     },
     {
       "slug": "surva",
@@ -208,8 +219,8 @@
       "source_url": "https://www.surva.ai/docs/competitor-dashboard",
       "provisional_score": 71,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Updated documentation is not automatically a new product release."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Updated documentation is not automatically a new product release."
     },
     {
       "slug": "bauer",
@@ -217,9 +228,10 @@
       "source_url": "https://www.exchangewire.com/blog/category/programmatic/",
       "provisional_score": 65,
       "state": "DISCOVERED",
-      "disposition": "selected_for_verification_or_recorded_reserve",
-      "next_action": "Verify technical change beyond contract renewal; reject if renewal alone."
+      "disposition": "reserve",
+      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Verify technical change beyond contract renewal; reject if renewal alone."
     }
   ],
-  "next_action": "Complete highest-value unfinished source verification; submit at ten complete packets."
+  "next_action": "Submit ten approved articles and inspect actual CI/live acceptance.",
+  "rejected_count": 2
 }
