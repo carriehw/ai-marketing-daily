@@ -1,6 +1,6 @@
 {
   "edition_date_hkt": "2026-11-26",
-  "status": "CI_IN_PROGRESS",
+  "status": "CI_RECOVERY_REQUESTED",
   "main_sha_at_start": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
   "discovery_count": 23,
   "approved_count": 10,
@@ -242,11 +242,13 @@
       "next_action": "Reconsider only if a dated substantive change is documented."
     }
   ],
-  "next_action": "Confirm minor wording revision in actual rendered Chinese locales and fresh receipt; source facts/evidence remain unchanged.",
+  "next_action": "Track fresh latest-main request after Pages artifact lookup failure; candidate and editorial gates unchanged.",
   "rejected_count": 2,
   "run_id": 45720085579,
   "run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45720085579",
   "submitted_main_sha": "ad09c522408b44852a21d8cf856a47d44a587b2d",
   "previous_failed_run_id": 45719533824,
-  "previous_successful_run_id": 45719729568
+  "previous_successful_run_id": 45719729568,
+  "latest_failed_run_id": 45720085579,
+  "recovery_commit": "0f1e980cd65f2b4d67dd790afc9d6a180d76882e"
 }
