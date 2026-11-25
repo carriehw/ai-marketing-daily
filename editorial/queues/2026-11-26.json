@@ -4,7 +4,7 @@
   "main_sha_at_start": "2cdd7f731bbbc8a0b586bef07700e621a63b925f",
   "discovery_count": 23,
   "approved_count": 10,
-  "held_count": 1,
+  "held_count": 2,
   "deduplication": {
     "history_count": 1817,
     "method": "Compared names, URLs and mechanisms against main archive/search-index.json; MAGI flagship distinguished from 114B preview; Profound Japan distinguished from Teams/Singapore; Stensul inbox QA distinguished from prior feedback."
@@ -155,9 +155,10 @@
       "title": "AdFlank competitor ad monitoring",
       "source_url": "https://www.thebusinessgazetteonline.com/article/958917522-marketing-teams-can-t-keep-up-with-competitors-ads-gen-z-founders-raised-100-000-to-fix-that-with-ai",
       "provisional_score": 82,
-      "state": "DISCOVERED",
+      "state": "HELD",
       "disposition": "reserve",
-      "next_action": "Recorded >=60 reserve; verify original date, full source and incremental change before approval. Blocked original release; find canonical same-event text."
+      "next_action": "Retrieve same-event official or direct full text for Nov25 AdFlank release, verify change and reopen before drafting.",
+      "reason": "Full original issuer release remained inaccessible through web open; search snippets do not establish complete release scope."
     },
     {
       "slug": "openclips",
@@ -242,7 +243,7 @@
       "next_action": "Reconsider only if a dated substantive change is documented."
     }
   ],
-  "next_action": "Track fresh latest-main recovery run and verify final receipt/current hashes/public locale bytes.",
+  "next_action": "Follow run45720338250 attempt2 after rerunning failed job139576784639; main unchanged at recovery commit, no source or gate changes.",
   "rejected_count": 2,
   "run_id": 45720338250,
   "run_url": "https://github.com/carriehw/ai-marketing-daily/actions/runs/45720338250",
@@ -250,5 +251,6 @@
   "previous_failed_run_id": 45719533824,
   "previous_successful_run_id": 45719729568,
   "latest_failed_run_id": 45720085579,
-  "recovery_commit": "0f1e980cd65f2b4d67dd790afc9d6a180d76882e"
+  "recovery_commit": "0f1e980cd65f2b4d67dd790afc9d6a180d76882e",
+  "run_attempt": 2
 }
